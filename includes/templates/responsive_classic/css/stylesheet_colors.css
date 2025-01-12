@@ -738,6 +738,8 @@ input.cssButton.submit_button.button.button_search {
 	display:flex;
 	color:blueviolet;
 	font-size:1.3rem !important;
+	outline:none !important;
+	opacity: 1;
 }
 #shippingEstimatorContent .button_update:hover {
 	border:none !important
@@ -793,8 +795,8 @@ input.cssButton.submit_button.button.button_search {
 }
 #loginDefault .forward {
 	width: 100%;
-	margin-top:0;
-	margin-bottom:0.5rem
+	margin-bottom:0rem;
+	margin-top:1rem !important;
 }
 div#loginDefault fieldset {
 	margin-bottom: 0px !important
@@ -892,6 +894,9 @@ div#createAcctDefault fieldset {
 	margin:0px !important
 }
 @media (min-width: 768px) {
+	#loginDefault .forward {
+		margin-top:0px !important;
+	}
 	#createAcctSuccess .button_accounts {
 		display:grid;
 		grid-template-columns: 1fr;
@@ -909,10 +914,6 @@ div#createAcctDefault fieldset {
 	#loginDefault input.cssButtonHover {
 		width:auto !important;
 	}
-	#loginDefault .forward {
-		margin-top:0;
-		margin-bottom:0
-}
 	#createAcctDefault input.submit_button {
 		width:auto !important;
 	}

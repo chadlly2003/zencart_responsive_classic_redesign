@@ -176,7 +176,6 @@ input, TEXTAREA{
 	border-radius: .25rem;
 	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	width: calc(100% - 25px) !important;
-	 
 }
 #navMain ul li {
 	border-right:1px solid #fff;
@@ -547,14 +546,11 @@ input.cssButton.submit_button.button.button_search {
 	background: cornsilk;
 	margin-bottom:1rem;
 	text-align: center;
-	 
 }
 #shoppingcartBody tr:nth-child(odd) {
 	background-color: aliceblue;
 	padding-top:10px;
 	padding-bottom:10px;
- 
-	 
 }
 #shoppingcartBody tr:nth-child(even) {
 	background-color: transparent;
@@ -562,8 +558,6 @@ input.cssButton.submit_button.button.button_search {
 	border-bottom:solid 1px #ccc;
 	padding-top:10px;
 	padding-bottom:10px;
-	 
-	
 }
 #shoppingcartBody th, td {
 	padding-top:0.5rem;
@@ -694,6 +688,9 @@ input.cssButton.submit_button.button.button_search {
 	position:absolute;
 	margin-top:2.8rem !important;
 }
+.max-qty br {
+	display:none !important;
+}
 .cartTotalsDisplay {
 	text-align: left;
 	color: blueviolet !important;
@@ -755,8 +752,9 @@ input.cssButton.submit_button.button.button_search {
 	margin-top:0rem;
 	padding-top:1.5rem !important;
 }
-#loginDefault .important {margin-bottom:1rem}
-
+#loginDefault .important {
+	margin-bottom:1rem
+}
 #loginDefault fieldset {
 	clear:both;
 }
@@ -768,7 +766,6 @@ input.cssButton.submit_button.button.button_search {
 #loginDefault LABEL.checkboxLabel, LABEL.radioButtonLabel {
 	padding:0px !important;
 	margin-top:4px !important;
-	 
 }
 #loginDefault .alert {
 	margin-top:1rem;
@@ -928,7 +925,7 @@ div#createAcctDefault fieldset {
 		float:left;
 	}
 	.onerow-fluid > .col670 {
-		width: 76% !important;
+		width: 77% !important;
 	}
 	.qty_cart_qty {
 		text-align:right !important;
@@ -963,10 +960,12 @@ div#createAcctDefault fieldset {
 		grid-template-columns: auto 1fr 2fr 1fr;
 		justify-content:center ;
 	}
-
 	.search_box input {
 		width:74% !important;
-}
+	}
+	.onerow-fluid > .col670 {
+		width: 78% !important;
+	}
 }
 @media (min-width: 1200px) {
 	.nav_spacer {
@@ -980,7 +979,4 @@ div#createAcctDefault fieldset {
 		margin-right:auto !important;
 		margin-bottom:2rem !important
 }
-	.onerow-fluid > .col670 {
-		width:77% !important;
-	}
 }

@@ -394,15 +394,12 @@ input[type="search"] {
 	background: #28a745 !important;
 	color: #fff !important;
 }
-
-
 #contactUsDefault .forward {
 	float:none !important;
 }
 #contactUsDefault .back {
 	float:none !important;
 }
-
 @media (min-width: 768px) {
 	#cartAdd {
 		display: flex;
@@ -526,7 +523,7 @@ input[type="search"] {
 	}
 	#accessibilityBody .buttonRow {
 		float:left !important
-	}
+}
 }
 @media (min-width: 992px) {
 	#cartAdd {

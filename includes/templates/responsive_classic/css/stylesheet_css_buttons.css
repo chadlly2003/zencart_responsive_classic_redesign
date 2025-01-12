@@ -39,13 +39,13 @@ span.normal_button {
 	margin:0;
 	padding: 9px 20px !important;
 	border-radius: 0.25rem;
-	background:#ffc107;
+	background:gold;
 	display:flex;
 	justify-content: center;
 }
 span.normal_button:hover {
 	opacity:0.5;
-	background:#ffc107;
+	background:gold;
 }
 span.cssButton.normal_button.button.button_more_reviews, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover{
 	display:block;
@@ -130,7 +130,7 @@ span.cssButton.normal_button.button.button_continue_shopping, .button_continue_s
 	padding:9px 20px;
 }
 span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.button.small_edit{
-	background:#666;
+	background:gold;
 }
 span.button_sold_out, span.button_sold_out:hover{
 	color:crimson;
@@ -367,7 +367,7 @@ input[type="search"] {
 	margin-top:1rem !important;
 	margin-bottom:1rem !important;
 }
-#shoppingcartBody .back {
+#shoppingcartBody .buttonRow .back{
 	float:none!important;
 }
 #shoppingcartBody .forward, #shoppingCartDefault #PPECbuttond {
@@ -378,7 +378,8 @@ input[type="search"] {
 	margin-bottom:0px !important;
 	margin-bottom:0px !important;
 	position: absolute;
-	margin-top:-135px;
+	margin-top:-161px;
+	width: auto !important;
 }
 #shoppingcartBody .button_shipping_estimator {
 	background:blueviolet !important;
@@ -393,6 +394,15 @@ input[type="search"] {
 	background: #28a745 !important;
 	color: #fff !important;
 }
+
+
+#contactUsDefault .forward {
+	float:none !important;
+}
+#contactUsDefault .back {
+	float:none !important;
+}
+
 @media (min-width: 768px) {
 	#cartAdd {
 		display: flex;
@@ -513,6 +523,9 @@ input[type="search"] {
 	.button.button_back {
 		margin-bottom:0px;
 		margin-top:0px;
+	}
+	#accessibilityBody .buttonRow {
+		float:left !important
 	}
 }
 @media (min-width: 992px) {

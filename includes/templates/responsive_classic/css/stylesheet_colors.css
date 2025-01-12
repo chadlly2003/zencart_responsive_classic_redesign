@@ -30,6 +30,7 @@ h2, h3, .cartAttribsList, #cart-box {
 }
 .alert {
 	color: #8b0000;
+	text-align: right;
 }
 legend, .specialsListBoxContents a, .centerBoxContentsAlsoPurch a, .centerBoxContentsFeatured a, .centerBoxContentsSpecials a, .centerBoxContentsNew a, .centerBoxContentsFeaturedCategories a {
 	color:#333;
@@ -175,6 +176,7 @@ input, TEXTAREA{
 	border-radius: .25rem;
 	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	width: calc(100% - 25px) !important;
+	 
 }
 #navMain ul li {
 	border-right:1px solid #fff;
@@ -363,16 +365,24 @@ input.cssButton.submit_button.button.button_search {
 	margin-right:15px !important;
 }
 #documentcategoriesHeading {
-	background:#ffc107;
-	border-radius: 5px;
+	background: transparent;
+	border-radius: 0px;
 	color:#000;
 	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
 }
 #categoriesHeading {
-	background: #cfd3c6;
-	border-radius: 5px;
+	background: transparent;
+	border-radius: 0px;
 	color:#000;
 	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
 }
 #reviewsHeading {
 	background: #cfd3c6;
@@ -537,11 +547,14 @@ input.cssButton.submit_button.button.button_search {
 	background: cornsilk;
 	margin-bottom:1rem;
 	text-align: center;
+	 
 }
 #shoppingcartBody tr:nth-child(odd) {
-	background-color: floralwhite;
+	background-color: aliceblue;
 	padding-top:10px;
 	padding-bottom:10px;
+ 
+	 
 }
 #shoppingcartBody tr:nth-child(even) {
 	background-color: transparent;
@@ -549,13 +562,16 @@ input.cssButton.submit_button.button.button_search {
 	border-bottom:solid 1px #ccc;
 	padding-top:10px;
 	padding-bottom:10px;
+	 
+	
 }
 #shoppingcartBody th, td {
 	padding-top:0.5rem;
 	padding-bottom:0.5rem;
 }
 #cartSubTotal {
-	border-top:none !important
+	border-top:none !important;
+	margin-bottom:1rem;
 }
 #shoppingcartBody .tableHeading {
 	background: transparent !important
@@ -643,7 +659,7 @@ input.cssButton.submit_button.button.button_search {
 	width:100%;
 }
 .search_box input {
-	width:74% !important;
+	width:73% !important;
 	padding: .375rem .75rem;
 	font-size: 1rem;
 	font-weight: 400;
@@ -680,6 +696,7 @@ input.cssButton.submit_button.button.button_search {
 }
 .cartTotalsDisplay {
 	text-align: left;
+	color: blueviolet !important;
 }
 #shippingEstimatorContent input {
 	width:calc(100% - 25px) !important;
@@ -735,8 +752,11 @@ input.cssButton.submit_button.button.button_search {
 	color:#000 !important;
 	margin-bottom: 1rem;
 	padding-bottom:1rem;
-	margin-top:1rem;
+	margin-top:0rem;
+	padding-top:1.5rem !important;
 }
+#loginDefault .important {margin-bottom:1rem}
+
 #loginDefault fieldset {
 	clear:both;
 }
@@ -899,7 +919,7 @@ div#createAcctDefault fieldset {
 	}
 	#indexProductList .qmax {
 		float:right;
-		margin-top:0.5rem;
+		margin-top:0;
 	}
 	#cart-box {
 		width:100% !important;
@@ -908,7 +928,7 @@ div#createAcctDefault fieldset {
 		float:left;
 	}
 	.onerow-fluid > .col670 {
-		width: 77% !important;
+		width: 76% !important;
 	}
 	.qty_cart_qty {
 		text-align:right !important;
@@ -943,6 +963,10 @@ div#createAcctDefault fieldset {
 		grid-template-columns: auto 1fr 2fr 1fr;
 		justify-content:center ;
 	}
+
+	.search_box input {
+		width:74% !important;
+}
 }
 @media (min-width: 1200px) {
 	.nav_spacer {
@@ -957,6 +981,6 @@ div#createAcctDefault fieldset {
 		margin-bottom:2rem !important
 }
 	.onerow-fluid > .col670 {
-		width:78% !important;
+		width:77% !important;
 	}
 }

@@ -92,10 +92,11 @@
 	}
 	/*bof center-boxes*/
 	.centerBoxContentsAlsoPurch, div.centerBoxContentsProducts.centeredContent, div.centerBoxContentsNew.centeredContent, div.categoryListBoxContents.centeredContent, div.centerBoxContentsAlsoPurch.centeredContent, div.centerBoxContentsFeatured.centeredContent, div.centerBoxContentsFeaturedCategories.centeredContent, div.centerBoxContentsSpecials.centeredContent, div.specialsListBoxContents, div.categoryListBoxContents {
-		width:48%!important;
+		width:50%!important;
 		height:auto;
 		margin:0;
 		padding:10px 0;
+		float:left !important;
 	}
 	/* side-boxes */
 	/* ADD {
@@ -222,7 +223,7 @@
 	div#loginDefault fieldset {
 		float:none;
 		width:100%;
-		margin-bottom:20px;
+		margin-bottom:1rem !important;
 		min-height:0;
 	}
 	div#createAcctDefault input[type="text"], div#createAcctDefault input[type="password"], div#createAcctDefault select {
@@ -327,19 +328,18 @@
 	}
 	/*account page*/
 	div#accountDefault table, div#accountDefault thead, div#accountDefault tbody, div#accountDefault th, div#accountDefault td, div#accountDefault tr {
-		display: block;
+        
 		clear:both;
 		height:auto;
 		text-align:left;
-		width:100%;
+	 	vertical-align: inherit;
+		text-align: center;
 	}
 	div#accountDefault tr td:nth-child(6) {
 		text-align:right;
-		border-bottom:20px solid #fff;
+		 
 	}
-	div#accountDefault tr th {
-		display:none;
-	}
+ 
 	div#accountDefault caption {
 		width:100%;
 	}
@@ -356,16 +356,17 @@
 		font-weight:normal;
 	}
 	#accountHistoryDefault .forward{
-		margin-top:30px;
+		 
 	}
 	#accountHistoryDefault .notice{
 		float:none;
-		text-align:center;
+		text-align:left;
 		margin-top:0;
 		font-size:110%;
 	}
 	#accountHistInfo table td{
 		border-bottom:3px solid #fff;
+	 
 	}
 	#addressBookDefault address{
 		float:none;

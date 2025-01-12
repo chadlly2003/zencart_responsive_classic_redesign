@@ -910,9 +910,11 @@ div#createAcctDefault fieldset {
 	}
 	#loginDefault input.submit_button {
 		width:auto !important;
+		margin-bottom:1rem;
 	}
 	#loginDefault input.cssButtonHover {
 		width:auto !important;
+		margin-bottom:1rem !important;
 	}
 	#createAcctDefault input.submit_button {
 		width:auto !important;

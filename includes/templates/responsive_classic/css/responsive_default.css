@@ -223,7 +223,7 @@
 	div#loginDefault fieldset {
 		float:none;
 		width:100%;
-		margin-bottom:1rem !important;
+		margin-bottom:0rem !important;
 		min-height:0;
 	}
 	div#createAcctDefault input[type="text"], div#createAcctDefault input[type="password"], div#createAcctDefault select {
@@ -328,18 +328,15 @@
 	}
 	/*account page*/
 	div#accountDefault table, div#accountDefault thead, div#accountDefault tbody, div#accountDefault th, div#accountDefault td, div#accountDefault tr {
-        
 		clear:both;
 		height:auto;
 		text-align:left;
-	 	vertical-align: inherit;
+		vertical-align: inherit;
 		text-align: center;
 	}
 	div#accountDefault tr td:nth-child(6) {
 		text-align:right;
-		 
 	}
- 
 	div#accountDefault caption {
 		width:100%;
 	}
@@ -356,7 +353,6 @@
 		font-weight:normal;
 	}
 	#accountHistoryDefault .forward{
-		 
 	}
 	#accountHistoryDefault .notice{
 		float:none;
@@ -366,7 +362,6 @@
 	}
 	#accountHistInfo table td{
 		border-bottom:3px solid #fff;
-	 
 	}
 	#addressBookDefault address{
 		float:none;

@@ -388,7 +388,6 @@ input[type="search"] {
 #shoppingcartBody .button_continue_shopping {
 	background: darkgray !important;
 	color:#fff !important;
-	margin-top:1rem;
 }
 #shoppingcartBody .button_checkout {
 	background: #28a745 !important;
@@ -399,6 +398,23 @@ input[type="search"] {
 }
 #contactUsDefault .back {
 	float:none !important;
+}
+#timeoutDefault legend {
+	color:#000 !important;
+}
+#timeoutDefault .forward {
+	margin-top:1rem;
+	float:none !important;
+	margin-bottom:0.5rem;
+}
+@media (min-width:576px) {
+	#shoppingcartBody input[type="image"] {
+		margin-top:-106px;
+	}
+	#timeoutDefault .forward {
+		margin-top:0rem;
+		float:right !important;
+	}
 }
 @media (min-width: 768px) {
 	#cartAdd {
@@ -497,8 +513,8 @@ input[type="search"] {
 		background: darkmagenta !important;
 		color:#fff !important;
 		margin-top:0rem;
-		margin-right:1rem;
-	}
+		margin-bottom:0px !important
+}
 	#shoppingcartBody .back {
 		float:left!important;
 		margin-top:0rem !important;
@@ -508,7 +524,6 @@ input[type="search"] {
 		margin-top:1rem !important;
 	}
 	#shoppingcartBody .forward, #shoppingCartDefault #PPECbuttond {
-		float:right!important;
 		text-align: center;
 	}
 	.button_continue_shopping {

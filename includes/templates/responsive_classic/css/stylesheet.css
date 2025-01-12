@@ -2509,11 +2509,12 @@ LABEL.checkboxLabel {
 #contactUsForm {
 	margin-bottom:1rem;
 }
-
-#checkoutPayment input.submit_button {margin-top:1rem !important;}
-
-fieldset input[type=radio] {outline:none !important;}
-
+#checkoutPayment input.submit_button {
+	margin-top:1rem !important;
+}
+fieldset input[type=radio] {
+	outline:none !important;
+}
 @media (min-width: 576px) {
 	.cartAttribsList {
 		padding-left:4rem;
@@ -2569,9 +2570,15 @@ fieldset input[type=radio] {outline:none !important;}
 	}
 }
 @media (min-width: 768px) {
-	#checkoutPayment input.submit_button {margin-top:0rem !important;}
-	#checkoutShipping .continue {margin-top:0px !important;}
-	#checkoutPayment .button_continue_checkout:hover {margin-top:0px !important}
+	#checkoutPayment input.submit_button {
+		margin-top:0rem !important;
+	}
+	#checkoutShipping .continue {
+		margin-top:0px !important;
+	}
+	#checkoutPayment .button_continue_checkout:hover {
+		margin-top:0px !important
+}
 	#addressBookDefault .otherbuttuns {
 		display:grid;
 		grid-template-columns: 1fr 1fr;

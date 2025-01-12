@@ -2325,6 +2325,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 #checkoutShipping .continue {
 	margin-bottom:1rem;
+	margin-top:1rem;
 	float:none !important
 }
 #checkoutShipping .button_continue_checkout:hover {
@@ -2355,6 +2356,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 #checkoutPayment .button_continue_checkout:hover {
 	opacity:0.5 !important;
+	margin-top:1rem !important;
 }
 #checkoutPayment .button_continue_checkout {
 	margin-bottom:1rem;
@@ -2507,6 +2509,11 @@ LABEL.checkboxLabel {
 #contactUsForm {
 	margin-bottom:1rem;
 }
+
+#checkoutPayment input.submit_button {margin-top:1rem !important;}
+
+fieldset input[type=radio] {outline:none !important;}
+
 @media (min-width: 576px) {
 	.cartAttribsList {
 		padding-left:4rem;
@@ -2562,6 +2569,9 @@ LABEL.checkboxLabel {
 	}
 }
 @media (min-width: 768px) {
+	#checkoutPayment input.submit_button {margin-top:0rem !important;}
+	#checkoutShipping .continue {margin-top:0px !important;}
+	#checkoutPayment .button_continue_checkout:hover {margin-top:0px !important}
 	#addressBookDefault .otherbuttuns {
 		display:grid;
 		grid-template-columns: 1fr 1fr;

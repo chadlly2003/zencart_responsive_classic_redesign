@@ -881,7 +881,28 @@ div#createAcctDefault fieldset {
 		grid-template-columns: 2fr 2fr 1fr;
 	}
 }
+#createAcctSuccess .button_accounts {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	gap:1rem;
+	margin-top:2rem !important;
+}
+#createAcctSuccess span.cssButton.normal_button.button.small_edit {
+	margin-top:0px !important;
+	margin:0px !important
+}
 @media (min-width: 768px) {
+	#createAcctSuccess .button_accounts {
+		display:grid;
+		grid-template-columns: 1fr;
+		gap:1rem;
+		margin-top:0rem !important;
+		float:right;
+	}
+	#createAcctSuccess .fowardcontinue {
+		float:left !important;
+		margin-top:-4.3rem !important;
+	}
 	#loginDefault input.submit_button {
 		width:auto !important;
 	}
@@ -960,9 +981,6 @@ div#createAcctDefault fieldset {
 		grid-template-columns: auto 1fr 2fr 1fr;
 		justify-content:center ;
 	}
-	.search_box input {
-		width:74% !important;
-	}
 	.onerow-fluid > .col670 {
 		width: 78% !important;
 	}
@@ -970,6 +988,9 @@ div#createAcctDefault fieldset {
 @media (min-width: 1200px) {
 	.nav_spacer {
 		grid-template-columns: auto 1fr 3fr 1fr;
+	}
+	.search_box input {
+		width:74% !important;
 	}
 }
 @media (min-width: 1300px) {

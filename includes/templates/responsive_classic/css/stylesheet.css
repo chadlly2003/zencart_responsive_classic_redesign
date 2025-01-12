@@ -2161,10 +2161,24 @@ input[type="radio"], input[type="checkbox"] {
 #addressBookDefault .button.small_edit {
 	margin-top:2rem !important;
 	margin-bottom:1rem;
+	margin-left:auto !important;
+	margin-right:auto !important;
 }
 #addressBookDefault .button_back {
 	margin-top:1rem !important;
 	margin-bottom:1rem;
+}
+#addressBookDefault .otherbuttuns {
+	display:grid;
+	grid-template-rows: 1fr;
+}
+#addressBookDefault .otherbuttuns2{
+	display:grid;
+	grid-template-rows: 1fr;
+}
+#addressBookDefault .small_edit {
+	margin-left:0px !important;
+	margin-left:auto !important;
 }
 #accountDefault Address {
 	display:none;
@@ -2548,6 +2562,20 @@ LABEL.checkboxLabel {
 	}
 }
 @media (min-width: 768px) {
+	#addressBookDefault .otherbuttuns {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		gap:1rem;
+		margin-top:2rem;
+	}
+	#addressBookDefault .otherbuttuns2{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		gap:1rem;
+	}
+	#addressbookprocessBody .button.button_back {
+		margin-top:1rem !important
+}
 	#contactUsForm {
 		margin-bottom:0rem;
 	}
@@ -2656,4 +2684,20 @@ LABEL.checkboxLabel {
 		border-bottom:solid 1px #ccc;
 		padding-bottom:1rem !important;
 	}
+}
+@media (min-width: 992px) {
+	#addressBookDefault .otherbuttuns {
+		display:grid;
+		grid-template-rows: 1fr;
+		gap:1rem;
+		margin-top:2rem;
+		float:right;
+	}
+	#addressBookDefault .otherbuttuns2{
+		display:grid;
+		grid-template-rows: 1fr;
+		gap:1rem;
+		float:left !important;
+		margin-top:-3.5rem !important
+}
 }

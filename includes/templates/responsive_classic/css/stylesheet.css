@@ -1905,7 +1905,28 @@ select option{
 input[type="checkbox"] {
 	outline:none !important;
 }
+.checkoutcontainer {
+	display:flex;
+	flex-direction:column;
+	gap:1rem;
+}
+.information2 {
+	line-height: 150%;
+	background:lavender !important;
+	padding: 6px;
+	margin-bottom: 1rem !important;
+}
+#passwordForgotten fieldset {
+	margin-bottom:1rem !important;
+}
+#seQuoteResults tr {
+	border:none !important;
+}
 @media (min-width: 576px) {
+	#shoppingcartBody .forward {
+		order:2;
+		flex-grow: 2;
+	}
 	#shoppingcartBody .tableHeading {
 		width: 100% !important;
 		display: grid !important;
@@ -1946,8 +1967,26 @@ input[type="checkbox"] {
 		margin-right:0.5rem;
 		margin-left:0.5rem;
 	}
+	.checkoutcontainer {
+		display:flex;
+		flex-direction: row;
+		gap:1 !important;
+	}
 }
 @media (min-width: 768px) {
+	#passwordForgotten fieldset {
+		margin-bottom:0rem !important;
+	}
+	#shoppingcartBody .forward {
+		order:2;
+		flex-grow: 0;
+	}
+	.shippingestimaterb {
+		float:left;
+	}
+	#shoppingcartBody .forward {
+		margin-left:auto;
+	}
 	#shippingEstimatorContent .cartTotalDisplay {
 		margin-top:0px;
 	}
@@ -2033,6 +2072,14 @@ input[type="checkbox"] {
 }
 }
 @media (min-width: 992px) {
+	#shoppingcartBody .forward {
+		order:2;
+		flex-grow: 0;
+		margin-left:auto;
+	}
+	.continueshoppingb {
+		flex-grow: 0
+}
 	.cat-count {
 		display:inline !important;
 	}
@@ -2595,12 +2642,6 @@ fieldset input[type=radio] {
 }
 	#contactUsForm {
 		margin-bottom:0rem;
-	}
-	.continueshoppingb {
-		float:left;
-	}
-	.shippingestimaterb {
-		float:left;
 	}
 	#checkoutConfirmDefault .editelement span.cssButton.normal_button.button.small_edit {
 		float:right;

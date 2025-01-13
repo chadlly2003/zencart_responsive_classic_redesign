@@ -1913,9 +1913,10 @@ input[type="checkbox"] {
 }
 .information2 {
 	line-height: 150%;
-	background:lavender !important;
+	background:transparent !important;
 	padding: 6px;
 	margin-bottom: 1rem !important;
+	color:crimson;
 }
 #passwordForgotten fieldset {
 	margin-bottom:1rem !important;
@@ -1923,6 +1924,19 @@ input[type="checkbox"] {
 #seQuoteResults tr {
 	border:none !important;
 }
+#accountEditDefault LABEL.radioButtonLabel {
+	float:left; 
+	margin-right:1rem !important;
+}
+
+#createAcctDefault LABEL.radioButtonLabel {
+	float:left; 
+	margin-right:1rem !important;
+}
+#createAcctDefault input[type="checkbox"] {
+	margin-top:4px !important;
+}
+
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {
 		order:2;

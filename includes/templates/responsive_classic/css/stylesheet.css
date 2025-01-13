@@ -2184,7 +2184,8 @@ input[type="radio"], input[type="checkbox"] {
 	margin-top:1rem;
 }
 #addressbookprocessBody .button_update:hover {
-	opacity:0.5 
+	opacity:0.5 ;
+	margin-top:1rem !important;
 }
 #accountpasswordBody .forward {
 	float: none !important;
@@ -2642,7 +2643,7 @@ fieldset input[type=radio] {
 	   margin-top:0rem !important 
    }
 	#addressBookProcessDefault input.submit_button {
-	   margin-top:0rem;
+	   margin-top:1rem;
    }
 	#checkoutPayment input.submit_button {
 		margin-top:0rem !important;
@@ -2694,7 +2695,7 @@ fieldset input[type=radio] {
 	#checkoutPayAddressDefault .continuenext {
 		float:right !important;
 		margin-top:2rem;
-		margin-bottom:0rem;
+		margin-bottom:1rem;
    }
 	#checkoutPayAddressDefault .continueback {
 		float:left !important;

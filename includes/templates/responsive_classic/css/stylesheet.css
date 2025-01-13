@@ -2584,6 +2584,12 @@ fieldset input[type=radio] {
 #addressBookProcessDefault input.submit_button {
    margin-top:1rem;
 }
+
+#select-manufacturers_id {
+	outline:none !important;
+}
+
+
 @media (min-width: 576px) {
 	.cartAttribsList {
 		padding-left:4rem;

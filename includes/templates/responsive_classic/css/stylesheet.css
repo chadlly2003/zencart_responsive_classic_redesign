@@ -1,4 +1,5 @@
- /*** Main CSS Stylesheet** @copyright Copyright 2003-2024 Zen Cart Development Team* @copyright Portions Copyright 2003 osCommerce* @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0* @version $Id: Jeff Rutt 2024 Sep 11 Modified in v2.1.0 $*/
+ 
+/*** Main CSS Stylesheet** @copyright Copyright 2003-2024 Zen Cart Development Team* @copyright Portions Copyright 2003 osCommerce* @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0* @version $Id: Jeff Rutt 2024 Sep 11 Modified in v2.1.0 $*/
 /*bof basic elements*/
 body {
 	margin:0;
@@ -257,7 +258,7 @@ select#country, select#stateZone, #state {
 	margin:0px;
 	padding:0px;
 	font-size:1.1em;
-	border:none !important
+	border:none !important 
 }
 #currenciesContent select{
 	height:35px;
@@ -273,7 +274,7 @@ select#country, select#stateZone, #state {
 	background: transparent !important;
 }
 .messageStackWarning img, .messageStackError img, .messageStackSuccess img, .messageStackCaution img {
-	display:none
+	display:none 
 }
 /*bof wrappers - page or section containers*/
 #mainWrapper{
@@ -654,7 +655,7 @@ ul.list-links li:hover, ol.list-links li:hover{
 }
 /*bof shopping cart*/
 .tableHeading TH {
-	padding:0.5rem !important
+	padding:0.5rem !important 
 }
 .tableHeading{
 }
@@ -813,7 +814,7 @@ div#checkoutShippingContentChoose{
 	width:200px !important;
 }
 #productreviewsBody .forward, #shoppingCartDefault #PPECbutton {
-	float:none !important
+	float:none !important 
 }
 .cartImage {
 }
@@ -1052,11 +1053,11 @@ span.list-addtext{
 	padding: 1em 0;
 }
 .gridlayout .list-image {
-	float:none
+	float:none 
 }
 .gridlayout .list-image {
 	min-height: revert;
-	min-width: revert
+	min-width: revert 
 }
 .gridlayout .list-image {
 	margin-right: inherit;
@@ -1066,19 +1067,19 @@ span.list-addtext{
 }
 #productListing .gridlayout .list-more {
 	margin: auto;
-	width: 30%
+	width: 30% 
 }
 #indexCategories .gridlayout .list-more {
 	margin: auto;
-	width: 30%
+	width: 30% 
 }
 .gridlayout .itemTitle {
 	width:90%;
-	margin:5px auto
+	margin:5px auto 
 }
 .gridlayout .listingDescription {
 	width:90%;
-	margin:10px auto
+	margin:10px auto 
 }
 .gridlayout .cart-add {
 	float:none;
@@ -1086,7 +1087,7 @@ span.list-addtext{
 .gridlayout .list-input {
 	float:none;
 	width:30%;
-	margin:auto
+	margin:auto 
 }
 /*bof new, featured, all listing (old style when each had their own listing page, not using main .productListing */
 .listing-wrapper:nth-child(odd) {
@@ -1545,13 +1546,13 @@ h2.greeting a:hover{
 }
 /* markup for tables used to present tabular data */
 .alignLeft {
-	text-align: left
+	text-align: left 
 }
 .alignCenter {
-	text-align: center
+	text-align: center 
 }
 .alignRight {
-	text-align: right
+	text-align: right 
 }
 table, .tabTable{
 	width:100%;
@@ -1666,19 +1667,19 @@ span#askAQuestionButton:hover {
 	max-width: 500px;
 }
 #whatsNew br {
-	display:none !important
+	display:none !important 
 }
 .centerBoxContentsAlsoPurch br {
-	display:none !important
+	display:none !important 
 }
 #featuredProducts br {
-	display:none !important
+	display:none !important 
 }
 #cartAdd {
-	margin-bottom:3rem !important
+	margin-bottom:3rem !important 
 }
 .qty_cart_qty p {
-	margin-top:-2.7rem !important
+	margin-top:-2.7rem !important 
 }
 caption {
 	color:crimson;
@@ -1846,10 +1847,10 @@ caption {
 	width: 100%;
 	padding:0px !important;
 	display:block;
-	color:crimson
+	color:crimson 
 }
 #popupShippingEstimator #stText {
-	display:none !important
+	display:none !important 
 }
 #popupShippingEstimator #state {
 	margin-bottom:0px !important;
@@ -1926,172 +1927,172 @@ input[type="checkbox"] {
 	#shoppingcartBody .forward {
 		order:2;
 		flex-grow: 2;
-	}
+   }
 	#shoppingcartBody .tableHeading {
 		width: 100% !important;
 		display: grid !important;
 		grid-template-columns: 1fr 3fr 1fr 1fr;
-	}
+   }
 	#shoppingcartBody .rowEven {
 		display: grid !important;
 		grid-template-columns:1fr 3fr 1fr 1fr;
-	}
+   }
 	#shoppingcartBody .rowOdd {
 		display: grid !important;
 		grid-template-columns: 1fr 3fr 1fr 1fr;
-	}
+   }
 	.cartRemoveItemDisplay {
 		display: table-cell !important;
-	}
+   }
 	.cartImage {
 		display:block;
-	}
+   }
 	#cartContentsDisplay .cartImage {
 		margin-top:0px !important;
-	}
+   }
 	#productinfoBody #productPrices img {
 		float:right;
 		margin-top:-70px !important;
 		margin:2rem;
 		margin-bottom:0px;
-	}
+   }
 	#pinfo-right #freeShippingIcon {
 		float: right;
 		margin-top: -70px !important;
 		margin-right:2rem !important;
 		margin-bottom:0px !important;
 		margin-bottom:0px;
-	}
+   }
 	.cartProductDisplay img {
 		display:block;
 		margin-right:0.5rem;
 		margin-left:0.5rem;
-	}
+   }
 	.checkoutcontainer {
 		display:flex;
 		flex-direction: row;
 		gap:1 !important;
-	}
+   }
 }
 @media (min-width: 768px) {
 	#passwordForgotten fieldset {
 		margin-bottom:0rem !important;
-	}
+   }
 	#shoppingcartBody .forward {
 		order:2;
 		flex-grow: 0;
-	}
+   }
 	.shippingestimaterb {
 		float:left;
-	}
+   }
 	#shoppingcartBody .forward {
 		margin-left:auto;
-	}
+   }
 	#shippingEstimatorContent .cartTotalDisplay {
 		margin-top:0px;
-	}
+   }
 	#shippingEstimatorContent .seDisplayedAddressLabel {
 		display:revert;
 		padding-bottom:1rem !important;
-	}
+   }
 	#shippingEstimatorContent td{
 		padding:10px;
-	}
+   }
 	.list-image{
 		float:left;
 		margin-right:1rem;
-	}
+   }
 	.list-price {
 		float:left;
 		margin-right:1rem;
-	}
+   }
 	.list-more {
 		text-align: right;
 		float:right;
 		margin-top:0px;
 		margin-bottom:0px;
 		margin-left:6px;
-	}
+   }
 	#productListing .qmax {
 		float:right;
-	}
+   }
 	#productMainImage img {
 		margin-bottom:1rem;
-	}
+   }
 	.cartTotalDisplay {
 		display:block !important;
-	}
+   }
 	#scUpdateQuantity {
 		display:block !important;
-	}
+   }
 	#scTotalHeading {
 		text-align: center !important;
 		display: block !important;
-	}
+   }
 	#shoppingcartBody .tableHeading {
 		width: 100% !important;
 		display: grid !important;
 		grid-template-columns: 2fr 1fr 5fr 2fr 3fr 3fr;
-	}
+   }
 	.cartRemoveItemDisplay {
 		text-align: right;
-	}
+   }
 	#shoppingCartDefault input[type="checkbox"] {
 		display: inline !important;
 		vertical-align: super;
 		margin-top:.4rem !important;
 		float: right !important;
-	}
+   }
 	.cartQuantityUpdate {
 		display:initial !important;
 		text-align: left;
-	}
+   }
 	#shoppingcartBody #scRemoveHeading {
 		display:table-cell !important;
-	}
+   }
 	#shoppingcartBody input[type="image"] {
 		position: relative !important;
 		margin-top:0px !important;
 		width:30px !important;
 		background: none;
-	}
+   }
 	#shoppingcartBody input[type="image"]:last-of-type {
 		display:none !important;
-	}
+   }
 	#shoppingcartBody .rowEven {
 		display: grid !important;
 		grid-template-columns: 2fr 1fr 5fr 2fr 3fr 3fr;
-	}
+   }
 	#shoppingcartBody .rowOdd {
 		display: grid !important;
 		grid-template-columns: 2fr 1fr 5fr 2fr 3fr 3fr;
-	}
+   }
 	.cartTotalsDisplay {
 		margin-top:1rem;
-		margin-bottom:1rem !important
-}
+		margin-bottom:1rem !important 
+   }
 }
 @media (min-width: 992px) {
 	#shoppingcartBody .forward {
 		order:2;
 		flex-grow: 0;
 		margin-left:auto;
-	}
+   }
 	.continueshoppingb {
-		flex-grow: 0
-}
+		flex-grow: 0 
+   }
 	.cat-count {
 		display:inline !important;
-	}
+   }
 	#pinfo-left{
 		float:left;
 		width:43%;
-	}
+   }
 	#pinfo-right {
 		width:50% !important;
 		float:right;
 		padding:1rem !important;
-	}
+   }
 }
 .CenterBoxContentsNew .back {
 	float:left !important;
@@ -2101,7 +2102,7 @@ input[type="checkbox"] {
 }
 input[type="radio"], input[type="checkbox"] {
 	float:left !important;
-	width:auto !important
+	width:auto !important 
 }
 #gvFaqDefaultSubHeading, #checkoutPayAddressDefaultAddress, #checkoutShipAddressDefaultAddress, #accountLinksWrapper h2, h2#addressBookDefaultPrimary {
 	text-align:left;
@@ -2148,6 +2149,10 @@ input[type="radio"], input[type="checkbox"] {
 	border-bottom: solid 1px #ccc;
 	margin-bottom:2rem;
 }
+#accountNotifications fieldset .notice {
+   padding-left:6px;
+	padding-right:6px;
+}
 #accountNotifications .button_update:hover {
 	opacity: 0.5;
 }
@@ -2166,6 +2171,9 @@ input[type="radio"], input[type="checkbox"] {
 #addressbookprocessBody .forward {
 	float: none !important;
 }
+.button_delete {
+   margin-top:1rem !important;
+}
 #addressbookprocessBody .back {
 	float: none !important;
 }
@@ -2176,7 +2184,7 @@ input[type="radio"], input[type="checkbox"] {
 	margin-top:1rem;
 }
 #addressbookprocessBody .button_update:hover {
-	opacity:0.5
+	opacity:0.5 
 }
 #accountpasswordBody .forward {
 	float: none !important;
@@ -2206,7 +2214,7 @@ input[type="radio"], input[type="checkbox"] {
 	float: none !important;
 }
 #addressBookDefault .button.small_edit {
-	margin-top:2rem !important;
+	margin-top:1rem !important;
 	margin-bottom:1rem;
 	margin-left:auto !important;
 	margin-right:auto !important;
@@ -2278,7 +2286,7 @@ input[type="radio"], input[type="checkbox"] {
 	display: list-item !important;
 	float: left;
 	padding:0px !important;
-	margin-left:2rem !important
+	margin-left:2rem !important 
 }
 #accountHistInfo #myAccountShipInfo h3, #accountHistInfo #myAccountPaymentInfo h3 {
 	color:cornflowerblue;
@@ -2307,7 +2315,7 @@ input[type="radio"], input[type="checkbox"] {
 	padding:0.5rem !important;
 }
 #accountHistInfo table th {
-	padding:0.5rem !important
+	padding:0.5rem !important 
 }
 #accountHistInfo .accountTotalDisplay {
 	text-align: center !important;
@@ -2329,7 +2337,7 @@ input[type="radio"], input[type="checkbox"] {
 	margin-top:0px !important;
 }
 #accountHistInfo #orderHistoryStatus {
-	margin-top:2rem !important
+	margin-top:2rem !important 
 }
 #checkoutShipping .button_change_address {
 	margin-bottom:1.5rem !important;
@@ -2346,7 +2354,7 @@ input[type="radio"], input[type="checkbox"] {
 	padding-top:6px;
 }
 #checkoutShipping LABEL.checkboxLabel {
-	height:auto !important
+	height:auto !important 
 }
 #checkoutShipping .changeaddress {
 	display:block;
@@ -2368,12 +2376,12 @@ input[type="radio"], input[type="checkbox"] {
 }
 #comments legend {
 	border-bottom:none !important;
-	padding-bottom:0px !important
+	padding-bottom:0px !important 
 }
 #checkoutShipping .continue {
 	margin-bottom:1rem;
 	margin-top:1rem;
-	float:none !important
+	float:none !important 
 }
 #checkoutShipping .button_continue_checkout:hover {
 	opacity:0.5 !important;
@@ -2399,7 +2407,7 @@ input[type="radio"], input[type="checkbox"] {
 	margin-left:2rem !important;
 }
 #checkoutPayment .payment br {
-	display:none !important
+	display:none !important 
 }
 #checkoutPayment .button_continue_checkout:hover {
 	opacity:0.5 !important;
@@ -2420,7 +2428,7 @@ input[type="radio"], input[type="checkbox"] {
 	color:cornflowerblue !important;
 }
 #checkoutPayment .inputLabel {
-	color:green !important
+	color:green !important 
 }
 #checkoutPayment p:first-of-type {
 	margin-top:-0.5rem;
@@ -2429,7 +2437,7 @@ input[type="radio"], input[type="checkbox"] {
 	margin-bottom:1rem;
 }
 #checkoutPayment #checkoutOrderTotals {
-	margin-bottom:1rem !important
+	margin-bottom:1rem !important 
 }
 #checkoutPayment .payment {
 	margin-top:1rem;
@@ -2452,7 +2460,7 @@ input[type="radio"], input[type="checkbox"] {
 	margin-bottom:1rem;
 }
 #checkoutNewAddress {
-	margin-top:1rem !important
+	margin-top:1rem !important 
 }
 #checkoutPayAddressDefault .continuenext {
 	float:none !important;
@@ -2487,16 +2495,16 @@ input[type="radio"], input[type="checkbox"] {
 }
 #checkoutConfirmDefault .confirm-order {
 	margin-top:1rem !important;
-	margin-bottom:1rem !important
+	margin-bottom:1rem !important 
 }
 #checkoutConfirmDefault input.cssButtonHover {
 	opacity:0.5 !important;
 }
 #checkoutConfirmDefault address{
-	margin-bottom:1.5rem !important
+	margin-bottom:1.5rem !important 
 }
 #checkoutConfirmDefault .important {
-	margin-bottom:1rem !important
+	margin-bottom:1rem !important 
 }
 #checkoutConfirmDefaultPaymentTitle {
 	color:green;
@@ -2523,7 +2531,7 @@ input[type="radio"], input[type="checkbox"] {
 	margin-right:0px !important;
 }
 #checkoutConfirmDefault .important {
-	font-weight:normal !important
+	font-weight:normal !important 
 }
 #checkoutConfirmDefault .cartAttribsList {
 	padding-left:1rem !important;
@@ -2562,200 +2570,216 @@ LABEL.checkboxLabel {
 fieldset input[type=radio] {
 	outline:none !important;
 }
+#accountEditDefault fieldset {
+	margin-bottom:1rem;
+}
+#addressBookProcessDefault select#country {
+   margin-bottom:0.5rem !important
+}
+#addressBookProcessDefault input.cssButtonHover {
+   opacity:0.5 !important;
+   margin-top:1rem !important 
+}
+#addressBookProcessDefault input.submit_button {
+   margin-top:1rem;
+}
 @media (min-width: 576px) {
 	.cartAttribsList {
 		padding-left:4rem;
-	}
+   }
 	#checkoutPayment .button_change_address {
 		float:right !important;
 		margin:1rem;
-	}
+   }
 	#checkoutShipping .button_change_address {
 		float:right !important;
 		margin:1rem;
-	}
+   }
 	#accountHistoryDefault .forward {
 		float:right !important;
 		margin-top:-2.2rem !important;
-	}
+   }
 	#accountHistoryDefault .back {
 		margin-right:1rem !important;
 		display:inline !important;
 		width: 50%;
-	}
+   }
 	#accountHistoryDefault legend {
 		margin-bottom:0px;
-	}
+   }
 	#accountHistoryDefault .navSplitPagesResult {
-		margin-top:2rem !important
-}
+		margin-top:2rem !important 
+   }
 	#orderTotals#accountDefault Address {
 		display:block;
-	}
+   }
 	#accountDefault .tableHeading th:nth-of-type(1) {
 		display:table-cell !important;
-	}
+   }
 	#accountDefault .tableHeading th:nth-of-type(3) {
 		display:table-cell !important;
-	}
+   }
 	#accountDefault .accountOrderDate {
 		display:table-cell;
-	}
+   }
 	#accountDefault .accountOrderAddress {
 		display:table-cell;
-	}
+   }
 	.successicons {
 		display:flex;
 		margin-top: 2rem;
 		margin-bottom: 2rem;
 		justify-content: space-evenly;
 		flex-direction: row;
-	}
+   }
 	#linkMyAccount {
 		margin-top:0rem !important;
 		margin-bottom:0rem;
-	}
+   }
 }
 @media (min-width: 768px) {
+	#addressBookProcessDefault input.cssButtonHover {
+	   margin-top:0rem !important 
+   }
+	#addressBookProcessDefault input.submit_button {
+	   margin-top:0rem;
+   }
 	#checkoutPayment input.submit_button {
 		margin-top:0rem !important;
-	}
+   }
 	#checkoutShipping .continue {
 		margin-top:0px !important;
-	}
+   }
 	#checkoutPayment .button_continue_checkout:hover {
-		margin-top:0px !important
-}
+		margin-top:0px !important 
+   }
 	#addressBookDefault .otherbuttuns {
 		display:grid;
 		grid-template-columns: 1fr 1fr;
 		gap:1rem;
 		margin-top:2rem;
-	}
+   }
 	#addressBookDefault .otherbuttuns2{
 		display:grid;
 		grid-template-columns: 1fr 1fr;
 		gap:1rem;
-	}
+   }
 	#addressbookprocessBody .button.button_back {
-		margin-top:1rem !important
-}
+		margin-top:1rem !important 
+   }
 	#contactUsForm {
 		margin-bottom:0rem;
-	}
+   }
 	#checkoutConfirmDefault .editelement span.cssButton.normal_button.button.small_edit {
 		float:right;
 		margin:1rem !important;
-	}
+   }
 	#checkoutConfirmDefault span.normal_button:hover {
 		float:right;
 		margin:1rem !important;
-	}
+   }
 	#checkoutShipAddressDefault .continuenext {
 		float:right !important;
 		margin-top:2rem;
 		margin-bottom:0rem;
-	}
+   }
 	#checkoutShipAddressDefault .continueback {
 		float:left !important;
 		margin-top:1rem;
 		margin-bottom:0rem;
-	}
+   }
 	.shippingmethodelement {
 		margin-top:-2rem !important;
-	}
+   }
 	#checkoutPayAddressDefault .continuenext {
 		float:right !important;
 		margin-top:2rem;
 		margin-bottom:0rem;
-	}
+   }
 	#checkoutPayAddressDefault .continueback {
 		float:left !important;
 		margin-top:1rem;
 		margin-bottom:0rem;
-	}
+   }
 	#checkoutPayment #paymentSubmit {
 		float:right;
-	}
+   }
 	#checkoutShipping .continue {
-		float:right!important
-}
+		float:right!important 
+   }
 	#accountHistInfo .orderdate {
 		text-align:right !important;
-	}
+   }
 	#acctNewslettersDefault .forward {
 		float: right !important;
-	}
+   }
 	#acctNewslettersDefault .back {
 		float: left !important;
-	}
+   }
 	#accountNotifications .forward {
 		float: right !important;
-	}
+   }
 	#accountNotifications .back {
 		float: left !important;
-	}
+   }
 	#addressbookprocessBody .forward {
 		float: right !important;
-	}
+   }
 	#addressbookprocessBody .back {
 		float: left !important;
-	}
+   }
 	#accountpasswordBody .forward {
 		float: right !important;
-	}
+   }
 	#accountpasswordBody .back {
 		float: left !important;
-	}
+   }
 	#accountpasswordBody .button_submit {
 		margin-top:1rem;
-	}
+   }
 	#accountpasswordBody .button_back {
 		margin-top:1rem;
-	}
+   }
 	#accounteditBody .forward {
 		float: right !important;
-	}
+   }
 	#accounteditBody .back {
 		float: left !important;
-	}
+   }
 	#addressBookDefault .forward {
 		float: right !important;
-	}
+   }
 	#addressBookDefault .button.small_edit {
 		margin-top:0rem !important;
 		margin-bottom:1rem;
-	}
+   }
 	#addressBookDefault .button_back {
 		margin-top:0rem !important;
 		margin-bottom:0rem;
 		float:left;
-	}
+   }
 	#addressBookDefault span.normal_button {
 		margin-bottom:1rem !important;
-	}
+   }
 	#addressBookDefault .clearBoth {
 		display:none;
-	}
+   }
 	#checkoutConfirmDefault #checkoutConfirmDefaultHeadingCart {
 		color:cornflowerblue;
 		border-bottom:solid 1px #ccc;
 		padding-bottom:1rem !important;
-	}
+   }
 }
 @media (min-width: 992px) {
 	#addressBookDefault .otherbuttuns {
-		display:grid;
-		grid-template-rows: 1fr;
+		display:flex;
+		justify-content:space-between;
 		gap:1rem;
-		margin-top:2rem;
-		float:right;
-	}
+		margin-top:0rem;
+   }
 	#addressBookDefault .otherbuttuns2{
-		display:grid;
-		grid-template-rows: 1fr;
 		gap:1rem;
-		float:left !important;
-		margin-top:-3.5rem !important
-}
+		display:flex;
+		justify-content:space-between;
+   }
 }

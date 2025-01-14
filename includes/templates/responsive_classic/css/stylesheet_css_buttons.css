@@ -65,7 +65,7 @@ span.cssButton.normal_button.button.button_goto_prod_details{
 	background: transparent !important;
 	font-size: 16px;
 	opacity:1;
-	color: cornflowerblue;
+	color: #154DBC;
 }
 #productreviewsBody .button_goto_prod_details:hover {
 	background: transparent !important;
@@ -73,7 +73,7 @@ span.cssButton.normal_button.button.button_goto_prod_details{
 	opacity:1;
 	font-size:16px !important;
 	opacity: 1;
-	color: cornflowerblue;
+	color: #154DBC;
 }
 #productreviewsBody span.cssButton.normal_button.button.button_goto_prod_details:hover {
 	background: transparent !important;
@@ -291,7 +291,7 @@ input[type="search"] {
 }
 #productinfoBody span.normal_button {
 	background: #fff;
-	color:cornflowerblue;
+	color:#154DBC;
 	padding:0px !important;
 }
 .button_send {
@@ -309,8 +309,8 @@ input[type="search"] {
 }
 .button.button_back {
 	color:#fff;
-	background-color: #007bff;
-	border-color: #007bff;
+	background-color: #0056B3;
+	border-color: #0056B3;
 	font-size: 1.2em !important;
 	border-top-right-radius: 0.25rem;
 	border-radius: 0.25rem;
@@ -319,11 +319,11 @@ input[type="search"] {
 }
 .button.button_back:hover {
 	opacity:0.5;
-	background-color: #007bff;
-	border-color: #007bff;
+	background-color: #0056B3;
+	border-color: #0056B3;
 }
 .button_write_review {
-	color:chocolate !important;
+	color:#8A4514 !important;
 	margin-top:1rem;
 	margin-bottom:1rem;
 	background: transparent !important;
@@ -390,7 +390,7 @@ input[type="search"] {
 	color:#fff !important;
 }
 #shoppingcartBody .button_checkout {
-	background: #28a745 !important;
+	background: green !important;
 	color: #fff !important;
 }
 #contactUsDefault .forward {

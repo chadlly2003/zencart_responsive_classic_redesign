@@ -7,7 +7,7 @@ body, .messageStackSuccess, .messageStackCaution, #tagline, #productQuantityDisc
 	color:#000000;
 }
 a:link, a:visited, #navEZPagesTOC ul li a, a:hover, #navEZPagesTOC ul li a:hover, fieldset fieldset legend, .cartTotalDisplay, .cartOldItem, .specialsListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .list-price, .itemTitle a, h2.greeting, #icon, h1, .header {
-	color:cornflowerblue;
+	color:#154DBC;
 	text-decoration: none !important;
 }
 .cat-count, .itemTitle a:hover, h2.greeting a:hover {
@@ -20,7 +20,7 @@ span.button_back:hover{
 	font-size: 1.0em;
 }
 a:active {
-	color:cornflowerblue;
+	color:#154DBC;
 }
 h2, h3, .cartAttribsList, #cart-box {
 	color:#000000;
@@ -88,7 +88,7 @@ input:focus, select:focus, textarea:focus, #mainWrapper, .centerBoxContentsAlsoP
 legend {
 	background:#fff;
 	border-bottom:solid 1px #ccc;
-	color:cornflowerblue;
+	color:#154DBC;
 	font-size: 1.3rem !important;
 	line-height: 25px;
 	padding-bottom:1rem;
@@ -160,7 +160,7 @@ span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.
 }
 /*bof border colors*/
 #cartAdd input[type=text], #navMainSearch input[type=text], input[type=file], input[type=image], fieldset, select, #productQuantityDiscounts td, #productQuantityDiscounts td:last-child {
-	border:none 
+	border:none
 }
 HR {
 	border-bottom:1px solid #9a9a9a;
@@ -234,7 +234,7 @@ table, .tabTable{
 }
 #siteinfoLegal a{
 	text-decoration: none;
-	color:cornflowerblue !important;
+	color:#154DBC !important;
 }
 .sideBoxContent optgroup {
 	color: #db0000;
@@ -270,7 +270,7 @@ th#seProductsHeading, th#seTotalHeading {
 }
 /*custom*/
 a:hover {
-	color: cornflowerblue !important;
+	color: #154DBC !important;
 }
 label {
 	font-size: 0.9rem !important;
@@ -290,7 +290,7 @@ div#logo {
 	width:100%;
 }
 input.cssButton.submit_button.button.button_search {
-	font-size:1.2em 
+	font-size:1.2em
 }
 #navSuppWrapper {
 	margin-top:1rem !important;
@@ -494,7 +494,7 @@ input.cssButton.submit_button.button.button_search {
 }
 #productreviewsinfoBody .button_goto_prod_details {
 	background:transparent !important;
-	color:cornflowerblue;
+	color:#154DBC;
 	opacity:1;
 	font-size:16px;
 }
@@ -504,7 +504,7 @@ input.cssButton.submit_button.button.button_search {
 	margin-bottom:0rem !important;
 }
 #productReviewLink a {
-	color:chocolate !important;
+	color:#7D3E12 !important;
 	font-size: 16px;
 	margin-top:1rem !important;
 	margin-bottom:1rem !important;
@@ -569,7 +569,7 @@ input.cssButton.submit_button.button.button_search {
 	margin-bottom:1rem;
 }
 #shoppingcartBody .tableHeading {
-	background: transparent !important 
+	background: transparent !important
 }
 #productListing .productFreePrice {
 	margin-top:1rem;
@@ -633,8 +633,8 @@ input.cssButton.submit_button.button.button_search {
 .button.button_search {
 	width:100% !important;
 	color: #fff;
-	background-color: #28a745;
-	border-color: #28a745;
+	background-color: green;
+	border-color: green;
 	height: 48px;
 	font-size: 1.2em !important;
 }
@@ -743,7 +743,7 @@ input.cssButton.submit_button.button.button_search {
 	opacity: 1;
 }
 #shippingEstimatorContent .button_update:hover {
-	border:none !important 
+	border:none !important
 }
 #loginDefault br {
 	display:none !important;
@@ -756,7 +756,7 @@ input.cssButton.submit_button.button.button_search {
 	padding-top:1.5rem !important;
 }
 #loginDefault .important {
-	margin-bottom:1rem 
+	margin-bottom:1rem
 }
 #loginDefault fieldset {
 	clear:both;
@@ -764,7 +764,7 @@ input.cssButton.submit_button.button.button_search {
 #loginDefault input[type="radio"], input[type="checkbox"] {
 	width:auto !important;
 	float:left;
-	margin-bottom:0px !important 
+	margin-bottom:0px !important
 }
 #loginDefault LABEL.checkboxLabel, LABEL.radioButtonLabel {
 	padding:0px !important;
@@ -779,7 +779,7 @@ input.cssButton.submit_button.button.button_search {
 	margin-right: 1rem;
 }
 #loginDefault .button_login {
-	background: #28a745 !important;
+	background: green !important;
 	color: #fff;
 	margin-bottom:0.5rem;
 }
@@ -800,7 +800,7 @@ input.cssButton.submit_button.button.button_search {
 	margin-top:1rem !important;
 }
 div#loginDefault fieldset {
-	margin-bottom: 0px !important 
+	margin-bottom: 0px !important
 }
 #loginDefault input.cssButtonHover {
 	opacity:.5 !important;
@@ -821,10 +821,10 @@ div#loginDefault fieldset {
 #createAcctDefault input[type="radio"], input[type="checkbox"] {
 	width:auto !important;
 	float:left;
-	margin-bottom:0px !important 
+	margin-bottom:0px !important
 }
 #createAcctDefault LABEL.checkboxLabel, LABEL.radioButtonLabel {
-	padding:0px !important 
+	padding:0px !important
 }
 #createAcctDefault .alert {
 	margin-top:1rem;
@@ -834,7 +834,7 @@ div#loginDefault fieldset {
 	float:left;
 }
 #createAcctDefault .button_login {
-	background: #28a745 !important;
+	background: green !important;
 	color: #fff;
 	margin-bottom:0.5rem;
 }
@@ -852,10 +852,10 @@ div#loginDefault fieldset {
 #createAcctDefault .forward {
 	width: 100%;
 	margin-top:0;
-	margin-bottom:0.5rem 
+	margin-bottom:0.5rem
 }
 div#createAcctDefault fieldset {
-	margin-bottom: 0px !important 
+	margin-bottom: 0px !important
 }
 #createAcctDefault input.cssButtonHover {
 	opacity:.5 !important;
@@ -866,27 +866,27 @@ TEXTAREA {
 @media (min-width: 576px) {
 	div#logo {
 		max-width:254px;
-   }
+	}
 	.button.button_search {
-		width:auto !important 
-   }
+		width:auto !important
+}
 	.button_search:hover {
 		width:auto !important;
 		height:48px;
-		font-size:1.2em !important 
-   }
+		font-size:1.2em !important
+}
 	.search_box_mobile form {
 		display:flex;
-   }
+	}
 	.spacer1 {
 		display:block !important;
-   }
+	}
 	.spacer2 {
 		display:block !important;
-   }
+	}
 	.shoppingcart {
 		grid-template-columns: 2fr 2fr 1fr;
-   }
+	}
 }
 #createAcctSuccess .button_accounts {
 	display:grid;
@@ -896,116 +896,116 @@ TEXTAREA {
 }
 #createAcctSuccess span.cssButton.normal_button.button.small_edit {
 	margin-top:0px !important;
-	margin:0px !important 
+	margin:0px !important
 }
 @media (min-width: 768px) {
 	#loginDefault .forward {
 		margin-top:0px !important;
-   }
+	}
 	#createAcctSuccess .button_accounts {
 		display:grid;
 		grid-template-columns: 1fr;
 		gap:1rem;
 		margin-top:0rem !important;
 		float:right;
-   }
+	}
 	#createAcctSuccess .fowardcontinue {
 		float:left !important;
 		margin-top:-4.3rem !important;
-   }
+	}
 	#loginDefault input.submit_button {
 		width:auto !important;
 		margin-bottom:1rem;
-   }
+	}
 	#loginDefault input.cssButtonHover {
 		width:auto !important;
 		margin-bottom:1rem !important;
-   }
+	}
 	#createAcctDefault input.submit_button {
 		width:auto !important;
-   }
+	}
 	#createAcctDefault input.cssButtonHover {
 		width:auto !important;
-   }
+	}
 	#createAcctDefault .forward {
 		margin-top:0;
-		margin-bottom:0 
-   }
+		margin-bottom:0
+}
 	div#headerWrapper {
 		width:auto !important;
 		margin-bottom:2rem !important;
-   }
+	}
 	#siteinfoLegal {
 		position:relative;
 		width: 100%;
 		bottom: 0;
-   }
+	}
 	#indexProductList .button_buy_now {
 		float:right;
-   }
+	}
 	#indexProductList .qmax {
 		float:right;
 		margin-top:0;
-   }
+	}
 	#cart-box {
 		width:100% !important;
-   }
+	}
 	#askaquestionBody .button.button_back {
 		float:left;
-   }
+	}
 	.onerow-fluid > .col670 {
 		width: 77% !important;
-   }
+	}
 	.qty_cart_qty {
 		text-align:right !important;
-   }
+	}
 	.max-qty {
 		margin-left:36px !important;
-   }
+	}
 	#productGeneral .qty_cart_qty {
 		float:none;
-   }
+	}
 	#productListing .productFreePrice {
 		margin-top:0rem;
 		margin-bottom:0rem;
-   }
+	}
 }
 @media (min-width: 992px) {
 	div#logo{
 		margin-right:12px;
-   }
+	}
 	#headerWrapper {
 		padding-bottom:0px !important;
-   }
+	}
 	.search_box_mobile form {
 		display:none;
-   }
+	}
 	.search_box {
 		display: block;
 		text-align: center;
 		margin-left: 12px;
-   }
+	}
 	.nav_spacer {
 		grid-template-columns: auto 1fr 2fr 1fr;
 		justify-content:center ;
-   }
+	}
 	.onerow-fluid > .col670 {
 		width: 78% !important;
-   }
+	}
 }
 @media (min-width: 1200px) {
 	.nav_spacer {
 		grid-template-columns: auto 1fr 3fr 1fr;
-   }
+	}
 	.search_box input {
 		width:74% !important;
-   }
+	}
 }
 @media (min-width: 1300px) {
 	div#headerWrapper {
 		max-width: 1280px !important;
 		margin-left:auto !important;
 		margin-right:auto !important;
-		margin-bottom:2rem !important 
-   }
+		margin-bottom:2rem !important
+}
 }

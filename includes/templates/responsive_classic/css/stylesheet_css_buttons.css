@@ -37,7 +37,7 @@ span.normal_button {
 	font-size: 1.2em;
 	display: inline-block;
 	margin:0;
-	padding: 9px 20px !important;
+	padding: 12px 20px !important;
 	border-radius: 0.25rem;
 	background:gold;
 	display:flex;
@@ -53,7 +53,7 @@ span.cssButton.normal_button.button.button_more_reviews, .button_more_reviews:ho
 }
 span.cssButton.normal_button.button.button_write_review, .button_write_review, span.cssButton.normal_button.button.button_in_cart{
 	text-align:center;
-	padding:9px 20px !important;
+	padding:12px 20px !important;
 }
 #indexBody span.cssButton.normal_button.button.button_in_cart, #indexBody .button_in_cart:hover{
 	display:inline-block;

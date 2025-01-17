@@ -189,8 +189,7 @@ echo '<div class="header Fixed"><a href="#menu" title="Menu"><i class="fa-solid 
 
 <?php  } ?>
 
-<!--bof branding display-->
-
+<!-- sidebar navigation -->
 <div class="nav_spacer"> 
 <!-- Hamburger Icon Button -->
   
@@ -205,13 +204,25 @@ echo '<div class="header Fixed"><a href="#menu" title="Menu"><i class="fa-solid 
 <div class="sidebar is-hidden">
   <h1 class="sidebar_title">Categories</h1>
   <ul>
-    <li><a href="#">Link 1</a></li>
-    <li><a href="#">Link 2</a></li>
-    <li><a href="#">Link 3</a></li>
-    <li><a href="#">Link 4</a></li>
+ <?php
+// load the UL-generator class and produce the menu list dynamically from there
+require_once (DIR_WS_CLASSES . 'categories_ul_generator.php');
+$zen_CategoriesUL = new zen_categories_ul_generator;
+$menulist = $zen_CategoriesUL->buildTree(true);
+//$menulist = str_replace('"level4"','"level5"',$menulist);
+//$menulist = str_replace('"level3"','"level4"',$menulist);
+//$menulist = str_replace('"level2"','"level3"',$menulist);
+//$menulist = str_replace('"level1"','"level2"',$menulist);
+$menulist = str_replace('<li class="submenu">','<li class="submenu">',$menulist);
+$menulist = str_replace("</li>\n</ul>\n</li>\n</ul>\n","</li>\n</ul>\n",$menulist);
+echo $menulist;
+?>   
   </ul>
 </div>
+<!-- eof sidebar navigation -->
 
+
+<!--bof branding display-->
 <div id="logoWrapper" class="group onerow-fluid">
     <div id="logo"><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">' . zen_image($template->get_template_dir(HEADER_LOGO_IMAGE, DIR_WS_TEMPLATE, $current_page_base,'images'). '/' . HEADER_LOGO_IMAGE, HEADER_ALT_TEXT) . '</a>'; ?>
 <?php if (HEADER_SALES_TEXT != '' || (SHOW_BANNERS_GROUP_SET2 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET2))) { ?>
@@ -294,9 +305,11 @@ $(document).ready(function() {
     var $this = $(this);
     var $sidebar = $(".sidebar");
     var $icon = $("#menu-icon"); // Reference to the icon inside the button
+    var $overlay = $("#overlay"); // Reference to the overlay
 
     // Toggle the sidebar visibility
     $sidebar.toggleClass('is-hidden');
+    $overlay.toggle(); // Toggle the overlay visibility
 
     // Change icon based on sidebar state
     if ($sidebar.hasClass("is-hidden")) {
@@ -308,16 +321,18 @@ $(document).ready(function() {
     }
   });
 
-  // Close sidebar when clicking outside of it
+  // Close sidebar and overlay when clicking outside of it
   $(document).click(function(e) {
     var $sidebar = $(".sidebar");
     var $btn = $(".btn");
+    var $overlay = $("#overlay");
 
     // Check if the click was outside the sidebar and button
     if (!$(e.target).closest($sidebar).length && !$(e.target).closest($btn).length) {
-      // If outside, close the sidebar
+      // If outside, close the sidebar and hide the overlay
       if (!$sidebar.hasClass('is-hidden')) {
         $sidebar.addClass('is-hidden');
+        $overlay.hide(); // Hide the overlay
         $("#menu-icon").removeClass('fa-times').addClass('fa-bars');
       }
     }
@@ -327,13 +342,19 @@ $(document).ready(function() {
   $(".sidebar").click(function(e) {
     e.stopPropagation();
   });
+
+  // Hide overlay when it's clicked
+  $("#overlay").click(function() {
+    $(".sidebar").addClass('is-hidden');
+    $(this).hide(); // Hide the overlay
+    $("#menu-icon").removeClass('fa-times').addClass('fa-bars');
+  });
 });
+
 
 </script>
 
 <!-- eof sidebar nav script -->
-
-
 
 
 </div>

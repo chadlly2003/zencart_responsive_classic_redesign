@@ -1,4 +1,4 @@
-/*** Main CSS Stylesheet** @copyright Copyright 2003-2024 Zen Cart Development Team* @copyright Portions Copyright 2003 osCommerce* @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0* @version $Id: Jeff Rutt 2024 Sep 11 Modified in v2.1.0 $*/
+ /*** Main CSS Stylesheet** @copyright Copyright 2003-2024 Zen Cart Development Team* @copyright Portions Copyright 2003 osCommerce* @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0* @version $Id: Jeff Rutt 2024 Sep 11 Modified in v2.1.0 $*/
 /*bof basic elements*/
 body {
 	margin:0;
@@ -6,6 +6,11 @@ body {
 	font-size:75%;
 	line-height:1.5;
 }
+html{
+  overflow-x:hidden;
+  height:100%;
+}
+
 /*general link styles*/
 a img {
 	border:none;

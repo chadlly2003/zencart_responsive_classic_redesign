@@ -2102,6 +2102,7 @@ span.normal_button:hover {
 	width:100% !important;
 	max-width: 500px !important;
 	margin-bottom:1rem;
+	margin-top:30px !important;
 }
 .reviews-wrapper .button_goto_prod_details {
 	background: transparent !important;
@@ -2183,6 +2184,7 @@ span.normal_button:hover {
 		float:left;
 		margin-right:1rem;
 		margin-bottom:0px !important;
+		margin-top:0px !important;
 	}
 	.reviews-wrapper span.button_read_reviews {
 		text-align: left !important;

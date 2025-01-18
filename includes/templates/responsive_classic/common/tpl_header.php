@@ -41,54 +41,11 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 
 <!--bof navigation display-->
 <div id="navMainWrapper" class="group onerow-fluid">
-<?php
- if ( $detect->isMobile() && !$detect->isTablet() || $_SESSION['layoutType'] == 'mobile' ) {
-echo '<div class="header Fixed"><a href="#menu" title="Menu"><i class="fa-solid fa-bars"></i></a></div>';
- } else if ( $detect->isTablet() || $_SESSION['layoutType'] == 'tablet' ){
-echo '<div class="header Fixed"><a href="#menu" title="Menu"><i class="fa-solid fa-bars"></i></a></div>';
-} else {
-//
-}
-?>
+ 
 
 <?php if ( $detect->isMobile() && !$detect->isTablet() || $_SESSION['layoutType'] == 'mobile' ) { ?>
 
-<div id="navMain">
-  <ul>
-    <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa-solid fa-house" title="Home"></i></a></li>
-    <li><a href="#top"><i class="fa-solid fa-circle-arrow-up" title="Back to Top"></i></a></li>
-<?php
-    if (zen_is_logged_in() && !zen_in_guest_checkout()) {
-?>
-    <li><a href="<?php echo zen_href_link(FILENAME_LOGOFF, '', 'SSL'); ?>"><i class="fa-solid fa-arrow-right-from-bracket" title="Log Off"></i></a></li>
-<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-    <li><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><i class="fa-solid fa-user" title="My Account"></i></a></li>
-<?php } else { ?>
-    <li class="last"><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><i class="fa-solid fa-user" title="My Account"></i></a></li>
-<?php } ?>
-<?php
-      } else {
-        if (STORE_STATUS == '0') {
-?>
-<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-    <li><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><i class="fa-solid fa-arrow-right-to-bracket" title="Log In"></i></a></li>
-<?php } else { ?>
-    <li class="last"><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><i class="fa-solid fa-arrow-right-to-bracket" title="Log In"></i></a></li>
-<?php } ?>
-<?php
-  }
-}
-?>
-
-<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-    <li><a class="navCartContentsIndicator" href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>"><i class="fa-solid fa-cart-shopping" title="Shopping Cart"></i></a></li>
-    <li class="last"><a href="<?php echo zen_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'); ?>"><i class="fa-solid fa-square-check" title="Checkout"></i></a></li>
-<?php }?>
-  </ul>
-<div id="navMainSearch" class="forward">
-  <?php require(DIR_WS_MODULES . zen_get_module_sidebox_directory('search_header.php')); ?>
-</div>
-</div>
+ 
 </div>
 
 <!--eof navigation display-->
@@ -204,20 +161,94 @@ echo '<div class="header Fixed"><a href="#menu" title="Menu"><i class="fa-solid 
 <div class="sidebar is-hidden">
   <h1 class="sidebar_title">Categories</h1>
   <ul>
- <?php
+<?php
 // load the UL-generator class and produce the menu list dynamically from there
 require_once (DIR_WS_CLASSES . 'categories_ul_generator.php');
 $zen_CategoriesUL = new zen_categories_ul_generator;
+
+// Get the entire menu (with subcategories)
 $menulist = $zen_CategoriesUL->buildTree(true);
-//$menulist = str_replace('"level4"','"level5"',$menulist);
-//$menulist = str_replace('"level3"','"level4"',$menulist);
-//$menulist = str_replace('"level2"','"level3"',$menulist);
-//$menulist = str_replace('"level1"','"level2"',$menulist);
-$menulist = str_replace('<li class="submenu">','<li class="submenu">',$menulist);
-$menulist = str_replace("</li>\n</ul>\n</li>\n</ul>\n","</li>\n</ul>\n",$menulist);
+
+// Use DOMDocument to parse and filter the menu
+$dom = new DOMDocument();
+libxml_use_internal_errors(true);  // suppress warnings about malformed HTML
+$dom->loadHTML(mb_convert_encoding($menulist, 'HTML-ENTITIES', 'UTF-8'));
+
+// Find all <li> elements
+$lis = $dom->getElementsByTagName('li');
+
+// Filter out subcategories (keep only top-level categories)
+foreach ($lis as $li) {
+    // Check if the <li> element has a child <ul> (indicating subcategories)
+    $ul = $li->getElementsByTagName('ul');
+    if ($ul->length > 0) {
+        // Remove the subcategory <ul> and all its content
+        $li->removeChild($ul->item(0));
+    }
+}
+
+// Output the modified menu
+$menulist = $dom->saveHTML();
+
+// Clean up and display the menu
+$menulist = str_replace("<html><body>", "", $menulist);
+$menulist = str_replace("</body></html>", "", $menulist);
+
 echo $menulist;
-?>   
+?> 
+
   </ul>
+
+  
+  <ul class="myaccounts">
+ 
+    <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?>
+      <i class="fa fa-xl fa-fw fa-home" aria-hidden="true"></i>
+    <?php echo HEADER_TITLE_CATALOG; ?></a></li>
+<?php
+        if (zen_is_logged_in() && !zen_in_guest_checkout()) {
+?>
+    <li><a href="<?php echo zen_href_link(FILENAME_LOGOFF, '', 'SSL'); ?>">
+      <i class="fa fa-xl fa-fw fa-sign-out" aria-hidden="true"></i> <?php echo HEADER_TITLE_LOGOFF; ?></a></li>
+<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
+    
+    <li><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>">
+      <i class="fa-solid fa-xl fa-fw fa-user"></i> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
+	    <?php } else { ?>
+      <li class=""><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
+
+      <?php } ?>
+<?php
+      } else {
+        if (STORE_STATUS == '0') {
+?>
+<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
+    <li><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGIN; ?></a></li>
+	    <?php } else { ?>
+    <li class=""><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>">
+      <i class="fa fa-xl fa-fw fa-sign-in" aria-hidden="true"></i> <?php echo HEADER_TITLE_LOGIN; ?></a></li>
+	    <?php } ?>
+<?php } } ?>
+
+<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
+    <li><a class="" href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>">   
+       <i class="fa-solid fa-xl fa-fw fa-cart-shopping" title="Shopping Cart"></i>
+     <?php
+        echo HEADER_TITLE_CART_CONTENTS;
+        // Alternatively, if you want to display cart quantity and value, use the following line instead of the one above. Adapt for multiple languages if relevant.
+        // echo $_SESSION['cart']->count_contents().' item(s) '. $currencies->format($_SESSION['cart']->show_total());
+     ?>
+   </a>
+    </li>
+    <li><a href="<?php echo zen_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'); ?>">
+      <i class="fa-solid fa-xl fa-fw  fa-truck-fast"></i> 
+      <?php echo HEADER_TITLE_CHECKOUT; ?></a></li>
+  
+<?php }?>
+ 
+ 
+</ul>
+
 </div>
 <!-- eof sidebar navigation -->
 
@@ -296,7 +327,6 @@ echo $menulist;
 
 
 
-<!-- sidebar nav script -->
 <script>
 $(document).ready(function() {
   // Toggle sidebar on button click
@@ -311,12 +341,17 @@ $(document).ready(function() {
     $sidebar.toggleClass('is-hidden');
     $overlay.toggle(); // Toggle the overlay visibility
 
+    // Disable scrolling when overlay is visible
+    if ($overlay.is(':visible')) {
+      $("body").addClass('no-scroll');
+    } else {
+      $("body").removeClass('no-scroll');
+    }
+
     // Change icon based on sidebar state
     if ($sidebar.hasClass("is-hidden")) {
-      // Hamburger icon when sidebar is hidden
       $icon.removeClass('fa-times').addClass('fa-bars');
     } else {
-      // Close (X) icon when sidebar is visible
       $icon.removeClass('fa-bars').addClass('fa-times');
     }
   });
@@ -333,6 +368,7 @@ $(document).ready(function() {
       if (!$sidebar.hasClass('is-hidden')) {
         $sidebar.addClass('is-hidden');
         $overlay.hide(); // Hide the overlay
+        $("body").removeClass('no-scroll'); // Enable scrolling
         $("#menu-icon").removeClass('fa-times').addClass('fa-bars');
       }
     }
@@ -347,11 +383,10 @@ $(document).ready(function() {
   $("#overlay").click(function() {
     $(".sidebar").addClass('is-hidden');
     $(this).hide(); // Hide the overlay
+    $("body").removeClass('no-scroll'); // Enable scrolling
     $("#menu-icon").removeClass('fa-times').addClass('fa-bars');
   });
 });
-
-
 </script>
 
 <!-- eof sidebar nav script -->

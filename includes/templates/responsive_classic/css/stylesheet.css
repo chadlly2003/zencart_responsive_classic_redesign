@@ -1652,6 +1652,7 @@ span#askAQuestionButton:hover {
 }
 #productsListingBottomNumber {
 	margin-bottom:1rem;
+	padding-top:1rem;
 }
 #productListing br {
 	display:none !important;
@@ -2145,6 +2146,8 @@ span.normal_button:hover {
 	width: 100px;
 }
 
+#gvRedeemDefault .forward {float:none !important;margin-top:1rem;margin-bottom:1rem;}
+
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {
 		order:2;
@@ -2197,7 +2200,9 @@ span.normal_button:hover {
 	}
 }
 @media (min-width: 768px) {
-	.prod-list-wrap{ margin-top:0px !important;}
+
+	#gvRedeemDefault .forward {float:right !important;}
+ 
 	.list-image img {width:100px; float:left;margin-bottom:0px;}
 	.list-image{margin-top:0px;}
 	#reviewsDefault .reviews-wrapper {

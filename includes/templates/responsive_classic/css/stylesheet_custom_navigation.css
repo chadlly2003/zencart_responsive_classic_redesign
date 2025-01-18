@@ -15,7 +15,7 @@
 	bottom: 0;
 	left: 0;
 	width: 270px;
-	background-color: lavender;
+	background-color: #fff;
 	// h-shadow, v-shadow, blur, spreadbox-shadow: 6px 0 18px 8px black;
 	transition: transform 0.3s ease-out;
 	ul {
@@ -49,13 +49,20 @@
 }
 
 
-.level1 {margin-bottom:1rem !important;padding-bottom:1rem !important;}
+.level1 {margin-bottom:0rem !important;padding-bottom:1rem !important;}
 #siteinfoIP {display:none !important}
 .sidebar {overflow-y:scroll;z-index: 1;padding-top:1rem;}
  
+.myaccounts .fa-fw {color:blueviolet;}
+ /* Disable scrolling */
+.no-scroll {
+	overflow: hidden;
+	height: 100%;
+  }
+
+
+.myaccounts {border-top:solid 1px #ccc;padding-top:1rem !important;padding-bottom:1rem !important;}
  
-
-
 /* The overlay effect (background color and opacity) */
 .overlay {
 	position: fixed;

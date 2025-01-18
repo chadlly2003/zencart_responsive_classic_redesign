@@ -32,9 +32,9 @@
 		color: #000;
 		text-decoration: none;
 		&:hover {
-			background-color: #ccc;
-			opacity: .5;
-			color: #000;
+			background-color: lavender;
+			
+			color: #000 !important;
 		}
 	}
 }

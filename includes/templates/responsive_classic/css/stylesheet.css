@@ -277,7 +277,12 @@ select#country, select#stateZone, #state {
 	text-align: center;
 	color:crimson !important;
 	background: transparent !important;
+	 
 }
+
+#shoppingcartBody .messageStackCaution {margin-top:1rem !important;}
+
+
 .messageStackWarning img, .messageStackError img, .messageStackSuccess img, .messageStackCaution img {
 	display:none
 }
@@ -954,6 +959,7 @@ div#checkoutShippingContentChoose{
 .list-image{
 	text-align:center;
 	margin-bottom:1rem;
+	margin-top:2rem;
 }
 .list-price{
 	font-size:140%;
@@ -2130,6 +2136,15 @@ span.normal_button:hover {
 	color:blueviolet !important;
 	margin-top:1rem;
 }
+
+.list-image img {
+	width:100%; 
+	max-width: 500px !important;
+}
+#categoryImgListing img {
+	width: 100px;
+}
+
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {
 		order:2;
@@ -2182,6 +2197,9 @@ span.normal_button:hover {
 	}
 }
 @media (min-width: 768px) {
+	.prod-list-wrap{ margin-top:0px !important;}
+	.list-image img {width:100px; float:left;margin-bottom:0px;}
+	.list-image{margin-top:0px;}
 	#reviewsDefault .reviews-wrapper {
 		padding-top:2rem !important;
 	}

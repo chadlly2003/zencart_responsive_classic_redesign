@@ -467,6 +467,7 @@
 	}
 	.prod-list-wrap{
 		height:auto;
+		margin-bottom:3rem;
 	}
 	.tabTable{
 		display:table;
@@ -476,8 +477,7 @@
 		height:100%;
 		text-align: center;
 	}
-	.list-image{
-	}
+	 
 	.list-input{
 		text-align: center;
 		display:flex;

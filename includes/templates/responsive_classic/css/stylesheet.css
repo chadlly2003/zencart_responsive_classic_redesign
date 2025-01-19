@@ -957,6 +957,8 @@ div#checkoutShippingContentChoose{
 	text-align:center;
 	margin-bottom:1rem;
 	margin-top:2rem;
+	max-width:500px;
+	margin: auto;
 }
 .list-price{
 	font-size:140%;

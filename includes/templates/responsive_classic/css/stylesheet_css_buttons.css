@@ -97,7 +97,7 @@ span.cssButton.normal_button.button.button_goto_prod_details{
 	background:#05a5cb !important;
 }
 input.cssButton.submit_button.button.button_search, .button_search:hover{
-	padding:9px 20px !important;
+	padding:12px 20px !important;
 	font-size:1.3em !important;
 	line-height:18px;
 }
@@ -127,7 +127,7 @@ span.cssButton.normal_button.button.button_continue_shopping, .button_continue_s
 }
 #reviewsDefault .button_in_cart:hover{
 	text-align:center;
-	padding:9px 20px;
+	padding:12px 20px !important
 }
 span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.button.small_edit{
 	background:gold;
@@ -271,7 +271,8 @@ input[type="search"] {
 	background: blueviolet;
 	color: #fff;
 	font-size:18px !important;
-	padding:0px !important;
+	padding:12px 20px !important;
+	height: auto !important;
 }
 #cartAdd input[type="submit"]:hover {
 	opacity:0.5;
@@ -280,6 +281,7 @@ input[type="search"] {
 	width: 20% !important;
 	text-align: center;
 	margin-right: 5px;
+	height: 52px;
 }
 #cartAdd {
 	width:100%;
@@ -304,8 +306,7 @@ input[type="search"] {
 	background:darkcyan;
 	opacity:0.5;
 	color:#fff;
-	padding-top:0px !important;
-	padding-bottom:0px !important;
+	padding:12px 20px !important
 }
 .button.button_back {
 	color:#fff;
@@ -363,10 +364,6 @@ input[type="search"] {
 .button_redeem:hover {
 	opacity:0.5;
 }
-.button_unsubscribe {
-	margin-top:1rem !important;
-	margin-bottom:1rem !important;
-}
 #shoppingcartBody .buttonRow .back{
 	float:none!important;
 }
@@ -407,6 +404,53 @@ input[type="search"] {
 	float:none !important;
 	margin-bottom:0.5rem;
 }
+.button_delete {
+	padding: 12px 20px !important;
+	height: auto;
+}
+.button_update {
+	padding: 12px 20px !important;
+	height: auto;
+}
+.button_continue_checkout {
+	padding: 12px 20px !important;
+	height: auto;
+}
+.button_confirm_order {
+	padding: 12px 20px !important;
+	height: auto;
+}
+.button_add_selected {
+	padding: 12px 20px !important;
+	height: auto;
+}
+.button_continue {
+	padding: 12px 20px !important;
+	height: auto;
+}
+.button_send {
+	padding: 12px 20px !important;
+	height: auto;
+}
+.button_create_account {
+	padding: 12px 20px !important;
+	height: auto;
+}
+.button_submit {
+	padding: 12px 20px !important;
+	height: auto;
+}
+.button_login {
+	padding: 12px 20px !important;
+	height: auto;
+}
+.button_redeem {
+	padding: 12px 20px !important;
+	height: auto;
+}
+.two_continue {
+	margin-bottom:0.5rem;
+}
 @media (min-width:576px) {
 	#shoppingcartBody input[type="image"] {
 		margin-top:-106px;
@@ -417,6 +461,10 @@ input[type="search"] {
 	}
 }
 @media (min-width: 768px) {
+	.two_continue {
+		margin-bottom:0.5rem;
+		float:right;
+	}
 	#cartAdd {
 		display: flex;
 	}
@@ -476,9 +524,6 @@ input[type="search"] {
 		float:left !important;
 	}
 	#passwordforgottenBody .back {
-		float:left !important;
-	}
-	#searchDefault .forward {
 		float:left !important;
 	}
 	#searchDefault .buttonRow {

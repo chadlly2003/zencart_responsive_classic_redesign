@@ -23,7 +23,6 @@
 		padding: 0;
 	}
 	li {
-		
 		list-style: none;
 	}
 	a {
@@ -33,7 +32,6 @@
 		text-decoration: none;
 		&:hover {
 			background-color: lavender;
-			
 			color: #000 !important;
 		}
 	}
@@ -47,22 +45,31 @@
 	margin-right:6px;
 	width:25px;
 }
-
-
-.level1 {margin-bottom:0rem !important;padding-bottom:1rem !important;}
-#siteinfoIP {display:none !important}
-.sidebar {overflow-y:scroll;z-index: 1;padding-top:1rem;}
- 
-.myaccounts .fa-fw {color:blueviolet;}
- /* Disable scrolling */
+.level1 {
+	margin-bottom:0rem !important;
+	padding-bottom:1rem !important;
+}
+#siteinfoIP {
+	display:none !important
+}
+.sidebar {
+	overflow-y:scroll;
+	z-index: 1;
+	padding-top:1rem;
+}
+.myaccounts .fa-fw {
+	color:blueviolet;
+}
+/* Disable scrolling */
 .no-scroll {
 	overflow: hidden;
 	height: 100%;
-  }
-
-
-.myaccounts {border-top:solid 1px #ccc;padding-top:1rem !important;padding-bottom:1rem !important;}
- 
+}
+.myaccounts {
+	border-top:solid 1px #ccc;
+	padding-top:1rem !important;
+	padding-bottom:1rem !important;
+}
 /* The overlay effect (background color and opacity) */
 .overlay {
 	position: fixed;
@@ -70,7 +77,35 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-	display: none; /* Hidden by default */
-	z-index: 1; /* Make sure it appears above other content */
-  }
+	background-color: rgba(0, 0, 0, 0.5);
+	/* Semi-transparent background */
+	display: none;
+	/* Hidden by default */
+	z-index: 1;
+	/* Make sure it appears above other content */
+}
+.badge:after{
+	content:attr(value);
+	font-size:12px;
+	color: #fff;
+	background: red;
+	border-radius:50%;
+	padding: 0.3rem;
+	position:relative;
+	left:-12px;
+	top:-20px;
+	opacity:0.9;
+}
+.navitem1t {
+	font-size:32px !important;
+	color:#d3d3d3;
+}
+.navitem2t {
+	font-size:32px !important;
+	color:#87b7b8;
+}
+.navitem3t {
+	font-size:32px !important;
+	color:#e2c197;
+	padding-top:0.2rem;
+}

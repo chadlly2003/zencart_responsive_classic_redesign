@@ -234,13 +234,6 @@ $(document).ready(function() {
     $sidebar.toggleClass('is-hidden');
     $overlay.toggle(); // Toggle the overlay visibility
 
-    // Disable scrolling when overlay is visible
-    if ($overlay.is(':visible')) {
-      $("body").addClass('no-scroll');
-    } else {
-      $("body").removeClass('no-scroll');
-    }
-
     // Change icon based on sidebar state
     if ($sidebar.hasClass("is-hidden")) {
       $icon.removeClass('fa-times').addClass('fa-bars');

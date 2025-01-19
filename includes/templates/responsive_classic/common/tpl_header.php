@@ -34,116 +34,19 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
   return;
 }
 ?>
+ <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
 
-<!--bof-header logo and navigation display-->
 
 <div id="headerWrapper">
-
 <!--bof navigation display-->
-<div id="navMainWrapper" class="group onerow-fluid">
- 
-
-<?php if ( $detect->isMobile() && !$detect->isTablet() || $_SESSION['layoutType'] == 'mobile' ) { ?>
-
- 
-</div>
-
+  <div id="navMainWrapper" class="group onerow-fluid">
+    <?php if ( $detect->isMobile() && !$detect->isTablet() || $_SESSION['layoutType'] == 'mobile' ) { ?>
+  </div>
 <!--eof navigation display-->
-
-<?php  } else if ( $detect->isTablet() || $_SESSION['layoutType'] == 'tablet' ){ ?>
-
-<div id="navMain">
-    <ul>
-<li class="hide"><a href="#top"><i class="fa-solid fa-circle-arrow-up" title="Back to Top"></i></a></li>
-    <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><?php echo HEADER_TITLE_CATALOG; ?></a></li>
-<?php
-        if (zen_is_logged_in() && !zen_in_guest_checkout()) {
-?>
-    <li><a href="<?php echo zen_href_link(FILENAME_LOGOFF, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGOFF; ?></a></li>
-<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-<li><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
-	    <?php } else { ?>
-<li class="last"><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
-
-      <?php } ?>
-<?php
-      } else {
-        if (STORE_STATUS == '0') {
-?>
-<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-    <li><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGIN; ?></a></li>
-	    <?php } else { ?>
-    <li class="last"><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGIN; ?></a></li>
-
-	    <?php } ?>
-<?php } } ?>
-
-<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-    <li><a class="navCartContentsIndicator" href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>"><i class="fa-solid fa-cart-shopping" title="Shopping Cart"></i>
-     <?php
-        echo HEADER_TITLE_CART_CONTENTS;
-        // Alternatively, if you want to display cart quantity and value, use the following line instead of the one above. Adapt for multiple languages if relevant.
-        // echo $_SESSION['cart']->count_contents().' item(s) '. $currencies->format($_SESSION['cart']->show_total());
-     ?>
-   </a>
-    </li>
-    <li class="last"><a href="<?php echo zen_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'); ?>"><?php echo HEADER_TITLE_CHECKOUT; ?></a></li>
-<?php }?>
-</ul>
-<div id="navMainSearch" class="forward">
-   <?php require(DIR_WS_MODULES . zen_get_module_sidebox_directory('search_header.php')); ?>
-</div>
-</div>
+  <?php  } else if ( $detect->isTablet() || $_SESSION['layoutType'] == 'tablet' ){ ?>
+  <?php  } else { ?>
 </div>
 <!--eof navigation display-->
-
-<?php  } else { ?>
-<div id="navMain">
-  <ul class="back">
-    <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><?php echo HEADER_TITLE_CATALOG; ?></a></li>
-<?php
-    if (zen_is_logged_in() && !zen_in_guest_checkout()) {
-?>
-    <li><a href="<?php echo zen_href_link(FILENAME_LOGOFF, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGOFF; ?></a></li>
-<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-    <li><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
-<?php } else { ?>
-    <li class="last"><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
-<?php } ?>
-<?php
-      } else {
-        if (STORE_STATUS == '0') {
-?>
-<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-    <li><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGIN; ?></a></li>
-	    <?php } else { ?>
-    <li class="last"><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGIN; ?></a></li>
-<?php } ?>
-<?php
-  }
- }
-?>
-
-<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-    <li>
-      <a class="navCartContentsIndicator" href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>"><i class="fa-solid fa-cart-shopping" title="Shopping Cart"></i>
-     <?php
-        echo HEADER_TITLE_CART_CONTENTS;
-        // Alternatively, if you want to display cart quantity and value, use the following line instead of the one above. Adapt for multiple languages if relevant.
-        // echo $_SESSION['cart']->count_contents().' item(s) '. $currencies->format($_SESSION['cart']->show_total());
-     ?>
-   </a>
-   </li>
-    <li class="last"><a href="<?php echo zen_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'); ?>"><?php echo HEADER_TITLE_CHECKOUT; ?></a></li>
-<?php }?>
-  </ul>
-<div id="navMainSearch" class="forward">
-     <?php require(DIR_WS_MODULES . zen_get_module_sidebox_directory('search_header.php')); ?>
-</div>
-</div>
-</div>
-<!--eof navigation display-->
-
 <?php  } ?>
 
 <!-- sidebar navigation -->
@@ -161,102 +64,100 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 <div class="sidebar is-hidden">
   <h1 class="sidebar_title">Categories</h1>
   <ul>
-<?php
-// load the UL-generator class and produce the menu list dynamically from there
-require_once (DIR_WS_CLASSES . 'categories_ul_generator.php');
-$zen_CategoriesUL = new zen_categories_ul_generator;
+    <?php
+    // load the UL-generator class and produce the menu list dynamically from there
+    require_once (DIR_WS_CLASSES . 'categories_ul_generator.php');
+    $zen_CategoriesUL = new zen_categories_ul_generator;
 
-// Get the entire menu (with subcategories)
-$menulist = $zen_CategoriesUL->buildTree(true);
+    // Get the entire menu (with subcategories)
+    $menulist = $zen_CategoriesUL->buildTree(true);
 
-// Use DOMDocument to parse and filter the menu
-$dom = new DOMDocument();
-libxml_use_internal_errors(true);  // suppress warnings about malformed HTML
-$dom->loadHTML(mb_convert_encoding($menulist, 'HTML-ENTITIES', 'UTF-8'));
+    // Use DOMDocument to parse and filter the menu
+    $dom = new DOMDocument();
+    libxml_use_internal_errors(true);  // suppress warnings about malformed HTML
+    $dom->loadHTML(mb_convert_encoding($menulist, 'HTML-ENTITIES', 'UTF-8'));
 
-// Find all <li> elements
-$lis = $dom->getElementsByTagName('li');
+    // Find all <li> elements
+    $lis = $dom->getElementsByTagName('li');
 
-// Filter out subcategories (keep only top-level categories)
-foreach ($lis as $li) {
-    // Check if the <li> element has a child <ul> (indicating subcategories)
-    $ul = $li->getElementsByTagName('ul');
-    if ($ul->length > 0) {
-        // Remove the subcategory <ul> and all its content
-        $li->removeChild($ul->item(0));
+    // Filter out subcategories (keep only top-level categories)
+    foreach ($lis as $li) {
+        // Check if the <li> element has a child <ul> (indicating subcategories)
+        $ul = $li->getElementsByTagName('ul');
+        if ($ul->length > 0) {
+            // Remove the subcategory <ul> and all its content
+            $li->removeChild($ul->item(0));
+        }
     }
-}
 
-// Output the modified menu
-$menulist = $dom->saveHTML();
+    // Output the modified menu
+    $menulist = $dom->saveHTML();
 
-// Clean up and display the menu
-$menulist = str_replace("<html><body>", "", $menulist);
-$menulist = str_replace("</body></html>", "", $menulist);
+    // Clean up and display the menu
+    $menulist = str_replace("<html><body>", "", $menulist);
+    $menulist = str_replace("</body></html>", "", $menulist);
 
-echo $menulist;
-?> 
+    echo $menulist;
+    ?> 
+    </ul>
 
-  </ul>
+    <ul class="myaccounts">
+      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?>
+        <i class="fa fa-xl fa-fw fa-home" aria-hidden="true"></i>
+        <?php echo HEADER_TITLE_CATALOG; ?></a></li>
+      
+      <?php
+          if (zen_is_logged_in() && !zen_in_guest_checkout()) {
+      ?>
+      <li><a href="<?php echo zen_href_link(FILENAME_LOGOFF, '', 'SSL'); ?>">
+        <i class="fa fa-xl fa-fw fa-sign-out" aria-hidden="true"></i> <?php echo HEADER_TITLE_LOGOFF; ?></a></li>
+        <?php if ($_SESSION['cart']->count_contents() != 0) { ?>
+      
+      <li><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>">
+        <i class="fa-solid fa-xl fa-fw fa-user"></i> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
+        <?php } else { ?>
+        <li class=""><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
+        <?php } ?>
+      <?php
+        } else {
+          if (STORE_STATUS == '0') {
+      ?>
 
-  
-  <ul class="myaccounts">
- 
-    <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?>
-      <i class="fa fa-xl fa-fw fa-home" aria-hidden="true"></i>
-    <?php echo HEADER_TITLE_CATALOG; ?></a></li>
-<?php
-        if (zen_is_logged_in() && !zen_in_guest_checkout()) {
-?>
-    <li><a href="<?php echo zen_href_link(FILENAME_LOGOFF, '', 'SSL'); ?>">
-      <i class="fa fa-xl fa-fw fa-sign-out" aria-hidden="true"></i> <?php echo HEADER_TITLE_LOGOFF; ?></a></li>
-<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
+      <?php if ($_SESSION['cart']->count_contents() != 0) { ?>
+        <li><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"> 
+          <i class="fa fa-xl fa-fw fa-sign-out" aria-hidden="true"></i> 
+          <?php echo HEADER_TITLE_LOGIN; ?></a></li>
+        <?php } else { ?>
+          <li class=""><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>">
+          <i class="fa fa-xl fa-fw fa-sign-in" aria-hidden="true"></i> <?php echo HEADER_TITLE_LOGIN; ?></a></li>
+        <?php } ?>
+      <?php } } ?>
+
+      <?php if ($_SESSION['cart']->count_contents() != 0) { ?>
+        <li><a class="" href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>">   
+        <i class="fa-solid fa-xl fa-fw fa-cart-shopping" title="Shopping Cart"></i>
+      <?php
+          echo HEADER_TITLE_CART_CONTENTS;
+          // Alternatively, if you want to display cart quantity and value, use the following line instead of the one above. Adapt for multiple languages if relevant.
+          // echo $_SESSION['cart']->count_contents().' item(s) '. $currencies->format($_SESSION['cart']->show_total());
+      ?>
+      </a></li>
+
+      <li><a href="<?php echo zen_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'); ?>">
+        <i class="fa-solid fa-xl fa-fw  fa-truck-fast"></i>
+        <?php echo HEADER_TITLE_CHECKOUT; ?></a></li>
     
-    <li><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>">
-      <i class="fa-solid fa-xl fa-fw fa-user"></i> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
-	    <?php } else { ?>
-      <li class=""><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
-
-      <?php } ?>
-<?php
-      } else {
-        if (STORE_STATUS == '0') {
-?>
-<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-    <li><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><?php echo HEADER_TITLE_LOGIN; ?></a></li>
-	    <?php } else { ?>
-    <li class=""><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>">
-      <i class="fa fa-xl fa-fw fa-sign-in" aria-hidden="true"></i> <?php echo HEADER_TITLE_LOGIN; ?></a></li>
-	    <?php } ?>
-<?php } } ?>
-
-<?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-    <li><a class="" href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>">   
-       <i class="fa-solid fa-xl fa-fw fa-cart-shopping" title="Shopping Cart"></i>
-     <?php
-        echo HEADER_TITLE_CART_CONTENTS;
-        // Alternatively, if you want to display cart quantity and value, use the following line instead of the one above. Adapt for multiple languages if relevant.
-        // echo $_SESSION['cart']->count_contents().' item(s) '. $currencies->format($_SESSION['cart']->show_total());
-     ?>
-   </a>
-    </li>
-    <li><a href="<?php echo zen_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'); ?>">
-      <i class="fa-solid fa-xl fa-fw  fa-truck-fast"></i> 
-      <?php echo HEADER_TITLE_CHECKOUT; ?></a></li>
-  
-<?php }?>
- 
- 
-</ul>
-
+      <?php }?>
+  </ul>
 </div>
 <!-- eof sidebar navigation -->
 
 
 <!--bof branding display-->
 <div id="logoWrapper" class="group onerow-fluid">
-    <div id="logo"><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">' . zen_image($template->get_template_dir(HEADER_LOGO_IMAGE, DIR_WS_TEMPLATE, $current_page_base,'images'). '/' . HEADER_LOGO_IMAGE, HEADER_ALT_TEXT) . '</a>'; ?>
-<?php if (HEADER_SALES_TEXT != '' || (SHOW_BANNERS_GROUP_SET2 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET2))) { ?>
+    <div id="logo">
+      <?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">' . zen_image($template->get_template_dir(HEADER_LOGO_IMAGE, DIR_WS_TEMPLATE, $current_page_base,'images'). '/' . HEADER_LOGO_IMAGE, HEADER_ALT_TEXT) . '</a>'; ?>
+      <?php if (HEADER_SALES_TEXT != '' || (SHOW_BANNERS_GROUP_SET2 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET2))) { ?>
     <div id="taglineWrapper">
 <?php
   if (HEADER_SALES_TEXT != '') {
@@ -274,26 +175,32 @@ echo $menulist;
     }
   }
 ?>
-  </div>
+   </div>
 <?php } // no HEADER_SALES_TEXT or SHOW_BANNERS_GROUP_SET2 ?>
-  </div>
-
-  
+ </div> 
 </div>
 
+
+<!-- tablet desktop search and icons -->
 <div class="search_box"> 
    <?php require(DIR_WS_MODULES . zen_get_module_sidebox_directory('search_header.php')); ?>
 </div>
  
-   
   <div class="shoppingcart">
-    <i class="fa fa-user spacer2" aria-hidden="true"  style="font-size:32px;color:#d3d3d3;"></i> 
-    <i class="fa fa-envelope spacer1" style="font-size:32px;color:#87b7b8;"></i>  
-    <i class="fa fa-shopping-cart" style="font-size:32px;color:#e2c197;"></i>   
+    <a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>">
+    <i class="fa fa-user spacer2 navitem1t" aria-hidden="true"  style="font-size:32px;color:#d3d3d3;"></i></a>
+    
+    <a href="<?php echo zen_href_link('contact_us', '', 'SSL'); ?>">
+    <i class="fa fa-envelope spacer1 navitem2t" style="font-size:32px;color:#87b7b8;"></i></a>  
+    
+    <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>"> 
+    <i style="" class="fa fa-fw badge fa-lg navitem3t"  value="<?php echo  $_SESSION['cart']->count_contents() ?>">&#xf07a;</i></a>
 </div> 
 
 </div>
 
+
+<!-- mobile search -->
 <div class="search_box_mobile"> 
    <?php require(DIR_WS_MODULES . zen_get_module_sidebox_directory('search_header.php')); ?>
 </div>
@@ -301,19 +208,7 @@ echo $menulist;
 <!--eof branding display-->
 <!--eof header logo and navigation display-->
 
-<?php if ( $detect->isMobile() && !$detect->isTablet() || $_SESSION['layoutType'] == 'mobile' ) { ?>
-  <div id="navMainSearch1" class="forward">
-     <?php require(DIR_WS_MODULES . zen_get_module_sidebox_directory('search_header.php')); ?>
-  </div>
-<?php  } else if ( $detect->isTablet() || $_SESSION['layoutType'] == 'tablet' ) { ?>
-  <div id="navMainSearch1" class="forward">
-     <?php require(DIR_WS_MODULES . zen_get_module_sidebox_directory('search_header.php')); ?>
-  </div>
-<?php  } else if ( $_SESSION['layoutType'] == 'full' ) {
-  } else {
-//
-  }
-?>
+ 
 
 <!--bof optional categories tabs navigation display-->
 <?php require($template->get_template_dir('tpl_modules_categories_tabs.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_categories_tabs.php'); ?>
@@ -324,8 +219,6 @@ echo $menulist;
 <?php   require($template->get_template_dir('tpl_ezpages_bar_header.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_ezpages_bar_header.php'); ?>
 <?php } ?>
 <!--eof header ezpage links-->
-
-
 
 <script>
 $(document).ready(function() {
@@ -390,6 +283,5 @@ $(document).ready(function() {
 </script>
 
 <!-- eof sidebar nav script -->
-
 
 </div>

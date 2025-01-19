@@ -1682,6 +1682,7 @@ span#askAQuestionButton:hover {
 }
 caption {
 	color:crimson;
+	margin-bottom:1rem;
 }
 .list-price img {
 	display:none;
@@ -2147,6 +2148,18 @@ span.normal_button:hover {
 }
 
 #gvRedeemDefault .forward {float:none !important;margin-top:1rem;margin-bottom:1rem;}
+ 
+
+#documentcategoriesHeading:before {
+content: "\f15b"; /* this is your text. You can also use UTF-8 character codes as I do here */
+font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
+vertical-align: middle;
+font-size: 30px;
+font-weight:900;
+color:darkorange;
+padding-right:0.5rem;
+}
+
 
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {

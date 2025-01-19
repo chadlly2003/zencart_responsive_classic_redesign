@@ -2056,7 +2056,7 @@ span.normal_button:hover {
 	margin-top:3rem !important;
 	border-top:solid 1px #ccc;
 	padding-bottom:1rem !important;
-	padding-top:1rem;
+	padding-top:0rem;
 }
 .reviewsDefault .reviewsInfoDefaultDate {
 	margin-bottom:1rem;
@@ -2092,8 +2092,8 @@ span.normal_button:hover {
 #reviewsDefault .reviews-wrapper {
 	margin-top:0px !important;
 	border-top:solid 1px #ccc;
-	padding-top:1rem;
-	padding-bottom:1rem;
+	padding-top:0rem;
+	padding-bottom:0rem;
 }
 #reviewsDefault span.cssButton.normal_button.button.button_read_reviews {
 	margin-top:0px !important;
@@ -2173,6 +2173,9 @@ span.normal_button:hover {
 	margin-top:0px;
 	text-align: center;
 }
+.button_update:hover {
+	opacity:0.5 !important;
+}
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {
 		order:2;
@@ -2237,13 +2240,14 @@ span.normal_button:hover {
 		margin-top:0px;
 	}
 	#reviewsDefault .reviews-wrapper {
-		padding-top:2rem !important;
+		padding-top:1rem !important;
 	}
 	.reviews-wrapper .smallProductImage img {
 		float:left;
 		margin-right:1rem;
 		margin-bottom:0px !important;
 		margin-top:0px !important;
+		width: 150px !important;
 	}
 	.reviews-wrapper span.button_read_reviews {
 		text-align: left !important;
@@ -2427,10 +2431,10 @@ span.normal_button:hover {
 	}
 	#pinfo-left{
 		float:left;
-		width:43%;
+		width:51%;
 	}
 	#pinfo-right {
-		width:50% !important;
+		width:44% !important;
 		float:right;
 		padding:1rem !important;
 	}

@@ -1912,7 +1912,7 @@ input[type="checkbox"] {
 	line-height: 150%;
 	background:transparent !important;
 	padding: 6px;
-	margin-bottom: 1rem !important;
+	margin-bottom: 0rem !important;
 	color:crimson;
 }
 #passwordForgotten fieldset {

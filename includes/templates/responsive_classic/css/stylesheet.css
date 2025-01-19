@@ -2944,6 +2944,24 @@ fieldset input[type=radio] {
 #productReviewsDefaultListingBottomNumber {
 	color:blueviolet !important;
 }
+.brandImage {
+	float:left;
+}
+.brandImage img {
+	padding-bottom:0.5rem;
+}
+.brandCell {
+	float:left;
+	width:50%;
+	text-align: center;
+	display: inline-table;
+	margin-bottom:1rem;
+}
+@media (min-width: 420px) {
+	.brandCell {
+		width: 25%;
+	}
+}
 @media (min-width: 576px) {
 	.cartAttribsList {
 		padding-left:4rem;
@@ -2999,6 +3017,9 @@ fieldset input[type=radio] {
 	}
 }
 @media (min-width: 768px) {
+	.brandCell {
+		width: 20%;
+	}
 	#addressBookProcessDefault input.cssButtonHover {
 		margin-top:0rem !important
 }

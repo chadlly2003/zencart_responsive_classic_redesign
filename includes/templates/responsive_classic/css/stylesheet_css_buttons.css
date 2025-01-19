@@ -587,12 +587,7 @@ input[type="search"] {
 }
 @media (min-width: 992px) {
 	#cartAdd {
-		width:54% !important;
+		width:49% !important;
 		margin-left:auto;
-	}
-}
-@media (min-width: 1200px) {
-	#cartAdd {
-		width:53% !important;
 	}
 }

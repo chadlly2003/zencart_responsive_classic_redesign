@@ -7,10 +7,9 @@ body {
 	line-height:1.5;
 }
 html{
-  overflow-x:hidden;
-  height:100%;
+	overflow-x:hidden;
+	height:100%;
 }
-
 /*general link styles*/
 a img {
 	border:none;
@@ -277,12 +276,10 @@ select#country, select#stateZone, #state {
 	text-align: center;
 	color:crimson !important;
 	background: transparent !important;
-	 
 }
-
-#shoppingcartBody .messageStackCaution {margin-top:1rem !important;}
-
-
+#shoppingcartBody .messageStackCaution {
+	margin-top:1rem !important;
+}
 .messageStackWarning img, .messageStackError img, .messageStackSuccess img, .messageStackCaution img {
 	display:none
 }
@@ -2138,29 +2135,34 @@ span.normal_button:hover {
 	color:blueviolet !important;
 	margin-top:1rem;
 }
-
 .list-image img {
-	width:100%; 
+	width:100%;
 	max-width: 500px !important;
 }
 #categoryImgListing img {
 	width: 100px;
 }
-
-#gvRedeemDefault .forward {float:none !important;margin-top:1rem;margin-bottom:1rem;}
- 
-
-#documentcategoriesHeading:before {
-content: "\f15b"; /* this is your text. You can also use UTF-8 character codes as I do here */
-font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
-vertical-align: middle;
-font-size: 30px;
-font-weight:900;
-color:darkorange;
-padding-right:0.5rem;
+#gvRedeemDefault .forward {
+	float:none !important;
+	margin-top:1rem;
+	margin-bottom:1rem;
 }
-
-
+#documentcategoriesHeading:before {
+	content: "\f15b";
+	/* this is your text. You can also use UTF-8 character codes as I do here */
+	font-family: "Font Awesome 5 Free";
+	/* This is the correct font-family*/
+	vertical-align: middle;
+	font-size: 30px;
+	font-weight:900;
+	color:darkorange;
+	padding-right:0.5rem;
+}
+#productGeneral .reviewCount {
+	margin-bottom:2rem;
+	margin-top:0px;
+	text-align: center;
+}
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {
 		order:2;
@@ -2213,11 +2215,17 @@ padding-right:0.5rem;
 	}
 }
 @media (min-width: 768px) {
-
-	#gvRedeemDefault .forward {float:right !important;}
- 
-	.list-image img {width:100px; float:left;margin-bottom:0px;}
-	.list-image{margin-top:0px;}
+	#gvRedeemDefault .forward {
+		float:right !important;
+	}
+	.list-image img {
+		width:100px;
+		float:left;
+		margin-bottom:0px;
+	}
+	.list-image{
+		margin-top:0px;
+	}
 	#reviewsDefault .reviews-wrapper {
 		padding-top:2rem !important;
 	}

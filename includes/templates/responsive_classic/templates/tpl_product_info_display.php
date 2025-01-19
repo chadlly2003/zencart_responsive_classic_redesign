@@ -256,7 +256,6 @@ if ($flag_show_product_info_reviews == 1) {
             <?= zen_image_button(BUTTON_IMAGE_REVIEWS, BUTTON_REVIEWS_ALT) ?>
         </a>
     </div>
-    <br class="clearBoth">
     <p class="reviewCount"><?= ($flag_show_product_info_reviews_count == 1 ? TEXT_CURRENT_REVIEWS . ' ' . $reviews->fields['count'] : '') ?></p>
 <?php
     } else {

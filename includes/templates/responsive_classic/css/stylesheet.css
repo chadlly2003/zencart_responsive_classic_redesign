@@ -752,6 +752,11 @@ ul.list-links li:hover, ol.list-links li:hover{
 }
 #seShipTo {
 	padding:0.2em;
+	width: 100%;
+}
+#shippingEstimatorContent ADDRESS {
+	background: transparent !important;
+	padding:0px !important;
 }
 TR.tableHeading {
 }
@@ -848,9 +853,8 @@ div#checkoutShippingContentChoose{
 }
 .productPriceDiscount{
 	display:block;
-	font-size:90%;
 	color:crimson;
-	margin-top:12px;
+	margin-top:0px;
 	margin-bottom:12px;
 }
 .productPriceDiscount br{
@@ -932,14 +936,18 @@ div#checkoutShippingContentChoose{
 .productListing-rowheading a:hover{
 }
 .productListing-odd{
-	padding:1rem;
+	padding:2rem;
 	overflow:hidden;
 	border-bottom:solid 1px #ccc;
 	border-top:solid 1px #ccc;
+	padding-right:1rem;
+	padding-left: 1rem;
 }
 .productListing-even{
-	padding:1rem;
+	padding:2rem;
 	overflow:hidden;
+	padding-right:1rem;
+	padding-left: 1rem;
 }
 .productListing-even, .productListing-odd{
 	clear:both;
@@ -955,10 +963,10 @@ div#checkoutShippingContentChoose{
 }
 .list-image{
 	text-align:center;
-	margin-bottom:1rem;
-	margin-top:2rem;
-	max-width:500px;
-	margin: auto;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-bottom:1rem !important;
+	max-width:500px !important;
 }
 .list-price{
 	font-size:140%;
@@ -2333,7 +2341,7 @@ span.normal_button:hover {
 	}
 	.list-image{
 		float:left;
-		margin-right:1rem;
+		margin-right:1rem !important;
 	}
 	.list-price {
 		float:left;
@@ -3019,11 +3027,19 @@ fieldset input[type=radio] {
 	}
 }
 @media (min-width: 768px) {
+	.productListing-odd {
+		padding-top:1rem !important;
+		padding-bottom:1rem;
+	}
+	.productListing-even {
+		padding-top:1rem !important;
+		padding-bottom:1rem;
+	}
 	.brandCell {
 		width: 20%;
 	}
 	#addressBookProcessDefault input.cssButtonHover {
-		margin-top:0rem !important
+		margin-top:1rem !important
 }
 	#addressBookProcessDefault input.submit_button {
 		margin-top:1rem;

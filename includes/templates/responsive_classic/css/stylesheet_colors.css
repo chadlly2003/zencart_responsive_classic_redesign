@@ -469,9 +469,6 @@ input.cssButton.submit_button.button.button_search {
 #searchDefault input[type="checkbox"] {
 	width:auto !important;
 }
-#searchDefault select {
-	height:40px !important;
-}
 #searchBody input[type="checkbox"] {
 	width:auto !important;
 	float:left;
@@ -481,9 +478,6 @@ input.cssButton.submit_button.button.button_search {
 }
 #searchDefault label input[type="checkbox"] {
 	float:left;
-}
-#searchDefault fieldset div {
-	margin-bottom:1rem;
 }
 #productreviewsinfoBody .button_write_review {
 	background: transparent !important;
@@ -520,6 +514,7 @@ input.cssButton.submit_button.button.button_search {
 }
 #searchBody legend {
 	color:#000;
+	padding-top:1rem;
 }
 #askaquestionBody legend {
 	color:#000;
@@ -687,7 +682,7 @@ input.cssButton.submit_button.button.button_search {
 }
 #productGeneral .max-qty {
 	position:absolute;
-	margin-top:2.8rem !important;
+	margin-top:3.6rem !important;
 }
 .max-qty br {
 	display:none !important;
@@ -789,7 +784,6 @@ input.cssButton.submit_button.button.button_search {
 #loginDefault .button_submit{
 	background: blueviolet !important;
 	color: #fff;
-	margin-top:1rem;
 }
 #loginDefault .button_submit:hover{
 	opacity:0.5;
@@ -797,7 +791,6 @@ input.cssButton.submit_button.button.button_search {
 #loginDefault .forward {
 	width: 100%;
 	margin-bottom:0rem;
-	margin-top:1rem !important;
 }
 div#loginDefault fieldset {
 	margin-bottom: 0px !important
@@ -862,6 +855,9 @@ div#createAcctDefault fieldset {
 }
 TEXTAREA {
 	text-align: left !important;
+}
+#seShipTo {
+	margin-top:1rem;
 }
 @media (min-width: 576px) {
 	div#logo {

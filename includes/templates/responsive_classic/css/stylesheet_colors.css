@@ -600,7 +600,7 @@ input.cssButton.submit_button.button.button_search {
 }
 .nav_spacer {
 	display:grid;
-	grid-template-columns: auto 1fr 1fr;
+	grid-template-columns: auto 3fr 1fr;
 	justify-items: left;
 	align-items: center;
 	margin:auto;
@@ -887,6 +887,9 @@ TEXTAREA {
 	.shoppingcart {
 		grid-template-columns: 2fr 2fr 1fr;
 	}
+	.nav_spacer {
+		grid-template-columns: auto 1fr 1fr;
+	}
 }
 #createAcctSuccess .button_accounts {
 	display:grid;
@@ -982,7 +985,7 @@ TEXTAREA {
 	}
 	.search_box {
 		display: block;
-		text-align: center;
+		Atext-align: center;
 		margin-left: 12px;
 	}
 	.nav_spacer {

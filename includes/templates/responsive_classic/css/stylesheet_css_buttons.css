@@ -587,7 +587,7 @@ input[type="search"] {
 }
 @media (min-width: 992px) {
 	#cartAdd {
-		width:49% !important;
+		width:47% !important;
 		margin-left:auto;
 	}
 }

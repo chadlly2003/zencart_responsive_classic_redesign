@@ -488,7 +488,6 @@ input[type="search"] {
 		width: 20% !important;
 		text-align: center;
 		margin-right: 5px;
-		margin-left:35px;
 	}
 	#unsubscribeBody .buttonRow {
 		float:right !important;
@@ -591,7 +590,6 @@ input[type="search"] {
 		margin-left:auto;
 	}
 }
-
 @media (min-width: 1200px) {
 	#cartAdd {
 		width:47% !important;

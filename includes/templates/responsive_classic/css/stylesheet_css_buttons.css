@@ -467,6 +467,8 @@ input[type="search"] {
 	}
 	#cartAdd {
 		display: flex;
+		width: 70%;
+		float: right;
 	}
 	#contactusBody .forward {
 		float:right !important;
@@ -588,11 +590,13 @@ input[type="search"] {
 	#cartAdd {
 		width:48% !important;
 		margin-left:auto;
+		float:none;
 	}
 }
 @media (min-width: 1200px) {
 	#cartAdd {
 		width:47% !important;
 		margin-left:auto;
+		float:none;
 	}
 }

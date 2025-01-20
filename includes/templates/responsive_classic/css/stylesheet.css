@@ -2453,10 +2453,10 @@ span.normal_button:hover {
 	}
 	#pinfo-left{
 		float:left;
-		width:51%;
+		width:45%;
 	}
 	#pinfo-right {
-		width:44% !important;
+		width:50% !important;
 		float:right;
 		padding:1rem !important;
 	}

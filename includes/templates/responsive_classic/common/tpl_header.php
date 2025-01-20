@@ -63,7 +63,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 </div>
 <div class="sidebar is-hidden">
   <h1 class="sidebar_title">Categories</h1>
-  <ul>
+  
     <?php
     // load the UL-generator class and produce the menu list dynamically from there
     require_once (DIR_WS_CLASSES . 'categories_ul_generator.php');
@@ -99,7 +99,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 
     echo $menulist;
     ?> 
-    </ul>
+    
 
     <ul class="myaccounts">
       <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?>

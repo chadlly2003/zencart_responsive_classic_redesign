@@ -958,9 +958,6 @@ TEXTAREA {
 	.qty_cart_qty {
 		text-align:right !important;
 	}
-	.max-qty {
-		margin-left:36px !important;
-	}
 	#productGeneral .qty_cart_qty {
 		float:none;
 	}

@@ -1179,7 +1179,7 @@ span.list-addtext{
 	line-height:27px;
 	text-align:left;
 	color:#000 !important;
-	border-bottom:solid 1px #ccc;
+	border-bottom:solid 1px cornflowerblue;
 	margin-top:1rem;
 	padding-bottom:1rem;
 	margin-bottom:3rem;
@@ -1395,6 +1395,7 @@ h4.optionName{
 	clear:both;
 }
 #reviewsDefault .prod-list-wrap{
+	margin-bottom:0px;
 }
 #reviewsInfoDefault .rating{
 	margin:10px 0;
@@ -2162,11 +2163,32 @@ span.normal_button:hover {
 	/* this is your text. You can also use UTF-8 character codes as I do here */
 	font-family: "Font Awesome 5 Free";
 	/* This is the correct font-family*/
-	vertical-align: middle;
-	font-size: 30px;
+	vertical-align: inherit;
+	font-size: 20px;
 	font-weight:900;
 	color:darkorange;
 	padding-right:0.5rem;
+}
+#categoriesHeading:before {
+	content: "\f03a";
+	/* this is your text. You can also use UTF-8 character codes as I do here */
+	font-family: "Font Awesome 5 Free";
+	/* This is the correct font-family*/
+	vertical-align: inherit;
+	font-size: 20px;
+	font-weight:900;
+	color:darkturquoise;
+	padding-right:0.5rem;
+}
+.button_write_review:before {
+	content: "\f086";
+	/* this is your text. You can also use UTF-8 character codes as I do here */
+	font-family: "Font Awesome 5 Free";
+	/* This is the correct font-family*/
+	vertical-align: inherit;
+	font-size: 20px;
+	font-weight:900;
+	color:#8A4514;
 }
 #productGeneral .reviewCount {
 	margin-bottom:2rem;

@@ -100,7 +100,6 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
     echo $menulist;
     ?> 
     
-
     <ul class="myaccounts">
       <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa fa-xl fa-fw fa-home" aria-hidden="true"></i><?php echo HEADER_TITLE_CATALOG; ?></a></li>
       
@@ -198,7 +197,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 
 
 <!-- mobile search -->
-<div class="search_box_mobile"> 
+<div class="search_box_mobile" id="test" name="form_2"> 
    <?php require(DIR_WS_MODULES . zen_get_module_sidebox_directory('search_header.php')); ?>
 </div>
 

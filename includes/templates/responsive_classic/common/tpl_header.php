@@ -102,7 +102,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
     ?> 
     
     <ul class="myaccounts">
-      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa fa-xl fa-fw fa-home" aria-hidden="true"></i><?php echo HEADER_TITLE_CATALOG; ?></a></li>
+      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa fa-xl fa-fw fa-home" aria-hidden="true"></i> <?php echo HEADER_TITLE_CATALOG; ?></a></li>
       
       <?php
           if (zen_is_logged_in() && !zen_in_guest_checkout()) {

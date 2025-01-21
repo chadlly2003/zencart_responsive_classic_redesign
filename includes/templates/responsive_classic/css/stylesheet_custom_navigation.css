@@ -1,277 +1,119 @@
-<?php
-/**
- * Common Template - tpl_header.php
- *
- * this file can be copied to /templates/your_template_dir/pagename
- * example: to override the privacy page
- * make a directory /templates/my_template/privacy
- * copy /templates/templates_defaults/common/tpl_footer.php to /templates/my_template/privacy/tpl_header.php
- * to override the global settings and turn off the footer un-comment the following line:
- *
- * $flag_disable_header = true;
- *
- * @copyright Copyright 2003-2024 Zen Cart Development Team
- * @copyright Portions Copyright 2003 osCommerce
- * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version $Id: Nick Fenwick 2023 Jul 04 Modified in v2.0.0-alpha1 $
- */
-?>
-
-<?php
-  // Display all header alerts via messageStack:
-  if ($messageStack->size('header') > 0) {
-    echo $messageStack->output('header');
-  }
-  if (!empty($_GET['error_message'])) {
-    echo zen_output_string_protected(urldecode($_GET['error_message']));
-  }
-  if (!empty($_GET['info_message'])) {
-   echo zen_output_string_protected($_GET['info_message']);
+.container {
+	margin-top: 20px;
+	text-align: center;
 }
-// check whether to only display errors/alerts, or to also display the rest of the header
-if (isset($flag_disable_header) && $flag_disable_header === true) {
-  // do early-return from this template since $flag_disable_header is true
-  return;
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+	box-shadow: none;
 }
-?>
- <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
-
-
-<div id="headerWrapper">
-<!--bof navigation display-->
-  <div id="navMainWrapper" class="group onerow-fluid">
-    <?php if ( $detect->isMobile() && !$detect->isTablet() || $_SESSION['layoutType'] == 'mobile' ) { ?>
-  </div>
-<!--eof navigation display-->
-  <?php  } else if ( $detect->isTablet() || $_SESSION['layoutType'] == 'tablet' ){ ?>
-  <?php  } else { ?>
-</div>
-<!--eof navigation display-->
-<?php  } ?>
-
-<!-- sidebar navigation -->
-<div class="nav_spacer"> 
-<!-- Hamburger Icon Button -->
-  
-<div class="row">
-  <div class="col">
-    <!-- Change <a> to <button> to prevent any unwanted page navigation -->
-    <button type="button" class="btn btn-outline-primary">
-      <span id="menu-icon" class="fa fa-bars baralignment"></span>
-    </button>
-  </div>
-</div>
-<div class="sidebar is-hidden">
-  <h1 class="sidebar_title">Categories</h1>
-  
-    <?php
-    // load the UL-generator class and produce the menu list dynamically from there
-    require_once (DIR_WS_CLASSES . 'categories_ul_generator.php');
-    $zen_CategoriesUL = new zen_categories_ul_generator;
-
-    // Get the entire menu (with subcategories)
-    $menulist = $zen_CategoriesUL->buildTree(true);
-
-    // Use DOMDocument to parse and filter the menu
-    $dom = new DOMDocument();
-    libxml_use_internal_errors(true);  // suppress warnings about malformed HTML
-    $dom->loadHTML(mb_convert_encoding($menulist, 'HTML-ENTITIES', 'UTF-8'));
-
-    // Find all <li> elements
-    $lis = $dom->getElementsByTagName('li');
-
-    // Filter out subcategories (keep only top-level categories)
-    foreach ($lis as $li) {
-        // Check if the <li> element has a child <ul> (indicating subcategories)
-        $ul = $li->getElementsByTagName('ul');
-        if ($ul->length > 0) {
-            // Remove the subcategory <ul> and all its content
-            $li->removeChild($ul->item(0));
-        }
-    }
-
-    // Output the modified menu
-    $menulist = $dom->saveHTML();
-
-    // Clean up and display the menu
-    $menulist = str_replace("<html><body>", "", $menulist);
-    $menulist = str_replace("</body></html>", "", $menulist);
-
-    echo $menulist;
-    ?> 
-    
-
-    <ul class="myaccounts">
-      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa fa-xl fa-fw fa-home" aria-hidden="true"></i><?php echo HEADER_TITLE_CATALOG; ?></a></li>
-      
-      <?php
-          if (zen_is_logged_in() && !zen_in_guest_checkout()) {
-      ?>
-      <li><a href="<?php echo zen_href_link(FILENAME_LOGOFF, '', 'SSL'); ?>"><i class="fa fa-xl fa-fw fa-sign-out" aria-hidden="true"></i> <?php echo HEADER_TITLE_LOGOFF; ?></a></li><?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-      
-      <li><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><i class="fa-solid fa-xl fa-fw fa-user"></i> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
-        <?php } else { ?>
-        <li class=""><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
-        <?php } ?>
-      <?php
-        } else {
-          if (STORE_STATUS == '0') {
-      ?>
-
-      <?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-        <li><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"> 
-          <i class="fa fa-xl fa-fw fa-sign-out" aria-hidden="true"></i> 
-          <?php echo HEADER_TITLE_LOGIN; ?></a></li>
-        <?php } else { ?>
-          <li class=""><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>">
-          <i class="fa fa-xl fa-fw fa-sign-in" aria-hidden="true"></i> <?php echo HEADER_TITLE_LOGIN; ?></a></li>
-        <?php } ?>
-      <?php } } ?>
-
-      <?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-        <li><a class="" href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>">   
-        <i class="fa-solid fa-xl fa-fw fa-cart-shopping" title="Shopping Cart"></i>
-      <?php
-          echo HEADER_TITLE_CART_CONTENTS;
-          // Alternatively, if you want to display cart quantity and value, use the following line instead of the one above. Adapt for multiple languages if relevant.
-          // echo $_SESSION['cart']->count_contents().' item(s) '. $currencies->format($_SESSION['cart']->show_total());
-      ?>
-      </a></li>
-
-      <li><a href="<?php echo zen_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'); ?>">
-        <i class="fa-solid fa-xl fa-fw  fa-truck-fast"></i>
-        <?php echo HEADER_TITLE_CHECKOUT; ?></a></li>
-    
-      <?php }?>
-  </ul>
-</div>
-<!-- eof sidebar navigation -->
-
-
-<!--bof branding display-->
-<div id="logoWrapper" class="group onerow-fluid">
-    <div id="logo">
-      <?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">' . zen_image($template->get_template_dir(HEADER_LOGO_IMAGE, DIR_WS_TEMPLATE, $current_page_base,'images'). '/' . HEADER_LOGO_IMAGE, HEADER_ALT_TEXT) . '</a>'; ?>
-      <?php if (HEADER_SALES_TEXT != '' || (SHOW_BANNERS_GROUP_SET2 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET2))) { ?>
-    <div id="taglineWrapper">
-<?php
-  if (HEADER_SALES_TEXT != '') {
-?>
-      <div id="tagline"><?php echo HEADER_SALES_TEXT;?></div>
-<?php
-  }
-?>
-<?php
-  if (SHOW_BANNERS_GROUP_SET2 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET2)) {
-    if ($banner->RecordCount() > 0) {
-?>
-  <div id="bannerTwo" class="banners"><?php echo zen_display_banner('static', $banner);?></div>
-<?php
-    }
-  }
-?>
-   </div>
-<?php } // no HEADER_SALES_TEXT or SHOW_BANNERS_GROUP_SET2 ?>
- </div> 
-</div>
-
-
-<!-- tablet desktop search and icons -->
-<div class="search_box"> 
-   <?php require(DIR_WS_MODULES . zen_get_module_sidebox_directory('search_header.php')); ?>
-</div>
+.sidebar_title {
+	margin-left:12px;
+	text-align: left !important;
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 270px;
+	background-color: #fff;
+	// h-shadow, v-shadow, blur, spreadbox-shadow: 6px 0 18px 8px black;
+	transition: transform 0.3s ease-out;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style: none;
+	}
+	a {
+		display: block;
+		padding: 0.5rem 1rem;
+		color: #000;
+		text-decoration: none;
+		&:hover {
+			background-color: lavender;
+			color: #000 !important;
+		}
+	}
+}
+.sidebar.is-hidden {
+	transform: translateX(-300px);
+}
+.baralignment {
+	font-size:25px;
+	color:#000;
+	margin-right:6px;
+	width:25px;
+}
+.level1 {
+	margin-bottom:0rem !important;
+	padding-bottom:1rem !important;
+}
+#siteinfoIP {
+	display:none !important
+}
+.sidebar {
+	overflow-y:scroll;
+	z-index: 1;
+	padding-top:1rem;
+}
+.myaccounts .fa-fw {
+	color:blueviolet;
+}
+/* Disable scrolling */
+.no-scroll {
+	overflow: hidden;
+	height: 100%;
+}
+.myaccounts {
+	border-top:solid 1px #ccc;
+	padding-top:1rem !important;
+	padding-bottom:2rem !important;
+}
+/* The overlay effect (background color and opacity) */
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	/* Semi-transparent background */
+	display: none;
+	/* Hidden by default */
+	z-index: 1;
+	/* Make sure it appears above other content */
+}
  
-  <div class="shoppingcart">
-    <a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><i class="fa fa-user spacer2 navitem1t" aria-hidden="true"  style="font-size:32px;color:#d3d3d3;"></i></a>
-    
-    <a href="<?php echo zen_href_link('contact_us', '', 'SSL'); ?>">
-    <i class="fa fa-envelope spacer1 navitem2t" style="font-size:32px;color:#87b7b8;"></i></a>  
-    
-    <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>">
-    <i class="fa fa-fw badge fa-lg navitem3t">
-        <span class="cart-count"><?php echo $_SESSION['cart']->count_contents(); ?></span>
-        &#xf07a;  <!-- Font Awesome shopping cart icon --></i></a>
+.navitem1t {
+	font-size:32px !important;
+	color:#d3d3d3;
+}
+.navitem2t {
+	font-size:32px !important;
+	color:#87b7b8;
+}
+.navitem3t {
+	font-size:32px !important;
+	color:#97682B;
+	padding-top:0.2rem;
+}
 
-</div> 
+.navitem3t {
+    position: relative;
+}
 
-</div>
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 0 5px;
+    font-weight: bold;
+}
 
 
-<!-- mobile search -->
-<div class="search_box_mobile"> 
-   <?php require(DIR_WS_MODULES . zen_get_module_sidebox_directory('search_header.php')); ?>
-</div>
 
-<!--eof branding display-->
-<!--eof header logo and navigation display-->
-
- 
-
-<!--bof optional categories tabs navigation display-->
-<?php require($template->get_template_dir('tpl_modules_categories_tabs.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_categories_tabs.php'); ?>
-<!--eof optional categories tabs navigation display-->
-
-<!--bof header ezpage links-->
-<?php if (EZPAGES_STATUS_HEADER == '1' or (EZPAGES_STATUS_HEADER == '2' && zen_is_whitelisted_admin_ip())) { ?>
-<?php   require($template->get_template_dir('tpl_ezpages_bar_header.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_ezpages_bar_header.php'); ?>
-<?php } ?>
-<!--eof header ezpage links-->
-
-<script>
-$(document).ready(function() {
-  // Toggle sidebar on button click
-  $(".btn").click(function(e) {
-    e.stopPropagation(); // Prevent click event from propagating to the document
-    var $this = $(this);
-    var $sidebar = $(".sidebar");
-    var $icon = $("#menu-icon"); // Reference to the icon inside the button
-    var $overlay = $("#overlay"); // Reference to the overlay
-
-    // Toggle the sidebar visibility
-    $sidebar.toggleClass('is-hidden');
-    $overlay.toggle(); // Toggle the overlay visibility
-
-    // Change icon based on sidebar state
-    if ($sidebar.hasClass("is-hidden")) {
-      $icon.removeClass('fa-times').addClass('fa-bars');
-    } else {
-      $icon.removeClass('fa-bars').addClass('fa-times');
-    }
-  });
-
-  // Close sidebar and overlay when clicking outside of it
-  $(document).click(function(e) {
-    var $sidebar = $(".sidebar");
-    var $btn = $(".btn");
-    var $overlay = $("#overlay");
-
-    // Check if the click was outside the sidebar and button
-    if (!$(e.target).closest($sidebar).length && !$(e.target).closest($btn).length) {
-      // If outside, close the sidebar and hide the overlay
-      if (!$sidebar.hasClass('is-hidden')) {
-        $sidebar.addClass('is-hidden');
-        $overlay.hide(); // Hide the overlay
-        $("body").removeClass('no-scroll'); // Enable scrolling
-        $("#menu-icon").removeClass('fa-times').addClass('fa-bars');
-      }
-    }
-  });
-
-  // Prevent sidebar from closing if the sidebar itself is clicked
-  $(".sidebar").click(function(e) {
-    e.stopPropagation();
-  });
-
-  // Hide overlay when it's clicked
-  $("#overlay").click(function() {
-    $(".sidebar").addClass('is-hidden');
-    $(this).hide(); // Hide the overlay
-    $("body").removeClass('no-scroll'); // Enable scrolling
-    $("#menu-icon").removeClass('fa-times').addClass('fa-bars');
-  });
-});
-</script>
-
-<!-- eof sidebar nav script -->
-
-</div>

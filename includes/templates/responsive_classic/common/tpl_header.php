@@ -102,19 +102,14 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
     
 
     <ul class="myaccounts">
-      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?>
-        <i class="fa fa-xl fa-fw fa-home" aria-hidden="true"></i>
-        <?php echo HEADER_TITLE_CATALOG; ?></a></li>
+      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa fa-xl fa-fw fa-home" aria-hidden="true"></i><?php echo HEADER_TITLE_CATALOG; ?></a></li>
       
       <?php
           if (zen_is_logged_in() && !zen_in_guest_checkout()) {
       ?>
-      <li><a href="<?php echo zen_href_link(FILENAME_LOGOFF, '', 'SSL'); ?>">
-        <i class="fa fa-xl fa-fw fa-sign-out" aria-hidden="true"></i> <?php echo HEADER_TITLE_LOGOFF; ?></a></li>
-        <?php if ($_SESSION['cart']->count_contents() != 0) { ?>
+      <li><a href="<?php echo zen_href_link(FILENAME_LOGOFF, '', 'SSL'); ?>"><i class="fa fa-xl fa-fw fa-sign-out" aria-hidden="true"></i> <?php echo HEADER_TITLE_LOGOFF; ?></a></li><?php if ($_SESSION['cart']->count_contents() != 0) { ?>
       
-      <li><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>">
-        <i class="fa-solid fa-xl fa-fw fa-user"></i> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
+      <li><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><i class="fa-solid fa-xl fa-fw fa-user"></i> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
         <?php } else { ?>
         <li class=""><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
         <?php } ?>
@@ -187,14 +182,16 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 </div>
  
   <div class="shoppingcart">
-    <a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>">
-    <i class="fa fa-user spacer2 navitem1t" aria-hidden="true"  style="font-size:32px;color:#d3d3d3;"></i></a>
+    <a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><i class="fa fa-user spacer2 navitem1t" aria-hidden="true"  style="font-size:32px;color:#d3d3d3;"></i></a>
     
     <a href="<?php echo zen_href_link('contact_us', '', 'SSL'); ?>">
     <i class="fa fa-envelope spacer1 navitem2t" style="font-size:32px;color:#87b7b8;"></i></a>  
     
-    <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>"> 
-    <i style="" class="fa fa-fw badge fa-lg navitem3t"  value="<?php echo  $_SESSION['cart']->count_contents() ?>">&#xf07a;</i></a>
+    <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>">
+    <i class="fa fa-fw badge fa-lg navitem3t">
+        <span class="cart-count"><?php echo $_SESSION['cart']->count_contents(); ?></span>
+        &#xf07a;  <!-- Font Awesome shopping cart icon --></i></a>
+
 </div> 
 
 </div>

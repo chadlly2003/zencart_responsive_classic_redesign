@@ -451,6 +451,9 @@ input[type="search"] {
 .two_continue {
 	margin-bottom:0.5rem;
 }
+#cartAdd {
+	position: relative;
+}
 @media (min-width:576px) {
 	#shoppingcartBody input[type="image"] {
 		margin-top:-106px;
@@ -467,8 +470,6 @@ input[type="search"] {
 	}
 	#cartAdd {
 		display: flex;
-		 justify-content: right;
-		 
 	}
 	#contactusBody .forward {
 		float:right !important;
@@ -602,5 +603,4 @@ input[type="search"] {
 			float:none;
 		}
 	}
-	
 }

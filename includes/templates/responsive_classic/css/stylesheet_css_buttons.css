@@ -467,7 +467,7 @@ input[type="search"] {
 	}
 	#cartAdd {
 		display: flex;
-		width: 70%;
+		 
 		float: right;
 	}
 	#contactusBody .forward {
@@ -588,15 +588,18 @@ input[type="search"] {
 }
 @media (min-width: 992px) {
 	#cartAdd {
-		width:48% !important;
+		width:54% !important;
 		margin-left:auto;
 		float:none;
 	}
 }
 @media (min-width: 1200px) {
-	#cartAdd {
-		width:47% !important;
-		margin-left:auto;
-		float:none;
+	@media (min-width: 992px) {
+		#cartAdd {
+			width:53% !important;
+			margin-left:auto;
+			float:none;
+		}
 	}
+	
 }

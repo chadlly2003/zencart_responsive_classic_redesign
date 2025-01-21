@@ -966,6 +966,11 @@ TEXTAREA {
 		margin-top:0rem;
 		margin-bottom:0rem;
 	}
+	#productGeneral .max-qty {
+		position:absolute;
+		margin-top:3.5rem !important;
+		margin-left:20%;
+	}
 }
 @media (min-width: 992px) {
 	#productGeneral .qty_cart_qty {

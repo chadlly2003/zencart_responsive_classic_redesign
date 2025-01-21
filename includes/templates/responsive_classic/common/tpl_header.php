@@ -75,7 +75,8 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
     // Use DOMDocument to parse and filter the menu
     $dom = new DOMDocument();
     libxml_use_internal_errors(true);  // suppress warnings about malformed HTML
-    $dom->loadHTML(mb_convert_encoding($menulist, 'HTML-ENTITIES', 'UTF-8'));
+    $menulist = '<!DOCTYPE html><html><body>' . $menulist . '</body></html>';
+    $dom->loadHTML($menulist);
 
     // Find all <li> elements
     $lis = $dom->getElementsByTagName('li');

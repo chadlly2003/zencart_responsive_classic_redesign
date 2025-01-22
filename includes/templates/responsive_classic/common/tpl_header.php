@@ -102,7 +102,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
     ?> 
     
     <ul class="myaccounts">
-      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa fa-xl fa-fw fa-home" aria-hidden="true"></i> <?php echo HEADER_TITLE_CATALOG; ?></a></li>
+      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa fa-xl fa-fw fa-home" aria-hidden="true">&nbsp</i> <?php echo HEADER_TITLE_CATALOG; ?></a></li>
       
       <?php
           if (zen_is_logged_in() && !zen_in_guest_checkout()) {
@@ -124,7 +124,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
           <?php echo HEADER_TITLE_LOGIN; ?></a></li>
         <?php } else { ?>
           <li class=""><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>">
-          <i class="fa fa-xl fa-fw fa-sign-in" aria-hidden="true"></i> <?php echo HEADER_TITLE_LOGIN; ?></a></li>
+          <i class="fa fa-xl fa-fw fa-sign-in" aria-hidden="true">&nbsp</i> <?php echo HEADER_TITLE_LOGIN; ?></a></li>
         <?php } ?>
       <?php } } ?>
 
@@ -182,23 +182,20 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 </div>
  
   <div class="shoppingcart">
-    <a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><i class="fa fa-user spacer2 navitem1t" aria-hidden="true"  style="font-size:32px;color:#d3d3d3;"></i></a>
+    <a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><i class="fa fa-user spacer2 navitem1t" aria-hidden="true"  style="font-size:32px;color:#d3d3d3;">&nbsp</i></a>
     
     <a href="<?php echo zen_href_link('contact_us', '', 'SSL'); ?>">
-    <i class="fa fa-envelope spacer1 navitem2t" style="font-size:32px;color:#87b7b8;"></i></a>  
+    <i class="fa fa-envelope spacer1 navitem2t" style="font-size:32px;color:#87b7b8;">&nbsp</i></a>  
     
     <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>">
     <i class="fa fa-fw badge fa-lg navitem3t">
         <span class="cart-count"><?php echo $_SESSION['cart']->count_contents(); ?></span>
         &#xf07a;  <!-- Font Awesome shopping cart icon --></i></a>
-
-</div> 
-
+  </div> 
 </div>
 
-
 <!-- mobile search -->
-<div class="search_box_mobile" id="test" name="form_2"> 
+<div class="search_box_mobile" id="test"> 
    <?php require(DIR_WS_MODULES . zen_get_module_sidebox_directory('search_header.php')); ?>
 </div>
 

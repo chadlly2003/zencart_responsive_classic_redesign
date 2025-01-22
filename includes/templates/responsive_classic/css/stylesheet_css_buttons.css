@@ -164,11 +164,18 @@ input[type="search"] {
 }
 #productinfoBody #cartAdd a {
 	font-size:22px;
-	width:100%;
+	width:auto;
 	text-align:left;
 	color:blueviolet;
 	margin-left:0rem !important;
 }
+
+#productinfoBody #cartAdd a:hover {color:blueviolet !important; opacity:0.5}
+
+
+#productinfoBody .button_sold_out {width: auto !important;}
+
+
 #productAttributes {
 	background-color: aliceblue;
 	padding:12px !important;

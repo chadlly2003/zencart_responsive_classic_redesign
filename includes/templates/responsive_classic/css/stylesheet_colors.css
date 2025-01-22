@@ -496,13 +496,25 @@ input.cssButton.submit_button.button.button_search {
 	float:none !important;
 	margin-top:0rem !important;
 	margin-bottom:0rem !important;
+	display: flex;
+	justify-content: center;
+	clear:both;
 }
 #productReviewLink a {
 	color:#7D3E12 !important;
 	font-size: 16px;
-	margin-top:1rem !important;
+	margin-top:0rem !important;
 	margin-bottom:1rem !important;
 }
+.spacerreviewsa span.normal_button {
+	display:inherit !important;
+}
+.reviewligner span.normal_button {
+	display:inherit !important;
+}
+
+.reviewligner {display: flex; justify-content: center;}
+
 #orderstatusBody legend {
 	color:#000;
 }

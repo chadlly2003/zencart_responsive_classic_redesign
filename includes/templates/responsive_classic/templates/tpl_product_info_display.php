@@ -265,7 +265,6 @@ if ($flag_show_product_info_reviews == 1) {
             <?= zen_image_button(BUTTON_IMAGE_WRITE_REVIEW, BUTTON_WRITE_REVIEW_ALT) ?>
         </a>
     </div>
-    <br class="clearBoth">
 <?php
     }
 }

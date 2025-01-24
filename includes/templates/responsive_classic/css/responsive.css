@@ -626,10 +626,11 @@ img{
 		display:block;
 	}
 	.onerow-fluid>[class*="col150"]:nth-child(3){
-		padding-left:2rem;
-		margin-right:0;
+		padding-left:0;
+		margin-left:2rem;
 		width: 220px;
 		display:none;
+		 
 	}
 	#indexHomeBody .onerow-fluid>[class*="col150"]:nth-child(3){
 		display:block;

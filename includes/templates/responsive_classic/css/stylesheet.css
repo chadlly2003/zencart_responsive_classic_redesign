@@ -262,7 +262,8 @@ select#country, select#stateZone, #state {
 	margin:0px;
 	padding:0px;
 	font-size:1.1em;
-	border:none !important
+	border:none !important;
+	background:transparent !important;
 }
 #currenciesContent select{
 	height:35px;
@@ -643,7 +644,6 @@ ul.list-links li:hover, ol.list-links li:hover{
 	display:inline !important;
 }
 .orderHistList i{
-	margin-left:10px;
 	display:inline;
 }
 .orderHistList {
@@ -2198,6 +2198,11 @@ span.normal_button:hover {
 .button_update:hover {
 	opacity:0.5 !important;
 }
+
+
+#ezpages ul.list-links li {display:list-item !important;margin-left:1rem;list-style: disc;}
+#bestsellersContent ul.list-links li {display:list-item !important;margin-left:1rem;list-style:decimal;}
+
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {
 		order:2;
@@ -2250,6 +2255,14 @@ span.normal_button:hover {
 	}
 }
 @media (min-width: 768px) {
+
+	.onerow-fluid::before {display:none !important;}
+	#contentMainWrapper {
+		display:grid;
+		 grid-template-columns:100%;
+	}
+ 
+
 	#gvRedeemDefault .forward {
 		float:right !important;
 	}
@@ -2440,6 +2453,15 @@ span.normal_button:hover {
 }
 }
 @media (min-width: 992px) {
+
+
+	.onerow-fluid::before {display:none !important;}
+	#contentMainWrapper {
+		display:grid;
+		 grid-template-columns: auto 1fr auto;
+	}
+
+
 	#shoppingcartBody .forward {
 		order:2;
 		flex-grow: 0;

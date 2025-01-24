@@ -56,7 +56,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 <div class="row">
   <div class="col">
     <!-- Change <a> to <button> to prevent any unwanted page navigation -->
-    <button type="button" class="btn btn-outline-primary">
+    <button aria-label="Categories" type="button" class="btn btn-outline-primary">
       <span id="menu-icon" class="fa fa-bars baralignment"></span>
     </button>
   </div>
@@ -182,9 +182,11 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 </div>
  
   <div class="shoppingcart">
-    <a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><i class="fa fa-user spacer2 navitem1t" aria-hidden="true"  style="font-size:32px;color:#d3d3d3;">&nbsp</i></a>
+  <a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>" aria-label="Login page">
+    <i class="fa fa-user spacer2 navitem1t" aria-hidden="true" style="font-size:32px;color:#d3d3d3;">&nbsp</i>
+</a>
     
-    <a href="<?php echo zen_href_link('contact_us', '', 'SSL'); ?>">
+    <a href="<?php echo zen_href_link('contact_us', '', 'SSL'); ?>"  aria-label="Contact page">
     <i class="fa fa-envelope spacer1 navitem2t" style="font-size:32px;color:#87b7b8;">&nbsp</i></a>  
     
     <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>">

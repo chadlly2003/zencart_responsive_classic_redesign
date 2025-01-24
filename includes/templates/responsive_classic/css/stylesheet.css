@@ -1601,7 +1601,7 @@ span#askAQuestionButton:hover {
 	opacity: 1;
 }
 #productQuestions a {
-	font-size:33px !important;
+	font-size:16px !important;
 }
 /** Brands page */
 .brandCell {
@@ -2208,6 +2208,11 @@ span.normal_button:hover {
 		order:2;
 		flex-grow: 2;
 	}
+
+	#productQuestions a {
+		font-size:20px !important;
+	}
+
 	#shoppingcartBody .tableHeading {
 		width: 100% !important;
 		display: grid !important;

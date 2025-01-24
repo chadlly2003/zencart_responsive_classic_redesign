@@ -241,29 +241,6 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
 
 
 
-
- <?php
-if  ($detect->isMobile() && !$detect->isTablet() || $_SESSION['layoutType'] == 'mobile' ) {
-  echo '</div>';
-} else if ( $detect->isTablet() || $_SESSION['layoutType'] == 'tablet' ){
-  echo '</div>';
-} else {
-  //
-}
-?>
-
-
-<?php if  ($detect->isMobile() && !$detect->isTablet() || $_SESSION['layoutType'] == 'mobile' ) {
-  require($template->get_template_dir('tpl_modules_mobile_menu.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_mobile_menu.php');
-} else if ( $detect->isTablet() || $_SESSION['layoutType'] == 'tablet' ){
-  require($template->get_template_dir('tpl_modules_mobile_menu.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_mobile_menu.php');
-} else if ( $_SESSION['layoutType'] == 'full' ) {
-  //
-} else {
-  //
-}
-?>
-
 <?php /* add any end-of-page code via an observer class */
   $zco_notifier->notify('NOTIFY_FOOTER_END', $current_page);
 ?>

@@ -7,11 +7,9 @@ img{
 }
 /* Added for responsive view () */
 .leftBoxContainer, .rightBoxContainer {
-	width:auto !important;
 }
 /* No reason to edit the below pixel calculations */
 [class*="col"]{
-	float:left;
 	margin-left:0px;
 }
 .col10{
@@ -57,7 +55,6 @@ img{
 	width:205px;
 }
 .col150{
-	width:220px;
 }
 .col160{
 	width:235px;
@@ -212,9 +209,6 @@ img{
 .col660{
 	width:985px;
 }
-.col670{
-	width:1000px;
-}
 .col680{
 	width:1015px;
 }
@@ -320,18 +314,17 @@ img{
 }
 .onerow-fluid:after{
 	clear:both;
+	display: none !important;
 }
-.onerow-fluid>[class*="col"]{
-	float:left;
+.onerow-fluid>[class*="col150"]{
+	padding-right:0rem;
 	margin-left:0;
 }
-.onerow-fluid>[class*="col"]:first-child{
-	margin-left:0;
-	margin-right:1rem;
+.onerow-fluid>[class*="col150"]:nth-child(1){
+	display:none;
 }
-.onerow-fluid>[class*="col"]:nth-child(3){
-	float:right;
-	margin-right:0;
+.onerow-fluid>[class*="col150"]:nth-child(3){
+	display:none;
 }
 .onerow-fluid>.col10{
 	width:0.6826%;
@@ -376,7 +369,6 @@ img{
 	width:13.9932%;
 }
 .onerow-fluid>.col150{
-	width:20%;
 }
 .onerow-fluid>.col160{
 	width:16.041%;
@@ -532,7 +524,6 @@ img{
 	width:67.2355%;
 }
 .onerow-fluid>.col670{
-	width:68.2594%;
 }
 .onerow-fluid>.col680{
 	width:69.2833%;
@@ -626,4 +617,21 @@ img{
 }
 .onerow-fluid>.col980{
 	width:100%;
+}
+@media (min-width: 992px) {
+	.onerow-fluid>[class*="col150"]:nth-child(1){
+		padding-left:0rem;
+		margin-right:2rem;
+		width: 220px;
+		display:block;
+	}
+	.onerow-fluid>[class*="col150"]:nth-child(3){
+		padding-left:2rem;
+		margin-right:0;
+		width: 220px;
+		display:none;
+	}
+	#indexHomeBody .onerow-fluid>[class*="col150"]:nth-child(3){
+		display:block;
+	}
 }

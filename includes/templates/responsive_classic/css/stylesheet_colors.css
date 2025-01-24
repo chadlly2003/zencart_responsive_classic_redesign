@@ -336,9 +336,6 @@ input.cssButton.submit_button.button.button_search {
 .spacer2 {
 	display:none !important;
 }
-.col150:nth-of-type(3) {
-	display:none !important;
-}
 .navNextPrevCounter {
 	display:none;
 }
@@ -382,6 +379,212 @@ input.cssButton.submit_button.button.button_search {
 	text-align: left;
 	border-bottom:solid 1px #ccc;
 	font-size:16px;
+}
+.list-links li {
+	display: list-item;
+}
+#ezpagesHeading {
+	background: lavender;
+	border-radius: 5px;
+	color:#000;
+	margin-bottom: 1rem;
+	background:antiquewhite;
+}
+#recordcompaniesHeading {
+	background: lavender;
+	border-radius: 5px;
+	color:#000;
+	margin-bottom: 1rem;
+	background:paleturquoise;
+}
+#bannerbox2Heading {
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#bannerbox2Heading::after {
+	content: "\f059";
+	font-family: "Font Awesome 5 Free";
+	vertical-align: inherit;
+	font-size: 20px;
+	font-weight: 900;
+	color: cornflowerblue;
+	padding-left: 0.5rem;
+}
+#searchHeading label {
+	font-size:16px !important;
+}
+#bestsellersHeading {
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#bestsellersHeading::before {
+	content: "\f005";
+	font-family: "Font Awesome 5 Free";
+	vertical-align: inherit;
+	font-size: 20px;
+	font-weight: 900;
+	color: blueviolet;
+	padding-right: 0.5rem;
+}
+#shoppingcartHeading {
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#shoppingcartHeading::before {
+	content: "\f07a";
+	font-family: "Font Awesome 5 Free";
+	vertical-align: inherit;
+	font-size: 20px;
+	font-weight: 900;
+	color: coral;
+	padding-right: 0.5rem;
+}
+#orderhistoryHeading {
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#specialsHeading {
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#specialsHeading::before {
+	content: "\f02b";
+	font-family: "Font Awesome 5 Free";
+	vertical-align: inherit;
+	font-size: 20px;
+	font-weight: 900;
+	color: mediumvioletred;
+	padding-right: 0.5rem;
+}
+#bannerboxallHeading {
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#bannerboxallHeading::before {
+	content: "\f164";
+	font-family: "Font Awesome 5 Free";
+	vertical-align: inherit;
+	font-size: 20px;
+	font-weight: 900;
+	color: violet;
+	padding-right: 0.5rem;
+}
+#searchHeading{
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:0rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#searchHeading::before {
+	content: "\f002";
+	font-family: "Font Awesome 5 Free";
+	vertical-align: inherit;
+	font-size: 20px;
+	font-weight: 900;
+	color: peru;
+	padding-right: 0.5rem;
+	float:left;
+}
+.sidebox-select-form input.submit_button {
+	width:auto !important;
+	background:#ccc;
+}
+.sidebox-select-form .button_submit:hover {
+	width:auto !important;
+	opacity:0.5;
+	background:#ccc;
+}
+#select-record_company_id {
+	outline:none;
+	height:auto;
+}
+#musicgenresContent select {
+	outline:none;
+	height:auto;
+}
+#musicgenresHeading {
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#musicgenresHeading::before {
+	content: "\f001";
+	font-family: "Font Awesome 5 Free";
+	vertical-align: inherit;
+	font-size: 20px;
+	font-weight: 900;
+	color: yellowgreen;
+	padding-right: 0.5rem;
+}
+#whosonlineHeading {
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#whosonlineHeading::before {
+	content: "\f0ac";
+	font-family: "Font Awesome 5 Free";
+	vertical-align: inherit;
+	font-size: 20px;
+	font-weight: 900;
+	color: pink;
+	padding-right: 0.5rem;
+}
+#productnotificationsHeading {
+	background: #cfd3c6;
+	border-radius: 5px;
+	color:#000;
+	margin-bottom: 1rem;
 }
 #reviewsHeading {
 	background: #cfd3c6;
@@ -512,9 +715,10 @@ input.cssButton.submit_button.button.button_search {
 .reviewligner span.normal_button {
 	display:inherit !important;
 }
-
-.reviewligner {display: flex; justify-content: center;}
-
+.reviewligner {
+	display: flex;
+	justify-content: center;
+}
 #orderstatusBody legend {
 	color:#000;
 }
@@ -686,7 +890,6 @@ input.cssButton.submit_button.button.button_search {
 	border-bottom:solid 1px #ccc;
 }
 .onerow-fluid > .col670 {
-	width: 100% !important;
 }
 #productGeneral .qty_cart_qty {
 	text-align:right !important;
@@ -964,9 +1167,6 @@ TEXTAREA {
 	#askaquestionBody .button.button_back {
 		float:left;
 	}
-	.onerow-fluid > .col670 {
-		width: 77% !important;
-	}
 	.qty_cart_qty {
 		text-align:right !important;
 	}
@@ -1006,9 +1206,6 @@ TEXTAREA {
 	.nav_spacer {
 		grid-template-columns: auto 1fr 2fr 1fr;
 		justify-content:center ;
-	}
-	.onerow-fluid > .col670 {
-		width: 78% !important;
 	}
 }
 @media (min-width: 1200px) {

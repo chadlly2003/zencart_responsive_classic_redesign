@@ -2284,6 +2284,18 @@ span.normal_button:hover {
 	}
 }
 @media (min-width: 768px) {
+
+
+	#pinfo-left{
+		float:left;
+		width:35%;
+	}
+	#pinfo-right {
+		width:50% !important;
+		float:right;
+		padding:1rem !important;
+	}
+
 	.onerow-fluid::before {
 		display:none !important;
 	}
@@ -2508,15 +2520,7 @@ span.normal_button:hover {
 	.cat-count {
 		display:inline !important;
 	}
-	#pinfo-left{
-		float:left;
-		width:35%;
-	}
-	#pinfo-right {
-		width:50% !important;
-		float:right;
-		padding:1rem !important;
-	}
+	 
 }
 .CenterBoxContentsNew .back {
 	float:left !important;

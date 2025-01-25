@@ -1096,7 +1096,9 @@ TEXTAREA {
 		display:block !important;
 	}
 	.shoppingcart {
-		grid-template-columns: 2fr 2fr 1fr;
+		grid-template-columns: auto auto auto;
+		text-align: center;
+		gap:1.5rem;
 	}
 	.nav_spacer {
 		grid-template-columns: auto 1fr 1fr;
@@ -1200,8 +1202,8 @@ TEXTAREA {
 	}
 	.search_box {
 		display: block;
-		Atext-align: center;
-		margin-left: 12px;
+		text-align: center;
+		margin-left: 1.5rem;
 	}
 	.nav_spacer {
 		grid-template-columns: auto 1fr 2fr 1fr;
@@ -1209,6 +1211,9 @@ TEXTAREA {
 	}
 }
 @media (min-width: 1200px) {
+	.search_box {
+		margin-left: 0rem;
+	}
 	.nav_spacer {
 		grid-template-columns: auto 1fr 3fr 1fr;
 	}

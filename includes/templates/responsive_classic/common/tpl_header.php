@@ -141,8 +141,12 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
       <li><a href="<?php echo zen_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'); ?>">
         <i class="fa-solid fa-xl fa-fw  fa-truck-fast"></i>
         <?php echo HEADER_TITLE_CHECKOUT; ?></a></li>
-    
       <?php }?>
+
+
+      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . 'site_map.php">'; ?> <i class="fa fa-xl fa-fw fa-sitemap fa-flip-horizontal" aria-hidden="true">&nbsp</i> Sitemap</a></li>
+
+      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . 'contact_us.php">'; ?><i class="fa fa-xl fa-fw fa-phone fa-flip-horizontal" aria-hidden="true">&nbsp</i> Contact</a></li>
   </ul>
 </div>
 <!-- eof sidebar navigation -->

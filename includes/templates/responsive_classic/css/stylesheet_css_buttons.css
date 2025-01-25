@@ -475,9 +475,14 @@ input[type="search"] {
 		margin-bottom:0.5rem;
 		float:right;
 	}
+ 
+
 	#cartAdd {
-		display: flex;
+		width:54% !important;
+		margin-left:auto;
+		float:none;
 	}
+
 	#contactusBody .forward {
 		float:right !important;
 	}
@@ -596,11 +601,7 @@ input[type="search"] {
 }
 }
 @media (min-width: 992px) {
-	#cartAdd {
-		width:54% !important;
-		margin-left:auto;
-		float:none;
-	}
+ 
 }
 @media (min-width: 1200px) {
 	@media (min-width: 992px) {

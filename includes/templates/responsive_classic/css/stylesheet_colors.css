@@ -370,6 +370,83 @@ input.cssButton.submit_button.button.button_search {
 	border-bottom:solid 1px #ccc;
 	font-size:16px;
 }
+#languagesHeading {
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#manufacturerinfoHeading {
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#currenciesHeading {
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#currenciesHeading:before {
+	content: "\24";
+	font-family: "Font Awesome 5 Free";
+	vertical-align: inherit;
+	font-size: 20px;
+	font-weight: 900;
+	color: green;
+	padding-right: 0.5rem;
+}
+#currencies input.submit_button {
+	width:auto !important;
+	background: burlywood;
+}
+#currencies input.cssButtonHover {
+	width:auto !important;
+	opacity: .5;
+	background: burlywood;
+}
+#brandsHeading {
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#featuredcategoriesHeading {
+	background: transparent;
+	border-radius: 0px;
+	color:#000;
+	margin-bottom: 1rem;
+	padding-bottom:1rem;
+	text-align: left;
+	border-bottom:solid 1px #ccc;
+	font-size:16px;
+}
+#manufacturerinfoHeading:before {
+	content: "\f05a";
+	font-family: "Font Awesome 5 Free";
+	vertical-align: inherit;
+	font-size: 20px;
+	font-weight: 900;
+	color: blueviolet;
+	padding-right: 0.5rem;
+}
 #categoriesHeading {
 	background: transparent;
 	border-radius: 0px;
@@ -1187,7 +1264,6 @@ TEXTAREA {
 	}
 }
 @media (min-width: 992px) {
-	 
 	div#logo{
 		margin-right:12px;
 	}

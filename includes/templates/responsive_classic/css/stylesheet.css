@@ -2006,6 +2006,7 @@ input[type="checkbox"] {
 #review-text {
 	margin:0px !important;
 	margin-top:1rem !important;
+	margin-bottom:1rem !important;
 }
 #reviewsWrite #reviewsWriteProductPageLink {
 	width: fit-content;

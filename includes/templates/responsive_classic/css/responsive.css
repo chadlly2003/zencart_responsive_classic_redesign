@@ -618,6 +618,11 @@ img{
 .onerow-fluid>.col980{
 	width:100%;
 }
+
+#productreviewswriteBody .col150:nth-child(2) {
+	display:none !important;
+}
+
 @media (min-width: 992px) {
 	.onerow-fluid>[class*="col150"]:nth-child(1){
 		padding-left:0rem;
@@ -632,6 +637,7 @@ img{
 		display:none !important;
 		 
 	}
+
 	#indexHomeBody .onerow-fluid>[class*="col150"]:nth-child(3){
 		display:block;
 	}

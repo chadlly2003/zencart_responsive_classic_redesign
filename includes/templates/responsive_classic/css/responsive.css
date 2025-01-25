@@ -324,7 +324,7 @@ img{
 	display:none;
 }
 .onerow-fluid>[class*="col150"]:nth-child(3){
-	display:none;
+	display:none !important;
 }
 .onerow-fluid>.col10{
 	width:0.6826%;
@@ -629,7 +629,7 @@ img{
 		padding-left:0;
 		margin-left:2rem;
 		width: 220px;
-		display:none;
+		display:none !important;
 		 
 	}
 	#indexHomeBody .onerow-fluid>[class*="col150"]:nth-child(3){

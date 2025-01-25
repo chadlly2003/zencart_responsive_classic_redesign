@@ -84,7 +84,6 @@
 	z-index: 1;
 	/* Make sure it appears above other content */
 }
- 
 .navitem1t {
 	font-size:32px !important;
 	color:#d3d3d3;
@@ -96,25 +95,29 @@
 .navitem3t {
 	font-size:32px !important;
 	color:#97682B;
-	padding-top:0.2rem;
 }
-
 .navitem3t {
-    position: relative;
+	position: relative;
 }
-
 .cart-count {
-    position: absolute;
-    top: -5px;
-    right: 0px;
-    background-color: #B30000;
-    color: white;
-    font-size: 12px;
-    border-radius: 50%;
-    padding: 0 5px;
-    font-weight: bold;
+	position: absolute;
+	top: -5px;
+	right: 0px;
+	background-color: #B30000;
+	color: white;
+	font-size: 12px;
+	border-radius: 50%;
+	padding: 0 5px;
+	font-weight: bold;
 }
-
 .fa-phone {
-	margin-left:-4px;margin-right:4px;
+	margin-left:-4px;
+	margin-right:4px;
+}
+@media (min-width: 576px) {
+	.navitem3t {
+		font-size:32px !important;
+		color:#97682B;
+		padding-top:0.3rem;
+	}
 }

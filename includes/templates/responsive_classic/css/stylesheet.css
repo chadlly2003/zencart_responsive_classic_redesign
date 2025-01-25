@@ -1656,7 +1656,7 @@ span#askAQuestionButton:hover {
 	margin-bottom:0px !important;
 }
 #productinfoBody #productPrices img {
-	margin-top:1rem !important;
+	margin-top:0.5rem !important;
 }
 #productsListingBottomNumber {
 	margin-bottom:1rem;
@@ -2198,21 +2198,24 @@ span.normal_button:hover {
 .button_update:hover {
 	opacity:0.5 !important;
 }
-
-
-#ezpages ul.list-links li {display:list-item !important;margin-left:1rem;list-style: disc;}
-#bestsellersContent ul.list-links li {display:list-item !important;margin-left:1rem;list-style:decimal;}
-
+#ezpages ul.list-links li {
+	display:list-item !important;
+	margin-left:1rem;
+	list-style: disc;
+}
+#bestsellersContent ul.list-links li {
+	display:list-item !important;
+	margin-left:1rem;
+	list-style:decimal;
+}
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {
 		order:2;
 		flex-grow: 2;
 	}
-
 	#productQuestions a {
 		font-size:20px !important;
 	}
-
 	#shoppingcartBody .tableHeading {
 		width: 100% !important;
 		display: grid !important;
@@ -2237,7 +2240,7 @@ span.normal_button:hover {
 	}
 	#productinfoBody #productPrices img {
 		float:right;
-		margin-top:-70px !important;
+		margin-top:-50px !important;
 		margin:2rem;
 		margin-bottom:0px;
 	}
@@ -2260,14 +2263,13 @@ span.normal_button:hover {
 	}
 }
 @media (min-width: 768px) {
-
-	.onerow-fluid::before {display:none !important;}
+	.onerow-fluid::before {
+		display:none !important;
+	}
 	#contentMainWrapper {
 		display:grid;
-		 grid-template-columns:100%;
+		grid-template-columns:100%;
 	}
- 
-
 	#gvRedeemDefault .forward {
 		float:right !important;
 	}
@@ -2458,15 +2460,13 @@ span.normal_button:hover {
 }
 }
 @media (min-width: 992px) {
-
-
-	.onerow-fluid::before {display:none !important;}
+	.onerow-fluid::before {
+		display:none !important;
+	}
 	#contentMainWrapper {
 		display:grid;
-		 grid-template-columns: auto 1fr auto;
+		grid-template-columns: auto 1fr auto;
 	}
-
-
 	#shoppingcartBody .forward {
 		order:2;
 		flex-grow: 0;
@@ -2480,7 +2480,7 @@ span.normal_button:hover {
 	}
 	#pinfo-left{
 		float:left;
-		width:45%;
+		width:35%;
 	}
 	#pinfo-right {
 		width:50% !important;

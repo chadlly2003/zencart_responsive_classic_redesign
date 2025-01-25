@@ -908,9 +908,19 @@ div#checkoutShippingContentChoose{
 	height:35px;
 	margin-bottom:0.5rem;
 }
+
+#accounthistoryBody  .navSplitPagesLinks {
+width:100%;
+margin-top:1rem;
+margin-bottom:1rem;
+}
+
+
 .navSplitPagesLinks {
 	display:inline-block;
 }
+
+
 .navSplitPagesLinks a{
 	padding:10px;
 	font-weight:bold;

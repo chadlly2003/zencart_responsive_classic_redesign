@@ -1173,8 +1173,8 @@ TEXTAREA {
 		text-align:right !important;
 	}
 	#productGeneral .qty_cart_qty {
-		float:right;
-		clear:both;
+		clear:none;
+		float:none;
 	}
 	#productListing .productFreePrice {
 		margin-top:0rem;
@@ -1187,10 +1187,7 @@ TEXTAREA {
 	}
 }
 @media (min-width: 992px) {
-	#productGeneral .qty_cart_qty {
-		clear:none;
-		float:none;
-	}
+	 
 	div#logo{
 		margin-right:12px;
 	}

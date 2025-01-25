@@ -639,6 +639,6 @@ img{
 	}
 
 	#indexHomeBody .onerow-fluid>[class*="col150"]:nth-child(3){
-		display:block;
+		display:block !important;
 	}
 }

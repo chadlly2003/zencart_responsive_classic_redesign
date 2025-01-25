@@ -355,7 +355,7 @@ input.cssButton.submit_button.button.button_search {
 #headerWrapper {
 	border-bottom:solid 1px #ccc;
 	padding-bottom:2rem;
-	margin-bottom:0rem !important;
+	margin-bottom:2rem !important;
 	max-width: 1280px !important;
 	margin-left:15px !important;
 	margin-right:15px !important;

@@ -101,7 +101,7 @@
 }
 .cart-count {
 	position: absolute;
-	top: -5px;
+	top: -9px;
 	right: 0px;
 	background-color: #B30000;
 	color: white;
@@ -115,6 +115,10 @@
 	margin-right:4px;
 }
 @media (min-width: 576px) {
+
+
+	.cart-count {top: -4px;}
+
 	.navitem3t {
 		font-size:32px !important;
 		color:#97682B;

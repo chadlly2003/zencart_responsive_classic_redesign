@@ -2214,6 +2214,10 @@ span.normal_button:hover {
 	margin-left:1rem;
 	list-style:decimal;
 }
+
+
+
+
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {
 		order:2;
@@ -2464,6 +2468,15 @@ span.normal_button:hover {
 		margin-top:1rem;
 		margin-bottom:1rem !important
 }
+
+#reviews-right input.submit_button {
+	float:right;
+	width:auto !important;}
+
+#reviews-right input.cssButtonHover {
+	float:right;
+	width:auto !important;}
+
 }
 @media (min-width: 992px) {
 	.onerow-fluid::before {

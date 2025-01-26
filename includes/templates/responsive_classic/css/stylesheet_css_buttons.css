@@ -66,6 +66,7 @@ span.cssButton.normal_button.button.button_goto_prod_details{
 	font-size: 16px;
 	opacity:1;
 	color: #154DBC;
+	display:contents;
 }
 #productreviewsBody .button_goto_prod_details:hover {
 	background: transparent !important;
@@ -74,6 +75,7 @@ span.cssButton.normal_button.button.button_goto_prod_details{
 	font-size:16px !important;
 	opacity: 1;
 	color: #154DBC;
+	display: contents;
 }
 #productreviewsBody span.cssButton.normal_button.button.button_goto_prod_details:hover {
 	background: transparent !important;
@@ -169,13 +171,13 @@ input[type="search"] {
 	color:blueviolet;
 	margin-left:0rem !important;
 }
-
-#productinfoBody #cartAdd a:hover {color:blueviolet !important; opacity:0.5}
-
-
-#productinfoBody .button_sold_out {width: auto !important;}
-
-
+#productinfoBody #cartAdd a:hover {
+	color:blueviolet !important;
+	opacity:0.5
+}
+#productinfoBody .button_sold_out {
+	width: auto !important;
+}
 #productAttributes {
 	background-color: aliceblue;
 	padding:12px !important;
@@ -475,14 +477,11 @@ input[type="search"] {
 		margin-bottom:0.5rem;
 		float:right;
 	}
- 
-
 	#cartAdd {
 		width:54% !important;
 		margin-left:auto;
 		float:none;
 	}
-
 	#contactusBody .forward {
 		float:right !important;
 	}
@@ -600,9 +599,7 @@ input[type="search"] {
 		float:left !important
 }
 }
-@media (min-width: 992px) {
  
-}
 @media (min-width: 1200px) {
 	@media (min-width: 992px) {
 		#cartAdd {

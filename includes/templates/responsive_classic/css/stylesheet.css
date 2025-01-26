@@ -908,19 +908,14 @@ div#checkoutShippingContentChoose{
 	height:35px;
 	margin-bottom:0.5rem;
 }
-
-#accounthistoryBody  .navSplitPagesLinks {
-width:100%;
-margin-top:1rem;
-margin-bottom:1rem;
+#accounthistoryBody .navSplitPagesLinks {
+	width:100%;
+	margin-top:1rem;
+	margin-bottom:1rem;
 }
-
-
 .navSplitPagesLinks {
 	display:inline-block;
 }
-
-
 .navSplitPagesLinks a{
 	padding:10px;
 	font-weight:bold;
@@ -1541,12 +1536,10 @@ h2.greeting a:hover{
 #siteMapList {
 	width:100%;
 }
-
 #siteMapList ul {
 	width:100%;
 	padding-bottom:1rem;
 }
-
 #gvFaqDefaultContent{
 	line-height:20px;
 	font-size:110%;
@@ -2095,6 +2088,7 @@ span.normal_button:hover {
 }
 #productReviewsDefaultProductPageLink {
 	text-align: center;
+	margin-bottom: 2rem;
 }
 #reviewsDefault span.cssButton.normal_button.button.button_in_cart {
 	font-size:16px;
@@ -2225,10 +2219,6 @@ span.normal_button:hover {
 	margin-left:1rem;
 	list-style:decimal;
 }
-
-
-
-
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {
 		order:2;
@@ -2284,8 +2274,9 @@ span.normal_button:hover {
 	}
 }
 @media (min-width: 768px) {
-
-
+	#productReviewsDefaultProductPageLink {
+		margin-bottom: 0rem;
+	}
 	#pinfo-left{
 		float:left;
 		width:35%;
@@ -2295,7 +2286,6 @@ span.normal_button:hover {
 		float:right;
 		padding:1rem !important;
 	}
-
 	.onerow-fluid::before {
 		display:none !important;
 	}
@@ -2363,9 +2353,6 @@ span.normal_button:hover {
 		text-align: left;
 		padding:0px !important;
 		margin:0px !important;
-	}
-	#productReviewsDefaultProductPageLink {
-		margin-top:-1rem !important;
 	}
 	#reviewsDefault .productBasePrice {
 		text-align: right;
@@ -2491,15 +2478,14 @@ span.normal_button:hover {
 		margin-top:1rem;
 		margin-bottom:1rem !important
 }
-
-#reviews-right input.submit_button {
-	float:right;
-	width:auto !important;}
-
-#reviews-right input.cssButtonHover {
-	float:right;
-	width:auto !important;}
-
+	#reviews-right input.submit_button {
+		float:right;
+		width:auto !important;
+	}
+	#reviews-right input.cssButtonHover {
+		float:right;
+		width:auto !important;
+	}
 }
 @media (min-width: 992px) {
 	.onerow-fluid::before {
@@ -2520,7 +2506,6 @@ span.normal_button:hover {
 	.cat-count {
 		display:inline !important;
 	}
-	 
 }
 .CenterBoxContentsNew .back {
 	float:left !important;

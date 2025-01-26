@@ -127,7 +127,7 @@ if ($flag_show_ask_a_question) {
 ?>
 
 <!--bof Product Price block -->
-<h2 id="productPrices" class="<?= $product_info_class ?>">
+<h2 aria-label="Price" id="productPrices" class="<?= $product_info_class ?>">
 <?php
 // base price
 if ($show_onetime_charges_description == 'true') {

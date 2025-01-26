@@ -151,36 +151,6 @@ if (zen_get_product_is_always_free_shipping($products_id_current) && $flag_show_
 <!--eof free ship icon  -->
         </div>
 
-<?php
-$add_to_cart_class = 'add-to-cart-' . zen_get_products_allow_add_to_cart((int)$_GET['products_id']);
-?>
-        <div id="cart-box" class="grids <?= $product_info_class . ' ' . $add_to_cart_class ?>">
-
-
-<!--bof Attributes Module -->
-<?php
-if ($pr_attr->fields['total'] > 0) {
-    /**
-     * display the product attributes
-     */
-    require $template->get_template_dir('/tpl_modules_attributes.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_modules_attributes.php'; ?>
-<?php
-}
-?>
-<!--eof Attributes Module -->
-
-<!--bof Quantity Discounts table -->
-<?php
-if ($products_discount_type != 0) {
-    /**
-     * display the products quantity discount
-     */
-    require $template->get_template_dir('/tpl_modules_products_quantity_discounts.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_modules_products_quantity_discounts.php';
-}
-?>
-<!--eof Quantity Discounts table -->
-
-        </div>
 
 <!--bof Add to Cart Box -->
 <?php
@@ -216,6 +186,42 @@ if (CUSTOMERS_APPROVAL === '3' && TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM =
 ?>
 <!--eof Add to Cart Box-->
 <div class="qty_cart_qty"><?= $display_qty ?></div>
+
+
+
+
+<?php
+$add_to_cart_class = 'add-to-cart-' . zen_get_products_allow_add_to_cart((int)$_GET['products_id']);
+?>
+        <div id="cart-box" class="grids <?= $product_info_class . ' ' . $add_to_cart_class ?>">
+
+
+<!--bof Attributes Module -->
+<?php
+if ($pr_attr->fields['total'] > 0) {
+    /**
+     * display the product attributes
+     */
+    require $template->get_template_dir('/tpl_modules_attributes.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_modules_attributes.php'; ?>
+<?php
+}
+?>
+<!--eof Attributes Module -->
+
+<!--bof Quantity Discounts table -->
+<?php
+if ($products_discount_type != 0) {
+    /**
+     * display the products quantity discount
+     */
+    require $template->get_template_dir('/tpl_modules_products_quantity_discounts.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_modules_products_quantity_discounts.php';
+}
+?>
+<!--eof Quantity Discounts table -->
+
+        </div>
+
+ 
  
     </div>
 

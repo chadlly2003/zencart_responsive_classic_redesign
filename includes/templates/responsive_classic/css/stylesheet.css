@@ -2097,6 +2097,10 @@ span.normal_button:hover {
 	background:transparent !important;
 	margin-top:0px !important;
 	font-size:1em;
+	display: contents;
+	opacity:0.5 !important;
+	
+	
 }
 #reviewsDefault .button_in_cartHover {
 	width: calc(100% - 40px) !important;
@@ -2104,13 +2108,14 @@ span.normal_button:hover {
 #reviewsDefault .reviews-wrapper {
 	margin-top:0px !important;
 	border-top:solid 1px #ccc;
-	padding-top:0rem;
+	padding-top:1rem;
 	padding-bottom:0rem;
 }
 #reviewsDefault span.cssButton.normal_button.button.button_read_reviews {
 	margin-top:0px !important;
 	font-size:1em;
 	color:#154DBC;
+	display: contents;
 }
 #reviewsDefault .spacerreviewsa {
 	text-align: center;

@@ -182,7 +182,7 @@ input[type="search"] {
 	padding:12px !important;
 	margin-bottom:2rem;
 	margin-top:1rem;
-	width: 100%;
+	width: calc(100% - 25px) !important;
 	-webkit-appearance: none;
 }
 #productmusicinfoBody .button_write_review {

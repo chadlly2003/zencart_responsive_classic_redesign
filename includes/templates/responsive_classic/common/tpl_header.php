@@ -38,16 +38,6 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 
 
 <div id="headerWrapper">
-<!--bof navigation display-->
-  <div id="navMainWrapper" class="group onerow-fluid">
-    <?php if ( $detect->isMobile() && !$detect->isTablet() || $_SESSION['layoutType'] == 'mobile' ) { ?>
-  </div>
-<!--eof navigation display-->
-  <?php  } else if ( $detect->isTablet() || $_SESSION['layoutType'] == 'tablet' ){ ?>
-  <?php  } else { ?>
-</div>
-<!--eof navigation display-->
-<?php  } ?>
 
 <!-- sidebar navigation -->
 <div class="nav_spacer"> 

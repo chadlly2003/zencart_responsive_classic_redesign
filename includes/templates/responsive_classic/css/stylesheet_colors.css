@@ -707,6 +707,8 @@ input.cssButton.submit_button.button.button_search {
 }
 #cart-box {
 	background-color:#fff;
+	width: 100%;
+	-webkit-appearance: none;
 }
 #cart-box br {
 	display:none !important;

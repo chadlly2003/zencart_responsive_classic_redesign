@@ -23,17 +23,17 @@ if (!defined('IS_ADMIN_FLAG')) {
 /**
  * set some variables used by templates
  */
-  if (!isset($layoutType)) $layoutType = 'legacy';
-  if (!isset($max_display_page_links)) $max_display_page_links = ($layoutType == 'mobile' ? MAX_DISPLAY_PAGE_LINKS_MOBILE : MAX_DISPLAY_PAGE_LINKS);
-  if (!isset($paginateAsUL)) $paginateAsUL = $layoutType == 'mobile' || (isset($isMobile) && $isMobile) || (isset($isTablet) && $isTablet);
+  // Removed layoutType handling and hardcoded the value
+  $layoutType = 'legacy'; // You can keep or remove this line based on your needs
+  
+  if (!isset($max_display_page_links)) $max_display_page_links = MAX_DISPLAY_PAGE_LINKS;
+  if (!isset($paginateAsUL)) $paginateAsUL = false; // Removed the mobile/tablet checks
   if (!isset($flag_disable_left)) {
     $flag_disable_left = false;
   }
   if (!isset($flag_disable_right)) {
     $flag_disable_right = false;
   }
-
-   
 
 /**
  * load page-specific main_template_vars if present, or jump directly to template file

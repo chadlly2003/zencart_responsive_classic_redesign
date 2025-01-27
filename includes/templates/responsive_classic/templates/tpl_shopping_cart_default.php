@@ -11,9 +11,7 @@
  * @version $Id: Steve 2023 Sep 07 Modified in v2.0.0-alpha1 $
  */
 ?>
-<?php
-  if (!isset($display_as_mobile)) $display_as_mobile = ($detect->isMobile() && !$detect->isTablet() || $_SESSION['layoutType'] == 'mobile' or $detect->isTablet() || $_SESSION['layoutType'] == 'tablet');
-?>
+ 
 <div class="centerColumn" id="shoppingCartDefault">
 <?php
   if ($flagHasCartContents) {
@@ -70,9 +68,7 @@
 ?>
      <tr class="<?php echo $product['rowClass']; ?>">
 
-<?php if ( $detect->isMobile() && !$detect->isTablet() || $_SESSION['layoutType'] == 'mobile' ) {
-      //
-      } else { ?>
+ 
 
        <td class="cartQuantity">
 <?php
@@ -87,7 +83,7 @@
        </td>
 
        <td class="cartQuantityUpdate"><?php echo $product['buttonUpdate']; ?></td>
-<?php } ?>
+ 
 
 
 
@@ -117,26 +113,11 @@
 ?>
        </td>
 
-<?php if ( $detect->isMobile() && !$detect->isTablet() || $_SESSION['layoutType'] == 'mobile' ) { ?>
-
-       <td class="cartQuantity">
-<?php
-  if ($product['flagShowFixedQuantity']) {
-    echo $product['showFixedQuantityAmount'] . '<br><span class="alert bold">' . $product['flagStockCheck'] . '</span><br><br>' . $product['showMinUnits'];
-  } else {
-    echo $product['quantityField'] . '<br><span class="alert bold">' . $product['flagStockCheck'] . '</span><br><br>' . $product['showMinUnits'];
-  }
-?>
-       </td>
-       <td class="cartQuantityUpdate"><?php echo $product['buttonUpdate']; ?></td>
-
-<?php  } else {
-
-  }  ?>
+ 
 
 
-       <td class="cartUnitDisplay"><?php if ($display_as_mobile) { echo '<b class="hide">' . TABLE_HEADING_PRICE . '&#58;&nbsp;&nbsp;</b>'; } ?><?php echo $product['productsPriceEach']; ?></td>
-       <td class="cartTotalDisplay"><?php if ($display_as_mobile) { echo '<b class="hide">' . TABLE_HEADING_TOTAL . '&#58;&nbsp;&nbsp;</b>'; } ?><?php echo $product['productsPrice']; ?></td>
+       <td class="cartUnitDisplay"><?php echo $product['productsPriceEach']; ?></td>
+       <td class="cartTotalDisplay"><?php echo $product['productsPrice']; ?></td>
        <td class="cartRemoveItemDisplay">
 <?php
   if ($product['buttonDelete']) {

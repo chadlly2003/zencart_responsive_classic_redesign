@@ -2224,6 +2224,13 @@ span.normal_button:hover {
 	margin-left:1rem;
 	list-style:decimal;
 }
+
+select {-webkit-appearance: none;}
+input.submit_button {-webkit-appearance: none;}
+input.cssButtonHover {-webkit-appearance: none;}
+.button_continue_checkout:hover {-webkit-appearance: none;}
+
+
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {
 		order:2;

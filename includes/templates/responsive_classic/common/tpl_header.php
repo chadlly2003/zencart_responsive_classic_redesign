@@ -183,7 +183,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
     <a href="<?php echo zen_href_link('contact_us', '', 'SSL'); ?>"  aria-label="<?php echo BOX_INFORMATION_CONTACT; ?>">
     <i class="fa fa-envelope spacer1 navitem2t" aria-hidden="true" class="loginiconuser" role="img" aria-label="Contact icon">&nbsp</i></a>  
     
-    <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>" aria-label="Shopping cart page">
+    <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>" aria-label="<?php echo BOX_HEADING_SHOPPING_CART; ?>">
     <i class="fa fa-fw badge fa-lg navitem3t" aria-hidden="true" role="img" aria-label="Shopping cart icon">
         <span class="cart-count"><?php echo $_SESSION['cart']->count_contents(); ?></span>
         &#xf07a;  <!-- Font Awesome shopping cart icon --></i></a>

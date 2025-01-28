@@ -18,14 +18,15 @@
 	background-color: #fff;
 	// h-shadow, v-shadow, blur, spreadbox-shadow: 6px 0 18px 8px black;
 	transition: transform 0.3s ease-out;
-	ul {
+}
+.sidebar  ul {
 		margin: 0;
 		padding: 0;
 	}
-	li {
+	.sidebar  li {
 		list-style: none;
 	}
-	a {
+	.sidebar a {
 		display: block;
 		padding: 0.5rem 1rem;
 		color: #000;
@@ -35,7 +36,7 @@
 			color: #000 !important;
 		}
 	}
-}
+ 
 .sidebar.is-hidden {
 	transform: translateX(-300px);
 }

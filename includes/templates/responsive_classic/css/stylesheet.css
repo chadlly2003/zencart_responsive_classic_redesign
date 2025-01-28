@@ -2248,6 +2248,11 @@ button {
 	font-size:32px;
 	color:#d3d3d3
 }
+
+#checkoutOrderTotals {
+	width: 100% !important;
+}
+
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {
 		order:2;

@@ -1707,6 +1707,9 @@ caption {
 .btn-outline-primary {
 	border:solid 1px #fff;
 	background:transparent;
+	margin-left:0px !important;
+	padding-left:0px !important;
+	-webkit-appearance: none;
 }
 .whatsNew .productSalePrice {
 	margin-top:12px;
@@ -2229,7 +2232,7 @@ select {-webkit-appearance: none;}
 input.submit_button {-webkit-appearance: none;}
 input.cssButtonHover {-webkit-appearance: none;}
 .button_continue_checkout:hover {-webkit-appearance: none;}
-
+button  {-webkit-appearance: none;}
 
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {

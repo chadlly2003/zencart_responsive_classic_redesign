@@ -134,9 +134,9 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
       <?php }?>
 
 
-      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . 'index.php?main_page=site_map">'; ?> <i class="fa fa-xl fa-fw fa-sitemap fa-flip-horizontal" aria-hidden="true">&nbsp</i> Sitemap</a></li>
+      <li><?php echo '<a href="' . zen_href_link(FILENAME_SITE_MAP) . '">'; ?> <i class="fa fa-xl fa-fw fa-sitemap fa-flip-horizontal" aria-hidden="true">&nbsp</i> Sitemap</a></li>
 
-      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . 'index.php?main_page=contact_us">'; ?><i class="fa fa-xl fa-fw fa-phone fa-flip-horizontal" aria-hidden="true">&nbsp</i> Contact</a></li>
+      <li><?php echo ' <a href="' . zen_href_link(FILENAME_CONTACT_US, '', 'SSL') . '">'; ?><i class="fa fa-xl fa-fw fa-phone fa-flip-horizontal" aria-hidden="true">&nbsp</i> Contact</a></li>
   </ul>
 </div>
 <!-- eof sidebar navigation -->

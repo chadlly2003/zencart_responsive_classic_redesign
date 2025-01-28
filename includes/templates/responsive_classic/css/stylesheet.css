@@ -2102,8 +2102,6 @@ span.normal_button:hover {
 	font-size:1em;
 	display: contents;
 	opacity:0.5 !important;
-	
-	
 }
 #reviewsDefault .button_in_cartHover {
 	width: calc(100% - 40px) !important;
@@ -2227,13 +2225,29 @@ span.normal_button:hover {
 	margin-left:1rem;
 	list-style:decimal;
 }
-
-select {-webkit-appearance: none;}
-input.submit_button {-webkit-appearance: none;}
-input.cssButtonHover {-webkit-appearance: none;}
-.button_continue_checkout:hover {-webkit-appearance: none;}
-button  {-webkit-appearance: none;}
-
+select {
+	-webkit-appearance: none;
+}
+input.submit_button {
+	-webkit-appearance: none;
+}
+input.cssButtonHover {
+	-webkit-appearance: none;
+}
+.button_continue_checkout:hover {
+	-webkit-appearance: none;
+}
+button {
+	-webkit-appearance: none;
+}
+.loginiconuser {
+	font-size:32px;
+	color:#87b7b8;
+}
+.contactusicon {
+	font-size:32px;
+	color:#d3d3d3
+}
 @media (min-width: 576px) {
 	#shoppingcartBody .forward {
 		order:2;

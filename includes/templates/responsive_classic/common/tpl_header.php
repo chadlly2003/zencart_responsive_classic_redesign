@@ -177,11 +177,11 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
  
   <div class="shoppingcart">
   <a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>" aria-label="Login page">
-    <i class="fa fa-user spacer2 navitem1t" aria-hidden="true" style="font-size:32px;color:#d3d3d3;" role="img" aria-label="Login icon" >&nbsp</i>
+    <i class="fa fa-user spacer2 navitem1t" aria-hidden="true" class="contactusicon;" role="img" aria-label="Login icon" >&nbsp</i>
 </a>
     
     <a href="<?php echo zen_href_link('contact_us', '', 'SSL'); ?>"  aria-label="Contact page">
-    <i class="fa fa-envelope spacer1 navitem2t" aria-hidden="true" style="font-size:32px;color:#87b7b8;" role="img" aria-label="Contact icon">&nbsp</i></a>  
+    <i class="fa fa-envelope spacer1 navitem2t" aria-hidden="true" class="loginiconuser" role="img" aria-label="Contact icon">&nbsp</i></a>  
     
     <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>" aria-label="Shopping cart page">
     <i class="fa fa-fw badge fa-lg navitem3t" aria-hidden="true" role="img" aria-label="Shopping cart icon">

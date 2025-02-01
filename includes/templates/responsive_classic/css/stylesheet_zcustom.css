@@ -8,6 +8,7 @@
 	border-radius: 10px;
 	margin-top:1rem;
 	margin-bottom:1rem;
+	word-wrap: break-word;
 }
 .onerow-fluid{
 	margin:0 auto !important;

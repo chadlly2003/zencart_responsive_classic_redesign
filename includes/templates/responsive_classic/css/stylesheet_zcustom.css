@@ -333,8 +333,13 @@ caption {
 .cat-count {
 	display:none;
 }
-select {
+form select {
 	min-height: 48px;
+	border:solid 1px #ccc !important;
+	border-radius: .25rem !important;
+	background: #e9ecef;
+}
+select {
 	border:solid 1px #ccc !important;
 	border-radius: .25rem !important;
 	background: #e9ecef;

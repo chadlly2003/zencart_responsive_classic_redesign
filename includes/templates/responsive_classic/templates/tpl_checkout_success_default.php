@@ -92,7 +92,7 @@ require($template->get_template_dir('tpl_account_history_info_default.php',DIR_W
 <label class="checkboxLabel" for="<?php echo 'notify-' . $notifications['counter']; ?>"><?php echo $notifications['products_name']; ?></label>
 <br>
 <?php } ?>
-<div class="buttonRow forward"><?php echo zen_image_submit(BUTTON_IMAGE_UPDATE, BUTTON_UPDATE_ALT); ?></div>
+<div class="buttonRow checkoutupdate"><?php echo zen_image_submit(BUTTON_IMAGE_UPDATE, BUTTON_UPDATE_ALT); ?></div>
 <?php echo '</form>'; ?>
 </fieldset>
 <?php

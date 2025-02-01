@@ -94,6 +94,12 @@
 	margin-bottom:1rem;
 	padding-top:1rem;
 }
+
+#productsListingTopNumber{
+	margin-bottom:1rem;
+	padding-top:1rem;
+}
+
 #productListing br {
 	display:none;
 }

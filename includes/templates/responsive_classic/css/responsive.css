@@ -303,29 +303,6 @@ img{
 	width:1465px;
 }
 /* No reason to edit below percentage calculations */
-.onerow-fluid{
-	margin:0 auto !important;
-	width:100% !important;
-	max-width:1280px !important;
-}
-.onerow-fluid:before,.onerow-fluid:after{
-	display:table;
-	content:"";
-}
-.onerow-fluid:after{
-	clear:both;
-	display: none !important;
-}
-.onerow-fluid>[class*="col150"]{
-	padding-right:0rem;
-	margin-left:0;
-}
-.onerow-fluid>[class*="col150"]:nth-child(1){
-	display:none;
-}
-.onerow-fluid>[class*="col150"]:nth-child(3){
-	display:none !important;
-}
 .onerow-fluid>.col10{
 	width:0.6826%;
 }
@@ -617,28 +594,4 @@ img{
 }
 .onerow-fluid>.col980{
 	width:100%;
-}
-
-#productreviewswriteBody .col150:nth-child(2) {
-	display:none !important;
-}
-
-@media (min-width: 992px) {
-	.onerow-fluid>[class*="col150"]:nth-child(1){
-		padding-left:0rem;
-		margin-right:2rem;
-		width: 220px;
-		display:block;
-	}
-	.onerow-fluid>[class*="col150"]:nth-child(3){
-		padding-left:0;
-		margin-left:2rem;
-		width: 220px;
-		display:none !important;
-		 
-	}
-
-	#indexHomeBody .onerow-fluid>[class*="col150"]:nth-child(3){
-		display:block !important;
-	}
 }

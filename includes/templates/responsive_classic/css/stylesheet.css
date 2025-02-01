@@ -298,7 +298,7 @@ select#country, select#stateZone, #state {
 	background: transparent !important;
 }
 #shoppingcartBody .messageStackCaution {
-	margin-top:1rem !important;
+	margin-top:1rem;
 }
 .messageStackWarning img, .messageStackError img, .messageStackSuccess img, .messageStackCaution img {
 	display:none
@@ -916,14 +916,12 @@ div#checkoutShippingContentChoose{
 	height:35px;
 	margin-bottom:0.5rem;
 }
-#accounthistoryBody .navSplitPagesLinks {
-	width:100%;
-	margin-top:2rem;
-	margin-bottom:2rem;
-	text-align: center;
-}
+ 
 .navSplitPagesLinks {
-	display:inline-block;
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+ 
 }
 .navSplitPagesLinks a{
 	padding:10px;

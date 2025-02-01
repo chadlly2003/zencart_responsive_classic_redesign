@@ -607,11 +607,13 @@ input.cssButton.submit_button.button.button_search {
 .sidebox-select-form input.submit_button {
 	width:auto !important;
 	background:#ccc;
+	margin-bottom:1rem;
 }
 .sidebox-select-form .button_submit:hover {
 	width:auto !important;
 	opacity:0.5;
 	background:#ccc;
+	margin-bottom:1rem;
 }
 #select-record_company_id {
 	outline:none;

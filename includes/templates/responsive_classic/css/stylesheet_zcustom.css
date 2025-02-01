@@ -10,6 +10,7 @@
 	margin-bottom:1rem;
 	word-wrap: break-word;
 }
+ 
 .onerow-fluid{
 	margin:0 auto !important;
 	width:100% !important;
@@ -1232,16 +1233,22 @@ fieldset input[type=radio] {
 	width:100%;
 	margin-bottom:1rem;
 	margin-top:1rem;
+	padding-bottom:1rem;
 }
 .cartTotalsDisplay {
 	margin-top:1rem;
 	margin-bottom:1rem
 }
-#shoppingcartBody input[type="image"] {
-}
-#productsListingListingTopLinks {
-	margin-bottom:1rem;
-}
+
+ 
+ 
+#productsListingListingBottomLinks a:nth-of-type(2)
+{font-size:1em;color:#000 !important;}
+
+#productsListingListingTopLinks a:nth-of-type(2)
+{font-size:1em;color:#000 !important;}
+
+
 .tabTable {
 	text-align: center;
 }
@@ -1253,11 +1260,13 @@ fieldset input[type=radio] {
 	margin-bottom:1rem;
 	float:left;
 }
-@media (min-width: 420px) {
-	.brandCell {
-		width: 25%;
-	}
+
+#accountHistoryDefault .navSplitPagesResult {
+	margin-top:2rem
 }
+
+
+ 
 @media (min-width: 576px) {
 	div#logo {
 		max-width:254px;
@@ -1365,9 +1374,7 @@ fieldset input[type=radio] {
 	#accountHistoryDefault legend {
 		margin-bottom:0px;
 	}
-	#accountHistoryDefault .navSplitPagesResult {
-		margin-top:2rem
-}
+ 
 	#orderTotals#accountDefault Address {
 		display:block;
 	}
@@ -1521,6 +1528,7 @@ fieldset input[type=radio] {
 		width:auto;
 		margin-bottom:1rem;
 		margin-top:1rem;
+		margin-bottom:0;
 	}
 	.list-input{
 		display:flex;

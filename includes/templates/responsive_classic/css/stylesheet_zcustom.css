@@ -351,8 +351,8 @@ form.sidebox-select-form select {
 	margin-bottom:0.5rem;
 }
 form.sidebox-select-form select option:nth-child(1){
-   color:crimson;
-   font-weight: bold;
+	color:crimson;
+	font-weight: bold;
 }
 form.sidebox-select-form select {
 	color: crimson;
@@ -1260,12 +1260,12 @@ fieldset input[type=radio] {
 	margin-bottom:1rem 
 }
 #productsListingListingBottomLinks a:nth-of-type(2) {
-   font-size:1em;
-   color:#000 !important;
+	font-size:1em;
+	color:#000 !important;
 }
 #productsListingListingTopLinks a:nth-of-type(2) {
-   font-size:1em;
-   color:#000 !important;
+	font-size:1em;
+	color:#000 !important;
 }
 .tabTable {
 	text-align: center;
@@ -1280,6 +1280,30 @@ fieldset input[type=radio] {
 }
 #accountHistoryDefault .navSplitPagesResult {
 	margin-top:2rem 
+}
+.button.button_back {
+	color:#fff;
+	background-color: #0056B3;
+	border-color: #0056B3;
+	font-size: 1.2em;
+	border-radius: 0.25rem;
+	margin-top:1rem !important;
+	margin-bottom:1rem !important;
+}
+.button.button_back:hover {
+	opacity:0.5;
+	color:#fff;
+	background-color: #0056B3;
+	border-color: #0056B3;
+	font-size: 1.2em;
+	border-radius: 0.25rem;
+}
+.box_alignmentr {
+   width: 50%;
+}
+.box_alignmentr img:nth-of-type(1) {
+   width: 90%;
+   max-width: 80px;
 }
 @media (min-width: 576px) {
 	div#logo {
@@ -1423,6 +1447,18 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+	.button.button_back {
+		color:#fff;
+		background-color: #0056B3;
+		border-color: #0056B3;
+		font-size: 1.2em;
+		border-radius: 0.25rem;
+		margin-top:0rem !important;
+		margin-bottom:0rem !important;
+   }
+	.box_alignmentr {
+	   width: 33.3%;
+   }
 	.addresscontinue {
 		float:right;
 		margin-top:1rem 

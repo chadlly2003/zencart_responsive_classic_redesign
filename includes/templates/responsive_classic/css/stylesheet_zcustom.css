@@ -1298,14 +1298,8 @@ fieldset input[type=radio] {
 	font-size: 1.2em;
 	border-radius: 0.25rem;
 }
-.box_alignmentr {
-   width: 50%;
-}
-.box_alignmentr img:nth-of-type(1) {
-   width: 90%;
-   max-width: 80px;
-}
-
+ 
+ 
 #loginDefault .important {
 	margin-bottom:3rem;
 }
@@ -1466,9 +1460,7 @@ fieldset input[type=radio] {
 		margin-top:0rem !important;
 		margin-bottom:0rem !important;
    }
-	.box_alignmentr {
-	   width: 33.3%;
-   }
+ 
 	.addresscontinue {
 		float:right;
 		margin-top:1rem 

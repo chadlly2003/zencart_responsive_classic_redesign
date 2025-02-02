@@ -96,4 +96,8 @@ if (empty($brands['featured']) && empty($brands['other'])) {
     }
 }
 ?>
+
+<div class="brand_spacer"></div>
+
+
 </div>

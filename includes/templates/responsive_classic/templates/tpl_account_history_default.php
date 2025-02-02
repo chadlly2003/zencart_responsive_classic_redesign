@@ -52,7 +52,7 @@ if (!empty($accountHistory)) {
 <?php
 }
 ?>
-    <div class="buttonRow forward">
+    <div class="backhistorybutton">
         <?php echo '<a href="' . zen_href_link(FILENAME_ACCOUNT, '', 'SSL') . '">' . zen_image_button(BUTTON_IMAGE_BACK, BUTTON_BACK_ALT) . '</a>'; ?>
     </div>
 </div>

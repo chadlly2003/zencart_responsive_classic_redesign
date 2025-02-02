@@ -839,10 +839,13 @@ div#checkoutShippingContentChoose{
 }
 /*bof center boxes*/
 .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {
-	margin:1em 0;
+	margin-top:1rem;
+	margin-bottom:1rem;
+	padding-top:1rem !important;
+	padding-bottom:1rem !important;
 }
 .specialsListBoxContents a, .centerBoxContentsAlsoPurch a, .centerBoxContentsFeatured a, .centerBoxContentsSpecials a, .centerBoxContentsFeaturedCategories a, .centerBoxContentsNew a{
-	margin:12px 0px 0px 0px;
+	margin:0;
 	font-size:0.8em;
 	display:block;
 	text-decoration:underline;
@@ -874,23 +877,17 @@ div#checkoutShippingContentChoose{
 	font-weight:normal;
 	margin-bottom:20px;
 }
-.categoryListBoxContents img{
-	margin-bottom:10px;
-}
+ 
 .categoryListBoxContents a{
 	font-size:1.2em;
 	text-decoration:underline;
 }
-.categoryListBoxContents a:hover{
-}
+
 .categoryListBoxContents{
 	display:block;
 	cursor:pointer;
-}
-.categoryListBoxContents:hover{
-}
-.categoryListBoxContents:hover a{
-}
+	padding-top:1rem;padding-bottom:1rem
+} 
 #categoryDescription{
 	float:left;
 }

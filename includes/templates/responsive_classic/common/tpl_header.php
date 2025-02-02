@@ -101,7 +101,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
       
       <li><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><i class="fa-solid fa-xl fa-fw fa-user"></i> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
         <?php } else { ?>
-        <li class=""><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
+        <li class=""><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><i class="fa-solid fa-xl fa-fw fa-user"></i> <?php echo HEADER_TITLE_MY_ACCOUNT; ?></a></li>
         <?php } ?>
       <?php
         } else {

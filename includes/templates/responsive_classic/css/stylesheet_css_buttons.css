@@ -94,7 +94,7 @@ span.cssButton.normal_button.button.button_goto_prod_details{
 }
 #productreviewsBody .forward {
 	font-size: 16px;
-	width:auto
+	width:auto 
 }
 .button_goto_prod_details:hover{
 	background:#05a5cb;
@@ -129,7 +129,7 @@ span.cssButton.normal_button.button.button_continue_shopping, .button_continue_s
 }
 #reviewsDefault .button_in_cart:hover{
 	text-align:center;
-	padding:12px 20px
+	padding:12px 20px 
 }
 span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.button.small_edit{
 	background:gold;
@@ -173,7 +173,7 @@ input[type="search"] {
 }
 #productinfoBody #cartAdd a:hover {
 	color:blueviolet;
-	opacity:0.5
+	opacity:0.5 
 }
 #productinfoBody .button_sold_out {
 	width: auto;
@@ -214,7 +214,7 @@ input[type="search"] {
 	margin-bottom:1rem;
 }
 #aboutusBody .buttonRow {
-	float:none
+	float:none 
 }
 #productmusicinfoBody .button_ask_a_question {
 	background:#fff;
@@ -317,7 +317,7 @@ input[type="search"] {
 	background:#004D4D;
 	opacity:0.5;
 	color:#fff;
-	padding:12px 20px
+	padding:12px 20px 
 }
 .button.button_back {
 	color:#fff;
@@ -325,6 +325,8 @@ input[type="search"] {
 	border-color: #0056B3;
 	font-size: 1.2em;
 	border-radius: 0.25rem;
+	margin-top:1rem !important;
+	margin-bottom:1rem !important;
 }
 .button.button_back:hover {
 	opacity:0.5;

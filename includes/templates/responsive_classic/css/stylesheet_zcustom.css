@@ -1304,7 +1304,19 @@ fieldset input[type=radio] {
 	margin-bottom:3rem;
 }
 
+.rblockelements {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
 @media (min-width: 576px) {
+
+
+	.rblockelements {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
 	div#logo {
 		max-width:254px;
    }

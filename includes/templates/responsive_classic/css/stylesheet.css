@@ -1,4 +1,5 @@
- /*** Main CSS Stylesheet** @copyright Copyright 2003-2024 Zen Cart Development Team* @copyright Portions Copyright 2003 osCommerce* @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0* @version $Id: Jeff Rutt 2024 Sep 11 Modified in v2.1.0 $*/
+ 
+/*** Main CSS Stylesheet** @copyright Copyright 2003-2024 Zen Cart Development Team* @copyright Portions Copyright 2003 osCommerce* @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0* @version $Id: Jeff Rutt 2024 Sep 11 Modified in v2.1.0 $*/
 /*bof basic elements*/
 body {
 	margin:0;
@@ -268,7 +269,6 @@ select#country, select#stateZone, #state {
 	width:100%;
 	margin: auto;
 	margin-bottom: 5px;
-	height:175px;
 	margin:0px;
 	padding:0px;
 	font-size:1.1em;
@@ -301,7 +301,7 @@ select#country, select#stateZone, #state {
 	margin-top:1rem;
 }
 .messageStackWarning img, .messageStackError img, .messageStackSuccess img, .messageStackCaution img {
-	display:none
+	display:none 
 }
 /*bof wrappers - page or section containers*/
 #mainWrapper{
@@ -677,7 +677,7 @@ ul.list-links li:hover, ol.list-links li:hover{
 }
 /*bof shopping cart*/
 .tableHeading TH {
-	padding:0.5rem !important
+	padding:0.5rem !important 
 }
 .tableHeading{
 }
@@ -861,7 +861,6 @@ div#checkoutShippingContentChoose{
 }
 .productPriceDiscount{
 	display:block;
-	color:crimson !important;
 	margin-top:0px;
 	margin-bottom:12px;
 }
@@ -916,12 +915,10 @@ div#checkoutShippingContentChoose{
 	height:35px;
 	margin-bottom:0.5rem;
 }
- 
 .navSplitPagesLinks {
 	display:flex;
 	justify-content: center;
 	flex-wrap: wrap;
- 
 }
 .navSplitPagesLinks a{
 	padding:10px;
@@ -1067,11 +1064,11 @@ span.list-addtext{
 	padding: 1em 0;
 }
 .gridlayout .list-image {
-	float:none
+	float:none 
 }
 .gridlayout .list-image {
 	min-height: revert;
-	min-width: revert
+	min-width: revert 
 }
 .gridlayout .list-image {
 	margin-right: inherit;
@@ -1081,19 +1078,19 @@ span.list-addtext{
 }
 #productListing .gridlayout .list-more {
 	margin: auto;
-	width: 30%
+	width: 30% 
 }
 #indexCategories .gridlayout .list-more {
 	margin: auto;
-	width: 30%
+	width: 30% 
 }
 .gridlayout .itemTitle {
 	width:90%;
-	margin:5px auto
+	margin:5px auto 
 }
 .gridlayout .listingDescription {
 	width:90%;
-	margin:10px auto
+	margin:10px auto 
 }
 .gridlayout .cart-add {
 	float:none;
@@ -1101,7 +1098,7 @@ span.list-addtext{
 .gridlayout .list-input {
 	float:none;
 	width:30%;
-	margin:auto
+	margin:auto 
 }
 /*bof new, featured, all listing (old style when each had their own listing page, not using main .productListing */
 .listing-wrapper:nth-child(odd) {
@@ -1540,13 +1537,13 @@ h2.greeting a:hover{
 }
 /* markup for tables used to present tabular data */
 .alignLeft {
-	text-align: left
+	text-align: left 
 }
 .alignCenter {
-	text-align: center
+	text-align: center 
 }
 .alignRight {
-	text-align: right
+	text-align: right 
 }
 table, .tabTable{
 	width:100%;

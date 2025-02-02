@@ -143,6 +143,8 @@ span.button_sold_out, span.button_sold_out:hover{
 span.button_sold_out:hover {
 	opacity: 1;
 }
+#orderStatus br {display:none;}
+
 /** custom overides - */
 input[type="search"] {
 	padding: .375rem .75rem;
@@ -308,15 +310,15 @@ input[type="search"] {
 	padding:0px;
 }
 .button_send {
-	background:#004D4D;
+	background:#ccc;
 	color:#fff;
 	padding-top:0px;
 	padding-bottom:0px;
 }
 .button_send:hover {
-	background:#004D4D;
+	background:#ccc;
 	opacity:0.5;
-	color:#fff;
+	color:#000;
 	padding:12px 20px 
 }
 

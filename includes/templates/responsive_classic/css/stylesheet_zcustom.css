@@ -1305,6 +1305,11 @@ fieldset input[type=radio] {
    width: 90%;
    max-width: 80px;
 }
+
+#loginDefault .important {
+	margin-bottom:3rem;
+}
+
 @media (min-width: 576px) {
 	div#logo {
 		max-width:254px;
@@ -1447,6 +1452,11 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+
+	#loginDefault .important {
+		margin-bottom:0rem;
+	}
+
 	.button.button_back {
 		color:#fff;
 		background-color: #0056B3;

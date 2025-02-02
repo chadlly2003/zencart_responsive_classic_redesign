@@ -35,10 +35,7 @@ window.location = $(this).find("a").attr("href");
 return false;
 });
 
-$('.centeredContent').matchHeight();
-$('.specialsListBoxContents').matchHeight();
-$('.centerBoxContentsAlsoPurch').matchHeight();
-$('.categoryListBoxContents').matchHeight();
+
 
 $('.no-fouc').removeClass('no-fouc');
 });

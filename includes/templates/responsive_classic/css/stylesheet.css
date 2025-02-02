@@ -877,17 +877,16 @@ div#checkoutShippingContentChoose{
 	font-weight:normal;
 	margin-bottom:20px;
 }
- 
 .categoryListBoxContents a{
 	font-size:1.2em;
 	text-decoration:underline;
 }
-
 .categoryListBoxContents{
 	display:block;
 	cursor:pointer;
-	padding-top:1rem;padding-bottom:1rem
-} 
+	padding-top:1rem;
+   padding-bottom:1rem 
+}
 #categoryDescription{
 	float:left;
 }
@@ -1581,7 +1580,13 @@ span#askAQuestionButton:hover {
 }
 /** Brands page */
 .brandCell {
-	height: 126px !important;
+	text-align: center;
+}
+.brand_spacer {
+   display:block;
+	clear:both;
+   width:100%;
+	margin-bottom:3rem;
 }
 .brandImage {
 	margin-top: 20px;

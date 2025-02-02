@@ -1238,13 +1238,6 @@ fieldset input[type=radio] {
 .brandImage img {
 	padding-bottom:0.5rem;
 }
-.brandCell {
-	float:left;
-	width:50%;
-	text-align: center;
-	display: inline-table;
-	margin-bottom:1rem;
-}
 .list-input{
 	display:flex;
 	justify-content: center;
@@ -1298,24 +1291,23 @@ fieldset input[type=radio] {
 	font-size: 1.2em;
 	border-radius: 0.25rem;
 }
- 
- 
 #loginDefault .important {
 	margin-bottom:3rem;
 }
-
 .rblockelements {
 	display: grid;
 	grid-template-columns: 1fr;
 }
+.otherBrands .rblockelements {
+   display:inline!important;
+   width:33.3%;
+   float:left;
+}
 @media (min-width: 576px) {
-
-
 	.rblockelements {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-	}
-
+   }
 	div#logo {
 		max-width:254px;
    }
@@ -1457,11 +1449,14 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
-
+	.otherBrands .rblockelements {
+	   display:inline!important;
+	   width: 16.6%;
+	   float:left;
+   }
 	#loginDefault .important {
 		margin-bottom:0rem;
-	}
-
+   }
 	.button.button_back {
 		color:#fff;
 		background-color: #0056B3;
@@ -1471,7 +1466,6 @@ fieldset input[type=radio] {
 		margin-top:0rem !important;
 		margin-bottom:0rem !important;
    }
- 
 	.addresscontinue {
 		float:right;
 		margin-top:1rem 
@@ -1794,9 +1788,6 @@ fieldset input[type=radio] {
 	.productListing-even {
 		padding-top:1rem;
 		padding-bottom:1rem;
-   }
-	.brandCell {
-		width: 20%;
    }
 	#addressBookProcessDefault input.cssButtonHover {
 		margin-top:1rem 

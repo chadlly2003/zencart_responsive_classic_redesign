@@ -1308,7 +1308,6 @@ fieldset input[type=radio] {
 	display: grid;
 	grid-template-columns: 1fr;
 }
-
 @media (min-width: 576px) {
 
 

@@ -599,7 +599,9 @@ span.normal_button:hover {
 	margin-top:1.5rem;
 }
 .block_element_reviewslinked {
-	padding-top:0.5rem 
+	padding-top:0.5rem;
+	text-align:center;
+	 
 }
 #reviewsDefault .#productMainImage img {
 	margin-bottom:1rem;
@@ -1514,6 +1516,11 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+
+
+	#productreviewsBody #productReviewsDefaultPrice {text-align:right;}
+
+
 	.unsubscribebutton {
 		margin-top:1rem;
 		margin-bottom:1rem;
@@ -1752,6 +1759,7 @@ fieldset input[type=radio] {
 		margin-top:0rem;
 		width: 40%;
 		padding-top:0px;
+		text-align: center;
    }
 	#reviewsWrite .forward {
 		float:right;

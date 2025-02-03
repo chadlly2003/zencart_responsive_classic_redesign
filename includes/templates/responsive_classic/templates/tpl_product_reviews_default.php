@@ -28,13 +28,12 @@
   }
 ?>
 
-<div class="" id="">
  
-<h2 id="productReviewsDefaultPrice"><?php echo $products_price; ?></h2>
-</div>
 
 
 <div class="block_element_reviewslinked">
+<h2 id="productReviewsDefaultPrice"><?php echo $products_price; ?></h2>
+
 <?php
   // more info in place of buy now
   if (zen_has_product_attributes($review->fields['products_id'] )) {

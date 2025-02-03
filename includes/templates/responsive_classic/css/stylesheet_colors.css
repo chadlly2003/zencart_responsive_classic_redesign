@@ -13,6 +13,11 @@ a:link, a:visited, #navEZPagesTOC ul li a, a:hover, #navEZPagesTOC ul li a:hover
 .cat-count, .itemTitle a:hover, h2.greeting a:hover {
 	color:#666;
 }
+
+#myAccountProducts th  {
+	text-align: left !important;
+}
+
 span.button_back{
 	font-size: 1.0em;
 }

@@ -1323,6 +1323,12 @@ fieldset input[type=radio] {
 .backhistorybutton {
    margin-bottom:3rem !important;
 }
+
+#askaquestionBody  .button_back {
+	margin-bottom:3rem !important;
+}
+
+
 @media (min-width: 576px) {
 	.backhistorybutton {
 		float:right;

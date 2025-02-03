@@ -23,7 +23,7 @@ if (isset($order)) {
 ?>
     <fieldset>
         <h2 id="orderHistoryDetailedOrder"><?= SUB_HEADING_TITLE . ORDER_HEADING_DIVIDER . sprintf(HEADING_ORDER_NUMBER, $_POST['order_id']) ?></h2>
-        <div class="forward"><?= HEADING_ORDER_DATE . ' ' . zen_date_long($order->info['date_purchased']) ?></div>
+        <div class="dateissue"><?= HEADING_ORDER_DATE . ' ' . zen_date_long($order->info['date_purchased']) ?></div>
 <?php
     if ($display_products === true) {
 ?>
@@ -169,6 +169,7 @@ if (isset($order)) {
     }
 ?>
         <div class="clearBoth"></div>
+        <div class="spacer_elementorderlookup"></div>
     </fieldset>
 <?php
 }

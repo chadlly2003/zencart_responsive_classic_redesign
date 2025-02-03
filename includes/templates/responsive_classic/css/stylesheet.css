@@ -58,8 +58,7 @@ ADDRESS {
 	margin-bottom:1rem;
 }
 HR {
-	height: 1px;
-	margin-top:0.5em;
+ 
 }
 #logo, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .centerBoxContentsAlsoPurch, .attribImg {
 	float:left;

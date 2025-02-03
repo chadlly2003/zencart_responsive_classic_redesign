@@ -936,7 +936,10 @@ input[type="radio"], input[type="checkbox"] {
 	padding-top:1rem;
 }
 #accountHistInfo #myAccountProducts {
-	text-align: left;
+	text-align: center;
+}
+#orderHistoryDetailedOrder .foward {
+   color:g
 }
 #accountHistInfo table td {
 	padding:0.5rem;
@@ -1317,18 +1320,42 @@ fieldset input[type=radio] {
 	margin-bottom:1rem;
 }
 .spacerrating {
-   width:100;
+	width:100;
 	clear:both;
 }
 .backhistorybutton {
-   margin-bottom:3rem !important;
-}
-
-#askaquestionBody  .button_back {
 	margin-bottom:3rem !important;
 }
-
-
+#askaquestionBody .button_back {
+	margin-bottom:3rem !important;
+}
+#myAccountShipInfo h4 {
+   margin-bottom: 0.5rem;
+	color: blueviolet;
+	font-size: 1.3em;
+}
+#myAccountPaymentInfo h4 {
+   margin-bottom: 0.5rem;
+	color: blueviolet;
+	font-size: 1.3em;
+}
+#myAccountShipInfo div {
+	display: list-item;
+	float: left;
+	padding: 0px;
+	margin-left: 2rem;
+}
+#orderHistoryHeading {
+   text-align: center;
+}
+#myAccountOrdersStatus td {
+   text-align: center;
+}
+.spacer_elementorderlookup {
+   margin-top:2rem;
+	display: block;
+   clear:both;
+}
 @media (min-width: 576px) {
 	.backhistorybutton {
 		float:right;
@@ -1479,7 +1506,7 @@ fieldset input[type=radio] {
 }
 @media (min-width: 768px) {
 	.unsubscribebutton {
-	   margin-top:1rem;
+		margin-top:1rem;
 		margin-bottom:1rem;
 		float:right;
    }
@@ -1694,7 +1721,7 @@ fieldset input[type=radio] {
 		clear: both;
    }
 	.spacer_element {
-	   margin-bottom:1rem !important;
+		margin-bottom:1rem !important;
    }
 	#reviewsInfoDefault .button_in_cart:hover{
 		width:auto;

@@ -67,7 +67,7 @@ span.cssButton.normal_button.button.button_goto_prod_details{
 	background: transparent;
 	font-size: 16px;
 	opacity:1;
-	color: #154DBC;
+	color: #000;
 	display:contents;
 }
 #productreviewsBody .button_goto_prod_details:hover {
@@ -84,6 +84,9 @@ span.cssButton.normal_button.button.button_goto_prod_details{
 	opacity:1;
 	font-size:16px;
 	opacity: 1;
+}
+#productReviewsDefaultProductPageLink:hover {
+   opacity: 0.5;
 }
 #reviewsDefault .button_in_cart:hover {
 	float:none;
@@ -143,8 +146,9 @@ span.button_sold_out, span.button_sold_out:hover{
 span.button_sold_out:hover {
 	opacity: 1;
 }
-#orderStatus br {display:none;}
-
+#orderStatus br {
+   display:none;
+}
 /** custom overides - */
 input[type="search"] {
 	padding: .375rem .75rem;
@@ -321,7 +325,6 @@ input[type="search"] {
 	color:#000;
 	padding:12px 20px 
 }
-
 .button_write_review {
 	color:#8A4514;
 	margin-top:1rem;

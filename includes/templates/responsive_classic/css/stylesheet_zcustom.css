@@ -938,9 +938,13 @@ input[type="radio"], input[type="checkbox"] {
 	border-top:solid 1px #ccc;
 	padding-top:1rem;
 }
-#accountHistInfo #myAccountProducts {
-	text-align: center;
+#myAccountProducts   {
+	text-align: left !important;
 }
+
+#orderHistoryHeading td {padding:0.5rem;} 
+
+.myAccountProducts {text-align: left;}
 #orderHistoryDetailedOrder .foward {
    color:g
 }
@@ -1349,7 +1353,7 @@ fieldset input[type=radio] {
 	margin-left: 2rem;
 }
 #orderHistoryHeading {
-   text-align: center;
+ 
 }
 #myAccountOrdersStatus td {
    text-align: center;

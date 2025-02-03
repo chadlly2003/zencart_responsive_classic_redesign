@@ -80,7 +80,7 @@ input:focus, select:focus, textarea:focus, #mainWrapper, .centerBoxContentsAlsoP
 #cartContentsDisplay .rowEven:hover, #cartContentsDisplay .rowOdd:hover {
 }
 #orderTotals{
-	background:#ccc;
+	background:transparent;
 }
 #cart-box {
 	background:#ccc;
@@ -162,7 +162,9 @@ span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.
 	border:none
 }
 HR {
-	border-bottom:1px solid #9a9a9a;
+ 
+	border:none;
+	border-bottom:solid 1px #ccc;
 }
 input, TEXTAREA{
 	padding: .375rem .75rem;
@@ -804,7 +806,12 @@ input.cssButton.submit_button.button.button_search {
 }
 #orderstatusBody legend {
 	color:#000;
+	
 }
+
+#orderStatus p {background: cornsilk !important;
+    padding: 1rem;
+    margin-bottom: 1rem !important;}
 #gvfaqBody legend {
 	color:#000;
 }

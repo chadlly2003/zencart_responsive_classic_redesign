@@ -467,6 +467,7 @@ input.cssButton.submit_button.button.button_search {
 	background:paleturquoise;
 	text-align: center;
 	border:none;
+	margin-top:1rem;
 }
 #bannerbox2Heading {
 	background: transparent;
@@ -666,6 +667,7 @@ input.cssButton.submit_button.button.button_search {
 	margin-bottom: 1rem;
 	text-align: center;
 	border:none;
+	margin-top:1rem;
 }
 #reviewsHeading a {
 	color:#000;
@@ -685,7 +687,7 @@ input.cssButton.submit_button.button.button_search {
 	color:#000;
 	margin-bottom: 1rem;
 	text-align: center;
-	border:none;
+	border:none;margin-top:1rem;
 }
 #featuredProducts .centerBoxHeading {
 	color:#000;

@@ -1518,7 +1518,7 @@ fieldset input[type=radio] {
 @media (min-width: 768px) {
 
 
-	#productreviewsBody #productReviewsDefaultPrice {text-align:right;}
+	#productreviewsBody #productReviewsDefaultPrice {text-align:center;}
 
 
 	.unsubscribebutton {
@@ -1748,7 +1748,7 @@ fieldset input[type=radio] {
 		margin:0px;
    }
 	#reviewsDefault .productBasePrice {
-		text-align: right;
+		text-align: center;
    }
 	#reviewsDefault #productMainImage {
 		width: 200px;

@@ -550,10 +550,13 @@ span.normal_button:hover {
 	margin: 0;
 	padding: 12px 20px;
 	border-radius: 0.25rem;
-	background: gold;
 	display: flex;
 	justify-content: center;
 }
+
+.button_goto_prod_details{ color:blueviolet !important}
+
+
 #reviewsDefault span.cssButton.normal_button.button.button_in_cart {
 	font-size:16px;
 }

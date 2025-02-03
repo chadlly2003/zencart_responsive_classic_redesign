@@ -58,7 +58,6 @@ ADDRESS {
 	margin-bottom:1rem;
 }
 HR {
- 
 }
 #logo, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .centerBoxContentsAlsoPurch, .attribImg {
 	float:left;
@@ -884,7 +883,7 @@ div#checkoutShippingContentChoose{
 	display:block;
 	cursor:pointer;
 	padding-top:1rem;
-   padding-bottom:1rem 
+	padding-bottom:1rem 
 }
 #categoryDescription{
 	float:left;
@@ -1393,8 +1392,7 @@ h4.optionName{
 	text-decoration:underline;
 }
 .accountTotalDisplay, .accountTaxDisplay {
-	width:20%;
-	text-align:right;
+	text-align:center;
 }
 .accountQuantityDisplay {
 	vertical-align:top;
@@ -1447,18 +1445,11 @@ h4.optionName{
 #orderTotals{
 	padding:1rem;
 }
-#myAccountPaymentInfo, #myAccountShipInfo{
-	margin-top:16px;
-}
 #myAccountPaymentInfo h3, #myAccountShipInfo h3{
-	margin-top:0;
-	padding:10px;
 	font-weight:normal;
 	text-align:left;
 }
 #myAccountPaymentInfo h4, #myAccountShipInfo h4{
-	margin-top:1rem;
-	padding:10px;
 	font-weight:normal;
 	text-align:left;
 }
@@ -1582,9 +1573,9 @@ span#askAQuestionButton:hover {
 	text-align: center;
 }
 .brand_spacer {
-   display:block;
+	display:block;
 	clear:both;
-   width:100%;
+	width:100%;
 	margin-bottom:3rem;
 }
 .brandImage {

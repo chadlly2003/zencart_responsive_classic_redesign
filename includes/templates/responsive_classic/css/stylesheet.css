@@ -1373,6 +1373,9 @@ h4.optionName{
 }
 #productReviewsDefaultNoReviews {
 	clear:both;
+	background: cornsilk;
+    padding: 1rem;
+
 }
 #reviewsDefault .prod-list-wrap{
 	margin-bottom:0px;

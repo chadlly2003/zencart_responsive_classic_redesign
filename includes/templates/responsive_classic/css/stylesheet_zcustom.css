@@ -128,7 +128,7 @@
 	margin-top:-2.8rem;
 }
 #orderStatus caption {
-text-align: left;
+	text-align: left;
 }
 caption {
 	color:crimson;
@@ -551,10 +551,11 @@ span.normal_button:hover {
 	justify-content: left;
 	clear:both;
 	color: blueviolet;
+	float: left;
 }
-.button_goto_prod_details{ color:blueviolet !important}
-
-
+.button_goto_prod_details{
+	color:blueviolet !important
+}
 #reviewsDefault span.cssButton.normal_button.button.button_in_cart {
 	font-size:16px;
 }
@@ -600,7 +601,6 @@ span.normal_button:hover {
 .block_element_reviewslinked {
 	padding-top:0.5rem;
 	text-align:center;
-	 
 }
 #reviewsDefault .#productMainImage img {
 	margin-bottom:1rem;
@@ -632,6 +632,10 @@ span.normal_button:hover {
 }
 #reviewsDefaultListingTopNumber {
 	color:blueviolet;
+	margin-bottom:1rem;
+}
+#reviewsDefaultListingTopLinks {
+   margin-bottom:1rem !important;
 }
 #reviewsDefaultListingBottomNumber {
 	color:blueviolet;
@@ -941,15 +945,17 @@ input[type="radio"], input[type="checkbox"] {
 	border-top:solid 1px #ccc;
 	padding-top:1rem;
 }
-#myAccountProducts   {
+#myAccountProducts {
 	text-align: left !important;
 }
-
-#orderHistoryHeading td {padding:0.5rem;} 
-
-.myAccountProducts {text-align: left;}
+#orderHistoryHeading td {
+   padding:0.5rem;
+}
+.myAccountProducts {
+   text-align: left;
+}
 #orderHistoryDetailedOrder .foward {
-   color:g
+	color:g 
 }
 #accountHistInfo table td {
 	padding:0.5rem;
@@ -1343,12 +1349,12 @@ fieldset input[type=radio] {
 	margin-bottom:3rem !important;
 }
 #myAccountShipInfo h4 {
-   margin-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
 	color: blueviolet;
 	font-size: 1.3em;
 }
 #myAccountPaymentInfo h4 {
-   margin-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
 	color: blueviolet;
 	font-size: 1.3em;
 }
@@ -1359,21 +1365,44 @@ fieldset input[type=radio] {
 	margin-left: 2rem;
 }
 #orderHistoryHeading {
- 
 }
 #myAccountOrdersStatus td {
-   text-align: center;
+	text-align: center;
 }
 .spacer_elementorderlookup {
-   margin-top:2rem;
+	margin-top:2rem;
 	display: block;
-   clear:both;
+	clear:both;
 }
-
-.block_element_reviewslinked a {margin-bottom: 1rem;display:block;}
-#reviewsInfoDefaultPrice {text-align: center;}
-
-
+.block_element_reviewslinked a {
+   margin-bottom: 1rem;
+   display:block;
+}
+#reviewsInfoDefaultPrice {
+   text-align: center;
+}
+.reviews_elementblock {
+   font-size:16px;
+}
+#reviewsInfoDefaultPrice br {
+   display: none;
+}
+.block_element_reviewslinked br {
+   display: none;
+}
+.box_review_spacver {
+   margin-bottom:2rem;
+	text-align: center;
+   margin-top:-1rem;
+}
+.spacer_element_button_add {
+   margin-bottom:1rem;
+   text-align: center;
+   margin-top:-1rem;
+}
+#reviewsInfoDefault .productBasePrice {
+   display: inline-block;
+}
 @media (min-width: 576px) {
 	.backhistorybutton {
 		float:right;
@@ -1523,11 +1552,23 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
-
-	#reviewsInfoDefaultPrice {text-align:right;}
-	#productreviewsBody #productReviewsDefaultPrice {text-align:center;}
-
-
+	.box_review_spacver {
+	   margin-bottom:0rem;
+	   float:right;
+	   clear:right;
+	   width:40%;
+	   text-align: right;
+   }
+	.reviews_elementblock {
+	   font-size:16px;
+	   float:right;
+   }
+	#reviewsInfoDefaultPrice {
+	   text-align:right;
+   }
+	#productreviewsBody #productReviewsDefaultPrice {
+	   text-align:center;
+   }
 	.unsubscribebutton {
 		margin-top:1rem;
 		margin-bottom:1rem;
@@ -1674,9 +1715,6 @@ fieldset input[type=radio] {
 		display:flex;
 		justify-content: right;
    }
-	#productReviewsDefaultProductPageLink {
-		margin-bottom: 0rem;
-   }
 	#pinfo-left{
 		float:left;
 		width:35%;
@@ -1725,7 +1763,7 @@ fieldset input[type=radio] {
 		clear:both;
 		width:100%;
 		display: block;
-		text-align: left;
+		text-align: right;
    }
 	#reviewsInfoDefault #productMainImage {
 		width: 200px;
@@ -1764,7 +1802,6 @@ fieldset input[type=radio] {
 	.block_element_reviewslinked {
 		float:right;
 		margin-top:0rem;
-	 
 		padding-top:0px;
 		text-align: right;
    }
@@ -2018,7 +2055,6 @@ fieldset input[type=radio] {
 	.shippingestimaterb {
 		float:left;
    }
- 
 	.two_continue {
 		margin-bottom:0.5rem;
 		float:right;

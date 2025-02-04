@@ -33,7 +33,10 @@
 
 <div class="block_element_reviewslinked">
 <h2 id=""><?php echo $products_price; ?></h2>
+</div>
 
+
+<div class="box_review_spacver"> 
 <?php
   // more info in place of buy now
   if (zen_has_product_attributes($review->fields['products_id'] )) {
@@ -46,10 +49,6 @@
   $products_link = '';
   echo zen_get_buy_now_button($review->fields['products_id'], $the_button, $products_link) . ' ' . zen_get_products_quantity_min_units_display($review->fields['products_id']);
 ?>
-
-
- 
-
 </div>
 
 <div id="productReviewsDefaultProductPageLink" class="buttonRow"><?php echo '<a href="' . zen_href_link(zen_get_info_page($_GET['products_id']), zen_get_all_get_params(array('reviews_id'))) . '">' . zen_image_button(BUTTON_IMAGE_GOTO_PROD_DETAILS , BUTTON_GOTO_PROD_DETAILS_ALT) . '</a>'; ?></div>
@@ -74,7 +73,7 @@
 
 <div class="reviews-wrapper group">
 
-<div class="buttonRow forward"><?php echo '<a href="' . zen_href_link(FILENAME_PRODUCT_REVIEWS_INFO, 'products_id=' . (int)$_GET['products_id'] . '&reviews_id=' . $reviews['id']) . '">' . zen_image_button(BUTTON_IMAGE_READ_REVIEWS , BUTTON_READ_REVIEWS_ALT) . '</a>'; ?></div>
+<div class="buttonRow reviews_elementblock"><?php echo '<a href="' . zen_href_link(FILENAME_PRODUCT_REVIEWS_INFO, 'products_id=' . (int)$_GET['products_id'] . '&reviews_id=' . $reviews['id']) . '">' . zen_image_button(BUTTON_IMAGE_READ_REVIEWS , BUTTON_READ_REVIEWS_ALT) . '</a>'; ?></div>
 
 <div class="reviews-right">
 <div class="rating"><?php echo zen_image(DIR_WS_TEMPLATE_IMAGES . 'stars_' . $reviews['reviewsRating'] . '.png', sprintf(TEXT_OF_5_STARS, $reviews['reviewsRating'])), sprintf(TEXT_OF_5_STARS, $reviews['reviewsRating']); ?></div>

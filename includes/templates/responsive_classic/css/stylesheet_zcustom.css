@@ -2096,9 +2096,9 @@ fieldset input[type=radio] {
 		float:left;
    }
 	#productinfoBody .button_sold_out {
-		color:crimson;
+		color:crimson !important;
 		font-size:22px;
-		display:block;
+		display:contents;
 		width:100%;
    }
 	#productinfoBody #cartAdd a {

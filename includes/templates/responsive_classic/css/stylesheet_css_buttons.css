@@ -95,10 +95,7 @@ span.cssButton.normal_button.button.button_goto_prod_details{
 #reviewsDefault .forward:hover {
 	font-size:16px;
 }
-#productreviewsBody .forward {
-	font-size: 16px;
-	width:auto 
-}
+ 
 .button_goto_prod_details:hover{
 	background:#05a5cb;
 }

@@ -543,15 +543,14 @@ span.normal_button:hover {
 	float:none 
 }
 #productReviewsDefaultProductPageLink {
-	text-align: center;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	font-size: 1.2em;
-	display: inline-block;
-	margin: 0;
-	padding: 12px 20px;
-	border-radius: 0.25rem;
-	display: flex;
-	justify-content: center;
+	display: list-item;
+	margin-left:15px;
+	display: list-item;
+	justify-content: left;
+	clear:both;
+	color: blueviolet;
 }
 .button_goto_prod_details{ color:blueviolet !important}
 
@@ -1248,12 +1247,15 @@ fieldset input[type=radio] {
 	padding:1rem;
 }
 #productReviewsDefaultListingTopNumber {
-	color:blueviolet;
+	color:darkgreen;
 	text-align: left;
+	padding-bottom:0.5rem;
+	margin-top:2rem;
 }
 #productReviewsDefaultListingBottomNumber {
-	color:blueviolet;
+	color:darkgreen;
 	text-align: left;
+	padding-bottom:0.5rem;
 }
 .brandImage {
 	float:left;
@@ -1367,6 +1369,11 @@ fieldset input[type=radio] {
 	display: block;
    clear:both;
 }
+
+.block_element_reviewslinked a {margin-bottom: 1rem;display:block;}
+#reviewsInfoDefaultPrice {text-align: center;}
+
+
 @media (min-width: 576px) {
 	.backhistorybutton {
 		float:right;
@@ -1517,7 +1524,7 @@ fieldset input[type=radio] {
 }
 @media (min-width: 768px) {
 
-
+	#reviewsInfoDefaultPrice {text-align:right;}
 	#productreviewsBody #productReviewsDefaultPrice {text-align:center;}
 
 
@@ -1757,9 +1764,9 @@ fieldset input[type=radio] {
 	.block_element_reviewslinked {
 		float:right;
 		margin-top:0rem;
-		width: 40%;
+	 
 		padding-top:0px;
-		text-align: center;
+		text-align: right;
    }
 	#reviewsWrite .forward {
 		float:right;
@@ -2011,11 +2018,7 @@ fieldset input[type=radio] {
 	.shippingestimaterb {
 		float:left;
    }
-	#productreviewsBody .forward {
-		font-size: 16px;
-		width:auto;
-		float:right !important;
-   }
+ 
 	.two_continue {
 		margin-bottom:0.5rem;
 		float:right;

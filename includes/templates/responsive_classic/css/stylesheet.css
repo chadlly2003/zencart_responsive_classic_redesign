@@ -832,7 +832,6 @@ div#checkoutShippingContentChoose{
 #reviewsInfoDefaultProductImage, #productReviewsDefaultProductImage {
 	margin:0 1em 1em 0;
 }
- 
 /*bof center boxes*/
 .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {
 	margin-top:1rem;
@@ -1014,7 +1013,6 @@ span.list-addtext{
 .prod-list-wrap{
 	text-align:center;
 	clear:both;
-	 
 	margin-bottom:1rem;
 	margin-top:1rem;
 }
@@ -1383,11 +1381,9 @@ h4.optionName{
 	margin-top:1rem;
 	margin-bottom:0px;
 }
-
-
-#productreviewsBody #productReviewsDefaultPrice {text-align:center;}
-
-
+#productreviewsBody #productReviewsDefaultPrice {
+   text-align:center;
+}
 /*bof my account*/
 #myAccountGen li, #myAccountNotify li {
 	margin:0;

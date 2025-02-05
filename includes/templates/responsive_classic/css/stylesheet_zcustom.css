@@ -1389,6 +1389,9 @@ fieldset input[type=radio] {
 .block_element_reviewslinked br {
    display: none;
 }
+
+.block_element_reviewslinked h2 {margin-top:0px;}
+
 .box_review_spacver {
    margin-bottom:2rem;
 	text-align: center;

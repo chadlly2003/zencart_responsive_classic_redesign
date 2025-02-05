@@ -473,7 +473,7 @@ input[type="checkbox"] {
 	line-height: 27px;
 	text-align: left;
 	color: #000;
-	border-bottom: solid 1px #ccc;
+	border-bottom: solid 1px cornflowerblue;
 	margin-top: 1rem;
 	padding-bottom: 1rem;
 	margin-bottom: 3rem;
@@ -533,7 +533,7 @@ span.normal_button:hover {
 	line-height: 27px;
 	text-align: left;
 	color: #000;
-	border-bottom: solid 1px #ccc;
+	border-bottom: solid 1px cornflowerblue;
 	margin-top: 1rem;
 	padding-bottom: 1rem;
 	margin-bottom: 3rem;
@@ -1390,14 +1390,21 @@ fieldset input[type=radio] {
    display: none;
 }
 
-.block_element_reviewslinked h2 {margin-top:0px;}
+.block_element_reviewslinked h2 {margin-top:0px;margin-bottom:0px;}
 
 .box_review_spacver {
    margin-bottom:2rem;
 	text-align: center;
+	margin-top:0rem;
  
   
 }
+
+#reviewsDefault .button_in_cart {margin-top:1rem;}
+
+.box_review_spacver .qmax {display:block;margin-top:-0.5rem;}
+
+
 .spacer_element_button_add {
    margin-bottom:1rem;
    text-align: center;
@@ -1408,7 +1415,7 @@ fieldset input[type=radio] {
    margin-bottom:0px !important;
 }
  
- 
+.spacer_element_button_add br {display:none;}
 
 @media (min-width: 576px) {
 	.backhistorybutton {

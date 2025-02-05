@@ -871,6 +871,7 @@ input.cssButton.submit_button.button.button_search {
 #shoppingcartBody th, td {
 	padding-top:0.5rem;
 	padding-bottom:0.5rem;
+	vertical-align: initial;
 }
 #cartSubTotal {
 	border-top:none;

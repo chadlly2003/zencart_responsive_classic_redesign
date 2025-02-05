@@ -1405,6 +1405,14 @@ fieldset input[type=radio] {
 #reviewsInfoDefault .productBasePrice {
    display: inline-block;
 }
+
+
+#reviewsInfoDefault .spacer_element_button_add {
+ 
+	display:none;
+}
+
+
 @media (min-width: 576px) {
 	.backhistorybutton {
 		float:right;
@@ -1774,10 +1782,7 @@ fieldset input[type=radio] {
 	#reviewsInfoDefault .productBasePrice {
 		text-align: right;
    }
-	#reviewsInfoDefault .spacer_element_button_add {
-		width:40%;
-		float:right;
-   }
+ 
 	#reviewsInfoDefaultProductPageLink {
 		float: left;
 		display: block;

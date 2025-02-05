@@ -1256,7 +1256,8 @@ fieldset input[type=radio] {
 	color:darkgreen;
 	text-align: left;
 	padding-bottom:0.5rem;
-	margin-top:2rem;
+	padding-top:1rem;
+ 
 }
 #productReviewsDefaultListingBottomNumber {
 	color:darkgreen;
@@ -1393,6 +1394,7 @@ fieldset input[type=radio] {
 .box_review_spacver {
    margin-bottom:2rem;
 	text-align: center;
+	display:none;
   
 }
 .spacer_element_button_add {

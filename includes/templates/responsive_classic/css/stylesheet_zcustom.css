@@ -1402,11 +1402,10 @@ fieldset input[type=radio] {
 }
 #reviewsInfoDefault .productBasePrice {
    display: inline-block;
+   margin-bottom:0px !important;
 }
  
-#reviewsInfoDefault .spacer_element_button_add {
-	margin-top:-1rem;
-}
+ 
 
 @media (min-width: 576px) {
 	.backhistorybutton {

@@ -188,7 +188,7 @@ echo zen_draw_form('order_status', zen_href_link(FILENAME_ORDER_STATUS, 'action=
         <?= zen_draw_input_field('query_email_address', $query_email_address, 'size="35" id="query_email_address" required', 'email') ?>
 
 
-        <?= zen_draw_input_field($spam_input_name, '', ' size="40" id="CUAS" style="visibility:hidden; display:none;" autocomplete="off" aria-label="Spam prevention field"') ?>
+        <?php echo zen_draw_input_field($antiSpamFieldName, '', ' size="40" id="CUAS" style="visibility:hidden; display:none;" autocomplete="off"'); ?>
         <?= $extra_validation_html ?>
 
         <div class="buttonRow forward"><?= zen_image_submit(BUTTON_IMAGE_CONTINUE, BUTTON_CONTINUE_ALT) ?></div>

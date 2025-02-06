@@ -1434,6 +1434,11 @@ fieldset input[type=radio] {
 	margin-bottom:2rem !important;
 	padding-bottom:2rem;
 }
+
+.addresscontinue {
+	margin-bottom: 1rem;
+}
+
 @media (min-width: 576px) {
 	#productAdditionalImages {
 	   grid-template-columns: auto auto auto;

@@ -56,11 +56,11 @@
 <table id="cartContentsDisplay">
      <tr class="tableHeading">
         <th scope="col" id="scQuantityHeading"><?php echo TABLE_HEADING_QUANTITY; ?></th>
-        <td title="Update Quantity" scope="col" id="scUpdateQuantity">&nbsp;</td>
+        <th title="Update Quantity" scope="col" id="scUpdateQuantity">&nbsp;</th>
         <th scope="col" id="scProductsHeading"><?php echo TABLE_HEADING_PRODUCTS; ?></th>
         <th scope="col" id="scUnitHeading"><?php echo TABLE_HEADING_PRICE; ?></th>
         <th scope="col" id="scTotalHeading"><?php echo TABLE_HEADING_TOTAL; ?></th>
-        <td scope="col" id="scRemoveHeading">&nbsp;</td>
+        <th scope="col" id="scRemoveHeading">&nbsp;</th>
      </tr>
          <!-- Loop through all products /-->
 <?php

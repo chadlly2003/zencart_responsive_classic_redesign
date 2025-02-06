@@ -98,6 +98,7 @@
 }
 .navitem3t {
 	position: relative;
+	margin-top:-4px;
 }
 .cart-count {
 	position: absolute;
@@ -120,5 +121,6 @@
 	.navitem3t {
 		font-size:32px !important;
 		color:#97682B;
+		margin-top:0px;
 	}
 }

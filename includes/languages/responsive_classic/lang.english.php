@@ -217,7 +217,7 @@ $define = [
     'ERROR_TO_DATE_LESS_THAN_FROM_DATE' => 'To Date must be greater than or equal to From Date.',
     'FAILED_TO_ADD_UNAVAILABLE_PRODUCTS' => 'The selected Product(s) are not currently available for purchase...',
     'FEMALE' => 'Ms.',
-    'FOOTER_TEXT_BODY' => 'Copyright &copy; ' . date('Y') . ' <a aria-label="Zencart.com" href="' . zen_href_link(FILENAME_DEFAULT) . '">' . STORE_NAME . '</a>. Powered by <a href="https://www.zen-cart.com" rel="noopener noreferrer" target="_blank">Zen Cart</a>',
+    'FOOTER_TEXT_BODY' => 'Copyright &copy; ' . date('Y') . ' <a href="' . zen_href_link(FILENAME_DEFAULT) . '">' . STORE_NAME . '</a>. Powered by <a href="https://www.zen-cart.com" rel="noopener noreferrer" target="_blank">Zen Cart</a>',
     'FORM_REQUIRED_INFORMATION' => '* Required information',
     'FREE_SHIPPING_DESCRIPTION' => 'Free shipping for orders over %s',
     'HEADING_ADDRESS_INFORMATION' => 'Address Information',

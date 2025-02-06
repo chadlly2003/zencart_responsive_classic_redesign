@@ -140,7 +140,7 @@
 
 <?php // display tax info if exists ?>
 <?php if (sizeof($order->info['tax_groups']) > 1)  { ?>
-        <td class="cartTotalDisplay">
+        <!-- <td class="cartTotalDisplay"> -->
           <?php echo zen_display_tax_value($order->products[$i]['tax']); ?>%</td>
 <?php    }  // endif tax info display  ?>
         <td class="cartTotalDisplay">

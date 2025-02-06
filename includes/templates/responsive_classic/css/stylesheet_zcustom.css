@@ -988,6 +988,11 @@ input[type="radio"], input[type="checkbox"] {
 #accountHistInfo .accountTaxDisplay {
 	text-align: center;
 	vertical-align: baseline;
+	display:none !important;
+}
+
+#myAccountTax {
+	display:none;
 }
 #checkoutShipping .button_change_address {
 	margin-bottom:1.5rem;

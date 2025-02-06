@@ -1426,7 +1426,25 @@ fieldset input[type=radio] {
 #ccTaxHeading {
    display:none;
 }
+
+
+#productAdditionalImages {
+	display:grid;
+	 
+grid-template-columns: auto;
+max-width: 500px;
+margin: auto;
+margin-top:2rem;
+margin-bottom:2rem !important;
+}
+
+
 @media (min-width: 576px) {
+
+
+	#productAdditionalImages {grid-template-columns:  auto auto auto;}
+
+
 	.backhistorybutton {
 		float:right;
    }
@@ -1575,6 +1593,10 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+
+
+	#productAdditionalImages {grid-template-columns: auto auto auto auto; }
+
 	.box_review_spacver {
 		margin-bottom:0rem;
 		float:right;
@@ -1887,6 +1909,7 @@ fieldset input[type=radio] {
    }
 	#productMainImage img {
 		margin-bottom:1rem;
+		
    }
 	.cartTotalDisplay {
 		display:block !important;
@@ -2217,6 +2240,10 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 992px) {
+
+	#productAdditionalImages {grid-template-columns: auto auto auto auto auto; }
+
+
 	div#logo{
 		margin-right:12px;
    }
@@ -2270,6 +2297,10 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 1200px) {
+
+
+ 
+
 	.search_box {
 		margin-left: 0rem;
    }

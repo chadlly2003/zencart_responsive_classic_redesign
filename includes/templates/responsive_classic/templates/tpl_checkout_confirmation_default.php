@@ -139,10 +139,10 @@
           </td>
 
 <?php // display tax info if exists ?>
-<?php if (sizeof($order->info['tax_groups']) > 1)  { ?>
-        <!-- <td class="cartTotalDisplay"> -->
+ <!-- <?php if (sizeof($order->info['tax_groups']) > 1)  { ?>
+         <td class="cartTotalDisplay">
           <?php echo zen_display_tax_value($order->products[$i]['tax']); ?>%</td>
-<?php    }  // endif tax info display  ?>
+<?php    }  // endif tax info display  ?> -->
         <td class="cartTotalDisplay">
           <?php echo $currencies->display_price($order->products[$i]['final_price'], $order->products[$i]['tax'], $order->products[$i]['qty']);
           if ($order->products[$i]['onetime_charges'] != 0 ) echo '<br> ' . $currencies->display_price($order->products[$i]['onetime_charges'], $order->products[$i]['tax'], 1);

@@ -248,11 +248,7 @@ th#seProductsHeading, th#seTotalHeading {
 .imgmodal {
 	background-color: rgba(0, 0, 0, 0.81);
 }
-.image-grid img {
-	border: 1px solid #cccc;
-	 
-
-}
+ 
 .imgmodal img {
 	border: none;
 	box-shadow: none;

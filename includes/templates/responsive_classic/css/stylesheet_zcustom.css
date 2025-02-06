@@ -485,7 +485,7 @@ input[type="checkbox"] {
 #reviewsInfoDefault .button_goto_prod_details {
 	display:list-item;
 	list-style: none;
-   ;
+	;
 	padding:0px;
 	color:blueviolet;
 }
@@ -653,7 +653,7 @@ span.normal_button:hover {
 #documentcategoriesHeading:before {
 	content: "\f15b";
    /* this is your text. You can also use UTF-8 character codes as I do here */
-	font-family: "Font Awesome 5 Free";
+	font-family: "Font Awesome 6 Free";
    /* This is the correct font-family*/
 	vertical-align: inherit;
 	font-size: 20px;
@@ -664,7 +664,7 @@ span.normal_button:hover {
 #categoriesHeading:before {
 	content: "\f03a";
    /* this is your text. You can also use UTF-8 character codes as I do here */
-	font-family: "Font Awesome 5 Free";
+	font-family: "Font Awesome 6 Free";
    /* This is the correct font-family*/
 	vertical-align: inherit;
 	font-size: 20px;
@@ -675,7 +675,7 @@ span.normal_button:hover {
 .button_write_review:before {
 	content: "\f086";
    /* this is your text. You can also use UTF-8 character codes as I do here */
-	font-family: "Font Awesome 5 Free";
+	font-family: "Font Awesome 6 Free";
    /* This is the correct font-family*/
 	vertical-align: inherit;
 	font-size: 20px;
@@ -990,7 +990,6 @@ input[type="radio"], input[type="checkbox"] {
 	vertical-align: baseline;
 	display:none !important;
 }
-
 #myAccountTax {
 	display:none;
 }
@@ -1419,33 +1418,27 @@ fieldset input[type=radio] {
 	display:none;
 }
 #reviewsInfoDefaultPrice img {
-   clear:both;
-   margin:auto;
-   display: block;
+	clear:both;
+	margin:auto;
+	display: block;
 }
 #ccTaxHeading {
-   display:none;
+	display:none;
 }
-
-
 #productAdditionalImages {
 	display:grid;
-	 
-grid-template-columns: auto;
-max-width: 500px;
-margin: auto;
-margin-top:2rem;
-margin-bottom:2rem !important;
-padding-bottom:2rem;
+	grid-template-columns: auto;
+	max-width: 500px;
+	margin: auto;
+	margin-top:2rem;
+	margin-bottom:2rem !important;
+	padding-bottom:2rem;
 }
-
-
 @media (min-width: 576px) {
-
-
-	#productAdditionalImages {grid-template-columns:  auto auto auto;justify-content:center;}
-
-
+	#productAdditionalImages {
+	   grid-template-columns: auto auto auto;
+	   justify-content:center;
+   }
 	.backhistorybutton {
 		float:right;
    }
@@ -1594,10 +1587,11 @@ padding-bottom:2rem;
    }
 }
 @media (min-width: 768px) {
-
-
-	#productAdditionalImages {grid-template-columns: auto auto auto auto;justify-content: left;padding-bottom:1rem;}
-
+	#productAdditionalImages {
+	   grid-template-columns: auto auto auto auto;
+	   justify-content: left;
+	   padding-bottom:1rem;
+   }
 	.box_review_spacver {
 		margin-bottom:0rem;
 		float:right;
@@ -1910,7 +1904,6 @@ padding-bottom:2rem;
    }
 	#productMainImage img {
 		margin-bottom:1rem;
-		
    }
 	.cartTotalDisplay {
 		display:block !important;
@@ -2241,10 +2234,9 @@ padding-bottom:2rem;
    }
 }
 @media (min-width: 992px) {
-
-	#productAdditionalImages {grid-template-columns: auto auto auto auto auto; }
-
-
+	#productAdditionalImages {
+	   grid-template-columns: auto auto auto auto auto;
+   }
 	div#logo{
 		margin-right:12px;
    }
@@ -2298,10 +2290,6 @@ padding-bottom:2rem;
    }
 }
 @media (min-width: 1200px) {
-
-
- 
-
 	.search_box {
 		margin-left: 0rem;
    }

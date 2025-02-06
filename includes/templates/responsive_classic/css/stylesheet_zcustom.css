@@ -1436,13 +1436,14 @@ max-width: 500px;
 margin: auto;
 margin-top:2rem;
 margin-bottom:2rem !important;
+padding-bottom:2rem;
 }
 
 
 @media (min-width: 576px) {
 
 
-	#productAdditionalImages {grid-template-columns:  auto auto auto;}
+	#productAdditionalImages {grid-template-columns:  auto auto auto;justify-content:center;}
 
 
 	.backhistorybutton {
@@ -1595,7 +1596,7 @@ margin-bottom:2rem !important;
 @media (min-width: 768px) {
 
 
-	#productAdditionalImages {grid-template-columns: auto auto auto auto; }
+	#productAdditionalImages {grid-template-columns: auto auto auto auto;justify-content: left;padding-bottom:1rem;}
 
 	.box_review_spacver {
 		margin-bottom:0rem;
@@ -1779,7 +1780,7 @@ margin-bottom:2rem !important;
    }
 	#pinfo-left{
 		float:left;
-		width:35%;
+		width:43%;
    }
 	#pinfo-right {
 		width:50% !important;

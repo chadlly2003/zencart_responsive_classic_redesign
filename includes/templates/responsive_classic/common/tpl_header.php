@@ -34,9 +34,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
   return;
 }
 ?>
- <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
-
-
+ 
 <div id="headerWrapper">
 
 <!-- sidebar navigation -->

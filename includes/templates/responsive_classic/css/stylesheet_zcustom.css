@@ -432,6 +432,8 @@ input[type="checkbox"] {
 	display:list-item;
 	margin-left:1rem;
 	opacity: 0.5;
+	list-style: none;
+	margin-left:0px;
 }
 #reviewsWrite span.cssButton.normal_button {
 	background: transparent;
@@ -443,6 +445,8 @@ input[type="checkbox"] {
 	outline:none;
 	display:list-item;
 	margin-left:1rem;
+	list-style: none;
+	margin-left:0px;
 }
 #reviewsWrite .button.button_goto_prod_details {
 	background: transparent;
@@ -598,7 +602,7 @@ span.normal_button:hover {
 	padding-top:0.5rem;
 	text-align:center;
 }
-#reviewsDefault .#productMainImage img {
+#reviewsDefault #productMainImage img {
 	margin-bottom:1rem;
 }
 #reviewsDefault .navSplitPagesLinks {
@@ -1405,6 +1409,7 @@ fieldset input[type=radio] {
 .box_review_spacver .qmax {
 	display:block;
 	margin-top:-0.5rem;
+	text-align: right;
 }
 .spacer_element_button_add {
 	margin-bottom:1rem;
@@ -1434,18 +1439,21 @@ fieldset input[type=radio] {
 	margin-bottom:2rem !important;
 	padding-bottom:2rem;
 }
-
 .addresscontinue {
 	margin-bottom: 1rem;
 }
-
-.markProductOutOfStock {display: none;}
-
-
+.markProductOutOfStock {
+   display: none;
+}
+.spacer_element_button_add .qmax {
+	display: block;
+	margin-top: 0.6rem;
+	text-align: right;
+}
 @media (min-width: 576px) {
 	#productAdditionalImages {
-	   grid-template-columns: auto auto auto;
-	   justify-content:center;
+		grid-template-columns: auto auto auto;
+		justify-content:center;
    }
 	.backhistorybutton {
 		float:right;
@@ -1595,10 +1603,13 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+	#productreviewswriteBody #productMainImage {
+		margin-right:1rem;
+   }
 	#productAdditionalImages {
-	   grid-template-columns: auto auto auto auto;
-	   justify-content: left;
-	   padding-bottom:1rem;
+		grid-template-columns: auto auto auto auto;
+		justify-content: left;
+		padding-bottom:1rem;
    }
 	.box_review_spacver {
 		margin-bottom:0rem;
@@ -1812,7 +1823,7 @@ fieldset input[type=radio] {
 		margin-right:1rem;
 		margin-bottom:1rem;
 		margin-top:0px;
-		width: 150px;
+		width: 100px;
    }
 	.reviews-wrapper span.button_read_reviews {
 		text-align: left;
@@ -2243,7 +2254,7 @@ fieldset input[type=radio] {
 }
 @media (min-width: 992px) {
 	#productAdditionalImages {
-	   grid-template-columns: auto auto auto auto auto;
+		grid-template-columns: auto auto auto auto auto;
    }
 	div#logo{
 		margin-right:12px;

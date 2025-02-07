@@ -52,15 +52,17 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 <div class="sidebar is-hidden">
   <h1 class="sidebar_title">Categories</h1>
   
-    <?php
-    // load the UL-generator class and produce the menu list dynamically from there
-    require_once (DIR_WS_CLASSES . 'categories_ul_generator.php');
-    $zen_CategoriesUL = new zen_categories_ul_generator();
-    $menulist = $zen_CategoriesUL->buildTree(true, 1);
+  
+      <?php
+      // load the UL-generator class and produce the menu list dynamically from there
+      require_once (DIR_WS_CLASSES . 'categories_ul_generator.php');
+      $zen_CategoriesUL = new zen_categories_ul_generator();
+      $menulist = $zen_CategoriesUL->buildTree(false, 1);
+  
+      // Get the entire menu (with subcategories)
+      $menulist = $zen_CategoriesUL->buildTree(true, 1);
 
-    // Get the entire menu (with subcategories)
-    $menulist = $zen_CategoriesUL->buildTree(true);
-    echo $menulist;
+     echo $menulist;
     ?> 
     
     <ul class="myaccounts">

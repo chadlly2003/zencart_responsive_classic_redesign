@@ -592,6 +592,9 @@ span.normal_button:hover {
 	background: transparent;
 	color:#8A4514;
 }
+.button_write_review {
+	background:transparent !important;
+}
 #productReviewLink span.normal_button {
 	color:#8A4514;
 }

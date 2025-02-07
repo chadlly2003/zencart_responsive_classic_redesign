@@ -1439,6 +1439,9 @@ fieldset input[type=radio] {
 	margin-bottom: 1rem;
 }
 
+.markProductOutOfStock {display: none;}
+
+
 @media (min-width: 576px) {
 	#productAdditionalImages {
 	   grid-template-columns: auto auto auto;

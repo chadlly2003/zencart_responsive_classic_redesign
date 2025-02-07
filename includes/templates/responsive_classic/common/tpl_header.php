@@ -55,37 +55,11 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
     <?php
     // load the UL-generator class and produce the menu list dynamically from there
     require_once (DIR_WS_CLASSES . 'categories_ul_generator.php');
-    $zen_CategoriesUL = new zen_categories_ul_generator;
+    $zen_CategoriesUL = new zen_categories_ul_generator();
+    $menulist = $zen_CategoriesUL->buildTree(true, 1);
 
     // Get the entire menu (with subcategories)
     $menulist = $zen_CategoriesUL->buildTree(true);
-
-    // Use DOMDocument to parse and filter the menu
-    $dom = new DOMDocument();
-    libxml_use_internal_errors(true);  // suppress warnings about malformed HTML
-    $menulist = '' . $menulist . '';
-    $dom->loadHTML($menulist);
-
-    // Find all <li> elements
-    $lis = $dom->getElementsByTagName('li');
-
-    // Filter out subcategories (keep only top-level categories)
-    foreach ($lis as $li) {
-        // Check if the <li> element has a child <ul> (indicating subcategories)
-        $ul = $li->getElementsByTagName('ul');
-        if ($ul->length > 0) {
-            // Remove the subcategory <ul> and all its content
-            $li->removeChild($ul->item(0));
-        }
-    }
-
-    // Output the modified menu
-    $menulist = $dom->saveHTML();
-
-    // Clean up and display the menu
-    $menulist = str_replace("<html><body>", "", $menulist);
-    $menulist = str_replace("</body></html>", "", $menulist);
-
     echo $menulist;
     ?> 
     

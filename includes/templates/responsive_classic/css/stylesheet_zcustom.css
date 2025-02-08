@@ -1478,7 +1478,8 @@ a:link {
 }
  .cartRemoveItemDisplay .fa-xl {
     vertical-align:inherit !important;
-    color:grey
+    color:grey;
+    font-size:1.3rem;
 }
  @media (min-width: 576px) {
      #productAdditionalImages {

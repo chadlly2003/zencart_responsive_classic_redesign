@@ -56,11 +56,11 @@
 <table id="cartContentsDisplay">
      <tr class="tableHeading">
         <th scope="col" id="scQuantityHeading"><?php echo TABLE_HEADING_QUANTITY; ?></th>
-        <th title="Update Quantity" scope="col" id="scUpdateQuantity">&nbsp;</th>
+        <th aria-label="Update Quantity" scope="col" id="scUpdateQuantity">&nbsp;</th>
         <th scope="col" id="scProductsHeading"><?php echo TABLE_HEADING_PRODUCTS; ?></th>
         <th scope="col" id="scUnitHeading"><?php echo TABLE_HEADING_PRICE; ?></th>
         <th scope="col" id="scTotalHeading"><?php echo TABLE_HEADING_TOTAL; ?></th>
-        <th scope="col" id="scRemoveHeading">&nbsp;</th>
+        <th aria-label="Remove this product from the cart" scope="col" id="scRemoveHeading">&nbsp;</th>
      </tr>
          <!-- Loop through all products /-->
 <?php
@@ -122,7 +122,7 @@
 <?php
   if ($product['buttonDelete']) {
 ?>
-         <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, 'action=remove_product&product_id=' . $product['id']); ?>"><i class="fas fa-trash-alt fa-xl" aria-hidden="true" title="<?php echo ICON_TRASH_ALT; ?>"></i></a>
+         <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, 'action=remove_product&product_id=' . $product['id']); ?>" title="Remove this product from the cart"><i class="fas fa-trash-alt fa-xl" aria-hidden="true" title="<?php echo ICON_TRASH_ALT; ?>"></i></a>
 <?php
   }
   if ($product['checkBoxDelete'] ) {

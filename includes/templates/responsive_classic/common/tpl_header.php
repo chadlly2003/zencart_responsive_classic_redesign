@@ -65,6 +65,8 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
      echo $menulist;
     ?> 
     
+<hr class="spacernav" />
+
     <ul class="myaccounts">
       <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa fa-xl fa-fw fa-home" aria-hidden="true">&nbsp</i> <?php echo HEADER_TITLE_CATALOG; ?></a></li>
       

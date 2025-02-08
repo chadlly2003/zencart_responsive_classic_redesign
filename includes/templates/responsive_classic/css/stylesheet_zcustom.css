@@ -1,3 +1,6 @@
+a:link {-webkit-tap-highlight-color: transparent;}
+a:hover {-webkit-tap-highlight-color: transparent;}
+
 #navSuppWrapper {
 	display:none;
 }
@@ -922,12 +925,15 @@ input[type="radio"], input[type="checkbox"] {
 }
 #accountHistInfo #myAccountOrdersStatus {
 	text-align: center;
+	margin-bottom:2rem;
 }
+
+#csNotifications {margin-top:2rem;}
 #accountHistInfo #myAccountShipInfo div, #myAccountPaymentInfo div {
 	display: list-item;
 	float: left;
 	padding:0px;
-	margin-left:2rem 
+	margin-left:2rem; 
 }
 #accountHistInfo #myAccountShipInfo h3, #accountHistInfo #myAccountPaymentInfo h3 {
 	color:#154DBC;
@@ -1054,7 +1060,7 @@ input[type="radio"], input[type="checkbox"] {
 	color: #000;
 }
 #checkoutShipping #comments {
-	margin-top:1rem;
+	margin-top:2rem;
 }
 #checkoutShipping #comments legend {
 	color:#154DBC;
@@ -1082,6 +1088,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 #checkoutPayment legend {
 	color:#000;
+	 
 }
 #checkoutPayment .order_comments legend {
 	border-bottom:none;
@@ -1098,11 +1105,12 @@ input[type="radio"], input[type="checkbox"] {
 	margin-bottom:1rem;
 }
 #checkoutPayment #checkoutOrderTotals {
-	margin-bottom:1rem 
+	margin-bottom:2rem;
+	margin-top:1rem; 
 }
 #checkoutPayment .payment {
-	margin-top:1rem;
-	margin-bottom:1rem;
+	margin-top:2rem;
+	margin-bottom:2rem;
 }
 #checkoutPayment TEXTAREA {
 	text-align: left;
@@ -1160,7 +1168,7 @@ input[type="radio"], input[type="checkbox"] {
 	opacity:0.5;
 }
 #checkoutConfirmDefault address{
-	margin-bottom:1.5rem 
+	margin-bottom:2rem 
 }
 #checkoutConfirmDefault .important {
 	margin-bottom:1rem 
@@ -1453,6 +1461,10 @@ fieldset input[type=radio] {
 	margin-top: 0.6rem;
 	text-align: right;
 }
+
+#checkoutConfirmDefaultHeadingComments {color:#154DBC;}
+ 
+
 @media (min-width: 576px) {
 	#productAdditionalImages {
 		grid-template-columns: auto auto auto;

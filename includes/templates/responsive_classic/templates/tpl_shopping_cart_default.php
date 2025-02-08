@@ -122,7 +122,7 @@
 <?php
   if ($product['buttonDelete']) {
 ?>
-         <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, 'action=remove_product&product_id=' . $product['id']); ?>"><?php echo zen_image($template->get_template_dir(ICON_IMAGE_TRASH, DIR_WS_TEMPLATE, $current_page_base,'images/icons'). '/' . ICON_IMAGE_TRASH, ICON_TRASH_ALT); ?></a>
+         <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, 'action=remove_product&product_id=' . $product['id']); ?>"><i class="fas fa-trash-alt fa-xl" aria-hidden="true" title="<?php echo ICON_TRASH_ALT; ?>"></i></a>
 <?php
   }
   if ($product['checkBoxDelete'] ) {

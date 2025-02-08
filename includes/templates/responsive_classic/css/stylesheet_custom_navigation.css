@@ -53,9 +53,10 @@
 	display:none !important 
 }
 .sidebar {
-	overflow-y:scroll;
+	overflow-y:auto;
 	z-index: 1;
 	padding-top:1rem;
+	
 }
 .myaccounts .fa-fw {
 	color:blueviolet;

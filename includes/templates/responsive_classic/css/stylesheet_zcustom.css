@@ -127,10 +127,7 @@ body {
      width:21% !important;
      max-width: 80px;
 }
- #productMainImage img {
-     max-width: 500px;
-   
-}
+  
  #whatsNew br {
      display:none 
 }
@@ -1971,7 +1968,8 @@ body {
     }
      #productMainImage img {
          margin-bottom:1rem;
-         width:100%;
+         width: 100%;
+        
     }
      .cartTotalDisplay {
          display:block !important;

@@ -19,6 +19,13 @@ input {
     margin-bottom:1rem;
     word-wrap: break-word;
 }
+
+.logoff_style  {
+    color:green !important;
+    text-decoration: none !important;
+}
+
+
 /* make footer stay at bottom of page */
 body {
     min-height: 100vh;

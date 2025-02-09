@@ -214,6 +214,7 @@ ol.list-links li{
 	border:none;
 	border-spacing:0;
 	border-collapse:separate;
+	word-wrap:anywhere;
 }
 .last, #productQuantityDiscounts table tr:first-child td, #shippingEstimatorContent table, #shippingEstimatorContent td, #shippingEstimatorContent th {
 	border:none !important;

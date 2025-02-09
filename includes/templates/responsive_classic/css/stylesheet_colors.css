@@ -705,6 +705,7 @@ input.cssButton.submit_button.button.button_search {
 	padding-top:6px;
 	padding-bottom:6px;
 	background: cornsilk;
+	margin-top:1rem;
 }
 #productDateAvailable {
 	padding-top:6px;
@@ -788,7 +789,7 @@ input.cssButton.submit_button.button.button_search {
 	float:none !important;
 	margin-top:0rem !important;
 	margin-bottom:0rem !important;
-	display: flex;
+ 
 	justify-content: center;
 	clear:both;
 }

@@ -1971,6 +1971,7 @@ body {
     }
      #productMainImage img {
          margin-bottom:1rem;
+         width:100%;
     }
      .cartTotalDisplay {
          display:block !important;

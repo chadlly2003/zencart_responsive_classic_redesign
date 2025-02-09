@@ -19,6 +19,20 @@ a:link {
      margin-bottom:1rem;
      word-wrap: break-word;
 }
+
+ /* make footer stay at bottom of page */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+ /* eof make footer stay at bottom of page */
+
+
  .onerow-fluid{
      margin:0 auto !important;
      width:100% !important;

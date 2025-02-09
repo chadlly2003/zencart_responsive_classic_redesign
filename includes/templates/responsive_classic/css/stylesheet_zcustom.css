@@ -1463,12 +1463,13 @@ body {
 }
  #productAdditionalImages {
      display:grid;
-     grid-template-columns: auto;
+     grid-template-columns: auto auto auto;
      max-width: 500px;
      margin: auto;
      margin-top:1rem;
      margin-bottom:1rem !important;
      padding-bottom:2rem;
+     justify-content:center;
 }
  .addresscontinue {
      margin-bottom: 1rem;
@@ -1495,15 +1496,17 @@ body {
     color:grey;
     font-size:1.3rem;
 }
+
+.image-grid img {
+    max-width: 100px;
+}
+
+
+
  @media (min-width: 576px) {
     
-    .image-grid img {
-        max-width: 100px;
-    }
-     #productAdditionalImages {
-         grid-template-columns: auto auto auto;
-         justify-content:center;
-    }
+ 
+   
      .backhistorybutton {
          float:right;
     }

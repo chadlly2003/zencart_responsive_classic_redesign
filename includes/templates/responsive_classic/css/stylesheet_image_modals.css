@@ -22,6 +22,7 @@
     height: 100%;
     object-fit: cover; /* This ensures the image is zoomed and cropped to fit the square container */
     object-position: center; /* Center the visible portion of the image */
+    
 }
 
 .image-grid::before {

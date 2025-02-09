@@ -612,6 +612,7 @@ span.normal_button:hover {
 }
 #productReviewLink span.normal_button {
     color:#8A4514;
+    padding-bottom:0px;
 }
 .reviewligner .button_write_review {
     color:#8A4514;
@@ -700,7 +701,7 @@ span.normal_button:hover {
     color:#8A4514;
 }
 #productGeneral .reviewCount {
-    margin-bottom:2rem;
+    margin-bottom:1rem;
     margin-top:0px;
     text-align: center;
 }
@@ -1487,7 +1488,11 @@ fieldset input[type=radio] {
     max-width: 100px;
 }
  
-
+.reviewCount {
+    text-align: center;
+    margin-top:0px;
+    margin-bottom:1rem;
+}
 
 @media (min-width: 576px) {
     .backhistorybutton {

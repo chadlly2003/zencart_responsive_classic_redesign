@@ -1486,6 +1486,9 @@ fieldset input[type=radio] {
 .image-grid img {
     max-width: 100px;
 }
+ 
+
+
 @media (min-width: 576px) {
     .backhistorybutton {
         float:right;
@@ -1943,7 +1946,7 @@ fieldset input[type=radio] {
     .list-image{
         float:left;
         margin-right:1rem !important;
-        max-width:100px;
+    
    }
     .list-price {
         float:left;

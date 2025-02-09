@@ -308,6 +308,7 @@ select#country, select#stateZone, #state {
 	vertical-align:top;
 	margin:auto;
 	padding:0;
+	margin-top:0px !important;
 }
 #logoWrapper, #cartBoxListWrapper, #ezPageBoxList, #cartBoxListWrapper ul, #ezPageBoxList ul, #popupAdditionalImage, #popupImage {
 	margin:0;

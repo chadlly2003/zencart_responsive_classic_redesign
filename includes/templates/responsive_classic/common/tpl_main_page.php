@@ -239,6 +239,28 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
 ?>
 <!--eof- banner #6 display -->
 
+<div class="footer">
+<!--bof-navigation display -->
+<div id="navSuppWrapper">
+    <div id="navSupp">
+        <ul>
+            <li><a href="<?= HTTP_SERVER . DIR_WS_CATALOG ?>"><?= HEADER_TITLE_CATALOG ?></a></li>
+<?php
+    if (EZPAGES_STATUS_FOOTER === '1' || (EZPAGES_STATUS_FOOTER === '2' && zen_is_whitelisted_admin_ip())) {
+        require $template->get_template_dir('tpl_ezpages_bar_footer.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_ezpages_bar_footer.php';
+    }
+?>
+        </ul>
+    </div>
+</div>
+<!--eof-navigation display -->
+
+<!--bof- site copyright display -->
+<div id="siteinfoLegal" class="legalCopyright"><?= FOOTER_TEXT_BODY ?></div>
+<!--eof- site copyright display -->
+
+</div>
+
 
 
 <?php /* add any end-of-page code via an observer class */

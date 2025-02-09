@@ -1500,13 +1500,8 @@ body {
 .image-grid img {
     max-width: 100px;
 }
-
-
-
  @media (min-width: 576px) {
     
- 
-   
      .backhistorybutton {
          float:right;
     }

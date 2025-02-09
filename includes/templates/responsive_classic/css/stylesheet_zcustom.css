@@ -114,8 +114,8 @@ a:link {
      max-width: 80px;
 }
  #productMainImage img {
-     width:100% !important;
      max-width: 500px;
+   
 }
  #whatsNew br {
      display:none 
@@ -1452,8 +1452,8 @@ a:link {
      grid-template-columns: auto;
      max-width: 500px;
      margin: auto;
-     margin-top:2rem;
-     margin-bottom:2rem !important;
+     margin-top:1rem;
+     margin-bottom:1rem !important;
      padding-bottom:2rem;
 }
  .addresscontinue {
@@ -1482,6 +1482,10 @@ a:link {
     font-size:1.3rem;
 }
  @media (min-width: 576px) {
+    
+    .image-grid img {
+        max-width: 100px;
+    }
      #productAdditionalImages {
          grid-template-columns: auto auto auto;
          justify-content:center;

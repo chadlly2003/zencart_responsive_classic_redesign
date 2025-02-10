@@ -23,9 +23,7 @@ input {
     color:green !important;
     text-decoration: none !important;
 }
-ul.list-links li a:hover {
-   opacity:0.5;
-}
+ 
 /* make footer stay at bottom of page */
 body {
     min-height: 100vh;
@@ -1511,10 +1509,44 @@ fieldset input[type=radio] {
     margin-bottom:1rem;
 }
 .optionName {
-   color:blueviolet;
+    color:blueviolet;
     margin-bottom: 0.3rem !important;
 }
+.logoff_style {
+    font-size:16px;
+    margin-bottom:0.5rem;
+    display:block;
+    vertical-align: middle;
+}
+.logoff_style:hover {
+    opacity: 0.5 !important;
+}
+.logoff_style::before {
+    content: "\f08b";
+    font-family: "Font Awesome 6 Free";
+    vertical-align: inherit;
+    font-size: 20px;
+    font-weight: 900;
+    color: green;
+    padding-right: 0.5rem;
+}
+#myAccountGen li {
+   display:flex;
+}
+.show_orders a:hover {
+   opacity:0.5;
+}
 @media (min-width: 576px) {
+    .show_orders {
+       float:right;
+   }
+    #myAccountGen li {
+       display:block;
+   }
+    .logoff_style {
+       float:right;
+       margin-bottom:0px;
+   }
     .backhistorybutton {
         float:right;
    }

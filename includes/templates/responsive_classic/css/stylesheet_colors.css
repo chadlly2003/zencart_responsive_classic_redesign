@@ -729,6 +729,9 @@ input.cssButton.submit_button.button.button_search {
 	margin-bottom:0px !important;
 	outline:none !important;
 	border:none !important;
+	padding-left:0px;
+	display:block;
+	clear:both;
 }
 #cart-box .back {
 	float:none !important;

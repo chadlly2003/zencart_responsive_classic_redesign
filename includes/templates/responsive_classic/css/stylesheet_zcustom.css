@@ -19,13 +19,13 @@ input {
     margin-bottom:1rem;
     word-wrap: break-word;
 }
-
-.logoff_style  {
+.logoff_style {
     color:green !important;
     text-decoration: none !important;
 }
-
-
+ul.list-links li a:hover {
+   opacity:0.5;
+}
 /* make footer stay at bottom of page */
 body {
     min-height: 100vh;
@@ -368,23 +368,18 @@ form select {
     border-radius: .25rem !important;
     background: #e9ecef;
 }
-
 #cart-box input::file-selector-button {
     padding: 5px 15px;
     border: 1px solid #ccc;
     background-color: #f0f0f0;
-    color: #333; 
-    font-size: 14px; 
-    font-family: inherit; 
-    border-radius: 4px; 
-    cursor: pointer; 
-    text-align: center; 
-    outline: none; 
-  }
-
-
-
-
+    color: #333;
+    font-size: 14px;
+    font-family: inherit;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+}
 /* Ensure select elements are visible */
 form.sidebox-select-form select {
     padding: 10px;
@@ -683,7 +678,6 @@ span.normal_button:hover {
     margin-top:1rem;
     margin-bottom:1rem;
 }
- 
 #categoryImgListing img {
     width: 100px;
 }
@@ -1511,17 +1505,15 @@ fieldset input[type=radio] {
 .image-grid img {
     max-width: 100px;
 }
- 
 .reviewCount {
     text-align: center;
     margin-top:0px;
     margin-bottom:1rem;
 }
-
-.optionName {color:blueviolet;
+.optionName {
+   color:blueviolet;
     margin-bottom: 0.3rem !important;
 }
-
 @media (min-width: 576px) {
     .backhistorybutton {
         float:right;
@@ -1673,9 +1665,9 @@ fieldset input[type=radio] {
 }
 @media (min-width: 768px) {
     #reviewsWrite .ratingRow {
-       width:50%;
-       float:left;
-       margin-bottom:1rem;
+        width:50%;
+        float:left;
+        margin-bottom:1rem;
    }
     #productreviewswriteBody #productMainImage {
         margin-right:1rem;
@@ -1979,7 +1971,6 @@ fieldset input[type=radio] {
     .list-image{
         float:left;
         margin-right:1rem !important;
-    
    }
     .list-price {
         float:left;

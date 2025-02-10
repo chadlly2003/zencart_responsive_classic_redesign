@@ -646,10 +646,7 @@ ul.list-links li a, ol.list-links li a{
 	display:block;
 	text-decoration: none;
 }
-ul.list-links li:hover, ol.list-links li:hover{
-}
-.cat-count{
-}
+  
 #cartBoxListWrapper li, .orderHistList li{
 	list-style-type:none;
 	padding:8px 0;
@@ -661,12 +658,10 @@ ul.list-links li:hover, ol.list-links li:hover{
 	display:inline;
 	color:#97682B;
 }
-
 ul.list-links li a {
-	padding-left:0px; 
+	padding-left:0px;
 	padding-right:0px;
 }
-
 .orderHistList {
 	margin:0;
 	padding:0;
@@ -1155,7 +1150,6 @@ span.list-addtext{
 	float:none;
 	margin:0;
 	margin-bottom:1rem;
-	
 }
 #productMainImage a{
 	text-decoration:none;
@@ -1383,8 +1377,7 @@ h4.optionName{
 #productReviewsDefaultNoReviews {
 	clear:both;
 	background: cornsilk;
-    padding: 1rem;
-
+	padding: 1rem;
 }
 #reviewsDefault .prod-list-wrap{
 	margin-bottom:0px;
@@ -1394,7 +1387,7 @@ h4.optionName{
 	margin-bottom:0px;
 }
 #productreviewsBody #productReviewsDefaultPrice {
-   text-align:center;
+	text-align:center;
 }
 /*bof my account*/
 #myAccountGen li, #myAccountNotify li {

@@ -56,7 +56,6 @@
 	overflow-y:auto;
 	z-index: 1;
 	padding-top:1rem;
-	
 }
 .myaccounts .fa-fw {
 	color:blueviolet;
@@ -117,14 +116,7 @@
 .fa-lg {
 	line-height: 1 !important;
 }
-
-.spacernav {margin-left:1rem; margin-right:1rem;}
-
-
-@media (min-width: 576px) {
-	.navitem3t {
-		font-size:32px !important;
-		color:#97682B;
-		margin-top:0px;
-   }
+.spacernav {
+   margin-left:1rem;
+	margin-right:1rem;
 }

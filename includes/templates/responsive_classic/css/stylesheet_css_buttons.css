@@ -61,7 +61,8 @@ span.cssButton.normal_button.button.button_write_review, .button_write_review, s
 	display:inline-block;
 }
 span.cssButton.normal_button.button.button_goto_prod_details{
-	background:#000;
+	background:transparent;
+	opacity: 1;
 }
 #productreviewsBody span.cssButton.normal_button.button.button_goto_prod_details {
 	background: transparent;

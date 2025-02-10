@@ -23,7 +23,6 @@ input {
     color:green !important;
     text-decoration: none !important;
 }
- 
 /* make footer stay at bottom of page */
 body {
     min-height: 100vh;
@@ -1531,21 +1530,26 @@ fieldset input[type=radio] {
     padding-right: 0.5rem;
 }
 #myAccountGen li {
-   display:flex;
+    display:flex;
 }
 .show_orders a:hover {
-   opacity:0.5;
+    opacity:0.5;
 }
 @media (min-width: 576px) {
+    .navitem3t {
+        font-size:32px !important;
+        color:#97682B;
+        margin-top:0px;
+   }
     .show_orders {
-       float:right;
+        float:right;
    }
     #myAccountGen li {
-       display:block;
+        display:block;
    }
     .logoff_style {
-       float:right;
-       margin-bottom:0px;
+        float:right;
+        margin-bottom:0px;
    }
     .backhistorybutton {
         float:right;

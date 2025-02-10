@@ -13,11 +13,9 @@ a:link, a:visited, #navEZPagesTOC ul li a, a:hover, #navEZPagesTOC ul li a:hover
 .cat-count, .itemTitle a:hover, h2.greeting a:hover {
 	color:#666;
 }
-
-#myAccountProducts th  {
+#myAccountProducts th {
 	text-align: left !important;
 }
-
 span.button_back{
 	font-size: 1.0em;
 }
@@ -164,10 +162,9 @@ span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.
 }
 /*bof border colors*/
 #cartAdd input[type=text], #navMainSearch input[type=text], input[type=file], input[type=image], fieldset, select, #productQuantityDiscounts td, #productQuantityDiscounts td:last-child {
-	border:none
+	border:none 
 }
 HR {
- 
 	border:none;
 	border-bottom:solid 1px #ccc;
 }
@@ -249,7 +246,6 @@ th#seProductsHeading, th#seTotalHeading {
 .imgmodal {
 	background-color: rgba(0, 0, 0, 0.81);
 }
- 
 .imgmodal img {
 	border: none;
 	box-shadow: none;
@@ -284,7 +280,7 @@ div#logo {
 	width:100%;
 }
 input.cssButton.submit_button.button.button_search {
-	font-size:1.2em
+	font-size:1.2em 
 }
 #navSuppWrapper {
 	margin-top:3rem !important;
@@ -690,7 +686,8 @@ input.cssButton.submit_button.button.button_search {
 	color:#000;
 	margin-bottom: 1rem;
 	text-align: center;
-	border:none;margin-top:1rem;
+	border:none;
+   margin-top:1rem;
 }
 #featuredProducts .centerBoxHeading {
 	color:#000;
@@ -792,7 +789,7 @@ input.cssButton.submit_button.button.button_search {
 	float:none !important;
 	margin-top:0rem !important;
 	margin-bottom:0rem !important;
-   display: flex;
+	display: flex;
 	justify-content: center;
 	clear:both;
 }
@@ -800,7 +797,6 @@ input.cssButton.submit_button.button.button_search {
 	color:#7D3E12 !important;
 	font-size: 16px;
 	margin-top:0rem !important;
-	 
 }
 .spacerreviewsa span.normal_button {
 	display:inherit !important;
@@ -814,12 +810,12 @@ input.cssButton.submit_button.button.button_search {
 }
 #orderstatusBody legend {
 	color:#000;
-	
 }
-
-#orderStatus p {background: cornsilk !important;
-    padding: 1rem;
-    margin-bottom: 1rem !important;}
+#orderStatus p {
+   background: cornsilk !important;
+	padding: 1rem;
+	margin-bottom: 1rem !important;
+}
 #gvfaqBody legend {
 	color:#000;
 }
@@ -879,7 +875,7 @@ input.cssButton.submit_button.button.button_search {
 	margin-bottom:1rem;
 }
 #shoppingcartBody .tableHeading {
-	background: transparent !important
+	background: transparent !important 
 }
 #productListing .productFreePrice {
 	margin-top:1rem;
@@ -1056,7 +1052,7 @@ input.cssButton.submit_button.button.button_search {
 	border:none !important;
 }
 #shippingEstimatorContent .button_update:hover {
-	border:none !important
+	border:none !important 
 }
 #loginDefault br {
 	display:none;
@@ -1123,7 +1119,7 @@ div#loginDefault fieldset {
 	margin-bottom:0px;
 }
 #createAcctDefault LABEL.checkboxLabel, LABEL.radioButtonLabel {
-	padding:0px !important
+	padding:0px !important 
 }
 #createAcctDefault .alert {
 	margin-top:1rem;
@@ -1151,10 +1147,10 @@ div#loginDefault fieldset {
 #createAcctDefault .forward {
 	width: 100%;
 	margin-top:0;
-	margin-bottom:0.5rem
+	margin-bottom:0.5rem 
 }
 div#createAcctDefault fieldset {
-	margin-bottom: 0px !important
+	margin-bottom: 0px !important 
 }
 #createAcctDefault input.cssButtonHover {
 	opacity:.5 !important;
@@ -1207,5 +1203,5 @@ TEXTAREA {
 }
 #createAcctSuccess span.cssButton.normal_button.button.small_edit {
 	margin-top:0px !important;
-	margin:0px !important
+	margin:0px !important 
 }

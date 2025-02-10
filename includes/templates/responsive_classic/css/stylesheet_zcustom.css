@@ -368,6 +368,23 @@ form select {
     border-radius: .25rem !important;
     background: #e9ecef;
 }
+
+#cart-box input::file-selector-button {
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #333; 
+    font-size: 14px; 
+    font-family: inherit; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    text-align: center; 
+    outline: none; 
+  }
+
+
+
+
 /* Ensure select elements are visible */
 form.sidebox-select-form select {
     padding: 10px;
@@ -1499,6 +1516,10 @@ fieldset input[type=radio] {
     text-align: center;
     margin-top:0px;
     margin-bottom:1rem;
+}
+
+.optionName {color:blueviolet;
+    margin-bottom: 0.3rem !important;
 }
 
 @media (min-width: 576px) {

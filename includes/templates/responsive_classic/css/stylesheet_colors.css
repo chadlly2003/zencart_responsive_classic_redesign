@@ -726,7 +726,6 @@ input.cssButton.submit_button.button.button_search {
 }
 #cart-box input{
 	width:auto !important;
-	float:left;
 	margin-bottom:0px !important;
 	outline:none !important;
 	border:none !important;

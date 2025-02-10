@@ -596,7 +596,7 @@ span.normal_button:hover {
 #reviewsDefault .button_read_reviewsHover {
     background:transparent;
     margin-top:0px;
-    font-size:13px;
+    font-size:1.2em;
     display: contents;
     opacity:0.5;
 }
@@ -610,7 +610,7 @@ span.normal_button:hover {
 }
 #reviewsDefault span.cssButton.normal_button.button.button_read_reviews {
     margin-top:0px;
-    font-size:13px;
+    font-size:1.2em;
     color:#154DBC;
     display: contents;
 }
@@ -1535,6 +1535,15 @@ fieldset input[type=radio] {
 .show_orders a:hover {
     opacity:0.5;
 }
+#reviewsDefault .button_goto_prod_details {
+    padding-top:0.3rem;
+    padding-left:0px;
+    padding-right: 0px;
+    display: inherit;
+}
+.read_review {
+   margin-top:1rem;
+}
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;
@@ -1700,6 +1709,10 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+    #reviewsDefault .button_goto_prod_details{
+        justify-content: left;
+        display: inherit;
+   }
     #reviewsWrite .ratingRow {
         width:50%;
         float:left;
@@ -1922,7 +1935,7 @@ fieldset input[type=radio] {
     .reviews-wrapper .smallProductImage img {
         float:left;
         margin-right:1rem;
-        margin-bottom:1rem;
+        margin-bottom:3rem;
         margin-top:0px;
         width: 100px;
    }

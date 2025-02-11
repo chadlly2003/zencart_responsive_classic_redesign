@@ -1305,9 +1305,7 @@ fieldset input[type=radio] {
     color:darkgreen;
     text-align: left;
 }
-.brandImage {
-    float:left;
-}
+ 
 .brandImage img {
     padding-bottom:0.5rem;
 }

@@ -1721,7 +1721,7 @@ fieldset input[type=radio] {
 @media (min-width: 768px) {
 
 #bannerSix {
-    margin-bottom:-3rem;
+     margin-bottom:0.5rem;
      margin-top:3rem !important;
     margin-left:0px; 
     margin-right:0px;

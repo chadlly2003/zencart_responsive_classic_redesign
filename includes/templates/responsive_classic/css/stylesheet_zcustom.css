@@ -1544,6 +1544,16 @@ fieldset input[type=radio] {
 .read_review {
    margin-top:1rem;
 }
+
+#bannerSix {
+	background:transparent !important;
+	margin-top:2rem;
+	padding:0px;
+	margin-left:1rem;
+	margin-right:1rem;
+}
+
+
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;
@@ -1709,6 +1719,13 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+
+#bannerSix {
+    margin-bottom:-3rem;
+     margin-top:3rem !important;
+    margin-left:0px; 
+    margin-right:0px;
+    }
     #reviewsDefault .button_goto_prod_details{
         justify-content: left;
         display: inherit;

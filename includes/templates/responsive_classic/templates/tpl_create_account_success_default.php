@@ -38,4 +38,3 @@
 
 <div class="buttonRow fowardcontinue"><?php echo '<a href="' . $origin_href . '">' . zen_image_button(BUTTON_IMAGE_CONTINUE, BUTTON_CONTINUE_ALT) . '</a>'; ?></div>
 </div>
-</div>

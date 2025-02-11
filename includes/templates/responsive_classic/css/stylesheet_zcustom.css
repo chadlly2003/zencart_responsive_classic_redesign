@@ -1756,10 +1756,10 @@ fieldset input[type=radio] {
 
 
 #bannerSix {
-     margin-bottom:0.5rem;
      margin-top:3rem !important;
     margin-left:0px; 
     margin-right:0px;
+    margin-bottom:-2rem;
     }
     #reviewsDefault .button_goto_prod_details{
         justify-content: left;

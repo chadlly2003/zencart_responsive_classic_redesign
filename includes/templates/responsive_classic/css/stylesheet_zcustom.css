@@ -1557,7 +1557,34 @@ fieldset input[type=radio] {
 	margin-left:1rem;
 	margin-right:1rem;
 }
+.welcome_note {
+    background: cornsilk;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem; 
+    margin:auto;
+    margin-bottom:0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    padding-left:15px;
+    padding-right:15px;
+    display:none;
+    margin-bottom:1rem;
+}
 
+.welcome_note::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    vertical-align: inherit;
+    font-size: 14px;
+    font-weight: 900;
+    color: green;
+    padding-right: 0.3rem;
+    vertical-align: baseline;
+   
+}
+#indexHomeBody .welcome_note {
+    display:block;
+}
 
 @media (min-width: 576px) {
     .navitem3t {
@@ -1724,6 +1751,9 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+
+    .welcome_note {padding-left:0px;padding-right:0px;}
+
 
 #bannerSix {
      margin-bottom:0.5rem;

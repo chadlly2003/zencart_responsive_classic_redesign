@@ -408,7 +408,7 @@ select option{
 input[type="checkbox"] {
     outline:none !important;
 }
-.checkoutcontainer {
+.shopping_cart_spacer {
     display:flex;
     flex-direction:column;
     gap:1rem;
@@ -1656,7 +1656,7 @@ fieldset input[type=radio] {
         margin-right:0.5rem;
         margin-left:0.5rem;
    }
-    .checkoutcontainer {
+    .shopping_cart_spacer {
         display:flex;
         flex-direction: row;
         gap:1;

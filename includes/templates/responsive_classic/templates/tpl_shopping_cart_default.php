@@ -81,12 +81,7 @@
         <span class="alert bold"><?php echo $product['flagStockCheck'];?></span><br>
         <br><?php echo $product['showMinUnits']; ?>
        </td>
-
        <td class="cartQuantityUpdate"><?php echo $product['buttonUpdate']; ?></td>
- 
-
-
-
        <td class="cartProductDisplay">
 
 <a href="<?php echo $product['linkProductsName']; ?>"><span class="cartImage back"><?php echo $product['productsImage']; ?></span><span class="cartProdTitle"><?php echo $product['productsName'] . '<span class="alert bold">' . $product['flagStockCheck'] . '</span>'; ?></span></a>

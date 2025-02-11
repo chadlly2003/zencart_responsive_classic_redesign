@@ -240,8 +240,8 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
 <!--eof- banner #6 display -->
 
 <div class="footer">
-<!--bof-navigation display -->
-<div id="navSuppWrapper">
+  <!--bof-navigation display -->
+  <div id="navSuppWrapper">
     <div id="navSupp">
         <ul>
             <li><a href="<?= HTTP_SERVER . DIR_WS_CATALOG ?>"><?= HEADER_TITLE_CATALOG ?></a></li>
@@ -252,17 +252,29 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
 ?>
         </ul>
     </div>
-</div>
+  </div>
 <!--eof-navigation display -->
 
-<!--bof- site copyright display -->
-<div id="siteinfoLegal" class="legalCopyright"><?= FOOTER_TEXT_BODY ?></div>
-<!--eof- site copyright display -->
+
+
+  <!--bof- site copyright display -->
+  <div id="siteinfoLegal" class="legalCopyright"><?= FOOTER_TEXT_BODY ?></div>
+  <!--eof- site copyright display -->
+ 
+
+<!--bof-banner #5 display -->
+<?php
+    if (SHOW_BANNERS_GROUP_SET5 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET5)) {
+        if (!$banner->EOF) {
+?>
+<div id="bannerFive" class="banners"><?= zen_display_banner('static', $banner) ?></div>
+<?php
+        }
+    }
+?>
+<!--eof-banner #5 display -->
 
 </div>
-
-
-
 <?php /* add any end-of-page code via an observer class */
   $zco_notifier->notify('NOTIFY_FOOTER_END', $current_page);
 ?>

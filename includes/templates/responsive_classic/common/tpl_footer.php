@@ -36,19 +36,6 @@ if (!isset($flag_disable_footer) || !$flag_disable_footer) {
 ?>
 <!--eof-ip address display -->
 
-<!--bof-banner #5 display -->
-<?php
-    if (SHOW_BANNERS_GROUP_SET5 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET5)) {
-        if (!$banner->EOF) {
-?>
-<div id="bannerFive" class="banners"><?= zen_display_banner('static', $banner) ?></div>
-<?php
-        }
-    }
-?>
-<!--eof-banner #5 display -->
-
- 
 
 <?php
 } // flag_disable_footer

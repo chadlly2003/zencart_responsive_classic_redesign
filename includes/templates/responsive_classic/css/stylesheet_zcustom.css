@@ -596,7 +596,7 @@ span.normal_button:hover {
 #reviewsDefault .button_read_reviewsHover {
     background:transparent;
     margin-top:0px;
-    font-size:1.2em;
+    font-size:0.9rem;
     display: contents;
     opacity:0.5;
 }
@@ -610,10 +610,14 @@ span.normal_button:hover {
 }
 #reviewsDefault span.cssButton.normal_button.button.button_read_reviews {
     margin-top:0px;
-    font-size:1.2em;
+    font-size:0.9rem;
     color:#154DBC;
     display: contents;
 }
+ 
+
+
+
 #reviewsDefault .spacerreviewsa {
     text-align: center;
     margin-top:1rem;
@@ -1540,6 +1544,7 @@ fieldset input[type=radio] {
     padding-left:0px;
     padding-right: 0px;
     display: inherit;
+    outline:none;
 }
 .read_review {
    margin-top:1rem;

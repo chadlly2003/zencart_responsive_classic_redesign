@@ -43,16 +43,17 @@
 ?>
 </fieldset>
 
-<?php
-  if (count($addressArray) < MAX_ADDRESS_BOOK_ENTRIES) {
-?>
-
 <div class="otherbuttuns2"> 
-
-   <div class="buttonRow"><?php echo '<a href="' . zen_href_link(FILENAME_ADDRESS_BOOK_PROCESS, '', 'SSL') . '">' . zen_image_button(BUTTON_IMAGE_ADD_ADDRESS, BUTTON_ADD_ADDRESS_ALT) . '</a>'; ?></div>
-<?php
-  }
-?>
-<div class="buttonRow"><?php echo '<a href="' . zen_href_link(FILENAME_ACCOUNT, '', 'SSL') . '">' . zen_image_button(BUTTON_IMAGE_BACK, BUTTON_BACK_ALT) . '</a>'; ?></div></div>
+  <?php
+    if (count($addressArray) < MAX_ADDRESS_BOOK_ENTRIES) {
+  ?>
+  <div class="buttonRow">
+    <?php echo '<a href="' . zen_href_link(FILENAME_ADDRESS_BOOK_PROCESS, '', 'SSL') . '">' . zen_image_button(BUTTON_IMAGE_ADD_ADDRESS, BUTTON_ADD_ADDRESS_ALT) . '</a>'; ?>
+  </div>
+  <?php
+    }
+  ?>
+  <div class="buttonRow"><?php echo '<a href="' . zen_href_link(FILENAME_ACCOUNT, '', 'SSL') . '">' . zen_image_button(BUTTON_IMAGE_BACK, BUTTON_BACK_ALT) . '</a>'; ?></div>
+</div>
 <br class="clearBoth">
 </div>

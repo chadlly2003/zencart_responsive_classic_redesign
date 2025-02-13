@@ -1554,8 +1554,11 @@ fieldset input[type=radio] {
    margin-top:0.5rem;
 }
 #bannerFour {
-   margin-top:1.5rem;
+   padding-top:2rem;
    clear:both;
+   display:flex;
+   justify-content: center;
+
 }
 #bannerFive {
    margin-top:1.5rem;

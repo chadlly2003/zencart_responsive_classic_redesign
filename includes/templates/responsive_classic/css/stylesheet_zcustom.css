@@ -614,10 +614,6 @@ span.normal_button:hover {
     color:#154DBC;
     display: contents;
 }
- 
-
-
-
 #reviewsDefault .spacerreviewsa {
     text-align: center;
     margin-top:1rem;
@@ -1305,7 +1301,6 @@ fieldset input[type=radio] {
     color:darkgreen;
     text-align: left;
 }
- 
 .brandImage img {
     padding-bottom:0.5rem;
 }
@@ -1545,20 +1540,19 @@ fieldset input[type=radio] {
     outline:none;
 }
 .read_review {
-   margin-top:1rem;
+    margin-top:1rem;
 }
-
 #bannerSix {
-	background:transparent !important;
-	margin-top:2rem;
-	padding:0px;
-	margin-left:1rem;
-	margin-right:1rem;
+    background:transparent !important;
+    margin-top:2rem;
+    padding:0px;
+    margin-left:1rem;
+    margin-right:1rem;
 }
 .welcome_note {
     background: cornsilk;
     padding-top:0.5rem;
-    padding-bottom:0.5rem; 
+    padding-bottom:0.5rem;
     margin:auto;
     margin-bottom:0.5rem;
     border-radius: 5px;
@@ -1566,9 +1560,7 @@ fieldset input[type=radio] {
     padding-left:15px;
     padding-right:15px;
     display:none;
-     
 }
-
 .welcome_note::before {
     content: "\f00c";
     font-family: "Font Awesome 6 Free";
@@ -1578,12 +1570,13 @@ fieldset input[type=radio] {
     color: green;
     padding-right: 0.3rem;
     vertical-align: baseline;
-   
 }
 #indexHomeBody .welcome_note {
     display:block;
 }
-
+#reviewsWritePrice br {
+   display:none;
+}
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;
@@ -1749,22 +1742,29 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
-
-    .welcome_note {padding-left:0px;padding-right:0px;}
-
-
-#bannerSix {
-     margin-top:3rem !important;
-    margin-left:0px; 
-    margin-right:0px;
-    margin-bottom:-2rem;
-    }
+    #reviewsWritePrice img {
+       float:right;
+       margin-top:-5rem;
+   }
+    #reviewsWritePrice {
+       text-align: left;
+   }
+    .welcome_note {
+       padding-left:0px;
+       padding-right:0px
+   }
+    #bannerSix {
+        margin-top:3rem !important;
+        margin-left:0px;
+        margin-right:0px;
+        margin-bottom:-2rem;
+   }
     #reviewsDefault .button_goto_prod_details{
         justify-content: left;
         display: inherit;
    }
     #reviewsWrite .ratingRow {
-        width:50%;
+        width:30%;
         float:left;
         margin-bottom:1rem;
    }

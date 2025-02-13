@@ -1541,7 +1541,7 @@ fieldset input[type=radio] {
 }
 .read_review {
     margin-top:1rem;
-    margin-bottom:1rem;
+   
 }
 #bannerOne {
    margin-top:1.5rem;
@@ -1766,6 +1766,11 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+    .read_review {
+    margin-top:0rem;
+    float:right;  
+    }
+
     #bannerOne {
        margin-left:0px;
         margin-right:0px;

@@ -1541,13 +1541,34 @@ fieldset input[type=radio] {
 }
 .read_review {
     margin-top:1rem;
+    margin-bottom:1rem;
+}
+#bannerOne {
+   margin-top:1.5rem;
+   margin-bottom:0.5rem;
+   margin-left:15px;
+   margin-right:15px;
+}
+#bannerTwo {
+   margin-bottom:1.5rem;
+   margin-top:0.5rem;
+}
+#bannerFour {
+   margin-top:1.5rem;
+   clear:both;
+}
+#bannerFive {
+   margin-top:1.5rem;
+    margin-bottom:3rem;
+   margin-left:15px;
+   margin-right:15px;
 }
 #bannerSix {
     background:transparent !important;
     margin-top:2rem;
     padding:0px;
-    margin-left:1rem;
-    margin-right:1rem;
+    margin-left:15px;
+    margin-right:15px;
 }
 .welcome_note {
     background: cornsilk;
@@ -1575,7 +1596,7 @@ fieldset input[type=radio] {
     display:block;
 }
 #reviewsWritePrice br {
-   display:none;
+    display:none;
 }
 @media (min-width: 576px) {
     .navitem3t {
@@ -1742,16 +1763,24 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+    #bannerOne {
+       margin-left:0px;
+        margin-right:0px;
+   }
+    #bannerFive {
+       margin-left:0px;
+        margin-right:0px;
+   }
     #reviewsWritePrice img {
-       float:right;
-       margin-top:-5rem;
+        float:right;
+        margin-top:-5rem;
    }
     #reviewsWritePrice {
-       text-align: left;
+        text-align: left;
    }
     .welcome_note {
-       padding-left:0px;
-       padding-right:0px
+        padding-left:0px;
+        padding-right:0px 
    }
     #bannerSix {
         margin-top:3rem !important;

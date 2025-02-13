@@ -134,15 +134,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 <?php
   }
 ?>
-<?php
-  if (SHOW_BANNERS_GROUP_SET2 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET2)) {
-    if ($banner->RecordCount() > 0) {
-?>
-  <div id="bannerTwo" class="banners"><?php echo zen_display_banner('static', $banner);?></div>
-<?php
-    }
-  }
-?>
+
    </div>
 <?php } // no HEADER_SALES_TEXT or SHOW_BANNERS_GROUP_SET2 ?>
  </div> 
@@ -168,6 +160,19 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
         &#xf07a;  <!-- Font Awesome shopping cart icon --></i></a>
   </div> 
 </div>
+
+
+<?php
+  if (SHOW_BANNERS_GROUP_SET2 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET2)) {
+    if ($banner->RecordCount() > 0) {
+?>
+  <div id="bannerTwo" class="banners"><?php echo zen_display_banner('static', $banner);?></div>
+<?php
+    }
+  }
+?>
+
+
 
 <!-- mobile search -->
 <div class="search_box_mobile" id="test"> 

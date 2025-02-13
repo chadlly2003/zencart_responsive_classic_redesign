@@ -222,7 +222,7 @@ LABEL.selectLabel, LABEL.switchedLabel, LABEL.uploadsLabel {
 }
 LABEL#textAreaReviews {
 	font-weight:normal;
-	margin:1em 0;
+	margin:1rem 0;
 	clear:both;
 	text-align: left;
 }

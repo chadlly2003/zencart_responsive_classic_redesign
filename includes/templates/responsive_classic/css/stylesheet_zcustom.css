@@ -90,6 +90,7 @@ footer {
 }
 #pinfo-right {
     margin-bottom:1rem;
+    margin-top:1rem;
 }
 #pinfo-right br {
     display:none;
@@ -1467,8 +1468,7 @@ fieldset input[type=radio] {
     max-width: 500px;
     margin: auto;
     margin-top:1rem;
-    margin-bottom:1rem !important;
-    padding-bottom:2rem;
+    padding-bottom:1rem;
     justify-content:center;
 }
 .addresscontinue {
@@ -1541,30 +1541,28 @@ fieldset input[type=radio] {
 }
 .read_review {
     margin-top:1rem;
-   
 }
 #bannerOne {
-   margin-top:1.5rem;
-   margin-bottom:0.5rem;
-   margin-left:15px;
-   margin-right:15px;
+    margin-top:1.5rem;
+    margin-bottom:0.5rem;
+    margin-left:15px;
+    margin-right:15px;
 }
 #bannerTwo {
-   margin-bottom:1.5rem;
-   margin-top:0.5rem;
+    margin-bottom:1.5rem;
+    margin-top:0.5rem;
 }
 #bannerFour {
-   padding-top:2rem;
-   clear:both;
-   display:flex;
-   justify-content: center;
-
+    padding-top:2rem;
+    clear:both;
+    display:flex;
+    justify-content: center;
 }
 #bannerFive {
-   margin-top:1.5rem;
+    margin-top:1.5rem;
     margin-bottom:3rem;
-   margin-left:15px;
-   margin-right:15px;
+    margin-left:15px;
+    margin-right:15px;
 }
 #bannerSix {
     background:transparent !important;
@@ -1600,6 +1598,14 @@ fieldset input[type=radio] {
 }
 #reviewsWritePrice br {
     display:none;
+}
+#productAttributes {
+    background-color: aliceblue;
+    padding:12px;
+    margin-bottom:2rem;
+    margin-top:1rem;
+    width: calc(100% - 25px);
+    -webkit-appearance: none;
 }
 @media (min-width: 576px) {
     .navitem3t {
@@ -1767,16 +1773,15 @@ fieldset input[type=radio] {
 }
 @media (min-width: 768px) {
     .read_review {
-    margin-top:0rem;
-    float:right;  
-    }
-
+        margin-top:0rem;
+        float:right;
+   }
     #bannerOne {
-       margin-left:0px;
+        margin-left:0px;
         margin-right:0px;
    }
     #bannerFive {
-       margin-left:0px;
+        margin-left:0px;
         margin-right:0px;
    }
     #reviewsWritePrice img {
@@ -1811,7 +1816,9 @@ fieldset input[type=radio] {
     #productAdditionalImages {
         grid-template-columns: auto auto auto auto;
         justify-content: left;
-        padding-bottom:1rem;
+        padding-bottom:0rem;
+        margin-top:-2rem;
+        margin-bottom:2rem;
    }
     .box_review_spacver {
         margin-bottom:0rem;
@@ -2001,6 +2008,7 @@ fieldset input[type=radio] {
         width:50% !important;
         float:right;
         padding:1rem;
+        margin-top:0px;
    }
     .onerow-fluid::before {
         display:none !important;
@@ -2123,7 +2131,7 @@ fieldset input[type=radio] {
         float:right;
    }
     #productMainImage img {
-        margin-bottom:4rem;
+        margin-bottom:2rem;
    }
     .cartTotalDisplay {
         display:block !important;

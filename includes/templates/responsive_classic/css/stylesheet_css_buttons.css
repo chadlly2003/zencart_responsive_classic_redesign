@@ -181,14 +181,6 @@ input[type="search"] {
 #productinfoBody .button_sold_out {
 	width: auto;
 }
-#productAttributes {
-	background-color: aliceblue;
-	padding:12px;
-	margin-bottom:2rem;
-	margin-top:0rem;
-	width: calc(100% - 25px);
-	-webkit-appearance: none;
-}
 #productmusicinfoBody .button_write_review {
 	width:100%;
 	background: transparent;

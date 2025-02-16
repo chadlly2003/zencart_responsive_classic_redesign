@@ -37,7 +37,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
  
 
 <div class="welcome_note">Welcome to Zencart check out the getting started guide at 
-  <a href="https://docs.zen-cart.com/user/" target="_blank"  rel="noopener"> doc.zencart.com</a>
+  <a href="https://docs.zen-cart.com/user/" target="_blank" class="welcome_link"  rel="noopener"> doc.zencart.com</a>
 </div>
 
 <div id="headerWrapper">

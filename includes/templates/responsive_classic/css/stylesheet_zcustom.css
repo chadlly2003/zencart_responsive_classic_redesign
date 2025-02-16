@@ -90,7 +90,7 @@ footer {
 }
 #pinfo-right {
     margin-bottom:1rem;
-    margin-top:1rem;
+    margin-top:2rem;
 }
 #pinfo-right br {
     display:none;
@@ -1607,6 +1607,10 @@ fieldset input[type=radio] {
     width: calc(100% - 25px);
     -webkit-appearance: none;
 }
+
+#productMainImage {max-width: 500px;margin: auto;}
+
+
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;
@@ -2002,7 +2006,7 @@ fieldset input[type=radio] {
    }
     #pinfo-left{
         float:left;
-        width:50%;
+        width:49%;
    }
     #pinfo-right {
         width:43% !important;
@@ -2539,4 +2543,8 @@ fieldset input[type=radio] {
         margin-right:auto !important;
         margin-bottom:2rem;
    }
+   #pinfo-left{
+    float:left;
+    width:51%;
+}
 }

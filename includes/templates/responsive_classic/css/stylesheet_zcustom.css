@@ -1607,10 +1607,10 @@ fieldset input[type=radio] {
     width: calc(100% - 25px);
     -webkit-appearance: none;
 }
-
-#productMainImage {max-width: 500px;margin: auto;}
-
-
+#productMainImage {
+   max-width: 500px;
+   margin: auto;
+}
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;
@@ -1776,6 +1776,15 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+    #cart-box input[type="text"] {
+       width: auto !important;
+   }
+    select {
+       width: auto !important;
+   }
+    searchresultBody .wrapperAttribsOptions select {
+       width: auto;
+   }
     .read_review {
         margin-top:0rem;
         float:right;
@@ -2543,8 +2552,8 @@ fieldset input[type=radio] {
         margin-right:auto !important;
         margin-bottom:2rem;
    }
-   #pinfo-left{
-    float:left;
-    width:51%;
-}
+    #pinfo-left{
+        float:left;
+        width:51%;
+   }
 }

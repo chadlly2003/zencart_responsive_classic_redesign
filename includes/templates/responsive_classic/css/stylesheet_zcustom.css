@@ -1619,6 +1619,12 @@ fieldset input[type=radio] {
     width: 100% !important;
 }
 
+.welcome_link {font-size:14px;}
+.greeting a {color:#000 !important;opacity: 1;}
+.greetUser a  {color:#154DBC !important;opacity 1;}
+.brandImage  {color:#154DBC !important;}
+.rblockelements a {margin-bottom:0.5rem;}
+
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;
@@ -1789,8 +1795,10 @@ fieldset input[type=radio] {
    }
     select {
        width: auto !important;
+       padding-right:5px;
+       padding-left:5px;
    }
-    searchresultBody .wrapperAttribsOptions select {
+    #searchresultBody .wrapperAttribsOptions select {
        width: auto;
    }
     .read_review {

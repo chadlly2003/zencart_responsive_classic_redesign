@@ -1611,6 +1611,11 @@ fieldset input[type=radio] {
    max-width: 500px;
    margin: auto;
 }
+
+.col150 select {
+    width: 100% !important;
+}
+
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;

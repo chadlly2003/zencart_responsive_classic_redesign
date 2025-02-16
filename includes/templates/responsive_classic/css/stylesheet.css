@@ -1585,6 +1585,7 @@ span#askAQuestionButton:hover {
 }
 .brandImage {
 	margin-top: 20px;
+	padding:1rem;
 }
 .brandCell a {
 	text-decoration: none;

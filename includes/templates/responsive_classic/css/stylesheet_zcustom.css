@@ -7,6 +7,9 @@ a:hover {
 input {
     -webkit-tap-highlight-color: transparent;
 }
+
+label {display: table;}
+
 #navSuppWrapper {
     display:none;
 }
@@ -1835,7 +1838,7 @@ fieldset input[type=radio] {
         grid-template-columns: auto auto auto auto;
         justify-content: left;
         padding-bottom:0rem;
-        margin-top:-2rem;
+        margin-top:-1rem;
         margin-bottom:2rem;
    }
     .box_review_spacver {

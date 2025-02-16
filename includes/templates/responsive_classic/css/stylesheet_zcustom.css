@@ -1620,8 +1620,8 @@ fieldset input[type=radio] {
 }
 
 .welcome_link {font-size:14px;}
-.greeting a {color:#000 !important;opacity: 1;}
-.greetUser a  {color:#154DBC !important;opacity 1;}
+.greeting a {color:#154DBC !important;}
+.greetUser a  {color:#154DBC !important;}
 .brandImage  {color:#154DBC !important;}
 .rblockelements a {margin-bottom:0.5rem;}
 

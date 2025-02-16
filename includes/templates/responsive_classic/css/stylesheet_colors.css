@@ -299,7 +299,6 @@ input.cssButton.submit_button.button.button_search {
 #navCatTabs {
 	display:none;
 }
- 
 #whatsnew {
 	display:none;
 }
@@ -883,20 +882,15 @@ input.cssButton.submit_button.button.button_search {
 	color:blueviolet !important;
 	font-size: 18px;
 }
-
-
 #productListing a:nth-of-type(2):hover {
 	opacity: 0.5;
-	 
 }
-
-
 #allProductsDefault a:nth-of-type(2) {
 	color:blueviolet !important;
 	font-size: 18px;
 }
 #allProductsDefault a:nth-of-type(2):hover {
-   opacity:0.5;
+	opacity:0.5;
 }
 .productListing-even input {
 	padding:0px;

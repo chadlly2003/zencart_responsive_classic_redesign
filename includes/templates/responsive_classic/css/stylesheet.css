@@ -145,6 +145,7 @@ input{
 select{
 	padding-left:5px;
 	width:100%;
+	margin-bottom:1rem;
 }
 TEXTAREA {
 	margin:auto;
@@ -1225,7 +1226,6 @@ span.list-addtext{
 	float:right;
 }
 #attribsOptionsText{
-	font-weight:normal;
 	margin-bottom:10px;
 	margin-top:0px !important;
 }
@@ -1264,14 +1264,13 @@ h4.optionName{
 	clear:both;
 }
 .attribImg {
-	margin:0.3em 0;
+	margin:1rem 0;
 	display:grid;
 	justify-items:center;
 	max-width: 80px;
 	margin-right:12px;
 }
 .attributesComments {
-	font-weight:normal;
 	float:left;
 }
 .wrapperAttribsOptions select{

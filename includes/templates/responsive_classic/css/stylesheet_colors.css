@@ -228,6 +228,7 @@ table, .tabTable{
 #siteinfoLegal a{
 	text-decoration: none;
 	color:#154DBC;
+	font-size:14px;
 }
 .sideBoxContent optgroup {
 	color: #db0000;

@@ -7,9 +7,9 @@ a:hover {
 input {
     -webkit-tap-highlight-color: transparent;
 }
-
-label {display: table;}
-
+label {
+   display: table;
+}
 #navSuppWrapper {
     display:none;
 }
@@ -1611,20 +1611,36 @@ fieldset input[type=radio] {
     -webkit-appearance: none;
 }
 #productMainImage {
-   max-width: 500px;
-   margin: auto;
+    max-width: 500px;
+    margin: auto;
 }
-
 .col150 select {
     width: 100% !important;
 }
-
-.welcome_link {font-size:14px;}
-.greeting a {color:#154DBC !important;}
-.greetUser a  {color:#154DBC !important;}
-.brandImage  {color:#154DBC !important;}
-.rblockelements a {margin-bottom:0.5rem;}
-
+.welcome_link {
+   font-size:14px;
+}
+.greeting a {
+   color:#154DBC !important;
+}
+.greetUser a {
+   color:#154DBC !important;
+}
+.brandImage {
+   color:#154DBC !important;
+}
+.rblockelements a {
+   margin-bottom:0.5rem;
+}
+#productInfoLink {
+   font-size: 1.2em;
+}
+.col150 h2{
+   font-weight:normal;
+}
+#productAdditionalImages a {
+   float:left;
+}
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;
@@ -1791,15 +1807,15 @@ fieldset input[type=radio] {
 }
 @media (min-width: 768px) {
     #cart-box input[type="text"] {
-       width: auto !important;
+        width: auto !important;
    }
     select {
-       width: auto !important;
-       padding-right:5px;
-       padding-left:5px;
+        width: auto !important;
+        padding-right:5px;
+        padding-left:5px;
    }
     #searchresultBody .wrapperAttribsOptions select {
-       width: auto;
+        width: auto;
    }
     .read_review {
         margin-top:0rem;

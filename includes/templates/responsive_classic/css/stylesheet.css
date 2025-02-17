@@ -657,6 +657,8 @@ ul.list-links li a, ol.list-links li a{
 .orderHistList i{
 	display:inline;
 	color:#97682B;
+	font-size: 1.2rem;
+	padding:0.3rem;
 }
 ul.list-links li a {
 	padding-left:0px;

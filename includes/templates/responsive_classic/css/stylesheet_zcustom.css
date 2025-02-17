@@ -8,7 +8,7 @@ input {
     -webkit-tap-highlight-color: transparent;
 }
 label {
-   display: table;
+    display: table;
 }
 #navSuppWrapper {
     display:none;
@@ -1533,11 +1533,9 @@ fieldset input[type=radio] {
     display:flex;
     padding-bottom:0.3rem;
 }
-
 #myAccountNotify li {
     margin-bottom:0.4rem;
 }
-
 .show_orders a:hover {
     opacity:0.5;
 }
@@ -1624,55 +1622,48 @@ fieldset input[type=radio] {
     width: 100% !important;
 }
 .welcome_link {
-   text-decoration: underline !important;
+    text-decoration: underline !important;
 }
-
 .welcome_link:hover {
     text-decoration: none !important;
- }
-
-.greeting a {
-   text-decoration: underline;
-   text-underline-position: under;  
 }
-
+.greeting a {
+    text-decoration: underline;
+    text-underline-position: under;
+}
 .greeting a:hover {
     text-decoration:none;
     color:#000 !important;
- }
-
+}
 .brandImage {
-   color:#154DBC !important;
+    color:#154DBC !important;
 }
 .rblockelements a {
-   margin-bottom:0.5rem;
+    margin-bottom:0.5rem;
 }
 #productInfoLink {
-   font-size: 1.2em;
+    font-size: 1.2em;
 }
-
 #productInfoLink a {
     text-decoration: underline;
     text-underline-position: under;
- }
-
-
- #productInfoLink a:hover {
+}
+#productInfoLink a:hover {
     text-decoration: none;
     text-underline-position: none;
- }
-
+}
 .col150 h2{
-   font-weight:normal;
+    font-weight:normal;
 }
 #productAdditionalImages a {
-   float:left;
+    float:left;
 }
-
-
-.imgmodal {padding:12px;}
-
-.cartTotalDisplay_tax {display:none;}
+.imgmodal {
+   padding:12px;
+}
+.cartTotalDisplay_tax {
+   display:none;
+}
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;
@@ -2039,7 +2030,7 @@ fieldset input[type=radio] {
     #productGeneral .max-qty {
         position:absolute;
         margin-top:3.5rem !important;
-        margin-left:20%;
+        margin-left:5%;
    }
     #navSuppWrapper {
         display:block;
@@ -2440,7 +2431,7 @@ fieldset input[type=radio] {
         width: 20%;
         text-align: center;
         margin-right: 5px;
-        margin-left:20%;
+        margin-left:5%;
    }
     #unsubscribeBody .buttonRow {
         float:right;

@@ -402,6 +402,13 @@ select {
     border:solid 1px #ccc !important;
     border-radius: .25rem !important;
     background: #e9ecef;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+
+
+
 }
 select option{
     background:#fff !important;

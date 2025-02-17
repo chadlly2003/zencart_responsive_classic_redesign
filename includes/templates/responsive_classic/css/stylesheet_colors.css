@@ -226,10 +226,17 @@ table, .tabTable{
 	color: #D01;
 }
 #siteinfoLegal a{
+	color:#154DBC;
+	text-decoration: underline;
+}
+
+#siteinfoLegal a:hover{
 	text-decoration: none;
 	color:#154DBC;
-	font-size:14px;
+	 
 }
+
+
 .sideBoxContent optgroup {
 	color: #db0000;
 }

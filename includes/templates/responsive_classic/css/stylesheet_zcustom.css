@@ -1668,6 +1668,11 @@ fieldset input[type=radio] {
 #productAdditionalImages a {
    float:left;
 }
+
+
+.imgmodal {padding:12px;}
+
+
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;
@@ -1889,7 +1894,7 @@ fieldset input[type=radio] {
         grid-template-columns: auto auto auto auto;
         justify-content: left;
         padding-bottom:0rem;
-        margin-top:-1rem;
+        margin-top:1rem;
         margin-bottom:2rem;
    }
     .box_review_spacver {

@@ -1624,14 +1624,23 @@ fieldset input[type=radio] {
     width: 100% !important;
 }
 .welcome_link {
-   font-size:14px;
+   text-decoration: underline !important;
 }
+
+.welcome_link:hover {
+    text-decoration: none !important;
+ }
+
 .greeting a {
-   color:#154DBC !important;
+   text-decoration: underline;
+   text-underline-position: under;  
 }
-.greetUser a {
-   color:#154DBC !important;
-}
+
+.greeting a:hover {
+    text-decoration:none;
+    color:#000 !important;
+ }
+
 .brandImage {
    color:#154DBC !important;
 }

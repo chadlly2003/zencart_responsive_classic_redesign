@@ -308,8 +308,13 @@ input.cssButton.submit_button.button.button_search {
 	display:none;
 }
 #whatsnew {
-	display:none;
+	 display: none;
 }
+
+#whatsnewHeading a {
+	color:#000;
+}
+
 #featured {
 	display:none;
 }

@@ -1531,7 +1531,13 @@ fieldset input[type=radio] {
 }
 #myAccountGen li {
     display:flex;
+    padding-bottom:0.3rem;
 }
+
+#myAccountNotify li {
+    margin-bottom:0.4rem;
+}
+
 .show_orders a:hover {
     opacity:0.5;
 }
@@ -1635,6 +1641,18 @@ fieldset input[type=radio] {
 #productInfoLink {
    font-size: 1.2em;
 }
+
+#productInfoLink a {
+    text-decoration: underline;
+    text-underline-position: under;
+ }
+
+
+ #productInfoLink a:hover {
+    text-decoration: none;
+    text-underline-position: none;
+ }
+
 .col150 h2{
    font-weight:normal;
 }

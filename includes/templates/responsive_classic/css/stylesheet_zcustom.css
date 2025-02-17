@@ -1672,7 +1672,7 @@ fieldset input[type=radio] {
 
 .imgmodal {padding:12px;}
 
-
+.cartTotalDisplay_tax {display:none;}
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;

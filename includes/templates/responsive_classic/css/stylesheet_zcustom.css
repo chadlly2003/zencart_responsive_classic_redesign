@@ -1834,8 +1834,8 @@ fieldset input[type=radio] {
    }
     select {
         width: auto !important;
-        padding-right:5px;
-        padding-left:5px;
+        padding-right:0.5rem;
+        padding-left:0.5rem;
    }
     #searchresultBody .wrapperAttribsOptions select {
         width: auto;

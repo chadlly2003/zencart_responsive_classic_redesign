@@ -154,9 +154,12 @@ TEXTAREA {
 }
 input:focus, select:focus, textarea:focus {
 	outline:solid 2px rgba(0, 150, 255, 1);
+ 
+
 }
 .button:active {
 	outline:solid 2px rgba(0, 150, 255, 1);
+ 
 }
 .button_write_review:active {
 	outline:none;

@@ -16,7 +16,7 @@
      * require the image display code
      */
 ?>
-<div id="" class=""><?php require($template->get_template_dir('/tpl_modules_main_product_image.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_main_product_image.php'); ?></div>
+<div id="reviewsInfoDefaultProductImage" class="reviews_alignment"><?php require($template->get_template_dir('/tpl_modules_main_product_image.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_main_product_image.php'); ?></div>
 <?php
         }
 ?>

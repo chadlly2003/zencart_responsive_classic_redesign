@@ -28,13 +28,9 @@
   }
 ?>
 
- 
-
-
 <div class="block_element_reviewslinked">
-<h2 id=""><?php echo $products_price; ?></h2>
+<h2 id="productReviewsDefaultPrice"><?php echo $products_price; ?></h2>
 </div>
-
 
 <div class="box_review_spacver"> 
 <?php

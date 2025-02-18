@@ -1419,6 +1419,7 @@ fieldset input[type=radio] {
 }
 #reviewsInfoDefaultPrice {
     text-align: center;
+    margin-bottom:0px;
 }
 .reviews_elementblock {
     font-size:16px;
@@ -1911,7 +1912,7 @@ fieldset input[type=radio] {
    }
     #reviewsInfoDefaultPrice {
         text-align:right;
-        margin-bottom:0px;
+         
    }
     #productreviewsBody #productReviewsDefaultPrice {
         text-align:right;

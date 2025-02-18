@@ -1452,7 +1452,7 @@ fieldset input[type=radio] {
 }
 #reviewsInfoDefault .productBasePrice {
     display: inline-block;
-    margin-bottom:0px !important;
+    margin-bottom:1rem !important;
 }
 .spacer_element_button_add br {
     display:none;
@@ -2129,7 +2129,7 @@ fieldset input[type=radio] {
    }
     #reviewsInfoDefault .productBasePrice {
         text-align: right;
-        padding-bottom:1rem;
+       
    }
     #reviewsInfoDefaultProductPageLink {
         float: left;

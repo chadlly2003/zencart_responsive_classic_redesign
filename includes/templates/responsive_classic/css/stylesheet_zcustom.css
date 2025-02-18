@@ -1894,9 +1894,7 @@ fieldset input[type=radio] {
         width:40%;
         text-align: right;
    }
-    #reviewsDefault .button_in_cart {
-        margin-top:0rem;
-   }
+    
     #reviewsInfoDefaultPrice img {
         clear:none;
         display: inline;

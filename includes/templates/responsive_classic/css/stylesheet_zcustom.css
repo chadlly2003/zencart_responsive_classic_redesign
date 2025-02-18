@@ -633,6 +633,7 @@ span.normal_button:hover {
 #productReviewLink span.normal_button {
     color:#8A4514;
     padding-bottom:0px;
+    background: transparent;
 }
 .reviewligner .button_write_review {
     color:#8A4514;

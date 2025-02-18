@@ -1438,9 +1438,7 @@ fieldset input[type=radio] {
     text-align: center;
     margin-top:0rem;
 }
-#reviewsDefault .button_in_cart {
-    margin-top:1rem;
-}
+ 
 .box_review_spacver .qmax {
     display:block;
     margin-top:-0.5rem;
@@ -1902,6 +1900,7 @@ fieldset input[type=radio] {
     #reviewsInfoDefault .spacer_element_button_add {
         float:right;
         width:40%;
+        text-align: right;
    }
     .reviews_elementblock {
         font-size:16px;

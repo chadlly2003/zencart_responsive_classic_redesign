@@ -1659,10 +1659,10 @@ fieldset input[type=radio] {
     float:left;
 }
 .imgmodal {
-   padding:12px;
+    padding:12px;
 }
 .cartTotalDisplay_tax {
-   display:none;
+    display:none;
 }
 @media (min-width: 576px) {
     .navitem3t {
@@ -1920,7 +1920,7 @@ fieldset input[type=radio] {
         text-align:right;
    }
     #productreviewsBody #productReviewsDefaultPrice {
-        text-align:center;
+        text-align:right;
    }
     .unsubscribebutton {
         margin-top:1rem;

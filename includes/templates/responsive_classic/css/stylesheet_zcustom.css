@@ -1898,8 +1898,6 @@ fieldset input[type=radio] {
         margin-top:0rem;
    }
     #reviewsInfoDefaultPrice img {
-        float:left;
-        margin-left:1rem;
         clear:none;
         display: inline;
    }
@@ -1913,16 +1911,17 @@ fieldset input[type=radio] {
    }
     #reviewsInfoDefaultPrice {
         text-align:right;
+        margin-bottom:0px;
    }
     #productreviewsBody #productReviewsDefaultPrice {
         text-align:center;
         float: right;
    }
     #productReviewsDefaultPrice img {
-       float:right;
+        float:right;
    }
     #productReviewsDefaultPrice {
-       margin-bottom:0.5rem;
+        margin-bottom:0.5rem;
    }
     .unsubscribebutton {
         margin-top:1rem;
@@ -2121,15 +2120,16 @@ fieldset input[type=radio] {
         text-align: right;
    }
     #reviewsInfoDefaultProductImage {
-       width: 49%;
-       float:left;
+        width: 49%;
+        float:left;
    }
     #productReviewsDefaultProductImage {
-       width: 49%;
-       float:left;
+        width: 49%;
+        float:left;
    }
     #reviewsInfoDefault .productBasePrice {
         text-align: right;
+        padding-bottom:1rem;
    }
     #reviewsInfoDefaultProductPageLink {
         float: left;

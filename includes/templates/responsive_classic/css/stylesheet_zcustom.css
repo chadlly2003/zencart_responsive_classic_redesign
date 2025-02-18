@@ -1447,6 +1447,7 @@ fieldset input[type=radio] {
 .spacer_element_button_add {
     margin-bottom:1rem;
     text-align: center;
+    
 }
 #reviewsInfoDefault .productBasePrice {
     display: inline-block;

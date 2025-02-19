@@ -229,14 +229,10 @@ table, .tabTable{
 	color:#154DBC;
 	text-decoration: underline;
 }
-
 #siteinfoLegal a:hover{
 	text-decoration: none;
 	color:#154DBC;
-	 
 }
-
-
 .sideBoxContent optgroup {
 	color: #db0000;
 }
@@ -308,13 +304,11 @@ input.cssButton.submit_button.button.button_search {
 	display:none;
 }
 #whatsnew {
-	 display: none;
+	display: none;
 }
-
 #whatsnewHeading a {
 	color:#000;
 }
-
 #featured {
 	display:none;
 }
@@ -733,12 +727,14 @@ input.cssButton.submit_button.button.button_search {
 }
 #cart-box input{
 	margin-top:6px !important;
-    margin:0px;
+	margin:0px;
 	outline:none !important;
 	border:none !important;
 	display:block;
 	clear:both;
-	width: auto !important;
+}
+#productGeneral input[type=file] {
+	width: calc(100% - 25px) !important;
 }
 #cart-box .back {
 	float:none !important;

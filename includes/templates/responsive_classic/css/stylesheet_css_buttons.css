@@ -45,6 +45,12 @@ span.normal_button {
 	display:flex;
 	justify-content: center;
 }
+#productReviewsDefaultProductPageLink span.normal_button {
+	font-size: 16px;
+	padding:0px;
+	background:transparent;
+	display:flex;
+}
 span.normal_button:hover {
 	opacity:0.5;
 	background:gold;

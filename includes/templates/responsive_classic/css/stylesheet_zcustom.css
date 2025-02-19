@@ -1404,7 +1404,6 @@ fieldset input[type=radio] {
     padding: 0px;
     margin-left: 2rem;
 }
- 
 #myAccountOrdersStatus td {
     text-align: center;
 }
@@ -1439,7 +1438,6 @@ fieldset input[type=radio] {
     text-align: center;
     margin-top:0rem;
 }
- 
 .box_review_spacver .qmax {
     display:block;
     margin-top:-0.5rem;
@@ -1448,7 +1446,6 @@ fieldset input[type=radio] {
 .spacer_element_button_add {
     margin-bottom:1rem;
     text-align: center;
-    
 }
 #reviewsInfoDefault .productBasePrice {
     display: inline-block;
@@ -1456,11 +1453,6 @@ fieldset input[type=radio] {
 }
 .spacer_element_button_add br {
     display:none;
-}
-#reviewsInfoDefaultPrice img {
-    clear:both;
-    margin:auto;
-    display: block;
 }
 #ccTaxHeading {
     display:none;
@@ -1664,6 +1656,15 @@ fieldset input[type=radio] {
 .cartTotalDisplay_tax {
     display:none;
 }
+#reviewsWritePrice img {
+    display:none;
+}
+#productReviewsDefaultPrice img {
+    display:none;
+}
+#reviewsInfoDefaultPrice img {
+    display:none;
+}
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;
@@ -1852,9 +1853,6 @@ fieldset input[type=radio] {
         margin-left:0px;
         margin-right:0px;
    }
-    #reviewsWritePrice img {
-        float:right;
-   }
     #reviewsWritePrice {
         text-align: left;
    }
@@ -1894,11 +1892,6 @@ fieldset input[type=radio] {
         width:40%;
         text-align: right;
    }
-    
-    #reviewsInfoDefaultPrice img {
-        clear:none;
-        display: inline;
-   }
     #reviewsInfoDefault .spacer_element_button_add {
         float:right;
         width:40%;
@@ -1910,14 +1903,10 @@ fieldset input[type=radio] {
    }
     #reviewsInfoDefaultPrice {
         text-align:right;
-         
    }
     #productreviewsBody #productReviewsDefaultPrice {
         text-align:right;
         float: right;
-   }
-    #productReviewsDefaultPrice img {
-        float:right;
    }
     #productReviewsDefaultPrice {
         margin-bottom:0.5rem;
@@ -2128,7 +2117,7 @@ fieldset input[type=radio] {
    }
     #reviewsInfoDefault .productBasePrice {
         text-align: right;
-       
+        display: block;
    }
     #reviewsInfoDefaultProductPageLink {
         float: left;

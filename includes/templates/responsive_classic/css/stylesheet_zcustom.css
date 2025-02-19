@@ -643,7 +643,7 @@ span.normal_button:hover {
     text-align:center;
 }
 #reviewsDefault #productMainImage img {
-    margin-bottom:1rem;
+    margin-bottom:0rem;
 }
 #reviewsDefault .navSplitPagesLinks {
     margin:0px;
@@ -1665,6 +1665,11 @@ fieldset input[type=radio] {
 #reviewsInfoDefaultPrice img {
     display:none;
 }
+
+
+#reviewsInfoDefaultProductImage img {margin-bottom:0rem !important;}
+
+
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;
@@ -1896,16 +1901,19 @@ fieldset input[type=radio] {
         float:right;
         width:40%;
         text-align: right;
+        clear: right;;
    }
     .reviews_elementblock {
         font-size:16px;
         float:right;
    }
     #reviewsInfoDefaultPrice {
-        text-align:right;
+        text-align:center;
+        float:right;
+        margin-top:0px;
    }
     #productreviewsBody #productReviewsDefaultPrice {
-        text-align:right;
+        text-align:center;
         float: right;
    }
     #productReviewsDefaultPrice {

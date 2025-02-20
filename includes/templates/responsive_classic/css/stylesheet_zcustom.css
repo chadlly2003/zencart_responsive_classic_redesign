@@ -1667,7 +1667,7 @@ fieldset input[type=radio] {
 }
 #productGeneral .qty_cart_qty {
    position: relative;
-   top:32px;
+   top:33px;
 }
 @media (min-width: 576px) {
     .navitem3t {

@@ -1464,7 +1464,6 @@ fieldset input[type=radio] {
     margin: auto;
     margin-top:1rem;
     margin-bottom:1rem;
-
     justify-content:center;
 }
 .addresscontinue {
@@ -1667,7 +1666,7 @@ fieldset input[type=radio] {
     display:none;
 }
 #reviewsInfoDefaultProductImage img {
-   margin-bottom:0rem !important;
+    margin-bottom:0rem !important;
 }
 @media (min-width: 576px) {
     .navitem3t {
@@ -1837,6 +1836,12 @@ fieldset input[type=radio] {
     #cart-box input[type="text"] {
         width: auto !important;
    }
+    #productreviewsinfoBody #productMainImage {
+       margin-bottom:2rem;
+   }
+    #productreviewsBody #productMainImage {
+       margin-bottom:2rem;
+   }
     select {
         width: auto !important;
         padding-right:0.5rem;
@@ -1896,7 +1901,7 @@ fieldset input[type=radio] {
         width:40%;
         text-align: right;
         clear: right;
-       ;
+        ;
    }
     .reviews_elementblock {
         font-size:16px;
@@ -2191,7 +2196,6 @@ fieldset input[type=radio] {
     #productListing .qmax {
         float:right;
    }
-  
     .cartTotalDisplay {
         display:block !important;
         text-align: center;
@@ -2521,7 +2525,7 @@ fieldset input[type=radio] {
 }
 @media (min-width: 992px) {
     #bannerSix {
-       margin-left:0px;
+        margin-left:0px;
         margin-right:0px;
    }
     #productAdditionalImages {

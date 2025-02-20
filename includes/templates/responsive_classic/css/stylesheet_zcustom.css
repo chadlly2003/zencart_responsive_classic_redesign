@@ -1463,7 +1463,8 @@ fieldset input[type=radio] {
     max-width: 500px;
     margin: auto;
     margin-top:1rem;
-    padding-bottom:1rem;
+    margin-bottom:1rem;
+
     justify-content:center;
 }
 .addresscontinue {
@@ -1882,9 +1883,6 @@ fieldset input[type=radio] {
     #productAdditionalImages {
         grid-template-columns: auto auto auto auto;
         justify-content: left;
-        padding-bottom:0rem;
-        margin-top:1rem;
-        margin-bottom:1rem;
    }
     .box_review_spacver {
         margin-bottom:0rem;

@@ -642,9 +642,6 @@ span.normal_button:hover {
     padding-top:0.5rem;
     text-align:center;
 }
-#reviewsDefault #productMainImage img {
-    margin-bottom:0rem;
-}
 #reviewsDefault .navSplitPagesLinks {
     margin:0px;
 }
@@ -1837,10 +1834,15 @@ fieldset input[type=radio] {
         width: auto !important;
    }
     #productreviewsinfoBody #productMainImage {
-       margin-bottom:2rem;
+        margin-bottom:1rem;
+        max-width: 200px;
+   }
+    #reviewsDefault #productMainImage img {
+        margin-bottom:0rem;
+        max-width: 200px;
    }
     #productreviewsBody #productMainImage {
-       margin-bottom:2rem;
+        margin-bottom:1rem;
    }
     select {
         width: auto !important;

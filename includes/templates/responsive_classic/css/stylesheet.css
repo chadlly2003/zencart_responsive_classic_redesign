@@ -157,6 +157,13 @@ input:focus, select:focus, textarea:focus {
 	border: 1px solid rgba(0, 150, 255, 1) !important;
 	outline: rgba(0, 150, 255, 1);
 }
+#cart-box input[type="text"]{
+	border:solid 1px #fff !important;
+}
+#cart-box input:focus[type="text"]{
+	border: 1px solid rgba(0, 150, 255, 1) !important;
+	outline: rgba(0, 150, 255, 1);
+}
 .button:active {
 	outline:solid 2px rgba(0, 150, 255, 1);
 }

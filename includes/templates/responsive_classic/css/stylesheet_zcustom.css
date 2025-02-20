@@ -145,7 +145,7 @@ footer {
     display:none 
 }
 #cartAdd {
-    margin-bottom:3rem;
+    margin-bottom:2rem;
 }
 .qty_cart_qty p {
     margin-top:-2.8rem;
@@ -1601,8 +1601,8 @@ fieldset input[type=radio] {
 #productAttributes {
     background-color: aliceblue;
     padding:12px;
-    margin-bottom:1rem;
-    margin-top:1rem;
+    margin-bottom:2rem;
+    margin-top:3rem;
     width: calc(100% - 25px);
     -webkit-appearance: none;
 }

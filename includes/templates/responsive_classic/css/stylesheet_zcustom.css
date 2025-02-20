@@ -1665,6 +1665,10 @@ fieldset input[type=radio] {
 #reviewsInfoDefaultProductImage img {
     margin-bottom:0rem !important;
 }
+#productGeneral .qty_cart_qty {
+   position: relative;
+   top:32px;
+}
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;

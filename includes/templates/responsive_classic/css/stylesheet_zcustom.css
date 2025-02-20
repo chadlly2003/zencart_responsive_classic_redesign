@@ -1601,8 +1601,8 @@ fieldset input[type=radio] {
 #productAttributes {
     background-color: aliceblue;
     padding:12px;
-    margin-bottom:2rem;
-    margin-top:3rem;
+    margin-bottom:1rem;
+    margin-top:2rem;
     width: calc(100% - 25px);
     -webkit-appearance: none;
 }
@@ -2193,9 +2193,7 @@ fieldset input[type=radio] {
     #productListing .qmax {
         float:right;
    }
-    #productMainImage img {
-        margin-bottom:4rem;
-   }
+  
     .cartTotalDisplay {
         display:block !important;
         text-align: center;

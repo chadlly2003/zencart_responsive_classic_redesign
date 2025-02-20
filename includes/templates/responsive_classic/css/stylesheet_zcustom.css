@@ -1599,7 +1599,7 @@ fieldset input[type=radio] {
     background-color: aliceblue;
     padding:12px;
     margin-bottom:0rem;
-    margin-top:2rem;
+    margin-top:3rem;
     width: calc(100% - 25px);
     -webkit-appearance: none;
 }

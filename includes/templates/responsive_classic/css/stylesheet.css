@@ -235,6 +235,7 @@ LABEL#textAreaReviews {
 	margin:1rem 0;
 	clear:both;
 	text-align: left;
+	padding-top:2rem;
 }
 input[type=text]{
 	width:100%;

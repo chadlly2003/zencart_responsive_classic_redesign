@@ -1172,6 +1172,9 @@ span.list-addtext{
 	width:90%;
 	margin:10px auto;
 }
+
+#productQuantityDiscounts {margin-top:2rem;}
+
 #productName{
 	font-weight:normal;
 	line-height:27px;

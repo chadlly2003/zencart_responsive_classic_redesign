@@ -39,7 +39,7 @@
 <h3 id="reviewsWriteReviewer"><?php echo SUB_TITLE_FROM . '&nbsp;&nbsp;', zen_output_string_protected($reviewer->fields['customers_firstname'] . ' ' . $reviewer->fields['customers_lastname']); ?></h3>
 
 <?php if ($messageStack->size('review_text') > 0) echo $messageStack->output('review_text'); ?>
-<div id="reviewsWriteReviewsRate" class="center"><?php echo SUB_TITLE_RATING; ?></div>
+<div id="reviewsWriteReviewsRate" class="center"><?php echo SUB_TITLE_RATING; ?> 
 
 <div class="ratingRow">
 <?php echo zen_draw_radio_field('rating', '1', '', 'id="rating-1"'); ?>
@@ -57,7 +57,7 @@
 <?php echo zen_draw_radio_field('rating', '5', '', 'id="rating-5"'); ?>
 <?php echo '<label class="" for="rating-5">' . zen_image($template->get_template_dir(OTHER_IMAGE_REVIEWS_RATING_STARS_FIVE, DIR_WS_TEMPLATE, $current_page_base,'images'). '/' . OTHER_IMAGE_REVIEWS_RATING_STARS_FIVE, OTHER_REVIEWS_RATING_STARS_FIVE_ALT) . '</label>'; ?>
 </div>
-
+</div>
 <label id="textAreaReviews" for="review-text"><?php echo SUB_TITLE_REVIEW; ?></label>
 <?php echo zen_draw_textarea_field('review_text', 60, 5, '', 'id="review-text"'); ?>
 <?php echo zen_draw_input_field($antiSpamFieldName, '', ' size="40" id="CUAS" style="visibility:hidden; display:none;" autocomplete="off"'); ?>

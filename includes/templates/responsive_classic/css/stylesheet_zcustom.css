@@ -2521,6 +2521,7 @@ fieldset input[type=radio] {
     #shoppingcartBody .back {
         float:left!important;
         margin-top:0rem;
+        margin-bottom:0px;
    }
     #shoppingcartBody .buttonRow .back {
         float:none!important;

@@ -234,8 +234,7 @@ caption {
     display:none;
 }
 #shoppingCartDefault input, TEXTAREA {
-    text-emphasis: center;
-    text-align: center;
+    text-align: left;
 }
 .cartQuantityUpdate {
     display:none;

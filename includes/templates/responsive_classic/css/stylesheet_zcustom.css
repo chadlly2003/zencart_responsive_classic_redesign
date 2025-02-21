@@ -1687,6 +1687,9 @@ fieldset input[type=radio] {
     position: relative;
     top:33px;
 }
+#reviewsWrite .ratingRow {
+    Margin-top:1rem;
+}
 @media (min-width: 576px) {
     .navitem3t {
         font-size:32px !important;
@@ -1852,6 +1855,11 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+    #reviewsWrite .center {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom:0.5rem;
+   }
     #cart-box input[type="text"] {
         width: auto !important;
    }
@@ -1904,7 +1912,8 @@ fieldset input[type=radio] {
     #reviewsWrite .ratingRow {
         width:30%;
         float:left;
-        margin-bottom:1rem;
+        margin-bottom:0rem;
+        margin-top:1rem;
    }
     #productreviewswriteBody #productMainImage {
         margin-right:1rem;

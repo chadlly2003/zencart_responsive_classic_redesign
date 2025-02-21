@@ -221,7 +221,10 @@ LABEL.checkboxLabel, LABEL.radioButtonLabel {
 	height: 31px;
 }
 LABEL.inputLabel {
+	width: 100%;
+
 }
+
 LABEL.inputLabelPayment {
 	width:15em;
 	float:left;
@@ -817,12 +820,12 @@ TR.tableHeading {
 #shippingEstimatorContent table{
 	margin-top:2rem;
 	display: inline-table;
+	margin-bottom:2rem;
 }
 #shippingEstimatorContent th{
 	padding:10px 0;
 }
-#shippingEstimatorContent tr:nth-child(odd){
-}
+ 
 #shippingEstimatorContent td{
 	padding:0px;
 }

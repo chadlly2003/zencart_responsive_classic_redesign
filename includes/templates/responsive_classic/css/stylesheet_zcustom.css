@@ -236,6 +236,10 @@ caption {
 #shoppingCartDefault input, TEXTAREA {
     text-align: left;
 }
+
+#popupSearchHelp {
+    padding:1rem;
+}
 .cartQuantityUpdate {
     display:none;
 }

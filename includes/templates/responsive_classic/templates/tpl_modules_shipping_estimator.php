@@ -66,7 +66,7 @@ if (zen_is_logged_in() && !zen_in_guest_checkout()) {
     }
 ?>
     <label aria-label="State" class="inputLabel" for="state" id="stateLabel"><?= ($state_field_label ?? '') ?>
-    <?= zen_draw_input_field('state', $selectedState, zen_set_field_length(TABLE_ADDRESS_BOOK, 'entry_state', '40') . ' id="state"') .'&nbsp;<span class="alert" id="stText">&nbsp;</span>' ?></label>
+    <?= zen_draw_input_field('state', $selectedState, zen_set_field_length(TABLE_ADDRESS_BOOK, 'entry_state', '40') . ' id="state"') .'<span class="alert" id="stText"></span>' ?></label>
     <br class="clearBoth">
 <?php
     if (CART_SHIPPING_METHOD_ZIP_REQUIRED === 'true') {

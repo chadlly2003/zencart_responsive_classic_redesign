@@ -13,7 +13,6 @@ label {
 #navSuppWrapper {
     display:none;
 }
-
 #productAttributes {
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: transparent;
@@ -21,8 +20,13 @@ label {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
-
-
+#documentproductinfoBody .qty_cart_qty {
+    margin-top: 2rem;
+    float: right;
+    margin-bottom: -2rem;
+    z-index: 1;
+    position: relative;
+}
 #indexDefaultMainContent {
     background:lavender;
     padding:12px;
@@ -237,7 +241,6 @@ caption {
 #shoppingCartDefault input, TEXTAREA {
     text-align: left;
 }
-
 #popupSearchHelp {
     padding:1rem;
 }
@@ -1681,8 +1684,8 @@ fieldset input[type=radio] {
     margin-bottom:0rem !important;
 }
 #productGeneral .qty_cart_qty {
-   position: relative;
-   top:33px;
+    position: relative;
+    top:33px;
 }
 @media (min-width: 576px) {
     .navitem3t {

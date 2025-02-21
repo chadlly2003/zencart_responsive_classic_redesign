@@ -1170,6 +1170,7 @@ TEXTAREA {
 }
 #seShipTo {
 	margin-top:1rem !important;
+	color: blueviolet;
 }
 .leftBoxHeading {
 	background: transparent;

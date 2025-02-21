@@ -1908,6 +1908,7 @@ fieldset input[type=radio] {
    }
     #productreviewswriteBody #productMainImage {
         margin-right:1rem;
+        margin-bottom:4rem;
    }
     #productAdditionalImages {
         grid-template-columns: auto auto auto auto;

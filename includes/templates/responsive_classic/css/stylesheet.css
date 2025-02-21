@@ -235,10 +235,8 @@ LABEL.selectLabel, LABEL.switchedLabel, LABEL.uploadsLabel {
 }
 LABEL#textAreaReviews {
 	font-weight:normal;
-	margin:1rem 0;
 	clear:both;
 	text-align: left;
-	padding-top:2rem;
 }
 input[type=text]{
 	width:100%;

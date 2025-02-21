@@ -1048,9 +1048,7 @@ input.cssButton.submit_button.button.button_search {
 #shippingEstimatorContent .forward {
 	width: 100%;
 }
-#shippingEstimatorContent #zoneLabel {
-	margin-top:1rem !important;
-}
+
 #shippingEstimatorContent .button_update {
 	padding:0px !important;
 	margin:0px !important;

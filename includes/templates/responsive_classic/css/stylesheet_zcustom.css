@@ -1857,11 +1857,11 @@ fieldset input[type=radio] {
    }
     #productreviewsinfoBody #productMainImage {
         margin-bottom:1rem;
-        max-width: 200px;
+        max-width: 120px;
    }
     #reviewsDefault #productMainImage img {
         margin-bottom:0rem;
-        max-width: 200px;
+        max-width: 120px;
    }
     #productreviewsBody #productMainImage {
         margin-bottom:1rem;

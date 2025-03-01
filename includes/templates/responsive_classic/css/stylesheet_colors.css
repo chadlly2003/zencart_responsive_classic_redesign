@@ -547,10 +547,19 @@ input.cssButton.submit_button.button.button_search {
 	border-radius: 0px;
 	color:#000;
 	margin-bottom: 1rem;
-	padding-bottom:1rem;
 	text-align: left;
 	border-bottom:solid 1px #ccc;
 	font-size:16px;
+	margin-top: 1rem;
+	padding-bottom: 0px;
+	display: flex;
+	min-height: 44px;
+	
+
+
+
+
+	
 }
 #specialsHeading::before {
 	content: "\f02b";
@@ -671,10 +680,17 @@ input.cssButton.submit_button.button.button_search {
 	text-align: center;
 	border:none;
 	margin-top:1rem;
+	padding-bottom:0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top:0px;
 }
 #reviewsHeading a {
 	color:#000;
 	text-decoration: none;
+	min-height: 56px;
+	align-content: center;
 }
 #informationHeading{
 	background: #f0f9fd;
@@ -853,8 +869,7 @@ input.cssButton.submit_button.button.button_search {
 	padding-bottom:0.5rem;
 }
 #passwordForgottenMainContent {
-	padding-top:6px;
-	padding-bottom:6px;
+	padding:1rem;
 	background: cornsilk;
 	margin-bottom:1rem;
 	text-align: center;
@@ -1011,7 +1026,7 @@ input.cssButton.submit_button.button.button_search {
 }
 .cartTotalsDisplay {
 	text-align: left;
-	color: blueviolet !important;
+	color: #4b0082 !important;
 }
 #shippingEstimatorContent input {
 	width:calc(100% - 25px) !important;

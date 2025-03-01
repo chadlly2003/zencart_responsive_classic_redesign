@@ -11,7 +11,7 @@ a:link, a:visited, #navEZPagesTOC ul li a, a:hover, #navEZPagesTOC ul li a:hover
 	text-decoration: none;
 }
 .cat-count, .itemTitle a:hover, h2.greeting a:hover {
-	color:#666;
+	color:#333;
 }
 #myAccountProducts th {
 	text-align: left !important;
@@ -138,7 +138,7 @@ span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.
 #navCatTabsWrapper, .current, .productListing-rowheading a, .list-more:hover, input.submit_button, span.normal_button {
 }
 #navCatTabs li a:hover, input.submit_button:hover, input.cssButtonHover {
-	background:#666666;
+	background:#333;
 }
 #filter-wrapper, span.normal_button:hover, span.cssButton.normal_button.button.button_goto_prod_details, .button_add_selected:hover{
 	background:#ccc;
@@ -193,7 +193,7 @@ ol.list-links li{
 	border-bottom:1px solid #ddd;
 }
 #shoppingcartContent hr{
-	border-bottom:3px solid #666;
+	border-bottom:3px solid #333;
 }
 .tableHeading TH {
 	border-bottom:1px solid #ccc;
@@ -226,12 +226,12 @@ table, .tabTable{
 	color: #D01;
 }
 #siteinfoLegal a{
-	color:#154DBC;
+	color:#2A4473;
 	text-decoration: underline;
 }
 #siteinfoLegal a:hover{
 	text-decoration: none;
-	color:#154DBC;
+	color:#2A4473;
 }
 .sideBoxContent optgroup {
 	color: #db0000;
@@ -400,7 +400,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: green;
+	color: #006400;
 	padding-right: 0.5rem;
 }
 #currencies input.submit_button {
@@ -951,8 +951,8 @@ input.cssButton.submit_button.button.button_search {
 .button.button_search {
 	width:100% !important;
 	color: #fff;
-	background-color: green;
-	border-color: green;
+	background-color: #006400;
+	border-color: #006400;
 	height: 48px;
 	font-size: 1.2em !important;
 }
@@ -1048,7 +1048,6 @@ input.cssButton.submit_button.button.button_search {
 #shippingEstimatorContent .forward {
 	width: 100%;
 }
-
 #shippingEstimatorContent .button_update {
 	padding:0px !important;
 	margin:0px !important;
@@ -1086,7 +1085,7 @@ input.cssButton.submit_button.button.button_search {
 	margin-right: 1rem;
 }
 #loginDefault .button_login {
-	background: green;
+	background: #006400;
 	color: #fff;
 	margin-bottom:0.5rem;
 }
@@ -1215,4 +1214,7 @@ TEXTAREA {
 #createAcctSuccess span.cssButton.normal_button.button.small_edit {
 	margin-top:0px !important;
 	margin:0px !important 
+}
+.welcome_note a {
+	color:#2A4473;
 }

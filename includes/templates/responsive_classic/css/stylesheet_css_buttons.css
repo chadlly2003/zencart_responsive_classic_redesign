@@ -167,7 +167,6 @@ input[type="search"] {
 	width:100% !important;
 }
 #productinfoBody .button_sold_out {
-	color:crimson;
 	font-size:22px;
 	display:block;
 	width:100%;
@@ -305,7 +304,7 @@ input[type="search"] {
 }
 #productinfoBody span.normal_button {
 	background: #fff;
-	color:crimson padding:0px;
+	padding:0px;
 }
 .button_send {
 	background:#ccc;
@@ -375,7 +374,7 @@ input[type="search"] {
 	border:none !important;
 }
 #shoppingcartBody .button_shipping_estimator {
-	background:blueviolet;
+	background:#7328d4;
 	color: #fff;
 }
 #shoppingcartBody .button_continue_shopping {

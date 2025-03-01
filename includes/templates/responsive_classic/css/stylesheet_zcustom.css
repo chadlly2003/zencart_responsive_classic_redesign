@@ -89,6 +89,7 @@ footer {
 }
 ul.list-links li a {
    min-height: 44px;
+   width: 100%;
 }
 #searchContent a {
    min-height: 44px;

@@ -302,7 +302,7 @@ select#country, select#stateZone, #state {
 	padding-top:6px;
 	padding-bottom:6px;
 	text-align: center;
-	color:crimson !important;
+	color:#900404 !important;
 	background: transparent !important;
 }
 #shoppingcartBody .messageStackCaution {
@@ -648,9 +648,10 @@ ul.list-links, ol.list-links{
 }
 ul.list-links li{
 	list-style-type:none;
+	display: flex;
 }
-ol.list-links li{
-}
+ 
+
 ul.list-links li a, ol.list-links li a{
 	min-height: 44px;
 	display:block;
@@ -740,7 +741,6 @@ ul.list-links li a {
 	text-decoration:line-through;
 }
 .productSalePrice {
-	color:crimson;
 	display:block;
 	margin-top:1rem;
 }
@@ -1167,6 +1167,8 @@ span.list-addtext{
 }
 #productMainImage a{
 	text-decoration:none;
+	display: block;
+	min-height: 44px;
 }
 #productAdditionalImages{
 	clear:both;
@@ -1622,17 +1624,17 @@ span#askAQuestionButton:hover {
 	display: block;
 }
 #logo a {
-   min-height: 44px;
 	min-height: 44px;
-   display: block;
+	min-height: 44px;
+	display: block;
 }
 #gvFaqDefault #Top {
-   display:none !important;
+	display:none !important;
 }
 #gvFaqDefaultMainContent a {
-   min-height: 44px;
-   display: block;
+	min-height: 44px;
+	display: block;
 }
 #gvFaqDefaultMainContent br {
-   display:none;
+	display:none;
 }

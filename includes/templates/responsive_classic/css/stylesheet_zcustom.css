@@ -85,15 +85,18 @@ footer {
     padding-right:0px;
 }
 .orderHistList li {
-   padding:0px;
+    padding:0px;
 }
 ul.list-links li a {
-   min-height: 44px;
-   width: 100%;
+    min-height: 44px;
+    width: 100%;
+}
+#orderhistory ul.list-links li a {
+    width: auto 
 }
 #searchContent a {
-   min-height: 44px;
-   display: block;
+    min-height: 44px;
+    display: block;
 }
 .orderdates {
     text-align: left;
@@ -277,11 +280,11 @@ caption {
     text-align: center;
 }
 #bannerSix a {
-   min-height: 44px;
+    min-height: 44px;
     display: block;
 }
 #shoppingCartDefault .forward a {
-   min-height: 44px;
+    min-height: 44px;
     display: block;
 }
 .cartRemoveItemDisplay {
@@ -1744,10 +1747,14 @@ fieldset input[type=radio] {
 #reviewsInfoDefault .buttonRow a {
     min-height: 44px;
 }
-
-#bannerboxallContent a {display: block;min-height: 44px;}
-
-
+#bannerboxallContent a {
+   display: block;
+   min-height: 44px;
+}
+#cartAdd a {
+   min-height: 44px;
+   display: block
+}
 @media (min-width: 576px) {
     .shoppingcart a {
         min-height: 44px;

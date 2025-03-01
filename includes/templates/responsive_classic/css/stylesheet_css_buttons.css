@@ -140,7 +140,7 @@ span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.
 	background:gold;
 }
 span.button_sold_out, span.button_sold_out:hover{
-	color:crimson;
+	color:#8B0000;
 	padding:0px;
 	background:transparent;
 	font-size:18px;
@@ -177,12 +177,12 @@ input[type="search"] {
 	font-size:22px;
 	width:auto;
 	text-align:left;
-	color:blueviolet;
+	color:#7a1db1;
 	margin-left:0rem;
 }
 #productinfoBody #cartAdd a:hover {
-	color:blueviolet;
-	opacity:0.5 
+	color:#7a1db1;
+	opacity:0.5;
 }
 #productinfoBody .button_sold_out {
 	width: auto;
@@ -305,8 +305,7 @@ input[type="search"] {
 }
 #productinfoBody span.normal_button {
 	background: #fff;
-	color:crimson
-	padding:0px;
+	color:crimson padding:0px;
 }
 .button_send {
 	background:#ccc;
@@ -384,7 +383,7 @@ input[type="search"] {
 	color:#fff;
 }
 #shoppingcartBody .button_checkout {
-	background: green;
+	background: #006400;
 	color: #fff;
 }
 #contactUsDefault .forward {

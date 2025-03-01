@@ -913,6 +913,7 @@ div#checkoutShippingContentChoose{
 }
 #filter-wrapper .inputLabel {
 	float:none;
+	width: auto;
 }
 #filter-wrapper select{
 	width:100%;

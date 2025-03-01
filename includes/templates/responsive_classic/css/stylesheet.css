@@ -222,9 +222,7 @@ LABEL.checkboxLabel, LABEL.radioButtonLabel {
 }
 LABEL.inputLabel {
 	width: 100%;
-
 }
-
 LABEL.inputLabelPayment {
 	width:15em;
 	float:left;
@@ -654,9 +652,11 @@ ul.list-links li{
 ol.list-links li{
 }
 ul.list-links li a, ol.list-links li a{
-	padding:6px;
+	min-height: 44px;
 	display:block;
 	text-decoration: none;
+	padding-top:0px;
+	padding-bottom:0px;
 }
 #cartBoxListWrapper li, .orderHistList li{
 	list-style-type:none;
@@ -823,7 +823,6 @@ TR.tableHeading {
 #shippingEstimatorContent th{
 	padding:10px 0;
 }
- 
 #shippingEstimatorContent td{
 	padding:0px;
 }
@@ -1006,13 +1005,15 @@ div#checkoutShippingContentChoose{
 .itemTitle a{
 	text-decoration:none;
 	color: #000 !important;
+	min-height: 44px;
+	display:block;
 }
 .itemTitle a:hover{
 	text-decoration: underline;
 }
 .listingDescription{
 	width:100%;
-	margin:6px 0;
+	margin:0;
 }
 span.list-addtext{
 	display:block;
@@ -1174,9 +1175,9 @@ span.list-addtext{
 	width:90%;
 	margin:10px auto;
 }
-
-#productQuantityDiscounts {margin-top:2rem;}
-
+#productQuantityDiscounts {
+	margin-top:2rem;
+}
 #productName{
 	font-weight:normal;
 	line-height:27px;
@@ -1524,7 +1525,13 @@ h2.greeting a:hover{
 }
 #siteMapList ul {
 	width:100%;
-	padding-bottom:1rem;
+}
+#logo a {
+	min-height: 44px;
+}
+#siteMapList ul li a {
+	min-height:44px;
+	display: list-item;
 }
 #gvFaqDefaultContent{
 	line-height:20px;
@@ -1606,4 +1613,26 @@ span#askAQuestionButton:hover {
 }
 .brandCell a {
 	text-decoration: none;
+}
+.moreinfoLink {
+	min-height: 44px;
+}
+#loginDefault .important a {
+	min-height: 44px;
+	display: block;
+}
+#logo a {
+   min-height: 44px;
+	min-height: 44px;
+   display: block;
+}
+#gvFaqDefault #Top {
+   display:none !important;
+}
+#gvFaqDefaultMainContent a {
+   min-height: 44px;
+   display: block;
+}
+#gvFaqDefaultMainContent br {
+   display:none;
 }

@@ -102,6 +102,10 @@ footer {
     margin-left:0;
     float:right;
 }
+#productQuestions a {
+    padding-bottom: 10px ;
+    padding-top:10px;
+}
 #mediaManagerHeading {
     margin-top:0px;
 }
@@ -186,7 +190,7 @@ caption {
     margin-top:12px;
 }
 .productSpecialPrice {
-    color:green !important;
+    color:#006400 !important;
 }
 .normalprice {
     color:#000;
@@ -200,14 +204,14 @@ caption {
     color:#000;
 }
 .productSpecialPriceSale {
-    color:green;
+    color:#006400;
 }
 .productFreePrice {
     display:block;
 }
 .cartUnitDisplay {
     text-align: center;
-    color: green;
+    color: #006400;
     font-size: 130%;
 }
 #scUnitHeading {
@@ -480,17 +484,18 @@ input[type="checkbox"] {
     background-color: transparent;
     justify-content:left;
     padding:0px;
-    color: blueviolet;
+    color: #4b0082;
     opacity:1;
     display:list-item;
     margin-left:1rem;
     opacity: 0.5;
     list-style: none;
     margin-left:0px;
+    min-height: 44px;
 }
 #reviewsWrite span.cssButton.normal_button {
     background: transparent;
-    color:blueviolet;
+    color:#4b0082;
     opacity:1;
     font-size:1rem;
     justify-content: left;
@@ -500,10 +505,11 @@ input[type="checkbox"] {
     margin-left:1rem;
     list-style: none;
     margin-left:0px;
+    min-height: 44px;
 }
 #reviewsWrite .button.button_goto_prod_details {
     background: transparent;
-    color:blueviolet;
+    color:#4b0082;
     opacity:1;
     font-size:1rem;
     justify-content: left;
@@ -542,7 +548,6 @@ input[type="checkbox"] {
 #reviewsInfoDefault .button_goto_prod_details {
     display:list-item;
     list-style: none;
-    ;
     padding:0px;
     color:blueviolet;
 }
@@ -550,9 +555,10 @@ input[type="checkbox"] {
     display:list-item;
     list-style: none;
     padding:0px;
-    color:blueviolet;
+    color:#4b0082 ;
     text-align: left;
     float:left;
+    min-height: 44px;
 }
 #reviewsInfoDefaultProductPageLink {
     text-align: left;
@@ -563,6 +569,26 @@ input[type="checkbox"] {
     margin:0px;
     outline:none;
     clear:both;
+    min-height: 44px;
+}
+#siteMapMainContent a {
+    color:#154DBC;
+    white-space:pre;
+    text-decoration: underline;
+}
+#siteMapMainContent a:hover {
+    text-decoration: none;
+}
+.spacer_element_button_add span.normal_button {
+    min-height:auto !important;
+}
+.box_review_spacver a {
+    display:block;
+    min-height:44px;
+}
+.reviewligner .button_write_review {
+    min-height: 44px;
+    display: block;
 }
 span.normal_button:hover {
     opacity:0.5 !important;
@@ -606,11 +632,11 @@ span.normal_button:hover {
     margin-left:0;
     justify-content: left;
     clear:both;
-    color: blueviolet;
+    color: #4b0082;
     float: left;
 }
 .button_goto_prod_details{
-    color:blueviolet !important 
+    color:#4b0082 !important 
 }
 #reviewsDefault span.cssButton.normal_button.button.button_in_cart {
     font-size:16px;
@@ -644,14 +670,18 @@ span.normal_button:hover {
     font-size:19px;
     background: transparent;
     color:#8A4514;
+    padding:0px;
+    display:inline-block !important;
+    min-height: 44px;
 }
 .button_write_review {
     background:transparent !important;
 }
 #productReviewLink span.normal_button {
     color:#8A4514;
-    padding-bottom:0px;
+    padding:0px;
     background: transparent;
+    min-height: 44px;
 }
 .reviewligner .button_write_review {
     color:#8A4514;
@@ -684,14 +714,14 @@ span.normal_button:hover {
     max-width:500px;
 }
 #reviewsDefaultListingTopNumber {
-    color:blueviolet;
+    color:#4b0082;
     margin-bottom:1rem;
 }
 #reviewsDefaultListingTopLinks {
     margin-bottom:1rem !important;
 }
 #reviewsDefaultListingBottomNumber {
-    color:blueviolet;
+    color:#4b0082;
     margin-top:1rem;
     margin-bottom:1rem;
 }
@@ -1217,7 +1247,7 @@ input[type="radio"], input[type="checkbox"] {
     margin-bottom:1rem 
 }
 #checkoutConfirmDefaultPaymentTitle {
-    color:green;
+    color:#006400;
 }
 #checkoutConfirmDefault #checkoutConfirmDefaultShipmentTitle {
     display: list-item;
@@ -1311,14 +1341,14 @@ fieldset input[type=radio] {
     padding:1rem;
 }
 #productReviewsDefaultListingTopNumber {
-    color:darkgreen;
+    color:#006400;
     text-align: left;
     padding-top:1rem;
     border-top:solid 1px #ccc;
     margin-bottom:1rem;
 }
 #productReviewsDefaultListingBottomNumber {
-    color:darkgreen;
+    color:#006400;
     text-align: left;
 }
 .brandImage img {
@@ -1353,7 +1383,7 @@ fieldset input[type=radio] {
     margin-top:2rem;
 }
 .dateissue {
-    color:green;
+    color:#006400;
     margin-bottom:1rem;
     float:left;
 }
@@ -1515,7 +1545,7 @@ fieldset input[type=radio] {
     margin-bottom:1rem;
 }
 .optionName {
-    color:blueviolet;
+    color:#761bc9;
     margin-bottom: 0.3rem !important;
 }
 .logoff_style {
@@ -1533,7 +1563,7 @@ fieldset input[type=radio] {
     vertical-align: inherit;
     font-size: 20px;
     font-weight: 900;
-    color: green;
+    color: #006400;
     padding-right: 0.5rem;
 }
 #myAccountGen li {
@@ -1547,11 +1577,10 @@ fieldset input[type=radio] {
     opacity:0.5;
 }
 #reviewsDefault .button_goto_prod_details {
-    padding-top:0.3rem;
-    padding-left:0px;
-    padding-right: 0px;
-    display: inherit;
+    padding:0px;
+    display: inline-block !important;
     outline:none;
+    min-height: 44px;
 }
 .read_review {
     margin-top:1rem;
@@ -1603,7 +1632,7 @@ fieldset input[type=radio] {
     vertical-align: inherit;
     font-size: 14px;
     font-weight: 900;
-    color: green;
+    color: #006400;
     padding-right: 0.3rem;
     vertical-align: baseline;
 }
@@ -1647,6 +1676,7 @@ fieldset input[type=radio] {
 }
 .rblockelements a {
     margin-bottom:0.5rem;
+    min-height: 44px;
 }
 #productInfoLink {
     font-size: 1.2em;
@@ -1690,7 +1720,14 @@ fieldset input[type=radio] {
 #reviewsWrite .ratingRow {
     Margin-top:1rem;
 }
+#reviewsInfoDefault .buttonRow a {
+   min-height: 44px;
+}
 @media (min-width: 576px) {
+    .shoppingcart a {
+        min-height: 44px;
+        min-width: 44px;
+   }
     .navitem3t {
         font-size:32px !important;
         color:#97682B;
@@ -1980,7 +2017,7 @@ fieldset input[type=radio] {
         margin-top:1rem 
    }
     .dateissue {
-        color:green;
+        color:#006400;
         float:right;
    }
     .checkoutupdate {
@@ -2508,7 +2545,7 @@ fieldset input[type=radio] {
         float:left;
    }
     #productinfoBody .button_sold_out {
-        color:crimson !important;
+        color:#8B0000 !important;
         font-size:22px;
         display:contents;
         width:100%;

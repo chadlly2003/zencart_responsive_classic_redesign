@@ -84,6 +84,16 @@ footer {
     padding-left:0px;
     padding-right:0px;
 }
+.orderHistList li {
+   padding:0px;
+}
+ul.list-links li a {
+   min-height: 44px;
+}
+#searchContent a {
+   min-height: 44px;
+   display: block;
+}
 .orderdates {
     text-align: left;
     color:green;
@@ -173,7 +183,7 @@ footer {
     text-align: left;
 }
 caption {
-    color:crimson;
+    color:#900404;
     margin-bottom:1rem;
 }
 .list-price img {
@@ -211,7 +221,7 @@ caption {
 }
 .cartUnitDisplay {
     text-align: center;
-    color: #006400;
+    color: #004d00;
     font-size: 130%;
 }
 #scUnitHeading {
@@ -259,10 +269,19 @@ caption {
 }
 .cartTotalDisplay {
     display:none !important;
+    color:#1250a7;
 }
 #checkoutconfirmationBody .cartTotalDisplay {
     display:block !important;
     text-align: center;
+}
+#bannerSix a {
+   min-height: 44px;
+    display: block;
+}
+#shoppingCartDefault .forward a {
+   min-height: 44px;
+    display: block;
 }
 .cartRemoveItemDisplay {
     display:none !important;
@@ -340,7 +359,7 @@ caption {
     text-align: center;
     width: 100%;
     padding:0px;
-    color:crimson;
+    color:#900404;
     padding-bottom:1rem;
 }
 #popupShippingEstimator #stText {
@@ -444,7 +463,7 @@ input[type="checkbox"] {
     background:transparent;
     padding: 6px;
     margin-bottom: 0rem;
-    color:crimson;
+    color:#900404;
 }
 #passwordForgotten fieldset {
     margin-bottom:1rem;
@@ -986,7 +1005,7 @@ input[type="radio"], input[type="checkbox"] {
 #accountHistoryDefault .forward {
     float:none;
     margin-top:1rem;
-    color:crimson;
+    color:#900404;
 }
 #accountHistoryDefault .back {
     margin-right:1rem;
@@ -1015,7 +1034,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 #accountHistInfo #myAccountShipInfo h4, #accountHistInfo #myAccountPaymentInfo h4 {
     margin-bottom:0.5rem;
-    color:blueviolet;
+    color:#7a1db1;
     font-size: 1.3em;
 }
 #accountHistInfo #myAccountPaymentInfo {
@@ -1056,11 +1075,11 @@ input[type="radio"], input[type="checkbox"] {
 }
 #accountHistInfo .orderdate {
     text-align: center;
-    color:crimson;
+    color:#900404;
     margin-bottom:0.5rem;
 }
 #accountHistInfo fieldset {
-    color:crimson;
+    color:#900404;
     text-align: center;
     width:100%;
 }
@@ -1101,7 +1120,7 @@ input[type="radio"], input[type="checkbox"] {
     display:block;
 }
 #checkoutShipping .notice {
-    color:crimson;
+    color:#900404;
     text-align: center;
 }
 #checkoutShipping .notice_select {
@@ -1110,7 +1129,7 @@ input[type="radio"], input[type="checkbox"] {
 #checkoutShippingHeadingMethod {
     margin-top:2rem;
     margin-bottom:0.5rem;
-    color:blueviolet;
+    color:#761bc9;
 }
 #checkoutShippingContentChoose {
     margin-bottom:1rem;
@@ -1169,7 +1188,7 @@ input[type="radio"], input[type="checkbox"] {
     color:#154DBC;
 }
 #checkoutPayment .inputLabel {
-    color:green 
+    color:#006400;
 }
 #checkoutPayment p:first-of-type {
     margin-top:-0.5rem;
@@ -1221,7 +1240,7 @@ input[type="radio"], input[type="checkbox"] {
     margin:1rem;
 }
 #checkoutConfirmDefault .rowOdd {
-    background-color: lavender;
+    background-color: ghostwhite;
 }
 #checkoutConfirmDefault .cartTotalDisplay {
     display: block;
@@ -1677,6 +1696,7 @@ fieldset input[type=radio] {
 .rblockelements a {
     margin-bottom:0.5rem;
     min-height: 44px;
+    display: block;
 }
 #productInfoLink {
     font-size: 1.2em;
@@ -1721,8 +1741,12 @@ fieldset input[type=radio] {
     Margin-top:1rem;
 }
 #reviewsInfoDefault .buttonRow a {
-   min-height: 44px;
+    min-height: 44px;
 }
+
+#bannerboxallContent a {display: block;min-height: 44px;}
+
+
 @media (min-width: 576px) {
     .shoppingcart a {
         min-height: 44px;

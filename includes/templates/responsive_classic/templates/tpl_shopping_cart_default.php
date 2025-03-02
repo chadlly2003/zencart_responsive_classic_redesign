@@ -56,20 +56,17 @@
 <table id="cartContentsDisplay">
      <tr class="tableHeading">
         <th scope="col" id="scQuantityHeading"><?php echo TABLE_HEADING_QUANTITY; ?></th>
-        <th aria-label="Update Quantity" scope="col" id="scUpdateQuantity">&nbsp;</th>
+        <th aria-label="Update Quantity" scope="col" id="scUpdateQuantity">Update Quantity</th>
         <th scope="col" id="scProductsHeading"><?php echo TABLE_HEADING_PRODUCTS; ?></th>
         <th scope="col" id="scUnitHeading"><?php echo TABLE_HEADING_PRICE; ?></th>
         <th scope="col" id="scTotalHeading"><?php echo TABLE_HEADING_TOTAL; ?></th>
-        <th aria-label="Remove this product from the cart" scope="col" id="scRemoveHeading">&nbsp;</th>
+        <th aria-label="Remove this product from the cart" scope="col" id="scRemoveHeading">Remove this product from the cart</th>
      </tr>
          <!-- Loop through all products /-->
 <?php
   foreach ($productArray as $product) {
 ?>
      <tr class="<?php echo $product['rowClass']; ?>">
-
- 
-
        <td class="cartQuantity">
 <?php
   if ($product['flagShowFixedQuantity']) {
@@ -107,10 +104,6 @@
   }
 ?>
        </td>
-
- 
-
-
        <td class="cartUnitDisplay"><?php echo $product['productsPriceEach']; ?></td>
        <td class="cartTotalDisplay"><?php echo $product['productsPrice']; ?></td>
        <td class="cartRemoveItemDisplay">

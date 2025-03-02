@@ -1440,8 +1440,11 @@ fieldset input[type=radio] {
     font-size: 1.2em;
     border-radius: 0.25rem;
 }
-#loginDefault .important {
-    margin-bottom:3rem;
+.advisory a {
+    text-decoration: underline;
+}
+.advisory a:hover {
+    text-decoration: none;
 }
 .rblockelements {
     display: grid;
@@ -2131,9 +2134,6 @@ fieldset input[type=radio] {
         display:inline!important;
         width: 16.6%;
         float:left;
-   }
-    #loginDefault .important {
-        margin-bottom:0rem;
    }
     .button.button_back {
         color:#fff;

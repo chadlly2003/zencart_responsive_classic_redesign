@@ -265,6 +265,11 @@ caption {
 .cartQuantityUpdate {
     display:none;
 }
+
+#scUpdateQuantity,
+#scRemoveHeading {
+    visibility: hidden;  
+}
 .cartQuantity {
     text-align: left;
     text-align: center;
@@ -1822,6 +1827,7 @@ fieldset input[type=radio] {
     .shoppingcart a {
         min-height: 44px;
         min-width: 44px;
+        align-content: center;
    }
     .navitem3t {
         font-size:32px !important;

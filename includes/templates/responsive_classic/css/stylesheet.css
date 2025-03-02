@@ -53,7 +53,7 @@ P, ADDRESS {
 }
 ADDRESS {
 	font-style:normal;
-	background:aliceblue;
+	background:#F0F8FF;
 	padding:1rem;
 	margin-bottom:1rem;
 }
@@ -99,7 +99,7 @@ HR {
 .gvBal {
 	float:right;
 }
-.centerColumn, #bannerOne, #bannerTwo, #bannerThree, #bannerFour, #bannerFive, {
+.centerColumn, #bannerOne, #bannerTwo, #bannerThree, #bannerFour, #bannerFive {
 	padding:0.8em;
 }
 .smallText, #siteinfoLegal, #siteinfoCredits, #siteinfoStatus, #siteinfoIP {
@@ -107,7 +107,7 @@ HR {
 }
 .information {
 	line-height: 150%;
-	background: cornsilk !important;
+	background: #FFF8DC !important;
 	padding:1rem;
 	margin-bottom:1rem !important;
 }
@@ -997,8 +997,8 @@ div#checkoutShippingContentChoose{
 	display: i;
 }
 .current {
-   color:#006400 !important;
-   text-decoration: underline;
+	color:#006400 !important;
+	text-decoration: underline;
 }
 .itemTitle{
 	font-weight:normal;
@@ -1199,7 +1199,7 @@ span.list-addtext{
 	line-height:27px;
 	text-align:left;
 	color:#000 !important;
-	border-bottom:solid 1px cornflowerblue;
+	border-bottom:solid 1px #6495ED;
 	margin-top:0.5rem;
 	padding-bottom:1rem;
 	margin-bottom:3rem;
@@ -1231,7 +1231,7 @@ span.list-addtext{
 }
 .productSpecialPrice{
 	font-size:120%;
-	color:green;
+	color:#008000;
 }
 #mediaManagerHeading{
 	font-weight:normal;
@@ -1382,7 +1382,7 @@ h4.optionName{
 	line-height: 27px;
 	text-align: left;
 	color: #000 !important;
-	border-bottom: solid 1px cornflowerblue;
+	border-bottom: solid 1px #6495ED;
 	margin-top: 1rem;
 	padding-bottom: 1rem;
 	margin-bottom: 3rem;
@@ -1409,7 +1409,7 @@ h4.optionName{
 }
 #productReviewsDefaultNoReviews {
 	clear:both;
-	background: cornsilk;
+	background: #FFF8DC;
 	padding: 1rem;
 }
 #reviewsDefault .prod-list-wrap{
@@ -1605,7 +1605,7 @@ table, .tabTable{
 }
 /* Ask a Question */
 .button_ask_a_question {
-	color:darkorchid !important;
+	color:#9932CC !important;
 }
 span#askAQuestionButton:hover {
 	opacity: 1;

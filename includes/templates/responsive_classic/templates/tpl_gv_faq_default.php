@@ -27,7 +27,7 @@
 
 <div id="gvFaqDefaultMainContent" class="content"><?php echo TEXT_INFORMATION; ?></div>
  
-<h2 id="gvFaqDefaultSubHeading"><?php echo $subHeadingTitle; ?></h2>
+<!-- <h2 id="gvFaqDefaultSubHeading"><?php echo $subHeadingTitle; ?></h2> -->
 
 <div id="gvFaqDefaultContent" class="content"><?php echo $subHeadingText; ?></div>
 

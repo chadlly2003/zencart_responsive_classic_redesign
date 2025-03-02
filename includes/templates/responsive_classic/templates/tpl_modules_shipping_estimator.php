@@ -94,7 +94,7 @@ if ($_SESSION['cart']->get_content_type() === 'virtual') {
     if (!zen_is_logged_in() || zen_in_guest_checkout()) {
 ?>
         <tr>
-            <td colspan="2" class="seDisplayedAddressLabel">
+            <th colspan="2" class="seDisplayedAddressLabel">
                 <?= CART_SHIPPING_QUOTE_CRITERIA ?><br>
                 <?= '<span class="seDisplayedAddressInfo">' .
                     zen_get_zone_name((int)$selected_country, (int)$state_zone_id, '') .
@@ -102,7 +102,7 @@ if ($_SESSION['cart']->get_content_type() === 'virtual') {
                     ($order->delivery['postcode'] ?? '') . ' ' .
                     zen_get_country_name($order->delivery['country_id']) .
                 '</span>' ?>
-            </td>
+            </th>
         </tr>
 <?php
     }

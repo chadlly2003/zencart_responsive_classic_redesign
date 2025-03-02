@@ -668,8 +668,9 @@ span.normal_button:hover {
     background:transparent;
     margin-top:0px;
     font-size:0.9rem;
-    display: contents;
+    display:block;
     opacity:0.5;
+    padding:0px;
 }
 #reviewsDefault .button_in_cartHover {
     width: calc(100% - 40px);
@@ -683,7 +684,12 @@ span.normal_button:hover {
     margin-top:0px;
     font-size:0.9rem;
     color:#154DBC;
-    display: contents;
+    display:block;
+    padding:0px;
+}
+.read_review a {
+   display: inline-block;
+    min-height: 44px;
 }
 #reviewsDefault .spacerreviewsa {
     text-align: center;
@@ -1748,12 +1754,16 @@ fieldset input[type=radio] {
     min-height: 44px;
 }
 #bannerboxallContent a {
-   display: block;
-   min-height: 44px;
+    display: block;
+    min-height: 44px;
 }
 #cartAdd a {
+    min-height: 44px;
+    display: block 
+}
+#reviewsDefault .smallProductImage a {
    min-height: 44px;
-   display: block
+   display: inline-block;
 }
 @media (min-width: 576px) {
     .shoppingcart a {
@@ -1924,6 +1934,11 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+    #reviewsDefault .smallProductImage a {
+       min-height: 44px;
+       display:block;
+       float:left;
+   }
     #reviewsWrite .center {
         display: flex;
         flex-wrap: wrap;
@@ -2208,9 +2223,12 @@ fieldset input[type=radio] {
    }
     #reviewsInfoDefaultReviewsListingLink {
         margin-left:0rem;
+        float: left;
+        clear: both;
    }
     #reviewsInfoDefaultReviewsListingLink a {
-        margin-left:1rem 
+        min-height: 44px;
+        display: block;
    }
     #reviewsInfoDefault .buttonRow a {
         clear:both;

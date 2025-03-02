@@ -994,6 +994,11 @@ div#checkoutShippingContentChoose{
 }
 #searchresultBody .list-more {
 	width:auto;
+	display: i;
+}
+.current {
+   color:#006400 !important;
+   text-decoration: underline;
 }
 .itemTitle{
 	font-weight:normal;
@@ -1006,7 +1011,8 @@ div#checkoutShippingContentChoose{
 	text-decoration:none;
 	color: #000 !important;
 	min-height: 44px;
-	display:block;
+	display:inline-block;
+	min-width: 44px;
 }
 .cart-add a {
 	min-height: 44px;

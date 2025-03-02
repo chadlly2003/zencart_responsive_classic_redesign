@@ -52,7 +52,7 @@ span.normal_button {
 	margin:0;
 	padding: 12px 20px;
 	border-radius: 0.25rem;
-	background:gold;
+	background:#FFD700;
 	display:flex;
 	justify-content: center;
 }
@@ -64,7 +64,7 @@ span.normal_button {
 }
 span.normal_button:hover {
 	opacity:0.5;
-	background:gold;
+	background:#FFD700;
 }
 span.cssButton.normal_button.button.button_more_reviews, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover{
 	display:block;
@@ -148,7 +148,7 @@ span.cssButton.normal_button.button.button_continue_shopping, .button_continue_s
 	padding:12px 20px 
 }
 span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.button.small_edit{
-	background:gold;
+	background:#FFD700;
 }
 span.button_sold_out, span.button_sold_out:hover{
 	color:#8B0000;
@@ -211,8 +211,8 @@ input[type="search"] {
 	border-radius: 0.25rem;
 	font-size: 1.2em;
 	color: #000;
-	background-color: burlywood;
-	border-color: burlywood;
+	background-color: #DEB887;
+	border-color: #DEB887;
 	margin-bottom:1rem;
 }
 #manufacturers input.cssButtonHover {
@@ -220,8 +220,8 @@ input[type="search"] {
 	border-radius: 0.25rem;
 	font-size: 1.2em;
 	color: #000;
-	background-color: burlywood;
-	border-color: burlywood;
+	background-color: #DEB887;
+	border-color: #DEB887;
 	margin-bottom:1rem;
 }
 #aboutusBody .buttonRow {
@@ -294,7 +294,7 @@ input[type="search"] {
 	float:none;
 }
 #cartAdd input[type="submit"] {
-	background: blueviolet;
+	background:  #8A2BE2;
 	color: #fff;
 	font-size:18px;
 	padding:12px 20px;
@@ -343,14 +343,14 @@ input[type="search"] {
 	opacity: 1;
 }
 .button_continue {
-	background:blueviolet;
+	background: #8A2BE2;
 	color:#fff;
 }
 .button_continue:hover {
 	opacity:0.5;
 }
 .button_redeem {
-	background:darkred;
+	background:#8B0000;
 	color:#fff;
 }
 .button_redeem:hover {
@@ -361,14 +361,14 @@ input[type="search"] {
 	margin-bottom:1rem;
 }
 .button_continue {
-	background:blueviolet;
+	background: #8A2BE2;
 	color:#fff;
 }
 .button_continue:hover {
 	opacity:0.5;
 }
 .button_redeem {
-	background:darkred;
+	background:#8B0000;
 	color:#fff;
 }
 .button_redeem:hover {
@@ -393,7 +393,7 @@ input[type="search"] {
 	color: #fff;
 }
 #shoppingcartBody .button_continue_shopping {
-	background: darkmagenta;
+	background: #8B008B;
 	color:#fff;
 }
 #shoppingcartBody .button_checkout {

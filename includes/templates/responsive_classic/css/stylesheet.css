@@ -997,8 +997,8 @@ div#checkoutShippingContentChoose{
 	display: i;
 }
 .current {
-	color:#006400 !important;
-	text-decoration: underline;
+	background-color: #E6E6FA;
+	border-radius: 50%;
 }
 .itemTitle{
 	font-weight:normal;

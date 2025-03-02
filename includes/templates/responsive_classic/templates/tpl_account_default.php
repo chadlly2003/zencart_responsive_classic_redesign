@@ -23,7 +23,6 @@
     if (!empty($ordersArray)) {
   ?>
 <p class="show_orders"><?php echo '<a class="show-all" href="' . zen_href_link(FILENAME_ACCOUNT_HISTORY, '', 'SSL') . '">' . OVERVIEW_SHOW_ALL_ORDERS . '</a>'; ?></p>
-<br class="clearBoth">
 <h2 id="previous-orders"><?php echo OVERVIEW_PREVIOUS_ORDERS; ?></h2>
 <table id="prevOrders">
     <tr class="tableHeading">

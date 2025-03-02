@@ -1000,6 +1000,7 @@ div#checkoutShippingContentChoose{
 	font-size:140%;
 	margin:0px 0;
 	width:100%;
+	display: block ruby;
 }
 .itemTitle a{
 	text-decoration:none;
@@ -1008,12 +1009,12 @@ div#checkoutShippingContentChoose{
 	display:block;
 }
 .cart-add a {
-   min-height: 44px;
-   display: block;
+	min-height: 44px;
+	display: block;
 }
 .list-image a {
-   min-height: 44px;
-   display: block;
+	min-height: 44px;
+	display: block;
 }
 .itemTitle a:hover{
 	text-decoration: underline;

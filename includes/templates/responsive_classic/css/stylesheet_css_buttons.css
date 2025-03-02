@@ -1,6 +1,17 @@
 .buttonRow a {
 	text-decoration:none;
 }
+#productreviewsBody .buttonRow a {
+   display:inline-block;
+	min-height: 44px;
+}
+#reviewsDefault .buttonRow a {
+   display:inline-block;
+	min-height: 44px;
+}
+#reviewsDefault .button:active {
+   outline:none;
+}
 .button, input.button, input.cssButtonHover {
 	display:inline-block;
 	font-size:1.2em;
@@ -253,6 +264,10 @@ input[type="search"] {
 }
 #searchDefault .forward {
 	float:none;
+}
+#searchDefault .forward a {
+	display: block;
+	min-height: 44px;
 }
 #searchDefault .buttonRow {
 	float:none;

@@ -60,7 +60,7 @@ legend, .specialsListBoxContents a, .centerBoxContentsAlsoPurch a, .centerBoxCon
 }
 .categoryListBoxContents:hover, .centerBoxContentsFeaturedCategories:hover, .centerBoxContentsFeatured:hover, .centerBoxContentsNew:hover, .centerBoxContentsSpecials:hover, .specialsListBoxContents:hover {
 	border-radius: 5px;
-	background:aliceblue;
+	background:#F0F8FF;
 }
 /*bof background colors*/
 body, #logoWrapper, #cartBoxListWrapper, #ezPageBoxList, #cartBoxListWrapper ul, #ezPageBoxList ul, #contentMainWrapper, #headerWrapper, .sideBoxContent, .rightBoxContent, .rowOdd, #productQuantityDiscounts table, #accountLinksWrapper {
@@ -114,7 +114,7 @@ span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.
 	color:#000;
 }
 #siteinfoIP, #siteinfoLegal, #bannerSix{
-	background:gainsboro;
+	background:#DCDCDC;
 	border:none;
 	clear:both;
 	margin-top:3rem;
@@ -405,12 +405,12 @@ input.cssButton.submit_button.button.button_search {
 }
 #currencies input.submit_button {
 	width:auto !important;
-	background: burlywood;
+	background: #DEB887;
 }
 #currencies input.cssButtonHover {
 	width:auto !important;
 	opacity: .5;
-	background: burlywood;
+	background: #DEB887;
 }
 #brandsHeading {
 	background: transparent;
@@ -438,7 +438,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: blueviolet;
+	color: #8A2BE2;
 	padding-right: 0.5rem;
 }
 #categoriesHeading {
@@ -458,16 +458,16 @@ input.cssButton.submit_button.button.button_search {
 	border-radius: 5px;
 	color:#000;
 	margin-bottom: 1rem;
-	background:antiquewhite;
+	background:#FAEBD7;
 	text-align: center;
 	border:none;
 }
 #recordcompaniesHeading {
-	background: lavender;
+	background: #E6E6FA;
 	border-radius: 5px;
 	color:#000;
 	margin-bottom: 1rem;
-	background:paleturquoise;
+	background:#AFEEEE;
 	text-align: center;
 	border:none;
 	margin-top:1rem;
@@ -488,7 +488,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: cornflowerblue;
+	color: #6495ED;
 	padding-left: 0.5rem;
 }
 #searchHeading label {
@@ -511,7 +511,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: blueviolet;
+	color: #8A2BE2;
 	padding-right: 0.5rem;
 }
 #orderhistoryHeading {
@@ -546,7 +546,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: mediumvioletred;
+	color: #C71585;
 	padding-right: 0.5rem;
 }
 #bannerboxallHeading {
@@ -565,7 +565,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: violet;
+	color: #8f00ff;
 	padding-right: 0.5rem;
 }
 #searchHeading{
@@ -584,7 +584,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: peru;
+	color: #CD853F;
 	padding-right: 0.5rem;
 	float:left;
 }
@@ -623,7 +623,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: yellowgreen;
+	color: #9ACD32;
 	padding-right: 0.5rem;
 }
 #whosonlineHeading {
@@ -642,7 +642,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: pink;
+	color: #FFC0CB;
 	padding-right: 0.5rem;
 }
 #productnotificationsHeading {
@@ -701,7 +701,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: coral;
+	color: #FF7F50;
 	padding-right: 0.5rem;
 }
 #informationHeading{
@@ -713,7 +713,7 @@ input.cssButton.submit_button.button.button_search {
 	border:none;
 }
 #manufacturersHeading {
-	background: lavender;
+	background: #E6E6FA;
 	border-radius: 5px;
 	color:#000;
 	margin-bottom: 1rem;
@@ -734,13 +734,13 @@ input.cssButton.submit_button.button.button_search {
 #productDateAdded {
 	padding-top:6px;
 	padding-bottom:6px;
-	background: cornsilk;
+	background: #FFF8DC;
 	margin-top:1rem;
 }
 #productDateAvailable {
 	padding-top:6px;
 	padding-bottom:6px;
-	background: cornsilk;
+	background: #FFF8DC;
 }
 #cart-box {
 	background-color:#fff;
@@ -846,7 +846,7 @@ input.cssButton.submit_button.button.button_search {
 	color:#000;
 }
 #orderStatus p {
-	background: cornsilk !important;
+	background: #FFF8DC !important;
 	padding: 1rem;
 	margin-bottom: 1rem !important;
 }
@@ -874,7 +874,7 @@ input.cssButton.submit_button.button.button_search {
 	width:100% !important;
 }
 #upcomingProductsTable tr:nth-child(odd) {
-	background-color: aliceblue;
+	background-color: #F0F8FF;
 }
 #upcomingProductsTable th, td {
 	padding-top:0.5rem;
@@ -882,12 +882,12 @@ input.cssButton.submit_button.button.button_search {
 }
 #passwordForgottenMainContent {
 	padding:1rem;
-	background: cornsilk;
+	background: #FFF8DC;
 	margin-bottom:1rem;
 	text-align: center;
 }
 #shoppingcartBody tr:nth-child(odd) {
-	background-color: aliceblue;
+	background-color: #F0F8FF;
 	padding-top:10px;
 	padding-bottom:10px;
 }
@@ -937,7 +937,7 @@ input.cssButton.submit_button.button.button_search {
 	font-size:1em;
 }
 .productListing-even {
-	background: floralwhite;
+	background: #fffaf0;
 }
 .box_spacer {
 	margin-left:15px;
@@ -1060,7 +1060,7 @@ input.cssButton.submit_button.button.button_search {
 	padding:10px;
 }
 #shippingEstimatorContent table tr:nth-child(odd):not(:first-child) {
-	background: aliceblue;
+	background: #F0F8FF;
 }
 #shippingEstimatorContent tr:nth-child(2n+1) {
 	background: #fff;
@@ -1079,7 +1079,7 @@ input.cssButton.submit_button.button.button_search {
 	padding:0px !important;
 	margin:0px !important;
 	display:flex;
-	color:blueviolet;
+	color: #8A2BE2;
 	font-size:1.3rem !important;
 	outline:none !important;
 	opacity: 1;
@@ -1120,7 +1120,7 @@ input.cssButton.submit_button.button.button_search {
 	opacity:0.5;
 }
 #loginDefault .button_submit{
-	background: blueviolet ;
+	background: #8A2BE2;
 	color: #fff;
 	margin-top:1rem;
 	margin-bottom:4rem;
@@ -1165,7 +1165,7 @@ div#loginDefault fieldset {
 	float:left;
 }
 #createAcctDefault .button_login {
-	background: green !important;
+	background: #008000 !important;
 	color: #fff;
 	margin-bottom:0.5rem;
 }
@@ -1173,7 +1173,7 @@ div#loginDefault fieldset {
 	opacity:0.5;
 }
 #createAcctDefault .button_submit{
-	background: blueviolet !important;
+	background: #8A2BE2 !important;
 	color: #fff;
 	margin-top:1rem;
 }

@@ -1784,6 +1784,34 @@ fieldset input[type=radio] {
     min-height: 44px;
     display: inline-block;
 }
+
+
+.skip-link:hover {background: #FFD700; opacity:0.5}
+.skip-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #FFD700;  
+    color: #000 !important;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    clip: rect(0 0 0 0); /* Hides the link off-screen */
+    width: 1px; /* Makes the link 1px wide */
+    height: 1px; /* Makes the link 1px tall */
+    overflow: hidden; /* Ensures the link is hidden */
+}
+.skip-link:focus {
+    color: #000;
+    opacity: 0.5;
+    clip: auto; /* Restores the visibility when focused */
+    width: auto; /* Restores the width when focused */
+    height: auto; /* Restores the height when focused */
+    overflow: visible; /* Ensures visibility when focused  */
+}
+
 @media (min-width: 576px) {
     .editelement a {
         float:right;

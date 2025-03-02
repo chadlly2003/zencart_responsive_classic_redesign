@@ -538,7 +538,7 @@ input.cssButton.submit_button.button.button_search {
 	min-height: 44px;
 	padding-left:0px;
 	padding-right:0px;
-	padding-top:0.5rem
+	padding-top:0.5rem 
 }
 #specialsHeading::before {
 	content: "\f02b";
@@ -672,7 +672,7 @@ input.cssButton.submit_button.button.button_search {
 	align-content: center;
 }
 #cartBoxListWrapper {
-   border-bottom: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
 }
 #shoppingcartHeading {
 	background: transparent;
@@ -694,7 +694,6 @@ input.cssButton.submit_button.button.button_search {
 	text-decoration: none;
 	min-height: 44px;
 	align-content: center;
-
 }
 #shoppingcartHeading::before {
 	content: "\f07a";
@@ -980,15 +979,15 @@ input.cssButton.submit_button.button.button_search {
 	width:100% !important;
 	color: #fff;
 	background-color: #006400;
-	border-color: #006400;
+	border-color: #006400 !important;
 	height: 48px;
 	font-size: 1.2em !important;
 }
 .button_search:hover {
 	width:100% !important;
 	color: #fff;
-	background-color: #28a745;
-	border-color: #28a745;
+	background-color: #006400;
+	border-color: #006400 !important;
 	opacity:0.5;
 	height: 48px;
 	font-size: 1.2em !important;

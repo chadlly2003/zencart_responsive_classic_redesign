@@ -28,7 +28,7 @@ label {
     position: relative;
 }
 #indexDefaultMainContent {
-    background:lavender;
+    background:#E6E6FA;
     padding:12px;
     color:#474747;
     border-radius: 10px;
@@ -100,7 +100,7 @@ ul.list-links li a {
 }
 .orderdates {
     text-align: left;
-    color:green;
+    color:#008000;
 }
 #accountHistoryDefault .notice {
     margin-top:0px !important;
@@ -170,7 +170,7 @@ ul.list-links li a {
     display:none 
 }
 .centerBoxContentsAlsoPurch:hover {
-    background:aliceblue !important;
+    background:#F0F8FF !important;
     border-radius: 5px;
 }
 #featuredProducts br {
@@ -434,11 +434,11 @@ form.sidebox-select-form select {
     margin-bottom:0.5rem;
 }
 form.sidebox-select-form select option:nth-child(1){
-    color:crimson;
+    color:#DC143C;
     font-weight: bold;
 }
 form.sidebox-select-form select {
-    color: crimson;
+    color: #DC143C;
 }
 form.sidebox-select-form option:not(:first-child) {
     color: initial;
@@ -559,7 +559,7 @@ input[type="checkbox"] {
     line-height: 27px;
     text-align: left;
     color: #000;
-    border-bottom: solid 1px cornflowerblue;
+    border-bottom: solid 1px #6495ED;
     margin-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 3rem;
@@ -572,13 +572,13 @@ input[type="checkbox"] {
     display:list-item;
     list-style: none;
     padding:0px;
-    color:blueviolet;
+    color: #8A2BE2;
 }
 #reviewsInfoDefault .button_more_reviews {
     display:list-item;
     list-style: none;
     padding:0px;
-    color:#4b0082 ;
+    color:#4b0082;
     text-align: left;
     float:left;
     min-height: 44px;
@@ -639,7 +639,7 @@ span.normal_button:hover {
     line-height: 27px;
     text-align: left;
     color: #000;
-    border-bottom: solid 1px cornflowerblue;
+    border-bottom: solid 1px #6495ED;
     margin-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 3rem;
@@ -732,7 +732,7 @@ span.normal_button:hover {
 }
 .reviews-wrapper .button_goto_prod_details:hover {
     background:transparent;
-    color:red 
+    color:#FF0000;
 }
 .reviews-wrapper .back {
     float:none;
@@ -770,7 +770,7 @@ span.normal_button:hover {
     vertical-align: inherit;
     font-size: 20px;
     font-weight:900;
-    color:darkorange;
+    color:#FF8C00;
     padding-right:0.5rem;
 }
 #categoriesHeading:before {
@@ -781,7 +781,7 @@ span.normal_button:hover {
     vertical-align: inherit;
     font-size: 20px;
     font-weight:900;
-    color:darkturquoise;
+    color:#00CED1;
     padding-right:0.5rem;
 }
 .button_write_review:before {
@@ -892,7 +892,7 @@ input[type="radio"], input[type="checkbox"] {
     float: none;
 }
 #accountNotifications fieldset:nth-of-type(2) {
-    background: lavender;
+    background: #E6E6FA;
     border-bottom: solid 1px #ccc;
     margin-bottom:2rem;
 }
@@ -1068,7 +1068,7 @@ input[type="radio"], input[type="checkbox"] {
     text-align: left;
 }
 #orderHistoryDetailedOrder .foward {
-    color:g 
+    color:#008000;
 }
 #accountHistInfo table td {
     padding:0.5rem;
@@ -1115,7 +1115,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 #checkoutShipping address {
     font-style: normal;
-    background: aliceblue;
+    background: #F0F8FF;
     padding: 1rem;
     margin-bottom: 2rem;
 }
@@ -1250,7 +1250,7 @@ input[type="radio"], input[type="checkbox"] {
     margin:1rem;
 }
 #checkoutConfirmDefault .rowOdd {
-    background-color: ghostwhite;
+    background-color: #F8F8FF;
 }
 #checkoutConfirmDefault .cartTotalDisplay {
     display: block;
@@ -1464,12 +1464,12 @@ fieldset input[type=radio] {
 }
 #myAccountShipInfo h4 {
     margin-bottom: 0.5rem;
-    color: blueviolet;
+    color: #8A2BE2;
     font-size: 1.3em;
 }
 #myAccountPaymentInfo h4 {
     margin-bottom: 0.5rem;
-    color: blueviolet;
+    color: #8A2BE2;
     font-size: 1.3em;
 }
 #myAccountShipInfo div {
@@ -1556,21 +1556,21 @@ fieldset input[type=radio] {
     font-size: 16px;
 }
 .show-all {
-   min-height: 44px;
-   display: block;
+    min-height: 44px;
+    display: block;
 }
 .show_orders {
-   margin-bottom:0px !important;
-   margin-top:0px;
+    margin-bottom:0px !important;
+    margin-top:0px;
 }
 #checkoutConfirmDefaultPayment {
-   color:#761bc9 !important;
+    color:#761bc9 !important;
 }
 .payment legend {
-   color:#761bc9 !important;
+    color:#761bc9 !important;
 }
 #checkoutConfirmDefaultShipment {
-   color:#761bc9 !important;
+    color:#761bc9 !important;
 }
 #shippingEstimatorContent td {
     vertical-align: middle;
@@ -1580,7 +1580,7 @@ fieldset input[type=radio] {
 }
 .cartRemoveItemDisplay .fa-xl {
     vertical-align:inherit !important;
-    color:grey;
+    color:#808080;
     font-size:1.3rem;
 }
 .image-grid img {
@@ -1663,7 +1663,7 @@ fieldset input[type=radio] {
     margin-right:15px;
 }
 .welcome_note {
-    background: cornsilk;
+    background: #FFF8DC;
     padding-top:0.5rem;
     padding-bottom:0.5rem;
     margin:auto;
@@ -1691,7 +1691,7 @@ fieldset input[type=radio] {
     display:none;
 }
 #productAttributes {
-    background-color: aliceblue;
+    background-color: #F0F8FF;
     padding:12px;
     margin-bottom:0rem;
     margin-top:2rem;
@@ -1786,7 +1786,7 @@ fieldset input[type=radio] {
 }
 @media (min-width: 576px) {
     .editelement a {
-       float:right;
+        float:right;
    }
     .changeaddress a {
         float:right;
@@ -2097,7 +2097,7 @@ fieldset input[type=radio] {
         float:right;
    }
     #siteinfoIP, #siteinfoLegal, #bannerSix{
-        background:gainsboro;
+        background:#DCDCDC;
         border:none;
         clear:both;
         margin-top:1rem;
@@ -2639,7 +2639,7 @@ fieldset input[type=radio] {
         float: left;
    }
     #shoppingcartBody .button_continue_shopping {
-        background: darkmagenta;
+        background: #8B008B;
         color:#fff;
         margin-top:0rem;
         margin-bottom:0px 

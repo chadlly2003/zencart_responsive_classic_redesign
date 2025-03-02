@@ -123,7 +123,10 @@ $zco_notifier->notify('NOTIFY_PAGE_BODY_BEGIN', $current_page);
   }
   require($template->get_template_dir('tpl_header.php',DIR_WS_TEMPLATE, $current_page_base,'common'). '/tpl_header.php');?>
 
-<div class="box_spacer">
+
+
+
+<div id="main-content" class="box_spacer">
   <div id="contentMainWrapper">
 
 <?php

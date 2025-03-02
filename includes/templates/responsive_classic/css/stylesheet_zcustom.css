@@ -37,7 +37,7 @@ label {
     word-wrap: break-word;
 }
 .logoff_style {
-    color:green !important;
+    color:#006400 !important;
     text-decoration: none !important;
 }
 /* make footer stay at bottom of page */
@@ -688,7 +688,7 @@ span.normal_button:hover {
     padding:0px;
 }
 .read_review a {
-   display: inline-block;
+    display: inline-block;
     min-height: 44px;
 }
 #reviewsDefault .spacerreviewsa {
@@ -1553,6 +1553,24 @@ fieldset input[type=radio] {
 }
 #checkoutConfirmDefaultHeadingComments {
     color:#154DBC;
+    font-size: 16px;
+}
+.show-all {
+   min-height: 44px;
+   display: block;
+}
+.show_orders {
+   margin-bottom:0px !important;
+   margin-top:0px;
+}
+#checkoutConfirmDefaultPayment {
+   color:#761bc9 !important;
+}
+.payment legend {
+   color:#761bc9 !important;
+}
+#checkoutConfirmDefaultShipment {
+   color:#761bc9 !important;
 }
 #shippingEstimatorContent td {
     vertical-align: middle;
@@ -1595,12 +1613,13 @@ fieldset input[type=radio] {
     color: #006400;
     padding-right: 0.5rem;
 }
-#myAccountGen li {
+#myAccountGen li a {
     display:flex;
-    padding-bottom:0.3rem;
+    min-height: 44px;
 }
-#myAccountNotify li {
-    margin-bottom:0.4rem;
+#myAccountNotify li a {
+    display:flex;
+    min-height: 44px;
 }
 .show_orders a:hover {
     opacity:0.5;
@@ -1762,10 +1781,16 @@ fieldset input[type=radio] {
     display: block 
 }
 #reviewsDefault .smallProductImage a {
-   min-height: 44px;
-   display: inline-block;
+    min-height: 44px;
+    display: inline-block;
 }
 @media (min-width: 576px) {
+    .editelement a {
+       float:right;
+   }
+    .changeaddress a {
+        float:right;
+   }
     .shoppingcart a {
         min-height: 44px;
         min-width: 44px;
@@ -1935,9 +1960,9 @@ fieldset input[type=radio] {
 }
 @media (min-width: 768px) {
     #reviewsDefault .smallProductImage a {
-       min-height: 44px;
-       display:block;
-       float:left;
+        min-height: 44px;
+        display:block;
+        float:left;
    }
     #reviewsWrite .center {
         display: flex;

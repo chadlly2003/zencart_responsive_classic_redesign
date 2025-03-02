@@ -370,6 +370,7 @@ caption {
     padding:0px;
     color:#900404;
     padding-bottom:1rem;
+    background: #fff;
 }
 #popupShippingEstimator #stText {
     display:none 

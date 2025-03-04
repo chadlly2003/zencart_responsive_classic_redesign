@@ -160,7 +160,7 @@ span.button_sold_out, span.button_sold_out:hover{
 	outline:none;
 }
 #productListing span.button_sold_out:hover {
-	opacity: 1 !important;
+	opacity: 0.5 !important;
 }
 #orderStatus br {
 	display:none;

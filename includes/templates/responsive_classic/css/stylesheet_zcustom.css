@@ -90,8 +90,6 @@ footer {
 ul.list-links li a {
     min-height: 44px;
     width: 100%;
-    display: flow-root;
-    align-content: center;
 }
 #orderhistory ul.list-links li a {
     width: auto 
@@ -290,8 +288,7 @@ caption {
 }
 #shoppingCartDefault .forward a {
     min-height: 44px;
-    display: block ruby;
-    align-content: center;
+    display: block;
 }
 .cartRemoveItemDisplay {
     display:none !important;
@@ -517,12 +514,11 @@ input[type="checkbox"] {
     color: #4b0082;
     opacity:1;
     display:list-item;
+    margin-left:1rem;
     opacity: 0.5;
     list-style: none;
     margin-left:0px;
     min-height: 44px;
-    display:block ruby;
-    align-content: center;
 }
 #reviewsWrite span.cssButton.normal_button {
     background: transparent;
@@ -532,11 +528,11 @@ input[type="checkbox"] {
     justify-content: left;
     padding:0px;
     outline:none;
-    display:flex;
+    display:list-item;
+    margin-left:1rem;
+    list-style: none;
     margin-left:0px;
     min-height: 44px;
-    display:block ruby;
-    align-content: center;
 }
 #reviewsWrite .button.button_goto_prod_details {
     background: transparent;
@@ -601,7 +597,6 @@ input[type="checkbox"] {
     outline:none;
     clear:both;
     min-height: 44px;
-    align-content: center;
 }
 #siteMapMainContent a {
     color:#154DBC;
@@ -676,13 +671,10 @@ span.normal_button:hover {
 #reviewsDefault .button_read_reviewsHover {
     background:transparent;
     margin-top:0px;
-    font-size:0.9rem; 
+    font-size:0.9rem;
+    display:block;
     opacity:0.5;
-    align-items: center;
-    display:flex;
     padding:0px;
-    align-items: center;
-    height: 44px;
 }
 #reviewsDefault .button_in_cartHover {
     width: calc(100% - 40px);
@@ -696,10 +688,8 @@ span.normal_button:hover {
     margin-top:0px;
     font-size:0.9rem;
     color:#154DBC;
-    display:flex;
+    display:block;
     padding:0px;
-    align-items: center;
-    height: 44px;
 }
 .read_review a {
     display: inline-block;
@@ -714,6 +704,7 @@ span.normal_button:hover {
     background: transparent;
     color:#8A4514;
     padding:0px;
+    display:inline-block !important;
     min-height: 44px;
 }
 .button_write_review {
@@ -724,8 +715,6 @@ span.normal_button:hover {
     padding:0px;
     background: transparent;
     min-height: 44px;
-    display: flow-root;
-    align-content: center;
 }
 .reviewligner .button_write_review {
     color:#8A4514;
@@ -1644,10 +1633,9 @@ fieldset input[type=radio] {
 }
 #reviewsDefault .button_goto_prod_details {
     padding:0px;
+    display: inline-block !important;
     outline:none;
     min-height: 44px;
-    align-content: center;
-    display: block;
 }
 .read_review {
     margin-top:1rem;

@@ -2696,8 +2696,7 @@ fieldset input[type=radio] {
     #productinfoBody .button_sold_out {
         color:#8B0000 !important;
         font-size:22px;
-        display:contents;
-        width:100%;
+        width:auto;
    }
     #productinfoBody #cartAdd a {
         font-size:22px;

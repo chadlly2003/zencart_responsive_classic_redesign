@@ -292,6 +292,7 @@ caption {
 #shoppingCartDefault .forward a {
     min-height: 44px;
     display: block;
+    align-content: center;
 }
 .cartRemoveItemDisplay {
     display:none !important;
@@ -522,6 +523,7 @@ input[type="checkbox"] {
     list-style: none;
     margin-left:0px;
     min-height: 44px;
+    align-content: center;
 }
 #reviewsWrite span.cssButton.normal_button {
     background: transparent;
@@ -536,6 +538,7 @@ input[type="checkbox"] {
     list-style: none;
     margin-left:0px;
     min-height: 44px;
+    align-content: center;
 }
 #reviewsWrite .button.button_goto_prod_details {
     background: transparent;
@@ -600,6 +603,8 @@ input[type="checkbox"] {
     outline:none;
     clear:both;
     min-height: 44px;
+    align-content: center;
+    padding:0px;
 }
 #siteMapMainContent a {
     color:#154DBC;
@@ -707,8 +712,8 @@ span.normal_button:hover {
     background: transparent;
     color:#8A4514;
     padding:0px;
-    display:inline-block !important;
     min-height: 44px;
+    align-content: center;
 }
 .button_write_review {
     background:transparent !important;
@@ -718,6 +723,7 @@ span.normal_button:hover {
     padding:0px;
     background: transparent;
     min-height: 44px;
+    align-items: center;
 }
 .reviewligner .button_write_review {
     color:#8A4514;
@@ -1567,7 +1573,9 @@ fieldset input[type=radio] {
 }
 .show-all {
     min-height: 44px;
-    display: block;
+    display: flex;
+    align-items: center;
+
 }
 .show_orders {
     margin-bottom:0px !important;
@@ -1626,10 +1634,12 @@ fieldset input[type=radio] {
 #myAccountGen li a {
     display:flex;
     min-height: 44px;
+    align-items: center;
 }
 #myAccountNotify li a {
     display:flex;
     min-height: 44px;
+    align-items: center;
 }
 .show_orders a:hover {
     opacity:0.5;
@@ -1639,6 +1649,7 @@ fieldset input[type=radio] {
     display: inline-block !important;
     outline:none;
     min-height: 44px;
+    align-content: center;
 }
 .read_review {
     margin-top:1rem;
@@ -1736,6 +1747,7 @@ fieldset input[type=radio] {
     margin-bottom:0.5rem;
     min-height: 44px;
     display: block;
+    align-content: center;
 }
 #productInfoLink {
     font-size: 1.2em;
@@ -2349,7 +2361,6 @@ fieldset input[type=radio] {
    }
     #reviewsInfoDefault span.normal_button {
         text-align: left;
-        padding:0px;
         margin:0px;
    }
     #reviewsDefault .productBasePrice {

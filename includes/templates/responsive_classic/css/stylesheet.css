@@ -665,6 +665,7 @@ ul.list-links li a, ol.list-links li a{
 	text-decoration: none;
 	padding-top:0px;
 	padding-bottom:0px;
+	align-content: center;
 }
 #cartBoxListWrapper li, .orderHistList li{
 	list-style-type:none;
@@ -732,6 +733,7 @@ ul.list-links li a {
 }
 .cartOldItem {
 	position:relative;
+	align-content: center;
 }
 .cartBoxTotal{
 	margin:0;
@@ -1022,6 +1024,7 @@ div#checkoutShippingContentChoose{
 	min-height: 44px;
 	display:inline-block;
 	min-width: 44px;
+	align-content: center;
 }
 .cart-add a {
 	min-height: 44px;
@@ -1557,6 +1560,7 @@ h2.greeting a:hover{
 #siteMapList ul li a {
 	min-height:44px;
 	display: list-item;
+	align-content: center;
 }
 #gvFaqDefaultContent{
 	line-height:20px;
@@ -1641,10 +1645,13 @@ span#askAQuestionButton:hover {
 }
 .moreinfoLink {
 	min-height: 44px;
+	align-content: center;
+
 }
 #loginDefault .important a {
 	min-height: 44px;
 	display: block;
+ 
 }
 #logo a {
 	min-height: 44px;
@@ -1657,6 +1664,7 @@ span#askAQuestionButton:hover {
 #gvFaqDefaultMainContent a {
 	min-height: 44px;
 	display: block;
+	align-content: center;
 }
 #gvFaqDefaultMainContent br {
 	display:none;

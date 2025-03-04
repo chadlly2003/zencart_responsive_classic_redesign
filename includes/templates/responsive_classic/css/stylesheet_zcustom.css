@@ -1861,6 +1861,14 @@ fieldset input[type=radio] {
    padding-left:0px;
     padding-right:0px;
 }
+
+.centerBoxContentsFeaturedCategories br {
+    display:none;
+}
+#specialsDefault br {
+    display:none;
+}
+
 @media (min-width: 576px) {
     .editelement a {
         float:right;

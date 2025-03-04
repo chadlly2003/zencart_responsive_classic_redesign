@@ -7,7 +7,7 @@ body, .messageStackSuccess, .messageStackCaution, #tagline, #productQuantityDisc
 	color:#000000;
 }
 a:link, a:visited, #navEZPagesTOC ul li a, a:hover, #navEZPagesTOC ul li a:hover, fieldset fieldset legend, .cartTotalDisplay, .cartOldItem, .specialsListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .list-price, .itemTitle a, h2.greeting, #icon, h1, .header {
-	color:#154DBC;
+	 
 	text-decoration: none;
 }
 .cat-count, .itemTitle a:hover, h2.greeting a:hover {
@@ -876,6 +876,7 @@ input.cssButton.submit_button.button.button_search {
 }
 #upcomingProductsTable tr:nth-child(odd) {
 	background-color: #F0F8FF;
+ 
 }
 #upcomingProductsTable th, td {
 	padding-top:0.5rem;

@@ -6,8 +6,9 @@
 	min-height: 44px;
 }
 #reviewsDefault .buttonRow a {
-   display:inline-block;
+   display:block ruby;
 	min-height: 44px;
+	align-content: center;
 }
 #reviewsDefault .button:active {
    outline:none;
@@ -266,8 +267,9 @@ input[type="search"] {
 	float:none;
 }
 #searchDefault .forward a {
-	display: block;
+	display: block ruby;
 	min-height: 44px;
+	align-content: center;
 }
 #searchDefault .buttonRow {
 	float:none;

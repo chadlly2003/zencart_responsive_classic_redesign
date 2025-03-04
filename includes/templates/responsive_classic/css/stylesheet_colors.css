@@ -538,7 +538,8 @@ input.cssButton.submit_button.button.button_search {
 	min-height: 44px;
 	padding-left:0px;
 	padding-right:0px;
-	padding-top:0.5rem 
+	padding-top:0.5rem;
+	align-items: center;
 }
 #specialsHeading::before {
 	content: "\f02b";

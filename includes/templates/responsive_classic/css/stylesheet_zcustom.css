@@ -90,6 +90,9 @@ footer {
 ul.list-links li a {
     min-height: 44px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #orderhistory ul.list-links li a {
     width: auto 

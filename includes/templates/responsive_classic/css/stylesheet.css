@@ -473,6 +473,7 @@ span.category-subs-selected {
 .category-subs-parent  {
 	color: #761bc9;
 	font-weight: bold;
+	display: contents;
 } 
 
 

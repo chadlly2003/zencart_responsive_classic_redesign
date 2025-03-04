@@ -528,18 +528,17 @@ input.cssButton.submit_button.button.button_search {
 	background: transparent;
 	border-radius: 0px;
 	color:#000;
-	margin-bottom: 1rem;
+	margin-bottom: 0rem;
 	text-align: left;
 	border-bottom:solid 1px #ccc;
 	font-size:16px;
 	margin-top: 1rem;
-	padding-bottom: 0.5rem;
 	display: flex;
 	min-height: 44px;
 	padding-left:0px;
 	padding-right:0px;
 	padding-top:0.5rem;
-	align-items: center;
+	padding-bottom:0px;
 }
 #specialsHeading::before {
 	content: "\f02b";

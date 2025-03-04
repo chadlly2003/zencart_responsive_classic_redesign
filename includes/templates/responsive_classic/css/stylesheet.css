@@ -467,7 +467,15 @@ select#country, select#stateZone, #state {
 }
 span.category-subs-selected {
 	font-weight: bold;
+	color: #761bc9;
 }
+
+.category-subs-parent  {
+	color: #761bc9;
+	font-weight: bold;
+} 
+
+
 /*top ezpages links*/
 #navEZPagesTop {
 	margin:0;

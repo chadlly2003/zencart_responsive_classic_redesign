@@ -1651,7 +1651,6 @@ span#askAQuestionButton:hover {
 #loginDefault .important a {
 	min-height: 44px;
 	display: block;
- 
 }
 #logo a {
 	min-height: 44px;
@@ -1668,4 +1667,10 @@ span#askAQuestionButton:hover {
 }
 #gvFaqDefaultMainContent br {
 	display:none;
+}
+#upcomingProductsTable a  {
+	color:#1450AF;
+}
+#upcomingProductsTable a:hover  {
+	text-decoration: underline;
 }

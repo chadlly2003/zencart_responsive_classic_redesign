@@ -1991,7 +1991,7 @@ fieldset input[type=radio] {
         gap:1;
    }
     .cartAttribsList {
-        padding-left:4rem;
+        padding-left:5rem;
    }
     #checkoutPayment .button_change_address {
         float:right;

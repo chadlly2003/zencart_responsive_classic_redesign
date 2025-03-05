@@ -90,10 +90,15 @@ footer {
 ul.list-links li a {
     min-height: 44px;
     width: 100%;
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
 }
+
+.category-subs-parent {
+    display: contents;
+}
+
 #orderhistory ul.list-links li a {
     width: auto 
 }

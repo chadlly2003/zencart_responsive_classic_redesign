@@ -1562,6 +1562,12 @@ h2.greeting a:hover{
 	display: list-item;
 	align-content: center;
 }
+
+#siteMapList > ul > li > a:first-child {
+    color: #7a1db1;
+}
+
+
 #gvFaqDefaultContent{
 	line-height:20px;
 	font-size:110%;

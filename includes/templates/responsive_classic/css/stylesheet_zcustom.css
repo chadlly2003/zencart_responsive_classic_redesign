@@ -1868,6 +1868,11 @@ fieldset input[type=radio] {
     display:none;
 }
 
+#siteinfoLegal a:first-of-type {
+    display: none !important;
+}
+
+
 @media (min-width: 576px) {
     .editelement a {
         float:right;

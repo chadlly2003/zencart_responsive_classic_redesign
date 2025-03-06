@@ -87,13 +87,6 @@ footer {
 .orderHistList li {
     padding:0px;
 }
-ul.list-links li a {
-    min-height: 44px;
-    width: 100%;
-    align-items: center;
-}
-
-ul.list-links li {min-height: 44px;}
 
 #orderhistory ul.list-links li a {
     width: auto 

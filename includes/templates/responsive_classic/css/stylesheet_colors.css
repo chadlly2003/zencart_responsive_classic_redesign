@@ -7,7 +7,7 @@ body, .messageStackSuccess, .messageStackCaution, #tagline, #productQuantityDisc
 	color:#000000;
 }
 a:link, a:visited, #navEZPagesTOC ul li a, a:hover, #navEZPagesTOC ul li a:hover, fieldset fieldset legend, .cartTotalDisplay, .cartOldItem, .specialsListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .list-price, .itemTitle a, h2.greeting, #icon, h1, .header {
-	color:#154DBC; 
+	color:#154DBC;
 	text-decoration: none;
 }
 .cat-count, .itemTitle a:hover, h2.greeting a:hover {
@@ -415,22 +415,41 @@ input.cssButton.submit_button.button.button_search {
 #brandsHeading {
 	background: transparent;
 	border-radius: 0px;
-	color:#000;
-	margin-bottom: 1rem;
-	padding-bottom:1rem;
+	color: #000;
+	margin-bottom: 0rem;
 	text-align: left;
-	border-bottom:solid 1px #ccc;
-	font-size:16px;
+	border-bottom: solid 1px #ccc;
+	font-size: 16px;
+	margin-top: 1rem;
+	display: flex;
+	min-height: 44px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0.5rem;
+	padding-bottom: 0px;
+}
+#languagesContent a {
+	min-height: 44px;
+	min-width:44px;
 }
 #featuredcategoriesHeading {
 	background: transparent;
 	border-radius: 0px;
-	color:#000;
-	margin-bottom: 1rem;
-	padding-bottom:1rem;
+	color: #000;
+	margin-bottom: 0rem;
 	text-align: left;
-	border-bottom:solid 1px #ccc;
-	font-size:16px;
+	border-bottom: solid 1px #ccc;
+	font-size: 16px;
+	margin-top: 1rem;
+	display: flex;
+	min-height: 44px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0.5rem;
+	padding-bottom: 0px;
+}
+#featuredcategoriesHeading a {
+   min-height: 60px;
 }
 #manufacturerinfoHeading:before {
 	content: "\f05a";
@@ -488,7 +507,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: #6495ED;
+	color: #1E3A8A;
 	padding-left: 0.5rem;
 }
 #searchHeading label {
@@ -511,7 +530,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: #8A2BE2;
+	color: #4B0072;
 	padding-right: 0.5rem;
 }
 #orderhistoryHeading {
@@ -546,7 +565,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: #C71585;
+	color: #8B0061;
 	padding-right: 0.5rem;
 }
 #bannerboxallHeading {
@@ -565,7 +584,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: #8f00ff;
+	color: #5A0088;
 	padding-right: 0.5rem;
 }
 #searchHeading{
@@ -584,7 +603,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: #CD853F;
+	color: #5F3B1A;
 	padding-right: 0.5rem;
 	float:left;
 }
@@ -623,7 +642,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: #9ACD32;
+	color: #2A4D00;
 	padding-right: 0.5rem;
 }
 #whosonlineHeading {
@@ -642,7 +661,7 @@ input.cssButton.submit_button.button.button_search {
 	vertical-align: inherit;
 	font-size: 20px;
 	font-weight: 900;
-	color: #FFC0CB;
+	color: #9B0041;
 	padding-right: 0.5rem;
 }
 #productnotificationsHeading {
@@ -875,7 +894,6 @@ input.cssButton.submit_button.button.button_search {
 }
 #upcomingProductsTable tr:nth-child(odd) {
 	background-color: #F0F8FF;
- 
 }
 #upcomingProductsTable th, td {
 	padding-top:0.5rem;

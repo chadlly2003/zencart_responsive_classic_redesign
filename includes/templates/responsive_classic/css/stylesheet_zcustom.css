@@ -87,7 +87,6 @@ footer {
 .orderHistList li {
     padding:0px;
 }
-
 #orderhistory ul.list-links li a {
     width: auto 
 }
@@ -776,7 +775,7 @@ span.normal_button:hover {
     vertical-align: inherit;
     font-size: 20px;
     font-weight:900;
-    color:#FF8C00;
+    color:#8B4500;
     padding-right:0.5rem;
 }
 #categoriesHeading:before {
@@ -787,7 +786,7 @@ span.normal_button:hover {
     vertical-align: inherit;
     font-size: 20px;
     font-weight:900;
-    color:#00CED1;
+    color:#004D4D;
     padding-right:0.5rem;
 }
 .button_write_review:before {
@@ -1568,7 +1567,6 @@ fieldset input[type=radio] {
     min-height: 44px;
     display: flex;
     align-items: center;
-
 }
 .show_orders {
     margin-bottom:0px !important;
@@ -1799,8 +1797,8 @@ fieldset input[type=radio] {
     display: inline-block;
 }
 .skip-link:hover {
-   background: #FFD700;
-    opacity:0.5
+    background: #FFD700;
+    opacity:0.5 
 }
 .skip-link {
     position: absolute;
@@ -1835,37 +1833,33 @@ fieldset input[type=radio] {
    /* Ensures visibility when focused */
 }
 .accountOrderDate {
-   vertical-align: middle;
+    vertical-align: middle;
 }
 .accountOrderId {
-   vertical-align: middle;
+    vertical-align: middle;
 }
 .accountOrderAddress {
-   vertical-align: middle;
+    vertical-align: middle;
 }
 .accountOrderStatus {
-   vertical-align: middle;
+    vertical-align: middle;
 }
 .accountOrderTotal {
-   vertical-align: middle;
+    vertical-align: middle;
 }
 .centerColumn {
-   padding-left:0px;
+    padding-left:0px;
     padding-right:0px;
 }
-
 .centerBoxContentsFeaturedCategories br {
     display:none;
 }
 #specialsDefault br {
     display:none;
 }
-
 #siteinfoLegal a:first-of-type {
     display: none !important;
 }
-
-
 @media (min-width: 576px) {
     .editelement a {
         float:right;

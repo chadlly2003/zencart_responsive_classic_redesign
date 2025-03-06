@@ -497,7 +497,7 @@ input[type="checkbox"] {
     margin-bottom:2rem 
 }
 #reviewsWrite input.cssButtonHover {
-    opacity:0.5;
+    opacity:0.8;
 }
 #reviewsWrite #reviewWriteMainImage {
     margin:0px;
@@ -508,10 +508,9 @@ input[type="checkbox"] {
     justify-content:left;
     padding:0px;
     color: #4b0082;
-    opacity:1;
     display:list-item;
     margin-left:1rem;
-    opacity: 0.5;
+    opacity: 0.8;
     list-style: none;
     margin-left:0px;
     min-height: 44px;
@@ -618,10 +617,10 @@ input[type="checkbox"] {
     display: block;
 }
 span.normal_button:hover {
-    opacity:0.5 !important;
+    opacity:0.8 !important;
 }
 #reviewsInfoDefaultReviewsListingLink span.normal_button:hover {
-    opacity:0.5;
+    opacity:0.8;
     background: transparent;
 }
 .reviews-wrapper {
@@ -673,7 +672,7 @@ span.normal_button:hover {
     margin-top:0px;
     font-size:0.9rem;
     display:block;
-    opacity:0.5;
+    opacity:0.8;
     padding:0px;
 }
 #reviewsDefault .button_in_cartHover {
@@ -805,7 +804,7 @@ span.normal_button:hover {
     text-align: center;
 }
 .button_update:hover {
-    opacity:0.5;
+    opacity:0.8;
 }
 #ezpages ul.list-links li {
     display:list-item;
@@ -881,7 +880,7 @@ input[type="radio"], input[type="checkbox"] {
     margin-bottom: 1rem;
 }
 #acctNewslettersDefault .button_update:hover {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 #accountNotifications LABEL.checkboxLabel {
     margin:0px;
@@ -906,7 +905,7 @@ input[type="radio"], input[type="checkbox"] {
     padding-right:6px;
 }
 #accountNotifications .button_update:hover {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 #accountNotifications .notice {
     padding-bottom:1rem;
@@ -930,13 +929,13 @@ input[type="radio"], input[type="checkbox"] {
     float: none;
 }
 #addressbookprocessBody .button_deleteHover {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 #addressbookprocessBody .button_update {
     margin-top:1rem;
 }
 #addressbookprocessBody .button_update:hover {
-    opacity:0.5 ;
+    opacity:0.8;
     margin-top:1rem;
 }
 #accountpasswordBody .forward {
@@ -946,7 +945,7 @@ input[type="radio"], input[type="checkbox"] {
     float: none;
 }
 #accountpasswordBody .button_submit:hover {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 #accountpasswordBody .button_submit {
     margin-top:1rem;
@@ -958,7 +957,7 @@ input[type="radio"], input[type="checkbox"] {
     float: none;
 }
 #accounteditBody .button_update:hover {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 #addressBookDefault .forward {
     float: none;
@@ -1159,7 +1158,7 @@ input[type="radio"], input[type="checkbox"] {
     float:none 
 }
 #checkoutShipping .button_continue_checkout:hover {
-    opacity:0.5;
+    opacity:0.8;
 }
 #checkoutShipping textarea {
     text-align: left;
@@ -1185,7 +1184,7 @@ input[type="radio"], input[type="checkbox"] {
     display:none 
 }
 #checkoutPayment .button_continue_checkout:hover {
-    opacity:0.5;
+    opacity:0.8;
     margin-top:1rem;
 }
 #checkoutPayment .button_continue_checkout {
@@ -1272,7 +1271,7 @@ input[type="radio"], input[type="checkbox"] {
     float:none;
 }
 #checkoutConfirmDefault input.cssButtonHover {
-    opacity:0.5;
+    opacity:0.8;
 }
 #checkoutConfirmDefault address{
     margin-bottom:2rem 
@@ -1352,7 +1351,7 @@ fieldset input[type=radio] {
     margin-bottom:0.5rem 
 }
 #addressBookProcessDefault input.cssButtonHover {
-    opacity:0.5;
+    opacity:0.8;
     margin-top:1rem 
 }
 #addressBookProcessDefault input.submit_button {
@@ -1434,7 +1433,7 @@ fieldset input[type=radio] {
     margin-bottom:1rem !important;
 }
 .button.button_back:hover {
-    opacity:0.5;
+    opacity:0.8;
     color:#fff;
     background-color: #0056B3;
     border-color: #0056B3;
@@ -1611,7 +1610,7 @@ fieldset input[type=radio] {
     vertical-align: middle;
 }
 .logoff_style:hover {
-    opacity: 0.5 !important;
+    opacity: 0.8 !important;
 }
 .logoff_style::before {
     content: "\f08b";
@@ -1633,7 +1632,7 @@ fieldset input[type=radio] {
     align-items: center;
 }
 .show_orders a:hover {
-    opacity:0.5;
+    opacity:0.8;
 }
 #reviewsDefault .button_goto_prod_details {
     padding:0px;
@@ -1798,7 +1797,7 @@ fieldset input[type=radio] {
 }
 .skip-link:hover {
     background: #FFD700;
-    opacity:0.5 
+    opacity:0.8; 
 }
 .skip-link {
     position: absolute;
@@ -1822,7 +1821,7 @@ fieldset input[type=radio] {
 }
 .skip-link:focus {
     color: #000;
-    opacity: 0.5;
+    opacity: 0.8;
     clip: auto;
    /* Restores the visibility when focused */
     width: auto;

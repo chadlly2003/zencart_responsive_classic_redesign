@@ -657,7 +657,6 @@ ul.list-links, ol.list-links{
 }
 ul.list-links li{
 	list-style-type:none;
-	display: flex;
 }
 ul.list-links li a, ol.list-links li a{
 	min-height: 44px;

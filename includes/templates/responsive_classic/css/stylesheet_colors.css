@@ -142,7 +142,7 @@ span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.
 }
 #filter-wrapper, span.normal_button:hover, span.cssButton.normal_button.button.button_goto_prod_details, .button_add_selected:hover{
 	background:#ccc;
-	opacity:0.5;
+	opacity:0.8;
 }
 .button_in_cart:hover{
 	background-color:#000;
@@ -409,7 +409,7 @@ input.cssButton.submit_button.button.button_search {
 }
 #currencies input.cssButtonHover {
 	width:auto !important;
-	opacity: .5;
+	opacity: 0.8;
 	background: #DEB887;
 }
 #brandsHeading {
@@ -614,7 +614,7 @@ input.cssButton.submit_button.button.button_search {
 }
 .sidebox-select-form .button_submit:hover {
 	width:auto !important;
-	opacity:0.5;
+	opacity:0.8;
 	background:#ccc;
 	margin-bottom:1rem;
 }
@@ -938,14 +938,14 @@ input.cssButton.submit_button.button.button_search {
 	font-size: 18px;
 }
 #productListing a:nth-of-type(2):hover {
-	opacity: 0.5;
+	opacity: 0.8;
 }
 #allProductsDefault a:nth-of-type(2) {
 	color:#7a1db1 !important;
 	font-size: 18px;
 }
 #allProductsDefault a:nth-of-type(2):hover {
-	opacity:0.5;
+	opacity:0.8;
 }
 .productListing-even input {
 	padding:0px;
@@ -1007,7 +1007,7 @@ input.cssButton.submit_button.button.button_search {
 	color: #fff;
 	background-color: #006400;
 	border-color: #006400 !important;
-	opacity:0.5;
+	opacity:0.8;
 	height: 48px;
 	font-size: 1.2em !important;
 }
@@ -1136,7 +1136,7 @@ input.cssButton.submit_button.button.button_search {
 	margin-bottom:0.5rem;
 }
 #loginDefault .button_login:hover {
-	opacity:0.5;
+	opacity:0.8;
 }
 #loginDefault .button_submit{
 	background: #8A2BE2;
@@ -1145,7 +1145,7 @@ input.cssButton.submit_button.button.button_search {
 	margin-bottom:4rem;
 }
 #loginDefault .button_submit:hover{
-	opacity:0.5;
+	opacity:0.8;
 }
 #loginDefault .forward {
 	width: 100%;
@@ -1155,7 +1155,7 @@ div#loginDefault fieldset {
 	margin-bottom: 0px;
 }
 #loginDefault input.cssButtonHover {
-	opacity:.5;
+	opacity:0.8;
 }
 #createAcctDefault br {
 	display:none !important;
@@ -1189,7 +1189,7 @@ div#loginDefault fieldset {
 	margin-bottom:0.5rem;
 }
 #createAcctDefault .button_login:hover {
-	opacity:0.5;
+	opacity:0.8;
 }
 #createAcctDefault .button_submit{
 	background: #8A2BE2 !important;
@@ -1197,7 +1197,7 @@ div#loginDefault fieldset {
 	margin-top:1rem;
 }
 #createAcctDefault .button_submit:hover{
-	opacity:0.5;
+	opacity:0.8;
 }
 #createAcctDefault .forward {
 	width: 100%;
@@ -1208,7 +1208,7 @@ div#createAcctDefault fieldset {
 	margin-bottom: 0px !important 
 }
 #createAcctDefault input.cssButtonHover {
-	opacity:.5 !important;
+	opacity: 0.8 !important;
 }
 TEXTAREA {
 	text-align: left !important;

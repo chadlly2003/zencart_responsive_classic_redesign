@@ -611,7 +611,7 @@ input.cssButton.submit_button.button.button_search {
 }
 .sidebox-select-form input.submit_button {
 	width:auto !important;
-	background:#8b008b;
+	background:#8b008b !important;
 	border:solid 1px #8b008b !important;
 	margin-bottom:1rem;
 	color:#fff;
@@ -619,7 +619,7 @@ input.cssButton.submit_button.button.button_search {
 .sidebox-select-form .button_submit:hover {
 	width:auto !important;
 	background:#fff;
-	color:#8b008b;
+	color:#8b008b !important;
 	border:solid 1px #8b008b !important;
 	margin-bottom:1rem;
 }

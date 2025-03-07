@@ -142,7 +142,6 @@ span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.
 }
 #filter-wrapper, span.normal_button:hover, span.cssButton.normal_button.button.button_goto_prod_details, .button_add_selected:hover{
 	background:#ccc;
-	opacity:0.8;
 }
 .button_in_cart:hover{
 	background-color:#000;
@@ -1196,13 +1195,18 @@ div#loginDefault fieldset {
 	opacity:0.8;
 }
 #createAcctDefault .button_submit{
-	background: #8A2BE2 !important;
+	background: #6A1BC1 !important;
+	border:solid 1px #6A1BC1 !important;
 	color: #fff;
 	margin-top:1rem;
 }
 #createAcctDefault .button_submit:hover{
-	opacity:0.8;
+	background: #fff !important;
+	border:solid 1px #6A1BC1 !important;
+	color: #6A1BC1;
+	margin-top:1rem;
 }
+
 #createAcctDefault .forward {
 	width: 100%;
 	margin-top:0;

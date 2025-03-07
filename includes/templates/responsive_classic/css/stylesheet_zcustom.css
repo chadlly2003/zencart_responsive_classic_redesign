@@ -672,7 +672,6 @@ span.normal_button:hover {
     margin-top:0px;
     font-size:0.9rem;
     display:block;
-    opacity:0.8;
     padding:0px;
 }
 #reviewsDefault .button_in_cartHover {
@@ -732,7 +731,6 @@ span.normal_button:hover {
 }
 .reviews-wrapper .button_goto_prod_details {
     background: transparent;
-    opacity:1;
 }
 .reviews-wrapper .button_goto_prod_details:hover {
     background:transparent;

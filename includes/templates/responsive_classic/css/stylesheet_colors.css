@@ -1138,18 +1138,8 @@ input.cssButton.submit_button.button.button_search {
 	border-color: #006400 !important;
 	color: #006400;;
 }
-#loginDefault .button_submit{
-	background: #6A1BC1;
-	border-color: #6A1BC1 !important;
-	color: #fff;
-	margin-top:1rem;
-	margin-bottom:4rem;
-}
-#loginDefault .button_submit:hover{
-	border-color: #6A1BC1 !important;
-	background: #fff;
-	color:#6A1BC1;
-}
+
+ 
 #loginDefault .forward {
 	width: 100%;
 	margin-bottom:0rem;

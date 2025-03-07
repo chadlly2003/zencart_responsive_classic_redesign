@@ -1850,6 +1850,22 @@ fieldset input[type=radio] {
 #siteinfoLegal a:first-of-type {
     display: none !important;
 }
+
+.button_create_account {
+    width:auto !important;
+    margin-bottom:1rem;
+    color:#fff!important;
+    border:solid 1px #AC171D !important;
+    background:#AC171D !important;
+}
+.button_create_accountHover {
+    width:auto !important;
+    margin-bottom:1rem;
+    color:#AC171D !important;
+    border:solid 1px #AC171D !important;
+    background:#fff !important;
+    color:#AC171D;
+}
 @media (min-width: 576px) {
     .editelement a {
         float:right;

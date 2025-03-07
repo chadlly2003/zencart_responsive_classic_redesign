@@ -405,12 +405,16 @@ input.cssButton.submit_button.button.button_search {
 }
 #currencies input.submit_button {
 	width:auto !important;
-	background: #DEB887;
+	background-color: #5A3C1D;
+	border-color: #5A3C1D !important;
+	color:#fff;
 }
 #currencies input.cssButtonHover {
 	width:auto !important;
-	opacity: 0.8;
-	background: #DEB887;
+	color: #5A3C1D;
+	background-color: #fff;
+	border-color: #5A3C1D !important;
+	 
 }
 #brandsHeading {
 	background: transparent;
@@ -609,13 +613,16 @@ input.cssButton.submit_button.button.button_search {
 }
 .sidebox-select-form input.submit_button {
 	width:auto !important;
-	background:#ccc;
+	background:#555;
+	border:solid 1px #555 !important;
 	margin-bottom:1rem;
+	color:#fff;
 }
 .sidebox-select-form .button_submit:hover {
 	width:auto !important;
-	opacity:0.8;
-	background:#ccc;
+	background:#fff;
+	color:#555;
+	border:solid 1px #555 !important;
 	margin-bottom:1rem;
 }
 #select-record_company_id {
@@ -1005,9 +1012,9 @@ input.cssButton.submit_button.button.button_search {
 .button_search:hover {
 	width:100% !important;
 	color: #fff;
-	background-color: #006400;
+	background-color: #fff;
 	border-color: #006400 !important;
-	opacity:0.8;
+	color: #006400;
 	height: 48px;
 	font-size: 1.2em !important;
 }

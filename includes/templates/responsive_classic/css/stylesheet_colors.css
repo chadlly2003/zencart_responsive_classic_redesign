@@ -340,7 +340,6 @@ input.cssButton.submit_button.button.button_search {
 	display: none;
 }
 #filter-wrapper {
-	opacity:1 !important;
 	background:#fff;
 }
 #headerWrapper input[type="checkbox"] {
@@ -405,15 +404,15 @@ input.cssButton.submit_button.button.button_search {
 }
 #currencies input.submit_button {
 	width:auto !important;
-	background-color: #4B3D8D;;
-	border-color: #4B3D8D !important;
+	background-color: #AC171D;
+	border-color: #AC171D !important;
 	color:#fff;
 }
 #currencies input.cssButtonHover {
 	width:auto !important;
-	color: #4B3D8D;
+	color: #AC171D;
 	background-color: #fff;
-	border-color: #4B3D8D !important;
+	border-color: #AC171D !important;
 	 
 }
 #brandsHeading {
@@ -839,7 +838,6 @@ input.cssButton.submit_button.button.button_search {
 #productreviewsinfoBody .button_goto_prod_details {
 	background:transparent !important;
 	color:#154DBC;
-	opacity:1;
 	font-size:16px;
 }
 .reviewligner span.normal_button {
@@ -1102,7 +1100,6 @@ input.cssButton.submit_button.button.button_search {
 	color: #8A2BE2;
 	font-size:1.3rem !important;
 	outline:none !important;
-	opacity: 1;
 	width: auto !important;
 	float:left;
 	border:none !important;

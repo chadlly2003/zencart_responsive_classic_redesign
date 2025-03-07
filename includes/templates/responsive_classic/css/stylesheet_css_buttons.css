@@ -210,18 +210,18 @@ input[type="search"] {
 #manufacturers .submit_button {
 	border-radius: 0.25rem;
 	font-size: 1.2em;
-	color: #000;
-	background-color: #DEB887;
-	border-color: #DEB887;
+	color: #fff;
+	background-color: #5A3C1D;
+	border-color: #5A3C1D !important;
 	margin-bottom:1rem;
 }
 #manufacturers input.cssButtonHover {
 	opacity:0.8;
 	border-radius: 0.25rem;
 	font-size: 1.2em;
-	color: #000;
-	background-color: #DEB887;
-	border-color: #DEB887;
+	color: #5A3C1D;
+	background-color: #fff;
+	border-color: #5A3C1D !important;
 	margin-bottom:1rem;
 }
 #aboutusBody .buttonRow {

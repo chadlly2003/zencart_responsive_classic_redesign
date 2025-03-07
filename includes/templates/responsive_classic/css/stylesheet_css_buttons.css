@@ -35,7 +35,6 @@ input.submit_button:hover {
 	display: inline-block;
 	margin:0;
 	border-radius: 0.25rem;
-	opacity:0.8;
 	width: 100%;
 }
 input.cssButtonHover {
@@ -46,7 +45,7 @@ input.cssButtonHover {
 	margin:0;
 	border-radius: 0.25rem;
 	width: 100% !important;
-	opacity: 0.8;
+
 }
 span.normal_button {
 	font-size: 1.2em;
@@ -224,9 +223,17 @@ input[type="search"] {
 #passwordforgottenBody .buttonRow {
 	float:none;
 }
-#passwordforgottenBody input.cssButtonHover {
-	opacity:0.8;
-}
+
+.button_submit {
+	background-color: #AC171D !important;
+	border:solid 1px #AC171D !important; 
+	color:#fff !important;}
+
+
+.button_submit:hover {
+	background-color: #fff !important;
+	border:solid 1px #AC171D !important; 
+	color:#AC171D !important;}
 
 #privacyBody .buttonRow {
 	float:none;
@@ -443,7 +450,20 @@ input[type="search"] {
 .button_add_selected {
 	padding: 12px 20px;
 	height: auto;
+	background-color: #8b008b !important;
+	border:solid 1px  #8b008b !important;
+	color:#fff !important;
 }
+
+.button_add_selected:hover {
+	background-color: #fff!important;
+	border:solid 1px  #8b008b !important;
+	color:#8b008b  !important;
+
+}
+
+
+
 .button_continue {
 	padding: 12px 20px;
 	height: auto;

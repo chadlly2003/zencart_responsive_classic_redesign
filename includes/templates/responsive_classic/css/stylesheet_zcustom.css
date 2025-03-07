@@ -511,7 +511,6 @@ input[type="checkbox"] {
     color: #4b0082;
     display:list-item;
     margin-left:1rem;
-    opacity: 0.8;
     list-style: none;
     margin-left:0px;
     min-height: 44px;
@@ -1427,17 +1426,17 @@ fieldset input[type=radio] {
 .button.button_back {
     color:#fff;
     background-color: #0056B3;
-    border-color: #0056B3;
+    border:solid 1px #0056B3 !important;
     font-size: 1.2em;
     border-radius: 0.25rem;
     margin-top:1rem !important;
     margin-bottom:1rem !important;
 }
 .button.button_back:hover {
-    opacity:0.8;
-    color:#fff;
-    background-color: #0056B3;
-    border-color: #0056B3;
+  
+    color:#0056B3;
+    background-color: #FFF;
+    border: solid 1px #0056B3 !important;
     font-size: 1.2em;
     border-radius: 0.25rem;
 }
@@ -1610,9 +1609,7 @@ fieldset input[type=radio] {
     display:block;
     vertical-align: middle;
 }
-.logoff_style:hover {
-    opacity: 0.8 !important;
-}
+ 
 .logoff_style::before {
     content: "\f08b";
     font-family: "Font Awesome 6 Free";
@@ -1632,9 +1629,7 @@ fieldset input[type=radio] {
     min-height: 44px;
     align-items: center;
 }
-.show_orders a:hover {
-    opacity:0.8;
-}
+
 #reviewsDefault .button_goto_prod_details {
     padding:0px;
     display: inline-block !important;

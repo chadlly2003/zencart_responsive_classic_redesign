@@ -1986,6 +1986,20 @@ fieldset input[type=radio] {
     background:#fff !important;
     color:#AC171D;
 }
+
+
+.button_login { 
+    color:#fff!important;
+    border:solid 1px #006400 !important;
+    background:#006400 !important;
+}
+.button_login:hover {
+    color:#006400 !important;
+    border:solid 1px #006400 !important;
+    background:#fff !important;
+}
+
+
 @media (min-width: 576px) {
     .editelement a {
         float:right;

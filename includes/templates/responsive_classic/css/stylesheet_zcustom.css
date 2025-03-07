@@ -1542,7 +1542,7 @@ fieldset input[type=radio] {
 }
 .button.button_back {
     color:#fff;
-    background-color: #0056B3 !;
+    background-color: #0056B3 !important;
     border:solid 1px #0056B3 !important;
     font-size: 1.2em;
     border-radius: 0.25rem;
@@ -1551,7 +1551,7 @@ fieldset input[type=radio] {
 }
 .button.button_back:hover {
     color:#0056B3 !important;
-    background-color: #FFF;
+    background-color: #FFF !important;
     border: solid 1px #0056B3 !important;
     font-size: 1.2em;
     border-radius: 0.25rem;
@@ -2346,6 +2346,20 @@ fieldset input[type=radio] {
     #indexProductList .button_buy_now {
         float:right;
    }
+
+   .button_buy_now {
+    background:#AC171D !important; 
+    border:solid 1px #AC171D !important; 
+    color:#fff !important;
+}
+
+.button_buy_now:hover {
+    background: #fff !important; 
+    border:solid 1px #AC171D !important; 
+    color:#AC171D !important;
+}
+
+
     #indexProductList .qmax {
         float:right;
         margin-top:0;

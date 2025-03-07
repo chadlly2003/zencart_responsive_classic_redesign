@@ -295,14 +295,17 @@ input[type="search"] {
 	float:none;
 }
 #cartAdd input[type="submit"] {
-	background:  #8A2BE2;
+	background:  #7A1BCE;
+	border-color:  #7A1BCE !important;
 	color: #fff;
 	font-size:18px;
 	padding:12px 20px;
 	height: auto;
 }
 #cartAdd input[type="submit"]:hover {
-	opacity:0.8;
+	background:#fff;
+	border-color:#7A1BCE !important;
+	color: #7A1BCE;
 }
 #cartAdd input[type="text"] {
 	width: 20% !important;

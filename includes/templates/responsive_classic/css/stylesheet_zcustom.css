@@ -497,9 +497,6 @@ input[type="checkbox"] {
     margin-top:2rem;
     margin-bottom:2rem 
 }
-#reviewsWrite input.cssButtonHover {
-    opacity:0.8;
-}
 #reviewsWrite #reviewWriteMainImage {
     margin:0px;
 }
@@ -868,9 +865,6 @@ input[type="radio"], input[type="checkbox"] {
 #acctNewslettersDefault fieldset {
     margin-bottom: 1rem;
 }
-#acctNewslettersDefault .button_update:hover {
-    opacity: 0.8;
-}
 #accountNotifications LABEL.checkboxLabel {
     margin:0px;
     display:flex;
@@ -893,68 +887,131 @@ input[type="radio"], input[type="checkbox"] {
     padding-left:6px;
     padding-right:6px;
 }
-#accountNotifications .button_update:hover {
-    opacity: 0.8;
-}
 #accountNotifications .notice {
     padding-bottom:1rem;
     display:block;
 }
-
 .button_view {
-    background-color:#FFD700; 
+    background-color:#FFD700;
     border:solid 1px #FFD700 !important;
     color:#000 !important 
 }
-.button_view:hover {  
-    background-color:#fff !important; 
+.button_view:hover {
+    background-color:#fff !important;
     border:solid 1px #FFD700 !important;
 }
-
-.button.small_edit     
-{background-color:#FFD700; 
-border:solid 1px #FFD700 !important;
-color:#000 !important 
-}
-
-.button.small_edit:hover     {
-background-color:#fff; 
-border:solid 1px #FFD700 !important;
-color:#000 !important 
-}
-
-#addressBookDefault span.normal_button {background-color:#FFD700; 
-border:solid 1px #FFD700 !important;
-color:#000 !important 
-}
-
-#addressBookDefault span.normal_button:hover  {
-    background-color:#fff; 
+.button.small_edit {
+   background-color:#FFD700;
     border:solid 1px #FFD700 !important;
     color:#000 !important 
 }
-
+.button.small_edit:hover {
+    background-color:#fff;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+#addressBookDefault span.normal_button {
+   background-color:#FFD700;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+#addressBookDefault span.normal_button:hover {
+    background-color:#fff;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
 #reviewsInfoDefault span.cssButton.normal_button.button.button_in_cart {
-    background-color:#FFD700; 
+    background-color:#FFD700;
     border:solid 1px #FFD700 !important;
     color:#000 !important 
 }
-#reviewsInfoDefault .button_in_cart:hover {    
-    background-color:#fff; 
+#reviewsInfoDefault .button_in_cart:hover {
+    background-color:#fff;
     border:solid 1px #FFD700 !important;
-    color:#000 !important }
-
-
-.button_delete {background-color:#AC171D !important; 
-border:solid 1px #AC171D !important;
-color:#fff !important }
-
-#addressBookProcessDefault input.cssButtonHover:hover 
-{background-color:#fff !important; 
-border:solid 1px #AC171D !important;
-color:#AC171D !important }
-
-
+    color:#000 !important 
+}
+#checkoutShipping .button_change_address {
+    background-color:#FFD700;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+#checkoutShipping .button_change_address:hover {
+    background-color:#fff;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+#checkoutPayment .button_change_address {
+    background-color:#FFD700;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+#checkoutPayment .button_change_address:hover {
+    background-color:#fff;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+#linkContactUs .button_contact_us {
+    background-color:#FFD700;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+#linkContactUs .button_contact_us:hover {
+    background-color:#fff;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+#linkMyAccount .button_my_orders {
+   background-color:#FFD700;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+#linkMyAccount .button_my_orders:hover {
+    background-color:#fff;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+#linkLogoff .button_logoff {
+   background-color:#FFD700;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+#linkLogoff .button_logoff:hover {
+    background-color:#fff;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+.box_review_spacver span.normal_button {
+   background-color:#FFD700;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important;
+    width: calc(100% - 40px);
+}
+.box_review_spacver span.normal_button:hover {
+    background-color:#fff;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important;
+    width: calc(100% - 40px);
+}
+#unsubscribeBody span.normal_button {
+   background-color:#FFD700;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+#unsubscribeBody span.normal_button:hover {
+    background-color:#fff !important;
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+.button_delete {
+   background-color:#AC171D !important;
+    border:solid 1px #AC171D !important;
+    color:#fff !important 
+}
+#addressBookProcessDefault input.cssButtonHover:hover {
+   background-color:#fff !important;
+    border:solid 1px #AC171D !important;
+    color:#AC171D !important 
+}
 #accountDefault h2 {
     background: transparent;
     color:#000;
@@ -972,14 +1029,10 @@ color:#AC171D !important }
 #addressbookprocessBody .back {
     float: none;
 }
-#addressbookprocessBody .button_deleteHover {
-    opacity: 0.8;
-}
 #addressbookprocessBody .button_update {
     margin-top:1rem;
 }
 #addressbookprocessBody .button_update:hover {
-    opacity:0.8;
     margin-top:1rem;
 }
 #accountpasswordBody .forward {
@@ -987,9 +1040,6 @@ color:#AC171D !important }
 }
 #accountpasswordBody .back {
     float: none;
-}
-#accountpasswordBody .button_submit:hover {
-    opacity: 0.8;
 }
 #accountpasswordBody .button_submit {
     margin-top:1rem;
@@ -999,9 +1049,6 @@ color:#AC171D !important }
 }
 #accounteditBody .back {
     float: none;
-}
-#accounteditBody .button_update:hover {
-    opacity: 0.8;
 }
 #addressBookDefault .forward {
     float: none;
@@ -1335,14 +1382,14 @@ color:#AC171D !important }
     color:#006400 !important;
 }
 .button_update {
-   color:#fff !important;
+    color:#fff !important;
     border:solid 1px #AC171D !important;
-   background: #AC171D !important;
+    background: #AC171D !important;
 }
 .button_update:hover {
-   color:#AC171D!important;
+    color:#AC171D!important;
     border:solid 1px #AC171D !important;
-   background: #fff !important;
+    background: #fff !important;
 }
 #checkoutConfirmDefault address{
     margin-bottom:2rem 
@@ -1495,7 +1542,7 @@ fieldset input[type=radio] {
 }
 .button.button_back {
     color:#fff;
-    background-color: #0056B3;
+    background-color: #0056B3 !;
     border:solid 1px #0056B3 !important;
     font-size: 1.2em;
     border-radius: 0.25rem;
@@ -1503,7 +1550,7 @@ fieldset input[type=radio] {
     margin-bottom:1rem !important;
 }
 .button.button_back:hover {
-    color:#0056B3;
+    color:#0056B3 !important;
     background-color: #FFF;
     border: solid 1px #0056B3 !important;
     font-size: 1.2em;

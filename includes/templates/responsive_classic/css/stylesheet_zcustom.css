@@ -900,6 +900,61 @@ input[type="radio"], input[type="checkbox"] {
     padding-bottom:1rem;
     display:block;
 }
+
+.button_view {
+    background-color:#FFD700; 
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+.button_view:hover {  
+    background-color:#fff !important; 
+    border:solid 1px #FFD700 !important;
+}
+
+.button.small_edit     
+{background-color:#FFD700; 
+border:solid 1px #FFD700 !important;
+color:#000 !important 
+}
+
+.button.small_edit:hover     {
+background-color:#fff; 
+border:solid 1px #FFD700 !important;
+color:#000 !important 
+}
+
+#addressBookDefault span.normal_button {background-color:#FFD700; 
+border:solid 1px #FFD700 !important;
+color:#000 !important 
+}
+
+#addressBookDefault span.normal_button:hover  {
+    background-color:#fff; 
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+
+#reviewsInfoDefault span.cssButton.normal_button.button.button_in_cart {
+    background-color:#FFD700; 
+    border:solid 1px #FFD700 !important;
+    color:#000 !important 
+}
+#reviewsInfoDefault .button_in_cart:hover {    
+    background-color:#fff; 
+    border:solid 1px #FFD700 !important;
+    color:#000 !important }
+
+
+.button_delete {background-color:#AC171D !important; 
+border:solid 1px #AC171D !important;
+color:#fff !important }
+
+#addressBookProcessDefault input.cssButtonHover:hover 
+{background-color:#fff !important; 
+border:solid 1px #AC171D !important;
+color:#AC171D !important }
+
+
 #accountDefault h2 {
     background: transparent;
     color:#000;
@@ -1367,7 +1422,6 @@ fieldset input[type=radio] {
     margin-bottom:0.5rem 
 }
 #addressBookProcessDefault input.cssButtonHover {
-    opacity:0.8;
     margin-top:1rem 
 }
 #addressBookProcessDefault input.submit_button {

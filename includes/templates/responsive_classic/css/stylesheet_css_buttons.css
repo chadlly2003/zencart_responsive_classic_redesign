@@ -205,16 +205,16 @@ input[type="search"] {
 	border-radius: 0.25rem;
 	font-size: 1.2em;
 	color: #fff;
-	background-color: #5A3C1D;
-	border-color: #5A3C1D !important;
+	background-color: #4B3D8D;
+	border-color: #4B3D8D !important;
 	margin-bottom:1rem;
 }
 #manufacturers input.cssButtonHover {
 	border-radius: 0.25rem;
 	font-size: 1.2em;
-	color: #5A3C1D;
+	color: #4B3D8D;
 	background-color: #fff;
-	border-color: #5A3C1D !important;
+	border-color: #4B3D8D !important;
 	margin-bottom:1rem;
 }
 #aboutusBody .buttonRow {

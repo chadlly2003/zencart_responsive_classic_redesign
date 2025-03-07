@@ -616,11 +616,8 @@ input[type="checkbox"] {
     min-height: 44px;
     display: block;
 }
-span.normal_button:hover {
-    opacity:0.8 !important;
-}
+
 #reviewsInfoDefaultReviewsListingLink span.normal_button:hover {
-    opacity:0.8;
     background: transparent;
 }
 .reviews-wrapper {
@@ -801,9 +798,7 @@ span.normal_button:hover {
     margin-top:0px;
     text-align: center;
 }
-.button_update:hover {
-    opacity:0.8;
-}
+
 #ezpages ul.list-links li {
     display:list-item;
     margin-left:1rem !important;

@@ -81,26 +81,22 @@ span.cssButton.normal_button.button.button_write_review, .button_write_review, s
 }
 span.cssButton.normal_button.button.button_goto_prod_details{
 	background:transparent;
-	opacity: 1;
 }
 #productreviewsBody span.cssButton.normal_button.button.button_goto_prod_details {
 	background: transparent;
 	font-size: 16px;
-	opacity:1;
 	color: #000;
 	display:contents;
 }
 #productreviewsBody .button_goto_prod_details:hover {
 	background: transparent;
 	font-size: 16px;
-	opacity:1;
 	font-size:16px;
 	display: contents;
 }
 #productreviewsBody span.cssButton.normal_button.button.button_goto_prod_details:hover {
 	background: transparent;
 	font-size: 16px;
-	opacity:1;
 	font-size:16px;
 }
 #productReviewsDefaultProductPageLink:hover {
@@ -157,9 +153,7 @@ span.button_sold_out, span.button_sold_out:hover{
 	font-size:22px !important;
 	outline:none;
 }
-#productListing span.button_sold_out:hover {
-	opacity: 0.8 !important;
-}
+
 #orderStatus br {
 	display:none;
 }
@@ -216,7 +210,6 @@ input[type="search"] {
 	margin-bottom:1rem;
 }
 #manufacturers input.cssButtonHover {
-	opacity:0.8;
 	border-radius: 0.25rem;
 	font-size: 1.2em;
 	color: #5A3C1D;
@@ -345,9 +338,7 @@ input[type="search"] {
 	margin-bottom:1rem;
 	background: transparent;
 }
-.button_write_review:hover {
-	opacity: 1;
-}
+
 .button_continue {
 	background: #8A2BE2;
 	color:#fff;
@@ -469,7 +460,4 @@ input[type="search"] {
 }
 #cartAdd {
 	position: relative;
-}
-.list-more:hover {
-	opacity: 0.8;
 }

@@ -334,7 +334,6 @@ input[type="search"] {
 }
 .button_send:hover {
 	background:#fff !important;
-	opacity:0.8;
 	color:#7B3F00 !important;
 	border:solid 1px #7B3F00 !important;
 	padding:12px 20px;

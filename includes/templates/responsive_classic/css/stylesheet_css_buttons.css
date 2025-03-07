@@ -184,10 +184,7 @@ input[type="search"] {
 	color:#7a1db1;
 	margin-left:0rem;
 }
-#productinfoBody #cartAdd a:hover {
-	color:#7a1db1;
-	opacity:0.8;
-}
+ 
 #productinfoBody .button_sold_out {
 	width: auto;
 }
@@ -205,16 +202,16 @@ input[type="search"] {
 	border-radius: 0.25rem;
 	font-size: 1.2em;
 	color: #fff;
-	background-color: #4B3D8D;
-	border-color: #4B3D8D !important;
+	background-color: #AC171D;
+	border-color: #AC171D !important;
 	margin-bottom:1rem;
 }
 #manufacturers input.cssButtonHover {
 	border-radius: 0.25rem;
 	font-size: 1.2em;
-	color: #4B3D8D;
+	color: #AC171D;
 	background-color: #fff;
-	border-color: #4B3D8D !important;
+	border-color: #AC171D !important;
 	margin-bottom:1rem;
 }
 #aboutusBody .buttonRow {
@@ -339,20 +336,7 @@ input[type="search"] {
 	background: transparent;
 }
 
-.button_continue {
-	background: #8A2BE2;
-	color:#fff;
-}
-.button_continue:hover {
-	opacity:0.8;
-}
-.button_redeem {
-	background:#8B0000;
-	color:#fff;
-}
-.button_redeem:hover {
-	opacity:0.8;
-}
+
 .button_unsubscribe {
 	margin-top:1rem;
 	margin-bottom:1rem;
@@ -365,11 +349,14 @@ input[type="search"] {
 	opacity:0.8;
 }
 .button_redeem {
-	background:#8B0000;
-	color:#fff;
+	background:#AC171D !important;
+	border:solid 1px #AC171D !important;
+	color:#fff !important;
 }
 .button_redeem:hover {
-	opacity:0.8;
+	background:#fff !important;
+	border:solid 1px #AC171D !important;
+	color:#AC171D  !important;
 }
 #shoppingcartBody .buttonRow .back{
 	float:none!important;

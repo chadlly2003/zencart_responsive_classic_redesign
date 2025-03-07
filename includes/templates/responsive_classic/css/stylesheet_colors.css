@@ -1145,9 +1145,6 @@ input.cssButton.submit_button.button.button_search {
 div#loginDefault fieldset {
 	margin-bottom: 0px;
 }
-#loginDefault input.cssButtonHover {
-	opacity:0.8;
-}
 #createAcctDefault br {
 	display:none !important;
 }

@@ -412,7 +412,6 @@ input.cssButton.submit_button.button.button_search {
 	color: #AC171D;
 	background-color: #fff;
 	border-color: #AC171D !important;
-	 
 }
 #brandsHeading {
 	background: transparent;
@@ -451,7 +450,7 @@ input.cssButton.submit_button.button.button_search {
 	padding-bottom: 0px;
 }
 #featuredcategoriesHeading a {
-   min-height: 60px;
+	min-height: 60px;
 }
 #manufacturerinfoHeading:before {
 	content: "\f05a";
@@ -1136,10 +1135,9 @@ input.cssButton.submit_button.button.button_search {
 #loginDefault .button_login:hover {
 	background: #fff;
 	border-color: #006400 !important;
-	color: #006400;;
+	color: #006400;
+   ;
 }
-
- 
 #loginDefault .forward {
 	width: 100%;
 	margin-bottom:0rem;
@@ -1181,9 +1179,6 @@ div#loginDefault fieldset {
 	color: #fff;
 	margin-bottom:0.5rem;
 }
-#createAcctDefault .button_login:hover {
-	opacity:0.8;
-}
 #createAcctDefault .button_submit{
 	background: #6A1BC1 !important;
 	border:solid 1px #6A1BC1 !important;
@@ -1193,10 +1188,9 @@ div#loginDefault fieldset {
 #createAcctDefault .button_submit:hover{
 	background: #fff !important;
 	border:solid 1px #6A1BC1 !important;
-	color: #6A1BC1;
+	color: #6A1BC1 !important;
 	margin-top:1rem;
 }
-
 #createAcctDefault .forward {
 	width: 100%;
 	margin-top:0;
@@ -1204,9 +1198,6 @@ div#loginDefault fieldset {
 }
 div#createAcctDefault fieldset {
 	margin-bottom: 0px !important 
-}
-#createAcctDefault input.cssButtonHover {
-	opacity: 0.8 !important;
 }
 TEXTAREA {
 	text-align: left !important;

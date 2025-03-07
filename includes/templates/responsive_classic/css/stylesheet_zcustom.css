@@ -614,7 +614,6 @@ input[type="checkbox"] {
     min-height: 44px;
     display: block;
 }
-
 #reviewsInfoDefaultReviewsListingLink span.normal_button:hover {
     background: transparent;
 }
@@ -796,7 +795,6 @@ input[type="checkbox"] {
     margin-top:0px;
     text-align: center;
 }
-
 #ezpages ul.list-links li {
     display:list-item;
     margin-left:1rem !important;
@@ -1148,8 +1146,15 @@ input[type="radio"], input[type="checkbox"] {
     margin-top:1rem;
     float:none 
 }
+#checkoutShipping .button_continue_checkout {
+    color:#fff !important;
+    background-color:#006400 !important;
+    border:solid 1px #006400 !important;
+}
 #checkoutShipping .button_continue_checkout:hover {
-    opacity:0.8;
+    color:#006400 !important;
+    background-color:#fff !important;
+    border:solid 1px #006400!important;
 }
 #checkoutShipping textarea {
     text-align: left;
@@ -1174,12 +1179,17 @@ input[type="radio"], input[type="checkbox"] {
 #checkoutPayment .payment br {
     display:none 
 }
-#checkoutPayment .button_continue_checkout:hover {
-    opacity:0.8;
-    margin-top:1rem;
-}
 #checkoutPayment .button_continue_checkout {
     margin-bottom:1rem;
+    border:solid 1px #006400 !important;
+    background:#006400 !important;
+    color: #fff;
+}
+#checkoutPayment .button_continue_checkout:hover {
+    border:solid 1px #006400 !important;
+    background:#fff !important;
+    color: #006400;
+    margin-top:1rem;
 }
 #checkoutPayment .forward {
     float:right;
@@ -1256,13 +1266,28 @@ input[type="radio"], input[type="checkbox"] {
 #checkoutConfirmDefault #orderTotals {
     background: transparent;
 }
-#checkoutConfirmDefault .confirm-order {
+.button_confirm_order {
     margin-top:1rem;
     margin-bottom:1rem;
     float:none;
+    border:solid 1px #006400 !important;
+    background:#006400 !important;
+    color:#fff !important 
 }
 #checkoutConfirmDefault input.cssButtonHover {
-    opacity:0.8;
+    border:solid 1px #006400 !important;
+    background:#fff !important;
+    color:#006400 !important;
+}
+.button_update {
+   color:#fff !important;
+    border:solid 1px #AC171D !important;
+   background: #AC171D !important;
+}
+.button_update:hover {
+   color:#AC171D!important;
+    border:solid 1px #AC171D !important;
+   background: #fff !important;
 }
 #checkoutConfirmDefault address{
     margin-bottom:2rem 
@@ -1424,7 +1449,6 @@ fieldset input[type=radio] {
     margin-bottom:1rem !important;
 }
 .button.button_back:hover {
-  
     color:#0056B3;
     background-color: #FFF;
     border: solid 1px #0056B3 !important;
@@ -1600,7 +1624,6 @@ fieldset input[type=radio] {
     display:block;
     vertical-align: middle;
 }
- 
 .logoff_style::before {
     content: "\f08b";
     font-family: "Font Awesome 6 Free";
@@ -1620,7 +1643,6 @@ fieldset input[type=radio] {
     min-height: 44px;
     align-items: center;
 }
-
 #reviewsDefault .button_goto_prod_details {
     padding:0px;
     display: inline-block !important;
@@ -1786,7 +1808,6 @@ fieldset input[type=radio] {
     background-color: #fff;
     border:solid 1px #2c6161 !important;
     color:#2c6161 !important;
-      
 }
 .skip-link {
     position: absolute;
@@ -1812,7 +1833,6 @@ fieldset input[type=radio] {
 }
 .skip-link:focus {
     color: #2c6161 !important;
-  
     clip: auto;
    /* Restores the visibility when focused */
     width: auto;
@@ -1850,7 +1870,6 @@ fieldset input[type=radio] {
 #siteinfoLegal a:first-of-type {
     display: none !important;
 }
-
 .button_create_account {
     width:auto !important;
     margin-bottom:1rem;

@@ -944,15 +944,9 @@ input.cssButton.submit_button.button.button_search {
 	color:#7a1db1 !important;
 	font-size: 18px;
 }
-#productListing a:nth-of-type(2):hover {
-	opacity: 0.8;
-}
 #allProductsDefault a:nth-of-type(2) {
 	color:#7a1db1 !important;
 	font-size: 18px;
-}
-#allProductsDefault a:nth-of-type(2):hover {
-	opacity:0.8;
 }
 .productListing-even input {
 	padding:0px;
@@ -1139,20 +1133,26 @@ input.cssButton.submit_button.button.button_search {
 }
 #loginDefault .button_login {
 	background: #006400;
+	border-color: #006400 !important;
 	color: #fff;
 	margin-bottom:0.5rem;
 }
 #loginDefault .button_login:hover {
-	opacity:0.8;
+	background: #fff;
+	border-color: #006400 !important;
+	color: #006400;;
 }
 #loginDefault .button_submit{
-	background: #8A2BE2;
+	background: #6A1BC1;
+	border-color: #6A1BC1 !important;
 	color: #fff;
 	margin-top:1rem;
 	margin-bottom:4rem;
 }
 #loginDefault .button_submit:hover{
-	opacity:0.8;
+	border-color: #6A1BC1 !important;
+	background: #fff;
+	color:#6A1BC1;
 }
 #loginDefault .forward {
 	width: 100%;

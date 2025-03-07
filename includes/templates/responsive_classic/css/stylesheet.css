@@ -1625,9 +1625,6 @@ table, .tabTable{
 .button_ask_a_question {
 	color:#9932CC !important;
 }
-span#askAQuestionButton:hover {
-	opacity: 1;
-}
 #productQuestions a {
 	font-size:16px !important;
 }

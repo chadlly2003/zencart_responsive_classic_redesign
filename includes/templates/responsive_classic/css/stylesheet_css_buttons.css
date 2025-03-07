@@ -65,7 +65,6 @@ span.normal_button {
 	display:flex;
 }
 span.normal_button:hover {
-	opacity:0.8;
 	background:#FFD700;
 }
 span.cssButton.normal_button.button.button_more_reviews, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover{
@@ -99,9 +98,7 @@ span.cssButton.normal_button.button.button_goto_prod_details{
 	font-size: 16px;
 	font-size:16px;
 }
-#productReviewsDefaultProductPageLink:hover {
-	opacity: 0.8;
-}
+
 #reviewsDefault .button_in_cart:hover {
 	float:none;
 	font-size:16px;
@@ -230,6 +227,7 @@ input[type="search"] {
 #passwordforgottenBody input.cssButtonHover {
 	opacity:0.8;
 }
+
 #privacyBody .buttonRow {
 	float:none;
 }
@@ -336,17 +334,18 @@ input[type="search"] {
 	background: transparent;
 }
 
-
 .button_unsubscribe {
 	margin-top:1rem;
 	margin-bottom:1rem;
 }
 .button_continue {
-	background: #8A2BE2;
-	color:#fff;
+	background: #6A1BC1 !important;
+	border:solid 1px #6A1BC1 !important;
+	color:#fff !important;
 }
 .button_continue:hover {
-	opacity:0.8;
+	background: #fff !important;
+	color:#6A1BC1 !important;
 }
 .button_redeem {
 	background:#AC171D !important;
@@ -374,16 +373,43 @@ input[type="search"] {
 }
 #shoppingcartBody .button_shipping_estimator {
 	background:#7328d4;
+	border:solid 1px #7328d4;
 	color: #fff;
 }
+
+#shoppingcartBody .button_shipping_estimator:hover {
+	background:#fff;
+	border:solid 1px #7328d4;
+	color: #7328d4;
+}
+
+
 #shoppingcartBody .button_continue_shopping {
 	background: #8B008B;
+	border:solid 1px #8B008B;
 	color:#fff;
 }
+
+#shoppingcartBody .button_continue_shopping:hover {
+	background: #fff;
+	border:solid 1px #8B008B;
+	color:#8B008B;
+} 
+
+
 #shoppingcartBody .button_checkout {
 	background: #006400;
+	border:solid 1px #006400;
 	color: #fff;
 }
+
+#shoppingcartBody .button_checkout:hover {
+	background: #fff;
+	color: #006400;
+	border:solid 1px #006400;
+}
+
+
 #contactUsDefault .forward {
 	float:none;
 }

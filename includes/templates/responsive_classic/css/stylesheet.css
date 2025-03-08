@@ -1492,6 +1492,8 @@ h4.optionName{
 }
 #orderTotals{
 	padding:1rem;
+	padding-left:0px;
+	padding-right:0px;
 }
 #myAccountPaymentInfo h3, #myAccountShipInfo h3{
 	font-weight:normal;

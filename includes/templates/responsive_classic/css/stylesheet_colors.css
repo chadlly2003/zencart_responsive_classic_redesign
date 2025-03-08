@@ -1089,20 +1089,7 @@ input.cssButton.submit_button.button.button_search {
 #shippingEstimatorContent .forward {
 	width: 100%;
 }
-#shippingEstimatorContent .button_update {
-	padding:0px !important;
-	margin:0px !important;
-	display:flex;
-	color: #8A2BE2;
-	font-size:1.3rem !important;
-	outline:none !important;
-	width: auto !important;
-	float:left;
-	border:none !important;
-}
-#shippingEstimatorContent .button_update:hover {
-	border:none !important 
-}
+ 
 #loginDefault br {
 	display:none;
 }

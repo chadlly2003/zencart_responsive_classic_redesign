@@ -2044,6 +2044,10 @@ fieldset input[type=radio] {
 
 
 @media (min-width: 576px) {
+
+    #addressBookDefault .button.button_back {margin-top:0px !important;}
+    #addressBookDefault .button.button_back:hover {margin-top:0px !important;}
+
     .editelement a {
         float:right;
    }
@@ -2216,6 +2220,9 @@ fieldset input[type=radio] {
     #timeoutDefault .forward {
         margin-top:0rem;
         float:right;
+   }
+   #checkoutConfirmDefault .editelement span.cssButton.normal_button.button.small_edit {
+    margin:1rem !important;
    }
 }
 @media (min-width: 768px) {
@@ -2705,7 +2712,7 @@ fieldset input[type=radio] {
    }
     #checkoutConfirmDefault .editelement span.cssButton.normal_button.button.small_edit {
         float:right;
-        margin:1rem;
+         
    }
     #checkoutConfirmDefault span.normal_button:hover {
         float:right;

@@ -901,7 +901,7 @@ input[type="radio"], input[type="checkbox"] {
     border:solid 1px #FFD700 !important;
 }
 .button.small_edit {
-   background-color:#FFD700;
+    background-color:#FFD700;
     border:solid 1px #FFD700 !important;
     color:#000 !important 
 }
@@ -911,7 +911,7 @@ input[type="radio"], input[type="checkbox"] {
     color:#000 !important 
 }
 #addressBookDefault span.normal_button {
-   background-color:#FFD700;
+    background-color:#FFD700;
     border:solid 1px #FFD700 !important;
     color:#000 !important 
 }
@@ -961,7 +961,7 @@ input[type="radio"], input[type="checkbox"] {
     color:#000 !important 
 }
 #linkMyAccount .button_my_orders {
-   background-color:#FFD700;
+    background-color:#FFD700;
     border:solid 1px #FFD700 !important;
     color:#000 !important 
 }
@@ -971,7 +971,7 @@ input[type="radio"], input[type="checkbox"] {
     color:#000 !important 
 }
 #linkLogoff .button_logoff {
-   background-color:#FFD700;
+    background-color:#FFD700;
     border:solid 1px #FFD700 !important;
     color:#000 !important 
 }
@@ -981,7 +981,7 @@ input[type="radio"], input[type="checkbox"] {
     color:#000 !important 
 }
 .box_review_spacver span.normal_button {
-   background-color:#FFD700;
+    background-color:#FFD700;
     border:solid 1px #FFD700 !important;
     color:#000 !important;
     width: calc(100% - 40px);
@@ -993,7 +993,7 @@ input[type="radio"], input[type="checkbox"] {
     width: calc(100% - 40px);
 }
 #unsubscribeBody span.normal_button {
-   background-color:#FFD700;
+    background-color:#FFD700;
     border:solid 1px #FFD700 !important;
     color:#000 !important 
 }
@@ -1003,12 +1003,12 @@ input[type="radio"], input[type="checkbox"] {
     color:#000 !important 
 }
 .button_delete {
-   background-color:#AC171D !important;
+    background-color:#AC171D !important;
     border:solid 1px #AC171D !important;
     color:#fff !important 
 }
 #addressBookProcessDefault input.cssButtonHover:hover {
-   background-color:#fff !important;
+    background-color:#fff !important;
     border:solid 1px #AC171D !important;
     color:#AC171D !important 
 }
@@ -1391,22 +1391,20 @@ input[type="radio"], input[type="checkbox"] {
     border:solid 1px #AC171D !important;
     background: #fff !important;
 }
-
 #shippingEstimatorContent .button_update {
-	
-	padding:0px !important;
-	margin:0px !important;
-	display:flex;
-	color: #8A2BE2 !important;
-	font-size:1.3rem !important;
-	outline:none !important;
-	width: auto !important;
-	float:left;
-	border:none !important;
+    padding:0px !important;
+    margin:0px !important;
+    display:flex;
+    color: #8A2BE2 !important;
+    font-size:1.3rem !important;
+    outline:none !important;
+    width: auto !important;
+    float:left;
+    border:none !important;
     background-color: #fff !important;
 }
 #shippingEstimatorContent .button_update:hover {
-	border:none !important 
+    border:none !important 
 }
 #checkoutConfirmDefault address{
     margin-bottom:2rem 
@@ -1573,8 +1571,6 @@ fieldset input[type=radio] {
     font-size: 1.2em;
     border-radius: 0.25rem;
 }
-
-
 #addressBookDefault .button.button_back {
     color:#fff !important;
     background-color: #0056B3 !important;
@@ -1584,7 +1580,6 @@ fieldset input[type=radio] {
     margin-top:1rem !important;
     margin-bottom:1rem !important;
 }
-
 #addressBookDefault .button.button_back:hover {
     color:#0056B3 !important;
     background-color: #fff !important;
@@ -1594,11 +1589,6 @@ fieldset input[type=radio] {
     margin-top:1rem !important;
     margin-bottom:1rem !important;
 }
-
-
-
-
-
 .advisory a {
     text-decoration: underline;
 }
@@ -2029,9 +2019,7 @@ fieldset input[type=radio] {
     background:#fff !important;
     color:#AC171D;
 }
-
-
-.button_login { 
+.button_login {
     color:#fff!important;
     border:solid 1px #006400 !important;
     background:#006400 !important;
@@ -2041,13 +2029,16 @@ fieldset input[type=radio] {
     border:solid 1px #006400 !important;
     background:#fff !important;
 }
-
-
+.list-image img {
+    width: 500px;
+}
 @media (min-width: 576px) {
-
-    #addressBookDefault .button.button_back {margin-top:0px !important;}
-    #addressBookDefault .button.button_back:hover {margin-top:0px !important;}
-
+    #addressBookDefault .button.button_back {
+       margin-top:0px !important;
+   }
+    #addressBookDefault .button.button_back:hover {
+       margin-top:0px !important;
+   }
     .editelement a {
         float:right;
    }
@@ -2221,8 +2212,8 @@ fieldset input[type=radio] {
         margin-top:0rem;
         float:right;
    }
-   #checkoutConfirmDefault .editelement span.cssButton.normal_button.button.small_edit {
-    margin:1rem !important;
+    #checkoutConfirmDefault .editelement span.cssButton.normal_button.button.small_edit {
+        margin:1rem !important;
    }
 }
 @media (min-width: 768px) {
@@ -2410,20 +2401,16 @@ fieldset input[type=radio] {
     #indexProductList .button_buy_now {
         float:right;
    }
-
-   .button_buy_now {
-    background:#AC171D !important; 
-    border:solid 1px #AC171D !important; 
-    color:#fff !important;
-}
-
-.button_buy_now:hover {
-    background: #fff !important; 
-    border:solid 1px #AC171D !important; 
-    color:#AC171D !important;
-}
-
-
+    .button_buy_now {
+        background:#AC171D !important;
+        border:solid 1px #AC171D !important;
+        color:#fff !important;
+   }
+    .button_buy_now:hover {
+        background: #fff !important;
+        border:solid 1px #AC171D !important;
+        color:#AC171D !important;
+   }
     #indexProductList .qmax {
         float:right;
         margin-top:0;
@@ -2509,8 +2496,11 @@ fieldset input[type=radio] {
     .list-image img {
         float:left;
         margin-bottom:0px;
+        width: revert-layer;
    }
     .list-image{
+        float:left;
+        margin-right:1rem !important;
         margin-top:0px;
    }
     .reviews-wrapper .smallProductImage img {
@@ -2600,10 +2590,6 @@ fieldset input[type=radio] {
    }
     #shippingEstimatorContent td{
         padding:10px;
-   }
-    .list-image{
-        float:left;
-        margin-right:1rem !important;
    }
     .list-price {
         float:left;
@@ -2712,7 +2698,6 @@ fieldset input[type=radio] {
    }
     #checkoutConfirmDefault .editelement span.cssButton.normal_button.button.small_edit {
         float:right;
-         
    }
     #checkoutConfirmDefault span.normal_button:hover {
         float:right;

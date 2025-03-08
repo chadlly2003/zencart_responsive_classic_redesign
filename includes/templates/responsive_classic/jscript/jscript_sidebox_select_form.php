@@ -1,20 +1,15 @@
 <script>
 jQuery(document).ready(function() {
-    // -----
     // Cycle through each form with a class of 'sidebox-select-form' that has a select tag
     // marked as 'required'.
     jQuery('form.sidebox-select-form select:required').each(function() {
-        // -----
-        // Iterate over each of the select tag's options, 'converting' any option with a value
-        // of '' into an <optgroup>, adding the other options as <option> tags for that 'group' and then closing
-        // up the <optgroup> tag.
         var theOptions = '';
         var optGroup = false;
         var isSelected = '';
         jQuery('option', this).each(function() {
             if (jQuery(this).val() === '') {
                 // Make sure "Please Select" is shown correctly on both desktop and mobile
-                theOptions += '<option value="" disabled selected visible>' + jQuery(this).text() + '</option>';
+                theOptions += '<option value="" disabled selected>' + jQuery(this).text() + '</option>';
             } else {
                 isSelected = '';
                 if (jQuery(this).is(':selected')) {
@@ -29,9 +24,8 @@ jQuery(document).ready(function() {
         jQuery(this).empty().append(theOptions);
         jQuery('optgroup', this).css({'font-style':'normal'});
 
-        // -----
         // If a non-'' option is currently selected, ensure that the form's submit button is
-        // enabled and change the cursor to a pointer.  Otherwise, disable the form's submit
+        // enabled and change the cursor to a pointer. Otherwise, disable the form's submit
         // button and change the cursor to indicate that the button is not allowed.
         if (jQuery('select option:selected', this).length > 0) {
             jQuery(this).siblings('input[type="submit"], button[type="submit"]').attr('disabled', false).css('cursor', 'pointer');
@@ -39,7 +33,6 @@ jQuery(document).ready(function() {
             jQuery(this).siblings('input[type="submit"], button[type="submit"]').attr('disabled', true).css('cursor', 'not-allowed');
         }
 
-        // -----
         // If an option in the select tag is selected, re-enable the submit button and change the
         // cursor back to a pointer.
         jQuery(this).on('change', function() {

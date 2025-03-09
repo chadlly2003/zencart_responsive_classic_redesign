@@ -2040,9 +2040,16 @@ fieldset input[type=radio] {
 .list-image img {
     width: 500px;
 }
+
+#createAcctSuccess .button_delete {
+    background-color: #FFD700 !important;
+    color:#000 !important;
+    border:solid 1px #FFD700 !important;
+}
+
 #createAcctSuccess .button_deleteHover {
     background-color: #fff !important;
-    color:#AC171D !important;
+    color:#000 !important;
 }
 
 

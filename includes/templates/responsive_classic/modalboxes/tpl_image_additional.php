@@ -4,23 +4,32 @@
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: DrByte 2024 Feb 03 New in v2.0.0-beta1 $
  */
-// Display the modal and the original image. Contained in the wrapping image-grid div.
+
+// Ensure variables are defined to prevent warnings
+$modal_link_attributes = isset($modal_link_attributes) ? $modal_link_attributes : '';
+$modal_link_id = isset($modal_link_id) ? $modal_link_id : 'modal-link-default';
+$modal_link_img = isset($modal_link_img) ? $modal_link_img : '';
+
+$modal_id = isset($modal_id) ? $modal_id : 'modal-default';
+$modal_content_id = isset($modal_content_id) ? $modal_content_id : 'modal-content-default';
+
+$image = isset($image) ? $image : ['products_image_large' => '', 'products_name' => ''];
 ?>
+
 <!-- Modal -->
 <div id="<?php echo $modal_id; ?>" class="imgmodal">
-<div id="<?php echo $modal_content_id; ?>" class="imgmodal-content">
+    <div id="<?php echo $modal_content_id; ?>" class="imgmodal-content">
         <div onclick="closeModal('<?php echo $modal_id; ?>')">
-        <?php echo zen_image($image['products_image_large'], $image['products_name'], '', '', 'class="centered-image"'); ?>
-        <div class="imgmodal-close"><i class="fa-solid fa-circle-xmark"></i></div>
-        <div class="center"><?php echo $image['products_name']; ?></div>
-<!--        <div class="imgLink center">--><?php //echo TEXT_CLOSE_WINDOW_IMAGE; ?><!--</div>-->
+            <?php echo zen_image($image['products_image_large'], $image['products_name'], '', '', 'class="centered-image"'); ?>
+            <div class="imgmodal-close"><i class="fa-solid fa-circle-xmark"></i></div>
+            <div class="center"><?php echo $image['products_name']; ?></div>
         </div>
     </div>
 </div>
+
 <div class="back">
     <a id="<?php echo $modal_link_id; ?>" <?php echo $modal_link_attributes; ?>>
         <?php echo $modal_link_img; ?>
         <br>
-<!--        <div class="imgLink center">--><?php //echo TEXT_CLICK_TO_ENLARGE; ?><!--</div>-->
     </a>
 </div>

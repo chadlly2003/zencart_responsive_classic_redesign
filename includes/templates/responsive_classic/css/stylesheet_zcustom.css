@@ -2235,6 +2235,8 @@ fieldset input[type=radio] {
 }
 @media (min-width: 768px) {
 
+    #filter-wrapper {display:flex; gap:1rem;}
+
     #addressBookDefault .button.button_back {
         margin-top:0px !important;
    }

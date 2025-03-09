@@ -992,6 +992,9 @@ input[type="radio"], input[type="checkbox"] {
     color:#000 !important;
     width: calc(100% - 40px);
 }
+.box_review_spacver .button_sold_out {
+ display: none;
+}
 #unsubscribeBody span.normal_button {
     background-color:#FFD700;
     border:solid 1px #FFD700 !important;

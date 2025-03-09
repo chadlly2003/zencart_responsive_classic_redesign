@@ -14,6 +14,7 @@ $modal_id = isset($modal_id) ? $modal_id : 'modal-default';
 $modal_content_id = isset($modal_content_id) ? $modal_content_id : 'modal-content-default';
 
 $image = isset($image) ? $image : ['products_image_large' => '', 'products_name' => ''];
+
 ?>
 
 <!-- Modal -->
@@ -27,9 +28,7 @@ $image = isset($image) ? $image : ['products_image_large' => '', 'products_name'
     </div>
 </div>
 
+<!-- Use modal link generated from the previous file -->
 <div class="back">
-    <a id="<?php echo $modal_link_id; ?>" <?php echo $modal_link_attributes; ?>>
-        <?php echo $modal_link_img; ?>
-        <br>
-    </a>
+    <?php echo $modal_link_img; ?>
 </div>

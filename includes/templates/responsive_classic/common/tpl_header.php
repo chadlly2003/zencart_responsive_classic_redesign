@@ -72,7 +72,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 <hr class="spacernav" />
 
     <ul class="myaccounts">
-      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa fa-xl fa-fw fa-home" aria-hidden="true">&nbsp</i> <?php echo HEADER_TITLE_CATALOG; ?></a></li>
+      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa fa-xl fa-fw fa-home" aria-hidden="true">&nbsp;</i> <?php echo HEADER_TITLE_CATALOG; ?></a></li>
       
       <?php
           if (zen_is_logged_in() && !zen_in_guest_checkout()) {
@@ -94,7 +94,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
           <?php echo HEADER_TITLE_LOGIN; ?></a></li>
         <?php } else { ?>
           <li class=""><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>">
-          <i class="fa fa-xl fa-fw fa-sign-in" aria-hidden="true">&nbsp</i> <?php echo HEADER_TITLE_LOGIN; ?></a></li>
+          <i class="fa fa-xl fa-fw fa-sign-in" aria-hidden="true">&nbsp;</i> <?php echo HEADER_TITLE_LOGIN; ?></a></li>
         <?php } ?>
       <?php } } ?>
 
@@ -114,9 +114,9 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
       <?php }?>
 
 
-      <li><?php echo '<a href="' . zen_href_link(FILENAME_SITE_MAP) . '">'; ?> <i class="fa fa-xl fa-fw fa-sitemap fa-flip-horizontal" aria-hidden="true">&nbsp</i> Sitemap</a></li>
+      <li><?php echo '<a href="' . zen_href_link(FILENAME_SITE_MAP) . '">'; ?> <i class="fa fa-xl fa-fw fa-sitemap fa-flip-horizontal" aria-hidden="true">&nbsp;</i> Sitemap</a></li>
 
-      <li><?php echo ' <a href="' . zen_href_link(FILENAME_CONTACT_US, '', 'SSL') . '">'; ?><i class="fa fa-xl fa-fw fa-phone fa-flip-horizontal" aria-hidden="true">&nbsp</i> Contact</a></li>
+      <li><?php echo ' <a href="' . zen_href_link(FILENAME_CONTACT_US, '', 'SSL') . '">'; ?><i class="fa fa-xl fa-fw fa-phone fa-flip-horizontal" aria-hidden="true">&nbsp;</i> Contact</a></li>
   </ul>
 </div>
 <!-- eof sidebar navigation -->
@@ -149,11 +149,11 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
  
   <div class="shoppingcart">
   <a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>" aria-label="<?php echo TABLE_HEADING_LOGIN_DETAILS; ?>">
-    <i class="fa fa-user spacer2 navitem1t" aria-hidden="true" class="contactusicon;" role="img" aria-label="Login icon" >&nbsp</i>
+    <i class="fa fa-user spacer2 navitem1t" aria-hidden="true" role="img" aria-label="Login icon" >&nbsp;</i>
 </a>
     
     <a href="<?php echo zen_href_link('contact_us', '', 'SSL'); ?>"  aria-label="<?php echo BOX_INFORMATION_CONTACT; ?>">
-    <i class="fa fa-envelope spacer1 navitem2t" aria-hidden="true" class="loginiconuser" role="img" aria-label="Contact icon">&nbsp</i></a>  
+    <i class="fa fa-envelope spacer1 navitem2t " aria-hidden="true" role="img" aria-label="Contact icon">&nbsp;</i></a>  
     
     <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>" aria-label="<?php echo BOX_HEADING_SHOPPING_CART; ?>">
     <i class="fa fa-shopping-cart fa-fw badge fa-lg navitem3t" aria-hidden="true" role="img" aria-label="Shopping cart icon">

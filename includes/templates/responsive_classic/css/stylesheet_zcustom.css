@@ -993,7 +993,7 @@ input[type="radio"], input[type="checkbox"] {
     width: calc(100% - 40px);
 }
 .box_review_spacver .button_sold_out {
- display: none;
+    display: none;
 }
 #unsubscribeBody span.normal_button {
     background-color:#FFD700;
@@ -2035,12 +2035,16 @@ fieldset input[type=radio] {
 .list-image img {
     width: 500px;
 }
+#createAcctSuccess .button_deleteHover {
+    background-color: #fff !important;
+    color:#AC171D !important;
+}
 @media (min-width: 576px) {
     #addressBookDefault .button.button_back {
-       margin-top:0px !important;
+        margin-top:0px !important;
    }
     #addressBookDefault .button.button_back:hover {
-       margin-top:0px !important;
+        margin-top:0px !important;
    }
     .editelement a {
         float:right;

@@ -753,7 +753,7 @@ ul.list-links li a {
 #ezPageBoxList ul {
 	list-style-type:none;
 }
-#ezPageBoxList li, {
+#ezPageBoxList li {
 	margin:0;
 	padding: 0.2em 0;
 }

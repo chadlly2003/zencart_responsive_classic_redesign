@@ -1617,7 +1617,7 @@ fieldset input[type=radio] {
     margin-bottom:1rem;
 }
 .spacerrating {
-    width:100;
+    width:100%;
     clear:both;
 }
 .backhistorybutton {
@@ -1898,7 +1898,6 @@ fieldset input[type=radio] {
 }
 #productInfoLink a:hover {
     text-decoration: none;
-    text-underline-position: none;
 }
 .col150 h2{
     font-weight:normal;
@@ -2171,7 +2170,7 @@ fieldset input[type=radio] {
     .shopping_cart_spacer {
         display:flex;
         flex-direction: row;
-        gap:1;
+      
    }
     .cartAttribsList {
         padding-left:5rem;
@@ -2597,7 +2596,7 @@ fieldset input[type=radio] {
         margin-left:1rem;
    }
     #reviewsWriteReviewsNotice {
-        margin-bottom:1rem ! 
+        margin-bottom:1rem; 
    }
     #reviewsWrite input[type="radio"] {
         clear:none;

@@ -970,7 +970,7 @@ input.cssButton.submit_button.button.button_search {
 	grid-template-columns: 1fr auto;
 }
 .search_box_mobile {
-	width:100% !;
+	width:100%;
 }
 .search_box_mobile input {
 	width: calc(100% - 25px);

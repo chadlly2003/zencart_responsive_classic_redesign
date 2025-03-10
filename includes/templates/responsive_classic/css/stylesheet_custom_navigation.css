@@ -16,7 +16,6 @@
 	left: 0;
 	width: 270px;
 	background-color: #fff;
-	// h-shadow, v-shadow, blur, spreadbox-shadow: 6px 0 18px 8px black;
 	transition: transform 0.3s ease-out;
 }
 .sidebar ul {
@@ -31,11 +30,13 @@
 	padding: 0.5rem 1rem;
 	color: #000;
 	text-decoration: none;
-	&:hover {
-		background-color: #E6E6FA;
-		color: #000 !important;
-   }
 }
+
+.sidebar a:hover {
+	background-color: #E6E6FA; 
+	color: #000 !important;
+}
+
 .sidebar.is-hidden {
 	transform: translateX(-300px);
 }

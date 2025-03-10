@@ -2522,7 +2522,7 @@ fieldset input[type=radio] {
     .list-image img {
         float:left;
         margin-bottom:0px;
-        width: revert-layer;
+        width:80px;
    }
     .list-image{
         float:left;

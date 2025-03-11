@@ -114,7 +114,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
       <?php }?>
 
 
-      <li><?php echo '<a href="' . zen_href_link(FILENAME_SITE_MAP) . '">'; ?> <i class="fa fa-xl fa-fw fa-sitemap fa-flip-horizontal" aria-hidden="true">&nbsp;</i> Sitemap</a></li>
+      <li><?php echo '<a href="' . zen_href_link(FILENAME_SITE_MAP) . '">'; ?> <i class="fa fa-xl fa-fw fa-sitemap" aria-hidden="true">&nbsp;</i> Sitemap</a></li>
 
       <li><?php echo ' <a href="' . zen_href_link(FILENAME_CONTACT_US, '', 'SSL') . '">'; ?><i class="fa fa-xl fa-fw fa-phone fa-flip-horizontal" aria-hidden="true">&nbsp;</i> Contact</a></li>
   </ul>

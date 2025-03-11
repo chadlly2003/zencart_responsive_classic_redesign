@@ -327,7 +327,7 @@ if ($num_products_count > 0) {
                     if (zen_get_show_product_switch($record['products_id'], 'ALWAYS_FREE_SHIPPING_IMAGE_SWITCH')) {
                         if (zen_get_product_is_always_free_shipping($record['products_id'])) {
                             $lc_text .= '<br>';
-                            $lc_text .= TEXT_PRODUCT_FREE_SHIPPING_ICON;
+                            //$lc_text .= TEXT_PRODUCT_FREE_SHIPPING_ICON;
                         }
                     }
                     break;

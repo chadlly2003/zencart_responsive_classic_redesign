@@ -2053,7 +2053,13 @@ fieldset input[type=radio] {
 
  .listingDescription img {display:none !important;}
 
+ #searchDefault .button_search {width:100% !important;}
+
 @media (min-width: 576px) {
+
+    .button.button_search {
+        width:auto !important 
+   }
 
     .editelement a {
         float:right;
@@ -2232,10 +2238,8 @@ fieldset input[type=radio] {
 }
 @media (min-width: 768px) {
 
-    .button.button_search {
-        width:auto !important 
-   }
-
+  
+     
     #filter-wrapper {display:flex; gap:1rem;}
 
     #addressBookDefault .button.button_back {

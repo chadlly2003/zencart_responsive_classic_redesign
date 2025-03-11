@@ -2051,7 +2051,7 @@ fieldset input[type=radio] {
     color:#000 !important;
 }
 
-
+ .listingDescription img {display:none !important;}
 
 @media (min-width: 576px) {
 
@@ -2091,9 +2091,7 @@ fieldset input[type=radio] {
     div#logo {
         max-width:254px;
    }
-    .button.button_search {
-        width:auto !important 
-   }
+  
     .button_search:hover {
         width:auto !important;
         height:48px;
@@ -2233,6 +2231,10 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+
+    .button.button_search {
+        width:auto !important 
+   }
 
     #filter-wrapper {display:flex; gap:1rem;}
 

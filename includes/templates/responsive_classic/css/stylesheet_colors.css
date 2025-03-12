@@ -907,7 +907,7 @@ input.cssButton.submit_button.button.button_search {
 	text-align: center;
 }
 #shoppingcartBody tr:nth-child(odd) {
-	background-color: ghostwhite;
+	background-color: #F8F8FF;
 	padding-top:10px;
 	padding-bottom:10px;
 }
@@ -951,7 +951,7 @@ input.cssButton.submit_button.button.button_search {
 	font-size:1em;
 }
 .productListing-even {
-	background: ghostwhite;
+	background: #F8F8FF;
 }
 .box_spacer {
 	margin-left:15px;

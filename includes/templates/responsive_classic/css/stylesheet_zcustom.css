@@ -995,11 +995,9 @@ input[type="radio"], input[type="checkbox"] {
 .box_review_spacver .button_sold_out {
     display: none;
 }
-
 .spacer_element_button_add .button_sold_out {
     display: none;
 }
-
 #unsubscribeBody span.normal_button {
     background-color:#FFD700;
     border:solid 1px #FFD700 !important;
@@ -2039,28 +2037,25 @@ fieldset input[type=radio] {
 .list-image img {
     width: 500px;
 }
-
 #createAcctSuccess .button_delete {
     background-color: #FFD700 !important;
     color:#000 !important;
     border:solid 1px #FFD700 !important;
 }
-
 #createAcctSuccess .button_deleteHover {
     background-color: #fff !important;
     color:#000 !important;
 }
-
- .listingDescription img {display:none !important;}
-
- #searchDefault .button_search {width:100% !important;}
-
+.listingDescription img {
+   display:none !important;
+}
+#searchDefault .button_search {
+   width:100% !important;
+}
 @media (min-width: 576px) {
-
     .button.button_search {
         width:auto !important 
    }
-
     .editelement a {
         float:right;
    }
@@ -2097,7 +2092,6 @@ fieldset input[type=radio] {
     div#logo {
         max-width:254px;
    }
-  
     .button_search:hover {
         width:auto !important;
         height:48px;
@@ -2174,7 +2168,6 @@ fieldset input[type=radio] {
     .shopping_cart_spacer {
         display:flex;
         flex-direction: row;
-      
    }
     .cartAttribsList {
         padding-left:5rem;
@@ -2237,18 +2230,16 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
-
-  
-     
-    #filter-wrapper {display:flex; gap:1rem;}
-
+    #filter-wrapper {
+       display:flex;
+        gap:1rem;
+   }
     #addressBookDefault .button.button_back {
         margin-top:0px !important;
    }
     #addressBookDefault .button.button_back:hover {
         margin-top:0px !important;
    }
-
     #reviewsDefault .smallProductImage a {
         min-height: 44px;
         display:block;
@@ -2602,7 +2593,7 @@ fieldset input[type=radio] {
         margin-left:1rem;
    }
     #reviewsWriteReviewsNotice {
-        margin-bottom:1rem; 
+        margin-bottom:1rem;
    }
     #reviewsWrite input[type="radio"] {
         clear:none;
@@ -2993,6 +2984,17 @@ fieldset input[type=radio] {
         display:grid;
         grid-template-columns: auto 1fr auto;
    }
+   
+   /* hide sidebar at checkout */
+    #checkoutshippingBody .col150, #checkoutshippingaddressBody .col150, #checkoutpaymentBody .col150, #checkoutpaymentaddressBody .col150, #checkoutconfirmationBody .col150 {
+       display:none;
+   }
+    #checkoutshippingBody #contentMainWrapper, #checkoutshippingaddressBody #contentMainWrapper, #checkoutpaymentBody #contentMainWrapper, #checkoutpaymentaddressBody #contentMainWrapper, #checkoutconfirmationBody #contentMainWrapper {
+        display: grid;
+        grid-template-columns: 6fr 1fr;
+   }
+   /* eof sidebar at checkout */
+
     .cat-count {
         display:inline;
    }

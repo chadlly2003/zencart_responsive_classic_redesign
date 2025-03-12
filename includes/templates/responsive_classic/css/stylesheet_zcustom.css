@@ -1832,7 +1832,7 @@ fieldset input[type=radio] {
     text-align: center;
     padding-left:15px;
     padding-right:15px;
-    display:none;
+    display:block;
 }
 .welcome_note::before {
     content: "\f00c";
@@ -1844,9 +1844,7 @@ fieldset input[type=radio] {
     padding-right: 0.3rem;
     vertical-align: baseline;
 }
-#indexHomeBody .welcome_note {
-    display:block;
-}
+
 #reviewsWritePrice br {
     display:none;
 }

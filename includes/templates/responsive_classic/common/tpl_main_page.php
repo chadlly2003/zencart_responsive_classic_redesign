@@ -53,12 +53,12 @@ if (!defined('IS_ADMIN_FLAG')) {
 
 
 // List of pages to skip left sideboxes
-if (in_array($current_page_base, explode(",", 'checkout,checkout_confirmation,checkout_payment,checkout_shipping,checkout_payment_address,checkout_shipping_address'))) {
+if (in_array($current_page_base, explode(",", 'checkout,checkout_confirmation,checkout_payment,checkout_shipping,checkout_payment_address,checkout_shipping_address,checkout_success'))) {
   $flag_disable_left = true;
 }
 
 // List of pages to skip right sideboxes
-if (in_array($current_page_base, explode(",", 'checkout,checkout_confirmation,checkout_payment,checkout_shipping,checkout_payment_address,checkout_shipping_address'))) {
+if (in_array($current_page_base, explode(",", 'checkout,checkout_confirmation,checkout_payment,checkout_shipping,checkout_payment_address,checkout_shipping_address,checkout_success'))) {
   $flag_disable_right = true;
 }
 

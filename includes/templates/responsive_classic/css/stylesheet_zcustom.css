@@ -2984,7 +2984,7 @@ fieldset input[type=radio] {
    }
    
     /* no sidebar at checkout */
-    #checkoutshippingBody #contentMainWrapper, #checkoutshippingaddressBody #contentMainWrapper, #checkoutpaymentBody #contentMainWrapper, #checkoutpaymentaddressBody #contentMainWrapper, #checkoutconfirmationBody #contentMainWrapper {
+    #checkoutshippingBody #contentMainWrapper, #checkoutshippingaddressBody #contentMainWrapper, #checkoutpaymentBody #contentMainWrapper, #checkoutpaymentaddressBody #contentMainWrapper, #checkoutconfirmationBody #contentMainWrapper, #checkoutsuccessBody #contentMainWrapper {
         display: grid;
         grid-template-columns: 6fr 1fr;
    }

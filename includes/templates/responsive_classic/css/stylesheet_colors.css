@@ -907,7 +907,7 @@ input.cssButton.submit_button.button.button_search {
 	text-align: center;
 }
 #shoppingcartBody tr:nth-child(odd) {
-	background-color: #F0F8FF;
+	background-color: ghostwhite;
 	padding-top:10px;
 	padding-bottom:10px;
 }

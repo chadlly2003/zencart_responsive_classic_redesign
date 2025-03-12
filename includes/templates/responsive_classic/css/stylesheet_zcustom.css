@@ -2983,15 +2983,12 @@ fieldset input[type=radio] {
         grid-template-columns: auto 1fr auto;
    }
    
-   /* hide sidebar at checkout */
-    #checkoutshippingBody .col150, #checkoutshippingaddressBody .col150, #checkoutpaymentBody .col150, #checkoutpaymentaddressBody .col150, #checkoutconfirmationBody .col150 {
-       display:none;
-   }
+    /* no sidebar at checkout */
     #checkoutshippingBody #contentMainWrapper, #checkoutshippingaddressBody #contentMainWrapper, #checkoutpaymentBody #contentMainWrapper, #checkoutpaymentaddressBody #contentMainWrapper, #checkoutconfirmationBody #contentMainWrapper {
         display: grid;
         grid-template-columns: 6fr 1fr;
    }
-   /* eof sidebar at checkout */
+   /* no sidebar at checkout */
 
     .cat-count {
         display:inline;

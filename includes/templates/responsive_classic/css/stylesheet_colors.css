@@ -782,11 +782,23 @@ input.cssButton.submit_button.button.button_search {
 }
 #productGeneral input[type=file] {
 	width: calc(100% - 25px) !important;
-	border:none !important;
-	padding:9px 20px !important;
-	
-	
+	border:none !important;	
+	padding-left:0px;
+	margin-bottom:0px;
 }
+
+
+input[type="file"]::file-selector-button {
+	color: #000; 
+	font-size: 16px; 
+	padding: 10px 20px; 
+	cursor: pointer; 
+	font-weight: normal; 
+	border: solid 1px #ccc !important;
+    border-radius: .25rem !important;
+    background: #e9ecef;
+}
+
 #cart-box .back {
 	float:none !important;
 }

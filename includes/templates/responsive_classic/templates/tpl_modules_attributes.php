@@ -31,7 +31,7 @@
 
 <div class="wrapperAttribsOptions" id="<?php echo $options_html_id[$i]; ?>">
 <h4 class="optionName back"><?php echo $options_name[$i]; ?></h4>
-<div class="back">
+<div>
     <?php echo "\n" . $options_menu[$i]; ?>
 </div>
 <br class="clearBoth">

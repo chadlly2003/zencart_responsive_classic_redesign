@@ -20,6 +20,10 @@ label {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+ 
+ 
+
 #documentproductinfoBody .qty_cart_qty {
     margin-top: 2rem;
     float: right;
@@ -2059,6 +2063,10 @@ fieldset input[type=radio] {
 #searchDefault .button_search {
     width:100% !important;
 }
+
+ 
+
+
 @media (min-width: 576px) {
     .button.button_search {
         width:auto !important 
@@ -2237,6 +2245,9 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+
+    #productAttributes input[type="text"] {width: auto !important;}
+
     .aligner_products {
        display:grid;
         grid-template-columns: 1fr 1fr;

@@ -785,12 +785,12 @@ input.cssButton.submit_button.button.button_search {
 	border:none !important;	
 	padding-left:0px;
 	margin-bottom:0px;
+	font-size: 1rem !important
 }
 
 
 input[type="file"]::file-selector-button {
 	color: #000; 
-	font-size: 16px; 
 	padding: 10px 20px; 
 	cursor: pointer; 
 	font-weight: normal; 

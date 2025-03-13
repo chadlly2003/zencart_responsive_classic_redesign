@@ -21,6 +21,9 @@
 <?php
   if (!empty($products_image)) {
 ?>
+
+
+<div class="reviews_aligner_element">
   <div id="reviewWriteMainImage"><?php
 /**
  * display the main product image
@@ -32,7 +35,7 @@
 ?>
 <!--eof Main Product Image-->
 
-</div>
+ 
  
 <div id="reviews-right">
 <h2 id="reviewsWritePrice"><?php echo $products_price; ?></h2> 
@@ -62,7 +65,7 @@
 <?php echo zen_draw_textarea_field('review_text', 60, 5, '', 'id="review-text"'); ?>
 <?php echo zen_draw_input_field($antiSpamFieldName, '', ' size="40" id="CUAS" style="visibility:hidden; display:none;" autocomplete="off"'); ?>
 
-
+</div></div>
 <div class="buttonRow forward"><?php echo zen_image_submit(BUTTON_IMAGE_SUBMIT, BUTTON_SUBMIT_ALT); ?></div>
 <div id="reviewsWriteReviewsNotice" class="notice"><?php echo TEXT_NO_HTML . (REVIEWS_APPROVAL == '1' ? '<br>' . TEXT_APPROVAL_REQUIRED: ''); ?></div>
 

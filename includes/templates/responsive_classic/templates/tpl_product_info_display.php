@@ -54,6 +54,9 @@ if (PRODUCT_INFO_PREVIOUS_NEXT === '1' || PRODUCT_INFO_PREVIOUS_NEXT === '3') {
         <h1 id="productName" class="<?= $product_info_class ?>"><?= $products_name ?></h1>
 <!--eof Product Name-->
 
+<!-- grid setup -->
+<div class="aligner_products">
+
         <div id="pinfo-left" class="group">
 <!--bof Main Product Image -->
 <?php
@@ -77,8 +80,9 @@ if (!empty($products_image) || !empty($enable_additional_images_without_main_ima
 }
 ?>
         </div>
-
+ 
         <div id="pinfo-right" class="group grids">
+        <div class="border_content">
         <!-- bof Ask a Question -->
         <br>
         <span id="productQuestions">
@@ -149,8 +153,8 @@ if (zen_get_product_is_always_free_shipping($products_id_current) && $flag_show_
 }
 ?>
 <!--eof free ship icon  -->
-        </div>
-
+      
+</div>
 
 <!--bof Add to Cart Box -->
 <?php
@@ -187,6 +191,7 @@ if (CUSTOMERS_APPROVAL === '3' && TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM =
 <!--eof Add to Cart Box-->
 <div class="qty_cart_qty"><?= $display_qty ?></div>
 
+</div>  </div>
 
 
 
@@ -195,7 +200,7 @@ $add_to_cart_class = 'add-to-cart-' . zen_get_products_allow_add_to_cart((int)$_
 ?>
         <div id="cart-box" class="grids <?= $product_info_class . ' ' . $add_to_cart_class ?>">
 
-
+</div>
 <!--bof Attributes Module -->
 <?php
 if ($pr_attr->fields['total'] > 0) {
@@ -219,8 +224,7 @@ if ($products_discount_type != 0) {
 ?>
 <!--eof Quantity Discounts table -->
 
-        </div>
-
+        
  
  
     </div>

@@ -78,8 +78,6 @@ input:focus, select:focus, textarea:focus, #mainWrapper, .centerBoxContentsAlsoP
 .tableHeading{
 	background-color:#e9e9e9;
 }
- 
- 
 #orderTotals{
 	background:transparent;
 }
@@ -784,6 +782,7 @@ input.cssButton.submit_button.button.button_search {
 }
 #productGeneral input[type=file] {
 	width: calc(100% - 25px) !important;
+	border:none !important;
 }
 #cart-box .back {
 	float:none !important;
@@ -1089,7 +1088,6 @@ input.cssButton.submit_button.button.button_search {
 #shippingEstimatorContent .forward {
 	width: 100%;
 }
- 
 #loginDefault br {
 	display:none;
 }
@@ -1121,7 +1119,7 @@ input.cssButton.submit_button.button.button_search {
 	background: #fff;
 	border-color: #006400 !important;
 	color: #006400;
-   ;
+	;
 }
 #loginDefault .forward {
 	width: 100%;

@@ -23,6 +23,10 @@
    * require the image display code
    */
 ?>
+
+
+
+<div class="realign_spacer2"> 
 <div id="productReviewsDefaultProductImage" class=""><?php require($template->get_template_dir('/tpl_modules_main_product_image.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_main_product_image.php'); ?></div>
 <?php
   }
@@ -30,7 +34,7 @@
 
 <div class="block_element_reviewslinked">
 <h2 id="productReviewsDefaultPrice"><?php echo $products_price; ?></h2>
-</div>
+ 
 
 <div class="box_review_spacver"> 
 <?php
@@ -45,7 +49,7 @@
   $products_link = '';
   echo zen_get_buy_now_button($review->fields['products_id'], $the_button, $products_link) . ' ' . zen_get_products_quantity_min_units_display($review->fields['products_id']);
 ?>
-</div>
+</div></div></div>
 
 <div id="productReviewsDefaultProductPageLink" class="buttonRow"><?php echo '<a href="' . zen_href_link(zen_get_info_page($_GET['products_id']), zen_get_all_get_params(array('reviews_id'))) . '">' . zen_image_button(BUTTON_IMAGE_GOTO_PROD_DETAILS , BUTTON_GOTO_PROD_DETAILS_ALT) . '</a>'; ?></div>
 </div>

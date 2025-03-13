@@ -2065,9 +2065,26 @@ fieldset input[type=radio] {
 }
 
  
-
+#productDetailsList li{
+	list-style-type:none;
+	display:list-item;
+	list-style: circle;
+	padding-bottom:0.5rem;
+}
+#productDetailsList{
+	padding:0;
+	margin-left:12px;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+ 
+}
 
 @media (min-width: 576px) {
+
+    #productDetailsList{
+        min-height: 100px;
+    }
+
     .button.button_search {
         width:auto !important 
    }
@@ -2164,8 +2181,8 @@ fieldset input[type=radio] {
    }
     #productinfoBody #productPrices img {
         float:right;
-        margin-top:-70px !important;
-        margin:6rem;
+        margin-top:-75px !important;
+        margin:0rem;
         margin-bottom:0px;
    }
     #pinfo-right #freeShippingIcon {

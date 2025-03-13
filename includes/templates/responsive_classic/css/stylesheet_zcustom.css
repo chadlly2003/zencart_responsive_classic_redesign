@@ -120,9 +120,15 @@ footer {
 #mediaManagerHeading {
     margin-top:0px;
 }
+.border_content {
+    border:solid 1px #ccc;
+    border-radius: 5px;
+    padding:1rem;
+}
 #pinfo-right {
     margin-bottom:1rem;
     margin-top:2rem;
+    border-radius: 5px;
 }
 #pinfo-right br {
     display:none;
@@ -175,6 +181,7 @@ footer {
 }
 #cartAdd {
     margin-bottom:1rem;
+    margin-top:1rem;
 }
 .qty_cart_qty p {
     margin-top:-2.8rem;
@@ -1844,7 +1851,6 @@ fieldset input[type=radio] {
     padding-right: 0.3rem;
     vertical-align: baseline;
 }
-
 #reviewsWritePrice br {
     display:none;
 }
@@ -1855,6 +1861,9 @@ fieldset input[type=radio] {
     margin-top:2rem;
     width: calc(100% - 25px);
     -webkit-appearance: none;
+}
+#productAttributes label {
+   margin-bottom:0px;
 }
 #productMainImage {
     max-width: 500px;
@@ -2045,10 +2054,10 @@ fieldset input[type=radio] {
     color:#000 !important;
 }
 .listingDescription img {
-   display:none !important;
+    display:none !important;
 }
 #searchDefault .button_search {
-   width:100% !important;
+    width:100% !important;
 }
 @media (min-width: 576px) {
     .button.button_search {
@@ -2147,8 +2156,8 @@ fieldset input[type=radio] {
    }
     #productinfoBody #productPrices img {
         float:right;
-        margin-top:-50px !important;
-        margin:2rem;
+        margin-top:-70px !important;
+        margin:6rem;
         margin-bottom:0px;
    }
     #pinfo-right #freeShippingIcon {
@@ -2228,8 +2237,13 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+    .aligner_products {
+       display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1rem;
+   }
     #filter-wrapper {
-       display:flex;
+        display:flex;
         gap:1rem;
    }
     #addressBookDefault .button.button_back {
@@ -2494,14 +2508,8 @@ fieldset input[type=radio] {
         display:flex;
         justify-content: right;
    }
-    #pinfo-left{
-        float:left;
-        width:49%;
-   }
     #pinfo-right {
-        width:43% !important;
-        float:right;
-        padding:1rem;
+        height: fit-content;
         margin-top:0px;
    }
     .onerow-fluid::before {
@@ -2829,12 +2837,6 @@ fieldset input[type=radio] {
         margin-bottom:0.5rem;
         float:right;
    }
-    #cartAdd {
-        width:47%;
-        margin-left:auto;
-        float:none;
-        clear:right;
-   }
     #contactusBody .forward {
         float:right;
    }
@@ -2982,14 +2984,12 @@ fieldset input[type=radio] {
         display:grid;
         grid-template-columns: auto 1fr auto;
    }
-   
-    /* no sidebar at checkout */
+   /* no sidebar at checkout */
     #checkoutshippingBody #contentMainWrapper, #checkoutshippingaddressBody #contentMainWrapper, #checkoutpaymentBody #contentMainWrapper, #checkoutpaymentaddressBody #contentMainWrapper, #checkoutconfirmationBody #contentMainWrapper, #checkoutsuccessBody #contentMainWrapper {
         display: grid;
         grid-template-columns: 6fr 1fr;
    }
    /* no sidebar at checkout */
-
     .cat-count {
         display:inline;
    }
@@ -3030,11 +3030,6 @@ fieldset input[type=radio] {
     .search_box input {
         width:74% !important;
    }
-    #cartAdd {
-        width:46%;
-        margin-left:auto;
-        float:none;
-   }
 }
 @media (min-width: 1300px) {
     div#headerWrapper {
@@ -3042,9 +3037,5 @@ fieldset input[type=radio] {
         margin-left:auto !important;
         margin-right:auto !important;
         margin-bottom:2rem;
-   }
-    #pinfo-left{
-        float:left;
-        width:51%;
    }
 }

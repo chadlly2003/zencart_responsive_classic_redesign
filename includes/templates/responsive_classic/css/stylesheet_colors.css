@@ -783,6 +783,9 @@ input.cssButton.submit_button.button.button_search {
 #productGeneral input[type=file] {
 	width: calc(100% - 25px) !important;
 	border:none !important;
+	padding:9px 20px !important;
+	
+	
 }
 #cart-box .back {
 	float:none !important;

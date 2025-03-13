@@ -164,7 +164,6 @@ input:focus, select:focus, textarea:focus {
 	border: 1px solid rgba(0, 150, 255, 1) !important;
 	outline: rgba(0, 150, 255, 1);
 }
-
 .button_write_review:active {
 	outline:none;
 }
@@ -467,14 +466,10 @@ span.category-subs-selected {
 	font-weight: bold;
 	color: #761bc9;
 }
-
-.category-subs-parent  {
+.category-subs-parent {
 	color: #761bc9;
 	font-weight: bold;
-	 
-} 
-
-
+}
 /*top ezpages links*/
 #navEZPagesTop {
 	margin:0;
@@ -1213,12 +1208,6 @@ span.list-addtext{
 	margin-bottom:3rem;
 	padding-top:1rem;
 }
-#pinfo-right{
-	width:calc(100% - 32px) !important;
-	border:solid 1px #ccc;
-	border-radius: 5px;
-	padding:1rem;
-}
 #productDetailsList li{
 	list-style-type:none;
 	display:list-item;
@@ -1303,6 +1292,8 @@ h4.optionName{
 	margin:0;
 	padding:0;
 	clear:both;
+	width: 100%;
+	display:block;
 }
 .attribImg {
 	margin:1rem 0;
@@ -1560,12 +1551,9 @@ h2.greeting a:hover{
 	display: list-item;
 	align-content: center;
 }
-
 #siteMapList > ul > li > a:first-child {
-    color: #7a1db1;
+	color: #7a1db1;
 }
-
-
 #gvFaqDefaultContent{
 	line-height:20px;
 	font-size:110%;
@@ -1647,7 +1635,6 @@ table, .tabTable{
 .moreinfoLink {
 	min-height: 44px;
 	align-content: center;
-
 }
 #loginDefault .important a {
 	min-height: 44px;
@@ -1669,9 +1656,9 @@ table, .tabTable{
 #gvFaqDefaultMainContent br {
 	display:none;
 }
-#upcomingProductsTable a  {
+#upcomingProductsTable a {
 	color:#1450AF;
 }
-#upcomingProductsTable a:hover  {
+#upcomingProductsTable a:hover {
 	text-decoration: underline;
 }

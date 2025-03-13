@@ -83,17 +83,19 @@ span.cssButton.normal_button.button.button_goto_prod_details{
 	font-size: 16px;
 	color: #000;
 	display:contents;
+	 
 }
 #productreviewsBody .button_goto_prod_details:hover {
 	background: transparent;
 	font-size: 16px;
 	font-size:16px;
 	display: contents;
+ 
 }
 #productreviewsBody span.cssButton.normal_button.button.button_goto_prod_details:hover {
 	background: transparent;
 	font-size: 16px;
-	font-size:16px;
+	 
 }
 #reviewsDefault .button_in_cart:hover {
 	float:none;

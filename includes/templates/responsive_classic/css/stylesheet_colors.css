@@ -832,12 +832,28 @@ input.cssButton.submit_button.button.button_search {
 }
 #productreviewsinfoBody span.normal_button {
 	font-size: 16px;
+	clear:both;
+	padding-left:0px;
+	padding-right:0px;
 }
+
+.rating {margin-bottom:0px !important;}
+#productreviewsinfoBody .button_in_cart {border:solid 1px #000;border:solid 1px #FFD700;}
+#productreviewsinfoBody .button_in_cart:hover {border:solid 1px #FFD700;background: #fff;}
+
+
+#reviewsInfoDefaultProductImage {margin:0px !important;}
+
 #productreviewsinfoBody .button_goto_prod_details {
 	background:transparent !important;
 	color:#154DBC;
 	font-size:16px;
+	display: flex;
+    align-items: center;
+	min-height: 44px;
+	padding:0px;
 }
+ 
 .reviewligner span.normal_button {
 	font-size: 19px !important;
 }

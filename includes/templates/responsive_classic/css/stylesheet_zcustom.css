@@ -1871,7 +1871,7 @@ fieldset input[type=radio] {
 }
 #productMainImage {
     max-width: 500px;
-    margin: auto;
+    margin: auto !important;
 }
 .col150 select {
     width: 100% !important;
@@ -2263,6 +2263,10 @@ fieldset input[type=radio] {
 }
 @media (min-width: 768px) {
 
+
+    .reviews_aligner_element {display: grid; grid-template-columns: 1fr 1fr;gap:1rem;}
+
+
     #productAttributes input[type="text"] {width: auto !important;}
 
     .aligner_products {
@@ -2286,8 +2290,7 @@ fieldset input[type=radio] {
         float:left;
    }
     #reviewsWrite .center {
-        display: flex;
-        flex-wrap: wrap;
+   
         margin-bottom:0.5rem;
    }
     #cart-box input[type="text"] {
@@ -2341,14 +2344,16 @@ fieldset input[type=radio] {
    }
     #reviewsWrite .ratingRow {
         width:30%;
-        float:left;
+     
         margin-bottom:0rem;
         margin-top:1rem;
    }
     #productreviewswriteBody #productMainImage {
-        margin-right:1rem;
         margin-bottom:1rem;
    }
+   #productreviewswriteBody #pinfo-left {width: auto; float:left;}
+
+
     #productAdditionalImages {
         grid-template-columns: auto auto auto auto;
         justify-content: left;

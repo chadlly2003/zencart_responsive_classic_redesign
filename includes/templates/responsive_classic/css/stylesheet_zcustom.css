@@ -663,6 +663,7 @@ input[type="checkbox"] {
     clear:both;
     color: #4b0082;
     float: left;
+    margin-top:1rem;
 }
 .button_goto_prod_details{
     color:#4b0082 !important 
@@ -1528,7 +1529,7 @@ fieldset input[type=radio] {
     text-align: left;
     padding-top:1rem;
     border-top:solid 1px #ccc;
-    margin-bottom:1rem;
+    margin-bottom:0rem;
 }
 #productReviewsDefaultListingBottomNumber {
     color:#006400;
@@ -2080,6 +2081,11 @@ fieldset input[type=radio] {
  
 }
 
+
+#productReviewsDefaultProductImage {margin:0px !important;}
+
+
+
 @media (min-width: 576px) {
 
 
@@ -2259,7 +2265,7 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
-
+    .realign_spacer2 {display: grid; grid-template-columns: 1fr 1fr;gap:1rem;}
 
     .reviews_aligner_element {display: grid; grid-template-columns: 1fr 1fr;gap:1rem;}
 
@@ -2359,7 +2365,7 @@ fieldset input[type=radio] {
         margin-bottom:0rem;
         float:right;
         clear:right;
-        width:40%;
+        width:100%;
         text-align: right;
    }
     #reviewsInfoDefault .spacer_element_button_add {
@@ -2377,13 +2383,18 @@ fieldset input[type=radio] {
         text-align:center;
         float:right;
         margin-top:0px;
+        margin-bottom:0px !important;
    }
+
+ 
+
+
     #productreviewsBody #productReviewsDefaultPrice {
         text-align:center;
         float: right;
    }
     #productReviewsDefaultPrice {
-        margin-bottom:0.5rem;
+        margin-bottom:1rem;
    }
     .unsubscribebutton {
         margin-top:1rem;
@@ -2588,14 +2599,7 @@ fieldset input[type=radio] {
         display: block;
         text-align: right;
    }
-    #reviewsInfoDefaultProductImage {
-        width: 49%;
-        float:left;
-   }
-    #productReviewsDefaultProductImage {
-        width: 49%;
-        float:left;
-   }
+    
     #reviewsInfoDefault .productBasePrice {
         text-align: right;
         display: block;
@@ -2617,6 +2621,7 @@ fieldset input[type=radio] {
    }
     #reviewsDefault .productBasePrice {
         text-align: right;
+        margin-bottom:0px !important;
    }
     .block_element_reviewslinked {
         margin-top:0rem;

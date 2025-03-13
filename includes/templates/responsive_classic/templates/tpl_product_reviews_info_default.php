@@ -8,7 +8,9 @@
  * @version $Id: John Thompson 2022 Jul 30 Modified in v1.5.8-alpha2 $
  */
 ?>
-<div class="centerColumn" id="reviewsInfoDefault">
+ 
+
+ <div class="centerColumn">
 <h1 id="reviewsInfoDefaultHeading"><?php echo $products_name . $products_model; ?></h1>
 <?php
   if (!empty($products_image)) {
@@ -16,6 +18,9 @@
      * require the image display code
      */
 ?>
+
+<div class="realign_spacer2"> 
+
 <div id="reviewsInfoDefaultProductImage" class="reviews_alignment"><?php require($template->get_template_dir('/tpl_modules_main_product_image.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_main_product_image.php'); ?></div>
 <?php
         }
@@ -37,12 +42,12 @@
   $products_link = '';
   echo zen_get_buy_now_button($review_info->fields['products_id'], $the_button, $products_link) . '<br>' . zen_get_products_quantity_min_units_display($review_info->fields['products_id']);
 ?>
-</div>
+</div></div>
 <div id="reviewsInfoDefaultProductPageLink" class="buttonRow"><?php echo '<a href="' . zen_href_link(zen_get_info_page($_GET['products_id']), zen_get_all_get_params(array('reviews_id'))) . '">' . zen_image_button(BUTTON_IMAGE_GOTO_PROD_DETAILS , BUTTON_GOTO_PROD_DETAILS_ALT) . '</a>'; ?></div>
 
-<div id="reviewsInfoDefaultReviewsListingLink" class=""><?php echo ($reviews_counter > 1 ? '<a href="' . zen_href_link(FILENAME_PRODUCT_REVIEWS, zen_get_all_get_params(array('reviews_id'))) . '">' . zen_image_button(BUTTON_IMAGE_MORE_REVIEWS , BUTTON_MORE_REVIEWS_ALT) . '</a>' : ''); ?></div>
+<div id="reviewsInfoDefaultReviewsListingLink" class=""><?php echo ($reviews_counter > 1 ? '<a href="' . zen_href_link(FILENAME_PRODUCT_REVIEWS, zen_get_all_get_params(array('reviews_id'))) . '">' . zen_image_button(BUTTON_IMAGE_MORE_REVIEWS , BUTTON_MORE_REVIEWS_ALT) . '</a>' : ''); ?></div></div>
 
- <div class="spacerrating"></div>
+ <div class="spacerrating"> 
 <div class="clearBoth spacer_read_more">
 <h3 class="rating"><?php echo zen_image(DIR_WS_TEMPLATE_IMAGES . 'stars_' . $review_info->fields['reviews_rating'] . '.png', sprintf(TEXT_OF_5_STARS, $review_info->fields['reviews_rating'])), sprintf(TEXT_OF_5_STARS, $review_info->fields['reviews_rating']); ?></h3>
 

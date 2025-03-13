@@ -128,6 +128,7 @@ footer {
     border:solid 1px #ccc;
     border-radius: 5px;
     padding:1rem;
+    position: relative;
 }
 #pinfo-right {
     margin-bottom:1rem;
@@ -2081,9 +2082,6 @@ fieldset input[type=radio] {
 
 @media (min-width: 576px) {
 
-    #productDetailsList{
-        min-height: 100px;
-    }
 
     .button.button_search {
         width:auto !important 
@@ -2180,10 +2178,10 @@ fieldset input[type=radio] {
         margin-top:0px;
    }
     #productinfoBody #productPrices img {
-        float:right;
-        margin-top:-75px !important;
-        margin:0rem;
         margin-bottom:0px;
+        position: absolute;
+        right:100px;
+        top:15px;
    }
     #pinfo-right #freeShippingIcon {
         float: right;

@@ -1208,18 +1208,7 @@ span.list-addtext{
 	margin-bottom:3rem;
 	padding-top:1rem;
 }
-#productDetailsList li{
-	list-style-type:none;
-	display:list-item;
-	list-style: circle;
-	padding-bottom:0.5rem;
-}
-#productDetailsList{
-	padding:0;
-	margin-left:12px;
-	margin-top:0px !important;
-	margin-bottom:0px !important;
-}
+ 
 #productPrices{
 	font-size:1.5em;
 	text-align:center;

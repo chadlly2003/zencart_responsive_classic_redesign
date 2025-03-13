@@ -1327,6 +1327,7 @@ h4.optionName{
 	margin:0;
 }
 .reviews-right{
+	margin-bottom: 1rem;
 }
 .reviews-wrapper .smallProductImage{
 	width:18%;
@@ -1343,8 +1344,7 @@ h4.optionName{
 	border-top:solid 1px #ccc;
 	padding-top:1rem !important;
 }
-#reviews-right{
-}
+ 
 #review-text{
 	width:100%;
 	margin:20px 0;

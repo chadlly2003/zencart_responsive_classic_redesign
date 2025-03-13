@@ -1304,6 +1304,7 @@ h4.optionName{
 }
 .attributesComments {
 	float:left;
+	width: 100%;
 }
 .wrapperAttribsOptions select{
 	width:100%;

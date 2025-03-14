@@ -2109,6 +2109,9 @@ fieldset input[type=radio] {
     height: auto;
 }
 
+.button_read_reviews {align-content: center;padding-top: 0rem !important;margin-top:1rem !important;}
+
+
 @media (min-width: 576px) {
     .button.button_search {
         width:auto !important 
@@ -2287,6 +2290,12 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+
+
+    .button_read_reviews {
+        margin-top:0px !important;
+    }
+
     #productInfoNoProduct  .button_continue {
         float:left;
     }

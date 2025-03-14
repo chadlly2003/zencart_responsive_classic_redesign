@@ -34,7 +34,7 @@
 <div>
     <?php echo "\n" . $options_menu[$i]; ?>
 </div>
- 
+<br class="clearBoth">
 </div>
 
 

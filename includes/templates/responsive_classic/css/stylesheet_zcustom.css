@@ -631,6 +631,8 @@ input[type="checkbox"] {
     margin: 0px;
    min-height: 44px;
     color:#4b0082;
+    align-content: center;
+   
 }
 span.cssButton.normal_button.button.button_more_reviews {
    text-align: left;

@@ -537,6 +537,11 @@ input[type="checkbox"] {
     min-height: 44px;
     align-content: center;
 }
+
+#productreviewswriteBody .button_reviews {   
+    line-height: 0.1 !important;
+}
+  
 #reviewsWrite .button.button_goto_prod_details {
     background: transparent;
     color:#4b0082;

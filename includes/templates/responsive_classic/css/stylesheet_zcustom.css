@@ -564,7 +564,7 @@ input[type="checkbox"] {
     text-align: left;
     color: #000;
     border-bottom: solid 1px #6495ED;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding-bottom: 1rem;
     margin-bottom: 3rem;
     padding-top: 1rem;
@@ -655,7 +655,7 @@ span.cssButton.normal_button.button.button_more_reviews {
     text-align: left;
     color: #000;
     border-bottom: solid 1px #6495ED;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding-bottom: 1rem;
     margin-bottom: 3rem;
     padding-top: 1rem;

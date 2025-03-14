@@ -2275,6 +2275,12 @@ fieldset input[type=radio] {
 }
 @media (min-width: 768px) {
 
+    .spacer_element_button_add span.normal_button {
+        width:75%;
+        float:right;
+    }
+
+
     #reviewWriteMainImage img {
         max-width: 300px !important;
     }
@@ -2324,11 +2330,11 @@ fieldset input[type=radio] {
    }
     #productreviewsinfoBody #productMainImage {
         margin-bottom:1rem;
-        max-width: 300px;
+        max-width: 250px;
    }
     #reviewsDefault #productMainImage img {
         margin-bottom:0rem;
-        max-width: 300px;
+        max-width: 250px;
    }
     #productreviewsBody #productMainImage {
         margin-bottom:1rem;
@@ -2388,7 +2394,7 @@ fieldset input[type=radio] {
         margin-bottom:0rem;
         float:right;
         clear:right;
-        width:100%;
+        width:75%;
         text-align: right;
    }
     #reviewsInfoDefault .spacer_element_button_add {

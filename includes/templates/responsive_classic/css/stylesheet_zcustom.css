@@ -638,6 +638,8 @@ span.cssButton.normal_button.button.button_more_reviews {
     padding:0px;
     margin: 0px;
    min-height: 44px;
+   align-content: center;
+  
 }
 .reviews-wrapper {
     float:left;
@@ -645,7 +647,7 @@ span.cssButton.normal_button.button.button_more_reviews {
     text-align: center;
 }
 .spacer_read_more {
-    margin-top:1rem;
+    
     border-top:solid 1px #ccc;
     padding-bottom:1rem;
     padding-top:0rem;
@@ -678,6 +680,7 @@ span.cssButton.normal_button.button.button_more_reviews {
     color: #4b0082;
     float: left;
     margin-top:0;
+    margin-bottom:0rem;
 }
 .button_goto_prod_details{
     color:#4b0082 !important 
@@ -687,7 +690,7 @@ span.cssButton.normal_button.button.button_more_reviews {
 }
 #reviewsDefault .button_read_reviewsHover {
     background:transparent;
-    margin-top:0px;
+   
     font-size:0.9rem;
     display:block;
     padding:0px;
@@ -701,11 +704,18 @@ span.cssButton.normal_button.button.button_more_reviews {
     padding-bottom:0rem;
 }
 #reviewsDefault span.cssButton.normal_button.button.button_read_reviews {
-    margin-top:0px;
+  
     font-size:0.9rem;
     color:#154DBC;
     display:block;
     padding:0px;
+}
+#productreviewsBody span.cssButton.normal_button.button.button_read_reviews {
+    margin-top:0px !important;
+}
+
+#productreviewsBody #reviewsDefault .button_read_reviewsHover {
+    margin-top:0px !important;
 }
 .read_review a {
     display: inline-block;
@@ -1644,6 +1654,7 @@ fieldset input[type=radio] {
 .spacerrating {
     width:100%;
     clear:both;
+    
 }
 .backhistorybutton {
     margin-bottom:3rem !important;
@@ -1686,6 +1697,11 @@ fieldset input[type=radio] {
 .reviews_elementblock {
     font-size:16px;
 }
+
+.reviews_elementblock a {min-height: 44px;min-height: 44px;
+    display: flex;
+    align-content:  baseline;justify-content: center;justify-items: center;align-items: center;}
+
 #reviewsInfoDefaultPrice br {
     display: none;
 }
@@ -1710,6 +1726,8 @@ fieldset input[type=radio] {
     margin-bottom:1rem;
     text-align: center;
 }
+
+.spacer_element_button_add a {min-height: 44px; display: block;}
 #reviewsInfoDefault .productBasePrice {
     display: inline-block;
     margin-bottom:1rem !important;
@@ -1955,6 +1973,7 @@ fieldset input[type=radio] {
 }
 #reviewsInfoDefault .buttonRow a {
     min-height: 44px;
+    
 }
 #bannerboxallContent a {
     display: block;
@@ -2115,7 +2134,7 @@ fieldset input[type=radio] {
 }
 
 .button_read_reviews {align-content: center;padding-top: 0rem !important;margin-top:1rem !important;}
-
+ 
 
 @media (min-width: 576px) {
     .button.button_search {

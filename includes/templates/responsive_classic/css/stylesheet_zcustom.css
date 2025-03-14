@@ -2374,6 +2374,7 @@ fieldset input[type=radio] {
    }
     #reviewsWritePrice {
         text-align: left;
+        margin-top:0px;
    }
     .welcome_note {
         padding-left:0px;

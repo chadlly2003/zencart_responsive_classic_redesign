@@ -1897,7 +1897,7 @@ fieldset input[type=radio] {
     padding:1rem;
     margin-bottom:0rem;
     margin-top:3rem;
-    width: calc(100% - 25px);
+    width: calc(100% - 32px);
     -webkit-appearance: none;
 }
 #productAttributes label {

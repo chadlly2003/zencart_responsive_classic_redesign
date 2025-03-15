@@ -1894,9 +1894,9 @@ fieldset input[type=radio] {
 }
 #productAttributes {
     background-color: #F0F8FF;
-    padding:12px;
+    padding:1rem;
     margin-bottom:0rem;
-    margin-top:2rem;
+    margin-top:3rem;
     width: calc(100% - 25px);
     -webkit-appearance: none;
 }

@@ -1252,6 +1252,14 @@ input[type="radio"], input[type="checkbox"] {
     padding-top: 0.5rem;
     margin-top:0px;
 }
+
+#orderAttribsList {
+    padding-left:1rem;
+    padding-top: 0.5rem;
+    margin-top:0px;
+}
+
+
 #accountHistInfo #orderHistoryStatus {
     margin-top:2rem 
 }
@@ -1678,14 +1686,14 @@ fieldset input[type=radio] {
 #askaquestionBody .button_back {
     margin-bottom:3rem !important;
 }
-#myAccountShipInfo h4 {
+#myAccountShipInfo h3{
     margin-bottom: 0.5rem;
-    color: #8A2BE2;
+    color: #7a1db1;
     font-size: 1.3em;
 }
 #myAccountPaymentInfo h4 {
     margin-bottom: 0.5rem;
-    color: #8A2BE2;
+    color: #7a1db1;;
     font-size: 1.3em;
 }
 #myAccountShipInfo div {

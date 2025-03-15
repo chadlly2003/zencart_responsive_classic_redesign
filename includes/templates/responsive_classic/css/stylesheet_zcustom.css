@@ -129,7 +129,7 @@ footer {
 
 }
 #pinfo-right {
-    margin-bottom:1rem;
+    margin-bottom:0rem;
     margin-top:2rem;
     border-radius: 5px;
 }
@@ -2317,6 +2317,8 @@ fieldset input[type=radio] {
    }
 }
 @media (min-width: 768px) {
+
+    #searchResultsDefault span.button_sold_out {justify-content: left;}
 
 
     .button_read_reviews {

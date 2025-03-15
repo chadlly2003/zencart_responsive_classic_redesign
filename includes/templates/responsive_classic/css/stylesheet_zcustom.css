@@ -2147,7 +2147,21 @@ fieldset input[type=radio] {
     height: auto;
 }
 
-.button_read_reviews {align-content: center;padding-top: 0rem !important;margin-top:1rem !important;}
+.button_read_reviews {
+    align-content: center;
+    padding-top: 0rem !important;
+    margin-top:1rem !important;}
+
+    
+.navitem3t {
+	font-size:32px !important;
+	color:#4B3D8D;
+	position: relative;
+	margin-top:-4px;
+    min-height: 44px;
+    min-width: 44px;
+    align-content: center;
+}
  
 
 @media (min-width: 576px) {
@@ -2166,8 +2180,6 @@ fieldset input[type=radio] {
         align-content: center;
    }
     .navitem3t {
-        font-size:32px !important;
-        color:#4B3D8D;
         margin-top:0px;
    }
     .show_orders {

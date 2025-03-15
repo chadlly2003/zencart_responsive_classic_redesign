@@ -20,13 +20,26 @@ label {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
-#documentproductinfoBody .qty_cart_qty {
-    margin-top: 2rem;
-    float: right;
-    margin-bottom: -2rem;
-    z-index: 1;
+
+ .qty_cart_qty {
+	text-align:right !important;
+	float:right;
     position: relative;
+    top:33px;
 }
+ .max-qty {
+	position:absolute;
+	margin-top:3.5rem !important;
+}
+ 
+.qty_cart_qty p {
+    margin-top:-2.9rem;
+    margin-bottom:1.7rem;
+}
+.max-qty br {
+	display:none !important;
+}
+
 #indexDefaultMainContent {
     background:#E6E6FA;
     padding:12px;
@@ -186,10 +199,7 @@ footer {
     margin-bottom:1rem;
     margin-top:1rem;
 }
-.qty_cart_qty p {
-    margin-top:-2.9rem;
-    margin-bottom:1.7rem;
-}
+
 #orderStatus caption {
     text-align: left;
 }
@@ -1965,15 +1975,6 @@ fieldset input[type=radio] {
 }
 #reviewsInfoDefaultProductImage img {
     margin-bottom:0rem !important;
-}
-#productGeneral .qty_cart_qty {
-    position: relative;
-    top:33px;
-}
-
-#productfreeshippinginfoBody .qty_cart_qty {
-    position: relative;
-    top:33px;
 }
 
 

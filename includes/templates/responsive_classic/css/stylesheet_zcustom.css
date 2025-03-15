@@ -1970,6 +1970,13 @@ fieldset input[type=radio] {
     position: relative;
     top:33px;
 }
+
+#productfreeshippinginfoBody .qty_cart_qty {
+    position: relative;
+    top:33px;
+}
+
+
 #reviewsWrite .ratingRow {
     Margin-top:1rem;
 }

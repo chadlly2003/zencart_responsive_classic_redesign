@@ -1625,6 +1625,8 @@ table, .tabTable{
 .moreinfoLink {
 	min-height: 44px;
 	align-content: center;
+	margin-bottom:0px;
+	 
 }
 #loginDefault .important a {
 	min-height: 44px;

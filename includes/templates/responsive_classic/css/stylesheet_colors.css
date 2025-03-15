@@ -1068,30 +1068,6 @@ input[type="file"]::file-selector-button {
 	border-bottom:solid 1px #ccc;
 }
  
-#productGeneral .qty_cart_qty {
-	text-align:right !important;
-	float:right;
-}
-#productGeneral .max-qty {
-	position:absolute;
-	margin-top:3.5rem !important;
-}
-
-
-#productfreeshippinginfoBody .qty_cart_qty {
-	text-align:right !important;
-	float:right;
-}
-
-#productfreeshippinginfoBody .max-qty {
-	position:absolute;
-	margin-top:3.5rem !important;
-}
-
-
-.max-qty br {
-	display:none !important;
-}
 .cartTotalsDisplay {
 	text-align: left;
 	color: #4b0082 !important;

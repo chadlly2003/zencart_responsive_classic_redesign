@@ -173,7 +173,7 @@ input, TEXTAREA{
 	border: 1px solid #ced4da !important;
 	border-radius: .25rem;
 	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-	width: calc(100% - 25px) !important;
+	width: calc(100% - 24px) !important;
 }
 #navMain ul li {
 	border-right:1px solid #fff;
@@ -781,7 +781,7 @@ input.cssButton.submit_button.button.button_search {
 	clear:both;
 }
 #productGeneral input[type=file] {
-	width: calc(100% - 25px) !important;
+	width: calc(100% - 24px) !important;
 	border:none !important;	
 	padding-left:0px;
 	margin-bottom:0px;
@@ -1003,7 +1003,7 @@ input[type="file"]::file-selector-button {
 	width:100%;
 }
 .search_box_mobile input {
-	width: calc(100% - 25px);
+	width: calc(100% - 24px);
 	padding: .375rem .75rem;
 	font-size: 1rem;
 	font-weight: 400;

@@ -994,13 +994,7 @@ input[type="file"]::file-selector-button {
 	align-items: center;
 	margin:auto;
 }
-.shoppingcart {
-	margin-left:auto;
-	display:grid;
-	grid-template-columns: 1fr auto;
-	min-height: 44px;
-	min-width: 44px;
-}
+
 .search_box_mobile {
 	width:100%;
 }

@@ -54,8 +54,7 @@ img{
 .col140{
 	width:205px;
 }
-.col150{
-}
+
 .col160{
 	width:235px;
 }
@@ -500,8 +499,7 @@ img{
 .onerow-fluid>.col660{
 	width:67.2355%;
 }
-.onerow-fluid>.col670{
-}
+
 .onerow-fluid>.col680{
 	width:69.2833%;
 }
@@ -590,7 +588,7 @@ img{
 	width:97.9522%;
 }
 .onerow-fluid>.col970{
-	width:98.9761%;
+	width:100%;
 }
 .onerow-fluid>.col980{
 	width:100%;

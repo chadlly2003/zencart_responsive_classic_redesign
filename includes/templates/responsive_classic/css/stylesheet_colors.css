@@ -791,12 +791,13 @@ input.cssButton.submit_button.button.button_search {
 
 input[type="file"]::file-selector-button {
 	color: #000; 
-	padding: 10px 20px; 
+	padding: 10px 20px ; 
 	cursor: pointer; 
 	font-weight: normal; 
 	border: solid 1px #ccc !important;
     border-radius: .25rem !important;
     background: #e9ecef;
+	height: 48px; 
 }
 
 #cart-box .back {

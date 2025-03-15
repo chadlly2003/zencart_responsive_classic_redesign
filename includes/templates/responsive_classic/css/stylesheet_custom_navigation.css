@@ -92,17 +92,10 @@
 	font-size:32px !important;
 	color:#2c6161;
 }
-.navitem3t {
-	font-size:32px !important;
-	color:#4B3D8D;
-}
-.navitem3t {
-	position: relative;
-	margin-top:-4px;
-}
+
 .cart-count {
 	position: absolute;
-	top: -5px !important;
+	top: -1px !important;
 	right: 0;
 	background-color: #AD0000;
 	color: #fff;

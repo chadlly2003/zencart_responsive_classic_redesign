@@ -81,7 +81,7 @@ if (!empty($products_image) || !empty($enable_additional_images_without_main_ima
 ?>
         </div>
  
-        <div id="pinfo-right" class="group grids">
+        <div id="pinfo-right">
         <div class="border_content">
         <!-- bof Ask a Question -->
         <br>

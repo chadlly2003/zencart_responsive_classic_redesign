@@ -95,7 +95,7 @@
 
 .cart-count {
 	position: absolute;
-	top: -1px !important;
+	 margin-top:-6px;
 	right: 0;
 	background-color: #AD0000;
 	color: #fff;

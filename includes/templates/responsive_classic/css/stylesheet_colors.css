@@ -998,6 +998,8 @@ input[type="file"]::file-selector-button {
 	margin-left:auto;
 	display:grid;
 	grid-template-columns: 1fr auto;
+	min-height: 44px;
+	min-width: 44px;
 }
 .search_box_mobile {
 	width:100%;

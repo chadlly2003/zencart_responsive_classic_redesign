@@ -1539,10 +1539,19 @@ h2.greeting a:hover{
 	display: inline-block;
 	align-content: center;
 	list-style: none;
+	min-width: 44px;
 }
 #siteMapList > ul > li > a:first-child {
 	color: #7a1db1;
 }
+
+#siteMapList  > ul:first-child {
+	padding-left:0px;
+	margin-left:0px;
+	list-style: none;
+}
+
+
 #gvFaqDefaultContent{
 	line-height:20px;
 	font-size:110%;

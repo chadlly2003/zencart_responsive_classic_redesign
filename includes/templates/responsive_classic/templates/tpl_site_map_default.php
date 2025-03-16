@@ -47,8 +47,10 @@
           <li><?php echo '<a href="' . zen_href_link(FILENAME_SPECIALS) . '">' . PAGE_SPECIALS . '</a>'; ?></li>
           <li><?php echo '<a href="' . zen_href_link(FILENAME_FEATURED_PRODUCTS) . '">' . PAGE_FEATURED . '</a>'; ?></li>
           <li><?php echo '<a href="' . zen_href_link(FILENAME_REVIEWS) . '">' . PAGE_REVIEWS . '</a>'; ?></li>
-          <li><?php echo BOX_HEADING_INFORMATION; ?>
-          <ul>
+         
+         </ul>
+         <?php echo BOX_HEADING_INFORMATION; ?>
+        <ul> 
 <?php if (DEFINE_SHIPPINGINFO_STATUS <= '1') { ?>
             <li><?php echo '<a href="' . zen_href_link(FILENAME_SHIPPING) . '">' . BOX_INFORMATION_SHIPPING . '</a>'; ?></li>
 <?php } ?>
@@ -84,7 +86,7 @@
             <li><?php echo '<a href="' . zen_href_link(FILENAME_PAGE_4) . '">' . BOX_INFORMATION_PAGE_4 . '</a>'; ?></li>
 <?php } ?>
 
-         </ul></li>
+        </ul>
 <?php
     $pages_query = $db->Execute("SELECT e.*, ec.*
                                 FROM " . TABLE_EZPAGES . " e,
@@ -131,17 +133,17 @@
         $page_query_list[$rows]['link'] .= ($page_query['page_open_new_window'] == '1' ? '" rel="noreferrer noopener" target="_blank' : '');
       }
       if (!empty($page_query_list)) {
-?>
-          <li><?php echo BOX_HEADING_EZPAGES; ?>
+?> </ul> 
+          <?php echo BOX_HEADING_EZPAGES; ?> 
           <ul>
 <?php foreach ($page_query_list as $item) {  ?>
             <li><?php echo '<a href="' . $item['link'] . '">' . $item['name'] . '</a>'; ?></li>
 <?php } ?>
-         </ul></li>
+         </ul>
 <?php } ?>
 <?php } ?>
-          <!-- <ul>
-     </ul> -->
+           
+     
 </div>
 <br class="clearBoth">
 <div class="buttonRow back"><?php echo zen_back_link() . zen_image_button(BUTTON_IMAGE_BACK, BUTTON_BACK_ALT) . '</a>'; ?></div>

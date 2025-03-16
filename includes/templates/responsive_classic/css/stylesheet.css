@@ -1540,6 +1540,7 @@ h2.greeting a:hover{
 	min-height:44px;
 	display: list-item;
 	align-content: center;
+	list-style: none;
 }
 #siteMapList > ul > li > a:first-child {
 	color: #7a1db1;

@@ -1551,6 +1551,8 @@ h2.greeting a:hover{
 	list-style: none;
 }
 
+#siteMapList ul {padding-left:2rem;}
+#pagenotfoundBody ul {padding-left:2rem;}
 
 #gvFaqDefaultContent{
 	line-height:20px;

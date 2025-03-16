@@ -1530,15 +1530,13 @@ h2.greeting a:hover{
 #siteMapList {
 	width:100%;
 }
-#siteMapList ul {
-	width:100%;
-}
+ 
 #logo a {
 	min-height: 44px;
 }
 #siteMapList ul li a {
 	min-height:44px;
-	display: list-item;
+	display: inline-block;
 	align-content: center;
 	list-style: none;
 }

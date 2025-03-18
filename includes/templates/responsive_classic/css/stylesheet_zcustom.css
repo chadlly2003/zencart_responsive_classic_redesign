@@ -1822,9 +1822,7 @@ fieldset input[type=radio] {
     color:#808080;
     font-size:1.3rem;
 }
-.image-grid img {
-    max-width: 100px;
-}
+ 
 .reviewCount {
     text-align: center;
     margin-top:0px;
@@ -1977,9 +1975,7 @@ fieldset input[type=radio] {
 #productAdditionalImages a {
     float:left;
 }
-.imgmodal {
-    padding:12px;
-}
+
 .cartTotalDisplay_tax {
     display:none;
 }

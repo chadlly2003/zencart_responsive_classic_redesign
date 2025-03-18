@@ -1974,6 +1974,7 @@ fieldset input[type=radio] {
 }
 #productAdditionalImages a {
     float:left;
+    max-width: 92px;
 }
 
 .cartTotalDisplay_tax {

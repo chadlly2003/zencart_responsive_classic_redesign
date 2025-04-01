@@ -2023,7 +2023,6 @@ fieldset input[type=radio] {
     padding: 10px;
     font-size: 16px;
     text-decoration: none;
-    border: solid 1px #ffd814;
     border-radius: .25rem;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   }
@@ -2032,15 +2031,15 @@ fieldset input[type=radio] {
     top: 0; /* Bring it into view when focused */
     left: 0;
     background-color: #fff;
-    outline: 1px solid #ffd814;
-    border: solid 1px #ffd814;
+    outline: 2px solid #ffd814;
+  
   }
   
   .skip-link:hover,
   .skip-link:focus {
     background-color: #fff;
     color: #000;
-    border: solid 1px #ffd814;
+    
   }
   
   .skip-link:active {

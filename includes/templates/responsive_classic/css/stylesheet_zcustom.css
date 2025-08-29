@@ -2181,6 +2181,17 @@ fieldset input[type=radio] {
     align-content: end;
 }
 
+.button_buy_now {
+    background:#AC171D !important;
+    border:solid 1px #AC171D !important;
+    color:#fff !important;
+}
+.button_buy_now:hover {
+    background: #fff !important;
+    border:solid 1px #AC171D !important;
+    color:#AC171D !important;
+}
+
 @media (min-width: 576px) {
     .button.button_search {
         width:auto !important 
@@ -2594,16 +2605,7 @@ fieldset input[type=radio] {
     #indexProductList .button_buy_now {
         float:right;
    }
-    .button_buy_now {
-        background:#AC171D !important;
-        border:solid 1px #AC171D !important;
-        color:#fff !important;
-   }
-    .button_buy_now:hover {
-        background: #fff !important;
-        border:solid 1px #AC171D !important;
-        color:#AC171D !important;
-   }
+
     #indexProductList .qmax {
         float:right;
         margin-top:0;

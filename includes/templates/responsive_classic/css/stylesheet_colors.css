@@ -8,6 +8,7 @@ body, .messageStackSuccess, .messageStackCaution, #tagline, #productQuantityDisc
 }
 a:link, a:visited, #navEZPagesTOC ul li a, a:hover, #navEZPagesTOC ul li a:hover, fieldset fieldset legend, .cartTotalDisplay, .cartOldItem, .specialsListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .list-price, .itemTitle a, h2.greeting, #icon, h1, .header {
 	color:#154DBC;
+	text-decoration:none;
 }
 .cat-count, .itemTitle a:hover, h2.greeting a:hover {
 	color:#333;

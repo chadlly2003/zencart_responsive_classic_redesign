@@ -1,3 +1,4 @@
+ 
 <?php
 /**
  * product_listing module
@@ -399,7 +400,7 @@ if ($num_products_count > 0) {
             $lc_text = implode('<br>', $product_contents);
             $style = '';
             if ($product_listing_layout_style === 'columns') {
-                $style = ' style="width:' . $col_width . '%;"';
+                //$style = ' style="width:' . $col_width . '%;"';
             }
             $grid_product_card_params = $grid_product_card_params ?? 'centerBoxContentsProducts centeredContent back gridlayout';
             $grid_product_wrap_classes = $grid_product_wrap_classes ?? '';

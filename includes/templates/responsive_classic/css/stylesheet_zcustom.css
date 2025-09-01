@@ -1,5 +1,5 @@
 a:link {
--webkit-tap-highlight-color: transparent;
+     -webkit-tap-highlight-color: transparent;
  }
 
  a:hover {
@@ -3460,7 +3460,7 @@ a:link {
      #shoppingcartBody .tableHeading {
          width: 100%;
          display: grid;
-         grid-template-columns: 1fr 1fr 6fr 1fr 1fr 2fr
+         grid-template-columns: 1fr 1fr 5fr 1fr 2fr 2fr
      }
 
      #shoppingCartDefault input[type="checkbox"] {
@@ -3489,12 +3489,12 @@ a:link {
 
      #shoppingcartBody .rowEven {
          display: grid;
-         grid-template-columns: 1fr 1fr 6fr 1fr 1fr 2fr
+         grid-template-columns: 1fr 1fr 5fr 1fr 2fr 2fr;
      }
 
      #shoppingcartBody .rowOdd {
          display: grid;
-         grid-template-columns: 1fr 1fr 6fr 1fr 1fr 2fr
+         grid-template-columns: 1fr 1fr 5fr 1fr 2fr 2fr;
      }
 
      #reviews-right input.submit_button {

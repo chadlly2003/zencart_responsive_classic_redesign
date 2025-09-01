@@ -2685,7 +2685,7 @@ a:link {
  }
 
  .cartAttribsList {
-     margin-left: 0.5rem;
+     margin-left: 0rem;
  }
 
  #checkoutconfirmationBody #shoppingcartBody th,
@@ -2842,7 +2842,6 @@ a:link {
 
      .cartAttribsList {
          float: left;
-         margin-left: 0px !important;
      }
 
      #checkoutPayment .button_change_address {
@@ -4012,3 +4011,4 @@ a:link {
  .cartProdTitle {
    margin-left:0px;
  }
+ 

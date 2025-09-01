@@ -2694,6 +2694,7 @@
  td,
  th {
      padding: 0.5rem;
+     align-content: center;
  
  }
 #shoppingcartBody tr:nth-child(2n+1) {
@@ -3472,10 +3473,6 @@
      .cartQuantityUpdate {
          display: initial;
          text-align: center;
-     }
-
-     #shoppingcartBody #scRemoveHeading {
-         display: table-cell;
      }
 
      #shoppingcartBody input[type="image"] {

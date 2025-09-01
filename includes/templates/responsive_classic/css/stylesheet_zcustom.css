@@ -1403,10 +1403,6 @@ a:link {
      margin-left: auto;
  }
 
- #accountDefault Address {
-     display: none;
- }
-
  #accountDefault .tableHeading th:nth-of-type(1) {
      display: none;
  }

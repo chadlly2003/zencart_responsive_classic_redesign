@@ -1,4 +1,4 @@
- 
+  
  a:link {
      -webkit-tap-highlight-color: transparent;
  }
@@ -98,7 +98,8 @@
      margin-bottom: 0px;
  }
 
- #productreviewswriteBody .col150:nth-child(2) {
+ #productreviewswriteBody>[class^="col"]:nth-child(2) {
+
      display: none !important;
  }
 
@@ -107,16 +108,16 @@
      display: none !important;
  }
 
- .onerow-fluid>[class*="col150"] {
+.onerow-fluid>[class^="col"] {
      padding-right: 0rem;
      margin-left: 0;
  }
 
- .onerow-fluid>[class*="col150"]:nth-child(1) {
+.onerow-fluid>[class^="col"]:nth-child(1) {
      display: none;
  }
 
- .onerow-fluid>[class*="col150"]:nth-child(3) {
+.onerow-fluid>[class^="col"]:nth-child(3) {
      display: none !important;
  }
 
@@ -146,10 +147,6 @@
 
  #accountHistoryDefault .notice {
      margin-top: 0px !important;
- }
-
- #createaccountsuccessBody .col150:nth-child(2) {
-     display: none;
  }
 
  #indexDefaultMainContent p {
@@ -2387,7 +2384,7 @@
      margin: auto !important;
  }
 
- .col150 select {
+div[class^="col"] select {
      width: 100% !important;
  }
 
@@ -2432,7 +2429,7 @@
      text-decoration: none;
  }
 
- .col150 h2 {
+ div[class^="col"] h2 {
      font-weight: normal;
  }
 
@@ -2690,13 +2687,10 @@
      margin-left: 0rem;
  }
 
- #checkoutconfirmationBody #shoppingcartBody th,
- td,
- th {
+ #checkoutconfirmationBody #shoppingcartBody th, td, th {
      padding: 0.5rem;
-      
- 
  }
+
 #shoppingcartBody tr:nth-child(2n+1) {
     padding-top:0px; 
     padding-bottom:0px;
@@ -2704,6 +2698,11 @@
 
 #shoppingcartBody #scQuantityHeading {
     min-width: 50px;
+}
+
+.col970 {
+    width: 100% !important;
+    margin-right: 0px !important;
 }
 
  @media (min-width: 576px) {
@@ -3920,22 +3919,22 @@
          justify-content: space-between;
      }
 
-     .onerow-fluid>[class*="col150"]:nth-child(1) {
+     .onerow-fluid>[class*="col"]:nth-child(1) {
          padding-left: 0rem;
          margin-right: 2rem;
-         width: 220px;
          display: block;
+         width: 220px;
      }
 
-     .onerow-fluid>[class*="col150"]:nth-child(3) {
+     .onerow-fluid>[class^="col"]:nth-child(3) {
          padding-left: 0;
          margin-left: 2rem;
          width: 220px;
-         display: none !important;
      }
 
-     #indexHomeBody .onerow-fluid>[class*="col150"]:nth-child(3) {
+     #indexHomeBody .onerow-fluid>[class^="col"]:nth-child(3) {
          display: block !important;
+        
      }
  }
 

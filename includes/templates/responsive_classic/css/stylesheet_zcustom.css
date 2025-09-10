@@ -2703,7 +2703,9 @@ div[class^="col"] select {
 .col970 {
     width: 100% !important;
     margin-right: 0px !important;
+    display: block !important;
 }
+
 
  @media (min-width: 576px) {
      .button.button_search {

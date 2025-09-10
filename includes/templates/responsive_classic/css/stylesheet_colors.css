@@ -534,7 +534,6 @@ input.cssButton.submit_button.button.button_search {
 	background: transparent;
 	border-radius: 0px;
 	color:#000;
-	margin-bottom: 0 !important;
 	padding-bottom:1rem;
 	text-align: left;
 	border-bottom:solid 1px #ccc;

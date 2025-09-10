@@ -571,6 +571,7 @@
      border: 1px solid #ccc !important;
      border-radius: 4px !important;
      margin-bottom: 0.5rem;
+     width:100% !important;
  }
 
  form.sidebox-select-form select option:nth-child(1) {
@@ -2384,10 +2385,6 @@
      margin: auto !important;
  }
 
-div[class^="col"] select {
-     width: 100% !important;
- }
-
  .welcome_link {
      text-decoration: underline !important;
  }
@@ -2708,6 +2705,9 @@ div[class^="col"] select {
 
 
  @media (min-width: 576px) {
+
+
+    
      .button.button_search {
          width: auto !important
      }

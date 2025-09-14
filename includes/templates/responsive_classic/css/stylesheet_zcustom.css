@@ -3988,13 +3988,3 @@ div#logo {
  .cartProdTitle {
    margin-left:0px;
  }
-  /* demo css */
-  .list-image img {
-     width: 500px;
- } 
-
-  @media (min-width: 768px) {
-  .list-image img {
-     width: 80px;
- } 
-  }

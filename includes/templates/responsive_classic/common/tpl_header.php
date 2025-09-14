@@ -123,7 +123,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 
 
 <!--bof branding display-->
-<div id="logoWrapper" class="group onerow-fluid">
+<div id="logoWrapper">
     <div id="logo">
       <?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">' . zen_image($template->get_template_dir(HEADER_LOGO_IMAGE, DIR_WS_TEMPLATE, $current_page_base,'images'). '/' . HEADER_LOGO_IMAGE, HEADER_ALT_TEXT) . '</a>'; ?>
       <?php if (HEADER_SALES_TEXT != '' || (SHOW_BANNERS_GROUP_SET2 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET2))) { ?>

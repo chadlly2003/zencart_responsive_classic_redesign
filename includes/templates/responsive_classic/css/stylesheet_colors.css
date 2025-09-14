@@ -273,11 +273,7 @@ label {
 TEXTAREA {
 	margin-bottom:1rem;
 }
-div#logo {
-	text-align:left;
-	max-width:180px;
-	width:100%;
-}
+ 
 input.cssButton.submit_button.button.button_search {
 	font-size:1.2em 
 }
@@ -988,11 +984,9 @@ input[type="file"]::file-selector-button {
 	margin-right:15px;
 }
 .nav_spacer {
-	display:grid;
-	grid-template-columns: auto 3fr 1fr;
-	justify-items: left;
+    display: flex;
 	align-items: center;
-	margin:auto;
+	gap:0.5rem;
 }
 
 .search_box_mobile {
@@ -1036,7 +1030,7 @@ input[type="file"]::file-selector-button {
 	display:none;
 }
 .search_box {
-	width:100%;
+	width:54%;
 }
 .search_box input {
 	width:73% !important;

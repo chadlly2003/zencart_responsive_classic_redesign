@@ -1029,11 +1029,8 @@ input[type="file"]::file-selector-button {
 .search_box {
 	display:none;
 }
-.search_box {
-	width:54%;
-}
+ 
 .search_box input {
-	width:73% !important;
 	padding: .375rem .75rem;
 	font-size: 1rem;
 	font-weight: 400;

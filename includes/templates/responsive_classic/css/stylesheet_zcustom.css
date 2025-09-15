@@ -2977,14 +2977,14 @@
 
       .realign_spacer2 {
           display: grid;
-          grid-template-columns:repeat(2, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           gap: 1rem;
           margin-bottom: 1rem;
       }
 
       .reviews_aligner_element {
           display: grid;
-          grid-template-columns:repeat(2, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           gap: 1rem;
       }
 
@@ -2995,7 +2995,7 @@
 
       .aligner_products {
           display: grid;
-          grid-template-columns:repeat(2, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           gap: 1rem;
       }
 
@@ -3868,6 +3868,10 @@
 
   @media (min-width: 992px) {
 
+      .search_box form {
+          display: flex;
+      }
+
       #createAcctSuccess .fowardcontinue {
           display: flex;
       }
@@ -3915,12 +3919,12 @@
           display: block;
           text-align: left;
           margin-left: 1.5rem;
+          flex-grow: 0.9;
       }
 
       .cat-count {
           display: inline;
       }
-
 
       .onerow-fluid>[class*="col"]:nth-child(1) {
           padding-left: 0rem;
@@ -3944,6 +3948,11 @@
       }
   }
 
+  @media (min-width: 1200px) {
+      .search_box {
+          flex-grow: 0.7;
+      }
+  }
 
   @media (min-width: 1300px) {
       div#headerWrapper {

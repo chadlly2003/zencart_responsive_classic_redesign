@@ -1229,15 +1229,10 @@ TEXTAREA {
 	border-bottom: solid 1px #ccc;
 	font-size: 16px;
 }
-#createAcctSuccess .button_accounts {
-	display:grid;
-	grid-template-columns: 1fr 1fr;
-	gap:1rem;
-	margin-top:2rem !important;
-}
+ 
 #createAcctSuccess span.cssButton.normal_button.button.small_edit {
 	margin-top:0px !important;
-	margin:0px !important 
+	margin:0px !important;
 }
 .welcome_note a {
 	color:#2A4473;

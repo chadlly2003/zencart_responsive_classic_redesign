@@ -610,6 +610,7 @@
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      justify-content: space-between;
   }
 
   .information2 {
@@ -2792,11 +2793,13 @@
 
       .continueshoppingb {
           flex-grow: 1;
+          flex-basis: 0;
       }
 
       #shoppingcartBody .forward {
           order: 2;
-          flex-grow: 2;
+          flex-grow: 1;
+          flex-basis: 0;
       }
 
       #shoppingcartBody .tableHeading {
@@ -3694,12 +3697,12 @@
 
       .continueshoppingb {
           flex-grow: 0;
+          flex-basis: auto;
       }
 
       #shoppingcartBody .forward {
           order: 2;
           flex-grow: 0;
-          margin-left: auto;
       }
 
       .shippingestimaterb {

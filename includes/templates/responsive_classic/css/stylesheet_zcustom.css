@@ -1,4 +1,4 @@
-  a:link {
+   a:link {
       -webkit-tap-highlight-color: transparent;
   }
 
@@ -1486,7 +1486,6 @@
       background: transparent;
       margin-bottom: 1rem;
       margin-top: 1rem;
-      border-top: solid 1px #ccc;
       padding-top: 1rem;
   }
 
@@ -1496,6 +1495,14 @@
 
   #orderHistoryHeading td {
       padding: 0.5rem;
+  }
+
+  #orderHistoryHeading tr:nth-child(odd) td {
+    background-color: #F8F8FF !important;
+  }
+
+    #orderHistoryHeading .tableHeading TH {
+        border:none;
   }
 
   .myAccountProducts {
@@ -4018,3 +4025,14 @@
   .cartProdTitle {
       margin-left: 0px;
   }
+
+   /* demo css */
+  .list-image img {
+     width: 500px;
+ } 
+
+  @media (min-width: 768px) {
+  .list-image img {
+     width: 80px;
+ 	} 
+}

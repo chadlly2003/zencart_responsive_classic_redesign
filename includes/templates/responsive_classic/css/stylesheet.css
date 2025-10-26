@@ -1,4 +1,4 @@
- 
+  
 /*** Main CSS Stylesheet** @copyright Copyright 2003-2024 Zen Cart Development Team* @copyright Portions Copyright 2003 osCommerce* @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0* @version $Id: Jeff Rutt 2024 Sep 11 Modified in v2.1.0 $*/
 /*bof basic elements*/
 body {
@@ -476,23 +476,36 @@ span.category-subs-selected {
 	width:100%;
 }
 #navEZPagesTop ul {
-	font-size:0;
+
 	text-align:center;
 	overflow:hidden;
+	padding-left: 0;
+	margin-top: 0rem;
+    margin-bottom: -2rem;
 }
+
+@media (min-width: 992px) {
+	
+#navEZPagesTop ul {
+	margin-bottom:1rem;
+	margin-top: -1rem;
+    margin-bottom: 0;
+}
+}
+
 #navEZPagesTop li {
 	font-size:0.75rem;
 	display: inline-block;
-	margin-top:0;
+	 
 }
-#navEZPagesTop ul li:last-child{
-}
+ 
 #navEZPagesTop li a {
 	text-decoration: underline;
 	padding: 1.2em 1.0em;
 	display: block;
 }
 #navEZPagesTop li a:hover {
+	background: transparent !important;
 }
 .pagination{
 	margin-top:-10px;

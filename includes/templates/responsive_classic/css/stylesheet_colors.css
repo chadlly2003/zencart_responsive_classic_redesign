@@ -120,7 +120,7 @@ span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.
 	background: transparent;
 }
 #navEZPagesTop li a {
-	color:#FFFFFF;
+	color:#000;
 }
 .messageStackWarning, .messageStackError {
 	background-color:#8b0000;

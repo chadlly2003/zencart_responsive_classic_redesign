@@ -1,4 +1,4 @@
-a:link {
+ a:link {
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -1687,9 +1687,9 @@ h2#addressBookDefaultPrimary {
 
 #checkoutpaymentBody .payment input[type="radio"] {
     margin: 0px;
-    margin-top: 5px !important;
+    margin-top: 3px !important;
 }
-
+ 
 #checkoutpaymentBody .payment .radioButtonLabel {
     list-style: none;
 }
@@ -1896,6 +1896,11 @@ span.cssButton.normal_button.button.small_edit {
     text-align: left;
 }
 
+
+#checkoutsuccessBody  #csNotifications input {
+    margin-top:6px;
+} 
+
 .successicons {
     display: flex;
     flex-direction: column;
@@ -1914,7 +1919,11 @@ span.cssButton.normal_button.button.small_edit {
 
 LABEL.checkboxLabel {
     height: auto;
+  
 }
+
+   
+ 
 
 #contactUsForm {
     margin-bottom: 1rem;
@@ -1926,6 +1935,7 @@ LABEL.checkboxLabel {
 
 fieldset input[type=radio] {
     outline: none;
+    margin-top:6px;
 }
 
 #accountEditDefault fieldset {
@@ -2393,6 +2403,9 @@ fieldset input[type=radio] {
 
 #productAttributes label {
     margin-bottom: 0px;
+    
+    padding-top:4px;
+    padding-bottom:0;
 }
 
 #productMainImage {
@@ -3591,6 +3604,10 @@ div#logo {
         margin-top: 1rem !important;
     }
 
+ 
+#addressbookprocessBody input[type="checkbox"]  {margin-top:6px !important;}
+
+
     #contactUsForm {
         margin-bottom: 0rem;
     }
@@ -4039,6 +4056,11 @@ div#logo {
 .cartProdTitle {
     margin-left: 0px;
 }
+
+#checkoutPaymentHeadingTotal {
+    margin-top:1rem;padding-top:1rem;
+}
+
 
 /* demo css */
 .list-image img {

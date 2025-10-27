@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Cart Template Setup - How To Guide v2</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafafa;
+            margin: 0;
+            padding: 0
+        }
+        h1, h2, h3 {
+            color: #004d80;
+        }
+        code, pre {
+            background: #f5f5f5;
+            border-radius: 4px;
+            padding: 0.5rem;
+            display: block;
+            white-space: pre-wrap;
+            font-family: Consolas, monospace;
+            font-size: 0.95em;
+        }
+        .note {
+            background: #e8f4ff;
+            border-left: 4px solid #007acc;
+            padding: 0.75rem;
+            margin: 1rem 0;
+        }
+        ul {
+            margin-left: 1.5rem;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 2rem 0;
+        }
+
+.welcome_note {
+  background: #FFF8DC;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: auto;
+    margin-bottom: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+}
+
+.container {padding-left:1rem; padding-right:1rem;}
+    </style>
+</head>
+<body>
+ <div class="welcome_note">Welcome to Zencart check out the getting started guide at 
+  <a href="https://docs.zen-cart.com/user/" target="_blank" class="welcome_link" rel="noopener"> doc.zencart.com</a>
+</div>
+ 
+<div class="container">
+<img src="https://www.zencartdemo.com/includes/templates/responsive_classic/images/logo.gif" title="Powered by Zen Cart :: The Art of E-Commerce" alt="(image for) Powered by Zen Cart :: The Art of E-Commerce" width="248" height="61">
+ 
+ 
+
+
+    <h1>Getting Started with the Responsive Classic Redesign Template</h1>
+
+    <ol>
+        <li><strong>Clone or Download the Project:</strong> Clone or download the demo files from this repository to your local machine.</li>
+        <li><strong>Upload Files to Your Server:</strong> Extract the downloaded files and upload the 'images' and 'includes' folder to your web server.<br>
+       
+            - <em>Optional:</em> You can also download the 'updated_demo_image.zip' for additional image assets.<br />
+         - <em>Optional:</em> Add the CSS file when using the One Page Checkout plugin to match site styling.
+      </li>
+         
+        
+        <li><strong>Activate the Template:</strong> Log in to Zen Cart and navigate to <strong>Tools &gt; Template Section</strong>.</li>
+        <li>Activate the <strong>responsive_classic</strong> template.</li>
+    </ol>
+
+    <hr>
+<h1>Making Changes to Template</h1>
+    <h2>Columns per Row – What It Does</h2>
+    <p><strong>Description:</strong> The Admin Columns per Row setting controls how many items are shown in each row in the product or category view.</p>
+    <p><strong>Location:</strong> <code>Admin &gt; Configuration &gt; Product Listing &gt; Columns per Row</code></p>
+     
+    <div class="note">
+       <strong>Note:</strong> Any change to the column count must be reflected in your CSS to maintain proper layout alignment.
+       <strong>The default template is already optimized for 1 or 3 columns, so no additional CSS changes are required.</strong> 
+    </div>
+
+
+    <h3>Example CSS</h3>
+    <p>There are two layout styles: one for mobile and one for desktop.<br>
+    Make sure the desktop column count matches your “Columns per Row” setting in the Zen Cart admin.</p>
+    <p><strong>path</strong> <code>includes/templates/responsive_classic/css/stylesheet_zcustom.css</code></p>
+
+    <pre><code>/* Mobile view – 1 product per row */
+    .rblockelements {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* Desktop view – match this number to your admin setting */
+.rblockelements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Change 3 to match Columns per Row setting */
+    gap: 1rem;
+}</code></pre>
+
+    <hr>
+
+    <h2>Change Position of Navigation Items</h2>
+    <p>The top navbar has a class  <strong>.nav_spacer</strong> which is a flex container. You can use the <strong>order</strong> style to move items within that container.</p>
+
+    <h3>To move the hamburger menu to the right:</h3>
+    <pre><code>.nav_spacer .row {
+    order: 5;
+}</code></pre>
+
+    <h3>To move the search menu to the right:</h3>
+    <pre><code>.nav_spacer .search_box {
+    order: 4;
+}</code></pre>
+
+    <hr>
+
+    <h2>Display the Sidebar on the Right Side</h2>
+    <p><strong>File path:</strong> includes/templates/responsive_classic/css/stylesheet_custom_navigation.css</p>
+
+    <h3>Find:</h3>
+    <pre><code>.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 270px;
+    background-color: #fff;
+    transition: transform 0.3s ease-out;
+}</code></pre>
+
+    <strong>Remove:</strong>
+ <code>left: 0;</code>
+     <strong>Replace with</strong><code>right: 0;</code>
+
+
+    <h3>Then find:</h3>
+    <pre><code>.sidebar.is-hidden {
+    transform: translateX(-300px);
+}</code></pre>
+
+    <p><strong>Change to:</strong></p>
+    <pre><code>.sidebar.is-hidden {
+    transform: translateX(300px);
+}</code></pre>
+
+<h2>Display Ezpages</h2>
+<strong>path:</strong> includes/templates/responsive_classic/css/stylesheet_colors.css
+<h3>Find and remove from stylesheet</h3>
+ <pre><code>#navEZPagesTop {
+	display:none;
+}</code></pre>
+
+
+</div>
+
+
+</body>
+</html>

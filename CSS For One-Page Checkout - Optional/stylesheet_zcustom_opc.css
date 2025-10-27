@@ -1,4 +1,4 @@
-/** loginBody **/
+  /** loginBody **/
 
 #loginOpcDefault h2 {
     font-size: 1.3rem;
@@ -708,4 +708,8 @@ div#checkoutShippingContentChoose {
         margin-top: 0rem;
         padding-top: 0rem;
     }
+}
+
+#checkoutOneLeft .shipping legend {
+    padding-bottom:0px !important;
 }

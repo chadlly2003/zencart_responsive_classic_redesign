@@ -2745,7 +2745,9 @@ div#logo {
 #createAcctSuccess div {
     margin-bottom: 1rem;
 }
-
+#addressbookprocessBody input[type="checkbox"]  {
+    margin-top:6px !important;
+}
 @media (min-width: 576px) {
 
     div#logo {
@@ -3605,7 +3607,7 @@ div#logo {
     }
 
  
-#addressbookprocessBody input[type="checkbox"]  {margin-top:6px !important;}
+ 
 
 
     #contactUsForm {

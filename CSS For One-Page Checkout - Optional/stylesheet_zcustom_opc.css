@@ -309,11 +309,7 @@ td {
     display: none !important;
 }
 
-#checkoutoneBody select,
-fieldset select {
-    margin-bottom: 0;
-}
-
+ 
 
 
 #checkoutoneBody #choices-bill,
@@ -430,11 +426,7 @@ fieldset select {
 
 /** checkout_success **/
 
-#checkoutsuccessBody label {
-    padding: 0;
-    margin-bottom: 0.5rem;
-}
-
+ 
 #checkoutSuccessGuestPassword .custom-control-label {
     margin: 0;
 }
@@ -517,7 +509,7 @@ fieldset select {
     padding-left: 0px;
 }
 
-#checkoutPayment .radioButtonLabel {
+#checkoutoneBody #checkoutPayment .radioButtonLabel {
     align-content: center;
     display: block;
 }
@@ -576,22 +568,20 @@ fieldset select {
     align-content: center;
 }
 
-#checkoutPayment .radioButtonLabel {
+#checkoutoneBody #checkoutPayment .radioButtonLabel {
     margin: 0px;
 }
-
 
 #csNotifications br {
     display: none;
 }
-
 
 #csNotifications input[type="checkbox"]+label.checkboxLabel {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 1em;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 #csNotifications input[type="checkbox"] {
@@ -633,9 +623,7 @@ div#checkoutShippingContentChoose {
     border: none;
 }
 
-#comments legend {
-    margin-bottom: 0px !important;
-}
+ 
 
 .checkoutOneCoupon legend {
     margin-top: 0px !important;

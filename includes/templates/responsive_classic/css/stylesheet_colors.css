@@ -1191,6 +1191,8 @@ TEXTAREA {
 #seShipTo {
 	margin-top:1rem !important;
 	color: #761bc9;
+	padding-left:0px;
+	padding-right:0px;
 }
 .leftBoxHeading {
 	background: transparent;

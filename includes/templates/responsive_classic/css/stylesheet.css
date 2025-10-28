@@ -1,4 +1,4 @@
-  
+   
 /*** Main CSS Stylesheet** @copyright Copyright 2003-2024 Zen Cart Development Team* @copyright Portions Copyright 2003 osCommerce* @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0* @version $Id: Jeff Rutt 2024 Sep 11 Modified in v2.1.0 $*/
 /*bof basic elements*/
 body {
@@ -209,14 +209,8 @@ fieldset div, fieldset .buttonRow.forward{
 option{
 	font-size:110%;
 }
-LABEL {
-	line-height:1.5em;
-	padding:0.2em;
-}
-LABEL.checkboxLabel, LABEL.radioButtonLabel {
-	margin:0;
-	height: 31px;
-}
+ 
+ 
 LABEL.inputLabel {
 	width: 100%;
 }
@@ -239,11 +233,7 @@ input[type=text]{
 #password-current, #login-password, #password-new, #password-confirm{
 	width:100%;
 }
-input[type=radio], input[type=checkbox]{
-	margin-top:8px;
-	vertical-align:middle;
-	height:auto;
-}
+ 
 input[type=file], input[type=image]{
 	width:auto;
 	height:auto;
@@ -844,9 +834,7 @@ TR.tableHeading {
 #checkoutConfirmDefault .cartTableHeading{
 	height:40px;
 }
-#checkoutPayment label, #csNotifications input{
-	margin-left:0px;
-}
+ 
 div#checkoutShippingContentChoose{
 	margin-bottom:20px;
 }
@@ -1296,6 +1284,7 @@ h4.optionName{
 	clear:both;
 	width: 100%;
 	display:block;
+	margin-bottom:1rem !important;
 }
 .attribImg {
 	margin:1rem 0;

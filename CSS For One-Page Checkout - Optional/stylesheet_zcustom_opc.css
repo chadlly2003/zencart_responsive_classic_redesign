@@ -1,4 +1,4 @@
- /** loginBody **/
+  /** loginBody **/
 
 #loginOpcDefault h2 {
     font-size: 1.3rem;
@@ -7,11 +7,7 @@
     padding-bottom: 1rem;
 }
 
-#loginBody .opc-label {
-    margin-bottom: 0.5rem;
-    padding-top: 0px;
-}
-
+ 
 #loginOpcDefault .button_create_account:focus {
     border: solid 1px #AC171D !important
 }
@@ -145,14 +141,9 @@
     margin-bottom: 1rem;
 }
 
-#checkoutoneBody label {
-    padding: 0px;
-}
+ 
 
-#checkoutoneBody #shipping_billing {
-    margin-left: 0;
-}
-
+ 
 #checkoutoneBody .opc-buttons>div:first-child {
     float: none;
     margin-bottom: 2rem;
@@ -213,11 +204,7 @@ td {
     margin-bottom: 1rem;
 }
 
-#checkoutoneBody #checkoutPayment legend {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    padding-top: 0;
-}
+ 
 
 #checkoutOneGuestInfo .clearBoth {
     display: none;
@@ -321,6 +308,7 @@ td {
 #checkoutoneBody #choices-bill select,
 #choices-ship select {
     width: 100% !important;
+    margin-bottom:0 !important;
 }
 
 
@@ -427,9 +415,7 @@ td {
 /** checkout_success **/
 
  
-#checkoutSuccessGuestPassword .custom-control-label {
-    margin: 0;
-}
+ 
 
 #checkoutSuccessGuestPassword .button_create_account {
     margin-bottom: 1rem;
@@ -481,111 +467,22 @@ td {
     margin-top: 0px !important;
     padding-top: 0px !important;
 }
-
-/** input and radio for moble and tablet alignment **/
-
-.custom-control.custom-checkbox {
-    display: flex;
-    align-items: center;
-    /* Vertically align checkbox + label */
-    gap: 8px;
-    /* Space between checkbox and label */
-}
-
-.custom-control.custom-checkbox input[type="checkbox"] {
-    margin: 0;
-    vertical-align: middle;
-    width: 16px;
-    height: 16px;
-    position: relative;
-    top: 0px;
-}
-
-.custom-control.custom-checkbox label {
-    margin: 0;
-    line-height: 1.2;
-    display: inline-block;
-    cursor: pointer;
-    padding-left: 0px;
-}
-
-#checkoutoneBody #checkoutPayment .radioButtonLabel {
-    align-content: center;
-    display: block;
-}
-
-.custom-control.custom-radio {
-    display: flex;
-    align-items: center;
-    /* Vertically center items */
-    gap: 8px;
-    /* Space between radio and label */
-    margin-bottom: 10px;
-}
-
-
-.custom-control.custom-radio input[type="radio"] {
-    margin: 0;
-    appearance: auto;
-    vertical-align: middle;
-    width: 16px;
-    height: 16px;
-}
-
-
-.custom-control.custom-radio label {
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
-}
-
-
-#checkoutOneShippingFlag {
-    display: flex;
-    align-items: center;
-    /* Vertically center checkbox and label */
-    gap: 8px;
-    /* Optional: space between checkbox and label */
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    padding-top: 0rem;
-}
-
-#checkoutOneShippingFlag input[type="checkbox"] {
-    margin: 0;
-    vertical-align: middle;
-}
-
+ 
+ 
 #checkoutOneShippingFlag label {
-    margin: 0;
-    line-height: 1.2;
     color: blueviolet;
+    margin-bottom:0px !important;
 
 }
 
-#flat_flat-value {
-    height: 31px;
-    align-content: center;
-}
+.checkoutShippingChoices legend {margin-bottom:1rem;padding-bottom:1rem;}
 
-#checkoutoneBody #checkoutPayment .radioButtonLabel {
-    margin: 0px;
-}
-
+ 
 #csNotifications br {
     display: none;
 }
 
-#csNotifications input[type="checkbox"]+label.checkboxLabel {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    line-height: 1.5;
-}
-
-#csNotifications input[type="checkbox"] {
-    margin-top: 1px;
-}
+ 
 
 /** other **/
 
@@ -618,8 +515,11 @@ div#checkoutShippingContentChoose {
 }
 
 #checkoutShippingChoices legend {
-    margin: 0px !important;
-    border: none;
+    
+      
+     padding-top:1rem !important;
+     padding-bottom:1rem !important;
+     border: none;
 }
 
  

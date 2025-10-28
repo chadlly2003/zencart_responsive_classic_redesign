@@ -1,4 +1,4 @@
-  a:link {
+    a:link {
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -92,10 +92,7 @@ footer {
     content: "";
 }
 
-#reviews-write-wrapper input[type="radio"] {
-    margin-top: 5px !important;
-    margin-bottom: 0px;
-}
+ 
 
 #productreviewswriteBody>[class^="col"]:nth-child(2) {
 
@@ -229,7 +226,7 @@ footer {
 
 #productListing .list-input input[type="text"] {
     width: 21% !important;
-    max-width: 80px;
+    max-width: 80px !important;
 }
 
 #whatsNew br {
@@ -602,9 +599,7 @@ select option {
     background: transparent !important;
 }
 
-input[type="checkbox"] {
-    outline: none !important;
-}
+ 
 
 .shopping_cart_spacer {
     display: flex;
@@ -629,25 +624,9 @@ input[type="checkbox"] {
     border: none;
 }
 
-#accountEditDefault LABEL.radioButtonLabel {
-    float: left;
-    margin-right: 1rem;
-}
+ 
+ 
 
-#createAcctDefault LABEL.radioButtonLabel {
-    float: left;
-    margin-right: 1rem;
-}
-
-#createAcctDefault input[type="checkbox"] {
-    margin-top: 4px;
-}
-
-#reviewsWrite input[type="radio"] {
-    clear: both;
-    margin-top: 4px;
-    outline: none;
-}
 
 #reviewsWrite .forward {
     float: none;
@@ -1094,11 +1073,6 @@ button {
     margin-bottom: 1rem;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-    float: left;
-    width: auto !important;
-}
 
 #gvFaqDefaultSubHeading,
 #checkoutPayAddressDefaultAddress,
@@ -1113,10 +1087,7 @@ h2#addressBookDefaultPrimary {
     margin-top: 0px;
 }
 
-#acctNewslettersDefault LABEL.checkboxLabel {
-    margin: 0px;
-    display: flex;
-}
+ 
 
 #acctNewslettersDefault legend {
     color: #000;
@@ -1134,10 +1105,7 @@ h2#addressBookDefaultPrimary {
     margin-bottom: 1rem;
 }
 
-#accountNotifications LABEL.checkboxLabel {
-    margin: 0px;
-    display: flex;
-}
+ 
 
 #accountNotifications legend {
     color: #000;
@@ -1583,7 +1551,7 @@ h2#addressBookDefaultPrimary {
 
 #checkoutShipping .forward {
     float: right;
-    padding-top: 6px;
+      
 }
 
 #checkoutShipping LABEL.checkboxLabel {
@@ -1657,11 +1625,7 @@ h2#addressBookDefaultPrimary {
     margin-top: 1rem;
 }
 
-#checkoutPayment .radioButtonLabel {
-    display: list-item;
-    margin-left: 1.3rem;
-    margin-top: 0;
-}
+ 
 
 #checkoutPayment .payment br {
     display: none
@@ -1685,10 +1649,7 @@ h2#addressBookDefaultPrimary {
     float: right;
 }
 
-#checkoutpaymentBody .payment input[type="radio"] {
-    margin: 0px;
-    margin-top: 3px !important;
-}
+ 
  
 #checkoutpaymentBody .payment .radioButtonLabel {
     list-style: none;
@@ -1896,11 +1857,8 @@ span.cssButton.normal_button.button.small_edit {
     text-align: left;
 }
 
-
-#checkoutsuccessBody  #csNotifications input {
-    margin-top:6px;
-} 
-
+ 
+ 
 .successicons {
     display: flex;
     flex-direction: column;
@@ -1917,14 +1875,6 @@ span.cssButton.normal_button.button.small_edit {
     display: none;
 }
 
-LABEL.checkboxLabel {
-    height: auto;
-  
-}
-
-   
- 
-
 #contactUsForm {
     margin-bottom: 1rem;
 }
@@ -1933,10 +1883,6 @@ LABEL.checkboxLabel {
     margin-top: 1rem;
 }
 
-fieldset input[type=radio] {
-    outline: none;
-    margin-top:6px;
-}
 
 #accountEditDefault fieldset {
     margin-bottom: 1rem;
@@ -2277,7 +2223,7 @@ fieldset input[type=radio] {
 }
 
 .cartRemoveItemDisplay .fa-xl {
-    vertical-align: inherit !important;
+    vertical-align: middle !important;
     color: #808080;
     font-size: 1.3rem;
 }
@@ -2401,12 +2347,7 @@ fieldset input[type=radio] {
     -webkit-appearance: none;
 }
 
-#productAttributes label {
-    margin-bottom: 0px;
-    
-    padding-top:4px;
-    padding-bottom:0;
-}
+ 
 
 #productMainImage {
     max-width: 500px;
@@ -2745,9 +2686,9 @@ div#logo {
 #createAcctSuccess div {
     margin-bottom: 1rem;
 }
-#addressbookprocessBody input[type="checkbox"]  {
-    margin-top:6px !important;
-}
+ 
+#loginDefault input.submit_button {margin-top:1rem; margin-bottom:1rem;}
+
 @media (min-width: 576px) {
 
     div#logo {
@@ -2856,7 +2797,7 @@ div#logo {
 
     .cartRemoveItemDisplay {
         display: block !important;
-        margin-top: 0.2rem;
+         
     }
 
     .cartImage {
@@ -3222,9 +3163,7 @@ div#logo {
         margin-top: 1rem;
     }
 
-    #loginDefault .forward {
-        margin-top: 0px;
-    }
+    
 
     #createAcctSuccess .button_accounts {
         display: flex;
@@ -3238,7 +3177,6 @@ div#logo {
 
     #loginDefault input.submit_button {
         width: auto !important;
-        margin-bottom: 1rem;
     }
 
     #loginDefault input.cssButtonHover {
@@ -3457,9 +3395,7 @@ div#logo {
         margin-bottom: 1rem;
     }
 
-    #reviewsWrite input[type="radio"] {
-        clear: none;
-    }
+    
 
     #reviewsWrite #review-text {
         clear: both;
@@ -3520,7 +3456,8 @@ div#logo {
     }
 
     #shoppingCartDefault input[type="checkbox"] {
-        display: inline;
+        display: block;
+        width: auto !important;
     }
 
     .cartQuantityUpdate {
@@ -4074,3 +4011,37 @@ div#logo {
         width: 80px;
     }
 }
+
+label {
+    height: 21px !important;
+    margin: 0px !important; 
+    padding:0px !important;
+    margin-bottom:0.5rem !important; 
+    font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  text-align: left;
+}
+
+input[type="radio"] {
+    height: 21px !important;
+    padding:0 !important;
+    margin: 0 !important;
+    float:left !important;
+    width: auto !important;
+    margin-right:8px !important;
+    outline:none !important;
+}
+
+input[type="checkbox"]  {   
+    height: 21px !important;
+    padding:0 !important;
+    margin: 0 !important;
+    float:left !important;
+    width: auto !important;
+    margin-right:8px !important;
+    outline:none !important;
+}
+
+

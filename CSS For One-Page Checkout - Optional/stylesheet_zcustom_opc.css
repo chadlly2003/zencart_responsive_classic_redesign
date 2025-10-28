@@ -613,3 +613,16 @@ div#checkoutShippingContentChoose {
 #checkoutOneLeft .shipping legend {
     padding-bottom:0px !important;
 }
+
+ .opc-label {
+  height: 21px;
+  margin: 0px;
+  padding:0px;
+  margin-bottom:0.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  text-align: left;
+    
+}

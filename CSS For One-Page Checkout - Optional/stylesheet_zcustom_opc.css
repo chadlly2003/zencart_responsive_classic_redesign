@@ -49,7 +49,7 @@
 }
 
 #loginOpcDefault .buttonRow {
-    padding-top: 0rem;
+    padding-top: 0;
     padding-bottom: 1rem;
 }
 
@@ -137,11 +137,9 @@
 #checkoutoneBody #checkoutOneGuestInfo p {
     color: #8b0000;
     font-weight: bold;
-    margin-top: 0rem;
+    margin-top: 0;
     margin-bottom: 1rem;
 }
-
- 
 
  
 #checkoutoneBody .opc-buttons>div:first-child {
@@ -404,7 +402,7 @@ td {
     }
 
     #checkoutOneCartGroup {
-        margin-right: 0px !important;
+        margin-right: 0 !important;
     }
 
     #checkoutoneBody .floatingBox {
@@ -464,14 +462,14 @@ td {
 }
 
 #opc-billing-title {
-    margin-top: 0px !important;
-    padding-top: 0px !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
  
  
 #checkoutOneShippingFlag label {
     color: blueviolet;
-    margin-bottom:0px !important;
+    margin-bottom:0 !important;
 
 }
 
@@ -511,12 +509,10 @@ td {
 }
 
 div#checkoutShippingContentChoose {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 #checkoutShippingChoices legend {
-    
-      
      padding-top:1rem !important;
      padding-bottom:1rem !important;
      border: none;
@@ -525,13 +521,13 @@ div#checkoutShippingContentChoose {
  
 
 .checkoutOneCoupon legend {
-    margin-top: 0px !important;
-    padding-top: 0px !important
+    margin-top: 0 !important;
+    padding-top: 0 !important
 }
 
 #checkoutOneShipto legend {
-    margin-top: 0px !important;
-    padding-top: 0px !important
+    margin-top: 0 !important;
+    padding-top: 0 !important
 }
 
 #checkoutOneBillto {
@@ -592,32 +588,32 @@ div#checkoutShippingContentChoose {
 
 @media (min-width: 768px) {
     .opc-block-3 {
-        padding-top: 0rem;
+        padding-top: 0;
         padding-bottom: 1rem;
     }
 }
 
 @media (min-width: 992px) {
     #checkoutShippingMethod {
-        margin-top: 0rem;
-        padding-top: 0rem;
+        margin-top: 0;
+        padding-top: 0;
     }
 
 
     #checkoutOneGuestInfo {
-        margin-top: 0rem;
-        padding-top: 0rem;
+        margin-top: 0;
+        padding-top: 0;
     }
 }
 
 #checkoutOneLeft .shipping legend {
-    padding-bottom:0px !important;
+    padding-bottom:0 !important;
 }
 
  .opc-label {
   height: 21px;
-  margin: 0px;
-  padding:0px;
+  margin: 0;
+  padding:0;
   margin-bottom:0.5rem;
   font-size: 0.9rem;
   font-weight: 400;

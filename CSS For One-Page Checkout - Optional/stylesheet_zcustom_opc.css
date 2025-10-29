@@ -620,5 +620,6 @@ div#checkoutShippingContentChoose {
   line-height: 1.5;
   color: #000;
   text-align: left;
+  padding-top:0 !important;
     
 }

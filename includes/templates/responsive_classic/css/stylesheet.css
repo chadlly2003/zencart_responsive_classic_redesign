@@ -1284,7 +1284,7 @@ h4.optionName{
 	clear:both;
 	width: 100%;
 	display:block;
-	margin-bottom:1rem !important;
+	margin-bottom:0 !important;
 }
 .attribImg {
 	margin:1rem 0;

@@ -2313,7 +2313,7 @@ span.cssButton.normal_button.button.small_edit {
 .welcome_note {
 		background:#fff8dc;
 		padding:.5rem 15px;
-		margin:auto .5rem;
+		margin:0;
 		border-radius:5px;
 		text-align:center;
 		display:block

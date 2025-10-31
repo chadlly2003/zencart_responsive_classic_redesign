@@ -1075,6 +1075,11 @@ input[type="file"]::file-selector-button {
 	border-bottom:solid 1px #ccc;
 	color:#154DBC;
 	font-size:1.3rem;
+	margin-bottom: 1rem;
+ 	padding-bottom: 1rem;
+    margin-top: 0rem;
+    padding-top: 1.5rem;
+	line-height: 25px;
 }
 #shippingEstimatorContent .forward {
 	width: 100%;

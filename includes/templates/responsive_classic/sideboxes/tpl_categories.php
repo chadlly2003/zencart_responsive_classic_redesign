@@ -66,7 +66,7 @@ if (SHOW_CATEGORIES_BOX_SPECIALS == 'true' or SHOW_CATEGORIES_BOX_PRODUCTS_NEW =
     }
     if (SHOW_CATEGORIES_BOX_SPECIALS == 'true') {
       $show_this = $db->Execute("select s.products_id from " . TABLE_SPECIALS . " s where s.status= 1 limit 1");
-      if ($show_this->RecordCount() > 0) {
+      if (!$show_this->EOF) {
         $content .= '<li><a class="category-links" href="' . zen_href_link(FILENAME_SPECIALS) . '">' . CATEGORIES_BOX_HEADING_SPECIALS . '</a></li>' . "\n";
       }
     }

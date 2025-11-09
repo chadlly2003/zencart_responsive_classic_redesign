@@ -25,7 +25,7 @@ if ($display_product_model || $display_product_weight || $display_product_quanti
     <?= (($display_product_weight === true) ? '<li>' . TEXT_PRODUCT_WEIGHT .  $products_weight . TEXT_PRODUCT_WEIGHT_UNIT . '</li>'  : '') . "\n" ?>
     <?= (($display_product_quantity === true) ? '<li>' . $products_quantity . TEXT_PRODUCT_QUANTITY . '</li>'  : '') . "\n" ?>
     <?= (($display_product_manufacturer === true) ? '<li>' . TEXT_PRODUCT_MANUFACTURER . $manufacturers_name . '</li>' : '') . "\n" ?>
-    <?php
+<?php
     foreach ($additional_details as $next_detail) {
         echo '<li>' . $next_detail . '</li>' . "\n";
     }

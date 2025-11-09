@@ -18,17 +18,17 @@ $image = isset($image) ? $image : ['products_image_large' => '', 'products_name'
 ?>
 
 <!-- Modal -->
-<div id="<?php echo $modal_id; ?>" class="imgmodal">
-    <div id="<?php echo $modal_content_id; ?>" class="imgmodal-content">
-        <div onclick="closeModal('<?php echo $modal_id; ?>')">
-            <?php echo zen_image($image['products_image_large'], $image['products_name'], '', '', 'class="centered-image"'); ?>
+<div id="<?= $modal_id; ?>" class="imgmodal">
+    <div id="<?= $modal_content_id; ?>" class="imgmodal-content">
+        <div onclick="closeModal('<?= $modal_id; ?>')">
+            <?= zen_image($image['products_image_large'], $image['products_name'], '', '', 'class="centered-image"'); ?>
             <div class="imgmodal-close"><i class="fa-solid fa-circle-xmark"></i></div>
-            <div class="center"><?php echo $image['products_name']; ?></div>
+            <div class="center"><?= $image['products_name']; ?></div>
         </div>
     </div>
 </div>
 
 <!-- Use modal link generated from the previous file -->
 <div class="back">
-    <?php echo $modal_link_img; ?>
+    <?= $modal_link_img; ?>
 </div>

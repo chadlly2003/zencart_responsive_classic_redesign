@@ -217,7 +217,7 @@ $define = [
     'ERROR_TO_DATE_LESS_THAN_FROM_DATE' => 'To Date must be greater than or equal to From Date.',
     'FAILED_TO_ADD_UNAVAILABLE_PRODUCTS' => 'The selected Product(s) are not currently available for purchase...',
     'FEMALE' => 'Ms.',
-    'FOOTER_TEXT_BODY' => 'Copyright &copy; ' . date('Y') . ' <a href="' . zen_href_link(FILENAME_DEFAULT) . '" aria-label="Visit our store homepage">' . STORE_NAME . '</a> Powered by <a href="https://www.zen-cart.com" rel="noopener noreferrer" target="_blank" aria-label="Visit Zen Cart Official Website">Zen Cart</a>',
+    'FOOTER_TEXT_BODY' => 'Copyright &copy; ' . date('Y') . ' <a href="' . zen_href_link(FILENAME_DEFAULT) . '">' . STORE_NAME . '</a>. Powered by <a href="https://www.zen-cart.com" rel="noopener noreferrer" target="_blank">Zen Cart</a>',
     'FORM_REQUIRED_INFORMATION' => '* Required information',
     'FREE_SHIPPING_DESCRIPTION' => 'Free shipping for orders over %s',
     'HEADING_ADDRESS_INFORMATION' => 'Address Information',
@@ -367,6 +367,7 @@ $define = [
     'TABLE_HEADING_UPCOMING_PRODUCTS' => 'Upcoming Products',
     'TABLE_HEADING_WEIGHT' => 'Weight',
     'TABLE_HEADING_FEATURED_CATEGORIES' => 'Featured Categories',
+    'TAX_EXEMPT_DESCRIPTION' => 'Tax Exempt',
     'TEXT_ADMIN_DOWN_FOR_MAINTENANCE' => 'NOTICE: The website is currently down for maintenance to the public',
     'TEXT_ALL_CATEGORIES' => 'All Categories',
     'TEXT_ALL_MANUFACTURERS' => 'All Manufacturers',
@@ -460,6 +461,7 @@ $define = [
     'TEXT_LOGIN_TO_SHOP_BUTTON_REPLACE' => 'Login to Shop',
     'TEXT_MANUFACTURER' => 'Manufacturer:',
     'TEXT_MAXIMUM_CHARACTERS_ALLOWED' => ' maximum characters allowed',
+    'TEXT_MISSING_SHIPPING_INFO' => 'WARNING: missing shipping details',
     'TEXT_MORE_INFORMATION' => 'For more information, please visit this product\'s <a href="%s" rel="noreferrer noopener" target="_blank">webpage</a>.',
     'TEXT_NO_ALL_PRODUCTS' => 'More products will be added soon. Please check back later.',
     'TEXT_NO_CAT_RESTRICTIONS' => 'This coupon is valid for all categories.',
@@ -519,6 +521,7 @@ $define = [
     'TEXT_TOTAL_AMOUNT' => '&nbsp;&nbsp;Amount: ',
     'TEXT_TOTAL_ITEMS' => 'Total Items: ',
     'TEXT_TOTAL_WEIGHT' => '&nbsp;&nbsp;Weight: ',
+    'TEXT_UNKNOWN_ORDERS_STATUS_NAME' => 'Unknown (%u)',   //- %u is filled in by the Customer class to contain the missing orders_status_id
     'TEXT_UNKNOWN_TAX_RATE' => 'Sales Tax',
     'TEXT_VALID_COUPON' => 'Congratulations you have redeemed the Discount Coupon',
     'TEXT_WORDS_FREE' => ' Word(s) free ',
@@ -528,6 +531,7 @@ $define = [
     'WARNING_NO_FILE_UPLOADED' => 'Warning:  no file uploaded.',
     'WARNING_PRODUCT_QUANTITY_ADJUSTED' => 'Quantity has been adjusted to what is in stock. ',
     'WARNING_SHOPPING_CART_COMBINED' => 'NOTICE: For your convenience, your current shopping cart has been combined with your shopping cart from your last visit. Please review your shopping cart before checking out.',
+    'WHOLESALE_CUSTOMER_SHOPPING' => 'Prices are displayed with your wholesale discount.',
 ];
 
 // Definitions that require references to other definitions

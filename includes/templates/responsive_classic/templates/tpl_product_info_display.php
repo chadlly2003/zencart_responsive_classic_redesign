@@ -87,7 +87,7 @@ if (!empty($products_image) || !empty($enable_additional_images_without_main_ima
         <br>
         <span id="productQuestions">
             
-        <?= '<a href="' . zen_href_link(FILENAME_ASK_A_QUESTION, 'pid=' . $_GET['products_id'], 'SSL') . '">Ask me<i class="fa fa-question"></i></a>' ?>
+        <?= '<a href="' . zen_href_link(FILENAME_ASK_A_QUESTION, 'pID=' . $_GET['products_id'], 'SSL') . '">Ask me<i class="fa fa-question"></i></a>' ?>
 </span>
           
             <br class="clearBoth">
@@ -161,7 +161,7 @@ if (zen_get_product_is_always_free_shipping($products_id_current) && $flag_show_
 if (CUSTOMERS_APPROVAL === '3' && TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM == '') {
   // do nothing
 } else {
-    
+
     $display_qty = (($flag_show_product_info_in_cart_qty == 1 && $_SESSION['cart']->in_cart($_GET['products_id'])) ? '<p>' . PRODUCTS_ORDER_QTY_TEXT_IN_CART . $_SESSION['cart']->get_quantity($_GET['products_id']) . '</p>' : '');
     if ($products_qty_box_status == 0 || $products_quantity_order_max == 1) {
         // hide the quantity box and default to 1
@@ -319,5 +319,5 @@ if (!empty($products_url) && $flag_show_product_info_url == 1) {
 
 <!--bof Form close-->
 <?= '</form>' ?>
-<!--bof Form close-->
+<!--eof Form close-->
 </div>

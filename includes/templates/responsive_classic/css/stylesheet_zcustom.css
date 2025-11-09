@@ -3985,18 +3985,6 @@ div#logo {
     margin-top:1rem;padding-top:1rem;
 }
 
-
-/* demo css */
-.list-image img {
-    width: 500px;
-}
-
-@media (min-width: 768px) {
-    .list-image img {
-        width: 80px;
-    }
-}
-
 label {
     height: 21px !important;
     margin: 0 !important; 
@@ -4027,4 +4015,37 @@ input[type="checkbox"]  {
     width: auto !important;
     margin-right:8px !important;
     outline:none !important;
+}
+
+.list-model {
+    display: none;
+}
+.list-quantity {
+    display: none;}
+.list-weight {display: none;
+}
+.mfgLink  {
+    display: none;
+}
+
+.product-manufacturer a {
+    display: initial;
+}
+.productDetailslistings {
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+}
+.productDetailslistings:empty {
+    display:none;
+}
+
+ /* demo css */
+.list-image img {
+    width: 500px;
+}
+
+@media (min-width: 768px) {
+    .list-image img {
+        width: 80px;
+    }
 }

@@ -1,4 +1,3 @@
- 
 <?php
 /**
  * product_listing module
@@ -215,7 +214,7 @@ if ($num_products_count > 0) {
             $listing_product_name = $record['products_name'] ?? '';
             $listing_description = '';
             if ((int)PRODUCT_LIST_DESCRIPTION > 0) {
-                $listing_description = zen_trunc_string(zen_clean_html(stripslashes($record['products_description'] ?? '')), PRODUCT_LIST_DESCRIPTION);
+                $listing_description = zen_trunc_string(zen_clean_html(stripslashes($record['products_description'] ?? '')), (int)PRODUCT_LIST_DESCRIPTION);
                 $lc_text .= '<div class="listingDescription">' . $listing_description . '</div>';
             }
             $listing_model = $record['products_model'] ?? '';
@@ -297,24 +296,57 @@ if ($num_products_count > 0) {
                     $lc_text .= '</div>';
                     break;
 
-                case 'PRODUCT_LIST_NAME':
-                    $lc_align = 'center';
-                    if ($product_listing_layout_style === 'table') $lc_align = '';
-                    $lc_text = '<h1 class="itemTitle">
-                        <a class="" href="' . $href . '">' . $listing_product_name . '</a>
-                        </h1>';
 
-                    if (!empty($listing_description)) {
-                        $lc_text .= '<div class="listingDescription">' . $listing_description . '</div>';
-                    }
-                    break;
+case 'PRODUCT_LIST_NAME':
+    $lc_align = 'center';
+    if ($product_listing_layout_style === 'table') $lc_align = '';
 
-                case 'PRODUCT_LIST_MANUFACTURER':
-                    $lc_align = 'center';
-                    if ($product_listing_layout_style === 'table') $lc_align = '';
-                    $lc_text = '';
-                    $lc_text .= '<a class="mfgLink list-mfg" href="' . $listing_mfg_link . '">' . $listing_mfg_name . '</a>';
-                    break;
+    $lc_text = '<div class="product-container">';
+
+    // Product name
+    $lc_text .= '<h1 class="itemTitle">
+        <a href="' . $href . '">' . $listing_product_name . '</a>
+    </h1>';
+
+    // Description
+    if (!empty($listing_description)) {
+        $lc_text .= '<div class="listingDescription">' . $listing_description . '</div>';
+    }
+
+    // Product details container
+    $details = '';
+
+      // Model
+    if (defined('PRODUCT_LIST_MODEL') && PRODUCT_LIST_MODEL && !empty($listing_model)) {
+        $details .= '<div class="product-model"><strong>Model:</strong> ' . $listing_model . '</div>';
+    }
+
+      // Weight
+    if (defined('PRODUCT_LIST_WEIGHT') && PRODUCT_LIST_WEIGHT) {
+        $details .= '<div class="product-weight"><strong>Shipping Weight:</strong> ' . (float)$listing_weight . '</div>';
+    }
+
+    // Quantity
+    if (defined('PRODUCT_LIST_QUANTITY') && PRODUCT_LIST_QUANTITY) {
+        $details .= '<div class="product-quantity"><strong>' . (int)$listing_quantity . ' Units in Stock</strong></div>';
+    }
+
+    // Manufacturer
+    if (defined('PRODUCT_LIST_MANUFACTURER') && PRODUCT_LIST_MANUFACTURER && !empty($listing_mfg_name)) {
+        $details .= '<div class="product-manufacturer"><strong>Manufactured by:</strong> <a href="' . $listing_mfg_link . '">' . $listing_mfg_name . '</a></div>';
+    }
+
+    $lc_text .= '<div class="productDetailslistings">' . $details . '</div>';
+    $lc_text .= '</div>'; // end product-container
+
+    break;
+
+    case 'PRODUCT_LIST_MANUFACTURER':
+    $lc_align = 'center';
+    if ($product_listing_layout_style === 'table') $lc_align = '';
+    $lc_text = '';
+    $lc_text .= '<span class="mfgLink list-mfg">' . $listing_mfg_name . '</span>';
+    break;
 
                 case 'PRODUCT_LIST_PRICE':
                     $lc_align = 'center';
@@ -446,4 +478,3 @@ if ($how_many > 0 && PRODUCT_LISTING_MULTIPLE_ADD_TO_CART != 0 && $show_submit &
     // bof: multiple products
     echo zen_draw_form('multiple_products_cart_quantity', zen_href_link(FILENAME_DEFAULT, zen_get_all_get_params(['action']) . 'action=multiple_products_add_product', $request_type), 'post', 'enctype="multipart/form-data"');
 }
-

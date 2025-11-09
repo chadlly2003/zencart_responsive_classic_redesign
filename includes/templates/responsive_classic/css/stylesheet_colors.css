@@ -1077,8 +1077,8 @@ input[type="file"]::file-selector-button {
 	font-size:1.3rem;
 	margin-bottom: 1rem;
  	padding-bottom: 1rem;
-    margin-top: 0rem;
-    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
 	line-height: 25px;
 }
 #shippingEstimatorContent .forward {

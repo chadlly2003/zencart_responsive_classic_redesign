@@ -74,14 +74,19 @@
   } else {
     echo $product['quantityField'];
   }
-?><br>
-        <span class="alert bold"><?php echo $product['flagStockCheck'];?></span><br>
-        <br><?php echo $product['showMinUnits']; ?>
+echo !empty($product['flagStockCheck']) ? '<span class="alert bold">' . $product['flagStockCheck'] . '</span><br>' : '';
+  echo !empty($product['showMinUnits']) ? $product['showMinUnits'] . '<br>' : '';
+  ?>
        </td>
        <td class="cartQuantityUpdate"><?php echo $product['buttonUpdate']; ?></td>
        <td class="cartProductDisplay">
 
-<a href="<?php echo $product['linkProductsName']; ?>"><span class="cartImage back"><?php echo $product['productsImage']; ?></span><span class="cartProdTitle"><?php echo $product['productsName'] . '<span class="alert bold">' . $product['flagStockCheck'] . '</span>'; ?></span></a>
+<a href="<?= $product['linkProductsName'] ?>">
+    <span class="cartImage back"><?= $product['productsImage'] ?></span>
+    <span class="cartProdTitle"><?= $product['productsName'] .
+        (!empty($product['flagStockCheck']) ? '<span class="alert bold">' . $product['flagStockCheck'] . '</span>' : '') ?>
+    </span>
+</a>
 <br class="clearBoth">
 <?php
   echo $product['attributeHiddenField'];

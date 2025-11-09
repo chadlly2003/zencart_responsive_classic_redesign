@@ -615,3 +615,10 @@ div#checkoutShippingContentChoose {
   padding-top:0 !important;
     
 }
+
+#orderstatusBody legend {
+    color:#006400;
+}
+ #orderstatusBody #orderHistoryHeading {
+    display: none;
+}

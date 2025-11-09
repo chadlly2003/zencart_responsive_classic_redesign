@@ -77,9 +77,9 @@ require $template->get_template_dir('html_header_css_loader.php', DIR_WS_TEMPLAT
 ?>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <?php if (file_exists(DIR_WS_TEMPLATE . "jscript/jquery.min.js")) { ?>
-<script>window.jQuery || document.write(unescape('%3Cscript src="<?php echo $template->get_template_dir('.js',DIR_WS_TEMPLATE, $current_page_base,'jscript'); ?>/jquery.min.js"%3E%3C/script%3E'));</script>
+<script title="jQuery check - template">window.jQuery || document.write('<script src="<?= $template->get_template_dir('.js',DIR_WS_TEMPLATE, $current_page_base,'jscript') ?>/jquery.min.js"><\/script>');</script>
 <?php } ?>
-<script>window.jQuery || document.write(unescape('%3Cscript src="<?php echo $template->get_template_dir('.js','template_default', $current_page_base,'jscript'); ?>/jquery.min.js"%3E%3C/script%3E'));</script>
+<script title="jQuery check - template_default">window.jQuery || document.write('<script src="<?= $template->get_template_dir('.js','template_default', $current_page_base,'jscript') ?>/jquery.min.js"><\/script>');</script>
 
 <?php
 $zco_notifier->notify('NOTIFY_HTML_HEAD_JS_BEGIN', $current_page_base);
@@ -110,8 +110,8 @@ if (in_array($current_page_base,explode(",",'popup_image,popup_image_additional'
 }
 ?>
   <script>document.documentElement.className = 'no-fouc';</script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha256-PchpyCpyLZ/Xx9iBpFPuPSadRhkXx6J5Aa01fZ3Lv8Q= sha384-bGIKHDMAvn+yR8S/yTRi+6S++WqBdA+TaJ1nOZf079H6r492oh7V6uAqq739oSZC sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css" integrity="sha256-tD3MiV7I+neAR7aQYvGSBykka5Rvugw0zd0V5VioAeM= sha384-o96F2rFLAgwGpsvjLInkYtEFanaHuHeDtH47SxRhOsBCB2GOvUZke4yVjULPMFnv sha512-yDUXOUWwbHH4ggxueDnC5vJv4tmfySpVdIcN1LksGZi8W8EVZv4uKGrQc0pVf66zS7LDhFJM7Zdeow1sw1/8Jw==" crossorigin="anonymous"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha256-PchpyCpyLZ/Xx9iBpFPuPSadRhkXx6J5Aa01fZ3Lv8Q= sha384-bGIKHDMAvn+yR8S/yTRi+6S++WqBdA+TaJ1nOZf079H6r492oh7V6uAqq739oSZC sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css" integrity="sha256-tD3MiV7I+neAR7aQYvGSBykka5Rvugw0zd0V5VioAeM= sha384-o96F2rFLAgwGpsvjLInkYtEFanaHuHeDtH47SxRhOsBCB2GOvUZke4yVjULPMFnv sha512-yDUXOUWwbHH4ggxueDnC5vJv4tmfySpVdIcN1LksGZi8W8EVZv4uKGrQc0pVf66zS7LDhFJM7Zdeow1sw1/8Jw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/v4-shims.css" integrity="sha256-CB2v9WYYUz97XoXZ4htbPxCe33AezlF5MY8ufd1eyQ8= sha384-JfB3EVqS5xkU+PfLClXRAMlOqJdNIb2TNb98chdDBiv5yD7wkdhdjCi6I2RIZ+mL sha512-tqGH6Vq3kFB19sE6vx9P6Fm/f9jWoajQ05sFTf0hr3gwpfSGRXJe4D7BdzSGCEj7J1IB1MvkUf3V/xWR25+zvw==" crossorigin="anonymous">
 <?php // ZCAdditions.com, ZCA Responsive Template Default (EOF-addition 2 of 2) ?>
 

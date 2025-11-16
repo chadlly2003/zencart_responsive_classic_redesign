@@ -62,7 +62,7 @@ for ($i=0, $j=sizeof($box_categories_array); $i<$j; $i++) {
 if (SHOW_CATEGORIES_BOX_SPECIALS == 'true' or SHOW_CATEGORIES_BOX_PRODUCTS_NEW == 'true' or SHOW_CATEGORIES_BOX_FEATURED_PRODUCTS == 'true' or SHOW_CATEGORIES_BOX_PRODUCTS_ALL == 'true') {
 // display a separator between categories and links
     if (SHOW_CATEGORIES_SEPARATOR_LINK == '1') {
-      $content .= '<hr id="catBoxDivider">' . "\n";
+      $content .= '</ul><hr id="catBoxDivider"><ul class="list-links">' . "\n";
     }
     if (SHOW_CATEGORIES_BOX_SPECIALS == 'true') {
       $show_this = $db->Execute("select s.products_id from " . TABLE_SPECIALS . " s where s.status= 1 limit 1");

@@ -128,7 +128,7 @@ $zco_notifier->notify('NOTIFY_PAGE_BODY_BEGIN', $current_page);
 
 
 
-<div id="main-content" class="box_spacer">
+<div role="main" id="main-content" class="box_spacer">
   <div id="contentMainWrapper">
 
 <?php
@@ -280,6 +280,7 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
 <!--eof-banner #5 display -->
 
 </div>
+
 <?php /* add any end-of-page code via an observer class */
   $zco_notifier->notify('NOTIFY_FOOTER_END', $current_page);
 ?>

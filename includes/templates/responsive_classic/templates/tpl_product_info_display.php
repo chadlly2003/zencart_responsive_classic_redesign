@@ -87,7 +87,7 @@ if (!empty($products_image) || !empty($enable_additional_images_without_main_ima
         <br>
         <span id="productQuestions">
             
-        <?= '<a href="' . zen_href_link(FILENAME_ASK_A_QUESTION, 'pID=' . $_GET['products_id'], 'SSL') . '">Ask me<i class="fa fa-question"></i></a>' ?>
+       <?= '<a href="' . zen_href_link(FILENAME_ASK_A_QUESTION, 'pid=' . $_GET['products_id'], 'SSL') . '">Ask me<i class="fa fa-question"></i></a>' ?>
 </span>
           
             <br class="clearBoth">

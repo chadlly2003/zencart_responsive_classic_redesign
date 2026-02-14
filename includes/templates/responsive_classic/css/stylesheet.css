@@ -1008,7 +1008,7 @@ div#checkoutShippingContentChoose{
 	font-size:140%;
 	margin:0px 0;
 	width:100%;
-	display: block ruby;
+	display: block;
 }
 .itemTitle a{
 	text-decoration:none;

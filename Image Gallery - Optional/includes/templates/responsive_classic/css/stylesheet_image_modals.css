@@ -1,0 +1,255 @@
+.gallery-wrap {
+	display: flex;
+	gap: 16px;
+	align-items: flex-start;
+}
+#pinfo-left {
+	position: relative;
+}
+.thumbs-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	user-select: none;
+}
+.left-thumbs {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	overflow: hidden;
+	cursor: grab;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	touch-action: none;
+	cursor: grab;
+	user-select: none;
+	overscroll-behavior: none;
+	-webkit-overflow-scrolling: auto;
+}
+.left-thumbs.dragging {
+	cursor: grabbing;
+}
+.left-thumbs img {
+	height: 77px;
+	object-fit: cover;
+	cursor: pointer;
+	border: 2px solid transparent;
+	border-radius: 10px;
+}
+.left-thumbs img.active {
+	border-color: burlywood;
+}
+.thumb-arrow {
+	background: transparent;
+	color: darkmagenta;
+	font-size: 24px;
+	cursor: pointer;
+	user-select: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.2s;
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+.thumb-arrow:hover {
+	background: transparent;
+}
+.left-thumbs::-webkit-scrollbar {
+	display: none;
+}
+.main-image img {
+	cursor: zoom-in;
+}
+.modal {
+	display: none;
+	position: fixed;
+	inset: 0;
+	background: rgba(0,0,0,0.9);
+	z-index: 9999;
+	align-items: center;
+	justify-content: center;
+}
+.modal.show {
+	display: flex;
+}
+.modal img {
+	max-width: 90vw;
+	max-height: 90vh;
+	border:solid 1px #fff;
+	background: #fff;
+}
+.arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size:22px;
+	cursor: pointer;
+	user-select: none;
+	padding: 10px;
+	transition: background 0.2s;
+	opacity: .6;
+	overflow: hidden;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	background-color: rgba(0,0,0,.25);
+	line-height: 2;
+}
+.arrow:hover {
+	border:solid 1px #fff;
+	background:#333;
+	opacity: 1;
+}
+.arrow-left {
+	left: 16px;
+	height: 44px;
+	width: 44px;
+	padding: 0;
+	text-align: center;
+}
+.arrow-right {
+	right: 16px;
+	height: 44px;
+	width: 44px;
+	padding: 0;
+	text-align: center;
+	transform: translateY(-50%);
+	/* remove any rotation */
+}
+.close {
+	position: absolute;
+	top: 16px;
+	right: 20px;
+	font-size: 22px;
+	color: #fff;
+	cursor: pointer;
+	opacity: .6;
+	width: 44px;
+	height: 44px;
+	overflow: hidden;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	background-color: rgba(0,0,0,.25);
+	text-align: center;
+	line-height: 2;
+	outline: none;
+}
+.close:hover {
+	border:solid 1px #fff;
+	background:#333;
+	opacity: 1;
+}
+.modal_product_name {
+	position:absolute;
+	bottom:20px;
+	color:#fff;
+	font-size:16px;
+}
+.hide-thumbs {
+	display: none;
+}
+#mainImage {
+	cursor: pointer;
+}
+.hide-thumbs {
+	display: none;
+}
+.modal.single-image .arrow-left,.modal.single-image .arrow-right {
+	display: none !important;
+}
+#productAdditionalImages {
+	display:none !important;
+}
+.thumb-arrow-right {
+	line-height: 2 !important;
+}
+.thumb-arrow-left {
+	line-height: 2 !important;
+}
+.thumb-arrow {
+	text-align: center;
+}
+@media (max-width: 767px){
+	.gallery-wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	.main-image {
+		order: 1;
+	}
+	.thumbs-container {
+		order: 2;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 12px;
+		width: 100%;
+	}
+	.left-thumbs {
+		flex-direction: row;
+		overflow: hidden;
+	}
+	.left-thumbs img {
+		flex-shrink: 0;
+	}
+	.thumb-arrow-left, .thumb-arrow-right {
+		min-width: 32px;
+		min-height: 32px;
+		margin: 4px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+	.thumb-arrow-left {
+		margin-left:0px;
+	}
+	.thumb-arrow-right {
+		margin-right:0px;
+	}
+}
+@media (min-width: 768px){
+	.left-thumbs {
+		max-height: 433px;
+		flex-direction: column;
+	}
+	.left-thumbs img {
+		height: auto;
+		max-width: 75px;
+	}
+	.thumbs-container {
+		flex-direction: column;
+	}
+	.thumb-arrow-left, .thumb-arrow-right {
+		width: 32px;
+		height: 32px;
+		margin: 4px 0;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 24px;
+		margin-top:0px;
+		margin-bottom: 0px;
+	}
+}
+ 
+.left-thumbs:active {
+	cursor: grabbing;
+}
+#modal {
+	touch-action: pan-y;
+}
+.thumbs-container {
+	touch-action: manipulation;
+}
+#modal,#modalImg {
+	touch-action: auto;
+}

@@ -1010,11 +1010,11 @@ div#checkoutShippingContentChoose{
 	width:100%;
 	display: block;
 }
-.itemTitle a{
+.itemTitle a {
 	text-decoration:none;
 	color: #000 !important;
 	min-height: 44px;
-	display:inline-block;
+	display: block;
 	min-width: 44px;
 	align-content: center;
 }

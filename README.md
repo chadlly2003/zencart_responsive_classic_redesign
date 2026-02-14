@@ -12,8 +12,9 @@ This demo highlights the Zen Cart platform with the newly updated Responsive Cla
 
 •	Updated Template: A modernized version of the classic Zen Cart template, offering improved performance, aesthetics, and user interface enhancements.
 
-•  One Page Checkout CSS File- Optional:  The CSS file is specifically tailored to integrate smoothly with the One Page Checkout feature, ensuring a consistent design and layout throughout the checkout process.      This enhances both the visual consistency and overall user experience..
+•  One Page Checkout CSS File - Optional:  The CSS file is specifically tailored to integrate smoothly with the One Page Checkout feature, ensuring a consistent design and layout throughout the checkout process.      This enhances both the visual consistency and overall user experience..
 
+•  Image Gallery - Optional: Fully featured image gallery with thumbnails, drag/swipe scrolling, infinite looping, arrows, and a modal lightbox
 
 <strong>Demo & Documentation</strong>
 

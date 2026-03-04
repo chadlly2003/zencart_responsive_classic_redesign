@@ -4,7 +4,7 @@ jQuery(function ($) {
      CONFIG
   ===================== */
   const SHOW_THUMB_ARROWS = true;
-  const SWIPE_SPEED = 1;
+  const SWIPE_SPEED = 2;
 
   // SETTING: limit infinite scroll based on number of thumbnails
   // Set a number to enforce looping only if thumbs.length > MAX_THUMBS_LOOP
@@ -105,91 +105,97 @@ jQuery(function ($) {
     thumb.addEventListener('mouseenter', () => setActiveThumb(i, false));
   });
 
-  /* =====================
+/* =====================
    DRAG SCROLL (LOOPING)
-  ===================== */
-  let activePointerId = null;
+===================== */
+let activePointerId = null;
 
-  thumbsContainer.addEventListener('pointerdown', e => {
-    if (e.button !== 0) return;
+thumbsContainer.addEventListener('pointerdown', e => {
+  if (e.button !== 0) return;
 
-    isDragging = true;
-    activePointerId = e.pointerId;
+  isDragging = true;
+  activePointerId = e.pointerId;
 
-    startX = e.clientX;
-    startY = e.clientY;
-    startLeft = thumbsContainer.scrollLeft;
-    startTop = thumbsContainer.scrollTop;
+  startX = e.clientX;
+  startY = e.clientY;
+  startLeft = thumbsContainer.scrollLeft;
+  startTop = thumbsContainer.scrollTop;
 
-    thumbsContainer.setPointerCapture(activePointerId);
-  });
+  thumbsContainer.setPointerCapture(activePointerId);
+});
 
-  thumbsContainer.addEventListener('pointermove', e => {
-    if (!isDragging || e.pointerId !== activePointerId) return;
+thumbsContainer.addEventListener('pointermove', e => {
+  if (!isDragging || e.pointerId !== activePointerId) return;
 
-    const dx = e.clientX - startX;
-    const dy = e.clientY - startY;
+  const scale = window.devicePixelRatio || 1;
+  const dx = (e.clientX - startX) / scale;
+  const dy = (e.clientY - startY) / scale;
 
-    if (isHorizontal()) {
-      thumbsContainer.scrollLeft = startLeft - dx * SWIPE_SPEED;
+  const TOLERANCE = 1;
 
-      const maxScroll = thumbsContainer.scrollWidth - thumbsContainer.clientWidth;
-      const current = thumbsContainer.scrollLeft;
-      const TOLERANCE = 1;
+  if (isHorizontal()) {
+    thumbsContainer.scrollLeft = startLeft - dx * SWIPE_SPEED;
 
-      if (!MAX_THUMBS_LOOP || thumbs.length > MAX_THUMBS_LOOP) {
-        if (current <= TOLERANCE) {
-          thumbsContainer.scrollLeft = maxScroll - TOLERANCE;
-          startLeft = thumbsContainer.scrollLeft;
-          startX = e.clientX;
-        }
-        if (current >= maxScroll - TOLERANCE) {
-          thumbsContainer.scrollLeft = TOLERANCE;
-          startLeft = thumbsContainer.scrollLeft;
-          startX = e.clientX;
-        }
+    const maxScroll = thumbsContainer.scrollWidth - thumbsContainer.clientWidth;
+    const current = thumbsContainer.scrollLeft;
+
+    if (!MAX_THUMBS_LOOP || thumbs.length > MAX_THUMBS_LOOP) {
+      if (current <= TOLERANCE) {
+        thumbsContainer.scrollLeft = maxScroll - TOLERANCE;
+        startLeft = thumbsContainer.scrollLeft;
+        startX = e.clientX;
       }
-    } else {
-      thumbsContainer.scrollTop = startTop - dy * SWIPE_SPEED;
-
-      const maxScroll = thumbsContainer.scrollHeight - thumbsContainer.clientHeight;
-
-      if (!MAX_THUMBS_LOOP || thumbs.length > MAX_THUMBS_LOOP) {
-        if (thumbsContainer.scrollTop <= 0) {
-          thumbsContainer.scrollTop = maxScroll - 2;
-          startTop = thumbsContainer.scrollTop;
-          startY = e.clientY;
-        }
-        if (thumbsContainer.scrollTop >= maxScroll) {
-          thumbsContainer.scrollTop = 2;
-          startTop = thumbsContainer.scrollTop;
-          startY = e.clientY;
-        }
+      if (current >= maxScroll - TOLERANCE) {
+        thumbsContainer.scrollLeft = TOLERANCE;
+        startLeft = thumbsContainer.scrollLeft;
+        startX = e.clientX;
       }
     }
 
-    e.preventDefault();
-  }, { passive: false });
+  } else {
+    thumbsContainer.scrollTop = startTop - dy * SWIPE_SPEED;
 
-  function stopDragging(e) {
-    if (activePointerId !== null && thumbsContainer.hasPointerCapture(activePointerId)) {
-      thumbsContainer.releasePointerCapture(activePointerId);
+    const maxScroll = thumbsContainer.scrollHeight - thumbsContainer.clientHeight;
+    const current = thumbsContainer.scrollTop;
+
+    if (!MAX_THUMBS_LOOP || thumbs.length > MAX_THUMBS_LOOP) {
+      // Scroll **up** beyond top
+      if (current <= TOLERANCE) {
+        thumbsContainer.scrollTop = maxScroll - TOLERANCE;
+        startTop = thumbsContainer.scrollTop;
+        startY = e.clientY;
+      }
+      // Scroll **down** beyond bottom
+      if (current >= maxScroll - TOLERANCE) {
+        thumbsContainer.scrollTop = TOLERANCE;
+        startTop = thumbsContainer.scrollTop;
+        startY = e.clientY;
+      }
     }
-
-    isDragging = false;
-    activePointerId = null;
   }
 
-  thumbsContainer.addEventListener('pointerup', stopDragging);
-  thumbsContainer.addEventListener('pointercancel', stopDragging);
-  thumbsContainer.addEventListener('lostpointercapture', stopDragging);
+  e.preventDefault();
+}, { passive: false });
 
-  thumbsContainer.addEventListener('dragstart', e => {
-    e.preventDefault();
-  });
+function stopDragging(e) {
+  if (activePointerId !== null && thumbsContainer.hasPointerCapture(activePointerId)) {
+    thumbsContainer.releasePointerCapture(activePointerId);
+  }
+
+  isDragging = false;
+  activePointerId = null;
+}
+
+thumbsContainer.addEventListener('pointerup', stopDragging);
+thumbsContainer.addEventListener('pointercancel', stopDragging);
+thumbsContainer.addEventListener('lostpointercapture', stopDragging);
+
+thumbsContainer.addEventListener('dragstart', e => {
+  e.preventDefault();
+});
 
   /* =====================
-   ARROWS (ONLY SHOW IF NEEDED & FINITE SCROLL)
+   ARROWS (ONLY SHOW IF NEEDED & INFINITE SCROLL)
   ===================== */
   function updateArrows() {
     if (!SHOW_THUMB_ARROWS) {

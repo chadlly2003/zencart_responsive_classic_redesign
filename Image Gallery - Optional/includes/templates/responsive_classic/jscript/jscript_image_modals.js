@@ -1,14 +1,9 @@
-jQuery(function ($) {
+  jQuery(function ($) {
 
   /* =====================
      CONFIG
   ===================== */
-  const SHOW_THUMB_ARROWS = true;
   const SWIPE_SPEED = 2;
-
-  // SETTING: limit infinite scroll based on number of thumbnails
-  // Set a number to enforce looping only if thumbs.length > MAX_THUMBS_LOOP
-  // Set to null for unlimited looping (current infinite scroll)
   const MAX_THUMBS_LOOP = null; 
 
   /* =====================
@@ -45,11 +40,9 @@ jQuery(function ($) {
 
   function scrollToThumb(thumb) {
     if (!thumb) return;
-
     const container = thumbsContainer;
     const containerRect = container.getBoundingClientRect();
     const thumbRect = thumb.getBoundingClientRect();
-
     if (isHorizontal()) {
       if (thumbRect.left < containerRect.left) {
         container.scrollLeft -= (containerRect.left - thumbRect.left);
@@ -66,6 +59,59 @@ jQuery(function ($) {
   }
 
   /* =====================
+     CONDITIONAL CLONES & ARROWS
+  ===================== */
+  function setupThumbsLooping() {
+    const container = thumbsContainer;
+    const thumbElements = Array.from(container.querySelectorAll('img:not(.clone)'));
+    const containerSize = isHorizontal() ? container.clientWidth : container.clientHeight;
+    let totalThumbSize = 0;
+
+    thumbElements.forEach(t => {
+      const rect = t.getBoundingClientRect();
+      totalThumbSize += isHorizontal() ? rect.width : rect.height;
+    });
+
+    // Remove previous clones
+    container.querySelectorAll('img.clone').forEach(clone => clone.remove());
+
+    if (totalThumbSize <= containerSize) {
+      if (leftArrow) leftArrow.style.display = 'none';
+      if (rightArrow) rightArrow.style.display = 'none';
+    } else {
+      const minThumbs = 6;
+const clonesNeeded = minThumbs - thumbElements.length;
+
+if (clonesNeeded > 0) {
+  for (let i = 0; i < clonesNeeded; i++) {
+    const original = thumbElements[i % thumbElements.length];
+    const clone = original.cloneNode(true);
+
+    clone.classList.add('clone');
+    clone.classList.remove('active');
+
+    clone.dataset.index = original.dataset.index;
+
+    clone.addEventListener('mouseenter', () => {
+      setActiveThumb(parseInt(clone.dataset.index), false);
+    });
+
+    clone.addEventListener('click', () => {
+      setActiveThumb(parseInt(clone.dataset.index), true);
+    });
+
+    container.appendChild(clone);
+  }
+}
+      if (leftArrow) leftArrow.style.display = 'flex';
+      if (rightArrow) rightArrow.style.display = 'flex';
+    }
+  }
+
+  setupThumbsLooping();
+  window.addEventListener('resize', setupThumbsLooping);
+
+  /* =====================
      ACTIVE THUMB
   ===================== */
   function setActiveThumb(index, doScroll = true) {
@@ -74,9 +120,9 @@ jQuery(function ($) {
     activeIndex = index;
 
     const thumb = thumbs[activeIndex];
-
-    thumbs.forEach(t => t.classList.remove('active'));
-    thumb.classList.add('active');
+  thumbsContainer.querySelectorAll('img').forEach(t => t.classList.remove('active'));
+   thumbsContainer.querySelectorAll(`img[data-index="${activeIndex}"]`)
+  .forEach(t => t.classList.add('active'));
 
     if (mainImage.src !== thumb.dataset.large) {
       mainImage.src = thumb.dataset.large;
@@ -100,116 +146,90 @@ jQuery(function ($) {
   thumbs.forEach((thumb, i) => {
     thumb.dataset.index = i;
     thumb.setAttribute('draggable', 'false');
-
     thumb.addEventListener('click', () => setActiveThumb(i, true));
     thumb.addEventListener('mouseenter', () => setActiveThumb(i, false));
   });
 
-/* =====================
-   DRAG SCROLL (LOOPING)
-===================== */
-let activePointerId = null;
+  /* =====================
+     DRAG SCROLL (LOOPING)
+  ===================== */
+  let activePointerId = null;
+  thumbsContainer.addEventListener('pointerdown', e => {
+    if (e.button !== 0) return;
+    isDragging = true;
+    activePointerId = e.pointerId;
+    startX = e.clientX;
+    startY = e.clientY;
+    startLeft = thumbsContainer.scrollLeft;
+    startTop = thumbsContainer.scrollTop;
+    thumbsContainer.setPointerCapture(activePointerId);
+  });
 
-thumbsContainer.addEventListener('pointerdown', e => {
-  if (e.button !== 0) return;
+  thumbsContainer.addEventListener('pointermove', e => {
+    if (!isDragging || e.pointerId !== activePointerId) return;
+    const scale = window.devicePixelRatio || 1;
+    const dx = (e.clientX - startX) / scale;
+    const dy = (e.clientY - startY) / scale;
+    const TOLERANCE = 1;
 
-  isDragging = true;
-  activePointerId = e.pointerId;
-
-  startX = e.clientX;
-  startY = e.clientY;
-  startLeft = thumbsContainer.scrollLeft;
-  startTop = thumbsContainer.scrollTop;
-
-  thumbsContainer.setPointerCapture(activePointerId);
-});
-
-thumbsContainer.addEventListener('pointermove', e => {
-  if (!isDragging || e.pointerId !== activePointerId) return;
-
-  const scale = window.devicePixelRatio || 1;
-  const dx = (e.clientX - startX) / scale;
-  const dy = (e.clientY - startY) / scale;
-
-  const TOLERANCE = 1;
-
-  if (isHorizontal()) {
-    thumbsContainer.scrollLeft = startLeft - dx * SWIPE_SPEED;
-
-    const maxScroll = thumbsContainer.scrollWidth - thumbsContainer.clientWidth;
-    const current = thumbsContainer.scrollLeft;
-
-    if (!MAX_THUMBS_LOOP || thumbs.length > MAX_THUMBS_LOOP) {
-      if (current <= TOLERANCE) {
-        thumbsContainer.scrollLeft = maxScroll - TOLERANCE;
-        startLeft = thumbsContainer.scrollLeft;
-        startX = e.clientX;
+    if (isHorizontal()) {
+      thumbsContainer.scrollLeft = startLeft - dx * SWIPE_SPEED;
+      const maxScroll = thumbsContainer.scrollWidth - thumbsContainer.clientWidth;
+      const current = thumbsContainer.scrollLeft;
+      if (!MAX_THUMBS_LOOP || thumbs.length > MAX_THUMBS_LOOP) {
+        if (current <= TOLERANCE) {
+          thumbsContainer.scrollLeft = maxScroll - TOLERANCE;
+          startLeft = thumbsContainer.scrollLeft;
+          startX = e.clientX;
+        }
+        if (current >= maxScroll - TOLERANCE) {
+          thumbsContainer.scrollLeft = TOLERANCE;
+          startLeft = thumbsContainer.scrollLeft;
+          startX = e.clientX;
+        }
       }
-      if (current >= maxScroll - TOLERANCE) {
-        thumbsContainer.scrollLeft = TOLERANCE;
-        startLeft = thumbsContainer.scrollLeft;
-        startX = e.clientX;
-      }
-    }
-
-  } else {
-    thumbsContainer.scrollTop = startTop - dy * SWIPE_SPEED;
-
-    const maxScroll = thumbsContainer.scrollHeight - thumbsContainer.clientHeight;
-    const current = thumbsContainer.scrollTop;
-
-    if (!MAX_THUMBS_LOOP || thumbs.length > MAX_THUMBS_LOOP) {
-      // Scroll **up** beyond top
-      if (current <= TOLERANCE) {
-        thumbsContainer.scrollTop = maxScroll - TOLERANCE;
-        startTop = thumbsContainer.scrollTop;
-        startY = e.clientY;
-      }
-      // Scroll **down** beyond bottom
-      if (current >= maxScroll - TOLERANCE) {
-        thumbsContainer.scrollTop = TOLERANCE;
-        startTop = thumbsContainer.scrollTop;
-        startY = e.clientY;
+    } else {
+      thumbsContainer.scrollTop = startTop - dy * SWIPE_SPEED;
+      const maxScroll = thumbsContainer.scrollHeight - thumbsContainer.clientHeight;
+      const current = thumbsContainer.scrollTop;
+      if (!MAX_THUMBS_LOOP || thumbs.length > MAX_THUMBS_LOOP) {
+        if (current <= TOLERANCE) {
+          thumbsContainer.scrollTop = maxScroll - TOLERANCE;
+          startTop = thumbsContainer.scrollTop;
+          startY = e.clientY;
+        }
+        if (current >= maxScroll - TOLERANCE) {
+          thumbsContainer.scrollTop = TOLERANCE;
+          startTop = thumbsContainer.scrollTop;
+          startY = e.clientY;
+        }
       }
     }
+
+    e.preventDefault();
+  }, { passive: false });
+
+  function stopDragging(e) {
+    if (activePointerId !== null && thumbsContainer.hasPointerCapture(activePointerId)) {
+      thumbsContainer.releasePointerCapture(activePointerId);
+    }
+    isDragging = false;
+    activePointerId = null;
   }
 
-  e.preventDefault();
-}, { passive: false });
-
-function stopDragging(e) {
-  if (activePointerId !== null && thumbsContainer.hasPointerCapture(activePointerId)) {
-    thumbsContainer.releasePointerCapture(activePointerId);
-  }
-
-  isDragging = false;
-  activePointerId = null;
-}
-
-thumbsContainer.addEventListener('pointerup', stopDragging);
-thumbsContainer.addEventListener('pointercancel', stopDragging);
-thumbsContainer.addEventListener('lostpointercapture', stopDragging);
-
-thumbsContainer.addEventListener('dragstart', e => {
-  e.preventDefault();
-});
+  thumbsContainer.addEventListener('pointerup', stopDragging);
+  thumbsContainer.addEventListener('pointercancel', stopDragging);
+  thumbsContainer.addEventListener('lostpointercapture', stopDragging);
+  thumbsContainer.addEventListener('dragstart', e => e.preventDefault());
 
   /* =====================
-   ARROWS (ONLY SHOW IF NEEDED & INFINITE SCROLL)
+     ARROWS (ONLY SHOW IF NEEDED & INFINITE SCROLL)
   ===================== */
   function updateArrows() {
-    if (!SHOW_THUMB_ARROWS) {
-      if (leftArrow) leftArrow.style.display = 'none';
-      if (rightArrow) rightArrow.style.display = 'none';
-      return;
-    }
-
-    if (!leftArrow || !rightArrow) return;
+  if (!leftArrow || !rightArrow) return;
 
     const horizontal = isHorizontal();
     const container = thumbsContainer;
-
-    // Determine if overflow exists (can scroll)
     const canScroll = horizontal
       ? container.scrollWidth > container.clientWidth + 2
       : container.scrollHeight > container.clientHeight + 2;
@@ -220,7 +240,6 @@ thumbsContainer.addEventListener('dragstart', e => {
       return;
     }
 
-    // Always show arrows for infinite looping
     leftArrow.style.display = 'flex';
     rightArrow.style.display = 'flex';
 
@@ -256,6 +275,7 @@ thumbsContainer.addEventListener('dragstart', e => {
 
   onThumbsLoaded(() => {
     requestAnimationFrame(() => {
+      setupThumbsLooping();
       updateArrows();
     });
   });
@@ -265,7 +285,10 @@ thumbsContainer.addEventListener('dragstart', e => {
   ===================== */
   if ('ResizeObserver' in window) {
     const resizeObserver = new ResizeObserver(() => {
-      requestAnimationFrame(updateArrows);
+      requestAnimationFrame(() => {
+        setupThumbsLooping();
+        updateArrows();
+      });
     });
     resizeObserver.observe(thumbsContainer);
   }
@@ -275,6 +298,7 @@ thumbsContainer.addEventListener('dragstart', e => {
     requestAnimationFrame(() => {
       setActiveThumb(currentIndex, false);
       scrollToThumb(thumbs[currentIndex]);
+      setupThumbsLooping();
       updateArrows();
     });
   });
@@ -305,6 +329,9 @@ thumbsContainer.addEventListener('dragstart', e => {
     window.scrollTo(0, parseInt(scrollY || 0));
   }
 
+  /* =====================
+     MODAL LOGIC
+  ===================== */
   const modal = document.getElementById('modal');
   const modalImg = modal?.querySelector('#modalImg');
   const modalTitle = modal?.querySelector('#modalTitle');
@@ -351,13 +378,12 @@ thumbsContainer.addEventListener('dragstart', e => {
       if (e.key === 'ArrowRight') showNextThumb();
       if (e.key === 'ArrowLeft') showPrevThumb();
       modalImg.src = thumbs[activeIndex].dataset.large;
+      if (modalTitle) modalTitle.textContent = thumbs[activeIndex].alt || '';
     });
-  }
 
-  /* =====================
-     MODAL SWIPE (MOBILE)
-  ===================== */
-  if (modal && modalImg && closeBtn) {
+    /* =====================
+       MODAL SWIPE (MOBILE)
+    ===================== */
     let touchStartX = 0, touchStartY = 0, isSwiping = false;
     const SWIPE_THRESHOLD = 40;
 
@@ -389,5 +415,4 @@ thumbsContainer.addEventListener('dragstart', e => {
      INIT
   ===================== */
   setActiveThumb(activeIndex);
-  // Arrows will now initialize correctly once thumbs load
 });

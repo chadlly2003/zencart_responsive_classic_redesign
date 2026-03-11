@@ -3,8 +3,9 @@
   /* =====================
      CONFIG
   ===================== */
+  const SHOW_THUMB_ARROWS = true; // If set to false, you must set MAX_THUMBS_LOOP to 4 (required for CSS mobile layout).
   const SWIPE_SPEED = 2;
-  const MAX_THUMBS_LOOP = null; 
+  const MAX_THUMBS_LOOP = 4; // Set to a number to enable cloning loop only if thumbs exceed that count, or null to always enable when needed
 
   /* =====================
      ELEMENTS
@@ -19,7 +20,7 @@
   /* =====================
      STATE
   ===================== */
-  const thumbs = Array.from(thumbsContainer.querySelectorAll('img'));
+  let thumbs = Array.from(thumbsContainer.querySelectorAll('img:not(.clone)'));
   let activeIndex = 0;
   let isDragging = false;
   let startX = 0, startY = 0;
@@ -62,51 +63,43 @@
      CONDITIONAL CLONES & ARROWS
   ===================== */
   function setupThumbsLooping() {
-    const container = thumbsContainer;
-    const thumbElements = Array.from(container.querySelectorAll('img:not(.clone)'));
-    const containerSize = isHorizontal() ? container.clientWidth : container.clientHeight;
-    let totalThumbSize = 0;
+  const container = thumbsContainer;
 
-    thumbElements.forEach(t => {
-      const rect = t.getBoundingClientRect();
-      totalThumbSize += isHorizontal() ? rect.width : rect.height;
-    });
+  // Remove all previous clones first
+  container.querySelectorAll('img.clone').forEach(c => c.remove());
 
-    // Remove previous clones
-    container.querySelectorAll('img.clone').forEach(clone => clone.remove());
+  const originalThumbs = Array.from(container.querySelectorAll('img:not(.clone)'));
+  if (originalThumbs.length === 0) return;
 
-    if (totalThumbSize <= containerSize) {
-      if (leftArrow) leftArrow.style.display = 'none';
-      if (rightArrow) rightArrow.style.display = 'none';
-    } else {
-      const minThumbs = 6;
-const clonesNeeded = minThumbs - thumbElements.length;
+  const horizontal = isHorizontal();
+  const containerSize = horizontal ? container.clientWidth : container.clientHeight;
 
-if (clonesNeeded > 0) {
-  for (let i = 0; i < clonesNeeded; i++) {
-    const original = thumbElements[i % thumbElements.length];
-    const clone = original.cloneNode(true);
+  // Calculate total size of original thumbs only
+  let totalThumbSize = 0;
+  originalThumbs.forEach(t => {
+    const style = window.getComputedStyle(t);
+    const margin = horizontal
+      ? parseFloat(style.marginLeft) + parseFloat(style.marginRight)
+      : parseFloat(style.marginTop) + parseFloat(style.marginBottom);
+    const size = horizontal ? t.offsetWidth : t.offsetHeight;
+    totalThumbSize += size + margin;
+  });
 
-    clone.classList.add('clone');
-    clone.classList.remove('active');
-
-    clone.dataset.index = original.dataset.index;
-
-    clone.addEventListener('mouseenter', () => {
-      setActiveThumb(parseInt(clone.dataset.index), false);
-    });
-
-    clone.addEventListener('click', () => {
-      setActiveThumb(parseInt(clone.dataset.index), true);
-    });
-
-    container.appendChild(clone);
+  // Hide arrows if all thumbs fit
+  if (totalThumbSize <= containerSize) {
+    if (leftArrow) leftArrow.style.display = 'none';
+    if (rightArrow) rightArrow.style.display = 'none';
+    return;
   }
+
+  // Show arrows if scrolling needed
+  if (leftArrow) leftArrow.style.display = 'flex';
+  if (rightArrow) rightArrow.style.display = 'flex';
+
+  // NO CLONING at all
+  // Only scrollable thumbs, no extra duplicates
 }
-      if (leftArrow) leftArrow.style.display = 'flex';
-      if (rightArrow) rightArrow.style.display = 'flex';
-    }
-  }
+  
 
   setupThumbsLooping();
   window.addEventListener('resize', setupThumbsLooping);
@@ -120,9 +113,8 @@ if (clonesNeeded > 0) {
     activeIndex = index;
 
     const thumb = thumbs[activeIndex];
-  thumbsContainer.querySelectorAll('img').forEach(t => t.classList.remove('active'));
-   thumbsContainer.querySelectorAll(`img[data-index="${activeIndex}"]`)
-  .forEach(t => t.classList.add('active'));
+    thumbs.forEach(t => t.classList.remove('active'));
+    thumb.classList.add('active');
 
     if (mainImage.src !== thumb.dataset.large) {
       mainImage.src = thumb.dataset.large;
@@ -226,7 +218,12 @@ if (clonesNeeded > 0) {
      ARROWS (ONLY SHOW IF NEEDED & INFINITE SCROLL)
   ===================== */
   function updateArrows() {
-  if (!leftArrow || !rightArrow) return;
+    if (!SHOW_THUMB_ARROWS) {
+      if (leftArrow) leftArrow.style.display = 'none';
+      if (rightArrow) rightArrow.style.display = 'none';
+      return;
+    }
+    if (!leftArrow || !rightArrow) return;
 
     const horizontal = isHorizontal();
     const container = thumbsContainer;

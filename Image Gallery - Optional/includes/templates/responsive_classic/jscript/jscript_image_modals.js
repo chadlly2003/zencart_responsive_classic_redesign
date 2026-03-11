@@ -3,7 +3,7 @@
   /* =====================
      CONFIG
   ===================== */
-  const SHOW_THUMB_ARROWS = true; // If set to false, you must set MAX_THUMBS_LOOP to 4 (required for CSS mobile layout).
+  const SHOW_THUMB_ARROWS = true; // If set to false, set MAX_THUMBS_LOOP to 4 (recommended for CSS mobile layout).
   const SWIPE_SPEED = 2;
   const MAX_THUMBS_LOOP = 4; // Set to a number to enable cloning loop only if thumbs exceed that count, or null to always enable when needed
 

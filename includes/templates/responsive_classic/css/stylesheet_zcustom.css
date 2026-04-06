@@ -4049,3 +4049,6 @@ input[type="checkbox"]  {
         width: 80px;
     }
 }
+#reviewWriteMainImage .main-image {
+    margin: auto;
+}

@@ -1,4 +1,4 @@
-a:link {
+ a:link {
 	-webkit-tap-highlight-color: transparent;
 }
 
@@ -2681,7 +2681,9 @@ div#logo {
     margin-bottom: 1rem;
 }
  
- 
+#loginBody .button_submit {
+ 	margin-top:1rem;
+} 
 
 @media (min-width: 576px) {
 
@@ -4036,4 +4038,18 @@ input[type="checkbox"]  {
 }
 .productDetailslistings:empty {
     display:none;
+}
+
+ /* demo css */
+.list-image img {
+    width: 500px;
+}
+
+@media (min-width: 768px) {
+    .list-image img {
+        width: 80px;
+    }
+}
+#reviewWriteMainImage .main-image {
+    margin: auto;
 }

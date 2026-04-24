@@ -2681,7 +2681,7 @@ div#logo {
     margin-bottom: 1rem;
 }
  
-#loginDefault input.submit_button {margin-top:1rem; margin-bottom:1rem;}
+ 
 
 @media (min-width: 576px) {
 
@@ -3170,7 +3170,6 @@ div#logo {
 
     #loginDefault input.cssButtonHover {
         width: auto !important;
-        margin-bottom: 1rem !important;
     }
 
     #createAcctDefault input.submit_button {

@@ -4037,17 +4037,3 @@ input[type="checkbox"]  {
 .productDetailslistings:empty {
     display:none;
 }
-
- /* demo css */
-.list-image img {
-    width: 500px;
-}
-
-@media (min-width: 768px) {
-    .list-image img {
-        width: 80px;
-    }
-}
-#reviewWriteMainImage .main-image {
-    margin: auto;
-}

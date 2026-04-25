@@ -1,4 +1,4 @@
-.buttonRow a {
+ .buttonRow a {
 	text-decoration:none;
 }
 #productreviewsBody .buttonRow a {
@@ -16,15 +16,11 @@
 .button, input.button, input.cssButtonHover {
 	display:inline-block;
 	font-size:1.2em;
-	margin:0;
 	text-decoration:none;
-	background: #ccc;
 }
 input.submit_button {
-	border:none;
 	font-size: 1.2em;
 	display: inline-block;
-	margin:0;
 	border-radius: 0.25rem;
 	width:100% !important;
 }
@@ -32,26 +28,25 @@ input.submit_button:hover {
 	border:none;
 	font-size: 1.2em;
 	display: inline-block;
-	margin:0;
 	border-radius: 0.25rem;
 	width: 100%;
 }
 input.cssButtonHover {
-	border:none;
+ 
 	cursor: pointer;
 	font-size: 1.2em;
 	display: inline-block;
-	margin:0;
+ 
 	border-radius: 0.25rem;
 	width: 100% !important;
 }
 span.normal_button {
 	font-size: 1.2em;
 	display: inline-block;
-	margin:0;
+ 
 	padding: 12px 20px;
 	border-radius: 0.25rem;
-	background:#FFD700;
+
 	display:flex;
 	justify-content: center;
 }
@@ -61,9 +56,7 @@ span.normal_button {
 	background:transparent;
 	display:flex;
 }
-span.normal_button:hover {
-	background:#FFD700;
-}
+
 span.cssButton.normal_button.button.button_more_reviews, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover{
 	display:block;
 	text-align:center;
@@ -124,8 +117,7 @@ input.cssButton.submit_button.button.button_search, .button_search:hover{
 span.cssButton.normal_button.button.button_checkout, .button_checkout:hover{
 	display:block;
 }
-span.cssButton.normal_button.button.button_continue_shopping, .button_continue_shopping:hover, span.cssButton.normal_button.button.button_shipping_estimator, .button_shipping_estimator:hover, span.cssButton.normal_button.button.button_back, .button_back:hover{
-}
+ 
 #reviewsInfoDefault span.cssButton.normal_button.button.button_in_cart, #reviewsInfoDefault .button_in_cart:hover{
 	display:block;
 	text-align:center;
@@ -286,7 +278,7 @@ input[type="search"] {
 }
 #cartAdd input[type="submit"] {
 	background: #7A1BCE;
-	border-color: #7A1BCE !important;
+	border-color: #7A1BCE;
 	color: #fff;
 	font-size:18px;
 	padding:12px 20px;
@@ -294,7 +286,7 @@ input[type="search"] {
 }
 #cartAdd input[type="submit"]:hover {
 	background:#fff;
-	border-color:#7A1BCE !important;
+	border-color:#7A1BCE;
 	color: #7A1BCE;
 }
 #cartAdd input[type="text"] {
@@ -316,16 +308,16 @@ input[type="search"] {
 	padding:0px;
 }
 .button_send {
-	background:#7B3F00 !important;
-	color:#fff !important;
-	border:solid 1px #7B3F00 !important;
+	background:#7B3F00;
+	color:#fff;
+	border:solid 1px #7B3F00;
 	padding-top:0px;
 	padding-bottom:0px;
 }
 .button_send:hover {
-	background:#fff !important;
-	color:#7B3F00 !important;
-	border:solid 1px #7B3F00 !important;
+	background:#fff;
+	color:#7B3F00;
+	border:solid 1px #7B3F00;
 	padding:12px 20px;
 }
 .button_write_review {
@@ -358,7 +350,7 @@ input[type="search"] {
 	color:#AC171D !important;
 }
 #shoppingcartBody .buttonRow .back{
-	float:none!important;
+	float:none !important;
 }
 #shoppingcartBody .forward, #shoppingCartDefault #PPECbuttond {
 	text-align: center;
@@ -434,14 +426,16 @@ input[type="search"] {
 .button_add_selected {
 	padding: 12px 20px;
 	height: auto;
-	background-color: #8b008b !important;
-	border:solid 1px #8b008b !important;
-	color:#fff !important;
+	background-color: #8b008b;
+	border:solid 1px #8b008b;
+	color:#fff;
+	margin-top:0;
+	margin-bottom:0;
 }
 .button_add_selected:hover {
-	background-color: #fff!important;
-	border:solid 1px #8b008b !important;
-	color:#8b008b !important;
+	background-color: #fff;
+	border:solid 1px #8b008b;
+	color:#8b008b;
 }
 .button_continue {
 	padding: 12px 20px;

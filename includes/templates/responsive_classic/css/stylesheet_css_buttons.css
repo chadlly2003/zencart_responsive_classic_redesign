@@ -164,7 +164,7 @@
      color: #fff !important;
      background-color: #AC171D !important;
      border-color: #AC171D !important;
-     margin-bottom:1rem;
+     margin-bottom:1rem !important;
 }
  #manufacturers input.cssButtonHover {
      border-radius: 0.25rem;

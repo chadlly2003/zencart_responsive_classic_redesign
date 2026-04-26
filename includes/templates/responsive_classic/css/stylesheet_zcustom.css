@@ -1,4 +1,4 @@
-a:link,a:hover,input {
+ a:link,a:hover,input {
      -webkit-tap-highlight-color: transparent;
 }
  img {
@@ -9,75 +9,43 @@ a:link,a:hover,input {
  #navSuppWrapper {
      display: none;
 }
-
-/* primary button (green)  */
-.button_continue_checkout,
-.button_login {
-    background: #006400;
-    border: 1px solid #006400;
-    color: #fff;
-    -webkit-appearance: none;
+/* primary button (green) */
+ .button_continue_checkout, .button_login {
+     background: #006400;
+     border: 1px solid #006400;
+     color: #fff;
+     -webkit-appearance: none;
 }
-
-.button_continue_checkout:hover,
-.button_login:hover {
-    background: #fff;
-    color: #006400;
-    border: 1px solid #006400;
-    -webkit-appearance: none;
+ .button_continue_checkout:hover, .button_login:hover {
+     background: #fff;
+     color: #006400;
+     border: 1px solid #006400;
+     -webkit-appearance: none;
 }
-
 /* secondary button (yellow) */
-.button_secondary,
-.button_change_address,
-.button_view,
-.button.small_edit,
-#linkContactUs .button_contact_us,
-#linkMyAccount .button_my_orders,
-#linkLogoff .button_logoff,
-#addressBookDefault span.normal_button,
-#checkoutPayment .button_change_address,
-.input.submit_button {
+ .button_secondary, .button_change_address, .button_view, .button.small_edit, #linkContactUs .button_contact_us, #linkMyAccount .button_my_orders, #linkLogoff .button_logoff, #addressBookDefault span.normal_button, #checkoutPayment .button_change_address, .input.submit_button,#unsubscribeBody span.normal_button {
      background: #FFD700;
-    border: 1px solid #FFD700;
-    color: #000;
-    -webkit-appearance: none;
+     border: 1px solid #FFD700;
+     color: #000;
+     -webkit-appearance: none;
 }
-
-
-.button_secondary:hover,
-.button_change_address:hover,
-.button_view:hover,
-.button.small_edit:hover,
-#linkContactUs .button_contact_us:hover,
-#linkMyAccount .button_my_orders:hover,
-#linkLogoff .button_logoff:hover,
-#addressBookDefault span.normal_button:hover,
-#checkoutPayment .button_change_address:hover {
-    background: #fff;
-    border: 1px solid #FFD700;
-    -webkit-appearance: none;
+ .button_secondary:hover, .button_change_address:hover, .button_view:hover, .button.small_edit:hover, #linkContactUs .button_contact_us:hover, #linkMyAccount .button_my_orders:hover, #linkLogoff .button_logoff:hover, #addressBookDefault span.normal_button:hover, #checkoutPayment .button_change_address:hover,#unsubscribeBody span.normal_button:hover {
+     background: #fff;
+     border: 1px solid #FFD700;
+     -webkit-appearance: none;
 }
-
 /* danger buttons (red) */
-.button_delete,
-.button_update,
-.button_buy_now,
-.button_create_account {
-    background: #AC171D;
-    border: 1px solid #AC171D ;
-    color: #fff;
+ .button_delete, .button_update, .button_buy_now, .button_create_account, .button_cancel {
+     background: #AC171D;
+     border: 1px solid #AC171D ;
+     color: #fff;
 }
-
-.button_delete:hover,
-.button_update:hover,
-.button_buy_now:hover,
-.button_create_account:hover {
-    background: #fff;
-    color: #AC171D;
-    border:solid  1px #AC171D;;
+ .button_delete:hover, .button_update:hover, .button_buy_now:hover, .button_create_account:hover, .button_cancel:hover {
+     background: #fff;
+     color: #AC171D;
+     border:solid 1px #AC171D;
+     ;
 }
- 
  #productAttributes {
      background-color: #F0F8FF;
      padding: 1rem;
@@ -291,9 +259,6 @@ a:link,a:hover,input {
      display: grid;
      grid-template-columns: 1fr 3fr 1fr;
      height: auto;
-}
- .cartProductDisplay br {
-     display: none;
 }
  #scTotalHeading {
      display: none;
@@ -509,16 +474,13 @@ a:link,a:hover,input {
      margin-bottom: 0;
      color: #900404;
 }
- #passwordForgotten fieldset {
-     margin-bottom: 1rem;
-}
  #seQuoteResults tr {
      border: none;
 }
  #reviewsWrite .forward {
      float: none;
-     margin-top: 2rem;
-     margin-bottom: 2rem 
+     margin-top: 1rem;
+     margin-bottom: 0rem 
 }
  #reviewsWrite #reviewWriteMainImage {
      margin: 0;
@@ -562,7 +524,7 @@ a:link,a:hover,input {
      outline: none;
 }
  #reviewsWriteReviewsNotice {
-     margin-top: 1rem;
+     margin-top: 0rem;
      margin-bottom: 1rem 
 }
  #reviewsWrite .center {
@@ -848,7 +810,6 @@ a:link,a:hover,input {
  input.cssButtonHover {
      -webkit-appearance: none;
 }
- 
  button {
      -webkit-appearance: none;
 }
@@ -883,16 +844,13 @@ a:link,a:hover,input {
  #acctNewslettersDefault legend {
      color: #000;
 }
- #acctNewslettersDefault fieldset {
-     margin-bottom: 1rem;
-}
  #accountNotifications legend {
      color: #000;
 }
  #accountNotifications fieldset:nth-of-type(2) {
      background: #E6E6FA;
      border-bottom: solid 1px #ccc;
-     margin-bottom: 2rem;
+     margin-bottom: 1rem;
 }
  #accountNotifications fieldset .notice {
      padding-left: 6px;
@@ -902,18 +860,14 @@ a:link,a:hover,input {
      padding-bottom: 1rem;
      display: block;
 }
- 
- 
  #checkoutShipping .button_change_address {
      margin-bottom: 1.5rem;
      margin-top: 1rem;
 }
-
  #checkoutPayment .button_change_address {
      margin-bottom: 1.5rem;
      margin-top: 1rem;
 }
- 
  .box_review_spacver span.normal_button {
      background-color: #FFD700;
      border: solid 1px #FFD700 !important;
@@ -931,16 +885,6 @@ a:link,a:hover,input {
 }
  .spacer_element_button_add .button_sold_out {
      display: none;
-}
- #unsubscribeBody span.normal_button {
-     background-color: #FFD700;
-     border: solid 1px #FFD700 !important;
-     color: #000 !important 
-}
- #unsubscribeBody span.normal_button:hover {
-     background-color: #fff !important;
-     border: solid 1px #FFD700 !important;
-     color: #000 !important 
 }
  .button_delete {
      margin-top: 1rem;
@@ -965,7 +909,7 @@ a:link,a:hover,input {
      margin-top: 1rem;
 }
  #accountpasswordBody .button_submit {
-     margin-top: 1rem;
+     margin-bottom:0;
 }
  #addressBookDefault .button.small_edit {
      margin-top: 1rem;
@@ -1153,8 +1097,6 @@ a:link,a:hover,input {
      margin-top: 1rem;
      float: none 
 }
-
- 
  #checkoutShipping textarea {
      text-align: left;
 }
@@ -1166,9 +1108,6 @@ a:link,a:hover,input {
 }
  #checkoutShipping #comments legend {
      color: #154DBC;
-}
- #checkoutPayment .payment br {
-     display: none 
 }
  #checkoutPayment .button_continue_checkout {
      margin-bottom: 1rem;
@@ -1209,29 +1148,19 @@ a:link,a:hover,input {
 }
  #checkoutPayment TEXTAREA {
      text-align: left;
+     margin-bottom: 0;
 }
- #checkoutShipAddressDefault .continuenext {
+ #checkoutShipAddressDefault .continuenext, #checkoutPayAddressDefault .continuenext {
      float: none;
-     margin-top: 2rem;
-     margin-bottom: 1rem;
+     margin-top: 1rem;
 }
- #checkoutShipAddressDefault .continueback {
+ #checkoutShipAddressDefault .continueback, #checkoutPayAddressDefault .continueback {
      float: none;
-     margin-top: 2rem;
+     margin-top: 1rem;
      margin-bottom: 1rem;
 }
  #checkoutNewAddress {
      margin-top: 1rem 
-}
- #checkoutPayAddressDefault .continuenext {
-     float: none;
-     margin-top: 2rem;
-     margin-bottom: 1rem;
-}
- #checkoutPayAddressDefault .continueback {
-     float: none;
-     margin-top: 2rem;
-     margin-bottom: 1rem;
 }
  #checkoutConfirmDefault span.cssButton.normal_button.button.button_logoff,span.cssButton.normal_button.button.small_edit {
      margin: 1rem;
@@ -1241,6 +1170,8 @@ a:link,a:hover,input {
 }
  #checkoutConfirmDefault span.normal_button:hover {
      margin: 1rem;
+     margin-left: 0;
+     margin-right: 0;
 }
  #checkoutConfirmDefault .rowOdd {
      background-color: #F8F8FF;
@@ -1255,7 +1186,7 @@ a:link,a:hover,input {
      background: transparent;
 }
  .button_confirm_order {
-     margin-top: 1rem;
+     margin-top: 0rem;
      margin-bottom: 1rem;
      float: none;
      border: solid 1px #006400 !important;
@@ -1267,7 +1198,6 @@ a:link,a:hover,input {
      background: #fff !important;
      color: #006400 !important;
 }
- 
  #shippingEstimatorContent .button_update {
      padding: 0 !important;
      margin: 0 !important;
@@ -1303,18 +1233,16 @@ a:link,a:hover,input {
 }
  #checkoutConfirmDefault #checkoutConfirmDefaultHeadingCart {
      color: #154DBC;
+     border-bottom: solid 1px #ccc;
+     padding-bottom: 1rem;
 }
  #checkoutConfirmDefault .confirmorder {
-     margin-top: 1rem;
+     margin-top: 0;
      margin-bottom: 0;
      display: grid;
      width: 100%;
 }
  #checkoutConfirmDefault .editelement span.cssButton.normal_button.button.small_edit {
-     margin-left: 0;
-     margin-right: 0;
-}
- #checkoutConfirmDefault span.normal_button:hover {
      margin-left: 0;
      margin-right: 0;
 }
@@ -1345,26 +1273,19 @@ a:link,a:hover,input {
      margin-top: 1rem;
      margin-bottom: 1rem;
 }
- #csNotifications br {
-     display: none;
-}
- #contactUsForm {
-     margin-bottom: 1rem;
-}
  #checkoutPayment input.submit_button {
      margin-top: 1rem;
-}
- #accountEditDefault fieldset {
-     margin-bottom: 1rem;
 }
  #addressBookProcessDefault select#country {
      margin-bottom: 0.5rem;
 }
  #addressBookProcessDefault input.cssButtonHover {
-     margin-top: 1rem 
+     margin-top: 1rem;
+     margin-bottom: 0;
 }
  #addressBookProcessDefault input.submit_button {
      margin-top: 1rem;
+     margin-bottom: 0;
 }
  #select-manufacturers_id {
      outline: none !important;
@@ -1422,7 +1343,7 @@ a:link,a:hover,input {
      text-align: center;
 }
  .checkoutupdate {
-     margin-top: 2rem;
+     margin-top: 1rem;
 }
  .dateissue {
      color: #006400;
@@ -1430,7 +1351,7 @@ a:link,a:hover,input {
      float: left;
 }
  #accountHistoryDefault .navSplitPagesResult {
-     margin-top: 2rem 
+     margin-top: 1rem 
 }
  .button.button_back, #addressBookDefault .button.button_back {
      color: #fff !important;
@@ -1792,31 +1713,23 @@ a:link,a:hover,input {
      padding-left: 0;
      padding-right: 0;
 }
- .centerBoxContentsFeaturedCategories br {
-     display: none;
-}
- #specialsDefault br {
-     display: none;
-}
  #siteinfoLegal a:first-of-type {
      display: none !important;
 }
  .button_create_account {
      width: auto !important;
      margin-bottom: 1rem;
-    
 }
  .button_create_accountHover {
      width: auto !important;
      margin-bottom: 1rem;
 }
- 
-
  .listingDescription img {
      display: none !important;
 }
  #searchDefault .button_search {
      width: 100% !important;
+     margin-bottom:0px;
 }
  #productDetailsList li {
      list-style-type: none;
@@ -1872,8 +1785,6 @@ a:link,a:hover,input {
      position: relative;
      align-content: end;
 }
- 
- 
  .cartAttribsList {
      margin-left: 0;
 }
@@ -1986,32 +1897,40 @@ a:link,a:hover,input {
  #reviewWriteMainImage .main-image {
      margin: auto;
 }
- #productListing br,#whatsNew br,#featuredProducts br,#reviewsWritePrice br,#reviewsInfoDefaultPrice br,.block_element_reviewslinked br,#cartContentsDisplay br,#shippingEstimatorContent br,#pinfo-right br,.max-qty br,.centerBoxContentsAlsoPurch br {
+ #productListing br,#whatsNew br,#featuredProducts br,#reviewsWritePrice br,#reviewsInfoDefaultPrice br,.block_element_reviewslinked br,#cartContentsDisplay br,#shippingEstimatorContent br,#pinfo-right br,.max-qty br,.centerBoxContentsAlsoPurch br, #csNotifications br, .centerBoxContentsFeaturedCategories br, #specialsDefault br, #orderStatus br, #searchBody br, #accounteditBody br, #addressbookprocessBody br, #accountnewslettersBody br, .cartProductDisplay br,#checkoutPayment .payment br, #loginDefault br,  #createAcctDefault br  {
      display: none;
 }
- #acctNewslettersDefault .back,#accountNotifications .back,#addressbookprocessBody .back,#accountpasswordBody .back,#accounteditBody .back,#addressBookDefault .back {
+ #acctNewslettersDefault .back,#accountNotifications .back,#addressbookprocessBody .back,#accountpasswordBody .back,#accounteditBody .back,#addressBookDefault .back,#contactUsDefault .back, #searchDefault .back, #searchresultBody .back {
      float: none;
 }
- #acctNewslettersDefault .forward,#accountNotifications .forward,#addressbookprocessBody .forward,#accountpasswordBody .forward,#accounteditBody .forward,#addressBookDefault .forward {
+ #acctNewslettersDefault .forward,#accountNotifications .forward,#addressbookprocessBody .forward,#accountpasswordBody .forward,#accounteditBody .forward,#addressBookDefault .forward, #contactUsDefault .forward, #askaquestionBody .forward, #searchDefault .forward {
      float: none;
 }
-
  #bannerSix a, #cartAdd a, #bannerboxallContent a, .box_review_spacver a, .spacer_element_button_add a {
      min-height: 44px;
      display: block;
 }
-
  .list-model, .list-quantity, .list-weight, .mfgLink, .markProductOutOfStock {
      display: none;
 }
-
-#page2Body .buttonRow,  
-#page3Body .buttonRow, 
-#page4Body .buttonRow,
-#pagenotfoundBody .buttonRow
-    {float:none;}
- 
-
+ #page2Body .buttonRow, #page3Body .buttonRow, #page4Body .buttonRow, #pagenotfoundBody .buttonRow, #passwordforgottenBody .buttonRow, #searchDefault .buttonRow {
+     float:none;
+}
+ #accountnewslettersBody input.submit_button, #accountnewslettersBody .button_update:hover, #accountnotificationsBody input.submit_button, #accountnotificationsBody .button_update:hover {
+     margin-bottom:0;
+}
+ #aboutusBody .buttonRow, #accessibilityBody .buttonRow, #privacyBody .buttonRow, #conditionsBody .buttonRow, #orderstatusBody .buttonRow, #sitemapBody .buttonRow, #shippinginfoBody .buttonRow, #discountcouponBody .buttonRow, #unsubscribeBody .buttonRow {
+     float:none 
+}
+ #loginBody .button_login {
+     margin-bottom:0.5rem 
+}
+ #passwordforgottenBody .button_submit {
+     margin-bottom:0;
+}
+ #accounteditBody fieldset, #accountnewslettersBody fieldset {
+    margin-bottom:1rem;
+}
  @media (min-width: 576px) {
      div#logo {
          max-width: 230px;
@@ -2174,17 +2093,20 @@ a:link,a:hover,input {
      #checkoutConfirmDefault .editelement span.cssButton.normal_button.button.small_edit {
          margin: 1rem !important;
     }
+     #checkoutConfirmDefault span.normal_button:hover {
+         margin:1rem;
+    }
 }
  @media (min-width: 768px) {
-
-#searchDefault .back {margin-top:0rem;}
-#page2Body .buttonRow,  
-#page3Body .buttonRow, 
-#page4Body .buttonRow,
-#pagenotfoundBody .buttonRow
-     {float:left;}
-
-
+     #searchDefault .back {
+         margin-top:0rem;
+    }
+     #checkoutPayment TEXTAREA {
+         margin-bottom:1rem;
+    }
+     #page2Body .buttonRow, #page3Body .buttonRow, #page4Body .buttonRow, #pagenotfoundBody .buttonRow {
+         float:left;
+    }
      #acctNewslettersDefault .back,#accountNotifications .back,#addressbookprocessBody .back,#accountpasswordBody .back,#accounteditBody .back {
          float: left;
     }
@@ -2316,7 +2238,7 @@ a:link,a:hover,input {
     }
      #productAdditionalImages {
          grid-template-columns: repeat(4, auto);
-         justify-content: left;
+         
     }
      .box_review_spacver {
          margin-bottom: 0;
@@ -2459,7 +2381,7 @@ a:link,a:hover,input {
          margin: inherit;
     }
      #checkoutConfirmDefault .confirm-order {
-         margin-top: 1rem;
+         margin-top: 0rem;
          margin-bottom: 1rem;
          float: right;
     }
@@ -2563,7 +2485,7 @@ a:link,a:hover,input {
     }
      #reviewsWrite .forward {
          float: right;
-         margin-top: 1rem;
+         margin-top:0;
     }
      #reviewsWriteReviewsNotice {
          margin-bottom: 1rem;
@@ -2571,9 +2493,6 @@ a:link,a:hover,input {
      #reviewsWrite #review-text {
          clear: both;
          margin-bottom: 1rem;
-    }
-     #passwordForgotten fieldset {
-         margin-bottom: 0;
     }
      #shippingEstimatorContent .cartTotalDisplay {
          margin-top: 0;
@@ -2674,38 +2593,22 @@ a:link,a:hover,input {
      #addressbookprocessBody .button.button_back {
          margin-top: 1rem !important;
     }
-     #contactUsForm {
-         margin-bottom: 0;
-    }
      #checkoutConfirmDefault .editelement span.cssButton.normal_button.button.small_edit {
          float: right;
     }
      #checkoutConfirmDefault span.normal_button:hover {
          float: right;
-         margin: 1rem;
     }
-     #checkoutShipAddressDefault .continuenext {
+     #checkoutShipAddressDefault .continuenext, #checkoutPayAddressDefault .continuenext {
          float: right;
-         margin-top: 2rem;
-         margin-bottom: 0;
+         margin-top:0;
     }
-     #checkoutShipAddressDefault .continueback {
+     #checkoutShipAddressDefault .continueback, #checkoutPayAddressDefault .continueback {
          float: left;
-         margin-top: 1rem;
          margin-bottom: 0;
     }
      .shippingmethodelement {
          margin-top: -2rem;
-    }
-     #checkoutPayAddressDefault .continuenext {
-         float: right;
-         margin-top: 2rem;
-         margin-bottom: 1rem;
-    }
-     #checkoutPayAddressDefault .continueback {
-         float: left;
-         margin-top: 1rem;
-         margin-bottom: 0;
     }
      #checkoutPayment #paymentSubmit {
          float: right;
@@ -2715,9 +2618,6 @@ a:link,a:hover,input {
     }
      #accountHistInfo .orderdate {
          text-align: right;
-    }
-     #accountpasswordBody .button_submit {
-         margin-top: 0;
     }
      #accountpasswordBody .button_back {
          margin-top: 1rem;
@@ -2732,11 +2632,6 @@ a:link,a:hover,input {
     }
      #addressBookDefault .clearBoth {
          display: none;
-    }
-     #checkoutConfirmDefault #checkoutConfirmDefaultHeadingCart {
-         color: #154DBC;
-         border-bottom: solid 1px #ccc;
-         padding-bottom: 1rem;
     }
      .continueshoppingb {
          flex-grow: 0;
@@ -2775,29 +2670,13 @@ a:link,a:hover,input {
          margin-right: 5px;
          margin-left: 5%;
     }
-
-    #askaquestionBody .back {
+     #askaquestionBody .back {
          float: none;
     }
-
-
-     #unsubscribeBody .buttonRow,
-     #passwordforgottenBody .forward,
-     #askaquestionBody .forward,
-    #searchDefault .buttonRow {
+     #unsubscribeBody .buttonRow, #passwordforgottenBody .forward, #askaquestionBody .forward, #searchDefault .buttonRow {
          float: right;
     }
-
-  #contactusBody .back,
-     #shippinginfoBody .buttonRow,
-     #aboutusBody .buttonRow,
-     #privacyBody .buttonRow,
-     #conditionsBody .buttonRow,
-     #sitemapBody .buttonRow,
-     #discountcouponBody .back,
-     #passwordforgottenBody .back,
-     #searchresultBody .back,
-     #searchDefault .back {
+     #contactusBody .back, #shippinginfoBody .buttonRow, #aboutusBody .buttonRow, #privacyBody .buttonRow, #conditionsBody .buttonRow, #sitemapBody .buttonRow, #discountcouponBody .back, #passwordforgottenBody .back, #searchresultBody .back, #searchDefault .back {
          float: left;
     }
      #productinfoBody .button_sold_out {

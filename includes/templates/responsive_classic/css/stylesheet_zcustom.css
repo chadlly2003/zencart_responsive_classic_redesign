@@ -1,4 +1,4 @@
-  a:link,a:hover,input {
+ a:link,a:hover,input {
      -webkit-tap-highlight-color: transparent;
 }
  img {
@@ -931,11 +931,9 @@
  #accountDefault .tableHeading th:nth-of-type(3) {
      display: none;
 }
- #accountDefault .accountOrderDate,
- #accountDefault .accountOrderAddress {
+ #accountDefault .accountOrderDate, #accountDefault .accountOrderAddress {
      display: none;
 }
-
  #accountDefault span.normal_button {
      margin: auto;
      max-width: 50px;
@@ -1091,11 +1089,6 @@
      border-bottom: none;
      padding-bottom: 0 
 }
- #checkoutShipping .continue {
-     margin-bottom: 1rem;
-     margin-top: 1rem;
-     float: none 
-}
  #checkoutShipping textarea {
      text-align: left;
 }
@@ -1107,12 +1100,6 @@
 }
  #checkoutShipping #comments legend {
      color: #154DBC;
-}
- #checkoutPayment .button_continue_checkout {
-     margin-bottom: 1rem;
-}
- #checkoutPayment .button_continue_checkout:hover {
-     margin-top: 1rem;
 }
  #checkoutPayment .forward {
      float: right;
@@ -1144,10 +1131,6 @@
  #checkoutPayment .payment {
      margin-top: 2rem;
      margin-bottom: 2rem;
-}
- #checkoutPayment TEXTAREA {
-     text-align: left;
-     margin-bottom: 0;
 }
  #checkoutShipAddressDefault .continuenext, #checkoutPayAddressDefault .continuenext {
      float: none;
@@ -1272,9 +1255,6 @@
      margin-top: 1rem;
      margin-bottom: 1rem;
 }
- #checkoutPayment input.submit_button {
-     margin-top: 1rem;
-}
  #addressBookProcessDefault select#country {
      margin-bottom: 0.5rem;
      display: block;
@@ -1378,7 +1358,6 @@
      display: grid;
      grid-template-columns: repeat(1, 1fr);
 }
-
  .otherBrands .rblockelements {
      display: inline !important;
      width: 33.3%;
@@ -1696,11 +1675,7 @@
      background-color: #fff;
      color: #000;
 }
- .accountOrderDate,
- .accountOrderId,
- .accountOrderAddress,
- .accountOrderStatus,
- .accountOrderTotal {
+ .accountOrderDate, .accountOrderId, .accountOrderAddress, .accountOrderStatus, .accountOrderTotal {
      vertical-align: middle;
 }
  .centerColumn {
@@ -1710,13 +1685,10 @@
  #siteinfoLegal a:first-of-type {
      display: none !important;
 }
- .button_create_account, 
-.button_create_accountHover
- {
+ .button_create_account, .button_create_accountHover {
      width: auto !important;
      margin-bottom: 1rem;
 }
- 
  .listingDescription img {
      display: none !important;
 }
@@ -1836,9 +1808,7 @@
      width: 100%;
      text-align: center;
 }
- #productListing .gridlayout .button_buy_now,
- #indexProductList .gridlayout .button_sold_out,
- #productsallBody .gridlayout span.button_sold_out {
+ #productListing .gridlayout .button_buy_now, #indexProductList .gridlayout .button_sold_out, #productsallBody .gridlayout span.button_sold_out {
      float: none;
 }
  .gridlayout .listingDescription {
@@ -1886,7 +1856,7 @@
  #reviewWriteMainImage .main-image {
      margin: auto;
 }
- #productListing br,#whatsNew br,#featuredProducts br,#reviewsWritePrice br,#reviewsInfoDefaultPrice br,.block_element_reviewslinked br,#cartContentsDisplay br,#shippingEstimatorContent br,#pinfo-right br,.max-qty br,.centerBoxContentsAlsoPurch br, #csNotifications br, .centerBoxContentsFeaturedCategories br, #specialsDefault br, #orderStatus br, #searchBody br, #accounteditBody br, #addressbookprocessBody br, #accountnewslettersBody br, .cartProductDisplay br,#checkoutPayment .payment br, #loginDefault br,  #createAcctDefault br  {
+ #productListing br,#whatsNew br,#featuredProducts br,#reviewsWritePrice br,#reviewsInfoDefaultPrice br,.block_element_reviewslinked br,#cartContentsDisplay br,#shippingEstimatorContent br,#pinfo-right br,.max-qty br,.centerBoxContentsAlsoPurch br, #csNotifications br, .centerBoxContentsFeaturedCategories br, #specialsDefault br, #orderStatus br, #searchBody br, #accounteditBody br, #addressbookprocessBody br, #accountnewslettersBody br, .cartProductDisplay br,#checkoutPayment .payment br, #loginDefault br, #createAcctDefault br {
      display: none;
 }
  #acctNewslettersDefault .back,#accountNotifications .back,#addressbookprocessBody .back,#accountpasswordBody .back,#accounteditBody .back, #addressBookDefault .back,#contactUsDefault .back, #searchDefault .back, #searchresultBody .back {
@@ -1918,7 +1888,7 @@
      margin-bottom:0;
 }
  #accounteditBody fieldset, #accountnewslettersBody fieldset {
-    margin-bottom:1rem;
+     margin-bottom:1rem;
 }
  @media (min-width: 576px) {
      div#logo {
@@ -1955,11 +1925,11 @@
      .backhistorybutton {
          float: right;
     }
-
     /* Desktop view – match this number to your admin setting */
      .rblockelements {
          display: grid;
-         grid-template-columns: repeat(3, 1fr); /* Change 3 to match Columns per Row setting */
+         grid-template-columns: repeat(3, 1fr);
+        /* Change 3 to match Columns per Row setting */
          gap: 1rem;
     }
      .button_search:hover {
@@ -2057,8 +2027,7 @@
      #accountDefault .tableHeading th:nth-of-type(3) {
          display: table-cell;
     }
-     #accountDefault .accountOrderDate,
-     #accountDefault .accountOrderAddress {
+     #accountDefault .accountOrderDate, #accountDefault .accountOrderAddress {
          display: table-cell;
     }
      .successicons {
@@ -2090,9 +2059,6 @@
      #searchDefault .back {
          margin-top:0rem;
     }
-     #checkoutPayment TEXTAREA {
-         margin-bottom:1rem;
-    }
      #page2Body .buttonRow, #page3Body .buttonRow, #page4Body .buttonRow, #pagenotfoundBody .buttonRow {
          float:left;
     }
@@ -2105,7 +2071,6 @@
      #createAcctSuccess .button_delete {
          margin-top: 0;
     }
-
      #addressBookDefault .otherbuttuns a {
          flex-grow: 2;
          flex-basis: 0;
@@ -2229,8 +2194,9 @@
      #productAdditionalImages {
          grid-template-columns: repeat(4, auto);
     }
-    #contactusBody .buttonRow {
-        float:left;margin-top:1rem;
+     #contactusBody .buttonRow {
+         float:left;
+        margin-top:1rem;
     }
      .box_review_spacver {
          margin-bottom: 0;
@@ -2563,12 +2529,6 @@
      #addressBookProcessDefault input.submit_button {
          margin-top: 1rem;
     }
-     #checkoutPayment input.submit_button {
-         margin-top: 0;
-    }
-     #checkoutShipping .continue {
-         margin-top: 0;
-    }
      #checkoutPayment .button_continue_checkout:hover {
          margin-top: 0;
     }
@@ -2606,7 +2566,7 @@
          float: right;
     }
      #checkoutShipping .continue {
-         float: right !important 
+         float: right;
     }
      #accountHistInfo .orderdate {
          text-align: right;

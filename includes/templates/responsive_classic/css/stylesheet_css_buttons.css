@@ -1,469 +1,354 @@
  .buttonRow a {
-	text-decoration:none;
+     text-decoration:none;
 }
-#productreviewsBody .buttonRow a {
-	display:inline-block;
-	min-height: 44px;
+ #productreviewsBody .buttonRow a {
+     display:inline-block;
+     min-height: 44px;
 }
-#reviewsDefault .buttonRow a {
-	display:inline-block;
-	min-height: 44px;
-	align-content: center;
+ #reviewsDefault .buttonRow a {
+     display:inline-block;
+     min-height: 44px;
+     align-content: center;
 }
-#reviewsDefault .button:active {
-	outline:none;
+ #reviewsDefault .button:active {
+     outline:none;
 }
-.button, input.button, input.cssButtonHover {
-	display:inline-block;
-	font-size:1.2em;
-	text-decoration:none;
+ .button, input.button, input.cssButtonHover {
+     display:inline-block;
+     font-size:1.2em;
+     text-decoration:none;
 }
-input.submit_button {
-	font-size: 1.2em;
-	display: inline-block;
-	border-radius: 0.25rem;
-	width:100% !important;
+ input.submit_button {
+     font-size: 1.2em;
+     display: inline-block;
+     border-radius: 0.25rem;
+     width:100% !important;
 }
-input.submit_button:hover {
-	border:none;
-	font-size: 1.2em;
-	display: inline-block;
-	border-radius: 0.25rem;
-	width: 100%;
+ input.submit_button:hover {
+     border:none;
+     font-size: 1.2em;
+     display: inline-block;
+     border-radius: 0.25rem;
+     width: 100%;
 }
-input.cssButtonHover {
- 
-	cursor: pointer;
-	font-size: 1.2em;
-	display: inline-block;
- 
-	border-radius: 0.25rem;
-	width: 100% !important;
+ input.cssButtonHover {
+     cursor: pointer;
+     font-size: 1.2em;
+     border-radius: 0.25rem;
+     width: 100% !important;
 }
-span.normal_button {
-	font-size: 1.2em;
-	display: inline-block;
- 
-	padding: 12px 20px;
-	border-radius: 0.25rem;
-
-	display:flex;
-	justify-content: center;
+ span.normal_button {
+     font-size: 1.2em;
+     display: inline-block;
+     padding: 12px 20px;
+     border-radius: 0.25rem;
+     display:flex;
+     justify-content: center;
 }
-#productReviewsDefaultProductPageLink span.normal_button {
-	font-size: 16px;
-	padding:0px;
-	background:transparent;
-	display:flex;
+ #productReviewsDefaultProductPageLink span.normal_button {
+     font-size: 16px;
+     padding:0px;
+     background:transparent;
+     display:flex;
 }
-
-span.cssButton.normal_button.button.button_more_reviews, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover{
-	display:block;
-	text-align:center;
+ span.cssButton.normal_button.button.button_more_reviews, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover{
+     display:block;
+     text-align:center;
 }
-span.cssButton.normal_button.button.button_write_review, .button_write_review, span.cssButton.normal_button.button.button_in_cart{
-	text-align:center;
-	padding:12px 20px;
+ span.cssButton.normal_button.button.button_write_review, .button_write_review, span.cssButton.normal_button.button.button_in_cart{
+     text-align:center;
+     padding:12px 20px;
 }
-#indexBody span.cssButton.normal_button.button.button_in_cart, #indexBody .button_in_cart:hover{
-	display:inline-block;
+ #indexBody span.cssButton.normal_button.button.button_in_cart, #indexBody .button_in_cart:hover{
+     display:inline-block;
 }
-span.cssButton.normal_button.button.button_goto_prod_details{
-	background:transparent;
+ span.cssButton.normal_button.button.button_goto_prod_details{
+     background:transparent;
 }
-#productreviewsBody span.cssButton.normal_button.button.button_goto_prod_details {
-	background: transparent;
-	font-size: 16px;
-	color: #000;
-	display:contents;
-	 
+ #productreviewsBody span.cssButton.normal_button.button.button_goto_prod_details {
+     background: transparent;
+     font-size: 16px;
+     color: #000;
+     display:contents;
 }
-#productreviewsBody .button_goto_prod_details:hover {
-	background: transparent;
-	font-size: 16px;
-	font-size:16px;
-	display: contents;
- 
+ #productreviewsBody .button_goto_prod_details:hover {
+     background: transparent;
+     font-size:16px;
+     display: contents;
 }
-#productreviewsBody span.cssButton.normal_button.button.button_goto_prod_details:hover {
-	background: transparent;
-	font-size: 16px;
-	 
+ #productreviewsBody span.cssButton.normal_button.button.button_goto_prod_details:hover {
+     background: transparent;
+     font-size: 16px;
 }
-#reviewsDefault .button_in_cart:hover {
-	float:none;
-	font-size:16px;
+ #reviewsDefault .button_in_cart:hover {
+     float:none;
+     font-size:16px;
+     text-align:center;
+     padding:12px 20px;
+     display:block;
 }
-#reviewsDefault .forward:hover {
-	font-size:16px;
+ #reviewsDefault .forward:hover {
+     font-size:16px;
 }
-.button_goto_prod_details:hover{
-	background:#05a5cb;
+ .button_goto_prod_details:hover{
+     background:#05a5cb;
 }
-input.cssButton.submit_button.button.button_search, .button_search:hover{
-	padding:12px 20px;
-	font-size:1.3em;
-	line-height:18px;
+ input.cssButton.submit_button.button.button_search, .button_search:hover{
+     padding:12px 20px;
+     font-size:1.2em;
 }
-#advSearchDefault input.cssButton.submit_button.button.button_search, #advSearchDefault .button_search:hover{
-	font-size:1.2em;
+ .button-left{
+     margin-right:10px;
 }
-.button-left{
-	margin-right:10px;
+ .button-right{
+     margin-left:10px;
 }
-.button-right{
-	margin-left:10px;
+ span.cssButton.normal_button.button.button_checkout, .button_checkout:hover{
+     display:block;
 }
-span.cssButton.normal_button.button.button_checkout, .button_checkout:hover{
-	display:block;
+ #reviewsInfoDefault span.cssButton.normal_button.button.button_in_cart, #reviewsInfoDefault .button_in_cart:hover{
+     display:block;
+     text-align:center;
+     padding:12px 20px;
 }
- 
-#reviewsInfoDefault span.cssButton.normal_button.button.button_in_cart, #reviewsInfoDefault .button_in_cart:hover{
-	display:block;
-	text-align:center;
-	padding:12px 20px;
+ span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.button.small_edit{
+     background:#FFD700;
 }
-#reviewsInfoDefault .button_in_cart:hover, #reviewsDefault .button_in_cart:hover{
-	display:block;
-}
-#reviewsDefault .button_in_cart:hover{
-	text-align:center;
-	padding:12px 20px 
-}
-span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.button.small_edit{
-	background:#FFD700;
-}
-span.button_sold_out, span.button_sold_out:hover{
-	color:#8B0000;
-	padding:0px;
-	background:transparent;
-	font-size:22px !important;
-	outline:none;
-}
-#orderStatus br {
-	display:none;
+ span.button_sold_out, span.button_sold_out:hover{
+     color:#8B0000;
+     padding:0px;
+     background:transparent;
+     font-size:22px !important;
+     outline:none;
 }
 /** custom overides - */
-input[type="search"] {
-	padding: .375rem .75rem;
-	font-size: 1rem;
-	line-height: 1.5;
-	color: #495057;
-	background-color: #fff;
-	background-clip: padding-box;
-	border: 1px solid #ced4da;
-	border-radius: .25rem;
-	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-	height: 48px;
-	width:100% !important;
-}
-#productinfoBody .button_sold_out {
-	font-size:22px;
-	display:block;
-	width:100%;
-	text-align:left;
-}
-#productinfoBody #cartAdd a {
-	font-size:22px;
-	width:auto;
-	text-align:left;
-	color:#7a1db1;
-	margin-left:0rem;
-}
-#productinfoBody .button_sold_out {
-	width: auto;
-}
-#productmusicinfoBody .button_write_review {
-	width:100%;
-	background: transparent;
-	padding:0;
-	margin-top:1rem;
-	margin-bottom:1rem;
-}
-#manufacturersContent input {
-	width:auto;
-}
-#manufacturers .submit_button {
-	border-radius: 0.25rem;
-	font-size: 1.2em;
-	color: #fff !important;
-	background-color: #AC171D !important;
-	border-color: #AC171D !important;
-	margin-bottom:1rem;
-}
-#manufacturers input.cssButtonHover {
-	border-radius: 0.25rem;
-	font-size: 1.2em;
-	color: #AC171D !important;
-	background-color: #fff !important;
-	border-color: #AC171D !important;
-	margin-bottom:1rem;
-}
-#aboutusBody .buttonRow {
-	float:none 
-}
-#productmusicinfoBody .button_ask_a_question {
-	background:#fff;
-	padding:0px;
-}
-#accessibilityBody .buttonRow {
-	float:none;
-}
-#passwordforgottenBody .buttonRow {
-	float:none;
-}
-.button_submit {
-	background-color: #AC171D !important;
-	border:solid 1px #AC171D !important;
-	color:#fff !important;
-}
-.button_submit:hover {
-	background-color: #fff !important;
-	border:solid 1px #AC171D !important;
-	color:#AC171D !important;
-}
-#privacyBody .buttonRow {
-	float:none;
-}
-#conditionsBody .buttonRow {
-	float:none;
-}
-#orderstatusBody .buttonRow {
-	float:none;
-}
-#sitemapBody .buttonRow {
-	float:none;
-}
-#gvfaqBody .buttonRow {
-	float:none;
-	margin-bottom:1rem;
-}
-#shippinginfoBody .buttonRow {
-	float:none;
-}
-#discountcouponBody .buttonRow {
-	float:none;
-}
-#searchDefault .forward {
-	float:none;
-}
-#searchDefault .forward a {
-	display: block;
-	min-height: 44px;
-	align-content: center;
-}
-#searchDefault .buttonRow {
-	float:none;
-}
-#searchDefault .button_search {
-	height:auto;
-	width:100%;
-}
-#searchDefault .back {
-	float:none;
-}
-#askaquestionBody .forward {
-	float:none;
-}
-#askaquestionBody .back {
-	width:100%;
-	;
-	margin:0;
-}
-#searchresultBody .back {
-	float:none;
-}
-#unsubscribeBody .buttonRow {
-	float:none;
-}
-#cartAdd input[type="submit"] {
-	background: #7A1BCE;
-	border-color: #7A1BCE;
-	color: #fff;
-	font-size:18px;
-	padding:12px 20px;
-	height: auto;
-}
-#cartAdd input[type="submit"]:hover {
-	background:#fff;
-	border-color:#7A1BCE;
-	color: #7A1BCE;
-}
-#cartAdd input[type="text"] {
-	width: 20% !important;
-	text-align: center;
-	margin-right: 5px;
-	height: 53px;
-}
-#cartAdd {
-	width:100%;
-	display:flex;
-	margin-bottom:0rem;
-}
-#cartAdd input {
-	border:solid 1px #ccc;
-}
-#productinfoBody span.normal_button {
-	background: #fff;
-	padding:0px;
-}
-.button_send {
-	background:#7B3F00;
-	color:#fff;
-	border:solid 1px #7B3F00;
-	padding-top:0px;
-	padding-bottom:0px;
-}
-.button_send:hover {
-	background:#fff;
-	color:#7B3F00;
-	border:solid 1px #7B3F00;
-	padding:12px 20px;
-}
-.button_write_review {
-	color:#8A4514;
-	margin-top:1rem;
-	margin-bottom:1rem;
-	background: transparent;
-}
-.button_unsubscribe {
-	margin-top:1rem;
-	margin-bottom:1rem;
-}
-.button_continue {
-	background: #6A1BC1 !important;
-	border:solid 1px #6A1BC1 !important;
-	color:#fff !important;
-}
-.button_continue:hover {
-	background: #fff !important;
-	color:#6A1BC1 !important;
-}
-.button_redeem {
-	background:#AC171D !important;
-	border:solid 1px #AC171D !important;
-	color:#fff !important;
-}
-.button_redeem:hover {
-	background:#fff !important;
-	border:solid 1px #AC171D !important;
-	color:#AC171D !important;
-}
-#shoppingcartBody .buttonRow .back{
-	float:none !important;
-}
-#shoppingcartBody .forward, #shoppingCartDefault #PPECbuttond {
-	text-align: center;
-}
-#shoppingcartBody input[type="image"] {
-	margin-bottom:0px;
-	margin-bottom:0px;
-	position: absolute;
-	margin-top:-181px;
-	width: auto !important;
-	border:none !important;
-}
-#shoppingcartBody .button_shipping_estimator {
-	background:#7328d4;
-	border:solid 1px #7328d4;
-	color: #fff;
-}
-#shoppingcartBody .button_shipping_estimator:hover {
-	background:#fff;
-	border:solid 1px #7328d4;
-	color: #7328d4;
-}
-#shoppingcartBody .button_continue_shopping {
-	background: #8B008B;
-	border:solid 1px #8B008B;
-	color:#fff;
-}
-#shoppingcartBody .button_continue_shopping:hover {
-	background: #fff;
-	border:solid 1px #8B008B;
-	color:#8B008B;
-}
-#shoppingcartBody .button_checkout {
-	background: #006400;
-	border:solid 1px #006400;
-	color: #fff;
-}
-#shoppingcartBody .button_checkout:hover {
-	background: #fff;
-	color: #006400;
-	border:solid 1px #006400;
-}
-#contactUsDefault .forward {
-	float:none;
-}
-#contactUsDefault .back {
-	float:none;
-}
-#timeoutDefault legend {
-	color:#000;
-}
-#timeoutDefault .forward {
-	margin-top:1rem;
-	float:none;
-	margin-bottom:0.5rem;
-}
-.button_delete {
-	padding: 12px 20px;
-	height: auto;
-}
-.button_update {
-	padding: 12px 20px;
-	height: auto;
-}
-.button_continue_checkout {
-	padding: 12px 20px;
-	height: auto;
-}
-.button_confirm_order {
-	padding: 12px 20px;
-	height: auto;
-}
-.button_add_selected {
-	padding: 12px 20px;
-	height: auto;
-	background-color: #8b008b;
-	border:solid 1px #8b008b;
-	color:#fff;
-	margin-top:0;
-	margin-bottom:0;
-}
-.button_add_selected:hover {
-	background-color: #fff;
-	border:solid 1px #8b008b;
-	color:#8b008b;
-}
-.button_continue {
-	padding: 12px 20px;
-	height: auto;
-}
-.button_send {
-	padding: 12px 20px;
-	height: auto;
-}
-.button_create_account {
-	padding: 12px 20px;
-	height: auto;
-}
-.button_submit {
-	padding: 12px 20px;
-	height: auto;
-}
-.button_login {
-	padding: 12px 20px;
-	height: auto;
-}
-.button_redeem {
-	padding: 12px 20px;
-	height: auto;
-}
-.two_continue {
-	margin-bottom:0.5rem;
-}
-#cartAdd {
-	position: relative;
+ input[type="search"] {
+     padding: .375rem .75rem;
+     font-size: 1rem;
+     line-height: 1.5;
+     color: #495057;
+     background-color: #fff;
+     background-clip: padding-box;
+     border: 1px solid #ced4da;
+     border-radius: .25rem;
+     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+     height: 48px;
+     width:100% !important;
+}
+ #productinfoBody .button_sold_out {
+     font-size:22px;
+     display:block;
+     text-align:left;
+     width: auto;
+}
+ #productinfoBody #cartAdd a {
+     font-size:22px;
+     width:auto;
+     text-align:left;
+     color:#7a1db1;
+     margin-left:0rem;
+}
+ #productmusicinfoBody .button_write_review {
+     width:100%;
+     background: transparent;
+     padding:0;
+     margin-top:1rem;
+     margin-bottom:1rem;
+}
+ #manufacturersContent input {
+     width:auto;
+}
+ #manufacturers .submit_button {
+     border-radius: 0.25rem;
+     font-size: 1.2em;
+     color: #fff !important;
+     background-color: #AC171D !important;
+     border-color: #AC171D !important;
+     margin-bottom:1rem;
+}
+ #manufacturers input.cssButtonHover {
+     border-radius: 0.25rem;
+     font-size: 1.2em;
+     color: #AC171D !important;
+     background-color: #fff !important;
+     border-color: #AC171D !important;
+     margin-bottom:1rem;
+}
+ #productmusicinfoBody .button_ask_a_question {
+     background:#fff;
+     padding:0px;
+}
+ .button_submit {
+     background-color: #AC171D !important;
+     border:solid 1px #AC171D !important;
+     color:#fff !important;
+}
+ .button_submit:hover {
+     background-color: #fff !important;
+     border:solid 1px #AC171D !important;
+     color:#AC171D !important;
+}
+ #gvfaqBody .buttonRow {
+     float:none;
+     margin-bottom:1rem;
+}
+ #searchDefault .forward a {
+     display: block;
+     min-height: 44px;
+     align-content: center;
+}
+ #searchDefault .button_search {
+     height:auto;
+     width:100%;
+}
+ #askaquestionBody .back {
+     width:100%;
+     margin:0;
+}
+ #cartAdd input[type="submit"] {
+     background: #7A1BCE;
+     border-color: #7A1BCE;
+     color: #fff;
+     font-size:18px;
+     padding:12px 20px;
+     height: auto;
+}
+ #cartAdd input[type="submit"]:hover {
+     background:#fff;
+     border-color:#7A1BCE;
+     color: #7A1BCE;
+}
+ #cartAdd input[type="text"] {
+     width: 20% !important;
+     text-align: center;
+     margin-right: 5px;
+     height: 53px;
+}
+ #cartAdd {
+     width:100%;
+     display:flex;
+     margin-bottom:0rem;
+     position: relative;
+}
+ #cartAdd input {
+     border:solid 1px #ccc;
+}
+ #productinfoBody span.normal_button {
+     background: #fff;
+     padding:0px;
+}
+ .button_send {
+     background:#7B3F00;
+     color:#fff;
+     border:solid 1px #7B3F00;
+     padding-top:0px;
+     margin-bottom:0 !important;
+}
+ .button_send:hover {
+     background:#fff;
+     color:#7B3F00;
+     border:solid 1px #7B3F00;
+     padding:12px 20px;
+}
+ .button_write_review {
+     color:#8A4514;
+     margin-top:1rem;
+     margin-bottom:1rem;
+     background: transparent;
+}
+ .button_unsubscribe {
+     margin-top:1rem;
+     margin-bottom:1rem;
+}
+ .button_continue {
+     background: #6A1BC1 !important;
+     border:solid 1px #6A1BC1 !important;
+     color:#fff !important;
+}
+ .button_continue:hover {
+     background: #fff !important;
+     color:#6A1BC1 !important;
+}
+ .button_redeem {
+     background:#AC171D !important;
+     border:solid 1px #AC171D !important;
+     color:#fff !important;
+}
+ .button_redeem:hover {
+     background:#fff !important;
+     border:solid 1px #AC171D !important;
+     color:#AC171D !important;
+}
+ #shoppingcartBody .buttonRow .back{
+     float:none !important;
+}
+ #shoppingcartBody .forward, #shoppingCartDefault #PPECbuttond {
+     text-align: center;
+}
+ #shoppingcartBody input[type="image"] {
+     margin-bottom:0px;
+     margin-bottom:0px;
+     position: absolute;
+     margin-top:-181px;
+     width: auto !important;
+     border:none !important;
+}
+ #shoppingcartBody .button_shipping_estimator {
+     background:#7328d4;
+     border:solid 1px #7328d4;
+     color: #fff;
+}
+ #shoppingcartBody .button_shipping_estimator:hover {
+     background:#fff;
+     border:solid 1px #7328d4;
+     color: #7328d4;
+}
+ #shoppingcartBody .button_continue_shopping {
+     background: #8B008B;
+     border:solid 1px #8B008B;
+     color:#fff;
+}
+ #shoppingcartBody .button_continue_shopping:hover {
+     background: #fff;
+     border:solid 1px #8B008B;
+     color:#8B008B;
+}
+ #shoppingcartBody .button_checkout {
+     background: #006400;
+     border:solid 1px #006400;
+     color: #fff;
+}
+ #shoppingcartBody .button_checkout:hover {
+     background: #fff;
+     color: #006400;
+     border:solid 1px #006400;
+}
+ #timeoutDefault legend {
+     color:#000;
+}
+ #timeoutDefault .forward {
+     margin-top:1rem;
+     float:none;
+     margin-bottom:0.5rem;
+}
+ .button_add_selected {
+     padding: 12px 20px;
+     height: auto;
+     background-color: #8b008b;
+     border:solid 1px #8b008b;
+     color:#fff;
+     margin-top:0;
+     margin-bottom:0;
+}
+ .button_add_selected:hover {
+     background-color: #fff;
+     border:solid 1px #8b008b;
+     color:#8b008b;
+}
+ .button_continue, .button_send, .button_create_account, .button_submit, .button_login, .button_redeem, .button_delete, .button_update, .button_continue_checkout, .button_confirm_order {
+     padding: 12px 20px;
+     height: auto;
+}
+ .two_continue {
+     margin-bottom:0.5rem;
 }

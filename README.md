@@ -1,4 +1,4 @@
-<strong>Zen Cart Classic Template Rebuild V4F</strong><br />
+<strong>Zen Cart Classic Template Rebuild V5</strong><br />
 
 This demo highlights the Zen Cart platform with the newly updated Responsive Classic Template. The template has been refreshed to provide a modern, optimized shopping experience that works seamlessly across a variety of devices and screen sizes.
 

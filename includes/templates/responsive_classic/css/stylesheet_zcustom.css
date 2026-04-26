@@ -1,4 +1,4 @@
-a:link,a:hover,input {
+  a:link,a:hover,input {
      -webkit-tap-highlight-color: transparent;
 }
  img {
@@ -931,12 +931,11 @@ a:link,a:hover,input {
  #accountDefault .tableHeading th:nth-of-type(3) {
      display: none;
 }
- #accountDefault .accountOrderDate {
-     display: none;
-}
+ #accountDefault .accountOrderDate,
  #accountDefault .accountOrderAddress {
      display: none;
 }
+
  #accountDefault span.normal_button {
      margin: auto;
      max-width: 50px;
@@ -1278,6 +1277,7 @@ a:link,a:hover,input {
 }
  #addressBookProcessDefault select#country {
      margin-bottom: 0.5rem;
+     display: block;
 }
  #addressBookProcessDefault input.cssButtonHover {
      margin-top: 1rem;
@@ -1373,10 +1373,12 @@ a:link,a:hover,input {
  .advisory a:hover {
      text-decoration: none;
 }
+/* Mobile view – 1 product per row */
  .rblockelements {
      display: grid;
      grid-template-columns: repeat(1, 1fr);
 }
+
  .otherBrands .rblockelements {
      display: inline !important;
      width: 33.3%;
@@ -1656,7 +1658,7 @@ a:link,a:hover,input {
      margin-bottom: 0 !important;
 }
  #reviewsWrite .ratingRow {
-     Margin-top: 1rem;
+     margin-top: 1rem;
 }
  #reviewsInfoDefault .buttonRow a {
      min-height: 44px;
@@ -1694,18 +1696,10 @@ a:link,a:hover,input {
      background-color: #fff;
      color: #000;
 }
- .accountOrderDate {
-     vertical-align: middle;
-}
- .accountOrderId {
-     vertical-align: middle;
-}
- .accountOrderAddress {
-     vertical-align: middle;
-}
- .accountOrderStatus {
-     vertical-align: middle;
-}
+ .accountOrderDate,
+ .accountOrderId,
+ .accountOrderAddress,
+ .accountOrderStatus,
  .accountOrderTotal {
      vertical-align: middle;
 }
@@ -1716,14 +1710,13 @@ a:link,a:hover,input {
  #siteinfoLegal a:first-of-type {
      display: none !important;
 }
- .button_create_account {
+ .button_create_account, 
+.button_create_accountHover
+ {
      width: auto !important;
      margin-bottom: 1rem;
 }
- .button_create_accountHover {
-     width: auto !important;
-     margin-bottom: 1rem;
-}
+ 
  .listingDescription img {
      display: none !important;
 }
@@ -1843,12 +1836,8 @@ a:link,a:hover,input {
      width: 100%;
      text-align: center;
 }
- #productListing .gridlayout .button_buy_now {
-     float: none;
-}
- #indexProductList .gridlayout .button_sold_out {
-     float: none;
-}
+ #productListing .gridlayout .button_buy_now,
+ #indexProductList .gridlayout .button_sold_out,
  #productsallBody .gridlayout span.button_sold_out {
      float: none;
 }
@@ -1900,10 +1889,10 @@ a:link,a:hover,input {
  #productListing br,#whatsNew br,#featuredProducts br,#reviewsWritePrice br,#reviewsInfoDefaultPrice br,.block_element_reviewslinked br,#cartContentsDisplay br,#shippingEstimatorContent br,#pinfo-right br,.max-qty br,.centerBoxContentsAlsoPurch br, #csNotifications br, .centerBoxContentsFeaturedCategories br, #specialsDefault br, #orderStatus br, #searchBody br, #accounteditBody br, #addressbookprocessBody br, #accountnewslettersBody br, .cartProductDisplay br,#checkoutPayment .payment br, #loginDefault br,  #createAcctDefault br  {
      display: none;
 }
- #acctNewslettersDefault .back,#accountNotifications .back,#addressbookprocessBody .back,#accountpasswordBody .back,#accounteditBody .back,#addressBookDefault .back,#contactUsDefault .back, #searchDefault .back, #searchresultBody .back {
+ #acctNewslettersDefault .back,#accountNotifications .back,#addressbookprocessBody .back,#accountpasswordBody .back,#accounteditBody .back, #addressBookDefault .back,#contactUsDefault .back, #searchDefault .back, #searchresultBody .back {
      float: none;
 }
- #acctNewslettersDefault .forward,#accountNotifications .forward,#addressbookprocessBody .forward,#accountpasswordBody .forward,#accounteditBody .forward,#addressBookDefault .forward, #contactUsDefault .forward, #askaquestionBody .forward, #searchDefault .forward {
+ #acctNewslettersDefault .forward, #accountNotifications .forward,#addressbookprocessBody .forward,#accountpasswordBody .forward, #accounteditBody .forward,#addressBookDefault .forward, #contactUsDefault .forward, #askaquestionBody .forward, #searchDefault .forward {
      float: none;
 }
  #bannerSix a, #cartAdd a, #bannerboxallContent a, .box_review_spacver a, .spacer_element_button_add a {
@@ -1966,9 +1955,11 @@ a:link,a:hover,input {
      .backhistorybutton {
          float: right;
     }
+
+    /* Desktop view – match this number to your admin setting */
      .rblockelements {
          display: grid;
-         grid-template-columns: repeat(3, 1fr);
+         grid-template-columns: repeat(3, 1fr); /* Change 3 to match Columns per Row setting */
          gap: 1rem;
     }
      .button_search:hover {
@@ -2066,9 +2057,7 @@ a:link,a:hover,input {
      #accountDefault .tableHeading th:nth-of-type(3) {
          display: table-cell;
     }
-     #accountDefault .accountOrderDate {
-         display: table-cell;
-    }
+     #accountDefault .accountOrderDate,
      #accountDefault .accountOrderAddress {
          display: table-cell;
     }
@@ -2239,7 +2228,6 @@ a:link,a:hover,input {
     }
      #productAdditionalImages {
          grid-template-columns: repeat(4, auto);
-         
     }
     #contactusBody .buttonRow {
         float:left;margin-top:1rem;

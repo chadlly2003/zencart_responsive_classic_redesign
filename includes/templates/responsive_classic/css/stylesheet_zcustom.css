@@ -1256,7 +1256,6 @@
      margin-bottom: 1rem;
 }
  #addressBookProcessDefault select#country {
-     margin-bottom: 0.5rem;
      display: block;
 }
  #addressBookProcessDefault input.cssButtonHover {
@@ -1890,6 +1889,9 @@
  #accounteditBody fieldset, #accountnewslettersBody fieldset {
      margin-bottom:1rem;
 }
+ #contactusBody .success {
+     margin-bottom:1rem;
+}
  @media (min-width: 576px) {
      div#logo {
          max-width: 230px;
@@ -2059,7 +2061,7 @@
      #searchDefault .back {
          margin-top:0rem;
     }
-     #page2Body .buttonRow, #page3Body .buttonRow, #page4Body .buttonRow, #pagenotfoundBody .buttonRow {
+     #page2Body .buttonRow, #page3Body .buttonRow, #page4Body .buttonRow, #pagenotfoundBody .buttonRow, #contactusBody .buttonRow {
          float:left;
     }
      #acctNewslettersDefault .back,#accountNotifications .back,#addressbookprocessBody .back,#accountpasswordBody .back,#accounteditBody .back {
@@ -2193,10 +2195,6 @@
     }
      #productAdditionalImages {
          grid-template-columns: repeat(4, auto);
-    }
-     #contactusBody .buttonRow {
-         float:left;
-        margin-top:1rem;
     }
      .box_review_spacver {
          margin-bottom: 0;

@@ -1,4 +1,4 @@
- a:link,a:hover,input {
+  a:link,a:hover,input {
      -webkit-tap-highlight-color: transparent;
 }
  img {
@@ -1889,7 +1889,7 @@
  #accounteditBody fieldset, #accountnewslettersBody fieldset {
      margin-bottom:1rem;
 }
- #contactusBody .success {
+.success {
      margin-bottom:1rem;
 }
  #ezPageDefault .button_next {
@@ -1900,7 +1900,7 @@
  #ezPageDefault .button_next:hover {
      background: #fff;
      border:solid 1px #0056B3;
-     color: #0056B3
+     color: #0056B3 
 }
  #ezPageDefault .button_prev {
      background: #8b008b;
@@ -2710,6 +2710,11 @@
     }
 }
  @media (min-width: 992px) {
+     #navEZPagesTop ul {
+         margin-bottom:1rem;
+         margin-top: -1rem;
+         margin-bottom: 0;
+    }
      .search_box form {
          display: flex;
     }

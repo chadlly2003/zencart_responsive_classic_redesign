@@ -1892,6 +1892,31 @@
  #contactusBody .success {
      margin-bottom:1rem;
 }
+ #ezPageDefault .button_next {
+     background: #0056B3;
+     color:#fff;
+     border:solid 1px #0056B3 
+}
+ #ezPageDefault .button_next:hover {
+     background: #fff;
+     border:solid 1px #0056B3;
+     color: #0056B3
+}
+ #ezPageDefault .button_prev {
+     background: #8b008b;
+     color:#fff;
+     border:solid 1px #8b008b;
+}
+ #ezPageDefault .button_prev:hover {
+     background: #fff;
+     border:solid 1px #8b008b;
+     color: #8b008b;
+}
+ #navEZPageNextPrev {
+     display: grid;
+     grid-template-rows: 1fr;
+     gap:1rem;
+}
  @media (min-width: 576px) {
      div#logo {
          max-width: 230px;
@@ -1932,6 +1957,11 @@
          display: grid;
          grid-template-columns: repeat(3, 1fr);
         /* Change 3 to match Columns per Row setting */
+         gap: 1rem;
+    }
+     #navEZPageNextPrev {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
          gap: 1rem;
     }
      .button_search:hover {

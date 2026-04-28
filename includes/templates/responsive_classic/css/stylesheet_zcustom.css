@@ -141,9 +141,6 @@ a:link,a:hover,input {
      text-align: left;
      color: #008000;
 }
- #accountHistoryDefault .notice {
-     margin-top: 0 !important;
-}
  #indexDefaultMainContent p {
      margin-top: 0;
      font-style: normal;
@@ -1862,6 +1859,9 @@ a:link,a:hover,input {
      display: grid;
      grid-template-rows: 1fr;
      gap:1rem;
+}
+ #accounthistoryBody .button.button_back {
+     margin-top:1rem !important;
 }
  @media (min-width: 576px) {
      div#logo {

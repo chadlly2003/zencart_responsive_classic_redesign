@@ -116,10 +116,6 @@
  .back-margin{
      margin-top:30px;
 }
- .onerow-fluid{
-     width:75% !important;
-     margin:auto;
-}
 /*bof form elements*/
  CODE {
      font-family:arial, verdana, helvetica, sans-serif;
@@ -248,13 +244,10 @@
 }
  .sideBoxContent select{
      width:100%;
-     margin: auto;
-     margin-bottom: 5px;
-     margin:0px;
-     padding:0px;
+     margin:0;
+     padding:0;
      font-size:1.1em;
-     border:none !important;
-     background:transparent !important;
+     background:transparent;
 }
  #currenciesContent select{
      height:35px;
@@ -265,7 +258,6 @@
      color: #495057;
      background-color: #fff;
      background-clip: padding-box;
-     border: 1px solid #ced4da !important;
      border-radius: .25rem;
      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
@@ -291,7 +283,6 @@
      vertical-align:top;
      margin:auto;
      padding:0;
-     margin-top:0px !important;
 }
  #logoWrapper, #cartBoxListWrapper, #ezPageBoxList, #cartBoxListWrapper ul, #ezPageBoxList ul, #popupAdditionalImage, #popupImage {
      margin:0;
@@ -392,6 +383,7 @@
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
      height:42px;
+     width:auto !important;
 }
  .cart-add input[type=submit], #navMainSearch input[type=submit]{
      -moz-box-sizing: border-box;
@@ -492,7 +484,7 @@
      margin:0;
      padding:0.5em;
      margin-bottom:1rem;
-     font-size:12px !important;
+     font-size:12px;
 }
  #navBreadCrumb a{
      text-decoration:underline;
@@ -508,13 +500,13 @@
  #navSupp ul {
      font-size:0;
      text-align:center;
-     padding-left:0px;
+     padding-left:0;
 }
  #navSupp li {
      font-size:0.75rem;
      display: inline-block;
      margin-top:0;
-     margin-left:0px;
+     margin-left:0;
 }
  #navSupp li a {
      text-decoration: underline;
@@ -584,8 +576,8 @@
      min-height: 44px;
      display:block;
      text-decoration: none;
-     padding-top:0px;
-     padding-bottom:0px;
+     padding-top:0;
+     padding-bottom:0;
      align-content: center;
 }
  #cartBoxListWrapper li, .orderHistList li{
@@ -602,8 +594,8 @@
      padding:0.3rem;
 }
  ul.list-links li a {
-     padding-left:0px;
-     padding-right:0px;
+     padding-left:0;
+     padding-right:0;
 }
  .orderHistList {
      margin:0;
@@ -628,7 +620,7 @@
      line-height:2.2em;
      padding:10px 0 20px 0;
      font-size:130%;
-     padding-bottom:0px;
+     padding-bottom:0;
 }
  .tableRow, .tableHeading, #cartSubTotal {
      height:2.2em;
@@ -680,7 +672,7 @@
      width:5.5em;
      text-align:right;
      padding:0.2em;
-     margin-right:0px !important;
+     margin-right:0;
 }
  .lineTitle, .amount {
      text-align:right;
@@ -707,7 +699,7 @@
 }
  #shippingEstimatorContent ADDRESS {
      background: transparent;
-     padding:0px;
+     padding:0;
 }
  .rowOdd {
      height:1.5em;
@@ -744,7 +736,7 @@
      padding:10px 0;
 }
  #shippingEstimatorContent td{
-     padding:0px;
+     padding:0;
 }
 /*bof checkout*/
  #checkoutConfirmDefault .cartTableHeading{
@@ -780,7 +772,7 @@
  .specialsListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew{
      font-size:1.6em;
      cursor:pointer;
-     padding:0px 0;
+     padding:0;
 }
  .centerBoxWrapper{
      overflow:hidden;
@@ -789,7 +781,7 @@
 }
  .productPriceDiscount{
      display:block;
-     margin-top:0px;
+     margin-top:0;
      margin-bottom:12px;
 }
  .productPriceDiscount br{
@@ -848,9 +840,6 @@
  .navSplitEmpty3rdColumn {
      margin-left: 0 !important;
 }
- .current{
-     padding:10px;
-}
  .productListing-rowheading{
      padding:10px 10px;
      text-align:center;
@@ -881,9 +870,6 @@
  .productListing-even form, .productListing-odd form{
      float:right;
 }
- .cart-add input[type=text]{
-     width:auto !important;
-}
  .list-image{
      text-align:center;
      margin-left: auto;
@@ -907,11 +893,12 @@
  .current {
      background-color: #E6E6FA;
      border-radius: 50%;
+     padding:10px;
 }
  .itemTitle{
      font-weight:normal;
      font-size:140%;
-     margin:0px 0;
+     margin:0;
      width:100%;
      display: block;
 }
@@ -948,7 +935,7 @@
      text-align: center;
      border:solid 1px #ccc;
      border-radius: 5px;
-     margin-bottom:0px;
+     margin-bottom:0;
 }
  .prod-list-wrap{
      text-align:center;
@@ -994,13 +981,9 @@
      padding: 1em 0;
 }
  .gridlayout .list-image {
-     float:none 
-}
- .gridlayout .list-image {
+     float:none;
      min-height: revert;
-     min-width: revert 
-}
- .gridlayout .list-image {
+     min-width: revert;
      margin-right: inherit;
 }
  .gridlayout .list-more {
@@ -1105,7 +1088,7 @@
      font-weight:normal;
      line-height:27px;
      text-align:left;
-     color:#000 !important;
+     color:#000;
      border-bottom:solid 1px #6495ED;
      margin-top:0.5rem;
      padding-bottom:1rem;
@@ -1145,7 +1128,7 @@
 }
  #attribsOptionsText{
      margin-bottom:10px;
-     margin-top:0px !important;
+     margin-top:0 !important;
 }
  #cartAdd {
      text-align:center;
@@ -1298,11 +1281,11 @@
      padding: 1rem;
 }
  #reviewsDefault .prod-list-wrap{
-     margin-bottom:0px;
+     margin-bottom:0;
 }
  #reviewsInfoDefault .rating{
      margin-top:1rem;
-     margin-bottom:0px;
+     margin-bottom:0;
 }
  #productreviewsBody #productReviewsDefaultPrice {
      text-align:center;
@@ -1368,8 +1351,8 @@
 }
  #orderTotals{
      padding:1rem;
-     padding-left:0px;
-     padding-right:0px;
+     padding-left:0;
+     padding-right:0;
 }
  #myAccountPaymentInfo h3, #myAccountShipInfo h3{
      font-weight:normal;
@@ -1422,9 +1405,6 @@
  #siteMapList {
      width:100%;
 }
- #logo a {
-     min-height: 44px;
-}
  #siteMapList ul li a {
      min-height:44px;
      display: inline-block;
@@ -1436,8 +1416,8 @@
      color: #7a1db1;
 }
  #siteMapList > ul:first-child {
-     padding-left:0px;
-     margin-left:0px;
+     padding-left:0;
+     margin-left:0;
      list-style: none;
 }
  #siteMapList ul {
@@ -1521,14 +1501,13 @@
  .moreinfoLink {
      min-height: 44px;
      align-content: center;
-     margin-bottom:0px;
+     margin-bottom:0;
 }
  #loginDefault .important a {
      min-height: 44px;
      display: block;
 }
  #logo a {
-     min-height: 44px;
      min-height: 44px;
      display: block;
 }

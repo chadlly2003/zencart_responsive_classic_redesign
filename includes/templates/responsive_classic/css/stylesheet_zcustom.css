@@ -9,6 +9,9 @@ a:link,a:hover,input {
  #navSuppWrapper {
      display: none;
 }
+ #country + .alert {
+     display: none;
+}
 /* primary button (green) */
  .button_continue_checkout, .button_login {
      background: #006400;
@@ -93,8 +96,8 @@ a:link,a:hover,input {
 }
 /* eof make footer stay at bottom of page */
  .onerow-fluid {
-     margin: 0 auto !important;
-     width: 100% !important;
+     margin: auto !important;
+     width: 100%;
      max-width: 1280px !important;
 }
  .onerow-fluid:before,.onerow-fluid:after {
@@ -187,11 +190,7 @@ a:link,a:hover,input {
  #productinfoBody #productPrices img {
      margin-top: 0.5rem;
 }
- #productsListingBottomNumber {
-     margin-bottom: 1rem;
-     padding-top: 1rem;
-}
- #productsListingTopNumber {
+ #productsListingBottomNumber, #productsListingTopNumber {
      margin-bottom: 1rem;
      padding-top: 1rem;
 }
@@ -323,19 +322,7 @@ a:link,a:hover,input {
      margin: 0;
      width: 100%;
 }
- #shoppingCartDefault .qmax {
-     text-align: center;
-     display: block;
-}
- #shoppingCartDefault .qmin {
-     text-align: center;
-     display: block;
-}
- #shoppingCartDefault .qunit {
-     text-align: center;
-     display: block;
-}
- #shoppingCartDefault .qmix {
+ #shoppingCartDefault .qmax, #shoppingCartDefault .qmin, #shoppingCartDefault .qunit, #shoppingCartDefault .qmix {
      display: block;
      text-align: center;
 }
@@ -376,10 +363,7 @@ a:link,a:hover,input {
  #popupShippingEstimator #stText {
      display: none 
 }
- #popupShippingEstimator #state {
-     margin-bottom: 0;
-}
- #popupShippingEstimator #postcode {
+ #popupShippingEstimator #state, #popupShippingEstimator #postcode {
      margin-bottom: 0;
 }
  #popupShippingEstimator .seDisplayedAddressLabel {
@@ -804,13 +788,7 @@ a:link,a:hover,input {
      margin-left: 1rem !important;
      list-style: decimal;
 }
- input.submit_button {
-     -webkit-appearance: none;
-}
- input.cssButtonHover {
-     -webkit-appearance: none;
-}
- button {
+ input.submit_button, input.cssButtonHover, button {
      -webkit-appearance: none;
 }
  .loginiconuser {
@@ -840,12 +818,6 @@ a:link,a:hover,input {
      padding-bottom: 1rem;
      margin-bottom: 1rem;
      margin-top: 0;
-}
- #acctNewslettersDefault legend {
-     color: #000;
-}
- #accountNotifications legend {
-     color: #000;
 }
  #accountNotifications fieldset:nth-of-type(2) {
      background: #E6E6FA;
@@ -958,9 +930,6 @@ a:link,a:hover,input {
      display: block;
      width: 100%;
 }
- #accountHistoryDefault legend {
-     color: #000;
-}
  #accountHistInfo #myAccountOrdersStatus {
      text-align: center;
      margin-bottom: 2rem;
@@ -978,7 +947,7 @@ a:link,a:hover,input {
      color: #154DBC;
      clear: both;
 }
- #accountHistInfo #myAccountShipInfo h4,#accountHistInfo #myAccountPaymentInfo h4 {
+ #accountHistInfo #myAccountShipInfo h4,#accountHistInfo #myAccountPaymentInfo h4, #myAccountShipInfo h3,#myAccountPaymentInfo h4 {
      margin-bottom: 0.5rem;
      color: #7a1db1;
      font-size: 1.3em;
@@ -1085,35 +1054,38 @@ a:link,a:hover,input {
  #checkoutShippingContentChoose {
      margin-bottom: 1rem;
 }
+ #acctNewslettersDefault legend, #accountNotifications legend, #accountHistoryDefault legend, #checkoutShipping legend, #checkoutPayment legend {
+     color: #000;
+}
+ .payment legend {
+     color: #761bc9 !important;
+}
+ #checkoutShipping #comments legend {
+     color: #154DBC;
+}
  #comments legend {
      border-bottom: none;
      padding-bottom: 0 
 }
+ #checkoutPayment .order_comments legend {
+     border-bottom: none;
+     padding-bottom: 0;
+     color: #154DBC;
+}
+ #accountHistoryDefault legend {
+     margin-bottom: 0;
+}
  #checkoutShipping textarea {
      text-align: left;
 }
- #checkoutShipping legend {
-     color: #000;
-}
  #checkoutShipping #comments {
      margin-top: 2rem;
-}
- #checkoutShipping #comments legend {
-     color: #154DBC;
 }
  #checkoutPayment .forward {
      float: right;
 }
  #checkoutpaymentBody .payment .radioButtonLabel {
      list-style: none;
-}
- #checkoutPayment legend {
-     color: #000;
-}
- #checkoutPayment .order_comments legend {
-     border-bottom: none;
-     padding-bottom: 0;
-     color: #154DBC;
 }
  #checkoutPayment .inputLabel {
      color: #006400;
@@ -1329,7 +1301,6 @@ a:link,a:hover,input {
      margin-bottom: 1rem;
      float: left;
 }
-
  .button.button_back, #addressBookDefault .button.button_back {
      color: #fff !important;
      background-color: #0056B3 !important;
@@ -1367,18 +1338,6 @@ a:link,a:hover,input {
  .spacerrating {
      width: 100%;
      clear: both;
-}
-
- #myAccountShipInfo h3 {
-     margin-bottom: 0.5rem;
-     color: #7a1db1;
-     font-size: 1.3em;
-}
- #myAccountPaymentInfo h4 {
-     margin-bottom: 0.5rem;
-     color: #7a1db1;
-     ;
-     font-size: 1.3em;
 }
  #myAccountShipInfo div {
      display: list-item;
@@ -1471,13 +1430,7 @@ a:link,a:hover,input {
      margin-bottom: 0 !important;
      margin-top: 0;
 }
- #checkoutConfirmDefaultPayment {
-     color: #761bc9 !important;
-}
- .payment legend {
-     color: #761bc9 !important;
-}
- #checkoutConfirmDefaultShipment {
+ #checkoutConfirmDefaultPayment, #checkoutConfirmDefaultShipment {
      color: #761bc9 !important;
 }
  #shippingEstimatorContent td {
@@ -1882,7 +1835,7 @@ a:link,a:hover,input {
  #accounteditBody fieldset, #accountnewslettersBody fieldset {
      margin-bottom:1rem;
 }
-.success {
+ .success {
      margin-bottom:1rem;
 }
  #ezPageDefault .button_next {
@@ -2039,9 +1992,6 @@ a:link,a:hover,input {
          margin-right: 1rem;
          display: inline;
          width: 50%;
-    }
-     #accountHistoryDefault legend {
-         margin-bottom: 0;
     }
      #orderTotals#accountDefault Address {
          display: block;

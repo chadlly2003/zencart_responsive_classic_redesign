@@ -135,11 +135,7 @@
      height: 48px;
      width:100% !important;
 }
- #productinfoBody .button_sold_out {
-     display:block;
-     text-align:left;
-     width: auto;
-}
+ 
  #productinfoBody #cartAdd a {
      font-size:22px;
      width:auto;

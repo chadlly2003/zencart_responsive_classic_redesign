@@ -1,4 +1,4 @@
- .buttonRow a {
+.buttonRow a {
      text-decoration:none;
 }
  #productreviewsBody .buttonRow a {
@@ -47,9 +47,9 @@
 }
  #productReviewsDefaultProductPageLink span.normal_button {
      font-size: 16px;
-     padding:0px;
-     background:transparent;
-     display:flex;
+     padding: 0px;
+     background: transparent;
+     display: flex;
 }
  span.cssButton.normal_button.button.button_more_reviews, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover{
      display:block;
@@ -118,8 +118,8 @@
      color:#8B0000;
      padding:0px;
      background:transparent;
-     font-size:22px !important;
      outline:none;
+     font-size: 22px;
 }
 /** custom overides - */
  input[type="search"] {
@@ -136,7 +136,6 @@
      width:100% !important;
 }
  #productinfoBody .button_sold_out {
-     font-size:22px;
      display:block;
      text-align:left;
      width: auto;
@@ -146,7 +145,7 @@
      width:auto;
      text-align:left;
      color:#7a1db1;
-     margin-left:0rem;
+     margin-left:0;
 }
  #productmusicinfoBody .button_write_review {
      width:100%;
@@ -161,32 +160,28 @@
  #manufacturers .submit_button {
      border-radius: 0.25rem;
      font-size: 1.2em;
-     color: #fff !important;
-     background-color: #AC171D !important;
-     border-color: #AC171D !important;
-     margin-bottom:1rem !important;
+     color: #fff;
+     background-color: #AC171D;
+     border-color: #AC171D;
 }
  #manufacturers input.cssButtonHover {
-     border-radius: 0.25rem;
-     font-size: 1.2em;
-     color: #AC171D !important;
-     background-color: #fff !important;
-     border-color: #AC171D !important;
-     margin-bottom:1rem;
+     color: #AC171D;
+     background-color: #fff;
+     border-color: #AC171D;
 }
  #productmusicinfoBody .button_ask_a_question {
      background:#fff;
-     padding:0px;
+     padding:0;
 }
  .button_submit {
-     background-color: #AC171D !important;
-     border:solid 1px #AC171D !important;
-     color:#fff !important;
+     background-color: #AC171D;
+     border:solid 1px #AC171D;
+     color:#fff;
 }
  .button_submit:hover {
-     background-color: #fff !important;
-     border:solid 1px #AC171D !important;
-     color:#AC171D !important;
+     background-color: #fff;
+     border:solid 1px #AC171D;
+     color:#AC171D;
 }
  #gvfaqBody .buttonRow {
      float:none;
@@ -227,7 +222,7 @@
  #cartAdd {
      width:100%;
      display:flex;
-     margin-bottom:0rem;
+     margin-bottom:0;
      position: relative;
 }
  #cartAdd input {
@@ -241,14 +236,12 @@
      background:#7B3F00;
      color:#fff;
      border:solid 1px #7B3F00;
-     padding-top:0px;
-     margin-bottom:0 !important;
+     padding-top:0;
+     margin-bottom:0;
 }
  .button_send:hover {
      background:#fff;
      color:#7B3F00;
-     border:solid 1px #7B3F00;
-     padding:12px 20px;
 }
  .button_write_review {
      color:#8A4514;
@@ -261,23 +254,23 @@
      margin-bottom:1rem;
 }
  .button_continue {
-     background: #6A1BC1 !important;
-     border:solid 1px #6A1BC1 !important;
-     color:#fff !important;
+     background: #6A1BC1;
+     border:solid 1px #6A1BC1;
+     color:#fff;
 }
  .button_continue:hover {
-     background: #fff !important;
-     color:#6A1BC1 !important;
+     background: #fff;
+     color:#6A1BC1;
 }
  .button_redeem {
-     background:#AC171D !important;
-     border:solid 1px #AC171D !important;
-     color:#fff !important;
+     background:#AC171D;
+     border:solid 1px #AC171D;
+     color:#fff;
 }
  .button_redeem:hover {
-     background:#fff !important;
-     border:solid 1px #AC171D !important;
-     color:#AC171D !important;
+     background:#fff;
+     border:solid 1px #AC171D;
+     color:#AC171D;
 }
  #shoppingcartBody .buttonRow .back{
      float:none !important;
@@ -286,8 +279,8 @@
      text-align: center;
 }
  #shoppingcartBody input[type="image"] {
-     margin-bottom:0px;
-     margin-bottom:0px;
+     margin-bottom:0;
+     margin-bottom:0;
      position: absolute;
      margin-top:-181px;
      width: auto !important;

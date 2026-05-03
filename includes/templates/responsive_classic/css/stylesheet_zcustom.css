@@ -120,7 +120,7 @@ a:link,a:hover,input {
      display: none;
 }
  .onerow-fluid>[class^="col"]:nth-child(3) {
-     display: none !important;
+     display: none;
 }
  .orderHistList {
      padding-left: 0;
@@ -159,6 +159,9 @@ a:link,a:hover,input {
  #mediaManagerHeading {
      margin-top: 0;
 }
+ #shoppingcartBody #postcode {
+     margin-bottom:0;
+}
  .border_content {
      border: solid 1px #ccc;
      border-radius: 5px;
@@ -180,9 +183,6 @@ a:link,a:hover,input {
 }
  #productinfoBody .productPriceDiscount {
      margin-bottom: 0;
-}
- #productinfoBody .productBasePrice {
-     margin-bottom: 0 !important;
 }
  #productinfoBody #productPrices img {
      margin-top: 0.5rem;
@@ -224,7 +224,7 @@ a:link,a:hover,input {
      margin-top: 12px;
 }
  .productSpecialPrice {
-     color: #006400 !important;
+     color: #006400;
 }
  .normalprice {
      color: #000;
@@ -232,7 +232,10 @@ a:link,a:hover,input {
  .productBasePrice {
      color: #000;
      display: block;
-     margin-bottom: 1rem !important;
+     margin-bottom: 1rem;
+}
+ #productinfoBody .productBasePrice {
+     margin-bottom:0;
 }
  .productSalePrice {
      color: #000;
@@ -683,7 +686,7 @@ a:link,a:hover,input {
      align-content: center;
 }
  .button_write_review {
-     background: transparent !important;
+     background: transparent;
 }
  #productReviewLink span.normal_button {
      color: #8A4514;
@@ -695,9 +698,6 @@ a:link,a:hover,input {
  .block_element_reviewslinked {
      padding-top: 0.5rem;
      text-align: center;
-}
- #reviewsDefault .navSplitPagesLinks {
-     margin: 0;
 }
  .reviews-wrapper .smallProductImage img {
      margin-bottom: 1rem;
@@ -885,10 +885,6 @@ a:link,a:hover,input {
      margin-bottom: 1rem;
      margin-left: auto;
      margin-right: auto;
-}
- #addressBookDefault .button_back {
-     margin-top: 1rem;
-     margin-bottom: 1rem;
 }
  #addressBookDefault .small_edit {
      margin-left: 0;
@@ -1140,14 +1136,15 @@ a:link,a:hover,input {
      margin-top: 0rem;
      margin-bottom: 1rem;
      float: none;
-     border: solid 1px #006400 !important;
-     background: #006400 !important;
-     color: #fff !important 
+     border: solid 1px #006400;
+     background: #006400;
+     color: #fff;
+     ;
 }
  #checkoutConfirmDefault input.cssButtonHover {
-     border: solid 1px #006400 !important;
-     background: #fff !important;
-     color: #006400 !important;
+     border: solid 1px #006400;
+     background: #fff;
+     color: #006400;
 }
  #shippingEstimatorContent .button_update {
      padding: 0 !important;
@@ -1261,6 +1258,8 @@ a:link,a:hover,input {
  #productReviewsDefaultListingBottomNumber {
      color: #006400;
      text-align: left;
+     padding-top: 1rem;
+     margin-bottom: 1rem;
 }
  .brandImage img {
      padding-bottom: 0.5rem;
@@ -1298,19 +1297,48 @@ a:link,a:hover,input {
      margin-bottom: 1rem;
      float: left;
 }
- .button.button_back, #addressBookDefault .button.button_back {
-     color: #fff !important;
-     background-color: #0056B3 !important;
-     border: solid 1px #0056B3 !important;
+ .button.button_back {
+     color: #fff;
+     background-color: #0056B3;
+     border: solid 1px #0056B3;
      font-size: 1.2em;
      border-radius: 0.25rem;
-     margin-top: 1rem !important;
-     margin-bottom: 1rem !important;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
 }
- .button.button_back:hover, #addressBookDefault .button.button_back:hover {
-     color: #0056B3 !important;
-     background-color: #fff !important;
-     border: solid 1px #0056B3 !important;
+ .button.button_back:hover {
+     color: #0056B3;
+     background-color: #fff;
+}
+ #accounthistoryBody .button.button_back {
+     margin-top:1rem;
+}
+ .navSplitPagesLinks {
+     margin-top:1rem;
+     margin-bottom:1rem;
+     display:flex;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+ .navSplitPagesLinks a{
+     padding:10px;
+     font-weight:bold;
+     background:transparent;
+     text-decoration: underline;
+     color:#000;
+}
+ .navSplitEmpty3rdColumn {
+     margin-left: 0 !important;
+}
+ #addressBookDefault .button.button_back {
+     background: #0056B3;
+     border: solid 1px #0056B3;
+     color:#fff;
+}
+ #addressBookDefault .button.button_back:hover {
+     color: #0056B3;
+     background-color: #fff;
+     border: solid 1px #0056B3;
 }
  .advisory a {
      text-decoration: underline;
@@ -1428,7 +1456,7 @@ a:link,a:hover,input {
      margin-top: 0;
 }
  #checkoutConfirmDefaultPayment, #checkoutConfirmDefaultShipment {
-     color: #761bc9 !important;
+     color: #761bc9;
 }
  #shippingEstimatorContent td {
      vertical-align: middle;
@@ -1860,9 +1888,6 @@ a:link,a:hover,input {
      grid-template-rows: 1fr;
      gap:1rem;
 }
- #accounthistoryBody .button.button_back {
-     margin-top:1rem !important;
-}
  @media (min-width: 576px) {
      div#logo {
          max-width: 230px;
@@ -2096,12 +2121,6 @@ a:link,a:hover,input {
          display: flex;
          gap: 1rem;
     }
-     #addressBookDefault .button.button_back {
-         margin-top: 0 !important;
-    }
-     #addressBookDefault .button.button_back:hover {
-         margin-top: 0 !important;
-    }
      #reviewsDefault .smallProductImage a {
          min-height: 44px;
          display: block;
@@ -2211,13 +2230,14 @@ a:link,a:hover,input {
          float: left;
     }
      .button.button_back {
-         color: #fff;
-         background-color: #0056B3;
-         border-color: #0056B3;
-         font-size: 1.2em;
-         border-radius: 0.25rem;
-         margin-top: 0 !important;
-         margin-bottom: 0 !important;
+         margin-top: 0;
+         margin-bottom: 0;
+    }
+     #askaquestionBody .button.button_back {
+         float: left;
+    }
+     #addressbookprocessBody .button.button_back {
+         margin-top: 1rem;
     }
      .addresscontinue {
          float: right;
@@ -2279,9 +2299,6 @@ a:link,a:hover,input {
     }
      #cart-box {
          width: 100%;
-    }
-     #askaquestionBody .button.button_back {
-         float: left;
     }
      .qty_cart_qty {
          text-align: right !important;
@@ -2497,9 +2514,6 @@ a:link,a:hover,input {
      #addressBookProcessDefault input.cssButtonHover {
          margin-top: 1rem 
     }
-     #addressBookProcessDefault input.submit_button {
-         margin-top: 1rem;
-    }
      #checkoutPayment .button_continue_checkout:hover {
          margin-top: 0;
     }
@@ -2512,9 +2526,6 @@ a:link,a:hover,input {
          display: flex;
          justify-content: space-between;
          gap: 1rem;
-    }
-     #addressbookprocessBody .button.button_back {
-         margin-top: 1rem !important;
     }
      #checkoutConfirmDefault .editelement span.cssButton.normal_button.button.small_edit {
          float: right;
@@ -2542,16 +2553,9 @@ a:link,a:hover,input {
      #accountHistInfo .orderdate {
          text-align: right;
     }
-     #accountpasswordBody .button_back {
-         margin-top: 1rem;
-    }
      #addressBookDefault .button.small_edit {
          margin-top: 0;
          margin-bottom: 1rem;
-    }
-     #addressBookDefault .button_back {
-         margin-top: 0;
-         margin-bottom: 0;
     }
      #addressBookDefault .clearBoth {
          display: none;
@@ -2602,11 +2606,6 @@ a:link,a:hover,input {
      #contactusBody .back, #shippinginfoBody .buttonRow, #aboutusBody .buttonRow, #privacyBody .buttonRow, #conditionsBody .buttonRow, #sitemapBody .buttonRow, #discountcouponBody .back, #passwordforgottenBody .back, #searchresultBody .back, #searchDefault .back {
          float: left;
     }
-     #productinfoBody .button_sold_out {
-         color: #8B0000 !important;
-         font-size: 22px;
-         width: auto;
-    }
      #productinfoBody #cartAdd a {
          font-size: 22px;
          margin-left: 0 !important;
@@ -2643,10 +2642,6 @@ a:link,a:hover,input {
     }
      .cart-add {
          text-align: right;
-    }
-     .button.button_back {
-         margin-bottom: 0;
-         margin-top: 0;
     }
      #accessibilityBody .buttonRow {
          float: left 
@@ -2717,7 +2712,7 @@ a:link,a:hover,input {
          min-width: 220px;
     }
      #indexHomeBody .onerow-fluid>[class^="col"]:nth-child(3) {
-         display: block !important;
+         display: block;
     }
 }
  @media (min-width: 1200px) {

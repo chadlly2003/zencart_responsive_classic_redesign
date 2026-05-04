@@ -25,7 +25,6 @@
      width:100% !important;
 }
  input.submit_button:hover {
-     border:none;
      font-size: 1.2em;
      display: inline-block;
      border-radius: 0.25rem;
@@ -135,7 +134,6 @@
      height: 48px;
      width:100% !important;
 }
- 
  #productinfoBody #cartAdd a {
      font-size:22px;
      width:auto;
@@ -163,7 +161,6 @@
  #manufacturers input.cssButtonHover {
      color: #AC171D;
      background-color: #fff;
-     border-color: #AC171D;
 }
  #productmusicinfoBody .button_ask_a_question {
      background:#fff;
@@ -176,7 +173,6 @@
 }
  .button_submit:hover {
      background-color: #fff;
-     border:solid 1px #AC171D;
      color:#AC171D;
 }
  #gvfaqBody .buttonRow {
@@ -206,7 +202,6 @@
 }
  #cartAdd input[type="submit"]:hover {
      background:#fff;
-     border-color:#7A1BCE;
      color: #7A1BCE;
 }
  #cartAdd input[type="text"] {
@@ -265,7 +260,6 @@
 }
  .button_redeem:hover {
      background:#fff;
-     border:solid 1px #AC171D;
      color:#AC171D;
 }
  #shoppingcartBody .buttonRow .back{
@@ -289,7 +283,6 @@
 }
  #shoppingcartBody .button_shipping_estimator:hover {
      background:#fff;
-     border:solid 1px #7328d4;
      color: #7328d4;
 }
  #shoppingcartBody .button_continue_shopping {
@@ -299,7 +292,6 @@
 }
  #shoppingcartBody .button_continue_shopping:hover {
      background: #fff;
-     border:solid 1px #8B008B;
      color:#8B008B;
 }
  #shoppingcartBody .button_checkout {
@@ -310,7 +302,6 @@
  #shoppingcartBody .button_checkout:hover {
      background: #fff;
      color: #006400;
-     border:solid 1px #006400;
 }
  #timeoutDefault legend {
      color:#000;
@@ -331,7 +322,6 @@
 }
  .button_add_selected:hover {
      background-color: #fff;
-     border:solid 1px #8b008b;
      color:#8b008b;
 }
  .button_continue, .button_send, .button_create_account, .button_submit, .button_login, .button_redeem, .button_delete, .button_update, .button_continue_checkout, .button_confirm_order {

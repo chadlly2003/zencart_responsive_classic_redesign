@@ -3,7 +3,7 @@
  a:hover{
      text-decoration: underline;
 }
- body, .messageStackSuccess, .messageStackCaution, #tagline, #productQuantityDiscounts table, .categoryListBoxContents a, h2.greeting a {
+ body, #tagline, #productQuantityDiscounts table, .categoryListBoxContents a, h2.greeting a {
      color:#000000;
 }
  a:link, a:visited, #navEZPagesTOC ul li a, a:hover, #navEZPagesTOC ul li a:hover, fieldset fieldset legend, .cartTotalDisplay, .cartOldItem, .specialsListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .list-price, .itemTitle a, h2.greeting, #icon, h1, .header {
@@ -28,10 +28,7 @@
  #navMain ul li a:hover, #navSupp ul li a:hover{
      color:#154DBC;
 }
- .alert {
-     color: #8b0000;
-     text-align: right;
-}
+
  legend, .specialsListBoxContents a, .centerBoxContentsAlsoPurch a, .centerBoxContentsFeatured a, .centerBoxContentsSpecials a, .centerBoxContentsNew a, .centerBoxContentsFeaturedCategories a {
      color:#333;
 }
@@ -60,9 +57,6 @@
 }
  select:focus, textarea:focus, #mainWrapper, .centerBoxContentsAlsoPurch:hover, .centerBoxContentsProducts:hover, .sideBoxContentItem:hover, .productListing-odd, #pinfo-right, #sendSpendWrapper {
      background:#fff;
-}
- .messageStackCaution {
-     background-color:#ffff66;
 }
  .brandCell:hover,fieldset, .rowEven, #shippingEstimatorContent tr:nth-child(odd), #order-comments, ul.list-links li:hover, ol.list-links li:hover, #no-products, .listing-wrapper:nth-child(odd), #reviews-write-wrapper, #gvFaqDefaultContent, #checkoutPayAddressDefault .instructions, #checkoutShipAddressDefault .instructions, #addressBookDefault .instructions, #myAccountNotify, #myAccountGen, .reviews-wrapper, #accountHistInfo table td, #prevOrders td, #myAccountPaymentInfo, #myAccountShipInfo, #accountDefault #sendSpendWrapper{
      background:#fff;
@@ -113,12 +107,6 @@
 }
  #navEZPagesTop li a {
      color:#000;
-}
- .messageStackWarning, .messageStackError {
-     background-color:#8b0000;
-}
- .messageStackSuccess {
-     background-color:#99ff99;
 }
  #shippingEstimatorContent th, #navEZPagesTop li a:hover, .productListing-rowheading, #productQuantityDiscounts table tr:first-child td{
      background:#ccc;
@@ -245,9 +233,7 @@
  a:hover {
      color: #154DBC;
 }
- TEXTAREA {
-     margin-bottom:1rem;
-}
+ 
  input.cssButton.submit_button.button.button_search {
      font-size:1.2em 
 }
@@ -796,9 +782,6 @@
      padding-left:0px;
      padding-right:0px;
 }
- .rating {
-     margin-bottom:0px !important;
-}
  #productreviewsinfoBody .button_in_cart {
      border:solid 1px #FFD700;
      background:#FFD700;
@@ -912,7 +895,7 @@
      margin-bottom:1rem;
 }
  #shoppingcartBody .tableHeading {
-     background: transparent !important 
+     background: transparent !important; 
 }
  #productListing .productFreePrice {
      margin-top:1rem;
@@ -1052,8 +1035,8 @@
 }
  #loginDefault .forward {
      width: 100%;
-     margin-bottom:0rem;
-     margin-top:0rem;
+     margin-bottom:0;
+     margin-top:0;
 }
  div#loginDefault fieldset {
      margin-bottom: 0px;
@@ -1068,15 +1051,6 @@
  #createAcctDefault fieldset {
      clear:both;
 }
- #createAcctDefault .alert {
-     margin-top:1rem;
-     margin-bottom:1rem;
-}
- #createAcctDefault .button_login {
-     background: #008000 !important;
-     color: #fff;
-     margin-bottom:0.5rem;
-}
  #createAcctDefault .button_submit{
      background: #6A1BC1;
      border:solid 1px #6A1BC1;
@@ -1089,14 +1063,12 @@
 }
  #createAcctDefault .forward {
      width: 100%;
-     margin-top:1rem !important;
-     margin-bottom:0.5rem 
-}
- div#createAcctDefault fieldset {
-     margin-bottom: 0px !important 
+     margin-top:0;
+     margin-bottom:0;
 }
  TEXTAREA {
-     text-align: left !important;
+     text-align: left;
+     margin-bottom:1rem;
 }
  #seShipTo {
      margin-top:1rem !important;

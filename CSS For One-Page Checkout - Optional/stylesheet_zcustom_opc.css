@@ -1,4 +1,3 @@
- 
 /** loginBody **/
  #loginOpcDefault h2 {
      font-size: 1.3rem;
@@ -6,20 +5,16 @@
      margin: 0;
      padding-bottom: 1rem;
 }
- #loginOpcDefault .button_create_account:focus {
-     border: solid 1px #AC171D !important 
-}
  #loginOpcDefault .button_checkout {
      background: #8b008b;
      color: #fff;
      min-height: 47.6px;
-     border: solid 1px #8b008b !important;
+     border: solid 1px #8b008b;
 }
  #loginOpcDefault .button_checkout:hover {
      background: transparent;
      color: #8b008b;
      min-height: 47.6px;
-     border: solid 1px #8b008b !important;
 }
  #loginOpcDefault .opc-block .buttonRow {
      padding-left: 0;
@@ -186,7 +181,6 @@
 }
  #checkoutoneBody span.normal_button:hover {
      background: transparent;
-     border: solid 1px #FFD700;
      margin: 0 !important;
 }
  #checkoutoneBody div:first-child:empty {
@@ -406,7 +400,6 @@
  #opc-bill-cancel span:hover, #opc-ship-cancel span:hover {
     background-color: #fff !important;
     color:#AC171D !important;
-    border:solid 1px #AC171D !important;
 }
  .checkoutOneCoupon fieldset {
      background-color: aliceblue;
@@ -484,4 +477,3 @@
      text-align: left;
      padding-top:0 !important;
 }
- 

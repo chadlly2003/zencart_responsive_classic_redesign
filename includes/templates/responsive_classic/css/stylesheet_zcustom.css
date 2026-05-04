@@ -265,9 +265,7 @@ a:link,a:hover,input {
  .cartProductDisplay img {
      display: none;
 }
- #shoppingCartDefault input,TEXTAREA {
-     text-align: left;
-}
+
  #popupSearchHelp {
      padding: 1rem;
 }
@@ -296,7 +294,7 @@ a:link,a:hover,input {
      align-content: center;
 }
  .cartRemoveItemDisplay {
-     display: none !important;
+     display: none;
 }
  #scUpdateQuantity {
      display: none;
@@ -342,11 +340,9 @@ a:link,a:hover,input {
  #scQuantityHeading {
      text-align: center !important;
 }
- #cartDefaultHeading {
-     margin-bottom: 0;
-}
+
  #shippingEstimatorContent .cartTotalDisplay {
-     display: block !important;
+     display: block;
      float: right;
 }
  #popupShippingEstimator .cartTotalDisplay {
@@ -441,9 +437,6 @@ a:link,a:hover,input {
 }
  select option {
      background: #fff !important;
-}
- #select-manufacturers_id {
-     background: transparent !important;
 }
  .shopping_cart_spacer {
      display: flex;
@@ -805,9 +798,6 @@ a:link,a:hover,input {
  .CenterBoxContentsNew .back {
      float: left;
 }
- .alert {
-     margin-bottom: 1rem;
-}
  #gvFaqDefaultSubHeading,#checkoutPayAddressDefaultAddress,#checkoutShipAddressDefaultAddress,#accountLinksWrapper h2,h2#addressBookDefaultPrimary {
      text-align: left;
      padding-left: 0;
@@ -1034,13 +1024,12 @@ a:link,a:hover,input {
 }
  #checkoutShipping .notice {
      color: #900404;
-     text-align: center;
 }
  #checkoutShipping .notice_select {
      margin-bottom: 1rem;
 }
  #checkoutShippingHeadingMethod {
-     margin-top: 2rem;
+     margin-top: 1rem;
      margin-bottom: 0.5rem;
      color: #761bc9;
 }
@@ -1278,11 +1267,7 @@ a:link,a:hover,input {
      margin-top: 1rem;
      margin-bottom: 1rem 
 }
- #productsListingListingBottomLinks a:nth-of-type(2) {
-     font-size: 1em;
-     color: #000 !important;
-}
- #productsListingListingTopLinks a:nth-of-type(2) {
+ #productsListingListingBottomLinks a:nth-of-type(2),  #productsListingListingTopLinks a:nth-of-type(2)  {
      font-size: 1em;
      color: #000 !important;
 }
@@ -1340,6 +1325,9 @@ a:link,a:hover,input {
      background-color: #fff;
      border: solid 1px #0056B3;
 }
+#accounteditBody .button.button_back {
+    margin-top:0;
+}
  .advisory a {
      text-decoration: underline;
 }
@@ -1352,7 +1340,7 @@ a:link,a:hover,input {
      grid-template-columns: repeat(1, 1fr);
 }
  .otherBrands .rblockelements {
-     display: inline !important;
+     display: inline;
      width: 33.3%;
      float: left;
 }
@@ -1826,7 +1814,7 @@ a:link,a:hover,input {
  #reviewWriteMainImage .main-image {
      margin: auto;
 }
- #productListing br,#whatsNew br,#featuredProducts br,#reviewsWritePrice br,#reviewsInfoDefaultPrice br,.block_element_reviewslinked br,#cartContentsDisplay br,#shippingEstimatorContent br,#pinfo-right br,.max-qty br,.centerBoxContentsAlsoPurch br, #csNotifications br, .centerBoxContentsFeaturedCategories br, #specialsDefault br, #orderStatus br, #searchBody br, #accounteditBody br, #addressbookprocessBody br, #accountnewslettersBody br, .cartProductDisplay br,#checkoutPayment .payment br, #loginDefault br, #createAcctDefault br {
+ #productListing br,#whatsNew br,#featuredProducts br,#reviewsWritePrice br,#reviewsInfoDefaultPrice br,.block_element_reviewslinked br,#cartContentsDisplay br,#shippingEstimatorContent br,#pinfo-right br,.max-qty br,.centerBoxContentsAlsoPurch br, #csNotifications br, .centerBoxContentsFeaturedCategories br, #specialsDefault br, #orderStatus br, #searchBody br, #accounteditBody br, #addressbookprocessBody br, #accountnewslettersBody br, .cartProductDisplay br,#checkoutPayment .payment br, #loginDefault br, #createAcctDefault br, #passwordforgottenBody br {
      display: none;
 }
  #acctNewslettersDefault .back,#accountNotifications .back,#addressbookprocessBody .back,#accountpasswordBody .back,#accounteditBody .back, #addressBookDefault .back,#contactUsDefault .back, #searchDefault .back, #searchresultBody .back {
@@ -1857,7 +1845,7 @@ a:link,a:hover,input {
  #passwordforgottenBody .button_submit {
      margin-bottom:0;
 }
- #accounteditBody fieldset, #accountnewslettersBody fieldset {
+ #accountnewslettersBody fieldset {
      margin-bottom:1rem;
 }
  .success {
@@ -1888,6 +1876,18 @@ a:link,a:hover,input {
      grid-template-rows: 1fr;
      gap:1rem;
 }
+#addressBookDefault .clearBoth {
+     display: none;
+}
+ #askaquestionBody .clearBoth {
+       display: none;
+}
+ #accountpasswordBody .clearBoth {
+       display: none;
+}
+
+
+.button_add_address {margin-top:1rem;}
  @media (min-width: 576px) {
      div#logo {
          max-width: 230px;
@@ -2056,6 +2056,9 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 768px) {
+    .button_add_address {
+        margin-top:0rem;
+    }
      #searchDefault .back {
          margin-top:0rem;
     }
@@ -2225,7 +2228,6 @@ a:link,a:hover,input {
          float: right;
     }
      .otherBrands .rblockelements {
-         display: inline !important;
          width: 16.6%;
          float: left;
     }
@@ -2265,15 +2267,12 @@ a:link,a:hover,input {
          flex-grow: 2;
          flex-basis: 0;
     }
-     #loginDefault input.submit_button {
-         width: auto !important;
-    }
+     #loginDefault input.submit_button, 
      #loginDefault input.cssButtonHover {
          width: auto !important;
     }
-     #createAcctDefault input.submit_button {
-         width: auto !important;
-    }
+   
+     #createAcctDefault input.submit_button, 
      #createAcctDefault input.cssButtonHover {
          width: auto !important;
     }
@@ -2556,9 +2555,6 @@ a:link,a:hover,input {
      #addressBookDefault .button.small_edit {
          margin-top: 0;
          margin-bottom: 1rem;
-    }
-     #addressBookDefault .clearBoth {
-         display: none;
     }
      .continueshoppingb {
          flex-grow: 0;

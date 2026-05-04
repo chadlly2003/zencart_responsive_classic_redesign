@@ -81,7 +81,6 @@
  #contentColumnMain, #navColumnOne, #navColumnTwo, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {
      vertical-align:top;
 }
-
  .important {
      font-weight:bold;
 }
@@ -137,10 +136,19 @@
      display:block;
      width:66%;
 }
- input:focus, select:focus, textarea:focus {
+ input:focus, select:focus, textarea:focus,a:focus .cssButton,a:focus span[class*="cssButton"], a:focus-visible span[class*="cssButton"] {
      border-radius: .25rem;
      border: 1px solid rgba(0, 150, 255, 1) !important;
      outline: rgba(0, 150, 255, 1);
+}
+ input.cssButton:focus, input.cssButtonHover:focus, input.cssButton:active, input.cssButtonHover:active {
+     border: 1px solid rgba(0, 150, 255, 1) !important;
+     outline: rgba(0, 150, 255, 1);
+}
+ #productReviewLink a:focus span[class*="cssButton"], #productReviewLink a:focus-visible span[class*="cssButton"], #productReviewLink a:active span[class*="cssButton"], a:focus span.button_goto_prod_details, a:focus span.button_goto_prod_detailsHover, a:focus-visible span.button_goto_prod_details, a:focus-visible span.button_goto_prod_detailsHover, a:focus span.button_write_review, a:focus span.button_write_reviewHover, a:focus-visible span.button_write_review, a:focus-visible span.button_write_reviewHover, a:focus span.button_read_reviews, a:focus span.button_read_reviewsHover, a:focus-visible span.button_read_reviews, a:focus-visible span.button_read_reviewsHover, a:focus span.button_reviews, a:focus span.button_reviewsHover, a:focus-visible span.button_reviews, a:focus-visible span.button_reviewsHover {
+     outline: none !important;
+     box-shadow: none !important;
+     border: none !important;
 }
  #cart-box input[type="text"]{
      border:solid 1px #fff !important;
@@ -271,14 +279,13 @@
  .messageStackWarning img, .messageStackError img, .messageStackSuccess img, .messageStackCaution img {
      display:none 
 }
-.alert.forward {
-  display: flex;
-  justify-content: left;
-  width: 100%;
-  margin-bottom:1rem;
-  margin-top:1rem;
+ .alert.forward {
+     display: flex;
+     justify-content: left;
+     width: 100%;
+     margin-bottom:1rem;
+     margin-top:1rem;
 }
-
 /*bof wrappers - page or section containers*/
  #mainWrapper{
      text-align:left;

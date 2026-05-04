@@ -22,7 +22,6 @@ a:link,a:hover,input {
  .button_continue_checkout:hover, .button_login:hover {
      background: #fff;
      color: #006400;
-     border: 1px solid #006400;
      -webkit-appearance: none;
 }
 /* secondary button (yellow) */
@@ -34,7 +33,6 @@ a:link,a:hover,input {
 }
  .button_secondary:hover, .button_change_address:hover, .button_view:hover, .button.small_edit:hover, #linkContactUs .button_contact_us:hover, #linkMyAccount .button_my_orders:hover, #linkLogoff .button_logoff:hover, #addressBookDefault span.normal_button:hover, #checkoutPayment .button_change_address:hover,#unsubscribeBody span.normal_button:hover {
      background: #fff;
-     border: 1px solid #FFD700;
      -webkit-appearance: none;
 }
 /* danger buttons (red) */
@@ -46,8 +44,6 @@ a:link,a:hover,input {
  .button_delete:hover, .button_update:hover, .button_buy_now:hover, .button_create_account:hover, .button_cancel:hover {
      background: #fff;
      color: #AC171D;
-     border:solid 1px #AC171D;
-     ;
 }
  #productAttributes {
      background-color: #F0F8FF;
@@ -265,7 +261,6 @@ a:link,a:hover,input {
  .cartProductDisplay img {
      display: none;
 }
-
  #popupSearchHelp {
      padding: 1rem;
 }
@@ -308,7 +303,7 @@ a:link,a:hover,input {
      display: none;
 }
  #cartContentsDisplay input {
-     width: 50px !important;
+     width: 100% !important;
      padding: 0;
      margin-bottom: 0;
      margin-top: 0;
@@ -340,7 +335,6 @@ a:link,a:hover,input {
  #scQuantityHeading {
      text-align: center !important;
 }
-
  #shippingEstimatorContent .cartTotalDisplay {
      display: block;
      float: right;
@@ -447,8 +441,8 @@ a:link,a:hover,input {
  .information2 {
      line-height: 150%;
      background: transparent;
-     padding: 6px;
-     margin-bottom: 0;
+     margin-top:1rem;
+     margin-bottom: 1rem;
      color: #900404;
 }
  #seQuoteResults tr {
@@ -835,7 +829,6 @@ a:link,a:hover,input {
 }
  .box_review_spacver span.normal_button:hover {
      background-color: #fff;
-     border: solid 1px #FFD700 !important;
      color: #000 !important;
      width: calc(100% - 40px);
 }
@@ -850,7 +843,6 @@ a:link,a:hover,input {
 }
  #addressBookProcessDefault input.cssButtonHover:hover {
      background-color: #fff !important;
-     border: solid 1px #AC171D !important;
      color: #AC171D !important 
 }
  #accountDefault h2 {
@@ -1128,10 +1120,8 @@ a:link,a:hover,input {
      border: solid 1px #006400;
      background: #006400;
      color: #fff;
-     ;
 }
  #checkoutConfirmDefault input.cssButtonHover {
-     border: solid 1px #006400;
      background: #fff;
      color: #006400;
 }
@@ -1267,7 +1257,7 @@ a:link,a:hover,input {
      margin-top: 1rem;
      margin-bottom: 1rem 
 }
- #productsListingListingBottomLinks a:nth-of-type(2),  #productsListingListingTopLinks a:nth-of-type(2)  {
+ #productsListingListingBottomLinks a:nth-of-type(2), #productsListingListingTopLinks a:nth-of-type(2) {
      font-size: 1em;
      color: #000 !important;
 }
@@ -1323,10 +1313,9 @@ a:link,a:hover,input {
  #addressBookDefault .button.button_back:hover {
      color: #0056B3;
      background-color: #fff;
-     border: solid 1px #0056B3;
 }
-#accounteditBody .button.button_back {
-    margin-top:0;
+ #accounteditBody .button.button_back {
+     margin-top:0;
 }
  .advisory a {
      text-decoration: underline;
@@ -1341,7 +1330,7 @@ a:link,a:hover,input {
 }
  .otherBrands .rblockelements {
      display: inline;
-     width: 33.3%;
+     width: 50%;
      float: left;
 }
  .unsubscribebutton {
@@ -1858,7 +1847,6 @@ a:link,a:hover,input {
 }
  #ezPageDefault .button_next:hover {
      background: #fff;
-     border:solid 1px #0056B3;
      color: #0056B3 
 }
  #ezPageDefault .button_prev {
@@ -1868,7 +1856,6 @@ a:link,a:hover,input {
 }
  #ezPageDefault .button_prev:hover {
      background: #fff;
-     border:solid 1px #8b008b;
      color: #8b008b;
 }
  #navEZPageNextPrev {
@@ -1876,18 +1863,18 @@ a:link,a:hover,input {
      grid-template-rows: 1fr;
      gap:1rem;
 }
-#addressBookDefault .clearBoth {
+ #addressBookDefault .clearBoth {
      display: none;
 }
  #askaquestionBody .clearBoth {
-       display: none;
+     display: none;
 }
  #accountpasswordBody .clearBoth {
-       display: none;
+     display: none;
 }
-
-
-.button_add_address {margin-top:1rem;}
+ .button_add_address {
+    margin-top:1rem;
+}
  @media (min-width: 576px) {
      div#logo {
          max-width: 230px;
@@ -2054,10 +2041,13 @@ a:link,a:hover,input {
      #checkoutConfirmDefault span.normal_button:hover {
          margin:1rem;
     }
+     .otherBrands .rblockelements {
+         width: 25%;
+    }
 }
  @media (min-width: 768px) {
-    .button_add_address {
-        margin-top:0rem;
+     .button_add_address {
+         margin-top:0rem;
     }
      #searchDefault .back {
          margin-top:0rem;
@@ -2267,13 +2257,10 @@ a:link,a:hover,input {
          flex-grow: 2;
          flex-basis: 0;
     }
-     #loginDefault input.submit_button, 
-     #loginDefault input.cssButtonHover {
+     #loginDefault input.submit_button, #loginDefault input.cssButtonHover {
          width: auto !important;
     }
-   
-     #createAcctDefault input.submit_button, 
-     #createAcctDefault input.cssButtonHover {
+     #createAcctDefault input.submit_button, #createAcctDefault input.cssButtonHover {
          width: auto !important;
     }
      #createAcctDefault .forward {

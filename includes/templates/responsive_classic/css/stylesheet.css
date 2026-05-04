@@ -78,12 +78,10 @@
  .visibleField {
      display:inline;
 }
- #contentColumnMain, #navColumnOne, #navColumnTwo, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .alert {
+ #contentColumnMain, #navColumnOne, #navColumnTwo, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {
      vertical-align:top;
 }
- .alert {
-     margin-left:0em;
-}
+
  .important {
      font-weight:bold;
 }
@@ -262,20 +260,25 @@
      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 /*bof warnings, errors, messages*/
- .messageStackWarning, .messageStackError, .messageStackSuccess, .messageStackCaution {
+ .messageStackWarning, .messageStackError, .messageStackSuccess, .messageStackCaution, .alert {
      line-height:1.8em;
-     padding-top:6px;
-     padding-bottom:6px;
-     text-align: center;
-     color:#900404 !important;
-     background: transparent !important;
-}
- #shoppingcartBody .messageStackCaution {
+     text-align: left;
+     color:#900404;
+     background: transparent;
      margin-top:1rem;
+     margin-bottom: 1rem;
 }
  .messageStackWarning img, .messageStackError img, .messageStackSuccess img, .messageStackCaution img {
      display:none 
 }
+.alert.forward {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  margin-bottom:1rem;
+  margin-top:1rem;
+}
+
 /*bof wrappers - page or section containers*/
  #mainWrapper{
      text-align:left;

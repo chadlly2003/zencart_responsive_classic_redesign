@@ -37,7 +37,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
  
  <a href="<?php echo $_SERVER['REQUEST_URI']; ?>#main-content" class="skip-link">Skip to main content</a>
  
-<div class="welcome_note">Welcome to Zencart check out the getting started guide at 
+<div class="welcome_note" role="region" aria-label="Welcome message">7265Welcome to Zencart check out the getting started guide at 
   <a href="https://docs.zen-cart.com/user/" target="_blank" class="welcome_link"  rel="noopener"> doc.zencart.com</a>
 </div>
 
@@ -55,10 +55,8 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
     </button>
   </div>
 </div>
-<div class="sidebar is-hidden">
+<div class="sidebar is-hidden" role="navigation" aria-label="Categories">
   <h1 class="sidebar_title">Categories</h1>
-  
-  
       <?php
       // load the UL-generator class and produce the menu list dynamically from there
       require_once (DIR_WS_CLASSES . 'categories_ul_generator.php');
@@ -68,7 +66,6 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
       $menulist = $zen_CategoriesUL->buildTree(true, 1);
      echo $menulist;
     ?> 
-    
 <hr class="spacernav" />
 
     <ul class="myaccounts">

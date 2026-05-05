@@ -24,6 +24,7 @@
 }
 .sidebar li {
 	list-style: none;
+	min-height: 44px;
 }
 .sidebar a {
 	display: block;
@@ -31,7 +32,6 @@
 	color: #000;
 	text-decoration: none;
 }
-
 .sidebar a:hover {
 	background-color: #E6E6FA; 
 	color: #000 !important;

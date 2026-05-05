@@ -423,6 +423,10 @@ a:link,a:hover,input {
  form.sidebox-select-form option:not(:first-child) {
      color: initial;
 }
+form.sidebox-select-form option{
+    padding-top:6px; 
+    padding-bottom:6px;
+}
  select {
      border: solid 1px #ccc !important;
      border-radius: .25rem !important;

@@ -1030,6 +1030,12 @@
      margin-bottom:0;
      margin-top:0;
 }
+ #createAccountForm .submit_button  {
+    margin-top:1rem;
+}
+ #createAccountForm .button_submitHover  {
+    margin-top:1rem;
+}
  div#loginDefault fieldset {
      margin-bottom: 0px;
 }

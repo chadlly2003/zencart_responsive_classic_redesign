@@ -24,17 +24,21 @@
 }
 .sidebar li {
 	list-style: none;
-	min-height: 44px;
 }
 .sidebar a {
 	display: block;
 	padding: 0.5rem 1rem;
 	color: #000;
 	text-decoration: none;
+	padding-top:0px;
+	padding-bottom: 0px;
+	min-height: 44px;
+	align-content: center;
 }
 .sidebar a:hover {
 	background-color: #E6E6FA; 
 	color: #000 !important;
+	
 }
 
 .sidebar.is-hidden {

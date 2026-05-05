@@ -428,9 +428,8 @@ a:link,a:hover,input {
      border-radius: .25rem !important;
      background: #e9ecef;
      -webkit-appearance: none;
-}
- select option {
-     background: #fff !important;
+     overflow-y: auto;
+     padding-top:1rem;
 }
  .shopping_cart_spacer {
      display: flex;
@@ -1869,7 +1868,7 @@ a:link,a:hover,input {
      display: none;
 }
  .button_add_address {
-    margin-top:1rem;
+     margin-top:1rem;
 }
  @media (min-width: 576px) {
      div#logo {

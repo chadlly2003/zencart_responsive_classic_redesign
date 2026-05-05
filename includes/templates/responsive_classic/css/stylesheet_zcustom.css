@@ -883,7 +883,6 @@ a:link,a:hover,input {
 }
  #accountDefault span.normal_button {
      margin: auto;
-     max-width: 50px;
 }
  #accountDefault address {
      padding: 0;

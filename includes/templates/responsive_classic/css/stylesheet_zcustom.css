@@ -1723,9 +1723,6 @@ a:link,a:hover,input {
  #createAcctSuccess div {
      margin-bottom: 1rem;
 }
- #loginBody .button_submit {
-     margin-bottom:0rem;
-}
 /* category grid */
  .gridlayout .itemTitle {
      width: 100%;

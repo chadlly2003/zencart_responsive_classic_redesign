@@ -84,7 +84,7 @@ if (empty($gallery_images)) {
 <div class="modal <?php echo (count($gallery_images) === 1) ? 'single-image' : ''; ?>" id="modal">
   <span class="close">&times;</span>
   <span class="arrow arrow-left">&#10094;</span>
-  <img id="modalImg" alt="">
+  <img id="modalImg" src="data:," alt="">
   <span class="arrow arrow-right">&#10095;</span>
   <div id="modalTitle" class="modal_product_name">
     <?php echo htmlspecialchars($products_name); ?>

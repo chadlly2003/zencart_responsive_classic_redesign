@@ -244,9 +244,9 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
 ?>
 <!--eof- banner #6 display -->
 
-<div class="footer">
+<div class="footer" role="contentinfo">
   <!--bof-navigation display -->
-  <div id="navSuppWrapper">
+  <div id="navSuppWrapper" role="navigation" aria-label="Footer Navigation">
     <div id="navSupp">
         <ul>
             <li><a href="<?= HTTP_SERVER . DIR_WS_CATALOG ?>"><?= HEADER_TITLE_CATALOG ?></a></li>

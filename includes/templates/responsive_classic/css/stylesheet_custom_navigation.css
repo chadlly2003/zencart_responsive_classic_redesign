@@ -1,118 +1,118 @@
 .container {
-	margin-top: 20px;
-	text-align: center;
+     margin-top: 20px;
+     text-align: center;
 }
-.btn-outline-primary:focus, .btn-outline-primary.focus {
-	box-shadow: none;
+ .btn-outline-primary:focus, .btn-outline-primary.focus {
+     box-shadow: none;
 }
-.sidebar_title {
-	margin-left:12px;
-	text-align: left !important;
+ .sidebar_title {
+     margin-left:12px;
+     text-align: left !important;
 }
-.sidebar {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 270px;
-	background-color: #fff;
-	transition: transform 0.3s ease-out;
+ .sidebar {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     width: 270px;
+     background-color: #fff;
+     transition: transform 0.3s ease-out;
 }
-.sidebar ul {
-	margin: 0;
-	padding: 0;
+ .sidebar ul {
+     margin: 0;
+     padding: 0;
 }
-.sidebar li {
-	list-style: none;
+ .sidebar li {
+     list-style: none;
 }
-.sidebar a {
-	display: block;
-	padding: 0.5rem 1rem;
-	color: #000;
-	text-decoration: none;
-	padding-top:0px;
-	padding-bottom: 0px;
-	min-height: 44px;
-	align-content: center;
+ .sidebar a {
+     display: block;
+     padding: 0.5rem 1rem;
+     color: #000;
+     text-decoration: none;
+     padding-top:0px;
+     padding-bottom: 0px;
+     min-height: 44px;
+     align-content: center;
 }
-.sidebar a:hover {
-	background-color: #E6E6FA; 
-	color: #000 !important;
-	
+ .sidebar a:hover {
+     background-color: #E6E6FA;
+     color: #000 !important;
 }
-
-.sidebar.is-hidden {
-	transform: translateX(-300px);
+ .sidebar.is-hidden {
+     transform: translateX(-300px);
 }
-.baralignment {
-	font-size:25px;
-	color:#000;
+ .baralignment {
+     font-size:25px;
+     color:#000;
 }
-.level1 {
-	margin-bottom:0rem !important;
-	padding-bottom:1rem !important;
+ .level1 {
+     margin-bottom:0rem !important;
+     padding-bottom:1rem !important;
 }
-#siteinfoIP {
-	display:none !important 
+ #siteinfoIP {
+     display:none !important 
 }
-.sidebar {
-	overflow-y:auto;
-	z-index: 3;
-	padding-top:1rem;
+ .sidebar {
+     overflow-y:auto;
+     z-index: 3;
+     padding-top:1rem;
 }
-.myaccounts .fa-fw {
-	color: #8A2BE2;
+ .myaccounts .fa-fw {
+     color: #8A2BE2;
 }
 /* Disable scrolling */
-.no-scroll {
-	overflow: hidden;
-	height: 100%;
+ .no-scroll {
+     overflow: hidden;
+     height: 100%;
 }
-.myaccounts {
-	padding-top:1rem !important;
-	padding-bottom:2rem !important;
+ .myaccounts {
+     padding-top:1rem !important;
+     padding-bottom:2rem !important;
 }
 /* The overlay effect (background color and opacity) */
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-   /* Semi-transparent background */
-	display: none;
-   /* Hidden by default */
-	z-index: 1;
-   /* Make sure it appears above other content */
+ .overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+     display: none;
+    /* Hidden by default */
+     z-index: 1;
+    /* Make sure it appears above other content */
 }
-.navitem1t {
-	font-size:32px !important;
-	color:#8b008b;
+ #overlay {
+     pointer-events: none;
 }
-.navitem2t {
-	font-size:32px !important;
-	color:#2c6161;
+ .navitem1t {
+     font-size:32px !important;
+     color:#8b008b;
 }
-
-.cart-count {
-	position: absolute;
-	 margin-top:-6px;
-	right: 0;
-	background-color: #AD0000;
-	color: #fff;
-	border-radius: 50%;
-	padding: 5px 5px;
-	font-size: 10px;
+ .navitem2t {
+     font-size:32px !important;
+     color:#2c6161;
 }
-.fa-phone {
-	margin-left:-4px;
-	margin-right:4px;
+ .cart-count {
+     position: absolute;
+     margin-top:-6px;
+     right: 0;
+     background-color: #AD0000;
+     color: #fff;
+     border-radius: 50%;
+     padding: 5px 5px;
+     font-size: 10px;
 }
-.fa-lg {
-	line-height: 1 !important;
+ .fa-phone {
+     margin-left:-4px;
+     margin-right:4px;
 }
-.spacernav {
-	margin-left:1rem;
-	margin-right:1rem;
+ .fa-lg {
+     line-height: 1 !important;
+}
+ .spacernav {
+     margin-left:1rem;
+     margin-right:1rem;
 }

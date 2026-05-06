@@ -135,7 +135,14 @@
 <?php
     }
 ?>
-<label for="pmt-<?php echo $selection[$i]['id']; ?>" class="radioButtonLabel"><?php echo $selection[$i]['module']; ?></label>
+
+<?php if (sizeof($selection) > 1 && empty($selection[$i]['noradio'])) { ?>
+  <label for="pmt-<?php echo $selection[$i]['id']; ?>" class="radioButtonLabel">
+    <?php echo $selection[$i]['module']; ?>
+  </label>
+<?php } else { ?>
+  <?php echo $selection[$i]['module']; ?>
+<?php } ?>
 
 <?php
     if (defined('MODULE_ORDER_TOTAL_COD_STATUS') && MODULE_ORDER_TOTAL_COD_STATUS == 'true' and $selection[$i]['id'] == 'cod') {

@@ -905,7 +905,6 @@ a:link,a:hover,input {
      color: #900404;
 }
  #accountHistoryDefault .back {
-     margin-right: 1rem;
      display: block;
      width: 100%;
 }
@@ -2001,10 +2000,11 @@ a:link,a:hover,input {
          float: right;
          margin-top: -2.2rem !important;
     }
-     #accountHistoryDefault .back {
-         margin-right: 1rem;
-         display: inline;
-         width: 50%;
+     #accountHistoryDefault fieldset .content:not(.back):not(.forward) {
+         float:left;
+    }
+     #accountHistoryDefault fieldset {
+         margin-bottom:1rem;
     }
      #orderTotals#accountDefault Address {
          display: block;
@@ -2664,6 +2664,7 @@ a:link,a:hover,input {
     }
      #headerWrapper {
          padding-bottom: 0;
+         margin-bottom: 2rem !important;
     }
      .search_box_mobile form {
          display: none;

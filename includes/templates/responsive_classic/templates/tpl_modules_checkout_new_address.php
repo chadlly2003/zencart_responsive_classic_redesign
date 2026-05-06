@@ -92,7 +92,7 @@
 <label class="inputLabel" for="postcode"><?php echo ENTRY_POST_CODE; ?></label>
 <?php echo zen_draw_input_field('postcode', '', zen_set_field_length(TABLE_ADDRESS_BOOK, 'entry_postcode', '40') . ' id="postcode" placeholder="' . ENTRY_POST_CODE_TEXT . '"' . ((int)ENTRY_POSTCODE_MIN_LENGTH > 0 ? ' required' : '')); ?>
 <br class="clearBoth">
-
+<label for="country"><?php echo ENTRY_COUNTRY; ?></label>
 <?php echo zen_get_country_list(
     'zone_country_id',
     $selected_country,

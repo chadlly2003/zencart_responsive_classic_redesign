@@ -2616,7 +2616,6 @@ form.sidebox-select-form option{
     }
      #shoppingcartBody .buttonRow .back {
          float: none !important;
-         margin-top: 1;
     }
      #shoppingcartBody .forward,#shoppingCartDefault #PPECbuttond {
          text-align: center;

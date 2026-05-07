@@ -35,6 +35,31 @@ a:link,a:hover,input {
      background: #fff;
      -webkit-appearance: none;
 }
+ .cart-add input[type="submit"] {
+     background: #FFD700;
+     border: 1px solid #FFD700;
+     color: #000;
+     -webkit-appearance: none;
+     font-size: 1.2em;
+     display: inline-block;
+     padding: 12px 20px;
+     border-radius: 0.25rem;
+     min-height: 47.6px;
+}
+ .cart-add input[type="submit"]:hover {
+     background: #fff;
+     color: #000;
+}
+ #productListing form[name="cart_quantity"] {
+     width: 100%;
+    display: flex;
+}
+ #productListing form[name="cart_quantity"] input {
+     text-align: center;
+     min-height: 47.6px;
+     margin-bottom: 0.5rem;
+     min-width: 53px;
+}
 /* danger buttons (red) */
  .button_delete, .button_update, .button_buy_now, .button_create_account, .button_cancel {
      background: #AC171D;
@@ -1871,6 +1896,16 @@ a:link,a:hover,input {
  .button_add_address {
      margin-top:1rem;
 }
+ #productListing .qmax {
+     display: inline-block;
+     justify-content: center;
+}
+ #productListing .button_buy_now {
+     margin-bottom: 0.5rem;
+}
+ #productListing .button_in_cart {
+     margin-left:5px;
+}
  @media (min-width: 576px) {
      div#logo {
          max-width: 230px;
@@ -2043,6 +2078,16 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 768px) {
+     #productListing form[name="cart_quantity"] input {
+        margin-bottom: 0;
+    }
+     .productDetailslistings {
+         float:left;
+         margin-right: 1rem;
+    }
+     #productListing form[name="cart_quantity"] {
+         width: auto;
+    }
      .button_add_address {
          margin-top:0rem;
     }
@@ -2440,7 +2485,10 @@ a:link,a:hover,input {
          margin-left: 6px;
     }
      #productListing .qmax {
-         float: right;
+         display:inline-flex;
+         justify-content: end;
+         float:right;
+         clear:right;
     }
      .cartTotalDisplay {
          display: block;
@@ -2591,6 +2639,7 @@ a:link,a:hover,input {
     }
      #productListing .button_buy_now {
          float: right;
+         margin-bottom: 0;
     }
      #indexProductList .button_sold_out {
          float: left;

@@ -1162,7 +1162,8 @@
      clear:both;
      width: 100%;
      display:block;
-     margin-bottom:0 !important;
+     color: #761bc9;
+     margin-bottom: 0.5rem;;
 }
  .attribImg {
      margin:1rem 0;
@@ -1177,6 +1178,8 @@
 }
  .wrapperAttribsOptions select{
      width:100%;
+     display:block;
+     clear:both;
 }
  .wrapperAttribsOptions{
      margin:0;

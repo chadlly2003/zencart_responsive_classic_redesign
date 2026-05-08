@@ -336,6 +336,11 @@ case 'PRODUCT_LIST_NAME':
         $details .= '<div class="product-manufacturer"><strong>Manufactured by:</strong> <a href="' . $listing_mfg_link . '">' . $listing_mfg_name . '</a></div>';
     }
 
+    // Base Price
+    if (defined('PRODUCT_LIST_PRICE') && PRODUCT_LIST_PRICE) {
+    $details .= '<div class="product-base-price"> ' . $listing_price . '</div>';
+    }
+
     $lc_text .= '<div class="productDetailslistings">' . $details . '</div>';
     $lc_text .= '</div>'; // end product-container
 

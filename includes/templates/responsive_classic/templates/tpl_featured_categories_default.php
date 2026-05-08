@@ -1,28 +1,21 @@
-<?php
-/**
-* Page Template - Featured Categories listing
-*
- * @copyright Copyright 2003-2025 Zen Cart Development Team
-* @copyright Portions Copyright 2003 osCommerce
-* @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
-* @version $Id: lat9 2025 May 13 Modified in v2.2.0 $
-*/
-?>
 <div class="centerColumn" id="featuredCategoryDefault">
-
 <h1 id="featuredCateoryDefaultHeading"><?php echo HEADING_TITLE; ?></h1>
+
+<?php if (count($listing) === 0) { ?>
+    <div class="noFeaturedCategories">
+        <?php echo defined('TEXT_NO_FEATURED_CATEGORIES') 
+            ? TEXT_NO_FEATURED_CATEGORIES 
+            : 'No products to show.'; ?>
+    </div>
+<?php } ?>
 
 <?php
 $list_box_contents = [];
 $row = 0;
 $col = 0;
 
-if (count($listing) === 0) {
-    $list_box_contents[0][] = [
-        'params' => 'class="centerBoxContentsFeatured centeredContent w-100"',
-        'text' => defined('TEXT_NO_FEATURED_CATEGORIES') ? TEXT_NO_FEATURED_CATEGORIES : 'No products to show.',
-    ];
-} else {
+if (count($listing) !== 0) {
+
     $col_width = floor(100 / SHOW_PRODUCT_INFO_COLUMNS_FEATURED_PRODUCTS);
 
     foreach ($listing as $record) {
@@ -32,11 +25,12 @@ if (count($listing) === 0) {
         $lc_text .= '</a>';
 
         $list_box_contents[$row][$col] = [
-            'params' => 'class="centerBoxContentsFeatured centeredContent back"' . ' ' . 'style=" "',
+            'params' => 'class="centerBoxContentsFeatured centeredContent back"',
             'text' => $lc_text,
         ];
 
         $col++;
+
         if ($col >= SHOW_PRODUCT_INFO_COLUMNS_FEATURED_PRODUCTS) {
             $col = 0;
             $row++;
@@ -45,6 +39,11 @@ if (count($listing) === 0) {
 }
 
 $title = '';
-require $template->get_template_dir('tpl_columnar_display.php', DIR_WS_TEMPLATE, $current_page_base, 'common') . '/tpl_columnar_display.php';
+require $template->get_template_dir(
+    'tpl_columnar_display.php',
+    DIR_WS_TEMPLATE,
+    $current_page_base,
+    'common'
+) . '/tpl_columnar_display.php';
 ?>
 </div>

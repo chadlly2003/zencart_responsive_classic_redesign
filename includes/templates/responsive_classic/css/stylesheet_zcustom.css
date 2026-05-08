@@ -215,6 +215,8 @@ a:link,a:hover,input {
  #productListing .list-input input[type="text"] {
      width: 21% !important;
      max-width: 80px !important;
+     padding: 0px;
+     font-size: 1em;
 }
  .centerBoxContentsAlsoPurch:hover {
      background: #F0F8FF !important;
@@ -1911,9 +1913,6 @@ a:link,a:hover,input {
  #productListing .button_in_cart {
      margin-left:5px;
 }
-
- 
-
 
  @media (min-width: 576px) {
      div#logo {

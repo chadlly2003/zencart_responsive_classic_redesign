@@ -293,7 +293,7 @@
      vertical-align:top;
      margin:auto;
      padding:0;
-     margin-top:0 !important;
+   
 }
  #logoWrapper, #cartBoxListWrapper, #ezPageBoxList, #cartBoxListWrapper ul, #ezPageBoxList ul, #popupAdditionalImage, #popupImage {
      margin:0;
@@ -904,9 +904,12 @@
      text-decoration:none;
      color: #000 !important;
      min-height: 44px;
-     display: block;
+     display: inline-block;
      min-width: 44px;
      align-content: center;
+}
+ .itemTitle a:hover{
+     text-decoration: underline;
 }
  .cart-add a {
      min-height: 44px;
@@ -915,9 +918,6 @@
  .list-image a {
      min-height: 44px;
      display: block;
-}
- .itemTitle a:hover{
-     text-decoration: underline;
 }
  .listingDescription{
      width:100%;
@@ -1162,7 +1162,8 @@
      width: 100%;
      display:block;
      color: #761bc9;
-     margin-bottom: 0.5rem;;
+     margin-bottom: 0.5rem;
+    ;
 }
  .attribImg {
      margin:1rem 0;
@@ -1234,6 +1235,7 @@
 }
  #reviewsWritePrice{
      text-align:center;
+     font-size: 1.5em;
 }
  #pinfo-left span.cssButton.normal_button, #pinfo-left span.normal_button:hover{
      display:block;
@@ -1249,7 +1251,6 @@
      font-weight: normal;
      line-height: 27px;
      text-align: left;
-     color: #000 !important;
      border-bottom: solid 1px #6495ED;
      margin-top: 1rem;
      padding-bottom: 1rem;
@@ -1475,9 +1476,6 @@
      width: 100%;
 }
 /* Ask a Question */
- .button_ask_a_question {
-     color:#9932CC !important;
-}
  #productQuestions a {
      font-size:16px !important;
 }
@@ -1512,7 +1510,7 @@
      display: block;
 }
  #gvFaqDefault #Top {
-     display:none !important;
+     display:none;
 }
  #gvFaqDefaultMainContent a {
      min-height: 44px;

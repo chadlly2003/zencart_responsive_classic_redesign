@@ -234,6 +234,13 @@ a:link,a:hover,input {
  .list-price img {
      display: none;
 }
+
+
+ #productListing .list-price {display:none !important}
+#productListing .product-base-price {font-size: 140%;display:block;}
+#productListing .product-base-price img {display:none;} 
+ 
+
  .btn-outline-primary {
      border: solid 1px #fff !important;
      background: transparent !important;
@@ -252,7 +259,7 @@ a:link,a:hover,input {
 }
  .productBasePrice {
      color: #000;
-     display: block;
+     display: block;;
      margin-bottom: 1rem;
 }
  #productinfoBody .productBasePrice {
@@ -1813,10 +1820,8 @@ a:link,a:hover,input {
  .product-manufacturer a {
      display: initial;
 }
- .productDetailslistings {
-     margin-top:0.5rem;
-     margin-bottom:0.5rem;
-}
+
+ .productDetailslistings .product-model {margin-top:0.5rem;}
  .productDetailslistings:empty {
      display:none;
 }
@@ -1906,6 +1911,10 @@ a:link,a:hover,input {
  #productListing .button_in_cart {
      margin-left:5px;
 }
+
+ 
+
+
  @media (min-width: 576px) {
      div#logo {
          max-width: 230px;
@@ -2078,8 +2087,12 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 768px) {
+
+#productListing .list-input {margin-top:0.5rem;} 
+
      #productListing form[name="cart_quantity"] input {
         margin-bottom: 0;
+        margin-top:0.5rem;
     }
      .productDetailslistings {
          float:left;
@@ -2640,6 +2653,7 @@ a:link,a:hover,input {
      #productListing .button_buy_now {
          float: right;
          margin-bottom: 0;
+         margin-top:0.5rem;
     }
      #indexProductList .button_sold_out {
          float: left;

@@ -1998,7 +1998,8 @@ a:link,a:hover,input {
          grid-template-columns: 1fr 6fr 1fr 1fr;
     }
      .cartRemoveItemDisplay {
-         display: block !important;
+         display: flex !important;
+         justify-content: space-evenly;
     }
      .cartImage {
          display: block;

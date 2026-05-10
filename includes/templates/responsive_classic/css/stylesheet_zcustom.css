@@ -1707,12 +1707,17 @@ a:link,a:hover,input {
      display: block;
 }
  #productInfoNoProduct .button_continue {
-     background: #6A1BC1;
+     background: #6A1BC1 !important;
      border-color: #6A1BC1 !important;
      color: #fff;
      font-size: 18px;
      padding: 12px 20px !important;
      height: auto;
+}
+ #productInfoNoProduct .button_continue:hover {
+     background: transparent !important;
+     border-color: #6A1BC1 !important;
+     color: #6A1BC1 ;
 }
  .button_read_reviews {
      align-content: center;

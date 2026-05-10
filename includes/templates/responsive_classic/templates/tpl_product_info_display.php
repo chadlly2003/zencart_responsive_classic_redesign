@@ -94,7 +94,7 @@ if (!empty($products_image) || !empty($enable_additional_images_without_main_ima
             <br>
 <!-- eof Ask a Question -->
 
-<!--bof Product Price block -->
+
 <!--bof Product details list  -->
 <?php
 // -----

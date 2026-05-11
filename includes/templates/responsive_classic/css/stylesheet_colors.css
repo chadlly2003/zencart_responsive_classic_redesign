@@ -101,8 +101,8 @@
      margin-top:3rem;
 }
  #navEZPagesTop li a:hover, .pagination li a:hover {
-     color:#000a06;
      background: transparent;
+     text-decoration: none;
 }
  #navEZPagesTop li a {
      color:#000;
@@ -240,9 +240,6 @@
      margin-bottom:1rem !important;
      display:block;
 }
- #navEZPagesTop {
-     display:none;
-}
  #tagline {
      display:none;
 }
@@ -265,12 +262,6 @@
      display:none;
 }
  #moreinformation {
-     display:none;
-}
- #specialsDefault {
-     display:none;
-}
- #featuredCategories {
      display:none;
 }
  .spacer1, .spacer2, .navNextPrevCounter, .navNextPrevWrapper {
@@ -1022,11 +1013,11 @@
      margin-bottom:0;
      margin-top:0;
 }
- #createAccountForm .submit_button  {
-    margin-top:1rem;
+ #createAccountForm .submit_button {
+     margin-top:1rem;
 }
- #createAccountForm .button_submitHover  {
-    margin-top:1rem;
+ #createAccountForm .button_submitHover {
+     margin-top:1rem;
 }
  div#loginDefault fieldset {
      margin-bottom: 0px;

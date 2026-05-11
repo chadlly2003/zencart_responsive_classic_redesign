@@ -293,7 +293,6 @@
      vertical-align:top;
      margin:auto;
      padding:0;
-   
 }
  #logoWrapper, #cartBoxListWrapper, #ezPageBoxList, #cartBoxListWrapper ul, #ezPageBoxList ul, #popupAdditionalImage, #popupImage {
      margin:0;
@@ -443,15 +442,27 @@
 }
 /*top ezpages links*/
  #navEZPagesTop {
+       margin:0;
+     width:100%;
+     margin: auto;
+     max-width: 1280px;
+     margin-bottom:1rem;
+     /* display:block; */
+     display:none;
+}
+ #indexHomeBody #navEZPagesTop {
      margin:0;
      width:100%;
+     display: block;
+     margin: auto;
+     margin-bottom:0;
+     max-width: 1280px;
+
 }
  #navEZPagesTop ul {
      text-align:center;
-     overflow:hidden;
-     padding-left: 0;
-     margin-top: 0rem;
-     margin-bottom: -2rem;
+     padding:0;
+     margin:0;
 }
  #navEZPagesTop li {
      font-size:0.75rem;
@@ -461,6 +472,11 @@
      text-decoration: underline;
      padding: 1.2em 1.0em;
      display: block;
+     padding-top:0;
+     padding-bottom:0;
+     min-width: 44px;
+     min-height: 44px;
+     align-content: center;
 }
  #navEZPagesTop li a:hover {
      background: transparent !important;
@@ -1163,7 +1179,7 @@
      display:block;
      color: #761bc9;
      margin-bottom: 0.5rem;
-    ;
+     ;
 }
  .attribImg {
      margin:1rem 0;

@@ -2696,10 +2696,8 @@
     }
 }
  @media (min-width: 992px) {
-     #navEZPagesTop ul {
-         margin-bottom:1rem;
-         margin-top: -1rem;
-         margin-bottom: 0;
+     #navEZPagesTop {
+         margin-top: -1rem !important;
     }
      .search_box form {
          display: flex;

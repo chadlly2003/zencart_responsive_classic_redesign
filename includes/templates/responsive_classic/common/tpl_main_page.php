@@ -115,6 +115,7 @@ $zco_notifier->notify('NOTIFY_PAGE_BODY_BEGIN', $current_page);
 ?>
 
 <div id="mainWrapper">
+
 <?php
  /**
   * prepares and displays header output
@@ -125,10 +126,14 @@ $zco_notifier->notify('NOTIFY_PAGE_BODY_BEGIN', $current_page);
   }
   require($template->get_template_dir('tpl_header.php',DIR_WS_TEMPLATE, $current_page_base,'common'). '/tpl_header.php');?>
 
-
-
+<!--bof header ezpage links-->
+<?php if (EZPAGES_STATUS_HEADER == '1' or (EZPAGES_STATUS_HEADER == '2' && zen_is_whitelisted_admin_ip())) { ?>
+<?php   require($template->get_template_dir('tpl_ezpages_bar_header.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_ezpages_bar_header.php'); ?>
+<?php } ?>
+<!--eof header ezpage links-->
 
 <div role="main" id="main-content" class="box_spacer">
+
   <div id="contentMainWrapper">
 
 <?php

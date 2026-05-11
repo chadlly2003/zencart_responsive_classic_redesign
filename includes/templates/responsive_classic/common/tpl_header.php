@@ -158,7 +158,6 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
   </div> 
 </div>
 
-
 <?php
   if (SHOW_BANNERS_GROUP_SET2 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET2)) {
     if ($banner->RecordCount() > 0) {
@@ -169,8 +168,6 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
   }
 ?>
 
-
-
 <!-- mobile search -->
 <div class="search_box_mobile" id="test"> 
    <?php require(DIR_WS_MODULES . zen_get_module_sidebox_directory('search_header.php')); ?>
@@ -179,17 +176,11 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 <!--eof branding display-->
 <!--eof header logo and navigation display-->
 
- 
 
 <!--bof optional categories tabs navigation display-->
 <?php require($template->get_template_dir('tpl_modules_categories_tabs.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_categories_tabs.php'); ?>
 <!--eof optional categories tabs navigation display-->
 
-<!--bof header ezpage links-->
-<?php if (EZPAGES_STATUS_HEADER == '1' or (EZPAGES_STATUS_HEADER == '2' && zen_is_whitelisted_admin_ip())) { ?>
-<?php   require($template->get_template_dir('tpl_ezpages_bar_header.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_ezpages_bar_header.php'); ?>
-<?php } ?>
-<!--eof header ezpage links-->
 
 <script>
 $(document).ready(function() {
@@ -245,7 +236,6 @@ $(document).ready(function() {
   });
 });
 </script>
-
 <!-- eof sidebar nav script -->
 
 </div>

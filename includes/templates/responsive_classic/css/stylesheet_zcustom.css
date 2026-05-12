@@ -1929,6 +1929,9 @@
      margin-top:0 !important;
      padding-top:0; 
 }
+#reviewsContent {
+    margin-bottom:2rem;
+}
  @media (min-width: 576px) {
      div#logo {
          max-width: 230px;

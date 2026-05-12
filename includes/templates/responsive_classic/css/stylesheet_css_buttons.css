@@ -92,9 +92,17 @@
  .button_goto_prod_details:hover{
      background:#05a5cb;
 }
- input.cssButton.submit_button.button.button_search, .button_search:hover{
+ input.cssButton.submit_button.button.button_search{
      padding:12px 20px;
      font-size:1.2em;
+     font-weight: normal;
+     border:solid 1px #006400;
+}
+ .button_search:hover {
+     padding:12px 20px;
+     font-size:1.2em;
+     font-weight: normal;
+     border:solid 1px #006400;
 }
  .button-left{
      margin-right:10px;
@@ -199,6 +207,7 @@
      font-size:18px;
      padding:12px 20px;
      height: auto;
+     font-weight: normal;
 }
  #cartAdd input[type="submit"]:hover {
      background:#fff;
@@ -327,6 +336,7 @@
  .button_continue, .button_send, .button_create_account, .button_submit, .button_login, .button_redeem, .button_delete, .button_update, .button_continue_checkout, .button_confirm_order {
      padding: 12px 20px;
      height: auto;
+     font-weight: normal;
 }
  .two_continue {
      margin-bottom:0.5rem;

@@ -1923,6 +1923,12 @@
  #productListing .button_in_cart {
      margin-left:5px;
 }
+ #siteinfoIP {
+     background: transparent !important;
+     color:#006400;
+     margin-top:0 !important;
+     padding-top:0; 
+}
  @media (min-width: 576px) {
      div#logo {
          max-width: 230px;

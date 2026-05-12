@@ -50,9 +50,6 @@
      margin-bottom:0rem !important;
      padding-bottom:1rem !important;
 }
- #siteinfoIP {
-     display:none !important 
-}
  .sidebar {
      overflow-y:auto;
      z-index: 3;

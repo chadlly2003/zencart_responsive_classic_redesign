@@ -30,7 +30,7 @@ if (!isset($flag_disable_footer) || !$flag_disable_footer) {
 <?php
     if (SHOW_FOOTER_IP === '1') {
 ?>
-<div id="siteinfoIP"><?= TEXT_YOUR_IP_ADDRESS . ' ' . $_SERVER['REMOTE_ADDR'] ?></div>
+ 
 <?php
     }
 ?>

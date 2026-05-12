@@ -51,7 +51,6 @@ if (!defined('IS_ADMIN_FLAG')) {
 /** eof DESIGNER TESTING ONLY */
 
 
-
 // List of pages to skip left sideboxes
 if (in_array($current_page_base, explode(",", 'checkout,checkout_confirmation,checkout_payment,checkout_shipping,checkout_payment_address,checkout_shipping_address,checkout_success'))) {
   $flag_disable_left = true;
@@ -101,8 +100,6 @@ $body_id = ($this_is_home_page) ? 'indexHome' : str_replace('_', '', $_GET['main
 <?php /* add any start-of-body-section code via an observer class */
 $zco_notifier->notify('NOTIFY_PAGE_BODY_BEGIN', $current_page);
 ?>
-
- 
 
 <?php
   if (SHOW_BANNERS_GROUP_SET1 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET1)) {
@@ -199,7 +196,6 @@ if (!$flag_disable_left) {
 ?>
   </div>
  
-
 <?php
 //if (COLUMN_RIGHT_STATUS == 0 || (CUSTOMERS_APPROVAL == '1' and $_SESSION['customer_id'] == '') || (CUSTOMERS_APPROVAL_AUTHORIZATION == 1 && CUSTOMERS_AUTHORIZATION_COLUMN_RIGHT_OFF == 'true' && $_SESSION['customers_authorization'] != 0)) {
 if (COLUMN_RIGHT_STATUS == 0 || (CUSTOMERS_APPROVAL == '1' and !zen_is_logged_in()) || (CUSTOMERS_APPROVAL_AUTHORIZATION == 1 && CUSTOMERS_AUTHORIZATION_COLUMN_RIGHT_OFF == 'true' and ($_SESSION['customers_authorization'] != 0 or !zen_is_logged_in()))) {
@@ -221,7 +217,6 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
 <?php
 }
 ?>
-
   </div>
 </div>
 
@@ -262,14 +257,22 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
 ?>
         </ul>
     </div>
+
+<!-- ip address -->
+<?php if (SHOW_FOOTER_IP == '1') { ?>
+  <div id="siteinfoIP">
+    <?= TEXT_YOUR_IP_ADDRESS . ' ' . $_SERVER['REMOTE_ADDR'] ?>
+  </div>
+<?php } ?>
+<!-- eof ip address -->
+
   </div>
 <!--eof-navigation display -->
 
 
-
-  <!--bof- site copyright display -->
-  <div id="siteinfoLegal" class="legalCopyright"><?= FOOTER_TEXT_BODY ?></div>
-  <!--eof- site copyright display -->
+<!--bof- site copyright display -->
+<div id="siteinfoLegal" class="legalCopyright"><?= FOOTER_TEXT_BODY ?></div>
+<!--eof- site copyright display -->
  
 
 <!--bof-banner #5 display -->
@@ -277,7 +280,7 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
     if (SHOW_BANNERS_GROUP_SET5 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET5)) {
         if (!$banner->EOF) {
 ?>
-<div id="bannerFive" class="banners"><?= zen_display_banner('static', $banner) ?></div>
+  <div id="bannerFive" class="banners"><?= zen_display_banner('static', $banner) ?></div>
 <?php
         }
     }

@@ -549,6 +549,7 @@
      width:auto !important;
      background:#fff;
      color:#8b008b;
+     border:solid 1px #8b008b;
      margin-bottom:1rem;
 }
  #select-record_company_id {

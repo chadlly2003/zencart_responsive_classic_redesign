@@ -1,4 +1,4 @@
- a:link,a:hover,input {
+a:link,a:hover,input {
      -webkit-tap-highlight-color: transparent;
 }
  img {
@@ -1337,6 +1337,9 @@
      display:flex;
      justify-content: center;
      flex-wrap: wrap;
+}
+.navSplitPagesLinks:empty {
+    display: none;
 }
  .navSplitPagesLinks a{
      padding:10px;

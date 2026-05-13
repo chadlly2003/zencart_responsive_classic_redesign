@@ -621,7 +621,7 @@ a:link,a:hover,input {
      color: #4b0082;
      align-content: center;
 }
- #reviewsInfoDefaultReviewsListingLink span.normal_button:active {
+ #reviewsInfoDefaultReviewsListingLink a:focus span[class*="cssButton"] {
     border:none !important;  
 }
  span.cssButton.normal_button.button.button_more_reviews {

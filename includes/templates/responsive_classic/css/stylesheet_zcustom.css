@@ -1676,9 +1676,7 @@ a:link,a:hover,input {
      margin-top: 0 !important;
      margin-bottom: 0 !important;
 }
- #productReviewsDefaultProductImage {
-     margin: 0 !important;
-}
+ 
  #productAttributes input[type="text"] {
      margin-bottom: 0;
 }
@@ -2146,9 +2144,6 @@ a:link,a:hover,input {
      #productInfoNoProduct .button_continue {
          float: left;
     }
-     #reviewWriteMainImage img {
-         max-width: 300px !important;
-    }
      .spacer_read_more {
          text-align: left;
     }
@@ -2159,7 +2154,7 @@ a:link,a:hover,input {
     }
      .reviews_aligner_element {
          display: grid;
-         grid-template-columns: 2fr 1fr;
+         grid-template-columns: 1fr 1fr;
          gap: 1rem;
     }
      #productAttributes input[type="text"] {

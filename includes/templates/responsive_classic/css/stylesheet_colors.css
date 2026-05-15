@@ -81,7 +81,7 @@
  #cart-box.add-to-cart-N {
      background: inherit;
 }
- #navMainWrapper, #navSuppWrapper, #shippingEstimatorContent h2, #checkoutConfirmDefault .cartTableHeading, #navEZPagesTop, .productListing-rowheading a:hover, #sendSpendWrapper h2, #accountDefault #sendSpendWrapper h2, #gvFaqDefaultSubHeading, #checkoutPayAddressDefaultAddress, #checkoutShipAddressDefaultAddress, #accountLinksWrapper h2, h2#addressBookDefaultPrimary, #reviewsWriteHeading, #myAccountPaymentInfo h3, #myAccountShipInfo h3, span.cssButton.normal_button.button.button_more_reviews, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover {
+ #navMainWrapper, #navSuppWrapper, #shippingEstimatorContent h2, #checkoutConfirmDefault .cartTableHeading, #navEZPagesTop, .productListing-rowheading a:hover, #sendSpendWrapper h2, #accountDefault #sendSpendWrapper h2, #gvFaqDefaultSubHeading, #checkoutPayAddressDefaultAddress, #checkoutShipAddressDefaultAddress, #accountLinksWrapper h2, h2#addressBookDefaultPrimary, #reviewsWriteHeading, #myAccountPaymentInfo h3, #myAccountShipInfo h3, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover {
      background:transparent !important;
      color:#000;
 }
@@ -764,10 +764,7 @@
      font-size:16px;
 }
  #productreviewsinfoBody span.normal_button {
-     font-size: 16px;
      clear:both;
-     padding-left:0px;
-     padding-right:0px;
 }
  #productreviewsinfoBody .button_in_cart {
      border:solid 1px #FFD700;
@@ -781,13 +778,20 @@
      margin:0px !important;
 }
  #productreviewsinfoBody .button_goto_prod_details {
-     background:transparent !important;
-     color:#154DBC;
-     font-size:16px;
+     background:#006400;
+     color:#fff !important;
+     font-size:1.2em;
      display: flex;
      align-items: center;
-     min-height: 44px;
-     padding:0px;
+     padding:12px 20px;
+     font-weight: normal;
+     border:solid 1px #006400;
+     margin-top:1rem;
+     margin-bottom:1rem;
+}
+ #productreviewsinfoBody .button_goto_prod_details:hover {
+     background:#fff;
+     color:#006400 !important;
 }
  .reviewligner span.normal_button {
      font-size: 19px !important;

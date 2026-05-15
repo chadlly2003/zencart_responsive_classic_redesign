@@ -513,6 +513,7 @@ a:link,a:hover,input {
      margin-left: 0;
      min-height: 44px;
      align-content: center;
+     margin-left:-0.3rem;
 }
  #reviewsWrite span.cssButton.normal_button {
      background: transparent;
@@ -527,6 +528,7 @@ a:link,a:hover,input {
      margin-left: 0;
      min-height: 44px;
      align-content: center;
+     margin-left:-0.3rem;
 }
  #productreviewswriteBody .button_reviews {
      line-height: 0.1 !important;
@@ -584,9 +586,8 @@ a:link,a:hover,input {
      min-height: 44px;
 }
  #reviewsInfoDefaultProductPageLink {
-     text-align: left;
      text-align: center;
-     width: fit-content;
+     width: 100% 
 }
  #reviewsInfoDefault span.normal_button {
      margin: 0;
@@ -604,9 +605,6 @@ a:link,a:hover,input {
  #siteMapMainContent a:hover {
      text-decoration: none;
 }
- .spacer_element_button_add span.normal_button {
-     min-height: auto !important;
-}
  .reviewligner .button_write_review {
      min-height: 44px;
      display: block;
@@ -614,23 +612,19 @@ a:link,a:hover,input {
 }
  #reviewsInfoDefaultReviewsListingLink span.normal_button:hover {
      background: transparent;
-     text-align: left;
-     padding: 0;
-     margin: 0;
-     min-height: 44px;
      color: #4b0082;
-     align-content: center;
-}
- #reviewsInfoDefaultReviewsListingLink a:focus span[class*="cssButton"] {
-    border:none !important;  
+     border: solid 1px #4b0082;
 }
  span.cssButton.normal_button.button.button_more_reviews {
      text-align: left;
-     color: #4b0082;
-     padding: 0;
+     color: #fff;
+     padding: 12px 20px;
      margin: 0;
-     min-height: 44px;
      align-content: center;
+     text-align: center;
+     border: solid 1px #4b0082;
+     background: #4b0082;
+     font-weight:normal;
 }
  .reviews-wrapper {
      float: left;
@@ -662,30 +656,21 @@ a:link,a:hover,input {
 }
  #productReviewsDefaultProductPageLink {
      margin-bottom: 0;
-     font-size: 1.2em;
      display: block;
      margin-left: 0;
-     justify-content: left;
      clear: both;
      color: #4b0082;
-     float: left;
-     margin-top: 0;
-     margin-bottom: 0;
+     text-align: center;
+     width: 100%;
 }
  .button_goto_prod_details {
      color: #4b0082 !important 
-}
- #reviewsDefault span.cssButton.normal_button.button.button_in_cart {
-     font-size: 16px;
 }
  #reviewsDefault .button_read_reviewsHover {
      background: transparent;
      font-size: 0.9rem;
      display: block;
      padding: 0;
-}
- #reviewsDefault .button_in_cartHover {
-     width: calc(100% - 40px);
 }
  #reviewsDefault .reviews-wrapper {
      margin-top: 0;
@@ -703,6 +688,12 @@ a:link,a:hover,input {
 }
  #productreviewsBody #reviewsDefault .button_read_reviewsHover {
      margin-top: 0 !important;
+}
+ #reviewsBody .buttonRow a {
+    width: auto;
+}
+ #reviewsBody .button_goto_prod_details {
+    padding:0 !important;
 }
  .read_review a {
      display: inline-block;
@@ -873,12 +864,14 @@ a:link,a:hover,input {
      background-color: #FFD700;
      border: solid 1px #FFD700 !important;
      color: #000 !important;
-     width: calc(100% - 40px);
+     margin-bottom:1rem;
+     font-size:1.2em;
 }
  .box_review_spacver span.normal_button:hover {
      background-color: #fff;
      color: #000 !important;
-     width: calc(100% - 40px);
+     margin-bottom:1rem;
+     font-size:1.2em;
 }
  .box_review_spacver .button_sold_out {
      display: none;
@@ -1341,8 +1334,8 @@ a:link,a:hover,input {
      justify-content: center;
      flex-wrap: wrap;
 }
-.navSplitPagesLinks:empty {
-    display: none;
+ .navSplitPagesLinks:empty {
+     display: none;
 }
  .navSplitPagesLinks a{
      padding:10px;
@@ -1404,10 +1397,6 @@ a:link,a:hover,input {
      display: block;
      clear: both;
 }
- .block_element_reviewslinked a {
-     margin-bottom: 1rem;
-     display: block;
-}
  #reviewsInfoDefaultPrice {
      text-align: center;
      margin-bottom: 0;
@@ -1428,18 +1417,12 @@ a:link,a:hover,input {
      margin-bottom: 0;
 }
  .box_review_spacver {
-     margin-bottom: 2rem;
      text-align: center;
-     margin-top: 0;
 }
  .box_review_spacver .qmax {
      display: block;
      margin-top: -0.5rem;
      text-align: right;
-}
- .spacer_element_button_add {
-     margin-bottom: 1rem;
-     text-align: center;
 }
  #reviewsInfoDefault .productBasePrice {
      display: inline-block;
@@ -1523,13 +1506,6 @@ a:link,a:hover,input {
      display: flex;
      min-height: 44px;
      align-items: center;
-}
- #reviewsDefault .button_goto_prod_details {
-     padding: 0;
-     display: inline-block !important;
-     outline: none;
-     min-height: 44px;
-     align-content: center;
 }
  #bannerOne {
      margin-top: 1.5rem;
@@ -1933,10 +1909,14 @@ a:link,a:hover,input {
      background: transparent !important;
      color:#006400;
      margin-top:0 !important;
-     padding-top:0; 
+     padding-top:0;
 }
-#reviewsContent {
-    margin-bottom:2rem;
+ #reviewsContent {
+     margin-bottom:2rem;
+}
+ .realign_spacer2 {
+     margin-bottom: 1rem;
+     padding-bottom:1rem
 }
  @media (min-width: 576px) {
      div#logo {
@@ -2111,6 +2091,9 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 768px) {
+     #reviewsBody .button_goto_prod_details {
+        margin-left:-0.3rem;
+    }
      #productListing .cart-add {
          float:right 
     }
@@ -2163,10 +2146,6 @@ a:link,a:hover,input {
      #productInfoNoProduct .button_continue {
          float: left;
     }
-     .spacer_element_button_add span.normal_button {
-         width: 75%;
-         float: right;
-    }
      #reviewWriteMainImage img {
          max-width: 300px !important;
     }
@@ -2175,13 +2154,12 @@ a:link,a:hover,input {
     }
      .realign_spacer2 {
          display: grid;
-         grid-template-columns: repeat(2, 1fr);
+         grid-template-columns: 2fr 1fr;
          gap: 1rem;
-         margin-bottom: 1rem;
     }
      .reviews_aligner_element {
          display: grid;
-         grid-template-columns: repeat(2, 1fr);
+         grid-template-columns: 2fr 1fr;
          gap: 1rem;
     }
      #productAttributes input[type="text"] {
@@ -2206,17 +2184,6 @@ a:link,a:hover,input {
     }
      #cart-box input[type="text"] {
          width: auto !important;
-    }
-     #productreviewsinfoBody #productMainImage {
-         margin-bottom: 1rem;
-         max-width: 250px;
-    }
-     #reviewsDefault #productMainImage img {
-         margin-bottom: 0;
-         max-width: 250px;
-    }
-     #productreviewsBody #productMainImage {
-         margin-bottom: 1rem;
     }
      select {
          width: auto !important;
@@ -2245,10 +2212,6 @@ a:link,a:hover,input {
          margin-top: 3rem !important;
          margin-bottom: -2rem;
     }
-     #reviewsDefault .button_goto_prod_details {
-         justify-content: left;
-         display: inherit;
-    }
      #reviewsWrite .ratingRow {
          width: 30%;
          margin-bottom: 0;
@@ -2264,11 +2227,9 @@ a:link,a:hover,input {
          grid-template-columns: repeat(4, auto);
     }
      .box_review_spacver {
-         margin-bottom: 0;
-         float: right;
-         clear: right;
-         width: 75%;
-         text-align: right;
+         clear: both;
+         text-align:center;
+         width: 100%;
     }
      #reviewsInfoDefault .spacer_element_button_add {
          float: right;
@@ -2450,15 +2411,6 @@ a:link,a:hover,input {
          text-align: left;
          margin: 0;
     }
-     #reviewsInfoDefaultReviewsListingLink {
-         margin-left: 0;
-         float: left;
-         clear: both;
-    }
-     #reviewsInfoDefaultReviewsListingLink a {
-         min-height: 44px;
-         display: block;
-    }
      #reviewsInfoDefault .buttonRow a {
          clear: both;
          width: 100%;
@@ -2468,11 +2420,6 @@ a:link,a:hover,input {
      #reviewsInfoDefault .productBasePrice {
          text-align: right;
          display: block;
-    }
-     #reviewsInfoDefaultProductPageLink {
-         float: left;
-         display: block;
-         clear: both;
     }
      .spacer_element {
          margin-bottom: 1rem !important;

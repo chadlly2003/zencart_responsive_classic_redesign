@@ -1,6 +1,4 @@
-/*** Main Stylesheet Colors CSS** @copyright Copyright 2003-2024 Zen Cart Development Team* @copyright Portions Copyright 2003 osCommerce* @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0* @version $Id: DrByte 2024 Oct 19 Modified in v2.1.0 $*/
-/*bof font colors*/
- a:hover{
+a:hover{
      text-decoration: underline;
 }
  body, #tagline, #productQuantityDiscounts table, .categoryListBoxContents a, h2.greeting a {
@@ -794,7 +792,8 @@
      color:#006400 !important;
 }
  .reviewligner span.normal_button {
-     font-size: 19px !important;
+     font-size: 1.2rem !important;
+     padding:0 !important;
 }
  #productReviewLink {
      float:none !important;

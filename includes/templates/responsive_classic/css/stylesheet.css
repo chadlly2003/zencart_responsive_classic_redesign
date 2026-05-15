@@ -145,7 +145,7 @@
      border: 1px solid rgba(0, 150, 255, 1) !important;
      outline: rgba(0, 150, 255, 1);
 }
- #productReviewLink a:focus span[class*="cssButton"], #productReviewLink a:focus-visible span[class*="cssButton"], #productReviewLink a:active span[class*="cssButton"], a:focus span.button_goto_prod_details, a:focus span.button_goto_prod_detailsHover, a:focus-visible span.button_goto_prod_details, a:focus-visible span.button_goto_prod_detailsHover, a:focus span.button_write_review, a:focus span.button_write_reviewHover, a:focus-visible span.button_write_review, a:focus-visible span.button_write_reviewHover, a:focus span.button_read_reviews, a:focus span.button_read_reviewsHover, a:focus-visible span.button_read_reviews, a:focus-visible span.button_read_reviewsHover, a:focus span.button_reviews, a:focus span.button_reviewsHover, a:focus-visible span.button_reviews, a:focus-visible span.button_reviewsHover {
+ #productReviewLink a:focus span[class*="cssButton"], #productReviewLink a:focus-visible span[class*="cssButton"], #productReviewLink a:active span[class*="cssButton"],a:focus span.button_write_review, a:focus span.button_write_reviewHover, a:focus-visible span.button_write_review, a:focus-visible span.button_write_reviewHover, a:focus span.button_read_reviews, a:focus span.button_read_reviewsHover, a:focus-visible span.button_read_reviews, a:focus-visible span.button_read_reviewsHover, a:focus span.button_reviews, a:focus span.button_reviewsHover, a:focus-visible span.button_reviews, a:focus-visible span.button_reviewsHover {
      outline: none !important;
      box-shadow: none !important;
      border: none !important;

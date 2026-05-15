@@ -1297,6 +1297,10 @@ body {
  #reviewsDefault .prod-list-wrap{
      margin-bottom:0;
 }
+
+#productReviewsDefaultListingBottomNumber:empty {
+     display:none !important;
+}
  #reviewsInfoDefault .rating{
      margin-top:1rem;
      margin-bottom:0;

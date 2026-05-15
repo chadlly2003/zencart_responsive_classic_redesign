@@ -2149,12 +2149,12 @@ a:link,a:hover,input {
     }
      .realign_spacer2 {
          display: grid;
-         grid-template-columns: 2fr 1fr;
+         grid-template-columns: repeat(2, 1fr);
          gap: 1rem;
     }
      .reviews_aligner_element {
          display: grid;
-         grid-template-columns: 1fr 1fr;
+         grid-template-columns: repeat(2, 1fr);
          gap: 1rem;
     }
      #productAttributes input[type="text"] {

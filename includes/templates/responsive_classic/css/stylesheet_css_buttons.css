@@ -74,13 +74,13 @@
      background:transparent;
 }
  #productreviewsBody span.cssButton.normal_button.button.button_goto_prod_details {
-     margin-top:1rem;
      color: #fff !important;
      background: #006400;
      border:solid 1px #006400;
      padding-top:12px;
      padding-bottom:12px;
      margin-top:0;
+     margin-bottom: 1rem;
 }
  #productreviewsBody .button_goto_prod_details:hover {
      background: transparent;
@@ -90,6 +90,7 @@
      padding-top:12px;
      padding-bottom:12px;
      margin-top:0;
+     margin-bottom: 1rem;
 }
  #reviewsDefault .button_in_cart:hover {
      float:none;

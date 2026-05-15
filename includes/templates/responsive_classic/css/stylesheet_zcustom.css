@@ -614,6 +614,7 @@ a:link,a:hover,input {
      background: transparent;
      color: #4b0082;
      border: solid 1px #4b0082;
+     margin-bottom:1rem;
 }
  span.cssButton.normal_button.button.button_more_reviews {
      text-align: left;
@@ -625,6 +626,7 @@ a:link,a:hover,input {
      border: solid 1px #4b0082;
      background: #4b0082;
      font-weight:normal;
+     margin-bottom:1rem;
 }
  .reviews-wrapper {
      float: left;
@@ -1922,7 +1924,7 @@ a:link,a:hover,input {
 }
  .realign_spacer2 {
      margin-bottom: 1rem;
-     padding-bottom:1rem;
+     padding-bottom:2rem;
      border-bottom:solid 1px #ccc;
 }
  @media (min-width: 576px) {

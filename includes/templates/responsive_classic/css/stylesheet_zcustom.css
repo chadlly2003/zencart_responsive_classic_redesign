@@ -632,7 +632,7 @@ a:link,a:hover,input {
      text-align: center;
 }
  .spacer_read_more {
-     border-top: solid 1px #ccc;
+   
      padding-bottom: 1rem;
      padding-top: 0;
      text-align: center;
@@ -1273,7 +1273,6 @@ a:link,a:hover,input {
      color: #006400;
      text-align: left;
      padding-top: 1rem;
-     border-top: solid 1px #ccc;
      margin-bottom: 1rem;
 }
  #productReviewsDefaultListingBottomNumber {
@@ -1339,6 +1338,9 @@ a:link,a:hover,input {
 }
  .navSplitPagesLinks:empty {
      display: none;
+}
+#productReviewsDefaultListingTopNumber:empty {
+    display:none;
 }
  .navSplitPagesLinks a{
      padding:10px;
@@ -1920,7 +1922,8 @@ a:link,a:hover,input {
 }
  .realign_spacer2 {
      margin-bottom: 1rem;
-     padding-bottom:1rem
+     padding-bottom:1rem;
+     border-bottom:solid 1px #ccc;
 }
  @media (min-width: 576px) {
      div#logo {

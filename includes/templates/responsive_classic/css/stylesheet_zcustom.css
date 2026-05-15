@@ -634,7 +634,6 @@ a:link,a:hover,input {
      text-align: center;
 }
  .spacer_read_more {
-   
      padding-bottom: 1rem;
      padding-top: 0;
      text-align: center;
@@ -694,10 +693,10 @@ a:link,a:hover,input {
      font-size: 0.9rem;
 }
  #reviewsBody .buttonRow a {
-    width: auto;
+     width: auto;
 }
  #reviewsBody .button_goto_prod_details {
-    padding:0 !important;
+     padding:0 !important;
 }
  .read_review a {
      display: inline-block;
@@ -1341,8 +1340,8 @@ a:link,a:hover,input {
  .navSplitPagesLinks:empty {
      display: none;
 }
-#productReviewsDefaultListingTopNumber:empty {
-    display:none;
+ #productReviewsDefaultListingTopNumber:empty {
+     display:none;
 }
  .navSplitPagesLinks a{
      padding:10px;
@@ -1611,9 +1610,9 @@ a:link,a:hover,input {
  #reviewsInfoDefaultProductImage img {
      margin-bottom: 0 !important;
 }
-
-.rating {margin-bottom: 0;}
-
+ .rating {
+    margin-bottom: 0;
+}
  #reviewsWrite .ratingRow {
      margin-top: 1rem;
 }
@@ -1686,7 +1685,6 @@ a:link,a:hover,input {
      margin-top: 0 !important;
      margin-bottom: 0 !important;
 }
- 
  #productAttributes input[type="text"] {
      margin-bottom: 0;
 }
@@ -1927,6 +1925,15 @@ a:link,a:hover,input {
      padding-bottom:2rem;
      border-bottom:solid 1px #ccc;
 }
+ #productreviewsBody .box_review_spacver {
+     margin-bottom:1rem;
+}
+ .box_review_spacver:not(:has(*)) {
+     display: none;
+}
+ #productReviewsDefaultPrice {
+     margin-bottom: 1rem;
+}
  @media (min-width: 576px) {
      div#logo {
          max-width: 230px;
@@ -2101,7 +2108,10 @@ a:link,a:hover,input {
 }
  @media (min-width: 768px) {
      #reviewsBody .button_goto_prod_details {
-        margin-left:-0.3rem;
+         margin-left:-0.3rem;
+    }
+     #productreviewsBody .box_review_spacver {
+         text-align: right;
     }
      #productListing .cart-add {
          float:right 
@@ -2258,8 +2268,8 @@ a:link,a:hover,input {
          text-align: center;
          float: right;
     }
-     #productReviewsDefaultPrice {
-         margin-bottom: 1rem;
+     #productreviewsBody .productPriceDiscount {
+         margin-bottom:0;
     }
      .unsubscribebutton {
          margin-top: 1rem;

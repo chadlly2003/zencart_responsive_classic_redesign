@@ -1,6 +1,4 @@
-/*** Main CSS Stylesheet** @copyright Copyright 2003-2024 Zen Cart Development Team* @copyright Portions Copyright 2003 osCommerce* @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0* @version $Id: Jeff Rutt 2024 Sep 11 Modified in v2.1.0 $*/
-/*bof basic elements*/
- body {
+body {
      margin:0;
      font-family:verdana, arial, helvetica, sans-serif;
      font-size:75%;
@@ -781,10 +779,7 @@
      margin-bottom:0;
      text-align:center;
 }
-/*bof images*/
- #reviewsInfoDefaultProductImage, #productReviewsDefaultProductImage {
-     margin:0 1em 1em 0;
-}
+ 
 /*bof center boxes*/
  .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {
      margin-top:1rem;

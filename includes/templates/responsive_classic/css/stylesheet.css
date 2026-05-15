@@ -779,7 +779,6 @@ body {
      margin-bottom:0;
      text-align:center;
 }
- 
 /*bof center boxes*/
  .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {
      margin-top:1rem;
@@ -1293,12 +1292,12 @@ body {
      clear:both;
      background: #FFF8DC;
      padding: 1rem;
+     margin-top:2rem;
 }
  #reviewsDefault .prod-list-wrap{
      margin-bottom:0;
 }
-
-#productReviewsDefaultListingBottomNumber:empty {
+ #productReviewsDefaultListingBottomNumber:empty {
      display:none !important;
 }
  #reviewsInfoDefault .rating{

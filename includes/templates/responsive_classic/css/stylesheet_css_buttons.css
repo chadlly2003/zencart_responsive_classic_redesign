@@ -9,9 +9,18 @@
      display:inline-block;
      min-height: 44px;
      align-content: center;
+     width: 100%;
 }
  #reviewsDefault .button:active {
      outline:none;
+}
+ #reviewsBody a:focus span[class*="cssButton"] {
+     border:none !important;
+     outline:none !important;
+}
+ #reviewsWriteProductPageLink span {
+     border:none !important;
+     outline:none !important;
 }
  .button, input.button, input.cssButtonHover {
      display:inline-block;
@@ -45,10 +54,10 @@
      justify-content: center;
 }
  #productReviewsDefaultProductPageLink span.normal_button {
-     font-size: 16px;
      padding: 0px;
      background: transparent;
      display: flex;
+     align-items: center;
 }
  span.cssButton.normal_button.button.button_more_reviews, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover{
      display:block;
@@ -65,19 +74,22 @@
      background:transparent;
 }
  #productreviewsBody span.cssButton.normal_button.button.button_goto_prod_details {
-     background: transparent;
-     font-size: 16px;
-     color: #000;
-     display:contents;
+     margin-top:1rem;
+     color: #fff !important;
+     background: #006400;
+     border:solid 1px #006400;
+     padding-top:12px;
+     padding-bottom:12px;
+     margin-top:0;
 }
  #productreviewsBody .button_goto_prod_details:hover {
      background: transparent;
-     font-size:16px;
-     display: contents;
-}
- #productreviewsBody span.cssButton.normal_button.button.button_goto_prod_details:hover {
-     background: transparent;
-     font-size: 16px;
+     color:#006400 !important;
+     border:solid 1px #006400;
+     margin-top:1rem;
+     padding-top:12px;
+     padding-bottom:12px;
+     margin-top:0;
 }
  #reviewsDefault .button_in_cart:hover {
      float:none;
@@ -85,6 +97,7 @@
      text-align:center;
      padding:12px 20px;
      display:block;
+     font-size:1.2em;
 }
  #reviewsDefault .forward:hover {
      font-size:16px;
@@ -169,7 +182,7 @@
  #manufacturers input.cssButtonHover {
      color: #AC171D;
      background-color: #fff;
-     border: solid 1px #AC171D; 
+     border: solid 1px #AC171D;
 }
  #productmusicinfoBody .button_ask_a_question {
      background:#fff;

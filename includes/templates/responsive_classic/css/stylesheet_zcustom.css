@@ -668,7 +668,7 @@ a:link,a:hover,input {
 }
  #reviewsDefault .button_read_reviewsHover {
      background: transparent;
-     font-size: 0.9rem;
+     font-size: 1.2em;
      display: block;
      padding: 0;
 }
@@ -685,9 +685,11 @@ a:link,a:hover,input {
 }
  #productreviewsBody span.cssButton.normal_button.button.button_read_reviews {
      margin-top: 0 !important;
+     font-size: 0.9rem;
 }
  #productreviewsBody #reviewsDefault .button_read_reviewsHover {
      margin-top: 0 !important;
+     font-size: 0.9rem;
 }
  #reviewsBody .buttonRow a {
     width: auto;
@@ -701,10 +703,10 @@ a:link,a:hover,input {
 }
  #reviewsDefault .spacerreviewsa {
      text-align: center;
-     margin-top: 1rem;
+     margin-top: 0;
 }
  #reviewsDefault .button_write_review {
-     font-size: 19px;
+     font-size: 1.2rem;
      background: transparent;
      color: #8A4514;
      padding: 0;
@@ -720,6 +722,7 @@ a:link,a:hover,input {
      background: transparent;
      min-height: 44px;
      align-items: center;
+     font-size: 1.2rem !important;
 }
  .block_element_reviewslinked {
      padding-top: 0.5rem;
@@ -1604,6 +1607,9 @@ a:link,a:hover,input {
  #reviewsInfoDefaultProductImage img {
      margin-bottom: 0 !important;
 }
+
+.rating {margin-bottom: 0;}
+
  #reviewsWrite .ratingRow {
      margin-top: 1rem;
 }

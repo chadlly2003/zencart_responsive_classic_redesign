@@ -683,6 +683,7 @@ a:link,a:hover,input {
      color: #154DBC;
      display: block;
      padding: 0;
+     margin-top:0 !important;
 }
  #productreviewsBody span.cssButton.normal_button.button.button_read_reviews {
      margin-top: 0 !important;
@@ -731,7 +732,7 @@ a:link,a:hover,input {
 }
  .reviews-wrapper .smallProductImage img {
      margin-bottom: 1rem;
-     margin-top: 30px;
+     margin-top: 1rem;
 }
  .reviews-wrapper .button_goto_prod_details {
      background: transparent;
@@ -868,14 +869,16 @@ a:link,a:hover,input {
      background-color: #FFD700;
      border: solid 1px #FFD700 !important;
      color: #000 !important;
-     margin-bottom:1rem;
+     margin-bottom:0;
      font-size:1.2em;
+     width: 100%;
 }
  .box_review_spacver span.normal_button:hover {
      background-color: #fff;
      color: #000 !important;
-     margin-bottom:1rem;
+     margin-bottom:0;
      font-size:1.2em;
+     width: 100%;
 }
  .box_review_spacver .button_sold_out {
      display: none;
@@ -1427,8 +1430,8 @@ a:link,a:hover,input {
 }
  .box_review_spacver .qmax {
      display: block;
-     margin-top: -0.5rem;
-     text-align: right;
+     margin-top: 0.5rem;
+     text-align: center;
 }
  #reviewsInfoDefault .productBasePrice {
      display: inline-block;
@@ -1611,7 +1614,7 @@ a:link,a:hover,input {
      margin-bottom: 0 !important;
 }
  .rating {
-    margin-bottom: 0;
+     margin-bottom: 0;
 }
  #reviewsWrite .ratingRow {
      margin-top: 1rem;
@@ -1838,7 +1841,7 @@ a:link,a:hover,input {
  #acctNewslettersDefault .forward, #accountNotifications .forward,#addressbookprocessBody .forward,#accountpasswordBody .forward, #accounteditBody .forward,#addressBookDefault .forward, #contactUsDefault .forward, #askaquestionBody .forward, #searchDefault .forward {
      float: none;
 }
- #bannerSix a, #cartAdd a, #bannerboxallContent a, .box_review_spacver a, .spacer_element_button_add a {
+ #bannerSix a, #cartAdd a, #bannerboxallContent a, .spacer_element_button_add a {
      min-height: 44px;
      display: block;
 }
@@ -1921,7 +1924,7 @@ a:link,a:hover,input {
      margin-bottom:2rem;
 }
  .realign_spacer2 {
-     margin-bottom: 1rem;
+     margin-bottom: 2rem;
      padding-bottom:2rem;
      border-bottom:solid 1px #ccc;
 }
@@ -1933,6 +1936,13 @@ a:link,a:hover,input {
 }
  #productReviewsDefaultPrice {
      margin-bottom: 1rem;
+}
+ .box_review_spacver a {
+    display:flex;
+    justify-content: center;
+    min-height: 44px;
+    align-items: center;
+    width: 100%;
 }
  @media (min-width: 576px) {
      div#logo {
@@ -2107,6 +2117,13 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 768px) {
+     .box_review_spacver a {
+        justify-content: end;
+    }
+     .box_review_spacver .qmax {
+        text-align: right;
+        margin-top:0;
+    }
      #reviewsBody .button_goto_prod_details {
          margin-left:-0.3rem;
     }
@@ -2365,7 +2382,7 @@ a:link,a:hover,input {
          text-align: right;
     }
      .reviews-wrapper .smallProductImage {
-         margin: inherit;
+         margin: 0;
     }
      #checkoutConfirmDefault .confirm-order {
          margin-top: 0rem;
@@ -2373,7 +2390,6 @@ a:link,a:hover,input {
          float: right;
     }
      .reviews-wrapper {
-         margin: inherit;
          text-align: left;
     }
      #checkoutConfirmDefault .confirmorder {
@@ -2419,7 +2435,6 @@ a:link,a:hover,input {
      .reviews-wrapper .smallProductImage img {
          float: left;
          margin-right: 1rem;
-         margin-bottom: 3rem;
          margin-top: 0;
          width: 100px;
     }

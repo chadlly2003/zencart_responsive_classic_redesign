@@ -36,9 +36,17 @@
     } else {
       $link= '<a href="' . zen_href_link($_GET['main_page'], zen_get_all_get_params(array('action', 'reviews_id')) . 'action=buy_now') . '">' . zen_image_button(BUTTON_IMAGE_IN_CART, BUTTON_IN_CART_ALT) . '</a>';
     }
-    $the_button = $link;
+ $the_button = $link;
     $products_link = '';
-    echo zen_get_buy_now_button($review->fields['products_id'], $the_button, $products_link) . ' ' . zen_get_products_quantity_min_units_display($review->fields['products_id']);
+
+    echo zen_get_buy_now_button(
+            $review->fields['products_id'],
+            $the_button,
+            $products_link
+         )
+         . '<div class="qty-min-units">'
+         . zen_get_products_quantity_min_units_display($review->fields['products_id'])
+         . '</div>';
   ?>
         </div>
 

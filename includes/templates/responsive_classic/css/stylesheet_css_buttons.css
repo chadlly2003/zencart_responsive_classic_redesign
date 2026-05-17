@@ -79,18 +79,13 @@
      border:solid 1px #006400;
      padding-top:12px;
      padding-bottom:12px;
-     margin-top:0;
-     margin-bottom: 1rem;
 }
  #productreviewsBody .button_goto_prod_details:hover {
      background: transparent;
      color:#006400 !important;
      border:solid 1px #006400;
-     margin-top:1rem;
      padding-top:12px;
      padding-bottom:12px;
-     margin-top:0;
-     margin-bottom: 1rem;
 }
  #reviewsDefault .button_in_cart:hover {
      float:none;

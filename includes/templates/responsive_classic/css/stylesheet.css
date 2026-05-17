@@ -805,7 +805,7 @@ body {
  .productPriceDiscount{
      display:block;
      margin-top:0;
-     margin-bottom:12px;
+     margin-bottom:0;
 }
  .productPriceDiscount br{
      display:none;
@@ -895,7 +895,7 @@ body {
      text-align:center;
      text-decoration:underline;
      margin-bottom:1rem;
-     margin-top:1rem;
+     margin-top:0;
 }
  #searchresultBody .list-more {
      width:auto;
@@ -1110,6 +1110,7 @@ body {
      text-align:center;
      margin:10px 0 10px 0;
      font-weight:normal;
+     justify-content: ;
 }
  .productSpecialPrice{
      font-size:120%;
@@ -1139,9 +1140,6 @@ body {
  #attribsOptionsText{
      margin-bottom:10px;
      margin-top:0 !important;
-}
- #cartAdd {
-     text-align:center;
 }
  #cartAdd input[type=text]{
      -moz-box-sizing: border-box;

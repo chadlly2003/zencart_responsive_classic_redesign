@@ -67,9 +67,6 @@
      text-align:center;
      padding:12px 20px;
 }
- #indexBody span.cssButton.normal_button.button.button_in_cart, #indexBody .button_in_cart:hover{
-     display:inline-block;
-}
  span.cssButton.normal_button.button.button_goto_prod_details{
      background:transparent;
 }
@@ -151,7 +148,7 @@
      height: 48px;
      width:100% !important;
 }
- #productinfoBody #cartAdd a {
+ #cartAdd a {
      font-size:22px;
      width:auto;
      text-align:left;
@@ -232,15 +229,13 @@
  #cartAdd {
      width:100%;
      display:flex;
-     margin-bottom:0;
+     margin-bottom: 1rem;
+     margin-top: 1rem;
      position: relative;
+     justify-content: end;
 }
  #cartAdd input {
      border:solid 1px #ccc;
-}
- #productinfoBody span.normal_button {
-     background: #fff;
-     padding:0px;
 }
  .button_send {
      background:#7B3F00;

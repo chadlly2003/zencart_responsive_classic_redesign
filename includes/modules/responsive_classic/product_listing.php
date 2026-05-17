@@ -353,22 +353,30 @@ case 'PRODUCT_LIST_NAME':
     $lc_text .= '<span class="mfgLink list-mfg">' . $listing_mfg_name . '</span>';
     break;
 
-                case 'PRODUCT_LIST_PRICE':
-                    $lc_align = 'center';
-                    if ($product_listing_layout_style === 'table') $lc_align = 'right';
-                    $lc_text = '';
-                    $lc_text .= '<div class="list-price">';
-                    $lc_text .= $listing_price;
-                    $lc_text .= '</div>';
-                    $lc_text .= zen_get_buy_now_button($record['products_id'], $lc_button, $more_info_button);
-                    $lc_text .= zen_get_products_quantity_min_units_display($record['products_id']);
-                    if (zen_get_show_product_switch($record['products_id'], 'ALWAYS_FREE_SHIPPING_IMAGE_SWITCH')) {
-                        if (zen_get_product_is_always_free_shipping($record['products_id'])) {
-                            $lc_text .= '<br>';
-                            //$lc_text .= TEXT_PRODUCT_FREE_SHIPPING_ICON;
-                        }
-                    }
-                    break;
+             case 'PRODUCT_LIST_PRICE':
+    $lc_align = 'center';
+    if ($product_listing_layout_style === 'table') $lc_align = 'right';
+
+    $lc_text = '';
+
+    $lc_text .= '<div class="list-price">';
+    $lc_text .= $listing_price;
+    $lc_text .= '</div>';
+
+    $lc_text .= zen_get_buy_now_button($record['products_id'], $lc_button, $more_info_button);
+
+    // Quantity/min units wrapper
+    $lc_text .= '<div class="min-units2">';
+    $lc_text .= zen_get_products_quantity_min_units_display($record['products_id']);
+    $lc_text .= '</div>';
+
+    if (zen_get_show_product_switch($record['products_id'], 'ALWAYS_FREE_SHIPPING_IMAGE_SWITCH')) {
+        if (zen_get_product_is_always_free_shipping($record['products_id'])) {
+            $lc_text .= '<br>';
+            //$lc_text .= TEXT_PRODUCT_FREE_SHIPPING_ICON;
+        }
+    }
+    break;
 
                 case 'PRODUCT_LIST_QUANTITY':
                     $lc_align = 'center';

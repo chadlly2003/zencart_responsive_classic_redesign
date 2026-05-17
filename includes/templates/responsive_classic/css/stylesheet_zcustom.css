@@ -357,7 +357,6 @@ a:link,a:hover,input {
 }
  #shoppingCartDefault .qmax, #shoppingCartDefault .qmin, #shoppingCartDefault .qunit, #shoppingCartDefault .qmix {
      display: block;
-     text-align: center;
 }
  #shoppingCartDefault .tableHeading TH {
      border-bottom: none;
@@ -614,7 +613,6 @@ a:link,a:hover,input {
      background: transparent;
      color: #4b0082;
      border: solid 1px #4b0082;
-     margin-bottom:1rem;
 }
  span.cssButton.normal_button.button.button_more_reviews {
      text-align: left;
@@ -626,7 +624,6 @@ a:link,a:hover,input {
      border: solid 1px #4b0082;
      background: #4b0082;
      font-weight:normal;
-     margin-bottom:1rem;
 }
  .reviews-wrapper {
      float: left;
@@ -672,6 +669,7 @@ a:link,a:hover,input {
      font-size: 1.2em;
      display: block;
      padding: 0;
+     margin-top:0 !important;
 }
  #reviewsDefault .reviews-wrapper {
      margin-top: 0;
@@ -725,10 +723,6 @@ a:link,a:hover,input {
      min-height: 44px;
      align-items: center;
      font-size: 1.2rem !important;
-}
- .block_element_reviewslinked {
-     padding-top: 0.5rem;
-     text-align: center;
 }
  .reviews-wrapper .smallProductImage img {
      margin-bottom: 1rem;
@@ -869,14 +863,12 @@ a:link,a:hover,input {
      background-color: #FFD700;
      border: solid 1px #FFD700 !important;
      color: #000 !important;
-     margin-bottom:0;
      font-size:1.2em;
      width: 100%;
 }
  .box_review_spacver span.normal_button:hover {
      background-color: #fff;
      color: #000 !important;
-     margin-bottom:0;
      font-size:1.2em;
      width: 100%;
 }
@@ -1406,10 +1398,6 @@ a:link,a:hover,input {
      display: block;
      clear: both;
 }
- #reviewsInfoDefaultPrice {
-     text-align: center;
-     margin-bottom: 0;
-}
  .reviews_elementblock {
      font-size: 16px;
 }
@@ -1420,18 +1408,6 @@ a:link,a:hover,input {
      justify-content: center;
      justify-items: center;
      align-items: center;
-}
- .block_element_reviewslinked h2 {
-     margin-top: 0;
-     margin-bottom: 0;
-}
- .box_review_spacver {
-     text-align: center;
-}
- .box_review_spacver .qmax {
-     display: block;
-     margin-top: 0.5rem;
-     text-align: center;
 }
  #reviewsInfoDefault .productBasePrice {
      display: inline-block;
@@ -1454,11 +1430,6 @@ a:link,a:hover,input {
 }
  .addresscontinue {
      margin-bottom: 1rem;
-}
- .spacer_element_button_add .qmax {
-     display: block;
-     margin-top: 0.6rem;
-     text-align: right;
 }
  #checkoutConfirmDefaultHeadingComments {
      color: #154DBC;
@@ -1928,21 +1899,45 @@ a:link,a:hover,input {
      padding-bottom:2rem;
      border-bottom:solid 1px #ccc;
 }
- #productreviewsBody .box_review_spacver {
-     margin-bottom:1rem;
-}
  .box_review_spacver:not(:has(*)) {
      display: none;
 }
- #productReviewsDefaultPrice {
-     margin-bottom: 1rem;
-}
  .box_review_spacver a {
+     display:flex;
+     justify-content: center;
+     min-height: 44px;
+     align-items: center;
+     width: 100%;
+}
+ .block_element_reviewslinked {
+    display: grid;
+     gap:1rem;
+    text-align: center;
+}
+ #productreviewsinfoBody .qmin,#productreviewsinfoBody .qunit, #productreviewsinfoBody .qmax {
+    margin-top:0.5rem;
+    display: inline-block;
+}
+ #productreviewsBody .qmin,#productreviewsBody .qunit, #productreviewsBody .qmax {
+    margin-top:0.5rem;
+     display: inline-block;
+}
+ #productreviewsinfoBody .productBasePrice, #productreviewsinfoBody .productPriceDiscount, #productreviewsinfoBody h2 {
+    margin-bottom:0;
+}
+ #productreviewsBody .productBasePrice, #productreviewsBody .productPriceDiscount, #productreviewsBody h2 {
+    margin-bottom:0;
+}
+ #productreviewsBody .productBasePrice, #productreviewsinfoBody .productBasePrice, .productReviewsDefaultPrice {
+    text-align: center;
+}
+ #productReviewsDefaultPrice, #reviewsInfoDefaultPrice {
+    text-align: center;
+}
+ .qty-min-units {
     display:flex;
+    gap:0.5rem;
     justify-content: center;
-    min-height: 44px;
-    align-items: center;
-    width: 100%;
 }
  @media (min-width: 576px) {
      div#logo {
@@ -2117,18 +2112,30 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 768px) {
-     .box_review_spacver a {
-        justify-content: end;
+     .qty-min-units {
+        justify-content: right;
     }
-     .box_review_spacver .qmax {
-        text-align: right;
+     #productreviewsinfoBody .qmin,#productreviewsinfoBody .qunit, #productreviewsinfoBody .qmax {
         margin-top:0;
+    }
+     #productreviewsBody .qmin,#productreviewsBody .qunit, #productreviewsBody .qmax {
+        margin-top:0;
+    }
+     #productreviewsBody .productBasePrice, #productreviewsinfoBody .productBasePrice, .productReviewsDefaultPrice {
+        text-align: right;
+    }
+     #productReviewsDefaultPrice, #reviewsInfoDefaultPrice {
+        text-align: right;
+    }
+     .block_element_reviewslinked {
+        height: fit-content;
+         text-align: right;
+    }
+     .box_review_spacver a {
+         justify-content: end;
     }
      #reviewsBody .button_goto_prod_details {
          margin-left:-0.3rem;
-    }
-     #productreviewsBody .box_review_spacver {
-         text-align: right;
     }
      #productListing .cart-add {
          float:right 
@@ -2261,7 +2268,6 @@ a:link,a:hover,input {
     }
      .box_review_spacver {
          clear: both;
-         text-align:center;
          width: 100%;
     }
      #reviewsInfoDefault .spacer_element_button_add {
@@ -2269,24 +2275,10 @@ a:link,a:hover,input {
          width: 40%;
          text-align: right;
          clear: right;
-         ;
     }
      .reviews_elementblock {
          font-size: 16px;
          float: right;
-    }
-     #reviewsInfoDefaultPrice {
-         text-align: center;
-         float: right;
-         margin-top: 0;
-         margin-bottom: 0 !important;
-    }
-     #productreviewsBody #productReviewsDefaultPrice {
-         text-align: center;
-         float: right;
-    }
-     #productreviewsBody .productPriceDiscount {
-         margin-bottom:0;
     }
      .unsubscribebutton {
          margin-top: 1rem;
@@ -2461,15 +2453,6 @@ a:link,a:hover,input {
      #reviewsInfoDefault span.normal_button {
          text-align: left;
          margin: 0;
-    }
-     #reviewsDefault .productBasePrice {
-         text-align: right;
-         margin-bottom: 0 !important;
-    }
-     .block_element_reviewslinked {
-         margin-top: 0;
-         padding-top: 0;
-         text-align: right;
     }
      #reviewsWrite .forward {
          float: right;

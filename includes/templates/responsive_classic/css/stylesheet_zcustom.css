@@ -78,6 +78,7 @@ a:link,a:hover,input {
      margin-bottom: 0;
      margin-top: 3rem;
      width: calc(100% - 32px);
+     display: inline-block;
      -webkit-appearance: none;
      -webkit-touch-callout: none;
      -webkit-tap-highlight-color: transparent;
@@ -86,14 +87,16 @@ a:link,a:hover,input {
      -ms-user-select: none;
 }
  .qty_cart_qty {
-     text-align: right !important;
-     float: right;
      position: relative;
      top: 33px;
+     display: flex;
 }
  .max-qty {
      position: absolute;
      margin-top: 3.5rem !important;
+     display: flex;
+     gap:0.5rem;
+     justify-content: end;
 }
  .qty_cart_qty p {
      margin-top: -2.9rem;
@@ -200,14 +203,18 @@ a:link,a:hover,input {
      margin-top: 1rem;
      width: 79px;
 }
- #productinfoBody #productPrices {
-     margin: 0;
+ #productPrices {
      line-height: normal;
+     text-align: left;
+     font-size:1.5em;
+     margin:10px 0 10px 0;
+     margin-bottom:0;
+     font-weight:normal;
 }
- #productinfoBody .productPriceDiscount {
+ #productPriceDiscount {
      margin-bottom: 0;
 }
- #productinfoBody #productPrices img {
+ #productPrices img {
      margin-top: 0.5rem;
 }
  #productsListingBottomNumber, #productsListingTopNumber {
@@ -223,10 +230,6 @@ a:link,a:hover,input {
  .centerBoxContentsAlsoPurch:hover {
      background: #F0F8FF !important;
      border-radius: 5px;
-}
- #cartAdd {
-     margin-bottom: 1rem;
-     margin-top: 1rem;
 }
  #orderStatus caption {
      text-align: left;
@@ -267,11 +270,10 @@ a:link,a:hover,input {
  .productBasePrice {
      color: #000;
      display: block;
-     ;
-     margin-bottom: 1rem;
+     margin-bottom: 0;
 }
- #productinfoBody .productBasePrice {
-     margin-bottom:0;
+ #productListing .product-base-price {
+     margin-bottom: 1rem;
 }
  .productSalePrice {
      color: #000;
@@ -354,9 +356,6 @@ a:link,a:hover,input {
      padding-top: 0.5rem;
      margin: 0;
      width: 100%;
-}
- #shoppingCartDefault .qmax, #shoppingCartDefault .qmin, #shoppingCartDefault .qunit, #shoppingCartDefault .qmix {
-     display: block;
 }
  #shoppingCartDefault .tableHeading TH {
      border-bottom: none;
@@ -1749,9 +1748,6 @@ a:link,a:hover,input {
      margin-right: 0;
      justify-content: center;
 }
- #productListing .gridlayout .qmax {
-     float: none;
-}
  #productListing .gridlayout .list-more {
      width: 100%;
      text-align: center;
@@ -1875,10 +1871,6 @@ a:link,a:hover,input {
  .button_add_address {
      margin-top:1rem;
 }
- #productListing .qmax {
-     display: inline-block;
-     justify-content: center;
-}
  #productListing .button_buy_now {
      margin-bottom: 0.5rem;
 }
@@ -1910,34 +1902,45 @@ a:link,a:hover,input {
      width: 100%;
 }
  .block_element_reviewslinked {
-    display: grid;
+     display: grid;
      gap:1rem;
-    text-align: center;
-}
- #productreviewsinfoBody .qmin,#productreviewsinfoBody .qunit, #productreviewsinfoBody .qmax {
-    margin-top:0.5rem;
-    display: inline-block;
-}
- #productreviewsBody .qmin,#productreviewsBody .qunit, #productreviewsBody .qmax {
-    margin-top:0.5rem;
-     display: inline-block;
+     text-align: center;
 }
  #productreviewsinfoBody .productBasePrice, #productreviewsinfoBody .productPriceDiscount, #productreviewsinfoBody h2 {
-    margin-bottom:0;
+     margin-bottom:0;
 }
  #productreviewsBody .productBasePrice, #productreviewsBody .productPriceDiscount, #productreviewsBody h2 {
-    margin-bottom:0;
+     margin-bottom:0;
 }
  #productreviewsBody .productBasePrice, #productreviewsinfoBody .productBasePrice, .productReviewsDefaultPrice {
-    text-align: center;
+     text-align: center;
 }
  #productReviewsDefaultPrice, #reviewsInfoDefaultPrice {
-    text-align: center;
+     text-align: center;
 }
  .qty-min-units {
-    display:flex;
-    gap:0.5rem;
-    justify-content: center;
+     display:flex;
+     gap:0.5rem;
+     justify-content: center;
+     margin-top:0.5rem;
+}
+ .spacer_element_button_add:has(.qty-min-units:empty) {
+     display: none;
+}
+ .box_review_spacver:has(.qty-min-units:empty) {
+     display: none;
+}
+ .min-units2 {
+     display: flex;
+     clear:right;
+     gap: 0.5rem;
+     justify-content: center;
+}
+ .min-units2:empty {
+     display: none;
+}
+ #cartContentsDisplay .qmin, #cartContentsDisplay .qunit, #cartContentsDisplay .qmax, #cartContentsDisplay .qmix {
+     display: block;
 }
  @media (min-width: 576px) {
      div#logo {
@@ -2028,7 +2031,7 @@ a:link,a:hover,input {
      #cartContentsDisplay .cartImage {
          margin-top: 0;
     }
-     #productinfoBody #productPrices img {
+     #productPrices img {
          margin-bottom: 0;
          margin-top: -45px;
          margin-left: auto;
@@ -2112,23 +2115,27 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 768px) {
+     .min-units2 {
+         justify-content: end;
+    }
+     .qty_cart_qty {
+         margin-left:5% 
+    }
      .qty-min-units {
-        justify-content: right;
+         justify-content: right;
+         margin-top:0;
     }
-     #productreviewsinfoBody .qmin,#productreviewsinfoBody .qunit, #productreviewsinfoBody .qmax {
-        margin-top:0;
-    }
-     #productreviewsBody .qmin,#productreviewsBody .qunit, #productreviewsBody .qmax {
-        margin-top:0;
+     #productreviewsinfoBody .qmin,#productreviewsinfoBody .qunit, #productreviewsinfoBody .qmax, #productreviewsinfoBody .qmix {
+         margin-top:0;
     }
      #productreviewsBody .productBasePrice, #productreviewsinfoBody .productBasePrice, .productReviewsDefaultPrice {
-        text-align: right;
+         text-align: right;
     }
      #productReviewsDefaultPrice, #reviewsInfoDefaultPrice {
-        text-align: right;
+         text-align: right;
     }
      .block_element_reviewslinked {
-        height: fit-content;
+         height: fit-content;
          text-align: right;
     }
      .box_review_spacver a {
@@ -2136,9 +2143,6 @@ a:link,a:hover,input {
     }
      #reviewsBody .button_goto_prod_details {
          margin-left:-0.3rem;
-    }
-     #productListing .cart-add {
-         float:right 
     }
      #productListing .list-input {
          margin-top:0.5rem;
@@ -2343,28 +2347,12 @@ a:link,a:hover,input {
      #indexProductList .button_buy_now {
          float: right;
     }
-     #indexProductList .qmax {
-         float: right;
-         margin-top: 0;
-    }
      #cart-box {
          width: 100%;
-    }
-     .qty_cart_qty {
-         text-align: right !important;
-    }
-     #productGeneral .qty_cart_qty {
-         clear: none;
-         float: none;
     }
      #productListing .productFreePrice {
          margin-top: 0;
          margin-bottom: 0;
-    }
-     #productGeneral .max-qty {
-         position: absolute;
-         margin-top: 3.5rem !important;
-         margin-left: 5%;
     }
      #navSuppWrapper {
          display: block;
@@ -2483,13 +2471,6 @@ a:link,a:hover,input {
          float: right;
          margin-top: 0;
          margin-bottom: 0;
-         margin-left: 6px;
-    }
-     #productListing .qmax {
-         display:inline-flex;
-         justify-content: end;
-         float:right;
-         clear:right;
     }
      .cartTotalDisplay {
          display: block;
@@ -2631,10 +2612,6 @@ a:link,a:hover,input {
      #contactusBody .back, #shippinginfoBody .buttonRow, #aboutusBody .buttonRow, #privacyBody .buttonRow, #conditionsBody .buttonRow, #sitemapBody .buttonRow, #discountcouponBody .back, #passwordforgottenBody .back, #searchresultBody .back, #searchDefault .back {
          float: left;
     }
-     #productinfoBody #cartAdd a {
-         font-size: 22px;
-         margin-left: 0 !important;
-    }
      #productsallBody span.button_sold_out {
          float: left;
     }
@@ -2665,9 +2642,6 @@ a:link,a:hover,input {
     }
      .button_continue_shopping {
          margin-bottom: 1rem;
-    }
-     .cart-add {
-         text-align: right;
     }
      #accessibilityBody .buttonRow {
          float: left 

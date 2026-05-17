@@ -757,13 +757,6 @@ a:hover{
  #searchDefault .centeredContent {
      text-align: left;
 }
- #productreviewsinfoBody .button_write_review {
-     background: transparent !important;
-     font-size:16px;
-}
- #productreviewsinfoBody span.normal_button {
-     clear:both;
-}
  #productreviewsinfoBody .button_in_cart {
      border:solid 1px #FFD700;
      background:#FFD700;
@@ -771,9 +764,6 @@ a:hover{
 }
  #productreviewsinfoBody .button_in_cart:hover {
      background: #fff;
-}
- #reviewsInfoDefaultProductImage {
-     margin:0px !important;
 }
  #productreviewsinfoBody .button_goto_prod_details {
      background:#006400;
@@ -784,8 +774,6 @@ a:hover{
      padding:12px 20px;
      font-weight: normal;
      border:solid 1px #006400;
-     margin-top:1rem;
-     margin-bottom:1rem;
 }
  #productreviewsinfoBody .button_goto_prod_details:hover {
      background:#fff;

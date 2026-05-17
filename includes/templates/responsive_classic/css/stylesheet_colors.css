@@ -679,9 +679,6 @@ a:hover{
  #upcoming-products {
      border:none;
 }
- #productPrices {
-     text-align: left;
-}
  #productDateAdded {
      padding-top:6px;
      padding-bottom:6px;
@@ -826,12 +823,6 @@ a:hover{
 }
  #askaquestionBody legend {
      color:#000;
-}
- #documentproductinfoBody span.normal_button {
-     background: transparent !important;
-}
- #documentgeneralinfoBody span.normal_button {
-     background: transparent !important;
 }
  #lookup-discount-coupon {
      height: 48.3px !important;

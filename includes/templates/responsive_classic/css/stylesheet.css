@@ -274,9 +274,6 @@ body {
      margin-top:1rem;
      margin-bottom: 1rem;
 }
- .messageStackWarning img, .messageStackError img, .messageStackSuccess img, .messageStackCaution img {
-     display:none 
-}
  .alert.forward {
      display: flex;
      justify-content: left;
@@ -448,7 +445,7 @@ body {
      max-width: 1280px;
      margin-bottom:1rem;
     /* display:block;
-     */
+    */
      display:none;
 }
  #indexHomeBody #navEZPagesTop {
@@ -953,21 +950,19 @@ body {
      margin-bottom:1rem;
      margin-top:1rem;
 }
+ .navSplitPagesResult:empty {
+    display:none;
+}
+ .navSplitPagesResult {
+    color:#006400;
+    margin-top:1rem;
+     margin-bottom: 1rem;
+}
  #productsListingListingBottomLinks, #allProductsListingTopLinks, #allProductsListingBottomLinks, #featuredProductsListingTopLinks, #featuredProductsListingBottomLinks, #newProductsDefaultListingTopLinks, #newProductsDefaultListingBottomLinks, #productsListingListingTopLinks{
      width:100%;
 }
- #productsListingBottomNumber, #allProductsListingBottomNumber, #allProductsListingTopNumber, #productsListingTopNumber {
-     margin-top:0;
-}
- #newProductsDefaultListingTopNumber, #newProductsDefaultListingBottomNumber {
-     width:25%;
-     margin-left:-72.5%;
-     margin-top:0;
-}
- #featuredProductsListingBottomNumber, #featuredProductsListingTopNumber {
-     width:25%;
-     margin-left:-71%;
-     margin-top:0;
+ .sideBoxContentItem .productBasePrice {
+    text-align: center !important;
 }
  .button-bottom{
      height:auto;
@@ -1046,30 +1041,14 @@ body {
      clear:both;
 }
  .categoryIcon {
-     float:left;
-     width:35%;
-     display:none;
+     width:auto;
+     text-align: center !important;
 }
  .categoryIcon a{
      text-decoration:none;
 }
  .categoryIcon img{
-     margin-bottom:5px;
-}
- .navNextPrevWrapper {
-     padding-bottom: 5px;
-     float:right;
-     margin-bottom:30px;
-}
- .navNextPrevCounter {
-     margin:0;
-     font-size:0.9em;
-}
- .navNextPrevList {
-     display:inline;
-     white-space:nowrap;
-     padding:0.5em 0;
-     list-style-type: none;
+     margin-bottom:0.5rem;
 }
  #pinfo-left{
      width:100%;
@@ -1292,11 +1271,8 @@ body {
      padding: 1rem;
      margin-top:2rem;
 }
- #reviewsDefault .prod-list-wrap{
-     margin-bottom:0;
-}
  #productReviewsDefaultListingBottomNumber:empty {
-     display:none !important;
+     display:none;
 }
  #reviewsInfoDefault .rating{
      margin-top:1rem;

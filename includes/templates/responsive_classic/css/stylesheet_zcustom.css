@@ -198,11 +198,6 @@ a:link,a:hover,input {
      margin-top: 2rem;
      border-radius: 5px;
 }
- #pinfo-right #freeShippingIcon {
-     margin: 0;
-     margin-top: 1rem;
-     width: 79px;
-}
  #productPrices {
      line-height: normal;
      text-align: left;
@@ -242,7 +237,7 @@ a:link,a:hover,input {
      display: none;
 }
  #productListing .list-price {
-     display:none !important 
+     display:none 
 }
  .navNextPrevWrapper {
      align-content: center;
@@ -408,9 +403,6 @@ a:link,a:hover,input {
      padding-bottom: 1rem;
      background: #fff;
 }
- #popupShippingEstimator #stText {
-     display: none 
-}
  #popupShippingEstimator #state, #popupShippingEstimator #postcode {
      margin-bottom: 0;
 }
@@ -440,9 +432,6 @@ a:link,a:hover,input {
 }
  #shoppingcartBody .centerBoxHeading {
      margin-bottom: 12px;
-}
- .cat-count {
-     display: none;
 }
  form select {
      min-height: 48px;
@@ -1008,9 +997,6 @@ a:link,a:hover,input {
 }
  #accountHistInfo table th {
      padding: 0.5rem 
-}
- #shoppingCartDefault #upcoming-products {
-     display: none;
 }
  #accountHistInfo .accountTotalDisplay {
      text-align: center;
@@ -1808,7 +1794,7 @@ a:link,a:hover,input {
  #reviewWriteMainImage .main-image {
      margin: auto;
 }
- #productListing br,#whatsNew br,#featuredProducts br,#reviewsWritePrice br,#reviewsInfoDefaultPrice br,.block_element_reviewslinked br,#cartContentsDisplay br,#shippingEstimatorContent br,#pinfo-right br,.max-qty br,.centerBoxContentsAlsoPurch br, #csNotifications br, .centerBoxContentsFeaturedCategories br, #specialsDefault br, #orderStatus br, #searchBody br, #accounteditBody br, #addressbookprocessBody br, #accountnewslettersBody br, .cartProductDisplay br,#checkoutPayment .payment br, #loginDefault br, #createAcctDefault br, #passwordforgottenBody br {
+ #productListing br,#whatsNew br,#featuredProducts br,#reviewsWritePrice br,#reviewsInfoDefaultPrice br,.block_element_reviewslinked br,#cartContentsDisplay br,#shippingEstimatorContent br,#pinfo-right br,.max-qty br,.centerBoxContentsAlsoPurch br, #csNotifications br, .centerBoxContentsFeaturedCategories br, #specialsDefault br, #orderStatus br, #searchBody br, #accounteditBody br, #addressbookprocessBody br, #accountnewslettersBody br, .cartProductDisplay br,#checkoutPayment .payment br, #loginDefault br, #createAcctDefault br, #passwordforgottenBody br, .productPriceDiscount br, #gvFaqDefaultMainContent br {
      display: none;
 }
  #acctNewslettersDefault .back,#accountNotifications .back,#addressbookprocessBody .back,#accountpasswordBody .back,#accounteditBody .back, #addressBookDefault .back,#contactUsDefault .back, #searchDefault .back, #searchresultBody .back {
@@ -1960,7 +1946,58 @@ a:link,a:hover,input {
  .free-shipping-icon img {
      margin-bottom: 1rem;
 }
+ .categoryIcon {
+     width:auto;
+     text-align: center !important;
+}
+ .categoryIcon a{
+     text-decoration:none;
+     min-width: 44px;
+     min-height: 44px;
+     display: block;
+}
+ #pinfo-right #freeShippingIcon {
+     margin-top:0.5rem;
+}
+ #upcomingProductsTable tr:nth-child(odd) {
+     background-color: #F0F8FF;
+}
+ #upcomingProductsTable th, td {
+     padding-top:0.5rem;
+     padding-bottom:0.5rem;
+}
+ #upcomingProductsTable {
+     width: 100%;
+}
+ #upcomingProductsTable a {
+     color:#1450AF;
+}
+ #upcomingProductsTable a:hover {
+     text-decoration: underline;
+}
+ #upProductsHeading {
+     text-align:left;
+     background: transparent !important;
+}
+ #upDateHeading {
+     text-align:right;
+     background: transparent!important;
+}
+ #shoppingcartBody #upcomingProductsTable .tableHeading, #shoppingcartBody #upcomingProductsTable .rowEven, #shoppingcartBody #upcomingProductsTable .rowOdd {
+     display: table-row;
+     border:none;
+}
+ .search_box {
+     display:none;
+}
  @media (min-width: 576px) {
+     #pinfo-right #freeShippingIcon {
+         margin-bottom: 0;
+         margin-top: -45px;
+         margin-left: auto;
+         display: block;
+         text-align: right;
+    }
      #cat-top {
          grid-template-columns: 1fr 1fr;
     }
@@ -2057,13 +2094,6 @@ a:link,a:hover,input {
          margin-top: -45px;
          margin-left: auto;
          display: block;
-    }
-     #pinfo-right #freeShippingIcon {
-         float: right;
-         margin-top: -60px;
-         margin-right: 2rem;
-         margin-bottom: 0;
-         margin-bottom: 0;
     }
      .cartProductDisplay img {
          display: block;

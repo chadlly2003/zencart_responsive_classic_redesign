@@ -250,26 +250,11 @@ a:hover{
  #whatsnewHeading a {
      color:#000;
 }
- #featured {
-     display:none;
-}
- #bannerbox{
-     display:none;
-}
- #moreinformation {
-     display:none;
-}
  .spacer1, .spacer2 {
      display:none !important;
 }
- .home-image {
-     display: none;
-}
  #filter-wrapper {
      background:#fff;
-}
- #headerWrapper input[type="checkbox"] {
-     display:none;
 }
  #headerWrapper {
      border-bottom:solid 1px #ccc;
@@ -825,13 +810,6 @@ a:hover{
      height: 48.3px !important;
      width:100% !important;
 }
- #upcomingProductsTable tr:nth-child(odd) {
-     background-color: #F0F8FF;
-}
- #upcomingProductsTable th, td {
-     padding-top:0.5rem;
-     padding-bottom:0.5rem;
-}
  #passwordForgottenMainContent {
      padding:1rem;
      background: #FFF8DC;
@@ -919,9 +897,6 @@ a:hover{
      background-color: #fff;
      color: #006400;
      height: 48px;
-}
- .search_box {
-     display:none;
 }
  .search_box input {
      padding: .375rem .75rem;

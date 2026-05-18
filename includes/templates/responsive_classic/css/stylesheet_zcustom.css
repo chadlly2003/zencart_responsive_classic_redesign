@@ -219,7 +219,7 @@ a:link,a:hover,input {
 }
  #productsListingBottomNumber, #productsListingTopNumber {
      margin-bottom: 1rem;
-     padding-top: 1rem;
+     margin-top: 1rem;
 }
  #productListing .list-input input[type="text"] {
      width: 21% !important;
@@ -244,12 +244,32 @@ a:link,a:hover,input {
  #productListing .list-price {
      display:none !important 
 }
+ .navNextPrevWrapper {
+     align-content: center;
+     display: flex;
+     flex-direction:column;
+     justify-content: center;
+     gap:1rem;
+     margin-bottom:1rem;
+}
+ .navNextPrevList span.normal_button {
+     border:solid 1px #FFD700 
+}
+ .navNextPrevList {
+     background: #FFD700;
+     color:#000;
+     border-radius: 0.25rem;
+}
+ .navNextPrevList:hover {
+     background: #fff;
+     color:#FFD700;
+}
+ .navNextPrevList a{
+     color:#000;
+}
  #productListing .product-base-price {
      font-size: 140%;
      display:block;
-}
- #productListing .product-base-price img {
-     display:none;
 }
  .btn-outline-primary {
      border: solid 1px #fff !important;
@@ -742,17 +762,8 @@ a:link,a:hover,input {
      margin: auto;
      max-width: 500px;
 }
- #reviewsDefaultListingTopNumber {
-     color: #006400;
-     margin-bottom: 1rem;
-}
  #reviewsDefaultListingTopLinks {
      margin-bottom: 1rem !important;
-}
- #reviewsDefaultListingBottomNumber {
-     color: #006400;
-     margin-top: 1rem;
-     margin-bottom: 1rem;
 }
  #categoryImgListing img {
      width: 100px;
@@ -1265,16 +1276,14 @@ a:link,a:hover,input {
      padding: 1rem;
 }
  #productReviewsDefaultListingTopNumber {
-     color: #006400;
      text-align: left;
-     padding-top: 1rem;
      margin-bottom: 1rem;
+     margin-top:1rem;
 }
  #productReviewsDefaultListingBottomNumber {
-     color: #006400;
      text-align: left;
-     padding-top: 1rem;
      margin-bottom: 1rem;
+     margin-top:1rem;
 }
  .brandImage img {
      padding-bottom: 0.5rem;
@@ -1948,9 +1957,12 @@ a:link,a:hover,input {
      justify-content: center;
      text-align: center;
 }
+ .free-shipping-icon img {
+     margin-bottom: 1rem;
+}
  @media (min-width: 576px) {
      #cat-top {
-        grid-template-columns: 1fr 1fr;
+         grid-template-columns: 1fr 1fr;
     }
      div#logo {
          max-width: 230px;
@@ -2048,7 +2060,7 @@ a:link,a:hover,input {
     }
      #pinfo-right #freeShippingIcon {
          float: right;
-         margin-top: -70px;
+         margin-top: -60px;
          margin-right: 2rem;
          margin-bottom: 0;
          margin-bottom: 0;
@@ -2124,6 +2136,22 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 768px) {
+     .free-shipping-icon img {
+         margin-bottom: 0;
+    }
+     .free-shipping-icon {
+         float:left;
+         margin-right:1rem;
+    }
+     .navNextPrevCounter, .navNextPrevWrapper {
+         flex-direction:row;
+         justify-content: end;
+         gap:0.5rem;
+         margin-bottom:0;
+    }
+     .categoryIcon {
+         float:left;
+    }
      .min-units2 {
          justify-content: end;
     }

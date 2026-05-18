@@ -103,7 +103,7 @@ body {
      clear:both;
 }
  .no-fouc {
-     display: none;
+     display:none;
 }
  .italic{
      font-style:italic;
@@ -445,7 +445,7 @@ body {
      max-width: 1280px;
      margin-bottom:1rem;
     /* display:block;
-    */
+     */
      display:none;
 }
  #indexHomeBody #navEZPagesTop {
@@ -804,9 +804,6 @@ body {
      margin-top:0;
      margin-bottom:0;
 }
- .productPriceDiscount br{
-     display:none;
-}
 /*bof categories and product listing*/
  #productListHeading{
      font-weight:normal;
@@ -951,18 +948,18 @@ body {
      margin-top:1rem;
 }
  .navSplitPagesResult:empty {
-    display:none;
+     display:none;
 }
  .navSplitPagesResult {
-    color:#006400;
-    margin-top:1rem;
+     color:#006400;
+     margin-top:1rem;
      margin-bottom: 1rem;
 }
  #productsListingListingBottomLinks, #allProductsListingTopLinks, #allProductsListingBottomLinks, #featuredProductsListingTopLinks, #featuredProductsListingBottomLinks, #newProductsDefaultListingTopLinks, #newProductsDefaultListingBottomLinks, #productsListingListingTopLinks{
      width:100%;
 }
  .sideBoxContentItem .productBasePrice {
-    text-align: center !important;
+     text-align: center !important;
 }
  .button-bottom{
      height:auto;
@@ -1040,16 +1037,6 @@ body {
      width:100%;
      clear:both;
 }
- .categoryIcon {
-     width:auto;
-     text-align: center !important;
-}
- .categoryIcon a{
-     text-decoration:none;
-}
- .categoryIcon img{
-     margin-bottom:0.5rem;
-}
  #pinfo-left{
      width:100%;
 }
@@ -1097,9 +1084,6 @@ body {
 }
  #mediaManagerHeading{
      font-weight:normal;
-}
- #freeShippingIcon{
-     margin:10px 0 10px 30px;
 }
  #productQuantityDiscounts table{
      margin:0 auto 0 auto;
@@ -1382,14 +1366,6 @@ body {
      font-size:1500%;
 }
 /*bof misc*/
- #upProductsHeading {
-     text-align:left;
-     background: transparent !important;
-}
- #upDateHeading {
-     text-align:right;
-     background: transparent!important;
-}
  #siteMapList {
      width:100%;
 }
@@ -1503,13 +1479,4 @@ body {
      min-height: 44px;
      display: block;
      align-content: center;
-}
- #gvFaqDefaultMainContent br {
-     display:none;
-}
- #upcomingProductsTable a {
-     color:#1450AF;
-}
- #upcomingProductsTable a:hover {
-     text-decoration: underline;
 }

@@ -811,9 +811,13 @@ body {
      display:none;
 }
 /*bof categories and product listing*/
- #productListHeading, #indexCategoriesHeading{
+ #productListHeading{
      font-weight:normal;
-     margin-bottom:20px;
+     margin-top:0;
+}
+ #indexCategoriesHeading {
+     font-weight:normal;
+     margin-top:0;
 }
  .categoryListBoxContents a{
      font-size:1.2em;
@@ -830,10 +834,6 @@ body {
 }
  #indexProductListCatDescription{
      margin:0;
-}
- #cat-top{
-     margin-bottom:20px;
-     display:none;
 }
  #cat-left{
      text-align:center;

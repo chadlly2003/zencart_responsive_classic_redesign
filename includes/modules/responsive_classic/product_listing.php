@@ -338,6 +338,7 @@ case 'PRODUCT_LIST_NAME':
 
     
 // Base Price
+// Base Price
 $extra_images = '';
 
 if (defined('PRODUCT_LIST_PRICE') && PRODUCT_LIST_PRICE) {
@@ -362,6 +363,16 @@ if (defined('PRODUCT_LIST_PRICE') && PRODUCT_LIST_PRICE) {
             '',
             $listing_price
         );
+    }
+
+    // ADD THIS BLOCK HERE
+    if (zen_get_show_product_switch($record['products_id'], 'ALWAYS_FREE_SHIPPING_IMAGE_SWITCH')) {
+        if (zen_get_product_is_always_free_shipping($record['products_id'])) {
+
+            $extra_images .= '<div class="free-shipping-icon">';
+            $extra_images .= TEXT_PRODUCT_FREE_SHIPPING_ICON;
+            $extra_images .= '</div>';
+        }
     }
 
     $details .= '<div class="product-base-price">' . $listing_price . '</div>';
@@ -400,13 +411,6 @@ $lc_text .= '</div>'; // end product-container
     $lc_text .= '<div class="min-units2">';
     $lc_text .= zen_get_products_quantity_min_units_display($record['products_id']);
     $lc_text .= '</div>';
-
-  if (zen_get_show_product_switch($record['products_id'], 'ALWAYS_FREE_SHIPPING_IMAGE_SWITCH')) {
-                        if (zen_get_product_is_always_free_shipping($record['products_id'])) {
-                            $lc_text .= '<br>';
-                            $lc_text .= TEXT_PRODUCT_FREE_SHIPPING_ICON;
-                        }
-                    }
                     break;
 
                 case 'PRODUCT_LIST_QUANTITY':

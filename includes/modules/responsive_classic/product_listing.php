@@ -336,13 +336,44 @@ case 'PRODUCT_LIST_NAME':
         $details .= '<div class="product-manufacturer"><strong>Manufactured by:</strong> <a href="' . $listing_mfg_link . '">' . $listing_mfg_name . '</a></div>';
     }
 
-    // Base Price
-    if (defined('PRODUCT_LIST_PRICE') && PRODUCT_LIST_PRICE) {
-    $details .= '<div class="product-base-price"> ' . $listing_price . '</div>';
+    
+// Base Price
+$extra_images = '';
+
+if (defined('PRODUCT_LIST_PRICE') && PRODUCT_LIST_PRICE) {
+
+    // Match ALL images containing free.png or call_for_prices.png
+    preg_match_all(
+        '/<img[^>]+(?:free\.png|call_for_prices\.png)[^>]*>/i',
+        $listing_price,
+        $matches
+    );
+
+    // If images found
+    if (!empty($matches[0])) {
+
+        $extra_images = '<div class="free-shipping-icon">';
+        $extra_images .= implode('', $matches[0]);
+        $extra_images .= '</div>';
+
+        // Remove images + preceding <br>
+        $listing_price = preg_replace(
+            '/<br\s*\/?>\s*<img[^>]+(?:free\.png|call_for_prices\.png)[^>]*>/i',
+            '',
+            $listing_price
+        );
     }
 
-    $lc_text .= '<div class="productDetailslistings">' . $details . '</div>';
-    $lc_text .= '</div>'; // end product-container
+    $details .= '<div class="product-base-price">' . $listing_price . '</div>';
+}
+ 
+$lc_text .= '<div class="productDetailslistings">' . $details . '</div>';
+$lc_text .= $extra_images;
+
+// OUTSIDE productDetailslistings
+ 
+
+$lc_text .= '</div>'; // end product-container
 
     break;
 
@@ -370,13 +401,13 @@ case 'PRODUCT_LIST_NAME':
     $lc_text .= zen_get_products_quantity_min_units_display($record['products_id']);
     $lc_text .= '</div>';
 
-    if (zen_get_show_product_switch($record['products_id'], 'ALWAYS_FREE_SHIPPING_IMAGE_SWITCH')) {
-        if (zen_get_product_is_always_free_shipping($record['products_id'])) {
-            $lc_text .= '<br>';
-            //$lc_text .= TEXT_PRODUCT_FREE_SHIPPING_ICON;
-        }
-    }
-    break;
+  if (zen_get_show_product_switch($record['products_id'], 'ALWAYS_FREE_SHIPPING_IMAGE_SWITCH')) {
+                        if (zen_get_product_is_always_free_shipping($record['products_id'])) {
+                            $lc_text .= '<br>';
+                            $lc_text .= TEXT_PRODUCT_FREE_SHIPPING_ICON;
+                        }
+                    }
+                    break;
 
                 case 'PRODUCT_LIST_QUANTITY':
                     $lc_align = 'center';

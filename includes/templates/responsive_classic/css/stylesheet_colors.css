@@ -88,7 +88,7 @@ a:hover{
  h3.rightBoxHeading a:hover, h3.leftBoxHeading a:hover {
      text-decoration: none;
 }
- span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.button.small_edit, .seDisplayedAddressLabel, TR.tableHeading, .prod-list-wrap, #myAccountPaymentInfo h4, #myAccountShipInfo h4 {
+ span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.button.small_edit, .seDisplayedAddressLabel, TR.tableHeading, #myAccountPaymentInfo h4, #myAccountShipInfo h4 {
      background:#fff;
      color:#000;
 }
@@ -247,9 +247,6 @@ a:hover{
  #navCatTabs {
      display:none;
 }
- #whatsnew {
-     display: none;
-}
  #whatsnewHeading a {
      color:#000;
 }
@@ -262,7 +259,7 @@ a:hover{
  #moreinformation {
      display:none;
 }
- .spacer1, .spacer2, .navNextPrevCounter, .navNextPrevWrapper {
+ .spacer1, .spacer2 {
      display:none !important;
 }
  .home-image {

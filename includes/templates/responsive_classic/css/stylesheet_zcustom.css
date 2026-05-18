@@ -1789,7 +1789,7 @@ a:link,a:hover,input {
  .product-manufacturer a {
      display: initial;
 }
- .productDetailslistings .product-model {
+ .productDetailslistings {
      margin-top:0.5rem;
 }
  .productDetailslistings:empty {
@@ -1942,7 +1942,16 @@ a:link,a:hover,input {
  #cartContentsDisplay .qmin, #cartContentsDisplay .qunit, #cartContentsDisplay .qmax, #cartContentsDisplay .qmix {
      display: block;
 }
+ #cat-top{
+     margin-bottom:20px;
+     display: grid;
+     justify-content: center;
+     text-align: center;
+}
  @media (min-width: 576px) {
+     #cat-top {
+        grid-template-columns: 1fr 1fr;
+    }
      div#logo {
          max-width: 230px;
     }

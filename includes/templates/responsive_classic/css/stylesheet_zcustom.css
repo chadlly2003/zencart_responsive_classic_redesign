@@ -1016,14 +1016,6 @@ a:link,a:hover,input {
  #accountHistInfo #orderHistoryStatus {
      margin-top: 2rem 
 }
- #accountHistInfo .accountTaxDisplay {
-     text-align: center;
-     vertical-align: baseline;
-     display: none !important;
-}
- #myAccountTax {
-     display: none;
-}
  #checkoutShipping address {
      font-style: normal;
      background: #F0F8FF;
@@ -1398,9 +1390,6 @@ a:link,a:hover,input {
      display: inline-block;
      margin-bottom: 1rem !important;
 }
- #ccTaxHeading {
-     display: none;
-}
  #productAdditionalImages {
      display: grid;
      grid-template-columns: repeat(3, auto);
@@ -1557,9 +1546,6 @@ a:link,a:hover,input {
      float: left;
      max-width: 92px;
 }
- .cartTotalDisplay_tax {
-     display: none;
-}
  #reviewsInfoDefaultProductImage img {
      margin-bottom: 0 !important;
 }
@@ -1611,9 +1597,6 @@ a:link,a:hover,input {
  .centerColumn {
      padding-left: 0;
      padding-right: 0;
-}
- #siteinfoLegal a:first-of-type {
-     display: none !important;
 }
  .button_create_account, .button_create_accountHover {
      width: auto !important;
@@ -1832,12 +1815,12 @@ a:link,a:hover,input {
      color: #000;
 }
  #ezPageDefault .button_continue {
-    background: #FFD700;
-    color:#000;
-    border:solid 1px #FFD700;
+     background: #FFD700;
+     color:#000;
+     border:solid 1px #FFD700;
 }
  #ezPageDefault .button_continue:hover {
-    background: #fff;
+     background: #fff;
      border:solid 1px #ffd700;
 }
  #navEZPageNextPrev {

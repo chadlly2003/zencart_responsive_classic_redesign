@@ -266,18 +266,22 @@ body {
      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 /*bof warnings, errors, messages*/
- .messageStackWarning, .messageStackError, .messageStackSuccess, .messageStackCaution, .alert {
+ .messageStackWarning, .messageStackError, .messageStackSuccess, .messageStackCaution {
      line-height:1.8em;
      text-align: left;
      color:#900404;
      background: transparent;
      margin-top:1rem;
      margin-bottom: 1rem;
-     display: flex;
-     gap:0.5rem;
+}
+ .alert {
+    color:#900404;
 }
  .messageStackWarning img, .messageStackError img, .messageStackSuccess img, .messageStackCaution img, .alert img {
+     width: 30px;
      height: 27px;
+     float:left;
+     margin-right:0.5rem;
 }
  .alert.forward {
      display: flex;

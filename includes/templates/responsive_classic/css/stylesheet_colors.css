@@ -764,7 +764,6 @@ a:hover{
 }
  #productReviewLink {
      float:none !important;
-     margin-top:1rem !important;
      margin-bottom:0 !important;
      display: flex;
      justify-content: center;

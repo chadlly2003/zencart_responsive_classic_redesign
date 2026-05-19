@@ -871,12 +871,6 @@ a:link,a:hover,input {
      font-size:1.2em;
      width: 100%;
 }
- .box_review_spacver .button_sold_out {
-     display: none;
-}
- .spacer_element_button_add .button_sold_out {
-     display: none;
-}
  .button_delete {
      margin-top: 1rem;
 }
@@ -1807,7 +1801,7 @@ a:link,a:hover,input {
      min-height: 44px;
      display: block;
 }
- .list-model, .list-quantity, .list-weight, .mfgLink, .markProductOutOfStock {
+ .list-model, .list-quantity, .list-weight, .mfgLink {
      display: none;
 }
  #page2Body .buttonRow, #page3Body .buttonRow, #page4Body .buttonRow, #pagenotfoundBody .buttonRow, #passwordforgottenBody .buttonRow, #searchDefault .buttonRow {
@@ -1919,11 +1913,29 @@ a:link,a:hover,input {
      justify-content: center;
      margin-top:0.5rem;
 }
- .spacer_element_button_add:has(.qty-min-units:empty) {
-     display: none;
+ .box_review_spacver span.normal_button {
+     padding-top:12px;
+     padding-bottom: 12px;
 }
- .box_review_spacver:has(.qty-min-units:empty) {
-     display: none;
+ .box_review_spacver span.button_sold_out {
+     border: #fff !important;
+     color: #8B0000 !important;
+     padding: 0px;
+     background: transparent;
+     outline: none;
+     font-size: 22px;
+}
+ .box_review_spacver span.button_sold_out:hover {
+     border: #fff !important;
+     color: #8B0000 !important;
+     padding: 0px;
+     background: transparent;
+     outline: none;
+     font-size: 22px;
+}
+ .review-buy-now .button_in_cart {
+    background: #FFD700;
+    color:#000;
 }
  .min-units2 {
      display: flex;
@@ -1945,7 +1957,7 @@ a:link,a:hover,input {
      text-align: center;
 }
  #categoryImgListing img {
-    margin-bottom:1rem;
+     margin-bottom:1rem;
 }
  .free-shipping-icon img {
      margin-bottom: 1rem;
@@ -2173,6 +2185,12 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 768px) {
+     .spacer_element_button_add span.button_sold_out {
+        justify-content: end;
+    }
+     .box_review_spacver span.button_sold_out {
+        justify-content: end;
+    }
      .free-shipping-icon img {
          margin-bottom: 0;
     }

@@ -1941,7 +1941,11 @@ a:link,a:hover,input {
      margin-bottom:20px;
      display: grid;
      justify-content: center;
+     align-items: center;
      text-align: center;
+}
+ #categoryImgListing img {
+    margin-bottom:1rem;
 }
  .free-shipping-icon img {
      margin-bottom: 1rem;
@@ -2000,6 +2004,9 @@ a:link,a:hover,input {
     }
      #cat-top {
          grid-template-columns: 1fr 1fr;
+    }
+     #categoryImgListing img {
+         margin-bottom:0;
     }
      div#logo {
          max-width: 230px;

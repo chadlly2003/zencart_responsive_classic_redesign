@@ -130,9 +130,6 @@ a:link,a:hover,input {
      display: table;
      content: "";
 }
- #productreviewswriteBody>[class^="col"]:nth-child(2) {
-     display: none !important;
-}
  .onerow-fluid:after {
      clear: both;
      display: none !important;
@@ -233,11 +230,8 @@ a:link,a:hover,input {
      color: #900404;
      margin-bottom: 1rem;
 }
- .list-price img {
-     display: none;
-}
  #productListing .list-price {
-     display:none 
+     display: none 
 }
  .navNextPrevWrapper {
      align-content: center;
@@ -334,7 +328,6 @@ a:link,a:hover,input {
 }
  .cartTotalDisplay {
      display: none;
-     color: #1250a7;
 }
  #checkoutconfirmationBody .cartTotalDisplay {
      display: block !important;
@@ -734,7 +727,7 @@ a:link,a:hover,input {
      margin: 0;
 }
  .button_write_review {
-    margin:0;
+     margin:0;
 }
  .reviews-wrapper .smallProductImage img {
      margin-bottom: 1rem;
@@ -1328,7 +1321,7 @@ a:link,a:hover,input {
      display: none;
 }
  #productReviewsDefaultListingTopNumber:empty {
-     display:none;
+     display: none;
 }
  .navSplitPagesLinks a{
      padding:10px;
@@ -1404,9 +1397,6 @@ a:link,a:hover,input {
  #reviewsInfoDefault .productBasePrice {
      display: inline-block;
      margin-bottom: 1rem !important;
-}
- .spacer_element_button_add br {
-     display: none;
 }
  #ccTaxHeading {
      display: none;
@@ -1629,9 +1619,6 @@ a:link,a:hover,input {
      width: auto !important;
      margin-bottom: 1rem;
 }
- .listingDescription img {
-     display: none !important;
-}
  #searchDefault .button_search {
      width: 100% !important;
      margin-bottom:0px;
@@ -1783,13 +1770,13 @@ a:link,a:hover,input {
      margin-top:0.5rem;
 }
  .productDetailslistings:empty {
-     display:none;
+     display: none;
 }
 /* end of category grid */
  #reviewWriteMainImage .main-image {
      margin: auto;
 }
- #productListing br,#whatsNew br,#featuredProducts br,#reviewsWritePrice br,#reviewsInfoDefaultPrice br,.block_element_reviewslinked br,#cartContentsDisplay br,#shippingEstimatorContent br,#pinfo-right br,.max-qty br,.centerBoxContentsAlsoPurch br, #csNotifications br, .centerBoxContentsFeaturedCategories br, #specialsDefault br, #orderStatus br, #searchBody br, #accounteditBody br, #addressbookprocessBody br, #accountnewslettersBody br, .cartProductDisplay br,#checkoutPayment .payment br, #loginDefault br, #createAcctDefault br, #passwordforgottenBody br, .productPriceDiscount br, #gvFaqDefaultMainContent br {
+ #productListing br,#whatsNew br,#featuredProducts br,#reviewsWritePrice br,#reviewsInfoDefaultPrice br,.block_element_reviewslinked br,#cartContentsDisplay br,#shippingEstimatorContent br,#pinfo-right br,.max-qty br,.centerBoxContentsAlsoPurch br, #csNotifications br, .centerBoxContentsFeaturedCategories br, #specialsDefault br, #orderStatus br, #searchBody br, #accounteditBody br, #addressbookprocessBody br, #accountnewslettersBody br, .cartProductDisplay br,#checkoutPayment .payment br, #loginDefault br, #createAcctDefault br, #passwordforgottenBody br, .productPriceDiscount br, #gvFaqDefaultMainContent br,.spacer_element_button_add br {
      display: none;
 }
  #acctNewslettersDefault .back,#accountNotifications .back,#addressbookprocessBody .back,#accountpasswordBody .back,#accounteditBody .back, #addressBookDefault .back,#contactUsDefault .back, #searchDefault .back, #searchresultBody .back {
@@ -1827,22 +1814,31 @@ a:link,a:hover,input {
      margin-bottom:1rem;
 }
  #ezPageDefault .button_next {
-     background: #0056B3;
-     color:#fff;
-     border:solid 1px #0056B3 
+     background: #FFD700;
+     color:#000;
+     border:solid 1px #FFD700 
 }
  #ezPageDefault .button_next:hover {
      background: #fff;
-     color: #0056B3 
+     color: #000 
 }
  #ezPageDefault .button_prev {
-     background: #8b008b;
-     color:#fff;
-     border:solid 1px #8b008b;
+     background: #FFD700;
+     color:#000;
+     border:solid 1px #FFD700;
 }
  #ezPageDefault .button_prev:hover {
      background: #fff;
-     color: #8b008b;
+     color: #000;
+}
+ #ezPageDefault .button_continue {
+    background: #FFD700;
+    color:#000;
+    border:solid 1px #FFD700;
+}
+ #ezPageDefault .button_continue:hover {
+    background: #fff;
+     border:solid 1px #ffd700;
 }
  #navEZPageNextPrev {
      display: grid;
@@ -1915,7 +1911,7 @@ a:link,a:hover,input {
      margin-top:0.5rem;
 }
  .qty-min-units:empty {
-    display:none;
+     display: none;
 }
  .box_review_spacver span.normal_button {
      padding-top:12px;
@@ -2008,7 +2004,7 @@ a:link,a:hover,input {
      border:none;
 }
  .search_box {
-     display:none;
+     display: none;
 }
  @media (min-width: 576px) {
      #pinfo-right #freeShippingIcon {
@@ -2190,7 +2186,7 @@ a:link,a:hover,input {
 }
  @media (min-width: 768px) {
      #reviewsWritePrice img {
-        float:right;
+         float:right;
     }
      .spacer_element_button_add span.button_sold_out {
          justify-content: end;

@@ -273,6 +273,11 @@ body {
      background: transparent;
      margin-top:1rem;
      margin-bottom: 1rem;
+     display: flex;
+     gap:0.5rem;
+}
+ .messageStackWarning img, .messageStackError img, .messageStackSuccess img, .messageStackCaution img, .alert img {
+     height: 27px;
 }
  .alert.forward {
      display: flex;

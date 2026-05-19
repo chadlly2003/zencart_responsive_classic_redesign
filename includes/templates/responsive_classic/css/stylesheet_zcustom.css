@@ -731,6 +731,10 @@ a:link,a:hover,input {
      min-height: 44px;
      align-items: center;
      font-size: 1.2rem !important;
+     margin: 0;
+}
+ .button_write_review {
+    margin:0;
 }
  .reviews-wrapper .smallProductImage img {
      margin-bottom: 1rem;
@@ -1566,9 +1570,6 @@ a:link,a:hover,input {
  .cartTotalDisplay_tax {
      display: none;
 }
- #reviewsWritePrice img, #productReviewsDefaultPrice img, #reviewsInfoDefaultPrice img {
-     display: none;
-}
  #reviewsInfoDefaultProductImage img {
      margin-bottom: 0 !important;
 }
@@ -1913,6 +1914,9 @@ a:link,a:hover,input {
      justify-content: center;
      margin-top:0.5rem;
 }
+ .qty-min-units:empty {
+    display:none;
+}
  .box_review_spacver span.normal_button {
      padding-top:12px;
      padding-bottom: 12px;
@@ -1934,8 +1938,8 @@ a:link,a:hover,input {
      font-size: 22px;
 }
  .review-buy-now .button_in_cart {
-    background: #FFD700;
-    color:#000;
+     background: #FFD700;
+     color:#000;
 }
  .min-units2 {
      display: flex;
@@ -2185,11 +2189,14 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 768px) {
+     #reviewsWritePrice img {
+        float:right;
+    }
      .spacer_element_button_add span.button_sold_out {
-        justify-content: end;
+         justify-content: end;
     }
      .box_review_spacver span.button_sold_out {
-        justify-content: end;
+         justify-content: end;
     }
      .free-shipping-icon img {
          margin-bottom: 0;

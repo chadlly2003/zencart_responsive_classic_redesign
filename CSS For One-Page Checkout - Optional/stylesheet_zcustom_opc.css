@@ -62,7 +62,7 @@
     }
      #loginOpcDefault .messageStackError {
          position: absolute;
-         margin-top: -2rem;
+         margin-top: -1.5rem;
          width: 100%;
          max-width: 1280px;
     }

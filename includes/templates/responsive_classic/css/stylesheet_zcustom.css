@@ -61,6 +61,9 @@ a:link,a:hover,input {
      margin-bottom: 0.5rem;
      min-width: 53px;
 }
+ .prod-list-wrap.group:has(> div:empty):has(> div:last-child:empty) {
+     display: none;
+}
 /* danger buttons (red) */
  .button_delete, .button_update, .button_buy_now, .button_create_account, .button_cancel {
      background: #AC171D;
@@ -779,6 +782,17 @@ a:link,a:hover,input {
      font-size: 20px;
      font-weight: 900;
      color: #2c6161;
+     padding-right: 0.5rem;
+}
+ #moreinformationHeading:before {
+     content: "\f1ea";
+    /* this is your text. You can also use UTF-8 character codes as I do here */
+     font-family: "Font Awesome 6 Free";
+    /* This is the correct font-family*/
+     vertical-align: inherit;
+     font-size: 20px;
+     font-weight: 900;
+     color: #8a2be2;
      padding-right: 0.5rem;
 }
  .button_write_review:before {

@@ -1,3 +1,4 @@
+ 
 /** loginBody **/
  #loginOpcDefault h2 {
      font-size: 1.3rem;
@@ -204,7 +205,10 @@
 }
  #checkoutoneBody .cartAttribsList {
      float: none;
-     margin-top: 0.5rem !important;
+     margin-top: 0 !important;
+     margin-left: 12px;
+     padding: 0;
+     margin-bottom: 0;
 }
  #checkoutoneBody .floatingBox {
      width: 100%;

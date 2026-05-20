@@ -130,6 +130,7 @@
 }
  #checkoutoneBody #cartContentsDisplay th, td {
      padding: 0.5rem !important;
+     width:auto !important;
 }
  #checkoutoneBody #checkoutPaymentMethod .important {
      color: #8b0000 !important;

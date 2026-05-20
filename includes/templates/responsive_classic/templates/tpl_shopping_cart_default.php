@@ -79,35 +79,41 @@ echo !empty($product['flagStockCheck']) ? '<span class="alert bold">' . $product
   ?>
        </td>
        <td class="cartQuantityUpdate"><?php echo $product['buttonUpdate']; ?></td>
-       <td class="cartProductDisplay">
+      <td class="cartProductDisplay">
 
-<a href="<?= $product['linkProductsName'] ?>">
-    <span class="cartImage back"><?= $product['productsImage'] ?></span>
-    <span class="cartProdTitle"><?= $product['productsName'] .
-        (!empty($product['flagStockCheck']) ? '<span class="alert bold">' . $product['flagStockCheck'] . '</span>' : '') ?>
+    <span class="cartImage back">
+        <a href="<?= $product['linkProductsName'] ?>">
+            <?= $product['productsImage'] ?>
+        </a>
     </span>
-</a>
-<br class="clearBoth">
-<?php
-  echo $product['attributeHiddenField'];
-  if (isset($product['attributes']) && is_array($product['attributes'])) {
-    echo '<div class="cartAttribsList">';
-    echo '<ul>';
-    foreach ($product['attributes'] as $option => $value) {
-?>
+<div class="revised_attribtues">
+    <span class="cartProdInfo">
+        <a href="<?= $product['linkProductsName'] ?>">
+            <span class="cartProdTitle">
+                <?= $product['productsName'] .
+                    (!empty($product['flagStockCheck']) ? '<span class="alert bold">' . $product['flagStockCheck'] . '</span>' : '') ?>
+            </span>
+        </a>
 
-<li>
-    <?php
-    echo $value['products_options_name'] . TEXT_OPTION_DIVIDER . nl2br($value['products_options_values_name']);
-    ?>
-</li>
+        <?php
+        echo $product['attributeHiddenField'];
 
-<?php
-    }
-  echo '</ul>';
-  echo '</div>';
-  }
-?>
+        if (isset($product['attributes']) && is_array($product['attributes'])) {
+            echo '<div class="cartAttribsList"><ul>';
+
+            foreach ($product['attributes'] as $option => $value) {
+                echo '<li>';
+                echo $value['products_options_name'] . TEXT_OPTION_DIVIDER . nl2br($value['products_options_values_name']);
+                echo '</li>';
+            }
+
+            echo '</ul></div>';
+        }
+        ?>
+    </span></div>
+
+    <br class="clearBoth">
+ 
        </td>
        <td class="cartUnitDisplay"><?php echo $product['productsPriceEach']; ?></td>
        <td class="cartTotalDisplay"><?php echo $product['productsPrice']; ?></td>

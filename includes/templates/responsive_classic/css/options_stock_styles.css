@@ -1,0 +1,37 @@
+.stock-wrapper {
+    order:2
+}
+ #accountHistInfo .stock-wrapper {
+}
+ .stock-msg {
+     display:flex;
+    flex-direction: column;
+}
+ #productAttributes .in-stock, .stock-msg.in-stock {
+     color: #006400;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+}
+ #productAttributes .no-stock, .stock-msg.no-stock {
+     color: #900404;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+}
+ .in-stock.stock-mixed {
+}
+ .no-stock.stock-mixed {
+}
+ .posm-prev-choices {
+     font-weight:normal;
+}
+ .posm-error {
+     font-weight: bold;
+     color: #900404;
+}
+ .revised_attribtues .alert {
+    order:2
+}

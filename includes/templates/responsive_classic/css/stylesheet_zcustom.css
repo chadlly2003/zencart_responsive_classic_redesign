@@ -1,4 +1,4 @@
-a:link,a:hover,input {
+ a:link,a:hover,input {
      -webkit-tap-highlight-color: transparent;
 }
  img {
@@ -612,6 +612,7 @@ a:link,a:hover,input {
      min-height: 44px;
      display: block;
      color: #8A4514;
+     align-content: center;
 }
  #reviewsInfoDefaultReviewsListingLink span.normal_button:hover {
      background: transparent;

@@ -275,7 +275,7 @@ body {
      margin-bottom: 1rem;
 }
  .alert {
-    color:#900404;
+     color:#900404;
 }
  .messageStackWarning img, .messageStackError img, .messageStackSuccess img, .messageStackCaution img, .alert img {
      width: 30px;
@@ -645,9 +645,6 @@ body {
      font-size:120%;
 }
 /*bof shopping cart*/
- .tableHeading TH {
-     padding:0.5rem !important 
-}
  #cartSubTotal {
      text-align:right;
      line-height:2.2em;
@@ -680,9 +677,6 @@ body {
      padding:10px;
      text-align:right;
      font-weight:bold;
-}
- .cartAttribsList {
-     padding-left:1rem;
 }
  .normalprice, .productSpecialPriceSale {
      text-decoration:line-through;
@@ -747,12 +741,16 @@ body {
      color: #000;
      display:flex;
      margin-left:10px;
+     flex-direction: column;
 }
  .cartProdTitle:hover{
      text-decoration: underline;
 }
  .cartProductDisplay a{
      text-decoration:underline;
+}
+ .revised_attribtues {
+     display:flex;
 }
 /*shipping estimator styles*/
  #shippingEstimatorContent h2{

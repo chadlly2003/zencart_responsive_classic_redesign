@@ -1,4 +1,4 @@
- a:link,a:hover,input {
+a:link,a:hover,input {
      -webkit-tap-highlight-color: transparent;
 }
  img {
@@ -11,6 +11,9 @@
 }
  #country + .alert {
      display: none;
+}
+ th, td, th, tr {
+    padding:0.5rem;
 }
 /* primary button (green) */
  .button_continue_checkout, .button_login {
@@ -60,9 +63,6 @@
      min-height: 47.6px;
      margin-bottom: 0.5rem;
      min-width: 53px;
-}
- .prod-list-wrap.group:has(> div:empty):has(> div:last-child:empty) {
-     display: none;
 }
 /* danger buttons (red) */
  .button_delete, .button_update, .button_buy_now, .button_create_account, .button_cancel {
@@ -362,17 +362,8 @@
      margin-top: 0;
      text-align: center;
 }
- .cartAttribsList ul {
-     padding-left: 0;
-     padding-top: 0.5rem;
-     margin: 0;
-     width: 100%;
-}
  #shoppingCartDefault .tableHeading TH {
      border-bottom: none;
-     text-align: left;
-     padding-left: 0;
-     padding-right: 0;
      align-content: center;
 }
  #shoppingCartDefault input[type="checkbox"] {
@@ -612,7 +603,6 @@
      min-height: 44px;
      display: block;
      color: #8A4514;
-     align-content: center;
 }
  #reviewsInfoDefaultReviewsListingLink span.normal_button:hover {
      background: transparent;
@@ -783,17 +773,6 @@
      font-size: 20px;
      font-weight: 900;
      color: #2c6161;
-     padding-right: 0.5rem;
-}
- #moreinformationHeading:before {
-     content: "\f1ea";
-    /* this is your text. You can also use UTF-8 character codes as I do here */
-     font-family: "Font Awesome 6 Free";
-    /* This is the correct font-family*/
-     vertical-align: inherit;
-     font-size: 20px;
-     font-weight: 900;
-     color: #8a2be2;
      padding-right: 0.5rem;
 }
  .button_write_review:before {
@@ -983,9 +962,6 @@
  #myAccountProducts {
      text-align: left !important;
 }
- #orderHistoryHeading td {
-     padding: 0.5rem;
-}
  #orderHistoryHeading tr:nth-child(odd) td {
      background-color: #F8F8FF !important;
 }
@@ -997,12 +973,6 @@
 }
  #orderHistoryDetailedOrder .foward {
      color: #008000;
-}
- #accountHistInfo table td {
-     padding: 0.5rem;
-}
- #accountHistInfo table th {
-     padding: 0.5rem 
 }
  #accountHistInfo .accountTotalDisplay {
      text-align: center;
@@ -1017,16 +987,6 @@
      color: #900404;
      text-align: center;
      width: 100%;
-}
- #accountHistInfo .orderAttribsList {
-     padding-left: 1rem;
-     padding-top: 0.5rem;
-     margin-top: 0;
-}
- #orderAttribsList {
-     padding-left: 1rem;
-     padding-top: 0.5rem;
-     margin-top: 0;
 }
  #accountHistInfo #orderHistoryStatus {
      margin-top: 2rem 
@@ -1207,14 +1167,6 @@
 }
  #checkoutConfirmDefault .important {
      font-weight: normal 
-}
- #checkoutConfirmDefault .cartAttribsList {
-     padding-left: 1rem;
-     padding-right: 1rem;
-     padding-top: 0.5rem;
-     margin-top: 0;
-     float: none;
-     margin-left: 0;
 }
  #checkoutConfirmDefault .cartQuantity {
      display: block;
@@ -1675,12 +1627,6 @@
      position: relative;
      align-content: end;
 }
- .cartAttribsList {
-     margin-left: 0;
-}
- #checkoutconfirmationBody #shoppingcartBody th,td,th {
-     padding: 0.5rem;
-}
  #shoppingcartBody tr:nth-child(2n+1) {
      padding-top: 0;
      padding-bottom: 0;
@@ -1976,10 +1922,6 @@
  #upcomingProductsTable tr:nth-child(odd) {
      background-color: #F0F8FF;
 }
- #upcomingProductsTable th, td {
-     padding-top:0.5rem;
-     padding-bottom:0.5rem;
-}
  #upcomingProductsTable {
      width: 100%;
 }
@@ -2120,9 +2062,6 @@
      .shopping_cart_spacer {
          display: flex;
          flex-direction: row;
-    }
-     .cartAttribsList {
-         float: left;
     }
      #checkoutPayment .button_change_address {
          float: right;

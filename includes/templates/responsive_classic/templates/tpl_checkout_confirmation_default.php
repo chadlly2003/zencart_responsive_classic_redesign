@@ -118,8 +118,27 @@
 <?php for ($i=0, $n=sizeof($order->products); $i<$n; $i++) { ?>
         <tr class="<?php echo $order->products[$i]['rowClass']; ?>">
           <td  class="cartQuantity"><?php echo $order->products[$i]['qty']; ?>&nbsp;x</td>
-          <td class="cartProductDisplay"><?php echo $order->products[$i]['name']; ?>
-          <?php  if (!empty($stock_check[$i])) echo $stock_check[$i]; ?>
+        <td class="cartProductDisplay">
+<?php
+  $product_name = $order->products[$i]['name'];
+  $injected_stock = '';
+
+  // Pull stock-wrapper out of product name
+  if (preg_match('/<div class="stock-wrapper">.*?<\/div>\s*<\/div>/is', $product_name, $match)) {
+      $injected_stock = $match[0];
+      $product_name = str_replace($injected_stock, '', $product_name);
+  }
+
+  // Product name first
+  echo trim($product_name);
+
+  // Stock check underneath
+  if (!empty($injected_stock)) {
+      echo '<br>' . $injected_stock;
+  } elseif (!empty($stock_check[$i])) {
+      echo '<br>' . $stock_check[$i];
+  }
+?>
 
 <?php // if there are attributes, loop thru them and display one per line
     if (isset($order->products[$i]['attributes']) && sizeof($order->products[$i]['attributes']) > 0 ) {

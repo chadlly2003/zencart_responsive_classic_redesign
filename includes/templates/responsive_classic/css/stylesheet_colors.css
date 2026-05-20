@@ -23,6 +23,21 @@ a:hover{
  h2, h3, .cartAttribsList, #cart-box {
      color:#000000;
 }
+ .cartAttribsList ul {
+    margin-top:0.5rem;
+    margin-left: 12px;
+    padding:0;
+}
+ #checkoutconfirmationBody .cartAttribsList {
+    margin-top:0.5rem;
+    margin-left: 12px;
+    padding:0;
+}
+ .orderAttribsList {
+    margin-top:0.5rem;
+    margin-left: 12px;
+    padding:0;
+}
  #navMain ul li a:hover, #navSupp ul li a:hover{
      color:#154DBC;
 }
@@ -826,11 +841,6 @@ a:hover{
      border-bottom:solid 1px #ccc;
      padding-top:10px;
      padding-bottom:10px;
-}
- #shoppingcartBody th, td {
-     padding-top:0.5rem;
-     padding-bottom:0.5rem;
-     vertical-align: initial;
 }
  #cartSubTotal {
      border-top:none;

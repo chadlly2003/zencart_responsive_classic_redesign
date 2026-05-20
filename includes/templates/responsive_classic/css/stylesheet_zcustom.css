@@ -13,7 +13,7 @@ a:link,a:hover,input {
      display: none;
 }
  th, td, th, tr {
-    padding:0.5rem;
+     padding:0.5rem;
 }
 /* primary button (green) */
  .button_continue_checkout, .button_login {

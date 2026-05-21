@@ -303,7 +303,7 @@ a:link,a:hover,input {
 }
  #shoppingcartBody .tableHeading,#shoppingcartBody .rowEven,#shoppingcartBody .rowOdd {
      display: grid;
-     grid-template-columns: 1fr 3fr 1fr;
+     grid-template-columns: 1fr 2fr 1fr;
      height: auto;
 }
  #scTotalHeading {
@@ -363,6 +363,7 @@ a:link,a:hover,input {
  #shoppingCartDefault .tableHeading TH {
      border-bottom: none;
      align-content: center;
+     
 }
  #shoppingCartDefault input[type="checkbox"] {
      display: none;
@@ -2030,8 +2031,7 @@ a:link,a:hover,input {
          flex-basis: 0;
     }
      #shoppingcartBody .tableHeading,#shoppingcartBody .rowEven,#shoppingcartBody .rowOdd {
-         display: grid;
-         grid-template-columns: 1fr 6fr 1fr 1fr;
+         grid-template-columns: 1fr 5fr 1fr 1fr;
     }
      .cartRemoveItemDisplay {
          display: flex !important;
@@ -2117,6 +2117,10 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 768px) {
+
+    .cartRemoveItemDisplay {
+    gap:0.5rem;
+    }
      #reviewsWritePrice img {
          float:right;
     }
@@ -2529,8 +2533,7 @@ a:link,a:hover,input {
          display: none;
     }
      #shoppingcartBody .tableHeading,#shoppingcartBody .rowEven,#shoppingcartBody .rowOdd {
-         display: grid;
-         grid-template-columns: 1fr 1fr 5fr 1fr 2fr 2fr;
+         grid-template-columns: 1fr 1fr 5fr 1fr 1fr 1fr;
     }
      #reviews-right input.submit_button {
          float: right;
@@ -2676,6 +2679,7 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 992px) {
+     
      #navEZPagesTop {
          margin-top: -1rem !important;
     }

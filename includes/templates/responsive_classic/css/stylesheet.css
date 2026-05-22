@@ -727,6 +727,7 @@ body {
  #shippingEstimatorContent ADDRESS {
      background: transparent;
      padding:0;
+     margin-bottom: 0;
 }
  .rowOdd {
      height:1.5em;
@@ -740,8 +741,8 @@ body {
      font-size:120%;
      color: #000;
      display:flex;
-     margin-left:10px;
      flex-direction: column;
+     min-height: 44px;
 }
  .cartProdTitle:hover{
      text-decoration: underline;
@@ -759,15 +760,9 @@ body {
      text-align:center;
 }
  #shippingEstimatorContent table{
-     margin-top:2rem;
+     margin-top:1rem;
      display: inline-table;
-     margin-bottom:2rem;
-}
- #shippingEstimatorContent th{
-     padding:10px 0;
-}
- #shippingEstimatorContent td{
-     padding:0;
+     margin-bottom:1rem;
 }
 /*bof checkout*/
  #checkoutConfirmDefault .cartTableHeading{
@@ -1433,14 +1428,8 @@ body {
  #myAccountOrdersStatus, #orderHistoryHeading, #prevOrders {
      width: 100%;
 }
- #seQuoteResults {
-     width: 100%;
-}
  .listBoxContentTable {
      width:100%;
-}
- #upcomingProductsTable {
-     width: 100%;
 }
  .products-listing .productsAllListing, .productsNewListing, .productsFeaturedListing {
      width: 100%;

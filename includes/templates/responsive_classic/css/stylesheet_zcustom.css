@@ -12,8 +12,19 @@ a:link,a:hover,input {
  #country + .alert {
      display: none;
 }
- th, td, th, tr {
+ th, td, tr {
      padding:0.5rem;
+}
+ #shoppingcartBody th, #shoppingcartBody tr {
+     padding:0;
+     gap:1rem;
+}
+ #shoppingcartBody td {
+     gap: 0;
+     padding:0;
+}
+ #shoppingcartBody input[type="checkbox"] {
+     margin:0 !important;
 }
 /* primary button (green) */
  .button_continue_checkout, .button_login {
@@ -306,6 +317,10 @@ a:link,a:hover,input {
      grid-template-columns: 1fr 2fr 1fr;
      height: auto;
 }
+ #shoppingcartBody tr .tableHeading {
+     align-items: center;
+     padding-bottom:0.5rem;
+}
  #scTotalHeading {
      display: none;
 }
@@ -325,6 +340,7 @@ a:link,a:hover,input {
      text-align: center;
      display: flex;
      flex-direction: column;
+     gap:0;
 }
  .cartTotalDisplay {
      display: none;
@@ -353,26 +369,21 @@ a:link,a:hover,input {
      display: none;
 }
  #cartContentsDisplay input {
-     width: auto !important;
+     width:auto !important;
      padding: 0;
      margin-bottom: 0;
      margin-top: 0;
      text-align: center;
      display: block;
 }
- #shoppingCartDefault .tableHeading TH {
-     border-bottom: none;
-     align-content: center;
-     
+ #cartContentsDisplay input[type="text"] {
+    align-self: center;
 }
  #shoppingCartDefault input[type="checkbox"] {
      display: none;
 }
  #shoppingcartBody #scRemoveHeading {
      display: none;
-}
- #scQuantityHeading {
-     text-align: center !important;
 }
  #shippingEstimatorContent .cartTotalDisplay {
      display: block;
@@ -1626,10 +1637,6 @@ a:link,a:hover,input {
      position: relative;
      align-content: end;
 }
- #shoppingcartBody tr:nth-child(2n+1) {
-     padding-top: 0;
-     padding-bottom: 0;
-}
  .col970 {
      width: 100% !important;
      margin-right: 0 !important;
@@ -2035,7 +2042,7 @@ a:link,a:hover,input {
     }
      .cartRemoveItemDisplay {
          display: flex !important;
-         justify-content: space-evenly;
+         justify-content: center;
     }
      .cartImage {
          display: block;
@@ -2117,9 +2124,9 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 768px) {
-
-    .cartRemoveItemDisplay {
-    gap:0.5rem;
+     .cartRemoveItemDisplay {
+         gap:0.5rem;
+         justify-content: space-around;
     }
      #reviewsWritePrice img {
          float:right;
@@ -2533,7 +2540,10 @@ a:link,a:hover,input {
          display: none;
     }
      #shoppingcartBody .tableHeading,#shoppingcartBody .rowEven,#shoppingcartBody .rowOdd {
-         grid-template-columns: 1fr 1fr 5fr 1fr 1fr 1fr;
+         grid-template-columns: 1fr 1fr 5fr 1fr 2fr 1fr;
+    }
+     #shoppingcartBody .tableHeading {
+         align-items: flex-end;
     }
      #reviews-right input.submit_button {
          float: right;
@@ -2679,7 +2689,6 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 992px) {
-     
      #navEZPagesTop {
          margin-top: -1rem !important;
     }

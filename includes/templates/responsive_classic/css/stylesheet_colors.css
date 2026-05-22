@@ -25,22 +25,22 @@ a:hover{
 }
  .cartAttribsList ul {
      margin-top:0;
-     margin-left: 12px;
+     margin-left: 1.5rem;
      padding:0;
      margin-bottom:0;
 }
- .markProductOutOfStock {
-    color:#900404 !important;
-}
  #checkoutconfirmationBody .cartAttribsList {
      margin-top:0;
-     margin-left: 12px;
+     margin-left: 1.5rem;
      padding:0;
 }
  .orderAttribsList {
      margin-top:0;
-     margin-left: 12px;
+     margin-left: 1.5rem;
      padding:0;
+}
+ .markProductOutOfStock {
+     color:#900404 !important;
 }
  #navMain ul li a:hover, #navSupp ul li a:hover{
      color:#154DBC;
@@ -182,9 +182,6 @@ a:hover{
 }
  #shoppingcartContent hr{
      border-bottom:3px solid #333;
-}
- .tableHeading TH {
-     border-bottom:1px solid #ccc;
 }
  #cartSubTotal {
      border-top: 3px solid #ddd;

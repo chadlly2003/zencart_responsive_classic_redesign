@@ -377,7 +377,7 @@ a:link,a:hover,input {
      display: block;
 }
  #cartContentsDisplay input[type="text"] {
-    align-self: center;
+     align-self: center;
 }
  #shoppingCartDefault input[type="checkbox"] {
      display: none;
@@ -495,7 +495,7 @@ a:link,a:hover,input {
      color: #900404;
 }
  #seQuoteResults tr {
-     border: none;
+     border: none !important;
 }
  #reviewsWrite .forward {
      float: none;

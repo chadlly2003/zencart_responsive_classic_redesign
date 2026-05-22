@@ -389,9 +389,6 @@ a:link,a:hover,input {
      display: block;
      float: right;
 }
- #popupShippingEstimator .cartTotalDisplay {
-     margin-top: 0;
-}
  #shippingEstimatorContent .seDisplayedAddressLabel {
      text-align: center;
      width: 100%;
@@ -400,29 +397,18 @@ a:link,a:hover,input {
      padding-bottom: 1rem;
      background: #fff;
 }
- #popupShippingEstimator #state, #popupShippingEstimator #postcode {
+ #popupShippingEstimator #postcode {
      margin-bottom: 0;
-}
- #popupShippingEstimator .seDisplayedAddressLabel {
-     display: revert;
-     padding-bottom: 1rem;
-}
- #popupShippingEstimator th#seProductsHeading {
-     text-align: left;
-     padding-left: 10px;
-}
- #popupShippingEstimator th#seTotalHeading {
-     text-align: right;
-     padding-right: 10px;
 }
  #shippingEstimatorContent th#seProductsHeading {
      text-align: left;
      padding-left: 10px;
      width: 100%;
+     padding:0.5rem;
 }
  #shippingEstimatorContent th#seTotalHeading {
-     text-align: right;
-     padding-right: 10px;
+     text-align: center;
+     padding:0.5rem;
 }
  #shippingEstimatorContent .seDisplayedAddressInfo {
      width: 100%;
@@ -496,6 +482,9 @@ a:link,a:hover,input {
 }
  #seQuoteResults tr {
      border: none !important;
+}
+ #seQuoteResults tr td {
+    padding:0.5rem;
 }
  #reviewsWrite .forward {
      float: none;
@@ -1395,9 +1384,6 @@ a:link,a:hover,input {
  #checkoutConfirmDefaultPayment, #checkoutConfirmDefaultShipment {
      color: #761bc9;
 }
- #shippingEstimatorContent td {
-     vertical-align: middle;
-}
  .cartRemoveItemDisplay .fa-xl {
      vertical-align: middle !important;
      color: #808080;
@@ -1682,9 +1668,6 @@ a:link,a:hover,input {
  .gridlayout .listingDescription {
      width: 100%;
 }
- .cartProdTitle {
-     margin-left: 0;
-}
  #checkoutPaymentHeadingTotal {
      margin-top:1rem;
      padding-top:1rem;
@@ -1934,6 +1917,9 @@ a:link,a:hover,input {
  #upcomingProductsTable a:hover {
      text-decoration: underline;
 }
+ #upcomingProductsTable td, #upcomingProductsTable th {
+     padding:0.5rem !important 
+}
  #upProductsHeading {
      text-align:left;
      background: transparent !important;
@@ -2060,6 +2046,7 @@ a:link,a:hover,input {
          display: block;
          margin-right: 0.5rem;
          margin-left: 0;
+         min-width: 44px;
     }
      .shopping_cart_spacer {
          display: flex;
@@ -2496,9 +2483,6 @@ a:link,a:hover,input {
     }
      #shippingEstimatorContent .seDisplayedAddressLabel {
          display: revert;
-    }
-     #shippingEstimatorContent td {
-         padding: 10px;
     }
      .list-price {
          float: left;

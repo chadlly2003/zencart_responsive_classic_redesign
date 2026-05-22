@@ -4,9 +4,13 @@ a:hover{
  body, #tagline, #productQuantityDiscounts table, .categoryListBoxContents a, h2.greeting a {
      color:#000000;
 }
- a:link, a:visited, #navEZPagesTOC ul li a, a:hover, #navEZPagesTOC ul li a:hover, fieldset fieldset legend, .cartTotalDisplay, .cartOldItem, .specialsListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .list-price, .itemTitle a, h2.greeting, #icon, h1, .header {
+ a:link, a:visited, #navEZPagesTOC ul li a, a:hover, #navEZPagesTOC ul li a:hover, fieldset fieldset legend, .cartOldItem, .specialsListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .list-price, .itemTitle a, h2.greeting, #icon, h1, .header {
      color:#154DBC;
      text-decoration:none;
+}
+ .cartTotalDisplay {
+    text-decoration: none;
+     color:#000;
 }
  .cat-count, .itemTitle a:hover, h2.greeting a:hover {
      color:#333;
@@ -935,12 +939,6 @@ a:hover{
  .cartTotalsDisplay {
      text-align: left;
      color: #4b0082;
-}
- #shippingEstimatorContent td {
-     padding:10px;
-}
- #shippingEstimatorContent tr {
-     padding:10px;
 }
  #shippingEstimatorContent table tr:nth-child(odd):not(:first-child) {
      background: #F0F8FF;

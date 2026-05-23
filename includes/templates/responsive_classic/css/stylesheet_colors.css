@@ -112,11 +112,11 @@ a:hover{
      background:#fff;
      color:#000;
 }
- #siteinfoIP, #siteinfoLegal, #bannerSix{
+ #siteinfoIP, #siteinfoLegal{
      background:#DCDCDC;
      border:none;
      clear:both;
-     margin-top:3rem;
+     margin-top:2rem;
 }
  #navEZPagesTop li a:hover, .pagination li a:hover {
      background: transparent;
@@ -249,11 +249,6 @@ a:hover{
 }
  input.cssButton.submit_button.button.button_search {
      font-size:1.2em 
-}
- #navSuppWrapper {
-     margin-top:3rem !important;
-     margin-bottom:1rem !important;
-     display:block;
 }
  #tagline {
      display:none;

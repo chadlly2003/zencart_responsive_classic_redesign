@@ -342,9 +342,6 @@ a:link,a:hover,input {
      flex-direction: column;
      gap:0;
 }
- .cartTotalDisplay {
-     display: none;
-}
  #checkoutconfirmationBody .cartTotalDisplay {
      display: block !important;
      text-align: center;
@@ -384,10 +381,6 @@ a:link,a:hover,input {
 }
  #shoppingcartBody #scRemoveHeading {
      display: none;
-}
- #shippingEstimatorContent .cartTotalDisplay {
-     display: block;
-     float: right;
 }
  #shippingEstimatorContent .seDisplayedAddressLabel {
      text-align: center;
@@ -484,7 +477,7 @@ a:link,a:hover,input {
      border: none !important;
 }
  #seQuoteResults tr td {
-    padding:0.5rem;
+     padding:0.5rem;
 }
  #reviewsWrite .forward {
      float: none;
@@ -952,12 +945,6 @@ a:link,a:hover,input {
      margin-top: 1rem;
      display: inline-block;
 }
- #accountHistInfo #orderTotals {
-     background: transparent;
-     margin-bottom: 1rem;
-     margin-top: 1rem;
-     padding-top: 1rem;
-}
  #myAccountProducts {
      text-align: left !important;
 }
@@ -1100,9 +1087,6 @@ a:link,a:hover,input {
 }
  #checkoutConfirmDefault #cartContentsDisplay {
      color: #154DBC;
-}
- #checkoutConfirmDefault #orderTotals {
-     background: transparent;
 }
  .button_confirm_order {
      margin-top: 0rem;
@@ -2478,9 +2462,6 @@ a:link,a:hover,input {
          clear: both;
          margin-bottom: 1rem;
     }
-     #shippingEstimatorContent .cartTotalDisplay {
-         margin-top: 0;
-    }
      #shippingEstimatorContent .seDisplayedAddressLabel {
          display: revert;
     }
@@ -2493,10 +2474,6 @@ a:link,a:hover,input {
          float: right;
          margin-top: 0;
          margin-bottom: 0;
-    }
-     .cartTotalDisplay {
-         display: block;
-         text-align: center;
     }
      #scUpdateQuantity {
          display: block;
@@ -2655,7 +2632,6 @@ a:link,a:hover,input {
          margin-bottom: 0 
     }
      #shoppingcartBody .back {
-         float: left !important;
          margin-top: 0;
          margin-bottom: 0;
     }

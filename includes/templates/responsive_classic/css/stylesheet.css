@@ -659,6 +659,7 @@ body {
      text-align:right;
 }
  .cartTotalDisplay{
+     text-align:right;
      font-size:130%;
 }
  #scUpdateQuantity {

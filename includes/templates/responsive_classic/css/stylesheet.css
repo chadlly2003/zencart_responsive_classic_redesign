@@ -696,7 +696,7 @@ body {
      font-weight:bold;
 }
  .totalBox {
-     width:5.5em;
+     width:6.5em;
      text-align:right;
      padding:0.2em;
      margin-right:0;
@@ -706,7 +706,7 @@ body {
      padding:0.2em;
 }
  .amount {
-     width:5.5em;
+     width:6.5em;
 }
  #shoppingcartBody #shippingEstimatorContent {
      clear:both;

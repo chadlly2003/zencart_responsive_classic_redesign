@@ -129,10 +129,6 @@
  #checkoutoneBody .cartTableHeading {
      background-color: transparent !important;
 }
- #checkoutoneBody #cartContentsDisplay th, td {
-     padding: 0.5rem !important;
-     width:auto !important;
-}
  #checkoutoneBody #checkoutPaymentMethod .important {
      color: #8b0000 !important;
 }
@@ -149,6 +145,9 @@
 }
  #checkoutoneBody #checkoutOneShoppingCart legend {
      margin-bottom: 5rem !important;
+}
+ #cartContentsDisplay th, #cartContentsDisplay td {
+    padding:0.5rem !important;
 }
  #checkoutoneBody #cartContentsDisplay .productPrice {
      display: block !important;
@@ -202,13 +201,6 @@
  #checkoutoneBody .button_confirm_order:hover {
      background: transparent !important;
      color: #006400 !important;
-}
- #checkoutoneBody .cartAttribsList {
-     float: none;
-     margin-top: 0 !important;
-     margin-left: 12px;
-     padding: 0;
-     margin-bottom: 0;
 }
  #checkoutoneBody .floatingBox {
      width: 100%;

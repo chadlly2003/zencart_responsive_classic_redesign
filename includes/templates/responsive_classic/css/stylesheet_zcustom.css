@@ -6,9 +6,6 @@ a:link,a:hover,input {
      height: auto;
      border: 0;
 }
- #navSuppWrapper {
-     display: none;
-}
  #country + .alert {
      display: none;
 }
@@ -414,10 +411,10 @@ a:link,a:hover,input {
      width: 100%;
 }
  #shippingEstimatorContent address {
-    background:#fff8dc;
-    padding:0.5rem;
-    width: calc(100% - 16px);
-    margin-top:0.5rem !important;
+     background:#fff8dc;
+     padding:0.5rem;
+     width: calc(100% - 16px);
+     margin-top:0.5rem !important;
 }
  #shoppingcartBody .centerBoxHeading {
      margin-bottom: 12px;
@@ -1446,6 +1443,7 @@ a:link,a:hover,input {
      padding: 0;
      margin-left: 15px;
      margin-right: 15px;
+     margin-bottom: 1rem;
 }
  .welcome_note {
      background:#fff8dc;
@@ -1932,6 +1930,10 @@ a:link,a:hover,input {
  .search_box {
      display: none;
 }
+ #navSuppWrapper {
+     display: block;
+     width: 100%;
+}
  @media (min-width: 576px) {
      #pinfo-right #freeShippingIcon {
          margin-bottom: 0;
@@ -2274,10 +2276,6 @@ a:link,a:hover,input {
          text-align: left;
          margin-top: 0;
     }
-     #bannerSix {
-         margin-top: 3rem !important;
-         margin-bottom: -2rem;
-    }
      #reviewsWrite .ratingRow {
          width: 30%;
          margin-bottom: 0;
@@ -2333,7 +2331,7 @@ a:link,a:hover,input {
          margin-top: 0;
          float: right;
     }
-     #siteinfoIP,#siteinfoLegal,#bannerSix {
+     #siteinfoIP,#siteinfoLegal {
          background: #DCDCDC;
          border: none;
          clear: both;
@@ -2371,10 +2369,6 @@ a:link,a:hover,input {
      #productListing .productFreePrice {
          margin-top: 0;
          margin-bottom: 0;
-    }
-     #navSuppWrapper {
-         display: block;
-         width: 100%;
     }
      .orderdates {
          text-align: right;
@@ -2690,10 +2684,6 @@ a:link,a:hover,input {
     }
      div#logo {
          max-width: 248px;
-    }
-     #bannerSix {
-         margin-left: 0;
-         margin-right: 0;
     }
      #productAdditionalImages {
          grid-template-columns: repeat(5, auto);

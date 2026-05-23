@@ -720,10 +720,6 @@ body {
      text-align:center;
      font-weight:bold;
 }
- #seShipTo {
-     padding:0.2em;
-     width: 100%;
-}
  #shippingEstimatorContent ADDRESS {
      background: transparent;
      padding:0;
@@ -742,7 +738,6 @@ body {
      color: #000;
      display:flex;
      flex-direction: column;
-     min-height: 44px;
 }
  .cartProdTitle:hover{
      text-decoration: underline;

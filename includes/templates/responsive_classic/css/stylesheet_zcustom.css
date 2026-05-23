@@ -413,6 +413,12 @@ a:link,a:hover,input {
  #shippingEstimatorContent .seDisplayedAddressInfo {
      width: 100%;
 }
+ #shippingEstimatorContent address {
+    background:#fff8dc;
+    padding:0.5rem;
+    width: calc(100% - 16px);
+    margin-top:0.5rem !important;
+}
  #shoppingcartBody .centerBoxHeading {
      margin-bottom: 12px;
 }

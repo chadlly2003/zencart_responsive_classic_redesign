@@ -1247,7 +1247,7 @@ a:link,a:hover,input {
  .dateissue {
      color: #006400;
      margin-bottom: 1rem;
-     float: left;
+     float: right;
 }
  .button.button_back {
      color: #fff;
@@ -2328,10 +2328,6 @@ a:link,a:hover,input {
      .addresscontinue {
          float: right;
          margin-top: 1rem 
-    }
-     .dateissue {
-         color: #006400;
-         float: right;
     }
      .checkoutupdate {
          margin-top: 0;

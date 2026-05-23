@@ -232,6 +232,10 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
 ?>
 
 </div>
+
+
+<div class="footer" role="contentinfo">
+
 <!--bof- banner #6 display -->
 <?php
   if (SHOW_BANNERS_GROUP_SET6 != '' && $banner = zen_banner_exists('dynamic', SHOW_BANNERS_GROUP_SET6)) {
@@ -244,7 +248,7 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
 ?>
 <!--eof- banner #6 display -->
 
-<div class="footer" role="contentinfo">
+
   <!--bof-navigation display -->
   <div id="navSuppWrapper" role="navigation" aria-label="Footer Navigation">
     <div id="navSupp">

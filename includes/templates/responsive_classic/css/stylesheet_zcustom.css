@@ -2146,9 +2146,6 @@ a:link,a:hover,input {
      .min-units2 {
          justify-content: end;
     }
-     .qty_cart_qty {
-         margin-left:5% 
-    }
      .qty-min-units {
          justify-content: right;
          margin-top:0;
@@ -2617,7 +2614,7 @@ a:link,a:hover,input {
          width: 20%;
          text-align: center;
          margin-right: 5px;
-         margin-left: 5%;
+     
     }
      #askaquestionBody .back {
          float: none;

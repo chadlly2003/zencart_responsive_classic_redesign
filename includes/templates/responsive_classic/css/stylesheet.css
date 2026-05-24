@@ -941,12 +941,8 @@ body {
  .prod-list-wrap{
      text-align:center;
      clear:both;
-     margin-bottom:1rem;
+     margin-bottom:0;
      margin-top:1rem;
-}
-.prod-list-wrap.group:not(:has(#productReviewsDefaultListingTopNumber:not(:empty),
-                              #productReviewsDefaultListingTopLinks:not(:empty))) {
-    display: none;
 }
  .navSplitPagesResult:empty {
      display:none;

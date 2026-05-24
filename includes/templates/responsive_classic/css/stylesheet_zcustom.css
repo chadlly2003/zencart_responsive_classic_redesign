@@ -410,7 +410,7 @@ a:link,a:hover,input {
 }
  #shippingEstimatorContent address {
      background:#fff8dc;
-     padding:0.5rem;
+     padding:1rem;
      width: calc(100% - 16px);
      margin-top:0.5rem !important;
 }

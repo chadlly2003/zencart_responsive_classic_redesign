@@ -466,7 +466,12 @@ body {
      max-width: 1280px;
 }
  #navEZPagesTop ul {
-     text-align:center;
+     display:flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     padding:0;
+     margin:0;
+     justify-content:center;
      padding:0;
      margin:0;
 }
@@ -476,13 +481,11 @@ body {
 }
  #navEZPagesTop li a {
      text-decoration: underline;
-     padding: 1.2em 1.0em;
      display: block;
-     padding-top:0;
-     padding-bottom:0;
-     min-width: 44px;
-     min-height: 44px;
      align-content: center;
+     padding: 0;
+     min-height: 44px;
+     min-width: 44px;
 }
  #navEZPagesTop li a:hover {
      background: transparent !important;
@@ -531,9 +534,15 @@ body {
 /*bof footer*/
 /*bottom ezpages links*/
  #navSupp ul {
-     font-size:0;
-     text-align:center;
-     padding-left:0;
+     display:flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     padding:0;
+     margin:0;
+     justify-content:center;
+     padding-left:15px;
+     padding-right:15px;
+     margin-bottom:0.5rem;
 }
  #navSupp li {
      font-size:0.75rem;
@@ -543,9 +552,10 @@ body {
 }
  #navSupp li a {
      text-decoration: underline;
-     padding: 1.2em 1.0em;
+     padding: 0;
      display: block;
      text-decoration: none;
+     align-content: center;
 }
 /*footer copyright*/
  #siteinfoIP, #siteinfoLegal, #bannerSix{

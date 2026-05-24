@@ -773,6 +773,8 @@ a:hover{
  .reviewligner span.normal_button {
      font-size: 1.2rem !important;
      padding:0 !important;
+     display:inherit !important;
+     align-content: center;
 }
  #productReviewLink {
      float:none !important;
@@ -787,9 +789,6 @@ a:hover{
      margin-top:0;
 }
  .spacerreviewsa span.normal_button {
-     display:inherit !important;
-}
- .reviewligner span.normal_button {
      display:inherit !important;
 }
  .reviewligner {

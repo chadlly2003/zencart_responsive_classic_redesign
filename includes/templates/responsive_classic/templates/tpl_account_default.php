@@ -52,7 +52,7 @@
 <?php
   }
 ?>
-<br class="clearBoth">
+ 
 
 <div id="accountLinksWrapper" class="back">
 <h2><?php echo MY_ACCOUNT_TITLE; ?></h2>

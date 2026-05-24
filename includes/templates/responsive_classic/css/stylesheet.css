@@ -944,6 +944,10 @@ body {
      margin-bottom:1rem;
      margin-top:1rem;
 }
+.prod-list-wrap.group:not(:has(#productReviewsDefaultListingTopNumber:not(:empty),
+                              #productReviewsDefaultListingTopLinks:not(:empty))) {
+    display: none;
+}
  .navSplitPagesResult:empty {
      display:none;
 }

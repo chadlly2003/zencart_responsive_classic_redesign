@@ -629,6 +629,13 @@ a:link,a:hover,input {
      width: 100%;
      text-align: center;
 }
+.prod-list-wrap:has(#productReviewsDefaultListingTopNumber:empty):has(#productReviewsDefaultListingTopLinks:empty) {
+  display: none;
+}
+ .prod-list-wrap.prod-list-bottom:has(#productReviewsDefaultListingBottomLinks:empty):has(#productReviewsDefaultListingBottomNumber:empty) {
+  display: none;
+}
+
  .spacer_read_more {
      padding-bottom: 1rem;
      padding-top: 0;

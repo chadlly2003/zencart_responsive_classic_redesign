@@ -162,7 +162,6 @@ body {
      outline:none;
 }
  legend{
-     padding:0;
      display:table;
      text-align:left;
      width:100%;
@@ -448,7 +447,8 @@ body {
 }
 /*top ezpages links*/
  #navEZPagesTop {
-     margin:0;
+     margin-top:0;
+     margin-bottom:0;
      width:100%;
      margin: auto;
      max-width: 1280px;
@@ -469,13 +469,11 @@ body {
      display:flex;
      flex-wrap: wrap;
      column-gap: 1rem;
-     padding:0;
      margin:0;
      justify-content:center;
      padding:0;
      margin-left:15px;
      margin-right:15px;
-
 }
  #navEZPagesTop li {
      font-size:0.75rem;
@@ -1085,7 +1083,6 @@ body {
      text-align:center;
      margin:10px 0 10px 0;
      font-weight:normal;
-     justify-content: ;
 }
  .productSpecialPrice{
      font-size:120%;
@@ -1145,7 +1142,6 @@ body {
      display:block;
      color: #761bc9;
      margin-bottom: 0.5rem;
-     ;
 }
  .attribImg {
      margin:1rem 0;

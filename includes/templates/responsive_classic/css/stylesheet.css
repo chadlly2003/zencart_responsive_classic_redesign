@@ -866,7 +866,7 @@ body {
 }
  .productListing-even, .productListing-odd{
      clear:both;
-     display: block !important;
+     display: block;
 }
  .productListing-even form, .productListing-odd form{
      float:right;
@@ -956,7 +956,7 @@ body {
      width:100%;
 }
  .sideBoxContentItem .productBasePrice {
-     text-align: center !important;
+     text-align: center;
 }
  .button-bottom{
      height:auto;
@@ -1174,7 +1174,7 @@ body {
 }
 /*bof reviews*/
  .reviews-wrapper{
-     margin:20px 0;
+     margin:1rem 0;
 }
  .reviews-wrapper h2{
      margin:0;

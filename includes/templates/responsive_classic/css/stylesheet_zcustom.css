@@ -626,7 +626,6 @@ a:link,a:hover,input {
      font-weight:normal;
 }
  .reviews-wrapper {
-     float: left;
      width: 100%;
      text-align: center;
 }
@@ -670,12 +669,6 @@ a:link,a:hover,input {
      display: block;
      padding: 0;
      margin-top:0 !important;
-}
- #reviewsDefault .reviews-wrapper {
-     margin-top: 0;
-     padding-top: 0;
-     padding-bottom: 0;
-     margin-bottom:0;
 }
  #reviewsDefault span.cssButton.normal_button.button.button_read_reviews {
      font-size: 0.9rem;
@@ -748,9 +741,7 @@ a:link,a:hover,input {
      margin: auto;
      max-width: 500px;
 }
- #reviewsDefaultListingTopLinks {
-     margin-bottom: 1rem !important;
-}
+
  #categoryImgListing img {
      width: 100px;
 }
@@ -1119,20 +1110,18 @@ a:link,a:hover,input {
      color: #006400;
 }
  #shippingEstimatorContent .button_update {
-     padding: 0 !important;
-     margin: 0 !important;
+     padding: 0;
+     margin: 0;
      display: flex;
-     color: #8A2BE2 !important;
-     font-size: 1.3rem !important;
-     outline: none !important;
+     color: #8A2BE2;
+     font-size: 1.3rem;
+     outline: none;
      width: auto !important;
      float: left;
      border: none !important;
-     background-color: #fff !important;
+     background-color: #fff;
 }
- #shippingEstimatorContent .button_update:hover {
-     border: none !important 
-}
+ 
  #checkoutConfirmDefault address {
      margin-bottom: 2rem 
 }
@@ -1380,7 +1369,7 @@ a:link,a:hover,input {
      align-items: center;
 }
  .show_orders {
-     margin-bottom: 0 !important;
+     margin-bottom: 0;
      margin-top: 0;
 }
  #checkoutConfirmDefaultPayment, #checkoutConfirmDefaultShipment {
@@ -1446,7 +1435,6 @@ a:link,a:hover,input {
      margin-right: 15px;
 }
  #bannerSix {
-     background: transparent !important;
      margin-top: 2rem;
      padding: 0;
      margin-left: 15px;
@@ -1471,7 +1459,7 @@ a:link,a:hover,input {
 }
  #productMainImage {
      max-width: 500px;
-     margin: auto !important;
+     margin: auto;
 }
  .welcome_link {
      text-decoration: underline !important;
@@ -1513,7 +1501,7 @@ a:link,a:hover,input {
      max-width: 92px;
 }
  #reviewsInfoDefaultProductImage img {
-     margin-bottom: 0 !important;
+     margin-bottom: 0;
 }
  .rating {
      margin-bottom: 0;

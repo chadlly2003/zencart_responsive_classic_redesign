@@ -885,6 +885,10 @@ a:link,a:hover,input {
  #addressbookprocessBody .button_update:hover {
      margin-top: 1rem;
 }
+ #addressbookprocessBody .alert {
+    margin-top:1rem ;
+    margin-bottom: 1rem
+}
  #accountpasswordBody .button_submit {
      margin-bottom:0;
 }

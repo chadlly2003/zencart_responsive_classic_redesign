@@ -425,6 +425,7 @@ a:link,a:hover,input {
      font-size: 16px;
      padding-top:0;
      padding-bottom: 0;
+     display: block;
 }
  #cart-box input::file-selector-button {
      padding: 5px 15px;

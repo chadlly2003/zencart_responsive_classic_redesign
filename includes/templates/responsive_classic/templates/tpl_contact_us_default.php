@@ -46,7 +46,7 @@
 
 <fieldset id="contactUsForm">
 <legend><?php echo HEADING_TITLE; ?></legend>
-<div class="alert"><?php echo FORM_REQUIRED_INFORMATION; ?></div>
+<div class="alert forward"><?php echo FORM_REQUIRED_INFORMATION; ?></div>
 
 
 <?php

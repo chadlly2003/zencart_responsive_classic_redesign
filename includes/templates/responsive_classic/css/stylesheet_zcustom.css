@@ -611,6 +611,9 @@ a:link,a:hover,input {
      color: #4b0082;
      border: solid 1px #4b0082;
 }
+ #reviewsInfoDefaultReviewsListingLink:empty {
+    display:none;
+}
  span.cssButton.normal_button.button.button_more_reviews {
      text-align: left;
      color: #fff;
@@ -672,6 +675,7 @@ a:link,a:hover,input {
      margin-top: 0;
      padding-top: 0;
      padding-bottom: 0;
+     margin-bottom:0;
 }
  #reviewsDefault span.cssButton.normal_button.button.button_read_reviews {
      font-size: 0.9rem;
@@ -886,8 +890,8 @@ a:link,a:hover,input {
      margin-top: 1rem;
 }
  #addressbookprocessBody .alert {
-    margin-top:1rem ;
-    margin-bottom: 1rem
+     margin-top:1rem ;
+     margin-bottom: 1rem 
 }
  #accountpasswordBody .button_submit {
      margin-bottom:0;
@@ -1513,6 +1517,7 @@ a:link,a:hover,input {
 }
  .rating {
      margin-bottom: 0;
+     margin-top:0;
 }
  #reviewsWrite .ratingRow {
      margin-top: 1rem;

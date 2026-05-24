@@ -2614,7 +2614,7 @@ a:link,a:hover,input {
          width: 20%;
          text-align: center;
          margin-right: 5px;
-     
+         margin-left: 5%;
     }
      #askaquestionBody .back {
          float: none;

@@ -47,7 +47,6 @@
 }
  span.normal_button {
      font-size: 1.2em;
-     display: inline-block;
      padding: 12px 20px;
      border-radius: 0.25rem;
      display:flex;
@@ -86,7 +85,6 @@
 }
  #reviewsDefault .button_in_cart:hover {
      float:none;
-     font-size:16px;
      text-align:center;
      padding:12px 20px;
      display:block;
@@ -283,7 +281,6 @@
      text-align: center;
 }
  #shoppingcartBody input[type="image"] {
-     margin-bottom:0;
      margin-bottom:0;
      position: absolute;
      margin-top:-181px;

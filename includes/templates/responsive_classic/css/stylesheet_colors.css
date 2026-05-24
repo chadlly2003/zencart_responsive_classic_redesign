@@ -84,9 +84,6 @@ a:hover{
  .tableHeading{
      background-color:#e9e9e9;
 }
- #cart-box {
-     background:#ccc;
-}
  legend {
      background:#fff;
      border-bottom:solid 1px #ccc;
@@ -102,8 +99,6 @@ a:hover{
  #navMainWrapper, #navSuppWrapper, #shippingEstimatorContent h2, #checkoutConfirmDefault .cartTableHeading, #navEZPagesTop, .productListing-rowheading a:hover, #sendSpendWrapper h2, #accountDefault #sendSpendWrapper h2, #gvFaqDefaultSubHeading, #checkoutPayAddressDefaultAddress, #checkoutShipAddressDefaultAddress, #accountLinksWrapper h2, h2#addressBookDefaultPrimary, #reviewsWriteHeading, #myAccountPaymentInfo h3, #myAccountShipInfo h3, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover {
      background:transparent !important;
      color:#000;
-}
- .rightBoxHeading, .leftBoxHeading, .centerBoxHeading {
 }
  h3.rightBoxHeading a:hover, h3.leftBoxHeading a:hover {
      text-decoration: none;
@@ -127,8 +122,6 @@ a:hover{
 }
  #shippingEstimatorContent th, #navEZPagesTop li a:hover, .productListing-rowheading, #productQuantityDiscounts table tr:first-child td{
      background:#ccc;
-}
- #navCatTabsWrapper, .current, .productListing-rowheading a, .list-more:hover, input.submit_button, span.normal_button {
 }
  #navCatTabs li a:hover, input.submit_button:hover, input.cssButtonHover {
      background:#333;
@@ -406,7 +399,6 @@ a:hover{
      border:none;
 }
  #recordcompaniesHeading {
-     background: #E6E6FA;
      border-radius: 5px;
      color:#000;
      margin-bottom: 1rem;
@@ -740,9 +732,9 @@ a:hover{
      width:calc(100% - 24px) !important;
 }
  #searchDefault label {
-     float:left !important;
+     float:left;
 }
- #searchDefault input [type=text] {
+ #searchDefault input[type=text] {
      width:100% !important;
 }
  #searchDefault .centeredContent {
@@ -898,7 +890,6 @@ a:hover{
 }
  .button_search:hover {
      width:100% !important;
-     color: #fff;
      background-color: #fff;
      color: #006400;
      height: 48px;
@@ -926,6 +917,7 @@ a:hover{
      font-size:1.2rem !important;
      text-align: left;
      border-bottom:solid 1px #ccc;
+     margin-bottom:1px !important;
 }
  .cartTotalsDisplay {
      text-align: left;
@@ -1033,9 +1025,6 @@ a:hover{
      text-align: left;
      border-bottom: solid 1px #ccc;
      font-size: 16px;
-}
- .centerBoxHeading {
-     margin-bottom:1px !important;
 }
  .rightBoxHeading, .leftBoxHeading, .centerBoxHeading {
      background: transparent;

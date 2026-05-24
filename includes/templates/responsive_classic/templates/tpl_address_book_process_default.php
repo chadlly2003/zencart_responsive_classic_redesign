@@ -22,7 +22,7 @@
 <?php
   if (isset($_GET['delete'])) {
 ?>
-<div class="alert forward"><?php echo DELETE_ADDRESS_DESCRIPTION; ?></div>
+<div class="alert"><?php echo DELETE_ADDRESS_DESCRIPTION; ?></div>
 
 <address><?php echo zen_address_label($_SESSION['customer_id'], $_GET['delete'], true, ' ', '<br>'); ?></address>
 <br class="clearBoth">

@@ -270,6 +270,7 @@ a:link,a:hover,input {
  #productListing .product-base-price {
      font-size: 140%;
      display:block;
+     margin-bottom: 1rem;
 }
  .btn-outline-primary {
      border: solid 1px #fff !important;
@@ -291,9 +292,6 @@ a:link,a:hover,input {
      color: #000;
      display: block;
      margin-bottom: 0;
-}
- #productListing .product-base-price {
-     margin-bottom: 1rem;
 }
  .productSalePrice {
      color: #000;
@@ -612,7 +610,7 @@ a:link,a:hover,input {
      border: solid 1px #4b0082;
 }
  #reviewsInfoDefaultReviewsListingLink:empty {
-    display:none;
+     display:none;
 }
  span.cssButton.normal_button.button.button_more_reviews {
      text-align: left;
@@ -629,13 +627,12 @@ a:link,a:hover,input {
      width: 100%;
      text-align: center;
 }
-.prod-list-wrap:has(#productReviewsDefaultListingTopNumber:empty):has(#productReviewsDefaultListingTopLinks:empty) {
-  display: none;
+ .prod-list-wrap:has(#productReviewsDefaultListingTopNumber:empty):has(#productReviewsDefaultListingTopLinks:empty) {
+     display: none;
 }
  .prod-list-wrap.prod-list-bottom:has(#productReviewsDefaultListingBottomLinks:empty):has(#productReviewsDefaultListingBottomNumber:empty) {
-  display: none;
+     display: none;
 }
-
  .spacer_read_more {
      padding-bottom: 1rem;
      padding-top: 0;
@@ -716,6 +713,7 @@ a:link,a:hover,input {
 }
  .button_write_review {
      background: transparent;
+     margin:0;
 }
  #productReviewLink span.normal_button {
      color: #8A4514;
@@ -725,9 +723,6 @@ a:link,a:hover,input {
      align-items: center;
      font-size: 1.2rem !important;
      margin: 0;
-}
- .button_write_review {
-     margin:0;
 }
  .reviews-wrapper .smallProductImage img {
      margin-bottom: 1rem;
@@ -748,7 +743,6 @@ a:link,a:hover,input {
      margin: auto;
      max-width: 500px;
 }
-
  #categoryImgListing img {
      width: 100px;
 }
@@ -1128,7 +1122,6 @@ a:link,a:hover,input {
      border: none !important;
      background-color: #fff;
 }
- 
  #checkoutConfirmDefault address {
      margin-bottom: 2rem 
 }

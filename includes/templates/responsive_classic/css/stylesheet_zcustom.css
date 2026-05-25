@@ -1266,6 +1266,8 @@ a:link,a:hover,input {
      display:flex;
      justify-content: center;
      flex-wrap: wrap;
+     align-content: center;
+     gap:0.5rem;
 }
  .navSplitPagesLinks:empty {
      display: none;
@@ -1274,7 +1276,7 @@ a:link,a:hover,input {
      display: none;
 }
  .navSplitPagesLinks a{
-     padding:10px;
+    display:flex;
      font-weight:bold;
      background:transparent;
      text-decoration: underline;

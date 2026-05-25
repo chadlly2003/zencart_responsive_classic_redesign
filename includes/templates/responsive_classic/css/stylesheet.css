@@ -905,6 +905,7 @@
      background-color: #E6E6FA;
      border-radius: 50%;
      padding:10px;
+     margin-top:-10px;
 }
  .itemTitle{
      font-weight:normal;

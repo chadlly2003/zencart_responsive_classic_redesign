@@ -1902,6 +1902,9 @@ a:link,a:hover,input {
      display: table-row;
      border:none;
 }
+ #shoppingcartBody th {
+     height: inherit;
+}
  .search_box {
      display: none;
 }

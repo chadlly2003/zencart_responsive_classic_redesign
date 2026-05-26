@@ -2471,7 +2471,6 @@ a:link,a:hover,input {
     }
      #shoppingcartBody input[type="image"] {
          margin-top: 0;
-         width: 30px;
          background: none;
     }
      #shoppingcartBody input[type="image"]:last-of-type {

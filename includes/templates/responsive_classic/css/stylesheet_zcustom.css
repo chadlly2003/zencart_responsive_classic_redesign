@@ -343,7 +343,7 @@ a:link,a:hover,input {
      display: none;
 }
  #cartContentsDisplay input {
-     width:100% !important;
+     width:auto !important;
      padding: 0;
      margin-bottom: 0;
      margin-top: 0;
@@ -2064,7 +2064,7 @@ a:link,a:hover,input {
          margin-bottom: 0;
     }
      #shoppingcartBody input[type="image"] {
-         margin-top: -106px;
+         margin-top: -119px;
     }
      #timeoutDefault .forward {
          margin-top: 0;

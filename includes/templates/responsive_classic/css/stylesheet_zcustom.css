@@ -12,14 +12,6 @@ a:link,a:hover,input {
  th, td, tr {
      padding:0.5rem;
 }
- #shoppingcartBody th, #shoppingcartBody tr {
-     padding:0;
-     gap:1rem;
-}
- #shoppingcartBody td {
-     gap: 0;
-     padding:0;
-}
  #shoppingcartBody input[type="checkbox"] {
      margin:0 !important;
 }
@@ -307,15 +299,6 @@ a:link,a:hover,input {
      color: #004d00;
      font-size: 130%;
 }
- #shoppingcartBody .tableHeading,#shoppingcartBody .rowEven,#shoppingcartBody .rowOdd {
-     display: grid;
-     grid-template-columns: 1fr 2fr 1fr;
-     height: auto;
-}
- #shoppingcartBody tr .tableHeading {
-     align-items: center;
-     padding-bottom:0.5rem;
-}
  #scTotalHeading {
      display: none;
 }
@@ -333,12 +316,9 @@ a:link,a:hover,input {
 }
  .cartQuantity {
      text-align: center;
-     display: flex;
-     flex-direction: column;
-     gap:0;
 }
  .cartTotalDisplay {
-     display: none;
+     display:none;
 }
  #checkoutconfirmationBody .cartTotalDisplay {
      display: block !important;
@@ -356,7 +336,6 @@ a:link,a:hover,input {
      display: none;
 }
  #scProductsHeading {
-     width: 100%;
      text-align: left;
      margin-left: 0;
 }
@@ -364,12 +343,11 @@ a:link,a:hover,input {
      display: none;
 }
  #cartContentsDisplay input {
-     width:auto !important;
+     width:100% !important;
      padding: 0;
      margin-bottom: 0;
      margin-top: 0;
      text-align: center;
-     display: block;
 }
  #cartContentsDisplay input[type="text"] {
      align-self: center;
@@ -1276,7 +1254,7 @@ a:link,a:hover,input {
      display: none;
 }
  .navSplitPagesLinks a{
-    display:flex;
+     display:flex;
      font-weight:bold;
      background:transparent;
      text-decoration: underline;
@@ -1381,7 +1359,6 @@ a:link,a:hover,input {
  .cartRemoveItemDisplay .fa-xl {
      vertical-align: middle !important;
      color: #808080;
-     font-size: 1.3rem;
 }
  .reviewCount {
      text-align: center;
@@ -1912,9 +1889,6 @@ a:link,a:hover,input {
  #upcomingProductsTable a:hover {
      text-decoration: underline;
 }
- #upcomingProductsTable td, #upcomingProductsTable th {
-     padding:0.5rem !important 
-}
  #upProductsHeading {
      text-align:left;
      background: transparent !important;
@@ -2022,11 +1996,8 @@ a:link,a:hover,input {
          flex-grow: 1;
          flex-basis: 0;
     }
-     #shoppingcartBody .tableHeading,#shoppingcartBody .rowEven,#shoppingcartBody .rowOdd {
-         grid-template-columns: 1fr 5fr 1fr 1fr;
-    }
      .cartRemoveItemDisplay {
-         display: flex !important;
+         display: flex;
          justify-content: center;
     }
      .cartImage {
@@ -2110,6 +2081,9 @@ a:link,a:hover,input {
     }
 }
  @media (min-width: 768px) {
+     .cartTotalDisplay {
+         display:revert;
+    }
      .cartRemoveItemDisplay {
          gap:0.5rem;
          justify-content: space-around;
@@ -2479,15 +2453,13 @@ a:link,a:hover,input {
          margin-bottom: 0;
     }
      .cartTotalDisplay {
-         display: block;
          text-align: center;
     }
      #scUpdateQuantity {
          display: block;
     }
      #scTotalHeading {
-         text-align: center !important;
-         display: block;
+         display: revert-layer;
     }
      #shoppingCartDefault input[type="checkbox"] {
          display: block;
@@ -2495,23 +2467,15 @@ a:link,a:hover,input {
     }
      .cartQuantityUpdate {
          display: grid;
-         text-align: center;
-         justify-content: center;
+         justify-items: center;
     }
      #shoppingcartBody input[type="image"] {
-         position: relative;
          margin-top: 0;
          width: 30px;
          background: none;
     }
      #shoppingcartBody input[type="image"]:last-of-type {
          display: none;
-    }
-     #shoppingcartBody .tableHeading,#shoppingcartBody .rowEven,#shoppingcartBody .rowOdd {
-         grid-template-columns: 1fr 1fr 5fr 1fr 2fr 1fr;
-    }
-     #shoppingcartBody .tableHeading {
-         align-items: flex-end;
     }
      #reviews-right input.submit_button {
          float: right;

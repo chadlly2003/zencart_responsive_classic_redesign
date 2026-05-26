@@ -1909,6 +1909,9 @@ a:link,a:hover,input {
      display: block;
      width: 100%;
 }
+ .cartTotalDisplay_tax {
+     text-align: center;
+}
  @media (min-width: 576px) {
      #pinfo-right #freeShippingIcon {
          margin-bottom: 0;

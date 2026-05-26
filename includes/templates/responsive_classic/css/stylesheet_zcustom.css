@@ -2467,7 +2467,6 @@ a:link,a:hover,input {
     }
      .cartQuantityUpdate {
          display: grid;
-         justify-items: center;
     }
      #shoppingcartBody input[type="image"] {
          margin-top: 0;

@@ -146,9 +146,6 @@
  #checkoutoneBody #checkoutOneShoppingCart legend {
      margin-bottom: 5rem !important;
 }
- #cartContentsDisplay th, #cartContentsDisplay td {
-    padding:0.5rem !important;
-}
  #checkoutoneBody #cartContentsDisplay .productPrice {
      display: block !important;
      padding-left: 0;

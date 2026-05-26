@@ -45,6 +45,7 @@ a:hover{
 }
  .markProductOutOfStock {
      color:#900404 !important;
+     display: block;
 }
  #navMain ul li a:hover, #navSupp ul li a:hover{
      color:#154DBC;

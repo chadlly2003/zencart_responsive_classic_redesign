@@ -1274,9 +1274,13 @@
  #myAccountGen li a, #myAccountNotify li a{
      text-decoration:underline;
 }
- .accountTotalDisplay, .accountTaxDisplay {
+ .accountTotalDisplay{
      text-align:center;
 }
+.accountTaxDisplay  {    
+     vertical-align:top;
+     text-align:center;}
+
  .accountQuantityDisplay {
      vertical-align:top;
      text-align:center;

@@ -9,7 +9,7 @@ a:hover{
      text-decoration:none;
 }
  .cartTotalDisplay {
-     text-decoration: none;
+    text-decoration: none;
      color:#000;
 }
  .cat-count, .itemTitle a:hover, h2.greeting a:hover {
@@ -84,6 +84,12 @@ a:hover{
  .tableHeading{
      background-color:#e9e9e9;
 }
+ #orderTotals{
+     background:transparent;
+}
+ #cart-box {
+     background:#ccc;
+}
  legend {
      background:#fff;
      border-bottom:solid 1px #ccc;
@@ -100,6 +106,8 @@ a:hover{
      background:transparent !important;
      color:#000;
 }
+ .rightBoxHeading, .leftBoxHeading, .centerBoxHeading {
+}
  h3.rightBoxHeading a:hover, h3.leftBoxHeading a:hover {
      text-decoration: none;
 }
@@ -107,11 +115,11 @@ a:hover{
      background:#fff;
      color:#000;
 }
- #siteinfoIP, #siteinfoLegal{
+ #siteinfoIP, #siteinfoLegal, #bannerSix{
      background:#DCDCDC;
      border:none;
      clear:both;
-     margin-top:2rem;
+     margin-top:3rem;
 }
  #navEZPagesTop li a:hover, .pagination li a:hover {
      background: transparent;
@@ -122,6 +130,8 @@ a:hover{
 }
  #shippingEstimatorContent th, #navEZPagesTop li a:hover, .productListing-rowheading, #productQuantityDiscounts table tr:first-child td{
      background:#ccc;
+}
+ #navCatTabsWrapper, .current, .productListing-rowheading a, .list-more:hover, input.submit_button, span.normal_button {
 }
  #navCatTabs li a:hover, input.submit_button:hover, input.cssButtonHover {
      background:#333;
@@ -242,6 +252,11 @@ a:hover{
 }
  input.cssButton.submit_button.button.button_search {
      font-size:1.2em 
+}
+ #navSuppWrapper {
+     margin-top:3rem !important;
+     margin-bottom:1rem !important;
+     display:block;
 }
  #tagline {
      display:none;
@@ -399,6 +414,7 @@ a:hover{
      border:none;
 }
  #recordcompaniesHeading {
+     background: #E6E6FA;
      border-radius: 5px;
      color:#000;
      margin-bottom: 1rem;
@@ -732,9 +748,9 @@ a:hover{
      width:calc(100% - 24px) !important;
 }
  #searchDefault label {
-     float:left;
+     float:left !important;
 }
- #searchDefault input[type=text] {
+ #searchDefault input [type=text] {
      width:100% !important;
 }
  #searchDefault .centeredContent {
@@ -765,8 +781,6 @@ a:hover{
  .reviewligner span.normal_button {
      font-size: 1.2rem !important;
      padding:0 !important;
-     display:inherit !important;
-     align-content: center;
 }
  #productReviewLink {
      float:none !important;
@@ -781,6 +795,9 @@ a:hover{
      margin-top:0;
 }
  .spacerreviewsa span.normal_button {
+     display:inherit !important;
+}
+ .reviewligner span.normal_button {
      display:inherit !important;
 }
  .reviewligner {
@@ -820,15 +837,11 @@ a:hover{
 }
  #shoppingcartBody tr:nth-child(odd) {
      background-color: #F8F8FF;
-     padding-top:10px;
-     padding-bottom:10px;
 }
  #shoppingcartBody tr:nth-child(even) {
      background-color: transparent;
      border-top:solid 1px #ccc;
      border-bottom:solid 1px #ccc;
-     padding-top:10px;
-     padding-bottom:10px;
 }
  #cartSubTotal {
      border-top:none;
@@ -890,6 +903,7 @@ a:hover{
 }
  .button_search:hover {
      width:100% !important;
+     color: #fff;
      background-color: #fff;
      color: #006400;
      height: 48px;
@@ -917,7 +931,6 @@ a:hover{
      font-size:1.2rem !important;
      text-align: left;
      border-bottom:solid 1px #ccc;
-     margin-bottom:1px !important;
 }
  .cartTotalsDisplay {
      text-align: left;
@@ -997,13 +1010,10 @@ a:hover{
      margin-bottom:1rem;
 }
  #seShipTo {
-     padding-top:1rem !important;
+     margin-top:1rem !important;
      color: #761bc9;
-     padding:0;
-     margin-top: 0 !important;
-     font-size: 1.3rem;
-     font-weight: inherit;
-     width: 100%;
+     padding-left:0px;
+     padding-right:0px;
 }
  .leftBoxHeading {
      background: transparent;
@@ -1025,6 +1035,9 @@ a:hover{
      text-align: left;
      border-bottom: solid 1px #ccc;
      font-size: 16px;
+}
+ .centerBoxHeading {
+     margin-bottom:1px !important;
 }
  .rightBoxHeading, .leftBoxHeading, .centerBoxHeading {
      background: transparent;

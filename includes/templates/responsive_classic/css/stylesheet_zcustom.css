@@ -1137,9 +1137,6 @@ a:link,a:hover,input {
  #checkoutConfirmDefault .important {
      font-weight: normal 
 }
- #checkoutConfirmDefault .cartQuantity {
-     display: block;
-}
  #checkoutConfirmDefault #ccProductsHeading {
      text-align: left;
 }

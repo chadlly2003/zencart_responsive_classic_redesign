@@ -260,9 +260,6 @@
  #cartContentsDisplay th, #cartContentsDisplay td {
      padding:inherit !important;
 }
- #checkoutOneBillto br, #checkoutOneShipto br {
-     display:none !important;
-}
  #checkoutoneBody .opc-error {
      border: 1px solid red !important;
 }

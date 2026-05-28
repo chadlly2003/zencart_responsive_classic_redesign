@@ -241,6 +241,7 @@
 }
  #checkoutoneBody .productTax {
      display: none !important;
+     text-align: center;
 }
  #checkoutoneBody #choices-bill, #choices-ship {
      display: flex !important;

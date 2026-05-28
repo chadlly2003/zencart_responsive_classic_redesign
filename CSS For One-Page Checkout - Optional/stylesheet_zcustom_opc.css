@@ -146,7 +146,6 @@
      margin-bottom: 5rem !important;
 }
  #checkoutoneBody #cartContentsDisplay .productPrice {
-     display: block !important;
      padding-left: 0;
      padding-right: 0;
      text-align: center;
@@ -210,6 +209,9 @@
      margin-bottom: 1.5rem;
      border-radius: 5px;
 }
+ #checkoutoneBody .cartProductDisplay {
+    display:grid;
+}
  #opc-bill-cancel {
      margin-bottom: 1rem !important;
      display: block;
@@ -253,10 +255,10 @@
      text-align: center;
 }
  #checkoutoneBody .productTax {
-    display:none;
+     display:none;
 }
  #cartContentsDisplay th, #cartContentsDisplay td {
-    padding:inherit !important;
+     padding:inherit !important;
 }
  #checkoutOneBillto br, #checkoutOneShipto br {
      display:none !important;
@@ -265,16 +267,20 @@
      border: 1px solid red !important;
 }
  #checkoutoneBody .cartAttribsList {
-    margin-top:0;
-    margin-bottom: 0;
-    padding-left:1.5rem
+     margin-top:0;
+     margin-bottom: 0;
+     padding-left:1.5rem;
+     order:2;
+}
+ #checkoutoneBody .markProductOutOfStock {
+    order:2;
 }
  @media (min-width: 576px) {
      #checkoutoneBody .productTax {
          display: revert !important;
     }
      #checkoutoneBody .productTax {
-        display:revert;
+         display:revert;
     }
 }
  @media (min-width: 768px) {

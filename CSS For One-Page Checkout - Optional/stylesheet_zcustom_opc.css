@@ -20,6 +20,9 @@
      padding-left: 0;
      padding-right: 0;
 }
+#checkoutoneBody .cartTotalDisplay {
+    display:revert;
+}
  #opc-pwf {
      margin-top: -.5rem;
 }

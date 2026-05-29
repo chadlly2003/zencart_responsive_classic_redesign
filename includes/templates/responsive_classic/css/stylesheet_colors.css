@@ -9,7 +9,7 @@ a:hover{
      text-decoration:none;
 }
  .cartTotalDisplay {
-    text-decoration: none;
+     text-decoration: none;
      color:#000;
 }
  .cat-count, .itemTitle a:hover, h2.greeting a:hover {
@@ -827,7 +827,7 @@ a:hover{
  #passwordForgottenMainContent {
      padding:1rem;
      background: #FFF8DC;
-     margin-bottom:1rem;
+     margin-bottom:0;
      text-align: center;
 }
  #shoppingcartBody tr:nth-child(odd) {

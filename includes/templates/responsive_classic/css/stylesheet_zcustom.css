@@ -1236,8 +1236,8 @@ a:link,a:hover,input {
      margin-top:1rem;
 }
  .navSplitPagesLinks {
-     margin-top:1rem;
-     margin-bottom:1rem;
+     margin-top:1.5rem;
+     margin-bottom:1.5rem;
      display:flex;
      justify-content: center;
      flex-wrap: wrap;

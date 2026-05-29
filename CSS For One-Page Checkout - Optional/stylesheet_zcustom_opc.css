@@ -427,7 +427,6 @@
     }
      div.centerColumn#loginOpcDefault {
          display: flex !important;
-         margin-bottom: 4rem;
     }
      #loginOpcDefault .opc-block .buttonRow {
          display: flex;

@@ -103,7 +103,7 @@ a:hover{
  #cart-box.add-to-cart-N {
      background: inherit;
 }
- #navMainWrapper, #navSuppWrapper, #shippingEstimatorContent h2, #checkoutConfirmDefault .cartTableHeading, #navEZPagesTop, .productListing-rowheading a:hover, #sendSpendWrapper h2, #accountDefault #sendSpendWrapper h2, #gvFaqDefaultSubHeading, #checkoutPayAddressDefaultAddress, #checkoutShipAddressDefaultAddress, #accountLinksWrapper h2, h2#addressBookDefaultPrimary, #reviewsWriteHeading, #myAccountPaymentInfo h3, #myAccountShipInfo h3, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover {
+ #navMainWrapper, #shippingEstimatorContent h2, #checkoutConfirmDefault .cartTableHeading, #navEZPagesTop, .productListing-rowheading a:hover, #sendSpendWrapper h2, #accountDefault #sendSpendWrapper h2, #gvFaqDefaultSubHeading, #checkoutPayAddressDefaultAddress, #checkoutShipAddressDefaultAddress, #accountLinksWrapper h2, h2#addressBookDefaultPrimary, #reviewsWriteHeading, #myAccountPaymentInfo h3, #myAccountShipInfo h3, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover {
      background:transparent !important;
      color:#000;
 }
@@ -252,11 +252,6 @@ a:hover{
 }
  input.cssButton.submit_button.button.button_search {
      font-size:1.2em 
-}
- #navSuppWrapper {
-     margin-top:1rem !important;
-     margin-bottom:1rem !important;
-     display:block;
 }
  #tagline {
      display:none;

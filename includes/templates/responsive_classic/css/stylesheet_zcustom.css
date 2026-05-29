@@ -1906,8 +1906,10 @@ a:link,a:hover,input {
      display: none;
 }
  #navSuppWrapper {
-     display: block;
-     width: 100%;
+    width: 100%;
+    margin-top:1rem !important;
+    margin-bottom:1rem !important;
+    display:block;
 }
  #ccTaxHeading, .cartTotalDisplay_tax,#myAccountTax,.accountTaxDisplay {
      display: none;

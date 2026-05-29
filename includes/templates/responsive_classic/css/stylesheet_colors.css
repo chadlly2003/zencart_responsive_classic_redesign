@@ -677,14 +677,12 @@ a:hover{
      border:none;
 }
  #productDateAdded {
-     padding-top:6px;
-     padding-bottom:6px;
+     padding:0.5rem;
      background: #FFF8DC;
      margin-top:1rem;
 }
  #productDateAvailable {
-     padding-top:6px;
-     padding-bottom:6px;
+     padding:0.5rem;
      background: #FFF8DC;
 }
  #cart-box {
@@ -825,7 +823,7 @@ a:hover{
      width:100% !important;
 }
  #passwordForgottenMainContent {
-     padding:1rem;
+     padding:0.5rem;
      background: #FFF8DC;
      margin-bottom:0;
      text-align: center;

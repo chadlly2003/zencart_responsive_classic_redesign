@@ -1,4 +1,4 @@
-  body {
+ body {
      margin:0;
      font-family:verdana, arial, helvetica, sans-serif;
      font-size:75%;
@@ -770,7 +770,6 @@
      margin-bottom:1rem;
 }
 /*bof checkout*/
-
  div#checkoutShippingContentChoose{
      margin-bottom:20px;
 }
@@ -950,7 +949,7 @@
  .prod-list-wrap{
      text-align:center;
      clear:both;
-     margin-bottom:0;
+     margin-bottom:1rem;
      margin-top:1rem;
 }
  .navSplitPagesResult:empty {
@@ -1277,10 +1276,10 @@
  .accountTotalDisplay{
      text-align:center;
 }
-.accountTaxDisplay  {    
+ .accountTaxDisplay {
      vertical-align:top;
-     text-align:center;}
-
+     text-align:center;
+}
  .accountQuantityDisplay {
      vertical-align:top;
      text-align:center;

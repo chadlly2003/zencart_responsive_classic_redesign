@@ -1421,7 +1421,7 @@ a:link,a:hover,input {
 }
  .welcome_note {
      background:#fff8dc;
-     padding:.5rem 15px;
+     padding:0.5rem 15px;
      margin:0;
      text-align:center;
      display:block 

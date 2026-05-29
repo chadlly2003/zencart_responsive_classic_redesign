@@ -601,6 +601,10 @@
 }
  .sideBoxContentItem img, .reviewsContent img{
      margin-bottom:20px;
+     margin:auto;
+     text-align:center;
+     clear: both;
+     display:block;
 }
  .rightBoxContent {
      margin-bottom:1em;

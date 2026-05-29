@@ -92,9 +92,8 @@
      font-size:0.9em;
 }
  .information {
-     line-height: 150%;
      background: #FFF8DC;
-     padding:1rem;
+     padding:0.5rem;
      margin-bottom:1rem;
 }
  .group:after {
@@ -1259,7 +1258,7 @@
  #productReviewsDefaultNoReviews {
      clear:both;
      background: #FFF8DC;
-     padding: 1rem;
+     padding: 0.5rem;
      margin-top:2rem;
 }
  #productReviewsDefaultListingBottomNumber:empty {

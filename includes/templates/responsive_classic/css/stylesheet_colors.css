@@ -279,37 +279,7 @@ a:hover{
      margin-left:15px !important;
      margin-right:15px !important;
 }
- #documentcategoriesHeading {
-     background: transparent;
-     border-radius: 0px;
-     color:#000;
-     margin-bottom: 1rem;
-     padding-bottom:1rem;
-     text-align: left;
-     border-bottom:solid 1px #ccc;
-     font-size:16px;
-}
- #languagesHeading {
-     background: transparent;
-     border-radius: 0px;
-     color:#000;
-     margin-bottom: 1rem;
-     padding-bottom:1rem;
-     text-align: left;
-     border-bottom:solid 1px #ccc;
-     font-size:16px;
-}
  #manufacturerinfoHeading {
-     background: transparent;
-     border-radius: 0px;
-     color:#000;
-     margin-bottom: 1rem;
-     padding-bottom:1rem;
-     text-align: left;
-     border-bottom:solid 1px #ccc;
-     font-size:16px;
-}
- #currenciesHeading {
      background: transparent;
      border-radius: 0px;
      color:#000;
@@ -333,47 +303,21 @@ a:hover{
      background-color: #AC171D;
      border-color: #AC171D;
      color:#fff;
+     margin-bottom: 0;
 }
  #currencies input.cssButtonHover {
      width:auto !important;
      color: #AC171D;
      background-color: #fff;
-}
- #brandsHeading {
-     background: transparent;
-     border-radius: 0px;
-     color: #000;
-     margin-bottom: 0rem;
-     text-align: left;
-     border-bottom: solid 1px #ccc;
-     font-size: 16px;
-     margin-top: 1rem;
-     display: flex;
-     min-height: 44px;
-     padding-left: 0px;
-     padding-right: 0px;
-     padding-top: 0.5rem;
-     padding-bottom: 0px;
+     margin-bottom: 0;
 }
  #languagesContent a {
      min-height: 44px;
      min-width:44px;
+     align-content: center;
 }
- #featuredcategoriesHeading {
-     background: transparent;
-     border-radius: 0px;
-     color: #000;
-     margin-bottom: 0rem;
-     text-align: left;
-     border-bottom: solid 1px #ccc;
-     font-size: 16px;
-     margin-top: 1rem;
-     display: flex;
-     min-height: 44px;
-     padding-left: 0px;
-     padding-right: 0px;
-     padding-top: 0.5rem;
-     padding-bottom: 0px;
+ #moreinformationContent {
+     margin-bottom: 0;
 }
  #featuredcategoriesHeading a {
      min-height: 60px;
@@ -387,46 +331,22 @@ a:hover{
      color: #8A2BE2;
      padding-right: 0.5rem;
 }
- #categoriesHeading {
-     background: transparent;
-     border-radius: 0px;
-     color:#000;
-     margin-bottom: 1rem;
-     padding-bottom:1rem;
-     text-align: left;
-     border-bottom:solid 1px #ccc;
-     font-size:16px;
-}
  .list-links li {
      display: list-item;
 }
  #ezpagesHeading {
+     background:#FAEBD7;
      border-radius: 5px;
      color:#000;
-     margin-bottom: 1rem;
-     background:#FAEBD7;
      text-align: center;
      border:none;
 }
  #recordcompaniesHeading {
-     background: #E6E6FA;
+     background:#AFEEEE;
      border-radius: 5px;
      color:#000;
-     margin-bottom: 1rem;
-     background:#AFEEEE;
      text-align: center;
      border:none;
-     margin-top:1rem;
-}
- #bannerbox2Heading {
-     background: transparent;
-     border-radius: 0px;
-     color:#000;
-     margin-bottom: 1rem;
-     padding-bottom:1rem;
-     text-align: left;
-     border-bottom:solid 1px #ccc;
-     font-size:16px;
 }
  #bannerbox2Heading::after {
      content: "\f059";
@@ -439,17 +359,7 @@ a:hover{
 }
  #searchHeading label {
      font-size:16px;
-     margin-bottom: 1rem;
-}
- #bestsellersHeading {
-     background: transparent;
-     border-radius: 0px;
-     color:#000;
-     margin-bottom: 1rem;
-     padding-bottom:1rem;
-     text-align: left;
-     border-bottom:solid 1px #ccc;
-     font-size:16px;
+     margin-bottom: 0 !important;
 }
  #bestsellersHeading::before {
      content: "\f005";
@@ -460,31 +370,6 @@ a:hover{
      color: #4B0072;
      padding-right: 0.5rem;
 }
- #orderhistoryHeading {
-     background: transparent;
-     border-radius: 0px;
-     color:#000;
-     padding-bottom:1rem;
-     text-align: left;
-     border-bottom:solid 1px #ccc;
-     font-size:16px;
-}
- #specialsHeading {
-     background: transparent;
-     border-radius: 0px;
-     color:#000;
-     margin-bottom: 0rem;
-     text-align: left;
-     border-bottom:solid 1px #ccc;
-     font-size:16px;
-     margin-top: 1rem;
-     display: flex;
-     min-height: 44px;
-     padding-left:0px;
-     padding-right:0px;
-     padding-top:0.5rem;
-     padding-bottom:0px;
-}
  #specialsHeading::before {
      content: "\f02b";
      font-family: "Font Awesome 6 Free";
@@ -494,16 +379,6 @@ a:hover{
      color: #8B0061;
      padding-right: 0.5rem;
 }
- #bannerboxallHeading {
-     background: transparent;
-     border-radius: 0px;
-     color:#000;
-     margin-bottom: 1rem;
-     padding-bottom:1rem;
-     text-align: left;
-     border-bottom:solid 1px #ccc;
-     font-size:16px;
-}
  #bannerboxallHeading::before {
      content: "\f164";
      font-family: "Font Awesome 6 Free";
@@ -512,16 +387,6 @@ a:hover{
      font-weight: 900;
      color: #0056B3;
      padding-right: 0.5rem;
-}
- #searchHeading{
-     background: transparent;
-     border-radius: 0px;
-     color:#000;
-     margin-bottom: 1rem;
-     padding-bottom:0rem;
-     text-align: left;
-     border-bottom:solid 1px #ccc;
-     font-size:16px;
 }
  #searchHeading::before {
      content: "\f002";
@@ -537,7 +402,7 @@ a:hover{
      width:auto !important;
      background:#8b008b;
      border:solid 1px #8b008b;
-     margin-bottom:1rem;
+     margin-bottom:0;
      color:#fff;
 }
  .sidebox-select-form .button_submit:hover {
@@ -545,7 +410,7 @@ a:hover{
      background:#fff;
      color:#8b008b;
      border:solid 1px #8b008b;
-     margin-bottom:1rem;
+     margin-bottom:0;
 }
  #select-record_company_id {
      outline:none;
@@ -555,16 +420,6 @@ a:hover{
      outline:none;
      height:auto;
 }
- #musicgenresHeading {
-     background: transparent;
-     border-radius: 0px;
-     color:#000;
-     margin-bottom: 1rem;
-     padding-bottom:1rem;
-     text-align: left;
-     border-bottom:solid 1px #ccc;
-     font-size:16px;
-}
  #musicgenresHeading::before {
      content: "\f001";
      font-family: "Font Awesome 6 Free";
@@ -573,16 +428,6 @@ a:hover{
      font-weight: 900;
      color: #2A4D00;
      padding-right: 0.5rem;
-}
- #whosonlineHeading {
-     background: transparent;
-     border-radius: 0px;
-     color:#000;
-     margin-bottom: 1rem;
-     padding-bottom:1rem;
-     text-align: left;
-     border-bottom:solid 1px #ccc;
-     font-size:16px;
 }
  #whosonlineHeading::before {
      content: "\f0ac";
@@ -600,18 +445,11 @@ a:hover{
      margin-bottom: 1rem;
 }
  #reviewsHeading {
-     background: #cfd3c6;
      border-radius: 5px;
      color:#000;
-     margin-bottom: 1rem;
+     background: #cfd3c6;
      text-align: center;
      border:none;
-     margin-top:1rem;
-     padding-bottom:0px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding-top:0px;
 }
  #reviewsHeading a {
      color:#000;
@@ -653,21 +491,18 @@ a:hover{
      padding-right: 0.5rem;
 }
  #informationHeading{
-     background: #f0f9fd;
      border-radius: 5px;
      color:#000;
-     margin-bottom: 1rem;
+     background: #f0f9fd;
      text-align: center;
      border:none;
 }
  #manufacturersHeading {
-     background: #E6E6FA;
      border-radius: 5px;
      color:#000;
-     margin-bottom: 1rem;
+     background: #E6E6FA;
      text-align: center;
      border:none;
-     margin-top:1rem;
 }
  #featuredProducts .centerBoxHeading {
      color:#000;
@@ -1007,27 +842,6 @@ a:hover{
      color: #761bc9;
      padding-left:0px;
      padding-right:0px;
-}
- .leftBoxHeading {
-     background: transparent;
-     border-radius: 0px;
-     color: #000;
-     margin-bottom: 1rem;
-     padding-bottom: 1rem;
-     text-align: left;
-     border-bottom: solid 1px #ccc;
-     font-size: 16px;
-     border:none;
-}
- .rightBoxHeading {
-     background: transparent;
-     border-radius: 0px;
-     color: #000;
-     margin-bottom: 1rem;
-     padding-bottom: 1rem;
-     text-align: left;
-     border-bottom: solid 1px #ccc;
-     font-size: 16px;
 }
  .centerBoxHeading {
      margin-bottom:1px !important;

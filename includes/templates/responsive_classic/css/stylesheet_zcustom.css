@@ -162,6 +162,8 @@ a:link,a:hover,input {
  #searchContent a {
      min-height: 44px;
      display: block;
+     padding:0;
+     margin:0;
 }
  .orderdates {
      text-align: left;

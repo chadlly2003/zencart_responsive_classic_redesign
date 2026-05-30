@@ -164,6 +164,7 @@ a:link,a:hover,input {
      display: block;
      padding:0;
      margin:0;
+     align-content: center;
 }
  .orderdates {
      text-align: left;
@@ -1770,9 +1771,6 @@ a:link,a:hover,input {
      color:#006400;
      margin-top:0 !important;
      padding-top:0;
-}
- #reviewsContent {
-     margin-bottom:2rem;
 }
  .realign_spacer2 {
      margin-bottom: 2rem;

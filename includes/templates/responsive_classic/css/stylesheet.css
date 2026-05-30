@@ -262,7 +262,11 @@
      background-clip: padding-box;
      border-radius: .25rem;
      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+     width: 100% !important;
+     margin-right:5px;
 }
+form[name="currencies_form"] {display: flex;}
+
 /*bof warnings, errors, messages*/
  .messageStackWarning, .messageStackError, .messageStackSuccess, .messageStackCaution {
      line-height:1.8em;

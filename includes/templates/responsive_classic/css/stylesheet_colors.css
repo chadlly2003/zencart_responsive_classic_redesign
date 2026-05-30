@@ -311,11 +311,6 @@ a:hover{
      background-color: #fff;
      margin-bottom: 0;
 }
- #languagesContent a {
-     min-height: 44px;
-     min-width:44px;
-     align-content: center;
-}
  #moreinformationContent {
      margin-bottom: 0;
 }

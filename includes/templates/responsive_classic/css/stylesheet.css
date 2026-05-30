@@ -253,7 +253,7 @@
 }
  #currenciesContent select{
      height:35px;
-     margin-bottom:0.5rem;
+     margin-bottom:0;
      padding: .375rem .75rem;
      font-size: 1rem;
      line-height: 1.5;
@@ -265,8 +265,9 @@
      width: 100% !important;
      margin-right:5px;
 }
-form[name="currencies_form"] {display: flex;}
-
+ form[name="currencies_form"] {
+     display: flex;
+}
 /*bof warnings, errors, messages*/
  .messageStackWarning, .messageStackError, .messageStackSuccess, .messageStackCaution {
      line-height:1.8em;
@@ -584,15 +585,16 @@ form[name="currencies_form"] {display: flex;}
      padding:1.0em 0.2em;
 }
 /*sidebox content styles*/
- .sideBoxContent {
-     padding:0;
-     margin-bottom:10px;
+ .rightBoxContainer, .leftBoxContainer {
+     margin-bottom: 1rem;
 }
  .sideBoxContent a{
-     padding:0.3em 0;
      display:inline-block;
      font-size:1.1em;
      text-decoration:underline;
+}
+ form[name="quick_find"] input.cssButton.submit_button.button.button_search, form[name="quick_find"] .cssButtonHover {
+     margin-bottom: 0;
 }
  #navEZPagesTOC {
      font-size:1.2em;

@@ -1032,7 +1032,7 @@ a:link,a:hover,input {
      list-style: none;
 }
  #checkoutPayment .inputLabel {
-     color: #006400;
+     color: #1B6120;
 }
  #checkoutPayment p:first-of-type {
      margin-top: -0.5rem;
@@ -1606,6 +1606,7 @@ a:link,a:hover,input {
 }
  #menu-icon {
      min-width: 25px;
+     cursor: pointer;
 }
  #createAcctSuccess div {
      margin-bottom: 1rem;

@@ -814,8 +814,8 @@ a:link,a:hover,input {
      margin-bottom: 1rem;
 }
  #accountNotifications fieldset .notice {
-     padding-left: 6px;
-     padding-right: 6px;
+     padding-left: 0.5rem;
+     padding-right: 0.5rem;
 }
  #accountNotifications .notice {
      padding-bottom: 1rem;

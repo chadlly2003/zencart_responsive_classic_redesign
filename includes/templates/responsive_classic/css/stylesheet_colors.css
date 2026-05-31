@@ -455,21 +455,6 @@ a:hover{
  #cartBoxListWrapper {
      border-bottom: solid 1px #ccc;
 }
- #shoppingcartHeading {
-     background: transparent;
-     border-radius: 0px;
-     color:#000;
-     padding-bottom:0.5rem;
-     padding-top:0.5rem;
-     text-align: left;
-     border-bottom:solid 1px #ccc;
-     font-size:16px;
-     display: flex;
-     align-items: center;
-     margin-top:1rem;
-     padding-left:0px;
-     padding-right:0px;
-}
  #shoppingcartHeading a {
      color: #000;
      text-decoration: none;

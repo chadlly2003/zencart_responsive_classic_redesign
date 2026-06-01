@@ -1,4 +1,4 @@
-  body {
+ body {
      margin:0;
      font-family:verdana, arial, helvetica, sans-serif;
      font-size:75%;
@@ -540,13 +540,12 @@
  #navSupp ul {
      display:flex;
      flex-wrap: wrap;
-     gap: 1rem;
+     column-gap: 1rem;
      padding:0;
      margin:0;
      justify-content:center;
      padding-left:15px;
      padding-right:15px;
-     margin-bottom:0.5rem;
 }
  #navSupp li {
      font-size:0.75rem;
@@ -560,6 +559,9 @@
      display: block;
      text-decoration: none;
      align-content: center;
+     min-height: 44px;
+     min-width: 44px;
+     text-align: center;
 }
 /*footer copyright*/
  #siteinfoIP, #siteinfoLegal, #bannerSix{

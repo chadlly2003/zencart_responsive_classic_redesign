@@ -1,4 +1,4 @@
-/** loginBody **/
+ /** loginBody **/
  #loginOpcDefault h2 {
      font-size: 1.3rem;
      line-height: 25px;
@@ -38,6 +38,11 @@
  #opc-pwf {
      margin-top: -.5rem;
 }
+ #opc-pwf a {
+    min-height: 44px;
+     min-width:44px;
+    display: flex;
+}
  #checkoutOneGuestInfo legend {
      margin-top: 0 !important;
      padding-top: 0 !important;
@@ -48,7 +53,7 @@
 }
  #loginOpcDefault .buttonRow {
      padding-top: 0;
-     padding-bottom: 1rem;
+     padding-bottom: 0;
 }
  .opc-block-3 {
      margin-top: 1rem;
@@ -261,7 +266,7 @@
      padding-top: 0 !important;
 }
  #checkoutOneShippingFlag label {
-     color: blueviolet;
+     color: #622BE2;
      margin-bottom:0 !important;
 }
  .checkoutShippingChoices legend {
@@ -431,6 +436,10 @@
      #loginOpcDefault .opc-block .buttonRow {
          display: flex;
          justify-content: end;
+         min-height: 44px;
+         min-width: 44px;
+         align-items: center;
+         padding-bottom: 0;
     }
      #loginOpcDefault span.normal_button {
          white-space: nowrap;

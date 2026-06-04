@@ -1915,6 +1915,20 @@ a:link,a:hover,input {
  #ccTaxHeading, .cartTotalDisplay_tax,#myAccountTax,.accountTaxDisplay {
      display: none;
 }
+ .closingbox {
+     font-size:1.5rem;
+     color:#8A2BE2;
+     text-align: right;
+     padding-right:1.5rem;
+}
+ .closingcontainer {
+     width:100%;
+     display: flex;
+     justify-content: end;
+}
+ .closingbox, .closingcontainer button {
+     -webkit-tap-highlight-color: transparent;
+}
  @media (min-width: 576px) {
      #ccTaxHeading, .cartTotalDisplay_tax,#myAccountTax,.accountTaxDisplay {
          display: revert;

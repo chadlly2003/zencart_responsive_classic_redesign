@@ -1245,7 +1245,7 @@ a:link,a:hover,input {
      justify-content: center;
      flex-wrap: wrap;
      align-content: center;
-     gap:0.5rem;
+     
 }
  .navSplitPagesLinks:empty {
      display: none;
@@ -1259,6 +1259,10 @@ a:link,a:hover,input {
      background:transparent;
      text-decoration: underline;
      color:#000;
+     min-width: 44px;
+     min-height: 44px;
+     justify-content: center;
+     align-items: center;
 }
  .navSplitEmpty3rdColumn {
      margin-left: 0 !important;

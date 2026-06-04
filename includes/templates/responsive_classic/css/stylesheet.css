@@ -516,9 +516,7 @@
      padding: 1.2em 1.0em;
      display: block;
 }
- .pagination .current{
-     padding:1.2em 1.0em;
-}
+ 
 /*breadcrumbs*/
  #navBreadCrumb {
      margin:0;
@@ -916,7 +914,9 @@
      padding:10px;
      margin-top:0;
      min-width: 24px;
-     align-content: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
  .itemTitle{
      font-weight:normal;

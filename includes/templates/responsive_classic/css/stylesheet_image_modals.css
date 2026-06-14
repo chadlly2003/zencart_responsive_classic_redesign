@@ -23,7 +23,6 @@
     object-position: center;
    /* Center the visible portion of the image */
     position: relative;
-    z-index: 2;
 }
 .image-grid::before {
     content: "";

@@ -25,12 +25,13 @@
             font-family: Consolas, monospace;
             font-size: 0.95em;
         }
-        .note {
+        .note, .note_revised {
             background: #e8f4ff;
             border-left: 4px solid #007acc;
             padding: 0.75rem;
             margin: 1rem 0;
         }
+
         ul {
             margin-left: 1.5rem;
         }
@@ -39,6 +40,8 @@
             border-top: 1px solid #ccc;
             margin: 2rem 0;
         }
+        .statustext {color: #006400;
+                     font-size:1.5rem;}
 
 .welcome_note {
   background: #FFF8DC;
@@ -76,12 +79,46 @@
         - <em>Optional:</em> Fully featured image gallery with thumbnails, drag/swipe scrolling, infinite looping, arrows, and a modal lightbox 
         </li>
          
-        
         <li><strong>Activate the Template:</strong> Log in to Zen Cart and navigate to <strong>Tools &gt; Template Section</strong>.</li>
         <li>Activate the <strong>responsive_classic</strong> template.</li>
     </ol>
-
     <hr>
+
+<h1>After Installation</h1>
+    <h2>Remove the following files</h2>
+    <div class="note_revised">The files listed below are empty placeholder files included with the template and can be safely removed after installation.</div>
+    <p><strong>path</strong> <code>includes\templates\responsive_classic\jscript\</code></p>
+<ul>
+<li>jquery.matchHeight-min.js</li>
+<li>jquery.matchHeight.js</li>
+<li>jquery.mmenu.fixedelements.js</li>
+<li>mmenu.fixedelements.min.js</li>
+<li>jquery.mmenu.js</li>
+<li>jquery.mmenu.min.all.js</li>
+<li>jquery.mmenu.oncanvas.js</li>
+<li>jquery.mmenu.oncanvas.min.js</li>
+<li>jscript_framework.php</li>
+<li>jscript_matchHeight-min.js</li>
+</ul>
+
+ 
+ <p><strong>path</strong> <code>includes\templates\responsive_classic\css\</code></p>
+<ul>
+  <li>jquery.mmenu.all.css</li>
+  <li>responsive_default.css</li>
+  <li>responsive_mobile.css</li>
+  <li>responsive_tablet.css</li>
+  <li>responsive.css</li>
+  
+</ul>
+
+
+ <p><strong>path</strong> <code>includes\templates\responsive_classic\templates\</code></p>
+  <ul><li>tpl_modules_mobile_menu.php</li></ul>
+
+<strong><span class="statustext">Template Setup Complete!</span></strong>
+
+
 <h1>Making Changes to Template</h1>
     <h2>Columns per Row – What It Does</h2>
     <p><strong>Description:</strong> The Admin Columns per Row setting controls how many items are shown in each row in the product or category view.</p>

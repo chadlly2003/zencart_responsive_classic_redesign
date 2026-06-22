@@ -203,7 +203,7 @@ if (defined('MODULE_PAYMENT_PAYPALWPP_STATUS') && MODULE_PAYMENT_PAYPALWPP_STATU
   } else {
 ?>
 
-<h2 id="cartEmptyText"><?php echo TEXT_CART_EMPTY; ?></h2>
+<h1 id="cartEmptyText"><?php echo TEXT_CART_EMPTY; ?></h1>
 
 <?php
     // -----

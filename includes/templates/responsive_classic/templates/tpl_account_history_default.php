@@ -32,7 +32,7 @@ if (!empty($accountHistory)) {
         <div class="content forward">
             <?php echo '<a href="' . zen_href_link(FILENAME_ACCOUNT_HISTORY_INFO, (isset($_GET['page']) ? 'page=' . $_GET['page'] . '&' : '') . 'order_id=' . $history['orders_id'], 'SSL') . '">' . zen_image_button(BUTTON_IMAGE_VIEW_SMALL, BUTTON_VIEW_SMALL_ALT) . '</a>'; ?>
         </div>
-        <br class="clearBoth">
+        
     </fieldset>
 <?php
     }

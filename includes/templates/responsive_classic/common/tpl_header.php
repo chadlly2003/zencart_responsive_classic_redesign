@@ -66,7 +66,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
       $menulist = $zen_CategoriesUL->buildTree(true, 1);
      echo $menulist;
     ?> 
-<hr class="spacernav" />
+<hr class="spacernav">
 
     <ul class="myaccounts">
       <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa fa-xl fa-fw fa-home" aria-hidden="true">&nbsp;</i> <?php echo HEADER_TITLE_CATALOG; ?></a></li>
@@ -114,10 +114,6 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
       <li><?php echo '<a href="' . zen_href_link(FILENAME_SITE_MAP) . '">'; ?> <i class="fa fa-xl fa-fw fa-sitemap" aria-hidden="true">&nbsp;</i> Sitemap</a></li>
 
       <li><?php echo ' <a href="' . zen_href_link(FILENAME_CONTACT_US, '', 'SSL') . '">'; ?><i class="fa fa-xl fa-fw fa-phone fa-flip-horizontal" aria-hidden="true">&nbsp;</i> Contact</a></li>
-
-      <li class="closingcontainer"><button aria-label="Categories" type="button" class="btn btn-outline-primary">
-      <span id="menu-icon" class="fa fa-close closingbox"></span>
-    </button></li>
   </ul>
 </div>
 <!-- eof sidebar navigation -->
@@ -149,15 +145,15 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
 </div>
  
   <div class="shoppingcart">
-  <a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>" aria-label="<?php echo TABLE_HEADING_LOGIN_DETAILS; ?>">
+  <a class="iconlogin" href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>" aria-label="<?php echo TABLE_HEADING_LOGIN_DETAILS; ?>">
     <i class="fa fa-user spacer2 navitem1t" aria-hidden="true" role="img" aria-label="Login icon" >&nbsp;</i>
 </a>
     
-    <a href="<?php echo zen_href_link('contact_us', '', 'SSL'); ?>"  aria-label="<?php echo BOX_INFORMATION_CONTACT; ?>">
+    <a class="iconlogin" href="<?php echo zen_href_link('contact_us', '', 'SSL'); ?>"  aria-label="<?php echo BOX_INFORMATION_CONTACT; ?>">
     <i class="fa fa-envelope spacer1 navitem2t " aria-hidden="true" role="img" aria-label="Contact icon">&nbsp;</i></a>  
     
     <a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>" aria-label="<?php echo BOX_HEADING_SHOPPING_CART; ?>">
-    <i class="fa fa-shopping-cart fa-fw badge fa-lg navitem3t" aria-hidden="true" role="img" aria-label="Shopping cart icon">
+    <i class="fa fa-shopping-cart fa-fw badge navitem3t" aria-hidden="true" role="img" aria-label="Shopping cart icon">
         <span class="cart-count"><?php echo $_SESSION['cart']->count_contents(); ?></span></i></a>
   </div> 
 </div>

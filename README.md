@@ -25,7 +25,7 @@ This demo highlights the Zen Cart platform with the newly updated Responsive Cla
 •	Discussions & Community Support: Join the conversation and find answers in the <a href="https://www.zen-cart.com/showthread.php?230683-Responsive-Classic-Redesign-Support-thread">Zen Cart Discussions Thread</a><br />
 
 <hr />
-⚠️ Before You Begin: If you have made any custom changes to your existing template files, please make a backup before replacing or removing any files. This will allow you to restore your customizations if needed. 
+⚠️ Before You Begin: If you have made any custom changes to your existing template files, please make a backup before replacing or removing any files. This will allow you to restore your customizations if needed. <br /><br />
 
 
 <strong>Getting Started with the Responsive Classic Redesign Template</strong>

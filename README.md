@@ -1,4 +1,4 @@
-<strong>Zen Cart Classic Template Rebuild V6.1</strong><br />
+<strong>Zen Cart Classic Template Rebuild V7.1</strong><br />
 
 This demo highlights the Zen Cart platform with the newly updated Responsive Classic Template. The template has been refreshed to provide a modern, optimized shopping experience that works seamlessly across a variety of devices and screen sizes.
 
@@ -25,12 +25,24 @@ This demo highlights the Zen Cart platform with the newly updated Responsive Cla
 •	Discussions & Community Support: Join the conversation and find answers in the <a href="https://www.zen-cart.com/showthread.php?230683-Responsive-Classic-Redesign-Support-thread">Zen Cart Discussions Thread</a>
 
 
-<strong>Getting Started</strong>
-1.	Clone or Download the Project: Clone or download the demo files from this repository to your local machine.
+⚠️ Before You Begin: If you have made any custom changes to your existing template files, please make a backup before replacing or removing any files. This will allow you to restore your customizations if needed. 
 
-2.	Upload Files to Your Server: Extract the downloaded files and upload the ‘images’ folder and the ‘includes’ directory to your web server. Optional: You can also download the updated_demo_image.zip for additional image assets.
-   
-3.	Log in to Zencart and navigate to Tools > Template Section.
 
-4.	Activate the zencartdemo template.
+<strong>Getting Started with the Responsive Classic Redesign Template</strong>
+
+1. Clone or Download the Project: Clone or download the demo files from this repository to your local machine. 
+ 
+<strong>Step A - Remove The Following Folders From Your Website</strong>
+	includes\templates\responsive_classic\jscript\
+	includes\templates\responsive_classic\css\
+
+<strong>Step B - Remove the following Template From Your Website</strong>
+	includes\templates\responsive_classic\templates\tpl_modules_mobile_menu.php
+
+2. Upload Files to Your Server: Extract the downloaded files and upload the 'images' and 'includes' folder to your web server. 
+	- Optional: You can also download the 'updated_demo_image.zip' for additional image assets.
+	- Optional: Add the CSS file when using the One Page Checkout plugin to match site styling.
+	- Optional: Fully featured image gallery with thumbnails, drag/swipe scrolling, infinite looping, arrows, and a modal lightbox
+3. 	Activate the Template: Log in to Zen Cart and navigate to Tools > Template Section.
+4.	Activate the responsive_classic template. 
 

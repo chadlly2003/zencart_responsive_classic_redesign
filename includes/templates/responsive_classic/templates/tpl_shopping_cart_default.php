@@ -137,7 +137,7 @@ echo !empty($product['flagStockCheck']) ? '<span class="alert bold">' . $product
 </table>
 
 <div id="cartSubTotal"><?php echo SUB_TITLE_SUB_TOTAL; ?> <?php echo $cartShowTotal; ?></div>
-<br class="clearBoth">
+ 
 
 <!--bof shopping cart buttons-->
 
@@ -159,7 +159,7 @@ echo !empty($product['flagStockCheck']) ? '<span class="alert bold">' . $product
 <!--eof shopping cart buttons-->
 </form>
 
-<br class="clearBoth">
+ 
 <?php
     if (SHOW_SHIPPING_ESTIMATOR_BUTTON == '1') {
 ?>

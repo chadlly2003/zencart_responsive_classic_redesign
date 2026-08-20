@@ -22,5 +22,5 @@
     <li><a href="<?php echo $var_linksList[$i]['link']; ?>"><?php echo $var_linksList[$i]['name']; ?></a></li>
 <?php } // end FOR loop ?>
   </ul>
-</div>
+</nav>
 <?php } ?>

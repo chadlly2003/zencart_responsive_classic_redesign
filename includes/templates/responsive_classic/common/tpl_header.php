@@ -17,6 +17,7 @@
  */
 ?>
 
+<div class="messagetext">
 <?php
   // Display all header alerts via messageStack:
   if ($messageStack->size('header') > 0) {
@@ -34,6 +35,7 @@ if (isset($flag_disable_header) && $flag_disable_header === true) {
   return;
 }
 ?>
+ </div>
  
  <a href="<?php echo $_SERVER['REQUEST_URI']; ?>#main-content" class="skip-link">Skip to main content</a>
  

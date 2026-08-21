@@ -66,7 +66,7 @@
      align-items: center;
 }
  #checkoutOneCartGroup {
-     margin-top: 1rem;
+     margin-top: 0;
      margin-bottom: 1rem;
 }
  #loginOpcDefault #login-password {
@@ -157,7 +157,7 @@
      display: none;
 }
  #checkoutPaymentMethod {
-     margin-top: 1rem;
+     margin-top: 0;
      margin-bottom: 1rem;
 }
  #checkoutoneBody #checkoutOneGuestInfo .opc-right:nth-of-type(1) {
@@ -332,7 +332,7 @@
      display: none;
 }
  #checkoutComments {
-     margin-top: 1rem;
+     margin-top: 0;
      margin-bottom: 1rem;
 }
  .checkoutOneCoupon legend {

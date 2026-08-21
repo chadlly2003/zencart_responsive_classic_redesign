@@ -1,4 +1,4 @@
-     /*
+      /*
 =========================================================
 COMMON TEMPLATE CUSTOMIZATIONS
 =========================================================
@@ -357,8 +357,8 @@ body {
  .cat-count {
      color: #333333;
 }
-.itemTitle a:hover, h2.greeting a:hover {
-    color: #000000;
+ .itemTitle a:hover, h2.greeting a:hover {
+     color: #000000;
 }
  a:active {
      color: #154dbc;
@@ -808,10 +808,10 @@ body {
  form.sidebox-select-form select {
      padding: 10px;
      margin-bottom: 0.5rem;
-     color: #9C0000;
+     color: #FF0000 
 }
  form.sidebox-select-form select option:nth-child(1) {
-     color: #9C0000;
+     color: #FF0000;
      font-weight: bold;
 }
  form.sidebox-select-form option:not(:first-child) {
@@ -2865,6 +2865,7 @@ body {
      padding-bottom: 1rem;
      margin-bottom: 1rem;
      font-size: 1.3rem;
+     padding-top: 1rem;
 }
  #checkoutShippingContentChoose {
      margin-bottom: 1rem;

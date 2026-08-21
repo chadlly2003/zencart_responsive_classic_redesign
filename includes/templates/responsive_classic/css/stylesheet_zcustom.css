@@ -20,7 +20,7 @@ Responsive breakpoints:
 1300px
 =========================================================
 */
- body {
+body {
      margin: 0;
      font-family: verdana, arial, helvetica, sans-serif;
      font-size: 12px;
@@ -1074,7 +1074,7 @@ Responsive breakpoints:
      margin: 0 0 0.5rem;
      padding: 0;
 }
- #productListing br, #whatsNew br, #featuredProducts br, #reviewsWritePrice br, #reviewsInfoDefaultPrice br, .block_element_reviewslinked br, #cartContentsDisplay br, #shippingEstimatorContent br, #pinfo-right br, .max-qty br, .centerBoxContentsAlsoPurch br, #csNotifications br, .centerBoxContentsFeaturedCategories br, #specialsDefault br, #orderStatus br, #searchBody br, #accounteditBody br, #addressbookprocessBody br, #accountnewslettersBody br, .cartProductDisplay br, #checkoutPayment .payment br, #loginDefault br, #createAcctDefault br, #passwordforgottenBody br, .productPriceDiscount br, #gvFaqDefaultMainContent br, .spacer_element_button_add br, #accountNotifications br {
+ #productListing br, #whatsNew br, #featuredProducts br, #reviewsWritePrice br, #reviewsInfoDefaultPrice br, .block_element_reviewslinked br, #cartContentsDisplay br, #shippingEstimatorContent br, #pinfo-right br, .max-qty br, .centerBoxContentsAlsoPurch br, #csNotifications br, .centerBoxContentsFeaturedCategories br, #specialsDefault br, #orderStatus br, #searchBody br, #accounteditBody br, #addressbookprocessBody br, #accountnewslettersBody br, .cartProductDisplay br, #checkoutPayment .payment br, #loginDefault br, #createAcctDefault br, #passwordforgottenBody br, .productPriceDiscount br, #gvFaqDefaultMainContent br, .spacer_element_button_add br, #accountNotifications br, #downformaintenanceBody br {
      display: none;
 }
  #cartAdd a, #bannerboxallContent a, .spacer_element_button_add a {
@@ -1275,7 +1275,7 @@ Responsive breakpoints:
  #acctNewslettersDefault .forward, #accountNotifications .forward, #addressBookProcessDefault .forward, #accountPassword .forward, #accountEditDefault .forward, #addressBookDefault .forward, #contactUsDefault .forward, #askAQuestion .forward, #searchDefault .forward, #shippingEstimatorContent .forward, #timeoutDefault .forward, #gvFaqDefault .forward, #accountHistoryDefault .forward, #gvRedeemDefault .forward {
      float: none;
 }
- #page2Body .buttonRow, #page3Body .buttonRow, #page4Body .buttonRow, #pagenotfoundBody .buttonRow, #passwordforgottenBody .buttonRow, #aboutusBody .buttonRow, #accessibilityBody .buttonRow, #privacyBody .buttonRow, #conditionsBody .buttonRow, #orderstatusBody .buttonRow, #sitemapBody .buttonRow, #shippinginfoBody .buttonRow, #discountcouponBody .buttonRow, #unsubscribeBody .buttonRow {
+ #page2Body .buttonRow, #page3Body .buttonRow, #page4Body .buttonRow, #pagenotfoundBody .buttonRow, #passwordforgottenBody .buttonRow, #aboutusBody .buttonRow, #accessibilityBody .buttonRow, #privacyBody .buttonRow, #conditionsBody .buttonRow, #orderstatusBody .buttonRow, #sitemapBody .buttonRow, #shippinginfoBody .buttonRow, #discountcouponBody .buttonRow, #unsubscribeBody .buttonRow, #downformaintenanceBody .buttonRow {
      float: none;
 }
  .messageStackWarning, .messageStackError, .messageStackSuccess, .messageStackCaution {
@@ -3374,6 +3374,21 @@ Responsive breakpoints:
  #shippingEstimatorContent #stateLabel {
      width: 100%;
 }
+ #maintenanceDefault .forward {
+     float: none;
+}
+ #maintenanceDefaultMainContent {
+     background: #dcdcdc;
+     padding: 0.5rem;
+     font-size: 14px;
+     text-align: center;
+}
+ #maintenanceDefault img {
+     display: none;
+}
+ #downformaintenanceBody .button_continue {
+     margin-top: 1rem;
+}
  #reviewsDefault .spacerreviewsa {
      text-align: center;
 }
@@ -3497,8 +3512,17 @@ Responsive breakpoints:
      margin: 0;
      padding: 0;
 }
+ .stock-wrapper .stock-msg.in-stock {
+     color: #006400;
+}
+ .stock-wrapper .stock-msg.no-stock {
+     color:#900404;
+}
  .stock-msg.no-stock {
      display: block;
+}
+ #contentMainWrapper #accountHistInfo .stock-wrapper {
+     margin-top: 0;
 }
  #productAttributes .no-stock, .stock-msg.no-stock {
      color: #900404;
@@ -3683,6 +3707,9 @@ Responsive breakpoints:
     }
 }
  @media (min-width: 768px) {
+     #downformaintenanceBody .button_continue {
+         width: fit-content;
+    }
      #discountcouponInfo input.submit_button {
          width: 100%;
     }

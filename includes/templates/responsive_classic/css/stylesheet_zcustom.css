@@ -93,6 +93,12 @@ body {
      appearance: none;
      color: #000000;
 }
+ .messagetext {
+     display: flex;
+     justify-content: center;
+     margin-left:15px;
+     margin-right:15px;
+}
  .sideBoxContent select {
      width: 100%;
      margin: 0;

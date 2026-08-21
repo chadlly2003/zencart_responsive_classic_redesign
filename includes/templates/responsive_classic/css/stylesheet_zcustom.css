@@ -1104,6 +1104,8 @@ body {
      font-weight: normal;
      margin-bottom: 1rem;
      margin-top: 1rem;
+     margin-left: 15px;
+     margin-right: 15px;
 }
  .search_box {
      display: none;

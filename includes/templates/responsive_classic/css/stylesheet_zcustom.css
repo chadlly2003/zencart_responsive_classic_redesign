@@ -2994,6 +2994,7 @@ body {
      border-bottom: 1px solid #cccccc;
      padding-bottom: 1rem;
      font-size: 1.3rem;
+     padding-top:1rem;
 }
  #checkoutConfirmDefault .confirmorder {
      margin-top: 0;

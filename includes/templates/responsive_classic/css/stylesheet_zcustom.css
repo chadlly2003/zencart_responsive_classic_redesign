@@ -354,8 +354,11 @@ body {
      color: #154dbc;
      text-decoration: none;
 }
- .cat-count, .itemTitle a:hover, h2.greeting a:hover {
+ .cat-count {
      color: #333333;
+}
+.itemTitle a:hover, h2.greeting a:hover {
+    color: #000000;
 }
  a:active {
      color: #154dbc;

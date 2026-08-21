@@ -1,4 +1,4 @@
-      /*
+       /*
 =========================================================
 COMMON TEMPLATE CUSTOMIZATIONS
 =========================================================
@@ -808,10 +808,10 @@ body {
  form.sidebox-select-form select {
      padding: 10px;
      margin-bottom: 0.5rem;
-     color: #FF0000;
+     color: #B30000;
 }
  form.sidebox-select-form select option:nth-child(1) {
-     color: #FF0000;
+     color: #B30000;
      font-weight: bold;
 }
  form.sidebox-select-form option:not(:first-child) {

@@ -1839,9 +1839,6 @@ body {
      position: relative;
      justify-content: end;
 }
- #cartAdd input {
-     border: 1px solid #cccccc;
-}
  .button_write_review {
      color: #8a4514;
      background: transparent;

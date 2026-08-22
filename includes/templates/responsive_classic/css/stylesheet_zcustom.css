@@ -1170,6 +1170,13 @@ body {
      min-height: 44px;
      min-width: 44px;
      display: block;
+     align-content: center;
+}
+#timeoutDefault .buttonRow  a {
+     min-height: 44px;
+     min-width: 44px;
+     display: block;
+     align-content: center;
 }
  #loginDefault fieldset {
      clear: both;
@@ -1208,7 +1215,7 @@ body {
      outline: none;
 }
  #loginBody .button_login, #timeoutBody .button_login {
-     margin-bottom: 0.5rem;
+     margin-bottom: 0;
      border: solid 1px #006400;
 }
  #createAcctDefault fieldset {

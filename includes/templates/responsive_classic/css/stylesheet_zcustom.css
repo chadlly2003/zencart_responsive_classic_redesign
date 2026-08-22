@@ -1172,7 +1172,13 @@ body {
      display: block;
      align-content: center;
 }
-#timeoutDefault .buttonRow  a {
+ #timeoutDefaultContent a {
+     text-decoration: underline;
+}
+ #timeoutDefaultContent a:hover {
+     text-decoration: none;
+}
+ #timeoutDefault .buttonRow a {
      min-height: 44px;
      min-width: 44px;
      display: block;

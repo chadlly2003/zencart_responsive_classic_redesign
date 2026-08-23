@@ -382,7 +382,7 @@ body {
      border-radius: 5px;
      background: #f0f8ff;
 }
- #navMainWrapper, #checkoutConfirmDefault .cartTableHeading, .productListing-rowheading a:hover, #sendSpendWrapper h2, #accountDefault #sendSpendWrapper h2, #gvFaqDefaultSubHeading, #checkoutPayAddressDefaultAddress, #checkoutShipAddressDefaultAddress, #accountLinksWrapper h2, h2#addressBookDefaultPrimary, #reviewsWriteHeading, #myAccountPaymentInfo h3, #myAccountShipInfo h3, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover {
+ #navMainWrapper, #checkoutConfirmDefault .cartTableHeading, .productListing-rowheading a:hover, #accountDefault #sendSpendWrapper h2, #gvFaqDefaultSubHeading, #checkoutPayAddressDefaultAddress, #checkoutShipAddressDefaultAddress, #accountLinksWrapper h2, h2#addressBookDefaultPrimary, #reviewsWriteHeading, #myAccountPaymentInfo h3, #myAccountShipInfo h3, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover {
      color: #000000;
 }
  #navEZPagesTop li a:hover, .pagination li a:hover {
@@ -1152,6 +1152,13 @@ body {
      min-width: 0;
      border: none;
 }
+ #gvSendDefaultHeadingSend {
+     padding-top: 1rem;
+}
+ #gvSendDefaultBalance {
+     padding:0.5rem;
+     background:#fff8dc;
+}
  .alert {
      color: #900404;
 }
@@ -1295,7 +1302,7 @@ body {
  #acctNewslettersDefault .back, #accountNotifications .back, #addressbookprocessBody .back, #accountpasswordBody .back, #accounteditBody .back, #addressBookDefault .back, #contactUsDefault .back, #searchDefault .back, #searchresultBody .back, .reviews-wrapper .back, #gvfaqBody .back {
      float: none;
 }
- #acctNewslettersDefault .forward, #accountNotifications .forward, #addressBookProcessDefault .forward, #accountPassword .forward, #accountEditDefault .forward, #addressBookDefault .forward, #contactUsDefault .forward, #askAQuestion .forward, #searchDefault .forward, #shippingEstimatorContent .forward, #timeoutDefault .forward, #gvFaqDefault .forward, #accountHistoryDefault .forward, #gvRedeemDefault .forward {
+ #acctNewslettersDefault .forward, #accountNotifications .forward, #addressBookProcessDefault .forward, #accountPassword .forward, #accountEditDefault .forward, #addressBookDefault .forward, #contactUsDefault .forward, #askAQuestion .forward, #searchDefault .forward, #shippingEstimatorContent .forward, #timeoutDefault .forward, #gvFaqDefault .forward, #accountHistoryDefault .forward, #gvRedeemDefault .forward, #sendSpendWrapper .forward {
      float: none;
 }
  #page2Body .buttonRow, #page3Body .buttonRow, #page4Body .buttonRow, #pagenotfoundBody .buttonRow, #passwordforgottenBody .buttonRow, #aboutusBody .buttonRow, #accessibilityBody .buttonRow, #privacyBody .buttonRow, #conditionsBody .buttonRow, #orderstatusBody .buttonRow, #sitemapBody .buttonRow, #shippinginfoBody .buttonRow, #discountcouponBody .buttonRow, #unsubscribeBody .buttonRow, #downformaintenanceBody .buttonRow {
@@ -2362,6 +2369,18 @@ body {
  .reviewligner span.normal_button {
      font-size: 1.2rem;
 }
+ .button_send_a_gift_cert {
+     background: #8b008b;
+     border: 1px solid #8b008b;
+     margin-bottom: 0;
+     color: #ffffff;
+     width: auto;
+}
+ .button_send_a_gift_cert:hover {
+     border: 1px solid #8b008b;
+     background: #ffffff;
+     color: #8b008b;
+}
  .reviewligner {
      display: flex;
      justify-content: center;
@@ -2477,6 +2496,18 @@ body {
      padding-bottom: 1rem;
      margin-bottom: 1rem;
      margin-top: 0;
+}
+ #sendSpendWrapper h2 {
+     padding: 10px;
+     font-weight: normal;
+     text-align: left;
+     padding-left: 0;
+     border-bottom: 1px solid #cccccc;
+     padding-bottom: 1rem;
+     margin-bottom: 1rem;
+     margin-top: 1rem;
+     display: flex;
+     color: #000000;
 }
  #accountLinksWrapper {
      margin: 0;
@@ -3729,6 +3760,9 @@ body {
     }
 }
  @media (min-width: 768px) {
+     #sendSpendWrapper .forward {
+         width: fit-content;
+    }
      #downformaintenanceBody .button_continue {
          width: fit-content;
     }

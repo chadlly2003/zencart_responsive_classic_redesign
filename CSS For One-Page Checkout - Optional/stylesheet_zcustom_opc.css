@@ -4,7 +4,7 @@
      padding-bottom: 0;
 }
  #checkoutPayment .alert + br {
-     display: none;
+     display: none !important;
 }
  .opc-view .alert {
      display: none !important;

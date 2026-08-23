@@ -16,7 +16,6 @@ Responsive breakpoints:
 576px
 768px
 992px
-1200px
 1300px
 =========================================================
 */
@@ -4209,7 +4208,7 @@ body {
          display: block;
          text-align: left;
          margin-left: 1.5rem;
-         flex-grow: 0.9;
+         flex-grow: 0.7;
     }
      .cat-count {
          display: inline;
@@ -4229,11 +4228,6 @@ body {
     }
      #indexHomeBody .onerow-fluid>[class^="col"]:nth-child(3) {
          display: block;
-    }
-}
- @media (min-width: 1200px) {
-     .search_box {
-         flex-grow: 0.7;
     }
 }
  @media (min-width: 1300px) {

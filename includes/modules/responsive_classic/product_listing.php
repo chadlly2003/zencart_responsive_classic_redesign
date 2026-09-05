@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * product_listing module
  *
@@ -201,6 +201,8 @@ if ($num_products_count > 0) {
         }
 
         $product_contents = [];
+        $product_image_content = '';
+        $product_other_contents = [];
 
         $linkCpath = $record['master_categories_id'];
         if (!empty($_GET['cPath'])) $linkCpath = $_GET['cPath'];
@@ -446,38 +448,52 @@ $lc_text .= '</div>'; // end product-container
 
             $product_contents[] = $lc_text; // (used in column/fluid modes)
 
-            if ($product_listing_layout_style === 'table') {
+            // Keep the image separate from all other product-listing content.
+            if ($column_list[$col] === 'PRODUCT_LIST_IMAGE') {
+                $product_image_content .= $lc_text;
+            } elseif ($lc_text !== '') {
+                $product_other_contents[] = $lc_text;
+            }
+        }
+
+        if ($product_listing_layout_style === 'table') {
+            // IMAGE SIDE: wrapper around .list-image
+            if ($product_image_content !== '') {
                 $list_box_contents[$rows][] = [
-                    'align' => $lc_align,
-                    'params' => 'class="productListing-data"',
+                    'align' => 'center',
+                    'params' => 'class="productListing-data product-list-image-wrap"',
                     'category' => $record['master_categories_id'],
                     'parent_category_name' => $record['parent_category_name'],
                     'category_name' => $record['category_name'],
                     'manufacturers_id' => $record['manufacturers_id'],
                     'manufacturers_name' => $listing_mfg_name,
-                    'text' => $lc_text,
+                    'text' => '<div class="product-list-image">' . $product_image_content . '</div>',
                 ];
-//                // add description
-//                if (!empty($listing_description)) {
-//                    $rows++;
-//                    // match alternating colors
-//                    if ($extra_row == 1) {
-//                        $tmp_class_name = "productListing-data-description-even";
-//                        $extra_row = 0;
-//                    } else {
-//                        $tmp_class_name = "productListing-data-description-odd";
-//                        $extra_row = 1;
-//                    }
-//                    $list_box_contents[$rows][] = [
-//                        'params' => 'class="' . $tmp_class_name . '" colspan="' . $zc_col_count_description . '"',
-//                        'text' => $listing_description
-//                    ];
-//                }
+            }
+
+            // EVERYTHING ELSE: one wrapper for name, description, details, price, buttons, etc.
+            if (!empty($product_other_contents)) {
+                $list_box_contents[$rows][] = [
+                    'align' => '',
+                    'params' => 'class="productListing-data product-list-content-wrap"',
+                    'category' => $record['master_categories_id'],
+                    'parent_category_name' => $record['parent_category_name'],
+                    'category_name' => $record['category_name'],
+                    'manufacturers_id' => $record['manufacturers_id'],
+                    'manufacturers_name' => $listing_mfg_name,
+                    'text' => '<div class="product-list-content">' . implode('', $product_other_contents) . '</div>',
+                ];
             }
         }
 
         if ($product_listing_layout_style === 'columns' || $product_listing_layout_style === 'fluid') {
-            $lc_text = implode('<br>', $product_contents);
+            $lc_text = '';
+            if ($product_image_content !== '') {
+                $lc_text .= '<div class="product-list-image">' . $product_image_content . '</div>';
+            }
+            if (!empty($product_other_contents)) {
+                $lc_text .= '<div class="product-list-content">' . implode('', $product_other_contents) . '</div>';
+            }
             $style = '';
             if ($product_listing_layout_style === 'columns') {
                 //$style = ' style="width:' . $col_width . '%;"';

@@ -293,8 +293,7 @@ body {
  .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {
      margin-top: 1rem;
      margin-bottom: 1rem;
-     padding-top: 1rem;
-     padding-bottom: 1rem;
+     padding:1rem;
 }
  .specialsListBoxContents a, .centerBoxContentsAlsoPurch a, .centerBoxContentsFeatured a, .centerBoxContentsSpecials a, .centerBoxContentsFeaturedCategories a, .centerBoxContentsNew a {
      margin: 0;

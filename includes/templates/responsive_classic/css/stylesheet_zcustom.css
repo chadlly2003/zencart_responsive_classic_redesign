@@ -1,4 +1,4 @@
-       /*
+        /*
 =========================================================
 COMMON TEMPLATE CUSTOMIZATIONS
 =========================================================
@@ -32,12 +32,6 @@ body {
  html {
      overflow-x: hidden;
      height: 100%;
-}
- a:link {
-     text-decoration: underline;
-}
- a:visited {
-     text-decoration: underline;
 }
  h1 {
      font-size: 1.8em;
@@ -349,14 +343,14 @@ body {
  h2.greeting a {
      color: #000000;
 }
- a:link, a:visited, #navEZPagesTOC ul li a, a:hover, #navEZPagesTOC ul li a:hover, .cartOldItem, .list-price, .itemTitle a, h2.greeting, #icon, h1, .header {
+ a:link, a:visited, #navEZPagesTOC ul li a, a:hover, #navEZPagesTOC ul li a:hover, .cartOldItem, .list-price, h2.greeting, #icon, h1, .header {
      color: #154dbc;
      text-decoration: none;
 }
  .cat-count {
      color: #333333;
 }
- .itemTitle a:hover, h2.greeting a:hover {
+h2.greeting a:hover {
      color: #000000;
 }
  a:active {
@@ -1350,7 +1344,6 @@ body {
      margin-left: auto;
      margin-right: auto;
      margin-bottom: 1rem;
-     max-width: 500px;
 }
  .list-price {
      font-size: 140%;
@@ -4069,11 +4062,6 @@ body {
      #contentMainWrapper {
          display: flex;
     }
-     .list-image {
-         float: left;
-         margin-right: 1rem;
-         margin-top: 0;
-    }
      .reviews-wrapper .smallProductImage img {
          margin-right: 1rem;
          margin-top: 0;
@@ -4136,10 +4124,16 @@ body {
      .productListing-odd {
          padding-top: 1rem;
          padding-bottom: 1rem;
+         display: grid;
+         grid-template-columns: auto 1fr;
+         gap:1rem;
     }
      .productListing-even {
          padding-top: 1rem;
          padding-bottom: 1rem;
+         display: grid;
+         grid-template-columns: auto 1fr;
+         gap:1rem;
     }
      #checkoutPayment .button_continue_checkout:hover {
          margin-top: 0;

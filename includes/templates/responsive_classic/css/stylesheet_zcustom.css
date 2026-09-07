@@ -36,22 +36,99 @@ body {
  h1 {
      font-size: 1.8em;
      line-height: 25px;
+     margin: 16px 0;
+     color: #154dbc;
+     text-decoration: none;
 }
  h2 {
      font-size: 1.4em;
-}
- h1, h2, h3, h4, h5, h6 {
      margin: 16px 0;
+     color: #000000;
+}
+ h3 {
+     margin: 16px 0;
+     color: #000000;
+     font-size: 1.3em;
+}
+ h4 {
+     margin: 16px 0;
+     font-size: 1.1em;
+}
+ h5 {
+     margin: 16px 0;
+     font-size: 1.1em;
+}
+ h6 {
+     margin: 16px 0;
+     font-size: 1.1em;
 }
  .biggerText {
      font-size: 1.2em;
      line-height: 160%;
 }
- p, address {
+ p {
      padding: 0;
 }
- .centeredContent, th, #cartEmptyText, #cartBoxGVButton, #cartBoxEmpty, #cartBoxVoucherBalance, #navCatTabsWrapper, #navEZPageNextPrev, #bannerOne, #bannerTwo, #bannerThree, #bannerFour, #bannerFive, #bannerSix, #siteinfoLegal, #siteinfoCredits, #siteinfoStatus, .center, .cartRemoveItemDisplay, .cartQuantityUpdate, .cartQuantity, .cartTotalsDisplay, #cartBoxGVBalance, .leftBoxHeading, .centerBoxHeading, .rightBoxHeading, .productListing-data, .ratingRow, label#textAreaReviews, #productMainImage, #reviewsInfoDefaultProductImage, #productReviewsDefaultProductImage, #reviewWriteMainImage, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {
+ a:hover {
+     color: #154dbc;
+     text-decoration: none;
+     -webkit-tap-highlight-color: transparent;
+}
+ a:link {
+     color: #154dbc;
+     text-decoration: none;
+     -webkit-tap-highlight-color: transparent;
+}
+ #bannerOne {
      text-align: center;
+     padding: 0.8em;
+}
+ #bannerTwo {
+     text-align: center;
+     padding: 0.8em;
+}
+ #bannerThree {
+     text-align: center;
+     padding: 0.8em;
+}
+ #bannerFour {
+     text-align: center;
+     padding: 0.8em;
+}
+ #bannerFive {
+     text-align: center;
+     padding: 0.8em;
+}
+ #siteinfoCredits {
+     text-align: center;
+     font-size: 0.9em;
+}
+ #siteinfoStatus {
+     text-align: center;
+     font-size: 0.9em;
+}
+ .centeredContent, #cartEmptyText, #cartBoxGVButton, #cartBoxEmpty, #cartBoxVoucherBalance, .center, .cartQuantity, #cartBoxGVBalance, .productListing-data, .ratingRow, #reviewsInfoDefaultProductImage, #productReviewsDefaultProductImage {
+     text-align: center;
+}
+ .centerBoxContents{
+     text-align: center;
+     vertical-align: top;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     padding: 1rem;
+}
+ .additionalImages {
+     text-align: center;
+     vertical-align: top;
+}
+ .specialsListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {
+     text-align: center;
+     vertical-align: top;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     padding: 1rem;
+     font-size: 1.6em;
+     cursor: pointer;
 }
  .back {
      float: left;
@@ -59,22 +136,15 @@ body {
  .forward {
      float: right;
 }
- #contentColumnMain, #navColumnOne, #navColumnTwo, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {
+ #contentColumnMain, #navColumnOne, #navColumnTwo {
      vertical-align: top;
 }
- .centerColumn, #bannerOne, #bannerTwo, #bannerThree, #bannerFour, #bannerFive {
-     padding: 0.8em;
-}
- .smallText, #siteinfoLegal, #siteinfoCredits, #siteinfoStatus {
+ .smallText{
      font-size: 0.9em;
 }
  code {
      font-family: arial, verdana, helvetica, sans-serif;
      font-size: 1em;
-}
- input {
-     height: 35px;
-     margin-bottom: 1rem;
 }
  select {
      width: 100%;
@@ -126,7 +196,17 @@ body {
      margin-left: auto;
      padding: 0;
 }
- #logoWrapper, #cartBoxListWrapper, #ezPageBoxList, #ezPageBoxList ul, #popupAdditionalImage, #popupImage {
+ #popupImage {
+     background: none;
+     margin: 0;
+     padding: 0;
+}
+ #popupAdditionalImage {
+     background: none;
+     margin: 0;
+     padding: 0;
+}
+ #logoWrapper, #ezPageBoxList, #ezPageBoxList ul {
      margin: 0;
      padding: 0;
 }
@@ -142,6 +222,7 @@ body {
  #navCatTabsWrapper {
      margin: 0;
      width: 100%;
+     text-align: center;
 }
  #navCatTabs ul {
      font-size: 0;
@@ -161,11 +242,10 @@ body {
 }
  #navEZPagesTop {
      width: 100%;
-     margin: auto auto 1rem;
+     margin: auto auto 0;
      max-width: 1280px;
      display: none;
      color: #000000;
-     margin-bottom: 0;
 }
  #indexHomeBody #navEZPagesTop {
      display: block;
@@ -219,12 +299,14 @@ body {
      min-width: 44px;
      text-align: center;
 }
- #siteinfoLegal, #bannerSix {
+ #siteinfoLegal {
      font-weight: normal;
      padding: 1em 0;
      margin: 0;
      background: #dcdcdc;
      clear: both;
+     font-size: 0.9em;
+     text-align: center;
 }
  h2.centerBoxHeading, h3.rightBoxHeading, h3.leftBoxHeading {
      font-size: 1.2rem;
@@ -252,7 +334,7 @@ body {
      clear: both;
      display: block;
 }
- #ezpagesContent, #informationContent, #moreinformationContent, #bestsellersContent, #documentcategoriesContent, #categoriesContent {
+ #ezpagesContent, #informationContent, #bestsellersContent, #documentcategoriesContent, #categoriesContent {
      padding: 0;
 }
  ul.list-links, ol.list-links {
@@ -262,7 +344,7 @@ body {
  ul.list-links li {
      list-style-type: none;
 }
- ul.list-links li a, ol.list-links li a {
+ ol.list-links li a {
      min-height: 44px;
      min-width: 44px;
      text-decoration: none;
@@ -272,6 +354,13 @@ body {
      display: block;
 }
  ul.list-links li a {
+     min-height: 44px;
+     min-width: 44px;
+     text-decoration: none;
+     padding-top: 0;
+     padding-bottom: 0;
+     align-content: center;
+     display: block;
      padding-left: 0;
      padding-right: 0;
 }
@@ -282,28 +371,46 @@ body {
  .sideBoxContent .productSpecialPrice {
      font-size: 120%;
 }
- .normalprice, .productSpecialPriceSale {
-     text-decoration: line-through;
-}
  .productSalePrice {
      display: block;
      margin-top: 1rem;
      color: #000000;
 }
- .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {
-     margin-top: 1rem;
-     margin-bottom: 1rem;
-     padding:1rem;
-}
- .specialsListBoxContents a, .centerBoxContentsAlsoPurch a, .centerBoxContentsFeatured a, .centerBoxContentsSpecials a, .centerBoxContentsFeaturedCategories a, .centerBoxContentsNew a {
+ .centerBoxContentsNew a {
      margin: 0;
      font-size: 0.8em;
      display: block;
-     text-decoration: underline;
+     color: #333333;
 }
- .specialsListBoxContents, .centerBoxContentsSpecials, .centerBoxContentsFeaturedCategories, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {
-     font-size: 1.6em;
-     cursor: pointer;
+ .centerBoxContentsFeaturedCategories a {
+     margin: 0;
+     font-size: 0.8em;
+     display: block;
+     color: #333333;
+}
+ .centerBoxContentsSpecials a {
+     margin: 0;
+     font-size: 0.8em;
+     display: block;
+     color: #333333;
+}
+ .centerBoxContentsFeatured a {
+     margin: 0;
+     font-size: 0.8em;
+     display: block;
+     color: #333333;
+}
+ .specialsListBoxContents a {
+     margin: 0;
+     font-size: 0.8em;
+     display: block;
+     color: #333333;
+}
+ .centerBoxContentsAlsoPurch a {
+     margin: 0;
+     font-size: 0.8em;
+     display: block;
+     color: #333333;
 }
  .centerBoxWrapper {
      overflow: hidden;
@@ -314,6 +421,7 @@ body {
      display: block;
      margin-top: 0;
      margin-bottom: 0;
+     color: #900404;
 }
  .sideBoxContentItem .productBasePrice {
      text-align: center;
@@ -326,6 +434,7 @@ body {
 }
  h2.greeting {
      margin-bottom: 20px;
+     text-decoration: none;
 }
  #indexHomeBody #navBreadCrumb {
      display: none;
@@ -335,36 +444,26 @@ body {
      min-width: 44px;
      display: block;
 }
- a:hover {
-     text-decoration: underline;
-     color: #154dbc;
-}
  h2.greeting a {
      color: #000000;
 }
- a:link, a:visited, #navEZPagesTOC ul li a, a:hover, #navEZPagesTOC ul li a:hover, .cartOldItem, .list-price, h2.greeting, #icon, h1, .header {
+ a:visited, #navEZPagesTOC ul li a, #navEZPagesTOC ul li a:hover, .cartOldItem, #icon, .header {
      color: #154dbc;
      text-decoration: none;
 }
  .cat-count {
      color: #333333;
 }
-h2.greeting a:hover {
+ h2.greeting a:hover {
      color: #000000;
 }
- a:active {
-     color: #154dbc;
-}
- h2, h3, .cartAttribsList, #cart-box {
+ .cartAttribsList, #cart-box {
      color: #000000;
 }
  #navMain ul li a:hover, #navSupp ul li a:hover {
      color: #154dbc;
 }
- .specialsListBoxContents a, .centerBoxContentsAlsoPurch a, .centerBoxContentsFeatured a, .centerBoxContentsSpecials a, .centerBoxContentsNew a, .centerBoxContentsFeaturedCategories a {
-     color: #333333;
-}
- #orderhistoryContent ul li a i.fa, .productSpecialPriceSale, .productPriceDiscount {
+ #orderhistoryContent ul li a i.fa {
      color: #900404;
 }
 /* Prevents screen from flickering */
@@ -375,7 +474,7 @@ h2.greeting a:hover {
      border-radius: 5px;
      background: #f0f8ff;
 }
- #navMainWrapper, #checkoutConfirmDefault .cartTableHeading, .productListing-rowheading a:hover, #accountDefault #sendSpendWrapper h2, #gvFaqDefaultSubHeading, #checkoutPayAddressDefaultAddress, #checkoutShipAddressDefaultAddress, #accountLinksWrapper h2, h2#addressBookDefaultPrimary, #reviewsWriteHeading, #myAccountPaymentInfo h3, #myAccountShipInfo h3, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover {
+ #navMainWrapper, #checkoutConfirmDefault .cartTableHeading, .productListing-rowheading a:hover, #accountDefault #sendSpendWrapper h2 {
      color: #000000;
 }
  #navEZPagesTop li a:hover, .pagination li a:hover {
@@ -388,7 +487,7 @@ h2.greeting a:hover {
      border-color: currentcolor currentcolor #cccccc;
      border-image: none;
 }
- input, textarea {
+ input {
      padding: 0.375rem 0.75rem;
      font-size: 1rem;
      line-height: 1.5;
@@ -399,6 +498,9 @@ h2.greeting a:hover {
      border-radius: 0.25rem;
      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
      width: calc(100% - 26px);
+     height: 35px;
+     margin-bottom: 1rem;
+     -webkit-tap-highlight-color: transparent;
 }
  #navCatTabs ul li:last-child {
      border-right: 1px solid #05919f;
@@ -409,7 +511,6 @@ h2.greeting a:hover {
 }
  #siteinfoLegal a:hover {
      text-decoration: none;
-     color: #2a4473;
 }
  #navCatTabs {
      display: none;
@@ -422,13 +523,9 @@ h2.greeting a:hover {
 }
  #headerWrapper {
      border-bottom: 1px solid #cccccc;
-     padding: 0;
-     padding-bottom: 2rem;
-     margin: 0;
-     margin-bottom: 1rem;
+     padding: 0 0 2rem;
+     margin: 0 15px 1rem;
      max-width: 1280px;
-     margin-left: 15px;
-     margin-right: 15px;
 }
  #currenciesHeading::before {
      content: "$";
@@ -454,6 +551,7 @@ h2.greeting a:hover {
 }
  #moreinformationContent {
      margin-bottom: 0;
+     padding: 0;
 }
  .list-links li {
      display: list-item;
@@ -581,6 +679,11 @@ h2.greeting a:hover {
      color: #000000;
      text-decoration: none;
 }
+ #myAccountPaymentInfo h3 {
+     color: #000000;
+     font-weight: normal;
+     text-align: left;
+}
  #informationHeading {
      border-radius: 5px;
      color: #000000;
@@ -649,19 +752,12 @@ h2.greeting a:hover {
      display: inline;
      width: 100%;
 }
- .centerBoxHeading {
-     text-align: left;
-     border-bottom: 1px solid #cccccc;
-     font-size: 1.2rem;
-}
  .rightBoxHeading, .leftBoxHeading, .centerBoxHeading {
      background: transparent;
      border-radius: 0;
      color: #000000;
-     padding: 1em 0.2em;
-     margin: 0;
-     margin-bottom: 1rem;
-     padding-bottom: 1rem;
+     padding: 1em 0.2em 1rem;
+     margin: 0 0 1rem;
      text-align: left;
      border-bottom: 1px solid #cccccc;
      font-size: 16px;
@@ -670,7 +766,16 @@ h2.greeting a:hover {
      color: #2a4473;
      text-decoration: underline;
 }
- .button, input.button, input.cssButtonHover {
+ input.cssButtonHover {
+     display: inline-block;
+     font-size: 1.2em;
+     text-decoration: none;
+     appearance: none;
+     cursor: pointer;
+     border-radius: 0.25rem;
+     width: 100%;
+}
+ .button, input.button {
      display: inline-block;
      font-size: 1.2em;
      text-decoration: none;
@@ -680,6 +785,7 @@ h2.greeting a:hover {
      display: inline-block;
      border-radius: 0.25rem;
      width: 100%;
+     appearance: none;
 }
  input.submit_button:hover {
      font-size: 1.2em;
@@ -713,18 +819,30 @@ h2.greeting a:hover {
      background-color: #ac171d;
      border: 1px solid #ac171d;
      color: #ffffff;
+     padding: 12px 20px;
+     height: auto;
+     font-weight: normal;
 }
  .button_submit:hover {
      background-color: #ffffff;
      color: #ac171d;
 }
- .button_continue, .button_send, .button_create_account, .button_submit, .button_login, .button_redeem, .button_delete, .button_update, .button_continue_checkout {
+ .button_update {
      padding: 12px 20px;
      height: auto;
      font-weight: normal;
+     background: #ac171d;
+     border: 1px solid #ac171d;
+     color: #ffffff;
 }
- a:link, a:hover, input {
-     -webkit-tap-highlight-color: transparent;
+ .button_login {
+     background: #006400;
+     border: 1px solid #006400;
+     color: #ffffff;
+     appearance: none;
+     padding: 12px 20px;
+     height: auto;
+     font-weight: normal;
 }
  img {
      max-width: 100%;
@@ -748,11 +866,12 @@ h2.greeting a:hover {
      margin: auto;
      max-width: 1280px;
 }
- .onerow-fluid::before, .onerow-fluid::after {
+ .onerow-fluid::before {
      display: table;
      content: "";
 }
  .onerow-fluid::after {
+     content: "";
      display: none;
 }
  .onerow-fluid > [class^="col"] {
@@ -779,6 +898,7 @@ h2.greeting a:hover {
 }
  .normalprice {
      color: #000000;
+     text-decoration: line-through;
 }
  .productBasePrice {
      color: #000000;
@@ -787,6 +907,7 @@ h2.greeting a:hover {
 }
  .productSpecialPriceSale {
      color: #006400;
+     text-decoration: line-through;
 }
  form select {
      min-height: 48px;
@@ -841,7 +962,7 @@ h2.greeting a:hover {
      list-style: decimal;
      margin-left: 1rem;
 }
- input.submit_button, input.cssButtonHover, button {
+ button {
      appearance: none;
 }
 /* Mobile view – 1 product per row */
@@ -853,6 +974,9 @@ h2.greeting a:hover {
      margin: 2rem 15px 1rem;
      padding: 0;
      background: transparent;
+     text-align: center;
+     font-weight: normal;
+     clear: both;
 }
  .welcome_note {
      background: #fff8dc;
@@ -919,8 +1043,7 @@ h2.greeting a:hover {
      color: #000000;
 }
  .centerColumn {
-     padding-left: 0;
-     padding-right: 0;
+     padding: 0.8em 0;
 }
 /* bof sidebaer */
  .navitem3t {
@@ -953,11 +1076,9 @@ h2.greeting a:hover {
 }
  .sidebar a {
      display: block;
-     padding: 0.5rem 1rem;
+     padding: 0 1rem;
      color: #000;
      text-decoration: none;
-     padding-top: 0;
-     padding-bottom: 0;
      min-height: 44px;
      align-content: center;
 }
@@ -1078,7 +1199,7 @@ h2.greeting a:hover {
  #productListing br, #whatsNew br, #featuredProducts br, #reviewsWritePrice br, #reviewsInfoDefaultPrice br, .block_element_reviewslinked br, #cartContentsDisplay br, #shippingEstimatorContent br, #pinfo-right br, .max-qty br, .centerBoxContentsAlsoPurch br, #csNotifications br, .centerBoxContentsFeaturedCategories br, #specialsDefault br, #orderStatus br, #searchBody br, #accounteditBody br, #addressbookprocessBody br, #accountnewslettersBody br, .cartProductDisplay br, #checkoutPayment .payment br, #loginDefault br, #createAcctDefault br, #passwordforgottenBody br, .productPriceDiscount br, #gvFaqDefaultMainContent br, .spacer_element_button_add br, #accountNotifications br, #downformaintenanceBody br {
      display: none;
 }
- #cartAdd a, #bannerboxallContent a, .spacer_element_button_add a {
+ #bannerboxallContent a, .spacer_element_button_add a {
      min-height: 44px;
      min-width: 44px;
      display: block;
@@ -1108,7 +1229,7 @@ h2.greeting a:hover {
      text-align: right;
      padding-right: 1.5rem;
 }
- h4, h5, h6, address, .larger {
+ .larger {
      font-size: 1.1em;
 }
  #navCategoryIcon, .buttonRow {
@@ -1129,15 +1250,13 @@ h2.greeting a:hover {
      display: flex;
      text-align: left;
      width: 100%;
-     padding: 10px 0;
      background: #ffffff;
      border-bottom: 1px solid #cccccc;
      color: #000000;
      line-height: 25px;
-     padding-bottom: 1rem;
+     padding: 1.5rem 0 1rem;
      margin-bottom: 1rem;
      font-size: 1.3rem;
-     padding-top: 1.5rem;
 }
  fieldset {
      padding: 0;
@@ -1200,11 +1319,14 @@ h2.greeting a:hover {
  #country + .alert {
      display: none;
 }
- .button_continue_checkout, .button_login {
+ .button_continue_checkout {
      background: #006400;
      border: 1px solid #006400;
      color: #ffffff;
      appearance: none;
+     padding: 12px 20px;
+     height: auto;
+     font-weight: normal;
 }
  .button_continue_checkout:hover, .button_login:hover {
      background: #ffffff;
@@ -1219,9 +1341,11 @@ h2.greeting a:hover {
      width: auto;
      outline: none;
 }
- #loginBody .button_login, #timeoutBody .button_login {
+ #loginBody .button_login {
      margin-bottom: 0;
-     border: solid 1px #006400;
+}
+ #timeoutDefault .button_login {
+     margin-bottom: 0;
 }
  #createAcctDefault fieldset {
      clear: both;
@@ -1295,7 +1419,7 @@ h2.greeting a:hover {
  #acctNewslettersDefault .back, #accountNotifications .back, #addressbookprocessBody .back, #accountpasswordBody .back, #accounteditBody .back, #addressBookDefault .back, #contactUsDefault .back, #searchDefault .back, #searchresultBody .back, .reviews-wrapper .back, #gvfaqBody .back {
      float: none;
 }
- #acctNewslettersDefault .forward, #accountNotifications .forward, #addressBookProcessDefault .forward, #accountPassword .forward, #accountEditDefault .forward, #addressBookDefault .forward, #contactUsDefault .forward, #askAQuestion .forward, #searchDefault .forward, #shippingEstimatorContent .forward, #timeoutDefault .forward, #gvFaqDefault .forward, #accountHistoryDefault .forward, #gvRedeemDefault .forward, #sendSpendWrapper .forward {
+ #acctNewslettersDefault .forward, #accountNotifications .forward, #addressBookProcessDefault .forward, #accountPassword .forward, #accountEditDefault .forward, #addressBookDefault .forward, #contactUsDefault .forward, #askAQuestion .forward, #searchDefault .forward, #shippingEstimatorContent .forward, #timeoutDefault .forward, #gvFaqDefault .forward, #sendSpendWrapper .forward {
      float: none;
 }
  #page2Body .buttonRow, #page3Body .buttonRow, #page4Body .buttonRow, #pagenotfoundBody .buttonRow, #passwordforgottenBody .buttonRow, #aboutusBody .buttonRow, #accessibilityBody .buttonRow, #privacyBody .buttonRow, #conditionsBody .buttonRow, #orderstatusBody .buttonRow, #sitemapBody .buttonRow, #shippinginfoBody .buttonRow, #discountcouponBody .buttonRow, #unsubscribeBody .buttonRow, #downformaintenanceBody .buttonRow {
@@ -1328,13 +1452,13 @@ h2.greeting a:hover {
      overflow: hidden;
      border-bottom: 1px solid #cccccc;
      border-top: 1px solid #cccccc;
+     clear: both;
+     display: block;
 }
  .productListing-even {
      padding: 2rem 1rem;
      overflow: hidden;
      background: #f8f8ff;
-}
- .productListing-even, .productListing-odd {
      clear: both;
      display: block;
 }
@@ -1346,6 +1470,8 @@ h2.greeting a:hover {
 }
  .list-price {
      font-size: 140%;
+     color: #154dbc;
+     text-decoration: none;
 }
  .list-more {
      display: block;
@@ -1399,10 +1525,9 @@ h2.greeting a:hover {
 }
  .list-input input[type="text"] {
      text-align: center;
-     border: 1px solid #cccccc;
-     border-radius: 5px;
      margin-bottom: 0;
      width: auto;
+     padding: 0.2rem;
 }
  .prod-list-wrap {
      text-align: center;
@@ -1450,12 +1575,6 @@ h2.greeting a:hover {
      margin-bottom: 1rem;
      margin-top: 1rem;
 }
- #productListing .list-input input[type="text"] {
-     padding: 0;
-     font-size: 1em;
-     width: 21%;
-     max-width: 80px;
-}
  #productListing .list-price {
      display: none;
 }
@@ -1483,6 +1602,11 @@ h2.greeting a:hover {
 }
  .tabTable {
      text-align: center;
+     border-spacing: 0;
+     border-collapse: collapse;
+     width: 100%;
+     padding: 0;
+     margin: 0;
 }
  .navSplitPagesLinks {
      margin-top: 1.5rem;
@@ -1533,8 +1657,7 @@ h2.greeting a:hover {
 }
  .brandImage {
      margin-top: 20px;
-     padding: 1rem;
-     padding-bottom: 0.5rem;
+     padding: 1rem 1rem 0.5rem;
 }
  .brandCell a {
      text-decoration: none;
@@ -1549,8 +1672,19 @@ h2.greeting a:hover {
      background: #f0f8ff;
      padding: 1rem;
      margin-bottom: 1rem;
+     font-size: 1.1em;
 }
  textarea {
+     padding: 0.375rem 0.75rem;
+     font-size: 1rem;
+     line-height: 1.5;
+     color: #495057;
+     background-color: #ffffff;
+     background-clip: padding-box;
+     border: 1px solid #ced4da;
+     border-radius: 0.25rem;
+     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+     width: calc(100% - 26px);
      display: block;
      text-align: left;
      margin-bottom: 1rem;
@@ -1560,6 +1694,9 @@ h2.greeting a:hover {
      color: #ffffff;
      border: 1px solid #7b3f00;
      margin-bottom: 0;
+     padding: 12px 20px;
+     height: auto;
+     font-weight: normal;
 }
  .button_send:hover {
      background: #ffffff;
@@ -1594,8 +1731,10 @@ h2.greeting a:hover {
 }
  #gvFaqDefaultContent {
      margin-bottom: 1rem;
+     padding: 0;
+     margin-top: 0;
 }
- #gvFaqDefaultContent, #checkoutPayAddressDefault .instructions, #checkoutShipAddressDefault .instructions, #myAccountNotify, #myAccountGen {
+ #checkoutPayAddressDefault .instructions, #checkoutShipAddressDefault .instructions, #myAccountNotify, #myAccountGen{
      padding: 0;
      margin-top: 0;
 }
@@ -1612,17 +1751,14 @@ h2.greeting a:hover {
      background: #ac171d;
      border: 1px solid #ac171d;
      color: #ffffff;
+     padding: 12px 20px;
+     height: auto;
+     font-weight: normal;
 }
  .button_redeem:hover {
      background: #ffffff;
      color: #ac171d;
      border: 1px solid #ac171d;
-}
- input.cssButtonHover {
-     cursor: pointer;
-     font-size: 1.2em;
-     border-radius: 0.25rem;
-     width: 100%;
 }
  #passwordForgottenMainContent {
      padding: 0.5rem;
@@ -1633,17 +1769,15 @@ h2.greeting a:hover {
  #passwordforgottenBody .button_submit {
      margin-bottom: 0;
 }
- h3 {
-     font-size: 1.3em;
-}
  .button_write_review:active {
      outline: none;
 }
- input[type="file"], input[type="image"] {
+ input[type="image"] {
      height: auto;
 }
  input[type="file"] {
      background: transparent;
+     height: auto;
 }
  span.category-subs-selected {
      font-weight: bold;
@@ -1660,6 +1794,7 @@ h2.greeting a:hover {
      float: none;
      max-width: 500px;
      margin: auto;
+     text-align: center;
 }
  #productMainImage a {
      text-decoration: none;
@@ -1694,11 +1829,10 @@ h2.greeting a:hover {
      box-sizing: border-box;
      vertical-align: top;
      display: inline-block;
-     margin: 0;
+     margin: 0 5px 0 0;
      text-align: center;
-     margin-right: 5px;
      height: 53px;
-     width: 20%;
+     width: auto;
 }
  h4.optionName {
      font-size: 1.1em;
@@ -1826,7 +1960,13 @@ h2.greeting a:hover {
      padding: 12px 20px;
      align-content: center;
 }
- span.cssButton.normal_button.button.button_write_review, .button_write_review, span.cssButton.normal_button.button.button_write_review:hover, .button_write_review:hover {
+ .button_write_review {
+     padding: 0;
+     margin: 0;
+     color: #8a4514;
+     background: transparent;
+}
+ span.cssButton.normal_button.button.button_write_review, span.cssButton.normal_button.button.button_write_review:hover, .button_write_review:hover{
      padding: 0;
      margin: 0;
 }
@@ -1854,11 +1994,6 @@ h2.greeting a:hover {
      margin-top: 1rem;
      position: relative;
      justify-content: end;
-}
- .button_write_review {
-     color: #8a4514;
-     background: transparent;
-     margin: 0;
 }
  #productAttributes {
      background-color: #f0f8ff;
@@ -1992,12 +2127,19 @@ h2.greeting a:hover {
 }
  #productQuantityDiscounts td {
      padding: 10px;
-     border-right: 1px solid #eeeeee;
+     border-right: none;
+}
+ #productQuantityDiscounts td:last-child {
+     border: none;
 }
  .alignCenter {
      text-align: center;
 }
- th, td, tr {
+ th {
+     text-align: center;
+     padding:0.5rem;
+}
+ td, tr {
      padding: 0.5rem;
 }
  #mediaManagerHeading {
@@ -2033,9 +2175,10 @@ h2.greeting a:hover {
  #reviewsDefault .button:active {
      outline: none;
 }
- span.cssButton.normal_button.button.button_more_reviews, .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover {
+ .button_more_reviews:hover, span.cssButton.normal_button.button.button_read_reviews, .button_read_reviews:hover {
      display: block;
      text-align: center;
+     color: #000000;
 }
  span.cssButton.normal_button.button.button_goto_prod_details {
      background: transparent;
@@ -2091,6 +2234,9 @@ h2.greeting a:hover {
      background: #6a1bc1;
      border: 1px solid #6a1bc1;
      color: #ffffff;
+     padding: 12px 20px;
+     height: auto;
+     font-weight: normal;
 }
  .button_continue:hover {
      background: #ffffff;
@@ -2123,12 +2269,24 @@ h2.greeting a:hover {
      background: #ffffff;
      border: 1px solid #ffd700;
 }
+ #productreviewsinfoBody .productBasePrice {
+     text-align: center;
+     margin-bottom: 0;
+}
  #navEZPageNextPrev {
      display: grid;
      grid-template-rows: 1fr;
      gap: 1rem;
 }
- .button_secondary, .button_change_address, .button_view, .button.small_edit, #linkContactUs .button_contact_us, #linkMyAccount .button_my_orders, #linkLogoff .button_logoff, #addressBookDefault span.normal_button, #checkoutPayment .button_change_address, .input.submit_button, #unsubscribeBody span.normal_button {
+ #checkoutPayment .button_change_address {
+     background: #ffd700;
+     border: 1px solid #ffd700;
+     color: #000000;
+     appearance: none;
+     margin-bottom: 1.5rem;
+     margin-top: 1rem;
+}
+ .button_secondary, .button_change_address, .button_view, .button.small_edit, #linkContactUs .button_contact_us, #linkMyAccount .button_my_orders, #linkLogoff .button_logoff, #addressBookDefault span.normal_button, #unsubscribeBody span.normal_button {
      background: #ffd700;
      border: 1px solid #ffd700;
      color: #000000;
@@ -2145,7 +2303,11 @@ h2.greeting a:hover {
  .shippingEstimatorWrapper {
      padding: 15px;
 }
- #docGeneralDisplay #pinfo-right, #popupShippingEstimator, #popupSearchHelp, #popupAdditionalImage, #popupImage, #popupCVVHelp, #popupCouponHelp, #popupAtrribsQuantityPricesHelp, #infoShoppingCart {
+ #infoShoppingCart {
+     background: none;
+     padding: 1rem;
+}
+ #docGeneralDisplay #pinfo-right, #popupShippingEstimator, #popupCVVHelp, #popupCouponHelp, #popupAtrribsQuantityPricesHelp{
      background: none;
 }
  .cartTotalsDisplay {
@@ -2153,9 +2315,6 @@ h2.greeting a:hover {
      color: #4b0082;
      margin-top: 1rem;
      margin-bottom: 1rem;
-}
- #infoShoppingCart {
-     padding: 1rem;
 }
  #productReviewsDefaultHeading {
      margin-top: 0;
@@ -2250,10 +2409,14 @@ h2.greeting a:hover {
      gap: 1rem;
      text-align: center;
 }
- #productreviewsBody .productBasePrice, #productreviewsBody .productPriceDiscount, #productreviewsBody h2 {
+ #productreviewsBody .productBasePrice {
+     margin-bottom: 0;
+     text-align: center;
+}
+ #productreviewsBody .productPriceDiscount, #productreviewsBody h2 {
      margin-bottom: 0;
 }
- #productreviewsBody .productBasePrice, #productreviewsinfoBody .productBasePrice, .productReviewsDefaultPrice {
+ .productReviewsDefaultPrice {
      text-align: center;
 }
  #productReviewsDefaultPrice, #reviewsInfoDefaultPrice {
@@ -2270,6 +2433,7 @@ h2.greeting a:hover {
 }
  #popupSearchHelp {
      padding: 1rem;
+     background: none;
 }
  #indexCategoriesHeading {
      font-weight: normal;
@@ -2279,10 +2443,13 @@ h2.greeting a:hover {
      font-size: 1.2em;
 }
  .categoryListBoxContents {
+     text-align: center;
+     vertical-align: top;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     padding: 1rem;
      display: block;
      cursor: pointer;
-     padding-top: 1rem;
-     padding-bottom: 1rem;
 }
  #cat-left {
      text-align: center;
@@ -2313,6 +2480,14 @@ h2.greeting a:hover {
      min-width: 44px;
      display: block;
 }
+ .button_create_account {
+     padding: 12px 20px;
+     height: auto;
+     font-weight: normal;
+     background: #ac171d;
+     border: 1px solid #ac171d;
+     color: #ffffff;
+}
  span.button_sold_out, span.button_sold_out:hover {
      color: #8b0000;
      padding: 0;
@@ -2326,7 +2501,15 @@ h2.greeting a:hover {
  .aligner_products span.button_sold_out, .aligner_products span.button_sold_out:hover {
      align-items: baseline;
 }
- .button_delete, .button_update, .button_buy_now, .button_create_account, .button_cancel {
+ .button_delete {
+     padding: 12px 20px;
+     height: auto;
+     font-weight: normal;
+     background: #ac171d;
+     border: 1px solid #ac171d;
+     color: #ffffff;
+}
+ .button_buy_now, .button_cancel {
      background: #ac171d;
      border: 1px solid #ac171d;
      color: #ffffff;
@@ -2362,16 +2545,16 @@ h2.greeting a:hover {
      font-size: 1.2rem;
 }
  .button_send_a_gift_cert {
-     background: #8b008b;
-     border: 1px solid #8b008b;
+     background: #006400;
+     border: 1px solid #006400;
      margin-bottom: 0;
      color: #ffffff;
      width: auto;
 }
  .button_send_a_gift_cert:hover {
-     border: 1px solid #8b008b;
+     border: 1px solid #006400;
      background: #ffffff;
-     color: #8b008b;
+     color: #006400;
 }
  .reviewligner {
      display: flex;
@@ -2412,7 +2595,7 @@ h2.greeting a:hover {
  #reviewsInfoDefaultProductImage img {
      margin-bottom: 0;
 }
- #productreviewsinfoBody .productBasePrice, #productreviewsinfoBody .productPriceDiscount, #productreviewsinfoBody h2 {
+ #productreviewsinfoBody .productPriceDiscount, #productreviewsinfoBody h2 {
      margin-bottom: 0;
 }
  #cartAdd a {
@@ -2421,6 +2604,9 @@ h2.greeting a:hover {
      text-align: left;
      color: #7a1db1;
      margin-left: 0;
+     min-height: 44px;
+     min-width: 44px;
+     display: block;
 }
  #productPrices img {
      margin-top: 0.5rem;
@@ -2442,14 +2628,16 @@ h2.greeting a:hover {
 }
  #orderstatusBody #myAccountShipInfo h3 {
      margin-bottom: 0;
-}
- #orderstatusBody #myAccountPaymentInfo h4 {
-     margin-bottom: 0;
+     background: #ffffff;
+     font-weight: normal;
+     text-align: left;
+     color: #7a1db1;
+     font-size: 1.3rem;
 }
  #pinfo-right #freeShippingIcon {
      margin-top: 0.5rem;
 }
- #cartBoxListWrapper li, .orderHistList li {
+ #cartBoxListWrapper li {
      list-style-type: none;
 }
  .orderHistList i {
@@ -2480,22 +2668,19 @@ h2.greeting a:hover {
      list-style-type: none;
 }
  #gvFaqDefaultSubHeading, #checkoutPayAddressDefaultAddress, #checkoutShipAddressDefaultAddress, #accountLinksWrapper h2, h2#addressBookDefaultPrimary {
-     padding: 10px;
+     padding: 10px 10px 1rem 0;
      font-weight: normal;
      text-align: left;
-     padding-left: 0;
      border-bottom: 1px solid #cccccc;
-     padding-bottom: 1rem;
      margin-bottom: 1rem;
      margin-top: 0;
+     color: #000000;
 }
  #sendSpendWrapper h2 {
-     padding: 10px;
+     padding: 10px 10px 1rem 0;
      font-weight: normal;
      text-align: left;
-     padding-left: 0;
      border-bottom: 1px solid #cccccc;
-     padding-bottom: 1rem;
      margin-bottom: 1rem;
      margin-top: 1rem;
      display: flex;
@@ -2511,13 +2696,14 @@ h2.greeting a:hover {
  .tableHeading {
      background-color: #e9e9e9;
 }
- span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.button.small_edit, .seDisplayedAddressLabel, tr.tableHeading, #myAccountPaymentInfo h4, #myAccountShipInfo h4 {
+ .seDisplayedAddressLabel, tr.tableHeading {
      background: #ffffff;
      color: #000000;
 }
  #cartBoxListWrapper {
+     margin: 0;
+     padding: 0 0 1rem;
      border-bottom: 1px solid #cccccc;
-     padding-bottom: 1rem;
 }
  #shoppingcartHeading a {
      color: #000000;
@@ -2536,6 +2722,7 @@ h2.greeting a:hover {
      padding-right: 0.5rem;
 }
  .orderHistList li {
+     list-style-type: none;
      padding: 0;
      display: flex;
 }
@@ -2615,6 +2802,7 @@ h2.greeting a:hover {
  #accountHistoryDefault .forward {
      margin-top: 1rem;
      color: #900404;
+     float: none;
 }
  #accountHistoryDefault .back {
      width: 100%;
@@ -2652,11 +2840,10 @@ h2.greeting a:hover {
      padding-bottom: 1rem;
      margin-top: 0;
 }
- #checkoutPayAddressDefault address, #checkoutShipAddressDefault address, #addressBookDefault address {
-     padding: 1rem;
-}
- span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.button.small_edit {
+ span.cssButton.normal_button.button.small_edit {
      background: #ffd700;
+     color: #000000;
+     margin: 1rem;
 }
  #addressBookDefault .button.small_edit {
      margin: auto;
@@ -2664,7 +2851,11 @@ h2.greeting a:hover {
  #addressBookDefault .small_edit {
      margin-left: auto;
 }
- #checkoutConfirmDefault span.cssButton.normal_button.button.button_logoff, span.cssButton.normal_button.button.small_edit {
+ span.cssButton.normal_button.button.button_logoff {
+     background: #ffd700;
+     color: #000000;
+}
+ #checkoutConfirmDefault span.cssButton.normal_button.button.button_logoff {
      margin: 1rem;
 }
  #addressBookDefault .button.button_back {
@@ -2718,10 +2909,6 @@ h2.greeting a:hover {
      color: #000000;
      display: none;
 }
- #scUpdateQuantity {
-     width: 2em;
-     display: none;
-}
  .rowOdd {
      height: 1.5em;
      vertical-align: top;
@@ -2759,7 +2946,9 @@ h2.greeting a:hover {
  #checkoutconfirmationBody #cartContentsDisplay tr:nth-child(2n) {
      border: none;
 }
- #shoppingcartBody tr:nth-child(2n+1):not(:first-child) {
+ #shoppingcartBody tr:nth-child(2n 
+/**/
+ +1):not(:first-child) {
      background-color: #f8f8ff;
 }
  span.cssButton.normal_button.button.button_checkout, .button_checkout:hover {
@@ -2814,13 +3003,16 @@ h2.greeting a:hover {
      display: none;
 }
  .cartQuantityUpdate {
+     text-align: center;
      display: none;
 }
- #scUpdateQuantity, #scRemoveHeading {
+ #scUpdateQuantity {
+     width: 2em;
      visibility: hidden;
+     display: none;
 }
- .cartQuantity {
-     text-align: center;
+ #scRemoveHeading {
+     visibility: hidden;
 }
  #shoppingCartDefault .forward a {
      min-height: 44px;
@@ -2829,6 +3021,7 @@ h2.greeting a:hover {
      align-content: center;
 }
  .cartRemoveItemDisplay {
+     text-align: center;
      display: none;
 }
  #scProductsHeading {
@@ -2839,7 +3032,7 @@ h2.greeting a:hover {
      display: none;
 }
  #cartContentsDisplay input {
-     padding: 0;
+     padding: 0.2rem;
      margin-bottom: 0;
      margin-top: 0;
      text-align: center;
@@ -2940,16 +3133,12 @@ h2.greeting a:hover {
      padding: 0.2em;
      margin-right: 0;
 }
- .lineTitle, .amount {
+ .lineTitle {
      text-align: right;
      padding: 0.2em;
 }
  #checkoutOrderTotals {
      width: 100%;
-}
- #checkoutPayment .button_change_address {
-     margin-bottom: 1.5rem;
-     margin-top: 1rem;
 }
  .payment legend {
      color: #761bc9;
@@ -3056,6 +3245,8 @@ h2.greeting a:hover {
 }
  .amount {
      width: 6.5em;
+     text-align: right;
+     padding: 0.2em;
 }
  .accountTotalDisplay {
      text-align: center;
@@ -3067,15 +3258,20 @@ h2.greeting a:hover {
  #accountHistInfo hr {
      display: none;
 }
- #myAccountPaymentInfo h3, #myAccountShipInfo h3 {
+ #myAccountShipInfo h3 {
      font-weight: normal;
      text-align: left;
+     margin-bottom: 1rem;
 }
- #myAccountPaymentInfo h4, #myAccountShipInfo h4 {
+ #myAccountShipInfo h4 {
      font-weight: normal;
      text-align: left;
+     margin-bottom: 0;
+     background: #ffffff;
+     color: #7a1db1;
+     font-size: 1.3rem;
 }
- #myAccountPaymentInfo address, #myAccountShipInfo address, #myAccountPaymentInfo div, #myAccountShipInfo div {
+ #myAccountPaymentInfo div, #myAccountShipInfo div {
      padding: 1rem;
 }
  .orderAttribsList {
@@ -3092,21 +3288,20 @@ h2.greeting a:hover {
      clear: both;
      font-size: 16px;
 }
- #accountHistInfo #myAccountShipInfo h4, #accountHistInfo #myAccountPaymentInfo h4, #myAccountShipInfo h3, #myAccountPaymentInfo h4 {
-     margin-bottom: 0.5rem;
+ #myAccountPaymentInfo h4 {
+     background: #ffffff;
+     font-weight: normal;
+     text-align: left;
      color: #7a1db1;
      font-size: 1.3rem;
-}
- #accountHistInfo #myAccountShipInfo h4, #accountHistInfo #myAccountPaymentInfo h4 {
      margin-bottom: 0;
-}
- #myAccountShipInfo h3, #myAccountShipInfo h4 {
-     margin-bottom: 1rem;
 }
  #myAccountProducts {
      text-align: left;
 }
- #orderHistoryHeading tr:nth-child(2n+1) td {
+ #orderHistoryHeading tr:nth-child(2n 
+/**/
+ +1) td {
      background-color: #f8f8ff;
 }
  #accountHistInfo .accountTotalDisplay {
@@ -3144,6 +3339,7 @@ h2.greeting a:hover {
  #reviewWriteMainImage {
      float: none;
      margin: 0;
+     text-align: center;
 }
  #reviewsWritePrice {
      text-align: center;
@@ -3168,6 +3364,7 @@ h2.greeting a:hover {
      padding-bottom: 1rem;
      margin-bottom: 3rem;
      padding-top: 0.5rem;
+     color: #000000;
 }
  .reviews-page {
      width: fit-content;
@@ -3241,8 +3438,9 @@ h2.greeting a:hover {
  .accountTaxDisplay {
      vertical-align: top;
      text-align: center;
+     display: none;
 }
- #ccTaxHeading, .cartTotalDisplay_tax, #myAccountTax, .accountTaxDisplay {
+ #ccTaxHeading, .cartTotalDisplay_tax, #myAccountTax{
      display: none;
 }
  #csNotification legend {
@@ -3255,7 +3453,8 @@ h2.greeting a:hover {
      padding-top: 0;
 }
  #productInfoNoProductMainContent {
-     margin-bottom: 0.5rem;
+     margin-bottom: 1rem;
+     color: #900404;
 }
  #shoppingcartBody #postcode, #popupShippingEstimator #postcode {
      margin-bottom: 0;
@@ -3263,9 +3462,8 @@ h2.greeting a:hover {
  #shippingEstimatorContent .seDisplayedAddressLabel {
      text-align: center;
      width: 100%;
-     padding: 0;
+     padding: 0 0 1rem;
      color: #900404;
-     padding-bottom: 1rem;
      background: #fff;
 }
  #shippingEstimatorContent h2 {
@@ -3359,7 +3557,7 @@ h2.greeting a:hover {
      -moz-box-sizing: border-box;
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
-     width: 54px;
+     width: auto;
 }
  .cart-add input[type="submit"] {
      background: #ffd700;
@@ -3383,6 +3581,7 @@ h2.greeting a:hover {
  #gvRedeemDefault .forward {
      margin-top: 1rem;
      margin-bottom: 1rem;
+     float: none;
 }
  .information2 {
      background: transparent;
@@ -3451,10 +3650,11 @@ h2.greeting a:hover {
      padding: 12px 20px;
      margin: 0;
      align-content: center;
-     text-align: center;
      border: solid 1px #4b0082;
      background: #4b0082;
      font-weight: normal;
+     display: block;
+     text-align: center;
 }
  #reviewsInfoDefaultReviewsListingLink span.normal_button:hover {
      background: transparent;
@@ -3464,7 +3664,7 @@ h2.greeting a:hover {
  .prod-list-wrap:has( #productReviewsDefaultListingTopNumber:empty ):has( #productReviewsDefaultListingTopLinks:empty ) {
      display: none;
 }
- table, .tabTable {
+ table{
      border-spacing: 0;
      border-collapse: collapse;
      width: 100%;
@@ -3485,7 +3685,7 @@ h2.greeting a:hover {
  .shippingestimaterb {
      margin-top: 1rem;
 }
- #navMainSearch input[type=text], input[type=file], input[type=image], #productQuantityDiscounts td, #productQuantityDiscounts td:last-child {
+ #navMainSearch input[type=text], input[type=file], input[type=image] {
      border: none;
 }
  .list-model, .mfgLink, .list-quantity, .list-weight {
@@ -3513,7 +3713,9 @@ h2.greeting a:hover {
  #upcomingProductsTable tr:nth-child(even) {
      background-color: #F0F8FF;
 }
- #upcomingProductsTable tr:nth-child(2n+1):not(:first-child) {
+ #upcomingProductsTable tr:nth-child(2n 
+/**/
+ +1):not(:first-child) {
      background: transparent;
 }
  #upcomingProductsTable tr:nth-child(2n) {
@@ -3540,9 +3742,6 @@ h2.greeting a:hover {
      border: 1px solid #0096ff;
 }
 /* Products' Options' Stock Manager */
- .stock-wrapper {
-     order: 2;
-}
  #accountHistInfo .stock-wrapper {
      margin-top: 0;
 }
@@ -3560,16 +3759,22 @@ h2.greeting a:hover {
  .stock-wrapper .stock-msg.in-stock {
      color: #006400;
 }
- .stock-wrapper .stock-msg.no-stock {
+ .stock-wrapper {
      color:#900404;
+     order: 2;
 }
  .stock-msg.no-stock {
      display: block;
+     color: #900404;
+     background: none;
+     border: none;
+     margin: 0;
+     padding: 0;
 }
  #contentMainWrapper #accountHistInfo .stock-wrapper {
      margin-top: 0;
 }
- #productAttributes .no-stock, .stock-msg.no-stock {
+ #productAttributes .no-stock {
      color: #900404;
      background: none;
      border: none;
@@ -3597,7 +3802,6 @@ h2.greeting a:hover {
     }
      #ccTaxHeading, .cartTotalDisplay_tax, #myAccountTax, .accountTaxDisplay {
          display: revert;
-         text-align: center;
     }
      #pinfo-right #freeShippingIcon {
          margin-bottom: 0;
@@ -3649,9 +3853,7 @@ h2.greeting a:hover {
          gap: 1rem;
     }
      #navEZPageNextPrev {
-         display: grid;
          grid-template-columns: repeat(3, 1fr);
-         gap: 1rem;
     }
      .button_search:hover {
          width: auto;
@@ -3988,21 +4190,12 @@ h2.greeting a:hover {
      .button.button_back {
          margin-top: 0;
          margin-bottom: 0;
-         float: left;
-        /* submit form success 'back button' */
+         width: fit-content;
     }
      .checkoutupdate {
          margin-top: 0;
          text-align: right;
          width: fit-content;
-    }
-     #siteinfoLegal {
-         border: none;
-         clear: both;
-         margin-top: 1rem;
-         position: relative;
-         width: 100%;
-         bottom: 0;
     }
      #createAcctSuccess .button_accounts {
          display: flex;
@@ -4112,6 +4305,7 @@ h2.greeting a:hover {
     }
      .cartQuantityUpdate {
          display: grid;
+         position: relative;
     }
      #shoppingcartBody input[type="image"] {
          margin-top: 0;
@@ -4169,8 +4363,6 @@ h2.greeting a:hover {
          text-align: right;
     }
      #cartAdd input[type="text"] {
-         width: 20%;
-         text-align: center;
          margin-right: 5px;
          margin-left: 5%;
     }

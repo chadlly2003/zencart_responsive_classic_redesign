@@ -81,23 +81,28 @@ body {
 }
  #bannerOne {
      text-align: center;
-     padding: 0.8em;
+      padding:1rem;
 }
  #bannerTwo {
      text-align: center;
-     padding: 0.8em;
+     padding-bottom:1.5rem;
+     margin-top:1rem;
 }
  #bannerThree {
      text-align: center;
-     padding: 0.8em;
+     padding-top: 1rem;
 }
  #bannerFour {
      text-align: center;
-     padding: 0.8em;
+     margin: 2rem 0 1rem;
 }
  #bannerFive {
      text-align: center;
-     padding: 0.8em;
+     padding: 1rem;
+}
+ #bannerSix {
+     margin: 2rem 15px 1rem;
+     text-align: center;
 }
  #siteinfoCredits {
      text-align: center;
@@ -970,14 +975,6 @@ body {
      display: grid;
      grid-template-columns: repeat(1, 1fr);
 }
- #bannerSix {
-     margin: 2rem 15px 1rem;
-     padding: 0;
-     background: transparent;
-     text-align: center;
-     font-weight: normal;
-     clear: both;
-}
  .welcome_note {
      background: #fff8dc;
      padding: 0.5rem 15px;
@@ -1203,11 +1200,6 @@ body {
      min-height: 44px;
      min-width: 44px;
      display: block;
-}
- #bannerSix a {
-     min-height: 44px;
-     min-width: 44px;
-     display: initial;
 }
  #siteinfoIP {
      color: #006400;
@@ -4152,14 +4144,6 @@ body {
     }
      #searchresultBody .wrapperAttribsOptions select {
          width: auto;
-    }
-     #bannerOne {
-         margin-left: 0;
-         margin-right: 0;
-    }
-     #bannerFive {
-         margin-left: 0;
-         margin-right: 0;
     }
      #reviewsWritePrice {
          text-align: left;

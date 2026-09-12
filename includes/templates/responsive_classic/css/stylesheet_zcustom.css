@@ -1,4 +1,4 @@
-        /*
+         /*
 =========================================================
 COMMON TEMPLATE CUSTOMIZATIONS
 =========================================================
@@ -81,7 +81,7 @@ body {
 }
  #bannerOne {
      text-align: center;
-      padding:1rem;
+     padding:1rem;
 }
  #bannerTwo {
      text-align: center;
@@ -1641,6 +1641,8 @@ body {
 }
  .brandCell {
      text-align: center;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
 }
  .brand_spacer {
      display: block;
@@ -1653,11 +1655,6 @@ body {
 }
  .brandCell a {
      text-decoration: none;
-}
- .otherBrands .rblockelements {
-     display: inline;
-     width: 50%;
-     float: left;
 }
  address {
      font-style: normal;
@@ -1821,7 +1818,7 @@ body {
      box-sizing: border-box;
      vertical-align: top;
      display: inline-block;
-     margin: 0 5px 0 0;
+     margin: 0;
      text-align: center;
      height: 53px;
      width: auto;
@@ -1986,6 +1983,7 @@ body {
      margin-top: 1rem;
      position: relative;
      justify-content: end;
+     gap:0.3rem;
 }
  #productAttributes {
      background-color: #f0f8ff;
@@ -3537,6 +3535,7 @@ body {
  #productListing form[name="cart_quantity"] {
      width: 100%;
      display: flex;
+     gap:0.3rem;
 }
  #productListing form[name="cart_quantity"] input {
      text-align: center;
@@ -3549,7 +3548,7 @@ body {
      -moz-box-sizing: border-box;
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
-     width: auto;
+     max-width: 75px;
 }
  .cart-add input[type="submit"] {
      background: #ffd700;
@@ -3566,9 +3565,6 @@ body {
      background: #fff;
      color: #000;
      height: auto;
-}
- #productListing .button_in_cart {
-     margin-left: 5px;
 }
  #gvRedeemDefault .forward {
      margin-top: 1rem;
@@ -3784,7 +3780,45 @@ body {
      order: 2;
 }
 /* EOF Products' Options' Stock Manager */
+/* BOF grid layout */
+ .gridlayout {
+     text-align: center;
+     margin-top: 1rem;
+     padding: 1rem;
+}
+ .gridlayout .list-input {
+     justify-content: center;
+}
+ .gridlayout .productDetailslistings {
+     float:none;
+     margin-right:0;
+}
+ .gridlayout span.button_sold_out {
+     justify-content: center;
+}
+ .gridlayout .min-units2 {
+     justify-content: center;
+}
+ .gridlayout .free-shipping-icon {
+     margin:0;
+     float:none;
+}
+ .gridlayout .list-more {
+     float:none;
+}
+ .gridlayout .product-manufacturer a {
+     display: initial;
+}
+/* background colors Columns Per Row */
+ .rblockelements:nth-of-type(odd) > .centerBoxContentsProducts:nth-of-type(odd), .rblockelements:nth-of-type(even) > .centerBoxContentsProducts:nth-of-type(even) {
+     background: #f8f8ff;
+     border-radius: 5px;
+}
+/* EOF grid layout */
  @media (min-width: 576px) {
+     .brandCell {
+         grid-template-columns: repeat(3, 1fr);
+    }
      input.cssButton.submit_button.button.button_search {
          width: auto;
          height: fit-content;
@@ -3836,13 +3870,6 @@ body {
      .backhistorybutton {
          display: flex;
          justify-content: right;
-    }
-    /* Desktop view – match this number to your admin setting */
-     .rblockelements {
-         display: grid;
-         grid-template-columns: repeat(3, 1fr);
-        /* Change 3 to match Columns per Row setting */
-         gap: 1rem;
     }
      #navEZPageNextPrev {
          grid-template-columns: repeat(3, 1fr);
@@ -3941,11 +3968,22 @@ body {
      #checkoutConfirmDefault span.normal_button:hover {
          margin: 1rem;
     }
-     .otherBrands .rblockelements {
-         width: 25%;
+     .gridlayout .button_in_cart {
+         width: 100%;
     }
 }
  @media (min-width: 768px) {
+    /* Desktop view – match this number to your admin setting */
+     .rblockelements {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+        /* Change 3 to match Columns per Row setting */
+         gap: 1rem;
+         overflow-wrap: anywhere;
+    }
+     .brandCell {
+         grid-template-columns: repeat(6, 1fr);
+    }
      #sendSpendWrapper .forward {
          width: fit-content;
     }
@@ -4167,10 +4205,6 @@ body {
      .unsubscribebutton {
          display: flex;
     }
-     .otherBrands .rblockelements {
-         width: 16.6%;
-         float: left;
-    }
      .button.button_back {
          margin-top: 0;
          margin-bottom: 0;
@@ -4347,7 +4381,6 @@ body {
          text-align: right;
     }
      #cartAdd input[type="text"] {
-         margin-right: 5px;
          margin-left: 5%;
     }
      #shippinginfoBody .buttonRow, #aboutusBody .buttonRow, #privacyBody .buttonRow, #conditionsBody .buttonRow, #sitemapBody .buttonRow, #gvfaqBody .back {
@@ -4368,6 +4401,9 @@ body {
     }
      #accessibilityBody .buttonRow {
          display: flex;
+    }
+     .gridlayout .button_buy_now {
+         width: 100%;
     }
 }
  @media (min-width: 992px) {

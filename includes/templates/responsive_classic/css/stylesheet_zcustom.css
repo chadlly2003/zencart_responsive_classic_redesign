@@ -34,36 +34,36 @@ body {
      height: 100%;
 }
  h1 {
-     font-size: 1.8em;
+     font-size: 21.6px;
      line-height: 25px;
      margin: 16px 0;
      color: #154dbc;
      text-decoration: none;
 }
  h2 {
-     font-size: 1.4em;
+     font-size: 16.8px;
      margin: 16px 0;
      color: #000000;
 }
  h3 {
      margin: 16px 0;
      color: #000000;
-     font-size: 1.3em;
+     font-size: 15.6px;
 }
  h4 {
      margin: 16px 0;
-     font-size: 1.1em;
+     font-size: 13.2px;
 }
  h5 {
      margin: 16px 0;
-     font-size: 1.1em;
+     font-size: 13.2px;
 }
  h6 {
      margin: 16px 0;
-     font-size: 1.1em;
+     font-size: 13.2px;
 }
  .biggerText {
-     font-size: 1.2em;
+     font-size: 14.4px;
      line-height: 160%;
 }
  p {
@@ -106,11 +106,11 @@ body {
 }
  #siteinfoCredits {
      text-align: center;
-     font-size: 0.9em;
+     font-size: 10.8px;
 }
  #siteinfoStatus {
      text-align: center;
-     font-size: 0.9em;
+     font-size: 10.8px;
 }
  .centeredContent, #cartEmptyText, #cartBoxGVButton, #cartBoxEmpty, #cartBoxVoucherBalance, .center, .cartQuantity, #cartBoxGVBalance, .productListing-data, .ratingRow, #reviewsInfoDefaultProductImage, #productReviewsDefaultProductImage {
      text-align: center;
@@ -132,7 +132,7 @@ body {
      margin-top: 1rem;
      margin-bottom: 1rem;
      padding: 1rem;
-     font-size: 1.6em;
+     font-size: 19.2px;
      cursor: pointer;
 }
  .back {
@@ -145,11 +145,11 @@ body {
      vertical-align: top;
 }
  .smallText{
-     font-size: 0.9em;
+     font-size: 10.8px;
 }
  code {
      font-family: arial, verdana, helvetica, sans-serif;
-     font-size: 1em;
+     font-size: 12px;
 }
  select {
      width: 100%;
@@ -171,13 +171,13 @@ body {
      width: 100%;
      margin: 0;
      padding: 0;
-     font-size: 1.1em;
+     font-size: 13.2px;
      background: transparent;
 }
  #currenciesContent select {
      margin-bottom: 0;
      padding: 0.375rem 0.75rem;
-     font-size: 1rem;
+     font-size: 16px;
      line-height: 1.5;
      color: #495057;
      background-color: #ffffff;
@@ -219,7 +219,7 @@ body {
      margin: 10px 0;
 }
  #tagline {
-     font-size: 1.8em;
+     font-size: 21.6px;
      text-align: center;
      margin-top: 10px;
      display: none;
@@ -235,7 +235,7 @@ body {
      overflow: hidden;
 }
  #navCatTabs li {
-     font-size: 0.75rem;
+     font-size: 12px;
      display: inline-block;
      margin-top: 0;
      border-left: 1px solid #05919f;
@@ -264,7 +264,7 @@ body {
      padding: 0;
 }
  #navEZPagesTop li {
-     font-size: 0.75rem;
+     font-size: 12px;
      display: inline-block;
 }
  #navEZPagesTop li a {
@@ -290,7 +290,7 @@ body {
      justify-content: center;
 }
  #navSupp li {
-     font-size: 0.75rem;
+     font-size: 12px;
      display: inline-block;
      margin-top: 0;
      margin-left: 0;
@@ -310,11 +310,11 @@ body {
      margin: 0;
      background: #dcdcdc;
      clear: both;
-     font-size: 0.9em;
+     font-size: 10.8px;
      text-align: center;
 }
  h2.centerBoxHeading, h3.rightBoxHeading, h3.leftBoxHeading {
-     font-size: 1.2rem;
+     font-size: 19.2px;
      font-weight: normal;
 }
  .rightBoxContainer, .leftBoxContainer {
@@ -322,7 +322,7 @@ body {
 }
  .sideBoxContent a {
      display: inline-block;
-     font-size: 1.1em;
+     font-size: 13.2px;
      text-decoration: underline;
 }
  form[name="quick_find"] input.cssButton.submit_button.button.button_search, form[name="quick_find"] .cssButtonHover {
@@ -370,11 +370,11 @@ body {
      padding-right: 0;
 }
  .sideBoxContent .productPriceDiscount {
-     font-size: 130%;
+     font-size: 15.6px;
      margin-top: 3px;
 }
  .sideBoxContent .productSpecialPrice {
-     font-size: 120%;
+     font-size: 14.4px;
 }
  .productSalePrice {
      display: block;
@@ -383,37 +383,37 @@ body {
 }
  .centerBoxContentsNew a {
      margin: 0;
-     font-size: 0.8em;
+     font-size: 15.36px;
      display: block;
      color: #333333;
 }
  .centerBoxContentsFeaturedCategories a {
      margin: 0;
-     font-size: 0.8em;
+     font-size: 15.36px;
      display: block;
      color: #333333;
 }
  .centerBoxContentsSpecials a {
      margin: 0;
-     font-size: 0.8em;
+     font-size: 15.36px;
      display: block;
      color: #333333;
 }
  .centerBoxContentsFeatured a {
      margin: 0;
-     font-size: 0.8em;
+     font-size: 15.36px;
      display: block;
      color: #333333;
 }
  .specialsListBoxContents a {
      margin: 0;
-     font-size: 0.8em;
+     font-size: 15.36px;
      display: block;
      color: #333333;
 }
  .centerBoxContentsAlsoPurch a {
      margin: 0;
-     font-size: 0.8em;
+     font-size: 15.36px;
      display: block;
      color: #333333;
 }
@@ -494,7 +494,7 @@ body {
 }
  input {
      padding: 0.375rem 0.75rem;
-     font-size: 1rem;
+     font-size: 16px;
      line-height: 1.5;
      color: #495057;
      background-color: #ffffff;
@@ -717,7 +717,7 @@ body {
 }
  .search_box_mobile input {
      padding: 0.375rem 0.75rem;
-     font-size: 1rem;
+     font-size: 16px;
      font-weight: 400;
      line-height: 1.5;
      color: #495057;
@@ -738,14 +738,14 @@ body {
      color: #006400;
      height: auto;
      padding: 12px 20px;
-     font-size: 1.2em;
+     font-size: 14.4px;
      font-weight: normal;
      border: 1px solid #006400;
      width: 100%;
 }
  .search_box input {
      padding: 0.375rem 0.75rem;
-     font-size: 1rem;
+     font-size: 16px;
      font-weight: 400;
      line-height: 1.5;
      color: #495057;
@@ -773,7 +773,7 @@ body {
 }
  input.cssButtonHover {
      display: inline-block;
-     font-size: 1.2em;
+     font-size: 14.4px;
      text-decoration: none;
      appearance: none;
      cursor: pointer;
@@ -782,25 +782,25 @@ body {
 }
  .button, input.button {
      display: inline-block;
-     font-size: 1.2em;
+     font-size: 14.4px;
      text-decoration: none;
 }
  input.submit_button {
-     font-size: 1.2em;
+     font-size: 14.4px;
      display: inline-block;
      border-radius: 0.25rem;
      width: 100%;
      appearance: none;
 }
  input.submit_button:hover {
-     font-size: 1.2em;
+     font-size: 14.4px;
      display: inline-block;
      border-radius: 0.25rem;
      width: 100%;
 }
  input.cssButton.submit_button.button.button_search {
      padding: 12px 20px;
-     font-size: 1.2em;
+     font-size: 14.4px;
      font-weight: normal;
      border: 1px solid #006400;
      width: 100%;
@@ -810,7 +810,7 @@ body {
 }
  #manufacturers .submit_button {
      border-radius: 0.25rem;
-     font-size: 1.2em;
+     font-size: 14.4px;
      color: #ffffff;
      background-color: #ac171d;
      border-color: #ac171d;
@@ -899,7 +899,7 @@ body {
 }
  .productSpecialPrice {
      color: #006400;
-     font-size: 120%;
+     font-size: 21px;
 }
  .normalprice {
      color: #000000;
@@ -1183,7 +1183,7 @@ body {
      cursor: pointer;
 }
  label {
-     font-size: 0.9rem;
+     font-size: 14.4px;
      font-weight: 400;
      line-height: 1.5;
      color: #000000;
@@ -1205,7 +1205,7 @@ body {
      color: #006400;
      background: transparent;
      text-align: center;
-     font-size: 0.9em;
+     font-size: 10.8px;
      font-weight: normal;
      margin-bottom: 1rem;
      margin-top: 1rem;
@@ -1216,13 +1216,13 @@ body {
      display: none;
 }
  .closingbox {
-     font-size: 1.5rem;
+     font-size: 24px;
      color: #8a2be2;
      text-align: right;
      padding-right: 1.5rem;
 }
  .larger {
-     font-size: 1.1em;
+     font-size: 13.2px;
 }
  #navCategoryIcon, .buttonRow {
      margin: 0;
@@ -1248,7 +1248,7 @@ body {
      line-height: 25px;
      padding: 1.5rem 0 1rem;
      margin-bottom: 1rem;
-     font-size: 1.3rem;
+     font-size: 20.8px;
 }
  fieldset {
      padding: 0;
@@ -1368,7 +1368,7 @@ body {
      font-weight: normal;
 }
  span.button_back {
-     font-size: 1em;
+     font-size: 12px;
 }
  #searchDefault label {
      float: left;
@@ -1377,7 +1377,7 @@ body {
      text-align: left;
 }
  span.normal_button {
-     font-size: 1.2em;
+     font-size: 14.4px;
      padding: 12px 20px;
      border-radius: 0.25rem;
      display: flex;
@@ -1401,7 +1401,7 @@ body {
      color: #ffffff;
      background-color: #0056b3;
      border: 1px solid #0056b3;
-     font-size: 1.2em;
+     font-size: 14.4px;
      border-radius: 0.25rem;
 }
  .button.button_back:hover {
@@ -1461,7 +1461,7 @@ body {
      margin-bottom: 1rem;
 }
  .list-price {
-     font-size: 140%;
+     font-size: 16.8px;
      color: #154dbc;
      text-decoration: none;
 }
@@ -1485,7 +1485,7 @@ body {
 }
  .itemTitle {
      font-weight: normal;
-     font-size: 140%;
+     font-size: 16.8px;
      margin: 0;
      width: 100%;
      display: block;
@@ -1571,7 +1571,7 @@ body {
      display: none;
 }
  #productListing .product-base-price {
-     font-size: 140%;
+     font-size: 16.8px;
      display: block;
      margin-bottom: 1rem;
 }
@@ -1589,7 +1589,7 @@ body {
      padding-bottom: 1rem;
 }
  #productsListingListingBottomLinks a:nth-of-type(2), #productsListingListingTopLinks a:nth-of-type(2) {
-     font-size: 1em;
+     font-size: 12px;
      color: #000000;
 }
  .tabTable {
@@ -1661,11 +1661,11 @@ body {
      background: #f0f8ff;
      padding: 1rem;
      margin-bottom: 1rem;
-     font-size: 1.1em;
+     font-size: 13.2px;
 }
  textarea {
      padding: 0.375rem 0.75rem;
-     font-size: 1rem;
+     font-size: 16px;
      line-height: 1.5;
      color: #495057;
      background-color: #ffffff;
@@ -1824,7 +1824,7 @@ body {
      width: auto;
 }
  h4.optionName {
-     font-size: 1.1em;
+     font-size: 13.2px;
      line-height: 1.5em;
      margin: 0 0 0.5rem;
      padding: 0;
@@ -2025,7 +2025,7 @@ body {
  #productPrices {
      line-height: normal;
      text-align: left;
-     font-size: 1.5em;
+     font-size: 18px;
      margin: 10px 0 0;
      font-weight: normal;
 }
@@ -2067,7 +2067,7 @@ body {
      margin-top: 2rem;
 }
  #productInfoLink {
-     font-size: 1.2em;
+     font-size: 14.4px;
 }
  #productInfoLink a {
      text-decoration: underline;
@@ -2180,7 +2180,7 @@ body {
      color: #4b0082;
 }
  #reviewsDefault span.cssButton.normal_button.button.button_read_reviews {
-     font-size: 0.9rem;
+     font-size: 14.4px;
      color: #154dbc;
      display: block;
      padding: 0;
@@ -2218,7 +2218,7 @@ body {
      display: inline-block;
 }
  #navEZPagesTOC {
-     font-size: 1.2em;
+     font-size: 14.4px;
 }
  .button_continue {
      background: #6a1bc1;
@@ -2344,7 +2344,7 @@ body {
      text-align: center;
      padding: 12px 20px;
      display: block;
-     font-size: 1.2em;
+     font-size: 14.4px;
 }
  #reviewsDefault #productReviewsDefaultHeading {
      font-weight: normal;
@@ -2368,7 +2368,7 @@ body {
 }
  .box_review_spacver span.normal_button {
      background-color: #ffd700;
-     font-size: 1.2em;
+     font-size: 14.4px;
      width: 100%;
      border: 1px solid #ffd700;
      color: #000000;
@@ -2377,7 +2377,7 @@ body {
 }
  .box_review_spacver span.normal_button:hover {
      background-color: #ffffff;
-     font-size: 1.2em;
+     font-size: 14.4px;
      width: 100%;
      color: #000000;
 }
@@ -2430,7 +2430,7 @@ body {
      margin-top: 0;
 }
  .categoryListBoxContents a {
-     font-size: 1.2em;
+     font-size: 14.4px;
 }
  .categoryListBoxContents {
      text-align: center;
@@ -2519,7 +2519,7 @@ body {
 }
  #productreviewsinfoBody .button_goto_prod_details {
      background: #006400;
-     font-size: 1.2em;
+     font-size: 14.4px;
      display: flex;
      align-items: center;
      padding: 12px 20px;
@@ -2532,7 +2532,7 @@ body {
      color: #006400;
 }
  .reviewligner span.normal_button {
-     font-size: 1.2rem;
+     font-size: 19.2px;
 }
  .button_send_a_gift_cert {
      background: #006400;
@@ -2622,7 +2622,7 @@ body {
      font-weight: normal;
      text-align: left;
      color: #7a1db1;
-     font-size: 1.3rem;
+     font-size: 20.8px;
 }
  #pinfo-right #freeShippingIcon {
      margin-top: 0.5rem;
@@ -2633,7 +2633,7 @@ body {
  .orderHistList i {
      display: inline;
      color: #ac171d;
-     font-size: 1.2rem;
+     font-size: 19.2px;
      padding: 0.3rem;
 }
  .orderHistList {
@@ -2889,12 +2889,12 @@ body {
      text-align: right;
      line-height: 2.2em;
      padding: 10px 0 0;
-     font-size: 130%;
+     font-size: 15.6px;
      margin-bottom: 1rem;
 }
  .cartTotalDisplay {
      text-align: right;
-     font-size: 130%;
+     font-size: 15.6px;
      text-decoration: none;
      color: #000000;
      display: none;
@@ -2908,7 +2908,7 @@ body {
      vertical-align: top;
 }
  .cartProdTitle {
-     font-size: 120%;
+     font-size: 14.4px;
      color: #000000;
      display: flex;
      flex-direction: column;
@@ -2984,7 +2984,7 @@ body {
  .cartUnitDisplay {
      text-align: center;
      color: #004d00;
-     font-size: 130%;
+     font-size: 15.6px;
 }
  #scTotalHeading {
      display: none;
@@ -3082,7 +3082,7 @@ body {
      line-height: 25px;
      padding-bottom: 1rem;
      margin-bottom: 1rem;
-     font-size: 1.3rem;
+     font-size: 20.8px;
      padding-top: 1rem;
 }
  #checkoutShippingContentChoose {
@@ -3207,7 +3207,7 @@ body {
      color: #000000;
      border-bottom: 1px solid #cccccc;
      padding-bottom: 1rem;
-     font-size: 1.3rem;
+     font-size: 20.8px;
      padding-top:1rem;
 }
  #checkoutConfirmDefault .confirmorder {
@@ -3225,13 +3225,13 @@ body {
 }
  #checkoutConfirmDefaultHeadingComments {
      color: #154dbc;
-     font-size: 1.3rem;
+     font-size: 20.8px;
      font-weight: normal;
 }
  #checkoutConfirmDefaultPayment, #checkoutConfirmDefaultShipment {
      color: #761bc9;
      font-weight: normal;
-     font-size: 1.3rem;
+     font-size: 20.8px;
 }
  .amount {
      width: 6.5em;
@@ -3259,7 +3259,7 @@ body {
      margin-bottom: 0;
      background: #ffffff;
      color: #7a1db1;
-     font-size: 1.3rem;
+     font-size: 20.8px;
 }
  #myAccountPaymentInfo div, #myAccountShipInfo div {
      padding: 1rem;
@@ -3283,7 +3283,7 @@ body {
      font-weight: normal;
      text-align: left;
      color: #7a1db1;
-     font-size: 1.3rem;
+     font-size: 20.8px;
      margin-bottom: 0;
 }
  #myAccountProducts {
@@ -3333,7 +3333,7 @@ body {
 }
  #reviewsWritePrice {
      text-align: center;
-     font-size: 1.5em;
+     font-size: 18px;
 }
  #pinfo-left span.cssButton.normal_button, #pinfo-left span.normal_button:hover {
      display: block;
@@ -3371,7 +3371,7 @@ body {
      margin: 0;
 }
  #reviewsWrite span.normal_button:hover {
-     font-size: 1rem;
+     font-size: 16px;
      background-color: transparent;
      place-content: center left;
      padding: 0;
@@ -3385,7 +3385,7 @@ body {
  #reviewsWrite span.cssButton.normal_button {
      background: transparent;
      color: #4b0082;
-     font-size: 1rem;
+     font-size: 16px;
      place-content: center left;
      padding: 0;
      outline: none;
@@ -3460,7 +3460,7 @@ body {
      text-align: left;
      border-bottom: solid 1px #ccc;
      color: #154dbc;
-     font-size: 1.3rem;
+     font-size: 20.8px;
      margin-bottom: 1rem;
      padding-bottom: 1rem;
      margin-top: 1.5rem;
@@ -3474,7 +3474,7 @@ body {
      margin: 0;
      display: flex;
      color: #8A2BE2;
-     font-size: 1.3rem;
+     font-size: 20.8px;
      outline: none;
      text-align: left;
      border: none;
@@ -3513,7 +3513,7 @@ body {
      padding-left: 0;
      padding-right: 0;
      margin-bottom: 0.5rem;
-     font-size: 1.2rem;
+     font-size: 19.2px;
      font-weight: normal;
      width: 100%;
 }
@@ -3554,7 +3554,7 @@ body {
      background: #ffd700;
      border: 1px solid #ffd700;
      color: #000;
-     font-size: 1.2em;
+     font-size: 14.4px;
      display: inline-block;
      padding: 12px 20px;
      border-radius: 0.25rem;
@@ -3578,7 +3578,7 @@ body {
      color: #900404;
 }
  #reviewsDefault .button_write_review {
-     font-size: 1.2rem;
+     font-size: 19.2px;
      background: transparent;
      color: #8a4514;
      padding: 0;
@@ -3597,7 +3597,7 @@ body {
 }
  #reviewsDefault .button_read_reviewsHover {
      background: transparent;
-     font-size: 1.2em;
+     font-size: 14.4px;
      display: block;
      padding: 0;
      margin-top: 0;
@@ -3626,7 +3626,7 @@ body {
 }
  #productreviewsBody #reviewsDefault .button_read_reviewsHover {
      margin-top: 0;
-     font-size: 0.9rem;
+     font-size: 14.4px;
      padding: 0;
 }
  #productDateAvailable {
@@ -3878,7 +3878,7 @@ body {
     }
      .button_search:hover {
          width: auto;
-         font-size: 1.2em;
+         font-size: 14.4px;
     }
      .search_box_mobile form {
          display: flex;

@@ -1938,6 +1938,7 @@ body {
 }
  #productReviewLink span.normal_button {
      padding: 0;
+     font-size: 19.2px;
 }
  .reviewCount {
      text-align: center;

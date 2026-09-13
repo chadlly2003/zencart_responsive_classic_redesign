@@ -3269,9 +3269,7 @@ body {
  #myAccountProducts {
      text-align: left;
 }
- #orderHistoryHeading tr:nth-child(2n 
-/**/
- +1) td {
+ #orderHistoryHeading tr:nth-child(2n+1) td {
      background-color: #f8f8ff;
 }
  #accountHistInfo .accountTotalDisplay {

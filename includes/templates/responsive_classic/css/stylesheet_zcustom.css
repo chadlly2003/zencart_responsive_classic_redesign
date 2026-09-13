@@ -3813,6 +3813,8 @@ body {
  .rblockelements:nth-of-type(odd) > .centerBoxContentsProducts:nth-of-type(odd), .rblockelements:nth-of-type(even) > .centerBoxContentsProducts:nth-of-type(even) {
      background: #f8f8ff;
      border-radius: 5px;
+     border-top:solid 1px #cccccc;
+     border-bottom:solid 1px #cccccc;
 }
 /* EOF grid layout */
  @media (min-width: 576px) {
@@ -3980,6 +3982,9 @@ body {
         /* Change 3 to match Columns per Row setting */
          gap: 1rem;
          overflow-wrap: anywhere;
+    }
+     .rblockelements:nth-of-type(odd) > .centerBoxContentsProducts:nth-of-type(odd), .rblockelements:nth-of-type(even) > .centerBoxContentsProducts:nth-of-type(even) {
+         border:none;
     }
      .brandCell {
          grid-template-columns: repeat(6, 1fr);

@@ -1,24 +1,3 @@
-         /*
-=========================================================
-COMMON TEMPLATE CUSTOMIZATIONS
-=========================================================
-
-Main link color:       search for #154dbc
-Primary green buttons: search for #006400
-Purple buttons:        search for #6a1bc1 / #7a1bce
-Yellow buttons:        search for #ffd700
-Red buttons:           search for #ac171d
-
-Main content width:    1280px
-Mobile-first layout.
-
-Responsive breakpoints:
-576px
-768px
-992px
-1300px
-=========================================================
-*/
 body {
      margin: 0;
      font-family: verdana, arial, helvetica, sans-serif;
@@ -3702,9 +3681,7 @@ body {
  #upcomingProductsTable tr:nth-child(even) {
      background-color: #F0F8FF;
 }
- #upcomingProductsTable tr:nth-child(2n 
-/**/
- +1):not(:first-child) {
+ #upcomingProductsTable tr:nth-child(2n+1):not(:first-child) {
      background: transparent;
 }
  #upcomingProductsTable tr:nth-child(2n) {
@@ -3819,6 +3796,17 @@ body {
 }
 /* EOF grid layout */
  @media (min-width: 576px) {
+    /* Desktop view – match this number to your admin setting */
+     .rblockelements {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+        /* Change 3 to match Columns per Row setting */
+         gap: 1rem;
+         overflow-wrap: anywhere;
+    }
+     .rblockelements:nth-of-type(odd) > .centerBoxContentsProducts:nth-of-type(odd), .rblockelements:nth-of-type(even) > .centerBoxContentsProducts:nth-of-type(even) {
+         border:none;
+    }
      .brandCell {
          grid-template-columns: repeat(3, 1fr);
     }
@@ -3974,19 +3962,11 @@ body {
      .gridlayout .button_in_cart {
          width: 100%;
     }
+     #productListing .gridlayout form[name="cart_quantity"] {
+         display: block;
+    }
 }
  @media (min-width: 768px) {
-    /* Desktop view – match this number to your admin setting */
-     .rblockelements {
-         display: grid;
-         grid-template-columns: repeat(3, 1fr);
-        /* Change 3 to match Columns per Row setting */
-         gap: 1rem;
-         overflow-wrap: anywhere;
-    }
-     .rblockelements:nth-of-type(odd) > .centerBoxContentsProducts:nth-of-type(odd), .rblockelements:nth-of-type(even) > .centerBoxContentsProducts:nth-of-type(even) {
-         border:none;
-    }
      .brandCell {
          grid-template-columns: repeat(6, 1fr);
     }
@@ -4124,6 +4104,9 @@ body {
      #productListing form[name="cart_quantity"] {
          width: auto;
          justify-content: end;
+    }
+     #productListing .gridlayout form[name="cart_quantity"] {
+         display: flex;
     }
      .button_add_address {
          margin-top: 0;

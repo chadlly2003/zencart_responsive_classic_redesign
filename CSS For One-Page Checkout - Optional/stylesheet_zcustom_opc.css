@@ -1,5 +1,5 @@
  #loginOpcDefault h2 {
-     font-size: 1.3rem;
+     font-size: 20.8px;
      line-height: 25px;
      padding-bottom: 0;
 }
@@ -207,13 +207,13 @@
 }
  #checkoutoneBody .cartProductDisplay {
      display: grid;
-     font-size: 0.8rem;
+     font-size: 12.8px;
 }
  #checkoutoneBody .floatingBox .back {
-     font-size: 0.8rem;
+     font-size: 12.8px;
 }
  #checkoutoneBody .totalBox {
-     font-size: 0.9rem;
+     font-size: 14.4px;
 }
  #opc-bill-cancel {
      margin-bottom: 1rem;

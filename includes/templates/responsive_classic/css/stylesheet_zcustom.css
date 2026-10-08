@@ -949,7 +949,6 @@ body {
  button {
      appearance: none;
 }
-
 /* Mobile view – 1 product per row */
  .rblockelements {
      display: grid;
@@ -987,10 +986,6 @@ body {
      min-width: 44px;
      display: block;
      align-content: center;
-}
-/* removes white background from img */
-.rblockelements img, .productListing-even img, #cartContentsDisplay .rowOdd img { 
-    mix-blend-mode: multiply; 
 }
  div[class^="col"] h2 {
      font-weight: normal;

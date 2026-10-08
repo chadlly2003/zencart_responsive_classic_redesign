@@ -2914,8 +2914,6 @@
 }
  #cartContentsDisplay tr:nth-child(2n) {
      background-color: transparent;
-     border-top: 1px solid #cccccc;
-     border-bottom: 1px solid #cccccc;
 }
  #checkoutconfirmationBody #cartContentsDisplay tr:nth-child(2n) {
      border: none;

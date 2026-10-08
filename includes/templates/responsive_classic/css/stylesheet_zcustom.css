@@ -1,4 +1,4 @@
-body {
+ body {
      margin: 0;
      font-family: verdana, arial, helvetica, sans-serif;
      font-size: 12px;
@@ -949,7 +949,6 @@ body {
  button {
      appearance: none;
 }
-
 /* Mobile view – 1 product per row */
  .rblockelements {
      display: grid;

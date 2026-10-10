@@ -152,6 +152,7 @@
      padding: 0;
      font-size: 13.2px;
      background: transparent;
+     height: auto;
 }
  #currenciesContent select {
      margin-bottom: 0;

@@ -481,10 +481,11 @@
      border: 1px solid #ced4da;
      border-radius: 0.25rem;
      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-     width: calc(100% - 26px);
-     height: 35px;
+     width: 100%;
+     height: 48px;
      margin-bottom: 1rem;
      -webkit-tap-highlight-color: transparent;
+     box-sizing: border-box;
 }
  #navCatTabs ul li:last-child {
      border-right: 1px solid #05919f;
@@ -894,8 +895,7 @@
      text-decoration: line-through;
 }
  form select {
-     min-height: 48px;
-     min-width: 48px;
+     height: 48px;
      background: #e9ecef;
      font-size: 16px;
      padding-top: 0;
@@ -1656,10 +1656,11 @@
      border: 1px solid #ced4da;
      border-radius: 0.25rem;
      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-     width: calc(100% - 26px);
+     width: 100%;
      display: block;
      text-align: left;
      margin-bottom: 1rem;
+     box-sizing: border-box;
 }
  .button_send {
      background: #7b3f00;
@@ -1974,11 +1975,12 @@
      padding: 1rem;
      margin-bottom: 0;
      margin-top: 3rem;
-     width: calc(100% - 32px);
+     width: 100%;
      display: inline-block;
      appearance: none;
      -webkit-tap-highlight-color: transparent;
      user-select: none;
+     box-sizing: border-box;
 }
  .qty_cart_qty {
      position: relative;
@@ -3484,8 +3486,9 @@
  #shippingEstimatorContent address {
      background: #fff8dc;
      padding: 0.5rem;
-     width: calc(100% - 16px);
+     width: 100%;
      margin-bottom: 0;
+     box-sizing: border-box;
 }
  #seShipTo {
      margin-top: 1rem;

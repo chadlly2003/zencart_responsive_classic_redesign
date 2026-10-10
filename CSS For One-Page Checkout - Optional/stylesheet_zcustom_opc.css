@@ -375,10 +375,9 @@
      white-space: nowrap;
      border: 0;
 }
- form select {
-    height: 48px !important;
+ #checkoutoneBody select {
+    height: 48px;
 }
-
  @media (min-width: 576px) {
      #checkoutoneBody .productTax {
          display: revert;

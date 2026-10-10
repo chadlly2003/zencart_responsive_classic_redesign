@@ -121,7 +121,8 @@
      margin-bottom: 0.5rem;
 }
  #checkoutSuccessGuestPassword #password-new, #checkoutSuccessGuestPassword #password-confirm {
-     width: calc(100% - 26px);
+     width: 100%;
+     box-sizing: border-box;
 }
  #checkoutoneBody #cartOrderTotals {
      border: none;
@@ -374,6 +375,10 @@
      white-space: nowrap;
      border: 0;
 }
+ form select {
+    height: 48px !important;
+}
+
  @media (min-width: 576px) {
      #checkoutoneBody .productTax {
          display: revert;
@@ -467,7 +472,8 @@
          width: 100%;
     }
      #loginOpcDefault label, #loginOpcDefault input {
-         width: calc(100% - 26px);
+         width: 100%;
+         box-sizing: border-box;
     }
      #loginOpcDefault .opc-block-3:nth-last-of-type(3n) {
          margin-left: 1rem;

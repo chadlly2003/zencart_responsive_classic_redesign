@@ -1,4 +1,4 @@
- body {
+  body {
      margin: 0;
      font-family: verdana, arial, helvetica, sans-serif;
      font-size: 12px;
@@ -3012,6 +3012,7 @@
      margin-top: 0;
      text-align: center;
      width: auto;
+     max-height: 43px;
 }
  .markProductOutOfStock {
      display: block;

@@ -3590,6 +3590,10 @@
 }
  #shippingEstimatorContent #stateLabel {
      width: 100%;
+     margin-bottom:0;
+}
+#shippingEstimatorContent:has(#stateZone:not([style*="display: none"])) #stateLabel {
+    display: none;
 }
  #maintenanceDefault .forward {
      float: none;

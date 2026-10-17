@@ -61,15 +61,14 @@
 <label class="inputLabel" for="city"><?php echo ENTRY_CITY; ?></label>
 <?php echo zen_draw_input_field('city', '', zen_set_field_length(TABLE_ADDRESS_BOOK, 'entry_city', '40') . ' id="city" placeholder="' . ENTRY_CITY_TEXT . '"'. ((int)ENTRY_CITY_MIN_LENGTH > 0 ? ' required' : '')); ?>
 <br class="clearBoth">
-
 <?php
   if (ACCOUNT_STATE == 'true') {
     if ($flag_show_pulldown_states == true) {
 ?>
-<label class="inputLabel" for="stateZone" id="zoneLabel"><?php echo ENTRY_STATE; ?></label>
+<!--moved alert to align with label -->
+<label class="inputLabel" for="stateZone" id="zoneLabel"><?php echo ENTRY_STATE; if (!empty(ENTRY_STATE_TEXT)) echo '&nbsp;<span class="alert">' . ENTRY_STATE_TEXT . '</span>'; ?></label>
 <?php
       echo zen_draw_pull_down_menu('zone_id', zen_prepare_country_zones_pull_down($selected_country), $zone_id, 'id="stateZone"');
-      if (!empty(ENTRY_STATE_TEXT)) echo '&nbsp;<span class="alert">' . ENTRY_STATE_TEXT . '</span>';
     }
 ?>
 
@@ -84,7 +83,7 @@
       echo zen_draw_hidden_field('zone_id', $zone_name, ' ');
     }
 ?>
-<br class="clearBoth">
+ 
 <?php
   }
 ?>

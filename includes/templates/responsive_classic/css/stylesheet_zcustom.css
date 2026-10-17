@@ -1,4 +1,4 @@
-  body {
+    body {
      margin: 0;
      font-family: verdana, arial, helvetica, sans-serif;
      font-size: 12px;
@@ -3593,7 +3593,7 @@
      margin-bottom:0;
 }
 #shippingEstimatorContent:has(#stateZone:not([style*="display: none"])) #stateLabel {
-    display: none;
+     display: none;
 }
  #maintenanceDefault .forward {
      float: none;

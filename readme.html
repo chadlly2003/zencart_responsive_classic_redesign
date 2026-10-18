@@ -133,56 +133,7 @@
                 <span class="statustext">Template Setup Complete!</span>
             </strong>
             <h1>Making Changes to Template</h1>
-            <h2>Columns per Row – What It Does</h2>
-            <p>
-                <strong>Description:</strong> The Admin Columns per Row setting controls how many items are shown in
-                each row in the product or category view.
-            </p>
-            <p>
-                <strong>Location:</strong>
-                <code>Admin &gt; Configuration &gt; Product Listing &gt; Columns per Row</code>
-            </p>
-            <div class="note">
-                <strong>Note:</strong> Any change to the column count must be reflected in your CSS to maintain proper
-                layout alignment. <br />
-                <strong
-                    >The default template is already optimized for 1 or 3 columns, so no additional CSS changes are
-                    required.</strong
-                >
-            </div>
-            <h3>Example CSS</h3>
-            <p>
-                There are three layout styles: mobile, tablet and desktop. <br />
-                Make sure the desktop column count matches your “Columns per Row” setting in the Zen Cart admin.
-            </p>
-            <p>
-                <strong>path</strong>
-                <code>includes/templates/responsive_classic/css/stylesheet_zcustom.css</code>
-            </p>
-            <pre>
-										<code>/* Mobile view – product per row */
- div:has(> .rblockelements) {
-     display: grid;
-     grid-template-columns: repeat(1, 1fr);
-     gap: 1rem;
-     overflow-wrap: anywhere;
-}
-
-/* Tablet view – product per row */
- @media (min-width: 576px) {
-     div:has(> .rblockelements) {
-         grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-/* Desktop view – product per row */
- @media (min-width: 768px) {
-     div:has(> .rblockelements) {
-         grid-template-columns: repeat(3, 1fr);   /* Make sure the desktop column count matches your “Columns per Row” setting in the Zen Cart admin. */
-    }
-  }</code>
-									</pre>
-            <hr />
+           
             <h2>Change Position of Navigation Items</h2>
             <p>
                 The top navbar has a class <strong>.nav_spacer</strong> which is a flex container. You can use the

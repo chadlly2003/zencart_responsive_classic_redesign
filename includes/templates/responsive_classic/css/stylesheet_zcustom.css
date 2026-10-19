@@ -954,7 +954,6 @@ body {
  div:has(> .rblockelements) {
      display: grid;
      grid-template-columns: repeat(1, 1fr);
-     gap: 1rem;
      overflow-wrap: anywhere;
 }
 /* Remove Zen Cart row grouping */
@@ -3820,6 +3819,7 @@ body {
  @media (min-width: 576px) {
      div:has(> .rblockelements) {
          grid-template-columns: repeat(2, 1fr);
+         gap:1rem;
     }
      .rblockelements:nth-of-type(odd) > .centerBoxContentsProducts:nth-of-type(odd), .rblockelements:nth-of-type(even) > .centerBoxContentsProducts:nth-of-type(even) {
          border:none;

@@ -965,7 +965,7 @@ body {
  .rblockelements > div {
      float: none;
      width: auto;
-     margin: 0;
+     margin: 1rem 0;
      padding:2rem 1rem;
      box-sizing: border-box;
      min-width: 0;
@@ -3778,6 +3778,10 @@ body {
      text-align: center;
      margin-top: 1rem;
      padding: 1rem;
+}
+.rblockelements .gridlayout {
+    margin-top:0; 
+    margin-bottom:0;
 }
  .gridlayout .list-input {
      justify-content: center;

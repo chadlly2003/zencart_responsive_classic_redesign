@@ -962,10 +962,8 @@ body {
      display: contents;
 }
 /* Reset product/category boxes */
- .rblockelements > div {
-     float: none;
+  .rblockelements > div {
      width: auto;
-     margin: 1rem 0;
      padding:2rem 1rem;
      box-sizing: border-box;
      min-width: 0;

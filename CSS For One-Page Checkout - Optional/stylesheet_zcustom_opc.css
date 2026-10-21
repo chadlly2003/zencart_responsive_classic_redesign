@@ -284,6 +284,7 @@
 }
  #checkoutoneBody .markProductOutOfStock {
      order: 2;
+     color:#900404;
 }
  #checkoutSuccessGuestPassword .button_create_account {
      margin-bottom: 1rem;

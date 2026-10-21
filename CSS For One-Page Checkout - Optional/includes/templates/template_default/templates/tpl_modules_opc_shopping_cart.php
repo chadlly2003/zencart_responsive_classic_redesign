@@ -69,9 +69,11 @@ for ($i = 0, $n = count($order->products); $i < $n; $i++) {
       $product_image = $product_image_query->fields['products_image'];
     }
 
-    // Add the images directory to the filename.
+    // Use product image or Zen Cart's default no-picture image.
     if (!empty($product_image)) {
-      $product_image = DIR_WS_IMAGES . $product_image;
+        $product_image = DIR_WS_IMAGES . $product_image;
+    } else {
+        $product_image = DIR_WS_IMAGES . 'no_picture.gif';
     }
 
     // Generate the product information URL.
@@ -93,15 +95,13 @@ for ($i = 0, $n = count($order->products); $i < $n; $i++) {
                     <!-- CUSTOM MODIFICATION - PRODUCT IMAGE - START -->
                     <span class="cartImage back">
                         <a href="<?php echo htmlspecialchars($product_link, ENT_QUOTES, 'UTF-8'); ?>">
-                            <?php
-                            if (!empty($product_image)) {
-                                echo zen_image(
-                                    $product_image,
-                                    $order->products[$i]['name'],
-                                    60,
-                                    60
-                                );
-                            }
+                          <?php
+                            echo zen_image(
+                                $product_image,
+                                $order->products[$i]['name'],
+                                60,
+                                60
+                            );
                             ?>
                         </a>
                     </span>

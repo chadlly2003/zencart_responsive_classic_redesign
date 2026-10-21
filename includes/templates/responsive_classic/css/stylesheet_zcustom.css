@@ -432,7 +432,7 @@ body {
  h2.greeting a {
      color: #000000;
 }
- a:visited, #navEZPagesTOC ul li a, #navEZPagesTOC ul li a:hover, .cartOldItem, #icon, .header {
+  #navEZPagesTOC ul li a, #navEZPagesTOC ul li a:hover, .cartOldItem, #icon, .header {
      color: #154dbc;
      text-decoration: none;
 }

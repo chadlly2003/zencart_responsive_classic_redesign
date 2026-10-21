@@ -378,6 +378,10 @@
  #checkoutoneBody select {
     height: 48px;
 }
+.opcProductName {
+    display: flex;
+    flex-direction: column;
+}
  @media (min-width: 576px) {
      #checkoutoneBody .productTax {
          display: revert;

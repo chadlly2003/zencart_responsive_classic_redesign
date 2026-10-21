@@ -3778,12 +3778,10 @@ a:hover .stock-wrapper .stock-msg {
     text-decoration: none;
     display: inline-block;
      width: 100%;
-    clear:both;
 } 
 .cartProdInfo .no-stock.stock-mixed, .cartProductDisplay .no-stock.stock-mixed, #checkoutConfirmDefault #cartContentsDisplay .markProductOutOfStock, .accountProductDisplay .stock-msg.no-stock {
     color:#900404;
 }
-
 /* EOF Products' Options' Stock Manager */
 /* BOF grid layout */
  .gridlayout {

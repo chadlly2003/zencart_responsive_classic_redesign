@@ -109,7 +109,7 @@ for ($i = 0, $n = count($order->products); $i < $n; $i++) {
 
                    <div class="opcProductName">
                      <?php echo $order->products[$i]['name']; ?>
-                </div>
+               
 <?php echo $stock_check[$i]; ?>
 <?php
 // if there are attributes, loop thru them and display one per line
@@ -123,7 +123,7 @@ for ($i = 0, $n = count($order->products); $i < $n; $i++) {
 <?php
         } // end loop
 ?>
-                    </ul>
+                    </ul>  </div>
 <?php
     } // endif attribute-info
 

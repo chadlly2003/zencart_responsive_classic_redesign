@@ -207,7 +207,6 @@
      padding-top: 0;
 }
  #checkoutoneBody .cartProductDisplay {
-     display: grid;
      font-size: 12.8px;
 }
  #checkoutoneBody .floatingBox .back {
@@ -281,6 +280,7 @@
      margin-bottom: 0;
      padding-left: 1.5rem;
      order: 2;
+     display: grid;
 }
  #checkoutoneBody .markProductOutOfStock {
      order: 2;

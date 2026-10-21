@@ -3024,6 +3024,7 @@ body {
 }
  #cartContentsDisplay input[type="text"] {
      align-self: center;
+     max-width: 75px;
 }
  #shoppingCartDefault input[type="checkbox"] {
      display: none;

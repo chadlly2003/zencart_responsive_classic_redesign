@@ -1,99 +1,167 @@
 <?php
 // -----
 // Part of the One-Page Checkout plugin, provided under GPL 2.0 license by lat9 (cindy@vinosdefrutastropicales.com).
-// Copyright (C) 2013-2025, Vinos de Frutas Tropicales.  All rights reserved.
+// Copyright (C) 2013-2025, Vinos de Frutas Tropicales. All rights reserved.
 //
 // Last updated: OPC v2.5.5
 //
+// CUSTOM MODIFICATION - PRODUCT IMAGE
+// Added 60x60 product thumbnails to the OPC cart display.
+// Uses existing Zen Cart cartImage back classes.
+// No changes to quantities, attributes, tax, or totals.
+//
 ?>
 <!--bof shopping-cart block -->
-  <div id="checkoutOneShoppingCart">
+<div id="checkoutOneShoppingCart">
     <fieldset id="checkoutOneCartGroup">
-      <legend><?php echo HEADING_PRODUCTS; ?></legend>
-      <table border="0" width="100%" cellspacing="0" cellpadding="0" id="cartContentsDisplay">
-        <tr>
-            
-          <!-- updated for WCAG -->
-             <td headers="ccProductsHeading" class="edit-button" colspan="<?php echo (count($order->info['tax_groups']) > 1) ? 3 : 2; ?>">&nbsp;</td>
-        
-             <td headers="ccProductsHeading" class="edit-button"><?php echo '<a href="' . zen_href_link(FILENAME_SHOPPING_CART) . '">' . zen_image_button(BUTTON_IMAGE_EDIT_SMALL, BUTTON_EDIT_SMALL_ALT) . '</a>'; ?></td>
-          <!-- end of updated for WCAG  -->
-        </tr>
-        
-        <tr class="cartTableHeading">
-          <th scope="col" id="ccQuantityHeading"><?php echo TABLE_HEADING_QUANTITY; ?></th>
-          <th scope="col" id="ccProductsHeading"><?php echo TABLE_HEADING_PRODUCTS; ?></th>
+        <legend><?php echo HEADING_PRODUCTS; ?></legend>
+
+        <table border="0" width="100%" cellspacing="0" cellpadding="0" id="cartContentsDisplay">
+            <tr>
+
+                <!-- updated for WCAG -->
+                <td headers="ccProductsHeading" class="edit-button" colspan="<?php echo (count($order->info['tax_groups']) > 1) ? 3 : 2; ?>">&nbsp;</td>
+
+                <td headers="ccProductsHeading" class="edit-button"><?php echo '<a href="' . zen_href_link(FILENAME_SHOPPING_CART) . '">' . zen_image_button(BUTTON_IMAGE_EDIT_SMALL, BUTTON_EDIT_SMALL_ALT) . '</a>'; ?></td>
+                <!-- end of updated for WCAG -->
+            </tr>
+
+            <tr class="cartTableHeading">
+                <th scope="col" id="ccQuantityHeading"><?php echo TABLE_HEADING_QUANTITY; ?></th>
+                <th scope="col" id="ccProductsHeading"><?php echo TABLE_HEADING_PRODUCTS; ?></th>
 <?php
 // If there are tax groups, display the tax columns for price breakdown
 if (count($order->info['tax_groups']) > 1) {
 ?>
-          <th scope="col" id="ccTaxHeading"><?php echo HEADING_TAX; ?></th>
+                <th scope="col" id="ccTaxHeading"><?php echo HEADING_TAX; ?></th>
 <?php
 }
 ?>
-          <th scope="col" id="ccTotalHeading"><?php echo TABLE_HEADING_TOTAL; ?></th>
-        </tr>
-<?php 
+                <th scope="col" id="ccTotalHeading"><?php echo TABLE_HEADING_TOTAL; ?></th>
+            </tr>
+<?php
 // now loop thru all products to display quantity and price
 for ($i = 0, $n = count($order->products); $i < $n; $i++) {
     $last_row_class = $order->products[$i]['rowClass'];
+
+    // =====================================================
+    // CUSTOM MODIFICATION - PRODUCT IMAGE - START
+    // =====================================================
+
+    // Get the numeric product ID (remove attribute suffix).
+    $products_id = (int)$order->products[$i]['id'];
+
+    // =====================================================
+    // CUSTOM MODIFICATION - PRODUCT IMAGE
+    // Retrieve actual product image from database.
+    // =====================================================
+
+    $product_image_query = $db->Execute(
+      "SELECT products_image
+        FROM " . TABLE_PRODUCTS . "
+        WHERE products_id = " . (int)$products_id . "
+        LIMIT 1"
+    );
+
+    $product_image = '';
+
+    if (!$product_image_query->EOF) {
+      $product_image = $product_image_query->fields['products_image'];
+    }
+
+    // Add the images directory to the filename.
+    if (!empty($product_image)) {
+      $product_image = DIR_WS_IMAGES . $product_image;
+    }
+
+    // Generate the product information URL.
+    $product_link = zen_href_link(
+        zen_get_info_page($products_id),
+        'products_id=' . $order->products[$i]['id']
+    );
+
+    // =====================================================
+    // CUSTOM MODIFICATION - PRODUCT IMAGE - END
+    // =====================================================
 ?>
-        <tr class="<?php echo $order->products[$i]['rowClass']; ?>">
-          <td class="cartQuantity"><?php echo $order->products[$i]['qty']; ?>&nbsp;x</td>
-          <td class="cartProductDisplay"><?php echo $order->products[$i]['name'] . $stock_check[$i]; ?>
-<?php 
+            <tr class="<?php echo $order->products[$i]['rowClass']; ?>">
+
+                <td class="cartQuantity"><?php echo $order->products[$i]['qty']; ?>&nbsp;x</td>
+
+                <td class="cartProductDisplay">
+
+                    <!-- CUSTOM MODIFICATION - PRODUCT IMAGE - START -->
+                    <span class="cartImage back">
+                        <a href="<?php echo htmlspecialchars($product_link, ENT_QUOTES, 'UTF-8'); ?>">
+                            <?php
+                            if (!empty($product_image)) {
+                                echo zen_image(
+                                    $product_image,
+                                    $order->products[$i]['name'],
+                                    60,
+                                    60
+                                );
+                            }
+                            ?>
+                        </a>
+                    </span>
+                    <!-- CUSTOM MODIFICATION - PRODUCT IMAGE - END -->
+
+                    <?php echo $order->products[$i]['name'] . $stock_check[$i]; ?>
+
+<?php
 // if there are attributes, loop thru them and display one per line
-    if (isset ($order->products[$i]['attributes']) && count ($order->products[$i]['attributes']) > 0 ) {
+    if (isset($order->products[$i]['attributes']) && count($order->products[$i]['attributes']) > 0) {
 ?>
-            <ul class="cartAttribsList">
+                    <ul class="cartAttribsList">
 <?php
         for ($j = 0, $n2 = count($order->products[$i]['attributes']); $j < $n2; $j++) {
 ?>
-              <li><?php echo $order->products[$i]['attributes'][$j]['option'] . TEXT_OPTION_DIVIDER . nl2br(zen_output_string_protected($order->products[$i]['attributes'][$j]['value']), false); ?></li>
+                        <li><?php echo $order->products[$i]['attributes'][$j]['option'] . TEXT_OPTION_DIVIDER . nl2br(zen_output_string_protected($order->products[$i]['attributes'][$j]['value']), false); ?></li>
 <?php
         } // end loop
 ?>
-            </ul>
+                    </ul>
 <?php
     } // endif attribute-info
-    
-    if (isset ($posStockMessage)) {
+
+    if (isset($posStockMessage)) {
         echo '<br>' . $posStockMessage[$i];
     }
 ?>
-          </td>
-<?php 
-  // display tax info if exists
+                </td>
+<?php
+    // display tax info if exists
     if (count($order->info['tax_groups']) > 1) {
 ?>
-          <td class="cartTotalDisplay productTax"><?php echo zen_display_tax_value($order->products[$i]['tax']); ?>%</td>
+                <td class="cartTotalDisplay productTax"><?php echo zen_display_tax_value($order->products[$i]['tax']); ?>%</td>
 <?php
-    }  // endif tax info display  
+    } // endif tax info display
 ?>
-          <td class="cartTotalDisplay productPrice">
-<?php 
+                <td class="cartTotalDisplay productPrice">
+<?php
     echo $currencies->display_price($order->products[$i]['final_price'], $order->products[$i]['tax'], $order->products[$i]['qty']);
-    if ($order->products[$i]['onetime_charges'] != 0 ) {
+    if ($order->products[$i]['onetime_charges'] != 0) {
         echo '<br>' . $currencies->display_price($order->products[$i]['onetime_charges'], $order->products[$i]['tax'], 1);
     }
 ?>
-          </td>
-        </tr>
+                </td>
+            </tr>
 <?php
 }
-// end for loopthru all products 
+// end for loopthru all products
 
 if (MODULE_ORDER_TOTAL_INSTALLED) {
     $row_class = ($last_row_class == 'rowEven') ? 'rowOdd' : 'rowEven';
 ?>
-        <tr class="<?php echo $row_class; ?>" id="cartOrderTotals">
-            <td colspan="<?php echo (count($order->info['tax_groups']) > 1) ? 4 : 3; ?>" id="orderTotalDivs"><?php $order_total_modules->process(); $order_total_modules->output(); ?></td>
-        </tr>
+            <tr class="<?php echo $row_class; ?>" id="cartOrderTotals">
+                <td colspan="<?php echo (count($order->info['tax_groups']) > 1) ? 4 : 3; ?>" id="orderTotalDivs"><?php $order_total_modules->process(); $order_total_modules->output(); ?></td>
+            </tr>
 <?php
 }
 ?>
-      </table>
+        </table>
     </fieldset>
-  </div>
-  <div class="clearBoth"></div>
+</div>
+<div class="clearBoth"></div>
 <!--eof shopping-cart block -->

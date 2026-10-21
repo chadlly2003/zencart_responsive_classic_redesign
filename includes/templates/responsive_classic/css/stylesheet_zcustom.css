@@ -3774,7 +3774,7 @@ a:hover .markProductOutOfStock {
     text-decoration: none;
     display: inline-block;
 }
-a:hover .stock-wrapper .stock-msg {
+.stock-wrapper .stock-msg {
     text-decoration: none;
     display: inline-block;
      width: 100%;

@@ -3014,17 +3014,17 @@ body {
      display: none;
 }
  #cartContentsDisplay input {
-     margin-bottom: 0;
-     margin-top: 0;
-     text-align: center;
-     height: auto;
+  padding: 0.2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+  width: auto;
 }
  .markProductOutOfStock {
      display: block;
 }
  #cartContentsDisplay input[type="text"] {
      align-self: center;
-     max-width: 75px;
 }
  #shoppingCartDefault input[type="checkbox"] {
      display: none;

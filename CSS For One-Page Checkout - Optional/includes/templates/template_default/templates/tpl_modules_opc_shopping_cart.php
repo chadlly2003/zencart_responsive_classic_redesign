@@ -107,8 +107,10 @@ for ($i = 0, $n = count($order->products); $i < $n; $i++) {
                     </span>
                     <!-- CUSTOM MODIFICATION - PRODUCT IMAGE - END -->
 
-                    <?php echo $order->products[$i]['name'] . $stock_check[$i]; ?>
-
+                   <div class="opcProductName">
+                     <?php echo $order->products[$i]['name']; ?>
+                </div>
+<?php echo $stock_check[$i]; ?>
 <?php
 // if there are attributes, loop thru them and display one per line
     if (isset($order->products[$i]['attributes']) && count($order->products[$i]['attributes']) > 0) {

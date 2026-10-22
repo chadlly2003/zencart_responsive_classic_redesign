@@ -3018,6 +3018,7 @@ body {
   margin-top: 0;
   text-align: center;
   width: auto;
+  height: auto;
 }
  .markProductOutOfStock {
      display: block;
@@ -4344,12 +4345,13 @@ a:hover .markProductOutOfStock {
          display: block;
     }
      .cartQuantityUpdate {
-         display: grid;
-         position: relative;
+         display: block;
+         margin-right:1rem;
     }
      #shoppingcartBody input[type="image"] {
          margin-top: 0;
          background: none;
+         padding:0;
     }
      #shoppingcartBody input[type="image"]:last-of-type {
          display: none;

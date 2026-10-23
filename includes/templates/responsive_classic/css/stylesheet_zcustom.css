@@ -3829,6 +3829,16 @@ a:hover .markProductOutOfStock {
 }
 /* EOF grid layout */
 
+/* For small screen give scroll to view */
+  #shoppingcartBody #cartContentsDisplay {
+     display: block;
+     width: 100%;
+     max-width: 100%;
+     overflow-x: auto;
+     overflow-y: hidden;
+     -webkit-overflow-scrolling: touch;
+}
+
 /* Tablet view – product per row */
  @media (min-width: 576px) {
      div:has(> .rblockelements) {

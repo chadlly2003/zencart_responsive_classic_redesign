@@ -3838,6 +3838,21 @@ a:hover .markProductOutOfStock {
      overflow-y: hidden;
      -webkit-overflow-scrolling: touch;
 }
+/* Bof small screen give scroll to view */
+#shoppingcartBody #cartContentsDisplay {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+#shoppingcartBody #cartContentsDisplay tbody {
+    display: table;
+    width: 100%; 
+}
+/* EOF small screen give scroll to view */
+ 
 
 /* Tablet view – product per row */
  @media (min-width: 576px) {

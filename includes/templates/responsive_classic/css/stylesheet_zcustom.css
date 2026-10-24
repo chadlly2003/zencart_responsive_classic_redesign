@@ -434,7 +434,7 @@ body {
  h2.greeting a {
      color: #000000;
 }
-  #navEZPagesTOC ul li a, #navEZPagesTOC ul li a:hover, .cartOldItem, #icon, .header {
+ #navEZPagesTOC ul li a, #navEZPagesTOC ul li a:hover, .cartOldItem, #icon, .header {
      color: #154dbc;
      text-decoration: none;
 }
@@ -963,7 +963,7 @@ body {
      display: contents;
 }
 /* Reset product/category boxes */
-  .rblockelements > div {
+ .rblockelements > div {
      width: auto;
      padding:2rem 1rem;
      box-sizing: border-box;
@@ -3013,11 +3013,11 @@ body {
      display: none;
 }
  #cartContentsDisplay input {
-  margin-bottom: 0;
-  margin-top: 0;
-  text-align: center;
-  width: auto;
-  height: auto;
+     margin-bottom: 0;
+     margin-top: 0;
+     text-align: center;
+     width: auto;
+     height: auto;
 }
  .markProductOutOfStock {
      display: block;
@@ -3110,7 +3110,7 @@ body {
      margin-top: 0.5rem;
 }
  .totalBox {
-     width: 6.5em;
+     min-width: 6em;
      text-align: right;
      padding: 0.2em;
      margin-right: 0;
@@ -3769,18 +3769,17 @@ body {
  .revised_attribtues .alert {
      order: 2;
 }
-
-a:hover .markProductOutOfStock {
-    text-decoration: none;
-    display: inline-block;
+ a:hover .markProductOutOfStock {
+     text-decoration: none;
+     display: inline-block;
 }
-.stock-wrapper .stock-msg {
-    text-decoration: none;
-    display: inline-block;
+ .stock-wrapper .stock-msg {
+     text-decoration: none;
+     display: inline-block;
      width: 100%;
-} 
-.cartProdInfo .no-stock.stock-mixed, .cartProductDisplay .no-stock.stock-mixed, #checkoutConfirmDefault #cartContentsDisplay .markProductOutOfStock, .accountProductDisplay .stock-msg.no-stock {
-    color:#900404;
+}
+ .cartProdInfo .no-stock.stock-mixed, .cartProductDisplay .no-stock.stock-mixed, #checkoutConfirmDefault #cartContentsDisplay .markProductOutOfStock, .accountProductDisplay .stock-msg.no-stock {
+     color:#900404;
 }
 /* EOF Products' Options' Stock Manager */
 /* BOF grid layout */
@@ -3789,9 +3788,9 @@ a:hover .markProductOutOfStock {
      margin-top: 1rem;
      padding: 1rem;
 }
-.rblockelements .gridlayout {
-    margin-top:0; 
-    margin-bottom:0;
+ .rblockelements .gridlayout {
+     margin-top:0;
+     margin-bottom:0;
 }
  .gridlayout .list-input {
      justify-content: center;
@@ -3827,21 +3826,19 @@ a:hover .markProductOutOfStock {
      display: none;
 }
 /* EOF grid layout */
- 
 /* Bof small screen give scroll to view */
-#cartContentsDisplay {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
+ #cartContentsDisplay {
+     display: block;
+     width: 100%;
+     max-width: 100%;
+     overflow-x: auto;
+     overflow-y: hidden;
 }
-#cartContentsDisplay tbody {
-    display: table;
-    width: 100%; 
+ #cartContentsDisplay tbody {
+     display: table;
+     width: 100%;
 }
 /* EOF small screen give scroll to view */
-
 /* Tablet view – product per row */
  @media (min-width: 576px) {
      div:has(> .rblockelements) {

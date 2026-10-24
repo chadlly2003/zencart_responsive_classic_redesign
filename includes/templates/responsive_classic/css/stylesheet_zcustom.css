@@ -11,6 +11,8 @@ body {
  html {
      overflow-x: hidden;
      height: 100%;
+     -webkit-text-size-adjust: 100%;
+     text-size-adjust: 100%;
 }
  h1 {
      font-size: 21.6px;
@@ -2915,9 +2917,6 @@ body {
  .revised_attribtues {
      display: flex;
 }
- #cartContentsDisplay {
-     width: 100%;
-}
  .cartAttribsList ul {
      margin-top: 0;
      margin-left: 1.5rem;
@@ -3830,15 +3829,14 @@ a:hover .markProductOutOfStock {
 /* EOF grid layout */
  
 /* Bof small screen give scroll to view */
-#shoppingcartBody #cartContentsDisplay {
+#cartContentsDisplay {
     display: block;
     width: 100%;
     max-width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
 }
-#shoppingcartBody #cartContentsDisplay tbody {
+#cartContentsDisplay tbody {
     display: table;
     width: 100%; 
 }

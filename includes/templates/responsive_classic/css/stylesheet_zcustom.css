@@ -3110,7 +3110,7 @@ body {
      margin-top: 0.5rem;
 }
  .totalBox {
-     min-width: 5em;
+     min-width: 6.5em;
      text-align: right;
      padding: 0.2em;
      margin-right: 0;
@@ -3226,7 +3226,7 @@ body {
      font-size: 20.8px;
 }
  .amount {
-     min-width: 5em;
+     min-width: 6.5em;
      text-align: right;
      padding: 0.2em;
      margin-right: 0;

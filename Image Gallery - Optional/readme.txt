@@ -1,4 +1,4 @@
-Version 2
+Version 3
 
 Fully featured image gallery with thumbnails, drag/swipe scrolling, infinite looping, arrows, and a modal lightbox 
 
@@ -52,6 +52,8 @@ Set to false to hide the arrows entirely.
 Control Infinite Scrolling / Looping
 ********************************************************
 
+const DESKTOP_GALLERY_LAYOUT = 'vertical';// Change to 'horizontal' for desktop thumbnails below image
+
 const MAX_THUMBS_LOOP = null;
 
 Determines when the thumbnail list loops back to the beginning.
@@ -61,6 +63,7 @@ null → Unlimited looping (current infinite scroll).
 Number (e.g., 4) → Looping only happens if the number of thumbnails exceeds this value.
 
 Setting a high number effectively disables looping.
+
 
 ********************************************************
 

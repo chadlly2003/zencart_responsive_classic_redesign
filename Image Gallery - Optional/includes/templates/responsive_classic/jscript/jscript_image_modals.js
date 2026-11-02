@@ -3,6 +3,7 @@
   /* =====================
      CONFIG
   ===================== */
+  const DESKTOP_GALLERY_LAYOUT = 'vertical';// Change to 'horizontal' for desktop thumbnails below image
   const SHOW_THUMB_ARROWS = true; // If set to false, set MAX_THUMBS_LOOP to 4 (recommended for CSS mobile layout).
   const SWIPE_SPEED = 2;
   const MAX_THUMBS_LOOP = 4; // Set to a number to enable cloning loop only if thumbs exceed that count, or null to always enable when needed
@@ -17,6 +18,12 @@
 
   if (!thumbsContainer || !mainImage) return;
 
+  // Apply only to this gallery; mobile CSS remains unchanged.
+  const galleryWrap = thumbsContainer.closest('.gallery-wrap');
+  if (galleryWrap) {
+    galleryWrap.classList.toggle('gallery-desktop-horizontal', DESKTOP_GALLERY_LAYOUT === 'horizontal');
+  }
+
   /* =====================
      STATE
   ===================== */
@@ -30,7 +37,7 @@
      HELPERS
   ===================== */
   function isHorizontal() {
-    return window.matchMedia('(max-width: 768px)').matches;
+    return window.getComputedStyle(thumbsContainer).flexDirection === 'row';
   }
 
   function preloadImage(src) {
@@ -74,27 +81,12 @@
   const horizontal = isHorizontal();
   const containerSize = horizontal ? container.clientWidth : container.clientHeight;
 
-  // Calculate total size of original thumbs only
-  let totalThumbSize = 0;
-  originalThumbs.forEach(t => {
-    const style = window.getComputedStyle(t);
-    const margin = horizontal
-      ? parseFloat(style.marginLeft) + parseFloat(style.marginRight)
-      : parseFloat(style.marginTop) + parseFloat(style.marginBottom);
-    const size = horizontal ? t.offsetWidth : t.offsetHeight;
-    totalThumbSize += size + margin;
-  });
-
-  // Hide arrows if all thumbs fit
-  if (totalThumbSize <= containerSize) {
-    if (leftArrow) leftArrow.style.display = 'none';
-    if (rightArrow) rightArrow.style.display = 'none';
-    return;
-  }
-
-  // Show arrows if scrolling needed
-  if (leftArrow) leftArrow.style.display = 'flex';
-  if (rightArrow) rightArrow.style.display = 'flex';
+  // Use real scroll dimensions (including CSS gaps) to decide arrow visibility.
+  const hasOverflow = originalThumbs.length > 1 && (horizontal
+    ? container.scrollWidth > container.clientWidth + 2
+    : container.scrollHeight > container.clientHeight + 2);
+  if (leftArrow) leftArrow.style.display = SHOW_THUMB_ARROWS && hasOverflow ? 'flex' : 'none';
+  if (rightArrow) rightArrow.style.display = SHOW_THUMB_ARROWS && hasOverflow ? 'flex' : 'none';
 
   // NO CLONING at all
   // Only scrollable thumbs, no extra duplicates
@@ -135,6 +127,13 @@
   /* =====================
      THUMB EVENTS
   ===================== */
+  // Keep thumbnail taps and drags from triggering parent product actions.
+  // Capture clicks on the thumbnail strip, including clicks retargeted after a drag.
+  thumbsContainer.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+  });
+
   thumbs.forEach((thumb, i) => {
     thumb.dataset.index = i;
     thumb.setAttribute('draggable', 'false');
@@ -147,6 +146,7 @@
   ===================== */
   let activePointerId = null;
   thumbsContainer.addEventListener('pointerdown', e => {
+    e.stopPropagation();
     if (e.button !== 0) return;
     isDragging = true;
     activePointerId = e.pointerId;
@@ -165,38 +165,47 @@
     const TOLERANCE = 1;
 
     if (isHorizontal()) {
-      thumbsContainer.scrollLeft = startLeft - dx * SWIPE_SPEED;
-      const maxScroll = thumbsContainer.scrollWidth - thumbsContainer.clientWidth;
-      const current = thumbsContainer.scrollLeft;
-      if (!MAX_THUMBS_LOOP || thumbs.length > MAX_THUMBS_LOOP) {
+    thumbsContainer.scrollLeft = startLeft - dx * SWIPE_SPEED;
+
+    const maxScroll = thumbsContainer.scrollWidth - thumbsContainer.clientWidth;
+    const current = thumbsContainer.scrollLeft;
+
+    if (maxScroll > 2 && (!MAX_THUMBS_LOOP || thumbs.length > MAX_THUMBS_LOOP)) {
+
         if (current <= TOLERANCE) {
-          thumbsContainer.scrollLeft = maxScroll - TOLERANCE;
-          startLeft = thumbsContainer.scrollLeft;
-          startX = e.clientX;
+            thumbsContainer.scrollLeft = maxScroll - TOLERANCE;
+            startLeft = thumbsContainer.scrollLeft;
+            startX = e.clientX;
         }
+
         if (current >= maxScroll - TOLERANCE) {
-          thumbsContainer.scrollLeft = TOLERANCE;
-          startLeft = thumbsContainer.scrollLeft;
-          startX = e.clientX;
+            thumbsContainer.scrollLeft = TOLERANCE;
+            startLeft = thumbsContainer.scrollLeft;
+            startX = e.clientX;
         }
-      }
-    } else {
-      thumbsContainer.scrollTop = startTop - dy * SWIPE_SPEED;
-      const maxScroll = thumbsContainer.scrollHeight - thumbsContainer.clientHeight;
-      const current = thumbsContainer.scrollTop;
-      if (!MAX_THUMBS_LOOP || thumbs.length > MAX_THUMBS_LOOP) {
-        if (current <= TOLERANCE) {
-          thumbsContainer.scrollTop = maxScroll - TOLERANCE;
-          startTop = thumbsContainer.scrollTop;
-          startY = e.clientY;
-        }
-        if (current >= maxScroll - TOLERANCE) {
-          thumbsContainer.scrollTop = TOLERANCE;
-          startTop = thumbsContainer.scrollTop;
-          startY = e.clientY;
-        }
-      }
     }
+
+} else {
+    thumbsContainer.scrollTop = startTop - dy * SWIPE_SPEED;
+
+    const maxScroll = thumbsContainer.scrollHeight - thumbsContainer.clientHeight;
+    const current = thumbsContainer.scrollTop;
+
+    if (maxScroll > 2 && (!MAX_THUMBS_LOOP || thumbs.length > MAX_THUMBS_LOOP)) {
+
+        if (current <= TOLERANCE) {
+            thumbsContainer.scrollTop = maxScroll - TOLERANCE;
+            startTop = thumbsContainer.scrollTop;
+            startY = e.clientY;
+        }
+
+        if (current >= maxScroll - TOLERANCE) {
+            thumbsContainer.scrollTop = TOLERANCE;
+            startTop = thumbsContainer.scrollTop;
+            startY = e.clientY;
+        }
+    }
+}
 
     e.preventDefault();
   }, { passive: false });
@@ -218,7 +227,7 @@
      ARROWS (ONLY SHOW IF NEEDED & INFINITE SCROLL)
   ===================== */
   function updateArrows() {
-    if (!SHOW_THUMB_ARROWS) {
+    if (thumbs.length <= 1 || !SHOW_THUMB_ARROWS) {
       if (leftArrow) leftArrow.style.display = 'none';
       if (rightArrow) rightArrow.style.display = 'none';
       return;

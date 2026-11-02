@@ -28,6 +28,18 @@
      STATE
   ===================== */
   let thumbs = Array.from(thumbsContainer.querySelectorAll('img:not(.clone)'));
+
+  /* Hide the entire thumbnail rail when only one product image exists.
+     Use !important so desktop horizontal CSS cannot show it again. */
+  const thumbsWrapper = thumbsContainer.closest('.thumbs-container');
+  if (thumbs.length <= 1) {
+    if (thumbsWrapper) {
+      thumbsWrapper.style.setProperty('display', 'none', 'important');
+    }
+    if (leftArrow) leftArrow.style.display = 'none';
+    if (rightArrow) rightArrow.style.display = 'none';
+  }
+
   let activeIndex = 0;
   let isDragging = false;
   let startX = 0, startY = 0;
@@ -70,6 +82,12 @@
      CONDITIONAL CLONES & ARROWS
   ===================== */
   function setupThumbsLooping() {
+    if (thumbs.length <= 1) {
+      if (leftArrow) leftArrow.style.display = 'none';
+      if (rightArrow) rightArrow.style.display = 'none';
+      return;
+    }
+
   const container = thumbsContainer;
 
   // Remove all previous clones first
@@ -345,6 +363,11 @@
   const prevArrowModal = modal?.querySelector('.arrow-left');
   const nextArrowModal = modal?.querySelector('.arrow-right');
 
+  if (modal && thumbs.length <= 1) {
+    modal.classList.add('single-image');
+  }
+
+
   if (modal && modalImg && closeBtn) {
     function openModal() {
       modal.classList.add('show');
@@ -420,5 +443,5 @@
   /* =====================
      INIT
   ===================== */
-  setActiveThumb(activeIndex);
+  if (thumbs.length > 0) setActiveThumb(activeIndex);
 });

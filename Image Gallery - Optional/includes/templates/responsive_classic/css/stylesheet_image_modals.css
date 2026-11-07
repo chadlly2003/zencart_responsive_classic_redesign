@@ -317,7 +317,9 @@
     object-fit: contain;
     max-width: 500px;
 }
-
+.gallery-wrap .left-thumbs {
+    overscroll-behavior-y: auto !important;
+}
 
 /* ==========================================
    OPTIONAL DESKTOP HORIZONTAL GALLERY

@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Back to Top
@@ -25,9 +24,36 @@
     button.setAttribute('title', 'Back to top');
     button.textContent = '\u2191';
 
-    // Place button inside ARIA landmark
     landmark.appendChild(button);
     document.body.appendChild(landmark);
+
+    var cart = document.getElementById('floatingCartBar');
+
+    // Automatically position above floating cart
+    function positionBackToTop() {
+      var bottom = 20;
+
+      if (cart && cart.classList.contains('is-visible')) {
+        var rect = cart.getBoundingClientRect();
+
+        if (rect.height > 0) {
+          bottom = Math.max(
+            20,
+            window.innerHeight - rect.top + 10
+          );
+        }
+      }
+
+      landmark.style.position = 'fixed';
+      landmark.style.bottom = bottom + 'px';
+      landmark.style.right = '20px';
+      landmark.style.zIndex = '10001';
+
+      // Button is positioned by the landmark
+      button.style.position = 'relative';
+      button.style.bottom = 'auto';
+      button.style.right = 'auto';
+    }
 
     // Show button after scrolling
     function update() {
@@ -35,11 +61,33 @@
         'rcr-visible',
         window.scrollY > 300
       );
+
+      positionBackToTop();
     }
 
     window.addEventListener('scroll', update, {
       passive: true
     });
+
+    window.addEventListener('resize', update);
+
+    // Watch floating cart visibility changes
+    if (cart) {
+      var observer = new MutationObserver(update);
+
+      observer.observe(cart, {
+        attributes: true,
+        attributeFilter: ['class', 'style']
+      });
+
+      // Adjust when responsive cart height changes
+      if ('ResizeObserver' in window) {
+        var resizeObserver = new ResizeObserver(
+          positionBackToTop
+        );
+        resizeObserver.observe(cart);
+      }
+    }
 
     update();
 

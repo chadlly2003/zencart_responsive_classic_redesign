@@ -41,4 +41,16 @@
          transition: none;
     }
 }
- 
+
+/* Back to Top landmark */
+#rcr-back-to-top-landmark {
+    position: fixed;
+    z-index: 10001;
+}
+
+/* Arrow positioning controlled by JavaScript */
+#rcr-back-to-top-landmark #rcr-back-to-top {
+    position: relative;
+    bottom: auto;
+    right: auto;
+}

@@ -1,0 +1,210 @@
+ /* ========================================= FLOATING ADD TO CART ========================================= */
+ #floatingCartBar {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     z-index: 99999;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 15px;
+     width: 100%;
+     box-sizing: border-box;
+     padding: 12px 25px;
+     padding-bottom: max(12px, env(safe-area-inset-bottom));
+     background: #fff;
+     border-top: 1px solid #ddd;
+     box-shadow: 0 -4px 15px rgba(0,0,0,.15);
+     visibility: hidden;
+     opacity: 0;
+     transform: translateY(110%);
+     pointer-events: none;
+     transition: transform .25s ease, opacity .25s ease, visibility .25s ease;
+}
+/* SHOW FLOATING BAR */
+ #floatingCartBar.is-visible {
+     visibility: visible;
+     opacity: 1;
+     transform: translateY(0);
+     pointer-events: auto;
+}
+/* ========================================= PRODUCT IMAGE ========================================= */
+ #floatingCartBar .floating-cart-image {
+     display: block;
+     width: 60px;
+     height: 60px;
+     flex: 0 0 60px;
+     object-fit: contain;
+     border-radius: 6px;
+     background: #fff;
+}
+/* ========================================= PRODUCT INFORMATION ========================================= */
+ #floatingCartBar .floating-cart-info {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     flex: 1;
+     min-width: 0;
+     gap: 4px;
+}
+/* PRODUCT NAME */
+ #floatingCartBar .floating-cart-name {
+     display: block;
+     font-size: 14px;
+     font-weight: 600;
+     line-height: 1.35;
+     color: #000000;
+     white-space: normal;
+     overflow-wrap: anywhere;
+}
+/* PRODUCT PRICE */
+ #floatingCartBar .floating-cart-price {
+     display: block;
+     font-size: 18px;
+     font-weight: normal;
+     color: #000000;
+}
+/* ========================================= ADD TO CART BUTTON ========================================= */
+ #floatingCartBar .floating-cart-button {
+     flex-shrink: 0;
+     background: #7a1bce;
+     color: #fff;
+     border: 0;
+     border-radius: 6px;
+     padding: 12px 20px;
+     font-size: 16px;
+     white-space: nowrap;
+     cursor: pointer;
+     border:solid 1px #7a1bce;
+}
+ #floatingCartBar .floating-cart-button:hover {
+     color: #7a1bce;
+     background: #ffffff;
+   
+}
+ #floatingCartBar .floating-cart-button:disabled {
+     opacity: .6;
+     cursor: not-allowed;
+}
+/* ========================================= BACK TO TOP - ABOVE FLOATING BAR ========================================= */
+ body:has(#floatingCartBar.is-visible) #backToTop {
+     bottom: 110px;
+     z-index: 100001;
+}
+/* ========================================= MOBILE ========================================= */
+ @media (max-width: 767px) {
+     #floatingCartBar {
+         gap: 10px;
+         padding: 10px 12px;
+         padding-bottom: max(10px, env(safe-area-inset-bottom));
+    }
+     #floatingCartBar .floating-cart-image {
+         width: 45px;
+         height: 45px;
+         flex-basis: 45px;
+    }
+     #floatingCartBar .floating-cart-name {
+         font-size: 12px;
+         line-height: 1.3;
+         display: -webkit-box;
+         -webkit-line-clamp: 2;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+    }
+     #floatingCartBar .floating-cart-button {
+         padding: 12px 15px;
+         font-size: 13px;
+    }
+     body:has(#floatingCartBar.is-visible) #backToTop {
+         bottom: 95px;
+    }
+}
+/* ========================================= REDUCED MOTION ========================================= */
+ @media (prefers-reduced-motion: reduce) {
+     #floatingCartBar {
+         transition: none;
+    }
+}
+ #floatingCartBar:not(.is-visible) {
+     display: none;
+}
+ #floatingCartBar.is-visible {
+     display: flex;
+}
+ .floating-cart-price br {
+    display:none;
+}
+ .floating-cart-price img {
+    display:none;
+}
+/* Floating cart attribute selector (uses existing Zen Cart fields) */
+ #floatingCartBar {
+     position: fixed;
+}
+ #floatingCartBar .floating-cart-button.has-options {
+     background: #ac171d;
+}
+ #floatingCartBar .floating-cart-button.has-options:hover {
+     background: #ffffff;
+    color:#ac171d;
+    border:solid 1px #ac171d;
+}
+ .floating-cart-options-panel[hidden] {
+     display: none;
+}
+ .floating-cart-options-panel {
+     position: fixed;
+     bottom: 95px;
+     right: 15px;
+     z-index: 1000000;
+     width: min(390px, calc(100vw - 30px));
+     max-height: min(65vh, 500px);
+     overflow-y: auto;
+     box-sizing: border-box;
+     padding: 16px;
+     background: white;
+     color: #222;
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     box-shadow: 0 -4px 20px rgba(0,0,0,.2);
+}
+ .floating-cart-options-title {
+     font-size: 16px;
+     font-weight: 700;
+     margin-bottom: 12px;
+}
+ .floating-cart-options-content #productAttributes {
+     display: block;
+     width: 100%;
+     margin: 0 0 12px;
+     box-sizing: border-box;
+}
+ .floating-cart-options-content select {
+     max-width: 100%;
+     width: 100%;
+}
+ .floating-cart-options-add {
+     display: block;
+     width: 100%;
+     padding: 12px 16px;
+     border: 0;
+     border-radius: 5px;
+     color: #fff;
+     background: #159447;
+     font-weight: 700;
+     cursor: pointer;
+}
+ .floating-cart-options-add:hover {
+     background: #0d7436;
+}
+ @media(max-width:767px){
+    .floating-cart-options-panel{
+        bottom:85px;
+    }
+}
+/* Scroll target for floating Select options button */
+ #productAttributes {
+     scroll-margin-top: 100px;
+}
+ 

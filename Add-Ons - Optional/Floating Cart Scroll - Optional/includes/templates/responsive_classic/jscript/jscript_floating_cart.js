@@ -1,4 +1,3 @@
-
 /**
  * Floating Add to Cart
  *
@@ -242,7 +241,7 @@
         updateVisibility();
 
         console.log(
-            'DahdahKids Floating Cart Ready',
+            'Floating Cart Ready',
             {
                 image: !!imageBox.getAttribute('src'),
                 name: nameBox.textContent,
@@ -269,4 +268,3 @@
     }
 
 })();
-

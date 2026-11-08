@@ -144,11 +144,12 @@
 }
  #floatingCartBar .floating-cart-button.has-options {
      background: #ac171d;
+     border:solid 1px #ac171d;
 }
  #floatingCartBar .floating-cart-button.has-options:hover {
      background: #ffffff;
-    color:#ac171d;
-    border:solid 1px #ac171d;
+     color:#ac171d;
+     border:solid 1px #ac171d;
 }
  .floating-cart-options-panel[hidden] {
      display: none;

@@ -79,7 +79,9 @@
      border:solid 1px #006400;
 }
  #floatingCartBar .floating-cart-button:hover {
-     opacity: 0.9;
+     background: #ffffff;
+     color: #006400;
+       border:solid 1px #006400;
 }
  #floatingCartBar .floating-cart-button:disabled {
      opacity: .6;

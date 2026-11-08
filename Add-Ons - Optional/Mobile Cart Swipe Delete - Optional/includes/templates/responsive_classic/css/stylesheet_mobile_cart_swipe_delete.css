@@ -1,0 +1,84 @@
+@media (max-width:575px) {
+  #ddkCartSwipeWrapper { position:relative; width:100%; overflow:hidden; isolation:isolate; }
+  #ddkCartSwipeWrapper #cartContentsDisplay { width:100%; max-width:100%; overflow:visible; }
+  #ddkCartSwipeWrapper tr.ddk-swipe-row { transform:none !important; touch-action:pan-y; }
+  #ddkCartSwipeWrapper tr.ddk-swipe-row > td {
+    position:relative; z-index:2; background:#fff;
+    transition:transform .22s ease;
+  }
+  #ddkCartSwipeWrapper tr.ddk-swipe-row.ddk-swipe-open > td { transform:translateX(-85px) !important; }
+  #ddkCartSwipeWrapper > .ddk-cart-delete-action {
+    position:absolute; right:0; width:85px; z-index:1;
+    display:flex; align-items:center; justify-content:center;
+    padding:0; margin:0; background:#ac171d; color:#fff;
+    border:0; border-radius:0; font-size:14px;  
+    cursor:pointer;
+  }
+  #ddkCartSwipeWrapper > .ddk-cart-delete-action[hidden] { display:none !important; }
+}
+@media (min-width:576px) {
+  #ddkCartSwipeWrapper > .ddk-cart-delete-action { display:none !important; }
+  #ddkCartSwipeWrapper tr.ddk-swipe-row > td { transform:none !important; }
+}
+@media (prefers-reduced-motion:reduce) {
+  #ddkCartSwipeWrapper tr.ddk-swipe-row > td { transition:none; }
+}
+
+
+/* =========================================
+   SMOOTHER CART SWIPE ANIMATION
+========================================= */
+
+@media (max-width: 575px) {
+
+    /* Smooth snapping after releasing */
+    #cartContentsDisplay tr.cart-mobile-item > td,
+    #cartContentsDisplay tr.ddk-cart-swipe-row > td {
+        transition: transform 0.25s ease-out;
+        will-change: transform;
+    }
+
+    /* Disable transitions while dragging */
+    #cartContentsDisplay tr.dragging > td,
+    #cartContentsDisplay tr.ddk-dragging > td {
+        transition: none !important;
+    }
+
+    /* Prevent text selection during dragging */
+    #cartContentsDisplay tr.cart-mobile-item,
+    #cartContentsDisplay tr.ddk-cart-swipe-row {
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: pan-y;
+    }
+
+    /* Keep product images from being dragged */
+    #cartContentsDisplay tr img {
+        -webkit-user-drag: none;
+        user-drag: none;
+    }
+}
+
+/* =====================================
+   CART DELETE BUTTON - HOVER
+===================================== */
+
+/* Normal button */
+.ddk-cart-delete-action {
+    background-color: #ac171d !important;
+    color: #ffffff !important;
+    cursor: pointer;
+    transition: background-color 0.25s ease,
+                color 0.25s ease;
+    border:solid 1px #ac171d !important;
+}
+
+/* Mouse hover */
+.ddk-cart-delete-action:hover {
+   background-color: #7f1420 !important;
+    color: #ffffff !important;
+ 
+    
+}
+
+ 

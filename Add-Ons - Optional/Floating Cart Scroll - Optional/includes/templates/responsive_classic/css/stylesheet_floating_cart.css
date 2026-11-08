@@ -68,7 +68,7 @@
 /* ========================================= ADD TO CART BUTTON ========================================= */
  #floatingCartBar .floating-cart-button {
      flex-shrink: 0;
-     background: #7a1bce;
+     background: #006400;
      color: #fff;
      border: 0;
      border-radius: 6px;
@@ -76,12 +76,10 @@
      font-size: 16px;
      white-space: nowrap;
      cursor: pointer;
-     border:solid 1px #7a1bce;
+     border:solid 1px #006400;
 }
  #floatingCartBar .floating-cart-button:hover {
-     color: #7a1bce;
-     background: #ffffff;
-   
+     opacity: 0.9;
 }
  #floatingCartBar .floating-cart-button:disabled {
      opacity: .6;

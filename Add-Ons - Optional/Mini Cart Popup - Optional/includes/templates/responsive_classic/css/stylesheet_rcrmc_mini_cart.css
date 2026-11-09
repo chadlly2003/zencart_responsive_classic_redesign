@@ -9,7 +9,7 @@
 #rcrmc-mini-cart .rcrmc-mini-cart-subtotal{text-align:right;font-weight:bold;margin:12px 0}
 #rcrmc-mini-cart .rcrmc-mini-cart-actions{display:flex;gap:8px;font-size: 14px;}
 #rcrmc-mini-cart .rcrmc-mini-cart-actions>*{flex:1;text-align:center;padding:11px 8px;border-radius:6px;cursor:pointer;font:inherit;text-decoration:none;box-sizing:border-box}
- 
+#rcrmc-mini-cart .cartAttribsList {font-size:12px;} 
  
 @media(max-width:767px){#rcrmc-mini-cart{top:50%;bottom:auto;left:50%;right:auto;transform:translate(-50%,-50%);width:calc(100% - 30px);max-width:380px;max-height:85dvh}}
 

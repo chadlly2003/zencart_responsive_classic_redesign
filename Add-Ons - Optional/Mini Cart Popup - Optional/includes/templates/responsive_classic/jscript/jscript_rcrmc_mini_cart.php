@@ -13,7 +13,10 @@
  *
  * Features:
  * - Selected product attributes
+ * - Fallback to cart session attributes
  * - Zen Cart cartAttribsList UL / LI structure
+ * - Hide duplicate Add to Cart success message
+ * - Preserve other warnings and errors
  */
 
 $rcrmcCart = $_SESSION['cart'] ?? null;
@@ -46,8 +49,11 @@ if ($rcrmcShow && $rcrmcCart) {
 
     foreach ($rcrmcCart->get_products() as $product) {
 
-        // Product ID (remove attribute suffix if present)
-        $rcrmcProductId = (int)($product['id'] ?? 0);
+        // Full cart product ID (may contain attribute suffix)
+        $rcrmcCartId = (string)($product['id'] ?? '');
+
+        // Base product ID
+        $rcrmcProductId = (int)$rcrmcCartId;
 
         // Product image
         $rcrmcImage = !empty($product['image'])
@@ -70,13 +76,29 @@ if ($rcrmcShow && $rcrmcCart) {
 
         $rcrmcAttributes = [];
 
+        // First use attributes returned by get_products()
+        $rcrmcSelectedAttributes = $product['attributes'] ?? [];
+
+        // Fallback to attributes stored in cart session
         if (
-            !empty($product['attributes']) &&
-            is_array($product['attributes'])
+            empty($rcrmcSelectedAttributes) ||
+            !is_array($rcrmcSelectedAttributes)
+        ) {
+            $rcrmcSelectedAttributes =
+                $rcrmcCart->contents[$rcrmcCartId]['attributes'] ?? [];
+        }
+
+        if (
+            !empty($rcrmcSelectedAttributes) &&
+            is_array($rcrmcSelectedAttributes)
         ) {
 
-            foreach ($product['attributes'] as $option => $value) {
+            foreach (
+                $rcrmcSelectedAttributes
+                as $option => $value
+            ) {
 
+                // Standard Zen Cart attribute lookup
                 $sql = "SELECT
                             popt.products_options_name,
                             poval.products_options_values_name
@@ -94,7 +116,7 @@ if ($rcrmcShow && $rcrmcCart) {
                 $sql = $db->bindVars(
                     $sql,
                     ':productsID',
-                    $product['id'],
+                    $rcrmcProductId,
                     'integer'
                 );
 
@@ -152,22 +174,30 @@ if ($rcrmcShow && $rcrmcCart) {
             }
         }
 
-        // Get the correct Zen Cart product information page
+        /*
+         * ========================================
+         * PRODUCT LINK
+         * ========================================
+         */
+
+        // Get correct product information page
         $rcrmcProductPage = zen_get_info_page($rcrmcProductId);
 
-        // Product link
         $rcrmcProductUrl = zen_href_link(
             $rcrmcProductPage,
             'products_id=' . $rcrmcProductId
         );
 
+        /*
+         * ========================================
+         * MINI CART PRODUCT DATA
+         * ========================================
+         */
+
         $rcrmcItems[] = [
             'name' => (string)($product['name'] ?? ''),
             'url' => $rcrmcProductUrl,
-
-            // Selected product attributes
             'attributes' => $rcrmcAttributes,
-
             'quantity' => (int)($product['quantity'] ?? 0),
             'price' => $currencies->format(
                 (float)($product['final_price'] ?? $product['price'] ?? 0)
@@ -177,6 +207,12 @@ if ($rcrmcShow && $rcrmcCart) {
         ];
     }
 }
+
+/*
+ * ========================================
+ * MINI CART PAYLOAD
+ * ========================================
+ */
 
 $rcrmcPayload = [
     'show' => $rcrmcShow && count($rcrmcItems) > 0,
@@ -203,9 +239,42 @@ $rcrmcPayload = [
 
   if (!data.show) return;
 
+  /*
+   * ========================================
+   * HIDE DUPLICATE ADD TO CART MESSAGE
+   * ========================================
+   */
+
+  function hideDuplicateCartSuccess() {
+
+    document.querySelectorAll(
+      '.messageStackSuccess'
+    ).forEach(function (message) {
+
+      const messageText = message.textContent || '';
+
+      if (
+        /Successfully added\s+Product\s+to\s+the\s+cart/i
+          .test(messageText)
+      ) {
+        message.style.display = 'none';
+      }
+
+    });
+  }
+
   function init() {
 
     if (document.getElementById('rcrmc-mini-cart')) return;
+
+    // Hide duplicate success message
+    hideDuplicateCartSuccess();
+
+    /*
+     * ========================================
+     * MINI CART PANEL
+     * ========================================
+     */
 
     const panel = document.createElement('section');
 
@@ -214,7 +283,12 @@ $rcrmcPayload = [
     panel.setAttribute('aria-modal', 'false');
     panel.setAttribute('aria-labelledby', 'rcrmc-mini-cart-title');
 
-    // Header
+    /*
+     * ========================================
+     * HEADER
+     * ========================================
+     */
+
     const header = document.createElement('div');
     header.className = 'rcrmc-mini-cart-header';
 
@@ -230,7 +304,12 @@ $rcrmcPayload = [
 
     header.append(title, close);
 
-    // Cart contents
+    /*
+     * ========================================
+     * CART CONTENTS
+     * ========================================
+     */
+
     const contents = document.createElement('div');
     contents.className = 'rcrmc-mini-cart-items';
 
@@ -239,14 +318,17 @@ $rcrmcPayload = [
       const row = document.createElement('div');
       row.className = 'rcrmc-mini-cart-item';
 
-      // Product image with fallback
+      /*
+       * PRODUCT IMAGE
+       */
+
       const img = document.createElement('img');
 
       img.src = item.image || data.defaultImage;
       img.alt = item.name;
       img.loading = 'lazy';
 
-      // Fallback if image fails to load
+      // Image fallback
       img.addEventListener('error', function () {
 
         if (!img.dataset.rcrmcFallback) {
@@ -256,17 +338,24 @@ $rcrmcPayload = [
 
       });
 
-      // Clickable product image
+      /*
+       * CLICKABLE PRODUCT IMAGE
+       */
+
       const imageLink = document.createElement('a');
       imageLink.href = item.url;
       imageLink.setAttribute(
         'aria-label',
         'View product: ' + item.name
       );
+
       imageLink.appendChild(img);
       row.appendChild(imageLink);
 
-      // Product information
+      /*
+       * PRODUCT INFORMATION
+       */
+
       const info = document.createElement('div');
 
       // Clickable product name
@@ -278,7 +367,7 @@ $rcrmcPayload = [
 
       /*
        * ========================================
-       * DISPLAY SELECTED PRODUCT ATTRIBUTES
+       * SELECTED PRODUCT ATTRIBUTES
        * UL / LI FORMAT
        * ========================================
        */
@@ -288,31 +377,31 @@ $rcrmcPayload = [
         item.attributes.length > 0
       ) {
 
-        // Attributes wrapper
         const attributes = document.createElement('div');
         attributes.className = 'cartAttribsList';
 
-        // Unordered list
         const list = document.createElement('ul');
 
         item.attributes.forEach(attribute => {
 
-          // Individual attribute
           const li = document.createElement('li');
 
           li.textContent =
             attribute.name + '\u00a0-\u00a0' + attribute.value;
 
           list.appendChild(li);
-
         });
 
         attributes.appendChild(list);
         info.appendChild(attributes);
       }
 
-      // Product quantity and price
+      /*
+       * PRODUCT QUANTITY AND PRICE
+       */
+
       const detail = document.createElement('small');
+
       detail.textContent =
         'Qty: ' + item.quantity + ' · ' + item.price;
 
@@ -323,12 +412,22 @@ $rcrmcPayload = [
 
     });
 
-    // Subtotal
+    /*
+     * ========================================
+     * SUBTOTAL
+     * ========================================
+     */
+
     const subtotal = document.createElement('div');
     subtotal.className = 'rcrmc-mini-cart-subtotal';
     subtotal.textContent = 'Cart subtotal: ' + data.subtotal;
 
-    // Action buttons
+    /*
+     * ========================================
+     * ACTION BUTTONS
+     * ========================================
+     */
+
     const actions = document.createElement('div');
     actions.className = 'rcrmc-mini-cart-actions';
 
@@ -342,17 +441,33 @@ $rcrmcPayload = [
 
     actions.append(continueButton, checkout);
 
+    /*
+     * ========================================
+     * BUILD POPUP
+     * ========================================
+     */
+
     panel.append(header, contents, subtotal, actions);
 
     document.body.appendChild(panel);
 
-    // Close popup
+    /*
+     * ========================================
+     * CLOSE POPUP
+     * ========================================
+     */
+
     const dismiss = () => panel.remove();
 
     close.addEventListener('click', dismiss);
     continueButton.addEventListener('click', dismiss);
 
-    // Escape key
+    /*
+     * ========================================
+     * ESCAPE KEY
+     * ========================================
+     */
+
     document.addEventListener('keydown', function onKey(e) {
 
       if (e.key === 'Escape') {
@@ -362,7 +477,12 @@ $rcrmcPayload = [
 
     });
 
-    // Mobile swipe to dismiss
+    /*
+     * ========================================
+     * MOBILE SWIPE TO DISMISS
+     * ========================================
+     */
+
     let startX = null;
 
     panel.addEventListener('touchstart', e => {

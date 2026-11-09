@@ -36,7 +36,11 @@ $rcrmcShow = $rcrmcPrevious !== null
             'product_info',
             'document_product_info',
             'product_music_info',
-            'index'
+            'index',
+            'products_all',
+            'products_new',
+            'featured_products',
+            'specials'
         ],
         true
     );

@@ -26,3 +26,4 @@
  #rcrmc-mini-cart a {color:#000000;font-weight: bold;}
 #rcrmc-mini-cart .rcrmc-mini-cart-actions a{background: #006400;border:1px solid  #006400;color:#fff;min-height: 44px; min-width: 44px; align-content: center;}
 #rcrmc-mini-cart .rcrmc-mini-cart-actions a:hover {background: #ffffff; color:#006400; border:solid 1px #006400;}
+.cart-checkmark {color:#7a1bce;}

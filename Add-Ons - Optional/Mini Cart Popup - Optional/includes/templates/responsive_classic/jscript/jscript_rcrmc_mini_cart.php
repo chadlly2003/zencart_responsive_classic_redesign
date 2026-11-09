@@ -414,13 +414,102 @@ $rcrmcPayload = [
         }
     );
 
-    /*
-     * ========================================
-     * MINI CART DISPLAY
-     * ========================================
-     */
+   /*
+ * ========================================
+ * RESTORE SCROLL POSITION AFTER ADD TO CART
+ * ========================================
+ *
+ * Works with normal Zen Cart page reloads.
+ * No AJAX required.
+ *
+ * Supports:
+ * - All Products
+ * - Category listings
+ * - New Products
+ * - Featured Products
+ * - Specials
+ * - Product information pages
+ */
 
-    if (!data.show) return;
+const rcrScrollKey = 'rcrmc-add-to-cart-scroll';
+
+/*
+ * Save scroll position before Add to Cart
+ */
+document.addEventListener('submit', function (event) {
+
+    const form = event.target;
+
+    if (
+        !form.matches('form[name="cart_quantity"]') ||
+        !form.querySelector('[name="products_id"]')
+    ) {
+        return;
+    }
+
+    try {
+        sessionStorage.setItem(
+            rcrScrollKey,
+            JSON.stringify({
+                position: window.scrollY,
+                path: window.location.pathname
+            })
+        );
+    } catch (error) {
+        // Allow normal Zen Cart submission.
+    }
+
+}, true);
+
+/*
+ * Restore scroll position after page reload
+ */
+let savedScroll = null;
+
+try {
+    const stored = sessionStorage.getItem(rcrScrollKey);
+
+    if (stored !== null) {
+        savedScroll = JSON.parse(stored);
+        sessionStorage.removeItem(rcrScrollKey);
+    }
+} catch (error) {
+    savedScroll = null;
+}
+
+if (
+    savedScroll &&
+    savedScroll.path === window.location.pathname &&
+    Number.isFinite(savedScroll.position)
+) {
+
+    const restoreScroll = function () {
+
+        window.scrollTo({
+            top: savedScroll.position,
+            behavior: 'instant'
+        });
+
+    };
+
+    if (document.readyState === 'complete') {
+        restoreScroll();
+    } else {
+        window.addEventListener(
+            'load',
+            restoreScroll,
+            { once: true }
+        );
+    }
+}
+
+/*
+ * ========================================
+ * MINI CART DISPLAY
+ * ========================================
+ */
+
+if (!data.show) return;
 
     /*
      * HIDE DUPLICATE SUCCESS MESSAGE

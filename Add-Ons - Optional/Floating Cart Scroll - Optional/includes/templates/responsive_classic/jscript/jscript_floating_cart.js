@@ -1,7 +1,13 @@
+
 /**
  * Floating Add to Cart
  *
  * Product image + name + price + Add to Cart
+ *
+ * Supports:
+ * - Regular products
+ * - Document products
+ * - Music products
  *
  * - Appears after scrolling past original Add to Cart
  * - Disappears when scrolling back
@@ -17,11 +23,34 @@
 
     function initFloatingCart() {
 
-        // Product information pages only.
-        if (!document.body ||
-            document.body.id !== 'productinfoBody') {
-            return;
-        }
+        // =====================================
+        // SUPPORTED ZEN CART PRODUCT PAGES
+        // =====================================
+
+        if (!document.body) return;
+
+        const supportedPages = [
+            'productinfoBody',
+            'documentproductinfoBody',
+            'productmusicinfoBody'
+        ];
+
+      const page = new URLSearchParams(
+    window.location.search
+).get('main_page');
+
+const supportedProductPages = [
+    'product_info',
+    'document_product_info',
+    'product_music_info'
+];
+
+if (
+    !supportedPages.includes(document.body.id) &&
+    !supportedProductPages.includes(page)
+) {
+    return;
+}
 
         // Prevent duplicate initialization.
         if (document.getElementById('floatingCartBar')) {
@@ -123,19 +152,34 @@
         infoBox.appendChild(nameBox);
         infoBox.appendChild(priceBox);
 
+        // =====================================
         // FLOATING ADD TO CART BUTTON
+        // =====================================
+
         const floatingButton =
             document.createElement('button');
 
         floatingButton.type = 'button';
         floatingButton.className = 'floating-cart-button';
-        // Detect actual selectable product attributes, not just hidden inputs.
-        const attributes = document.getElementById('productAttributes');
-        const hasOptions = !!(attributes && attributes.querySelector(
-            'select, input[type="radio"], input[type="checkbox"], input[type="text"], textarea'
-        ));
-        floatingButton.textContent = hasOptions ? 'Select options' : 'Add to Cart';
-        if (hasOptions) floatingButton.classList.add('has-options');
+
+        // Detect actual selectable product attributes,
+        // not just hidden inputs.
+        const attributes =
+            document.getElementById('productAttributes');
+
+        const hasOptions = !!(
+            attributes &&
+            attributes.querySelector(
+                'select, input[type="radio"], input[type="checkbox"], input[type="text"], textarea'
+            )
+        );
+
+        floatingButton.textContent =
+            hasOptions ? 'Select options' : 'Add to Cart';
+
+        if (hasOptions) {
+            floatingButton.classList.add('has-options');
+        }
 
         // Add image only if a valid source exists.
         if (imageBox.getAttribute('src')) {
@@ -153,27 +197,31 @@
         // =====================================
 
         floatingButton.addEventListener('click', function (event) {
+
             event.preventDefault();
             event.stopImmediatePropagation();
 
-            // Products with options: never submit. Go to the original
-            // Zen Cart attribute controls so the shopper can choose.
+            // Products with options: never submit.
+            // Scroll to original Zen Cart attributes.
             if (hasOptions) {
+
                 attributes.scrollIntoView({
-                    behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
-                        ? 'auto' : 'smooth',
+                    behavior: window.matchMedia(
+                        '(prefers-reduced-motion: reduce)'
+                    ).matches ? 'auto' : 'smooth',
                     block: 'start'
                 });
+
                 return;
             }
 
-            // Products without options: preserve the original Add to Cart action.
+            // Products without options:
+            // Preserve original Add to Cart action.
             if (originalButton.disabled) return;
             if (!form.reportValidity()) return;
+
             originalButton.click();
         });
-
-
 
         // =====================================
         // SHOW / HIDE FLOATING BAR
@@ -182,8 +230,13 @@
         function updateVisibility() {
 
             if (!document.body.contains(originalButton)) {
+
                 bar.classList.remove('is-visible');
-                document.body.classList.remove('has-floating-cart');
+
+                document.body.classList.remove(
+                    'has-floating-cart'
+                );
+
                 return;
             }
 
@@ -192,15 +245,17 @@
 
             // Show only when original button
             // has completely scrolled above viewport.
-            const passedButton =
-    window.scrollY > 100 &&
-    rect.bottom <= 0;
+   const passedButton =
+    document.body.id === 'productmusicinfoBody'
+        ? window.scrollY > 100 &&
+          rect.bottom <= window.innerHeight * 0.5
+        : window.scrollY > 100 &&
+          rect.bottom <= 0;
 
             const show =
                 passedButton &&
                 !originalButton.disabled;
 
-            
             bar.classList.toggle('is-visible', show);
 
             // Used by Back to Top positioning.
@@ -243,6 +298,7 @@
         console.log(
             'Floating Cart Ready',
             {
+                page: document.body.id,
                 image: !!imageBox.getAttribute('src'),
                 name: nameBox.textContent,
                 price: priceBox.textContent.trim()

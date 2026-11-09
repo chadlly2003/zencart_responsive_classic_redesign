@@ -38,3 +38,6 @@ The add-on should be placed inside your active template directory.
 For example, if you use the responsive_classic template:
 
 includes/templates/responsive_classic/
+
+**In the Admin go to Configuration/My Store
+Scroll down to Display Cart After Adding Product (must be set to false)

@@ -10,6 +10,10 @@
  * - Document products
  * - Music products
  * - Homepage and category listings
+ *
+ * Features:
+ * - Selected product attributes
+ * - Zen Cart cartAttribsList UL / LI structure
  */
 
 $rcrmcCart = $_SESSION['cart'] ?? null;
@@ -58,6 +62,96 @@ if ($rcrmcShow && $rcrmcCart) {
             $rcrmcImage = 'no_picture.gif';
         }
 
+        /*
+         * ========================================
+         * SELECTED PRODUCT ATTRIBUTES
+         * ========================================
+         */
+
+        $rcrmcAttributes = [];
+
+        if (
+            !empty($product['attributes']) &&
+            is_array($product['attributes'])
+        ) {
+
+            foreach ($product['attributes'] as $option => $value) {
+
+                $sql = "SELECT
+                            popt.products_options_name,
+                            poval.products_options_values_name
+                        FROM " . TABLE_PRODUCTS_OPTIONS . " popt,
+                             " . TABLE_PRODUCTS_OPTIONS_VALUES . " poval,
+                             " . TABLE_PRODUCTS_ATTRIBUTES . " pa
+                        WHERE pa.products_id = :productsID
+                          AND pa.options_id = :optionsID
+                          AND pa.options_id = popt.products_options_id
+                          AND pa.options_values_id = :optionsValuesID
+                          AND pa.options_values_id = poval.products_options_values_id
+                          AND popt.language_id = :languageID
+                          AND poval.language_id = :languageID";
+
+                $sql = $db->bindVars(
+                    $sql,
+                    ':productsID',
+                    $product['id'],
+                    'integer'
+                );
+
+                $sql = $db->bindVars(
+                    $sql,
+                    ':optionsID',
+                    $option,
+                    'integer'
+                );
+
+                $sql = $db->bindVars(
+                    $sql,
+                    ':optionsValuesID',
+                    $value,
+                    'integer'
+                );
+
+                $sql = $db->bindVars(
+                    $sql,
+                    ':languageID',
+                    $_SESSION['languages_id'],
+                    'integer'
+                );
+
+                $result = $db->Execute($sql);
+
+                if ($result->EOF) {
+                    continue;
+                }
+
+                // Handle text attributes
+                if (
+                    defined('PRODUCTS_OPTIONS_VALUES_TEXT_ID') &&
+                    $value == PRODUCTS_OPTIONS_VALUES_TEXT_ID
+                ) {
+                    $attributeValue = (string)(
+                        $product['attributes_values'][$option] ?? ''
+                    );
+                } else {
+                    $attributeValue = (string)(
+                        $result->fields[
+                            'products_options_values_name'
+                        ] ?? ''
+                    );
+                }
+
+                $rcrmcAttributes[] = [
+                    'name' => (string)(
+                        $result->fields[
+                            'products_options_name'
+                        ] ?? ''
+                    ),
+                    'value' => $attributeValue
+                ];
+            }
+        }
+
         // Get the correct Zen Cart product information page
         $rcrmcProductPage = zen_get_info_page($rcrmcProductId);
 
@@ -70,6 +164,10 @@ if ($rcrmcShow && $rcrmcCart) {
         $rcrmcItems[] = [
             'name' => (string)($product['name'] ?? ''),
             'url' => $rcrmcProductUrl,
+
+            // Selected product attributes
+            'attributes' => $rcrmcAttributes,
+
             'quantity' => (int)($product['quantity'] ?? 0),
             'price' => $currencies->format(
                 (float)($product['final_price'] ?? $product['price'] ?? 0)
@@ -176,12 +274,49 @@ $rcrmcPayload = [
       name.href = item.url;
       name.textContent = item.name;
 
+      info.appendChild(name);
+
+      /*
+       * ========================================
+       * DISPLAY SELECTED PRODUCT ATTRIBUTES
+       * UL / LI FORMAT
+       * ========================================
+       */
+
+      if (
+        Array.isArray(item.attributes) &&
+        item.attributes.length > 0
+      ) {
+
+        // Attributes wrapper
+        const attributes = document.createElement('div');
+        attributes.className = 'cartAttribsList';
+
+        // Unordered list
+        const list = document.createElement('ul');
+
+        item.attributes.forEach(attribute => {
+
+          // Individual attribute
+          const li = document.createElement('li');
+
+          li.textContent =
+            attribute.name + '\u00a0-\u00a0' + attribute.value;
+
+          list.appendChild(li);
+
+        });
+
+        attributes.appendChild(list);
+        info.appendChild(attributes);
+      }
+
       // Product quantity and price
       const detail = document.createElement('small');
       detail.textContent =
         'Qty: ' + item.quantity + ' · ' + item.price;
 
-      info.append(name, detail);
+      info.appendChild(detail);
       row.appendChild(info);
 
       contents.appendChild(row);

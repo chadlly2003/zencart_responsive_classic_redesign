@@ -87,11 +87,7 @@
      opacity: .6;
      cursor: not-allowed;
 }
-/* ========================================= BACK TO TOP - ABOVE FLOATING BAR ========================================= */
- body:has(#floatingCartBar.is-visible) #backToTop {
-     bottom: 110px;
-     z-index: 100001;
-}
+
 /* ========================================= MOBILE ========================================= */
  @media (max-width: 767px) {
      #floatingCartBar {

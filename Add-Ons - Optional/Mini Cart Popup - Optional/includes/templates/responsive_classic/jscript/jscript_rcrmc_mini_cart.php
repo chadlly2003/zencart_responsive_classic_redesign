@@ -473,7 +473,14 @@ $rcrmcPayload = [
 
         const title = document.createElement('strong');
         title.id = 'rcrmc-mini-cart-title';
-        title.textContent = '✓ Added to your cart';
+        title.replaceChildren();
+
+const checkmark = document.createElement('span');
+checkmark.className = 'cart-checkmark';
+checkmark.textContent = '✓';
+
+title.appendChild(checkmark);
+title.appendChild(document.createTextNode(' Added to your cart'));
 
         const close = document.createElement('button');
         close.type = 'button';

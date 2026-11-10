@@ -1,41 +1,117 @@
+/* Standalone mini cart: existing site styles are not changed. */
+#rcrmc-mini-cart {position:fixed;right:16px;top:20px;width:min(390px,calc(100vw - 32px));max-height:min(75dvh,600px);overflow:auto;z-index:10050;background:#fff;color:#000000;border:1px solid #ddd;border-radius:12px;box-shadow:0 8px 30px #0003;padding:16px;box-sizing:border-box;font:inherit}
+#rcrmc-mini-cart .rcrmc-mini-cart-header{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:17px;margin-bottom:12px}
+#rcrmc-mini-cart .rcrmc-mini-cart-close{border:0;background:transparent;color:inherit;font-size:28px;line-height:1;cursor:pointer;padding:0 4px}
+#rcrmc-mini-cart .rcrmc-mini-cart-items{max-height:35dvh;overflow:auto}
+#rcrmc-mini-cart .rcrmc-mini-cart-item{display:flex;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid #eee; font-size: 14px;}
+#rcrmc-mini-cart .rcrmc-mini-cart-item img{width:64px;height:64px;object-fit:contain;flex:none; min-width: 64px;min-height: 64px;}
+#rcrmc-mini-cart .rcrmc-mini-cart-item small{display:block;color:#000000;margin-top:4px}
+#rcrmc-mini-cart .rcrmc-mini-cart-subtotal{text-align:right;font-weight:bold;margin:12px 0}
+#rcrmc-mini-cart .rcrmc-mini-cart-actions{display:flex;gap:8px;font-size: 14px;}
+#rcrmc-mini-cart .rcrmc-mini-cart-actions>*{flex:1;text-align:center;padding:11px 8px;border-radius:6px;cursor:pointer;font:inherit;text-decoration:none;box-sizing:border-box}
+#rcrmc-mini-cart .cartAttribsList {font-size:12px;} 
+ 
+@media(max-width:767px){#rcrmc-mini-cart{top:50%;bottom:auto;left:50%;right:auto;transform:translate(-50%,-50%);width:calc(100% - 30px);max-width:380px;max-height:85dvh}}
 
-/* =========================================
-   RCR MINI CART - FLOATING STATUS MESSAGE
-   Prevents buttons from moving during updates
-========================================= */
-
-/* Positioning reference */
-#rcrmc-mini-cart {
-    position: fixed;
+/* Hide Add to Cart success notification */
+ .messageStackSuccess {
+    display: none;
 }
 
-/* Status message floats over the Mini Cart */
+
+#rcrmc-mini-cart .rcrmc-mini-cart-item small {font-size: 14px;}
+#rcrmc-mini-cart .rcrmc-mini-cart-actions button{background:#8b008b;border:1px solid #8b008b;color:#ffffff;min-height: 44px; min-width: 44px;}
+#rcrmc-mini-cart .rcrmc-mini-cart-actions button:hover {background:#ffffff;border:1px solid #8b008b;color:#8b008b;}
+
+ #rcrmc-mini-cart a {color:#000000;font-weight: bold;}
+#rcrmc-mini-cart .rcrmc-mini-cart-actions a{background: #006400;border:1px solid  #006400;color:#fff;min-height: 44px; min-width: 44px; align-content: center;}
+#rcrmc-mini-cart .rcrmc-mini-cart-actions a:hover {background: #ffffff; color:#006400; border:solid 1px #006400;}
+.cart-checkmark {color:#7a1bce;}
+
+
+ body#productinfoBody {
+        padding-bottom: 0 !important;
+    }
+
+    body#productinfoBody .footer {
+        padding-bottom: 0 !important;
+    }
+
+    body#productinfoBody #customCopyrightFooter {
+        padding-bottom: 100px;
+        box-sizing: border-box;
+    }
+/* =========================================
+   RCR MINI CART - QUANTITY BUTTONS
+========================================= */
+
+#rcrmc-mini-cart .rcrmc-mini-cart-quantity {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+/* PLUS AND MINUS BUTTONS */
+
+#rcrmc-mini-cart .rcrmc-mini-cart-quantity button {
+    width: 34px;
+    height: 34px;
+    border: 0;
+    background: #fff;
+    color: #111;
+    font: inherit;
+    font-size: 21px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* HOVER */
+
+#rcrmc-mini-cart .rcrmc-mini-cart-quantity button:hover {
+    background: #f1f1f1;
+}
+
+/* QUANTITY NUMBER */
+
+#rcrmc-mini-cart .rcrmc-mini-cart-quantity span {
+    min-width: 32px;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 34px;
+}
+
+#rcrmc-mini-cart button {
+ border:none;
+ background:
+  transparent;
+ margin-left:auto;
+}
+
+/* RCR Mini Cart: show AJAX status without shifting action buttons. */
 #rcrmc-mini-cart .rcrmc-mini-cart-status {
     position: absolute;
     left: 50%;
-    bottom: 65px;
+    bottom: 70px;
     transform: translateX(-50%);
-
     width: max-content;
     max-width: calc(100% - 30px);
     box-sizing: border-box;
-
     padding: 8px 14px;
     margin: 0;
-
+    border-radius: 6px;
     background: #333;
     color: #fff;
-    border-radius: 6px;
-
     font-size: 13px;
-    font-weight: 500;
+    line-height: 1.4;
     text-align: center;
-
     z-index: 100;
     pointer-events: none;
+    box-shadow: 0 3px 12px rgba(0,0,0,.18);
 }
-
-/* Hide the status box when empty */
-#rcrmc-mini-cart .rcrmc-mini-cart-status:empty {
-    display: none;
-}
+#rcrmc-mini-cart .rcrmc-mini-cart-status:empty { display: none; }

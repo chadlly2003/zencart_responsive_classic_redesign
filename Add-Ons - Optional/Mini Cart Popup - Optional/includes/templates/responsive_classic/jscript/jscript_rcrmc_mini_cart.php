@@ -1,9 +1,9 @@
- 
+
 <?php
 /**
  * RCR Mini Cart + Product Attribute Validation
  *
- * Normal Zen Cart page reload, no AJAX.
+ * AJAX updates using Zen Cart's native cart action.
  *
  * Features:
  * - Regular, document and music products
@@ -15,12 +15,17 @@
  * - Hide duplicate Add to Cart success message
  * - Preserve other warnings and errors
  * - Validate radio and dropdown attributes
- * - Scroll to missing attribute
- * - Support standard Add to Cart form submissions
- * - Close popup, Escape key and mobile swipe
+ * - Scroll to missing attributes
+ * - Support normal Add to Cart submissions
+ * - AJAX quantity plus/minus buttons
+ * - AJAX trash-can product removal
+ * - Updated product prices and cart subtotal
+ * - 15-second automatic close
+ * - Escape key and mobile swipe to dismiss
  */
 
 $rcrmcCart = $_SESSION['cart'] ?? null;
+
 $rcrmcCount = $rcrmcCart
     ? (int)$rcrmcCart->count_contents()
     : 0;
@@ -199,6 +204,7 @@ if ($rcrmcShow && $rcrmcCart) {
             'name' => (string)($product['name'] ?? ''),
             'url' => $rcrmcProductUrl,
             'attributes' => $rcrmcAttributes,
+            'cartId' => $rcrmcCartId,
             'quantity' => (int)($product['quantity'] ?? 0),
             'price' => $currencies->format(
                 (float)(
@@ -229,6 +235,16 @@ $rcrmcPayload = [
         '',
         'SSL'
     ),
+    'cartUpdate' => zen_href_link(
+        FILENAME_SHOPPING_CART,
+        'action=update_product',
+        'SSL'
+    ),
+    'stateUrl' =>
+        rtrim(DIR_WS_CATALOG, '/') .
+        '/rcrmc_cart_state.php',
+    'securityToken' =>
+        (string)($_SESSION['securityToken'] ?? ''),
     'defaultImage' => $rcrmcDefaultImage
 ];
 ?>
@@ -251,15 +267,10 @@ $rcrmcPayload = [
      * ========================================
      * ATTRIBUTE VALIDATION
      * ========================================
-     *
-     * This version treats enabled radio groups
-     * and dropdown choices as required.
-     *
-     * It does not validate optional attributes
-     * separately or replace server validation.
      */
 
     function clearAttributeErrors() {
+
         document.querySelectorAll(
             '.rcr-attribute-error'
         ).forEach(function (error) {
@@ -297,7 +308,6 @@ $rcrmcPayload = [
             behavior: 'smooth',
             block: 'center'
         });
-
     }
 
     function validateCartAttributes() {
@@ -335,8 +345,7 @@ $rcrmcPayload = [
 
             for (const select of selects) {
 
-                const selected =
-                    select.selectedOptions[0];
+                const selected = select.selectedOptions[0];
 
                 if (
                     !select.value ||
@@ -353,16 +362,14 @@ $rcrmcPayload = [
     }
 
     /*
-     * VALIDATE NORMAL FORM SUBMISSION
+     * VALIDATE NORMAL ADD TO CART FORM
      */
 
     document.addEventListener(
         'submit',
         function (event) {
 
-            if (
-                !event.target.matches('#addToCartForm')
-            ) {
+            if (!event.target.matches('#addToCartForm')) {
                 return;
             }
 
@@ -375,7 +382,7 @@ $rcrmcPayload = [
     );
 
     /*
-     * VALIDATE ADD TO CART BUTTON CLICKS
+     * VALIDATE ADD TO CART BUTTONS
      */
 
     document.addEventListener(
@@ -399,16 +406,14 @@ $rcrmcPayload = [
     );
 
     /*
-     * REMOVE ERRORS AFTER ATTRIBUTE CHANGE
+     * REMOVE ATTRIBUTE ERRORS AFTER CHANGE
      */
 
     document.addEventListener(
         'change',
         function (event) {
 
-            if (
-                event.target.closest('#productAttributes')
-            ) {
+            if (event.target.closest('#productAttributes')) {
                 clearAttributeErrors();
             }
         }
@@ -418,50 +423,94 @@ $rcrmcPayload = [
      * ========================================
      * RCR CART SCROLL RESTORATION
      * ========================================
-     * Normal Add to Cart: restore after load (working method).
-     * Buy Now links: restore 500 ms after load.
-     * No AJAX. One shared storage key.
      */
+
     const rcrScrollKey = 'rcrmc-add-to-cart-scroll';
 
     function saveCartPosition(kind) {
+
         try {
-            sessionStorage.setItem(rcrScrollKey, JSON.stringify({
-                position: window.scrollY,
-                pathname: location.pathname,
-                mainPage: new URLSearchParams(location.search).get('main_page') || 'index',
-                kind: kind,
-                time: Date.now()
-            }));
+            sessionStorage.setItem(
+                rcrScrollKey,
+                JSON.stringify({
+                    position: window.scrollY,
+                    pathname: location.pathname,
+                    mainPage:
+                        new URLSearchParams(location.search)
+                            .get('main_page') || 'index',
+                    kind: kind,
+                    time: Date.now()
+                })
+            );
         } catch (error) {
-            // Never block cart actions.
+            // Do not block cart actions.
         }
     }
 
-    document.addEventListener('submit', function (event) {
-        const form = event.target;
-        if (event.defaultPrevented ||
-            !form.matches('form[name="cart_quantity"]') ||
-            !form.querySelector('[name="products_id"]')) return;
-        saveCartPosition('form');
-    }, false);
+    document.addEventListener(
+        'submit',
+        function (event) {
 
-    document.addEventListener('click', function (event) {
-        const link = event.target.closest('a[href]');
-        if (!link || event.defaultPrevented || event.button !== 0 ||
-            event.ctrlKey || event.metaKey || event.shiftKey || event.altKey ||
-            link.target === '_blank' || link.hasAttribute('download')) return;
-        let url;
-        try { url = new URL(link.href, location.href); }
-        catch (error) { return; }
-        if (url.origin !== location.origin ||
-            url.searchParams.get('action') !== 'buy_now') return;
-        saveCartPosition('buy_now');
-    }, true);
+            const form = event.target;
+
+            if (
+                event.defaultPrevented ||
+                !form.matches('form[name="cart_quantity"]') ||
+                !form.querySelector('[name="products_id"]')
+            ) {
+                return;
+            }
+
+            saveCartPosition('form');
+        },
+        false
+    );
+
+    document.addEventListener(
+        'click',
+        function (event) {
+
+            const link = event.target.closest('a[href]');
+
+            if (
+                !link ||
+                event.defaultPrevented ||
+                event.button !== 0 ||
+                event.ctrlKey ||
+                event.metaKey ||
+                event.shiftKey ||
+                event.altKey ||
+                link.target === '_blank' ||
+                link.hasAttribute('download')
+            ) {
+                return;
+            }
+
+            let url;
+
+            try {
+                url = new URL(link.href, location.href);
+            } catch (error) {
+                return;
+            }
+
+            if (
+                url.origin !== location.origin ||
+                url.searchParams.get('action') !== 'buy_now'
+            ) {
+                return;
+            }
+
+            saveCartPosition('buy_now');
+        },
+        true
+    );
 
     let savedScroll = null;
+
     try {
         const stored = sessionStorage.getItem(rcrScrollKey);
+
         if (stored) {
             savedScroll = JSON.parse(stored);
             sessionStorage.removeItem(rcrScrollKey);
@@ -470,9 +519,12 @@ $rcrmcPayload = [
         savedScroll = null;
     }
 
-    const currentMainPage = new URLSearchParams(location.search)
-        .get('main_page') || 'index';
-    const shouldRestore = savedScroll &&
+    const currentMainPage =
+        new URLSearchParams(location.search)
+            .get('main_page') || 'index';
+
+    const shouldRestore =
+        savedScroll &&
         savedScroll.pathname === location.pathname &&
         savedScroll.mainPage === currentMainPage &&
         Number.isFinite(savedScroll.position) &&
@@ -480,7 +532,7 @@ $rcrmcPayload = [
         Date.now() - savedScroll.time < 30000;
 
     if (shouldRestore) {
-        // Keep the browser from competing with our restoration.
+
         if ('scrollRestoration' in history) {
             history.scrollRestoration = 'manual';
         }
@@ -489,42 +541,56 @@ $rcrmcPayload = [
         let finished = false;
 
         function restorePosition() {
-            const oldBehavior = document.documentElement.style.scrollBehavior;
+
+            const oldBehavior =
+                document.documentElement.style.scrollBehavior;
+
             document.documentElement.style.scrollBehavior = 'auto';
+
             const maxY = Math.max(
                 0,
-                document.documentElement.scrollHeight - window.innerHeight
+                document.documentElement.scrollHeight -
+                    window.innerHeight
             );
+
             const targetY = Math.min(savedY, maxY);
+
             if (Math.abs(window.scrollY - targetY) > 2) {
                 window.scrollTo(0, targetY);
             }
-            document.documentElement.style.scrollBehavior = oldBehavior;
+
+            document.documentElement.style.scrollBehavior =
+                oldBehavior;
         }
 
         function finishRestoration() {
+
             if (finished) return;
+
             finished = true;
             restorePosition();
+
             if ('scrollRestoration' in history) {
                 history.scrollRestoration = 'auto';
             }
         }
 
-        // Restore as soon as the document is ready, rather than showing
-        // a long scroll animation or hiding the entire page.
         if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', restorePosition, {
-                once: true
-            });
+
+            document.addEventListener(
+                'DOMContentLoaded',
+                restorePosition,
+                { once: true }
+            );
+
         } else {
             restorePosition();
         }
 
-        // After images and the page layout finish, correct only if needed.
-        // Keep the proven 500ms Buy Now correction as a fallback.
         function afterLoad() {
+
             restorePosition();
+
             if (savedScroll.kind === 'buy_now') {
                 window.setTimeout(finishRestoration, 500);
             } else {
@@ -535,10 +601,13 @@ $rcrmcPayload = [
         if (document.readyState === 'complete') {
             afterLoad();
         } else {
-            window.addEventListener('load', afterLoad, { once: true });
+            window.addEventListener(
+                'load',
+                afterLoad,
+                { once: true }
+            );
         }
 
-        // Safety: return control to the browser even if load is delayed.
         window.setTimeout(finishRestoration, 3000);
     }
 
@@ -547,11 +616,8 @@ $rcrmcPayload = [
      * MINI CART DISPLAY
      * ========================================
      */
-    if (!data.show) return;
 
-    /*
-     * HIDE DUPLICATE SUCCESS MESSAGE
-     */
+    if (!data.show) return;
 
     function hideDuplicateCartSuccess() {
 
@@ -559,8 +625,7 @@ $rcrmcPayload = [
             '.messageStackSuccess'
         ).forEach(function (message) {
 
-            const messageText =
-                message.textContent || '';
+            const messageText = message.textContent || '';
 
             if (
                 /Successfully added\s+Product\s+to\s+the\s+cart/i
@@ -571,11 +636,15 @@ $rcrmcPayload = [
         });
     }
 
+    /*
+     * ========================================
+     * INITIALIZE MINI CART
+     * ========================================
+     */
+
     function init() {
 
-        if (
-            document.getElementById('rcrmc-mini-cart')
-        ) {
+        if (document.getElementById('rcrmc-mini-cart')) {
             return;
         }
 
@@ -590,6 +659,7 @@ $rcrmcPayload = [
         panel.id = 'rcrmc-mini-cart';
         panel.setAttribute('role', 'dialog');
         panel.setAttribute('aria-modal', 'false');
+
         panel.setAttribute(
             'aria-labelledby',
             'rcrmc-mini-cart-title'
@@ -604,22 +674,25 @@ $rcrmcPayload = [
 
         const title = document.createElement('strong');
         title.id = 'rcrmc-mini-cart-title';
-        title.replaceChildren();
 
-const checkmark = document.createElement('span');
-checkmark.className = 'cart-checkmark';
-checkmark.textContent = '✓';
+        const checkmark = document.createElement('span');
+        checkmark.className = 'cart-checkmark';
+        checkmark.textContent = '✓';
 
-title.appendChild(checkmark);
-title.appendChild(document.createTextNode(' Added to your cart'));
+        title.appendChild(checkmark);
+        title.appendChild(
+            document.createTextNode(' Added to your cart')
+        );
 
         const close = document.createElement('button');
         close.type = 'button';
         close.className = 'rcrmc-mini-cart-close';
+
         close.setAttribute(
             'aria-label',
             'Close mini cart'
         );
+
         close.textContent = '×';
 
         header.append(title, close);
@@ -631,7 +704,346 @@ title.appendChild(document.createTextNode(' Added to your cart'));
         const contents = document.createElement('div');
         contents.className = 'rcrmc-mini-cart-items';
 
-        data.items.forEach(function (item) {
+        /*
+         * SUBTOTAL
+         */
+
+        const subtotal = document.createElement('div');
+        subtotal.className = 'rcrmc-mini-cart-subtotal';
+
+        subtotal.textContent =
+            'Cart subtotal: ' + data.subtotal;
+
+        /*
+         * STATUS MESSAGES
+         */
+
+        const status = document.createElement('div');
+
+        status.className = 'rcrmc-mini-cart-status';
+        status.setAttribute('role', 'status');
+        status.setAttribute('aria-live', 'polite');
+
+        /*
+         * ACTION BUTTONS
+         */
+
+        const actions = document.createElement('div');
+        actions.className = 'rcrmc-mini-cart-actions';
+
+        const continueButton =
+            document.createElement('button');
+
+        continueButton.type = 'button';
+        continueButton.textContent = 'Continue Shopping';
+
+        const checkout = document.createElement('a');
+
+        checkout.href = data.checkout;
+        checkout.textContent = 'Checkout';
+
+        actions.append(continueButton, checkout);
+
+        /*
+         * BUILD POPUP
+         */
+
+        panel.append(
+            header,
+            contents,
+            subtotal,
+            status,
+            actions
+        );
+
+        document.body.appendChild(panel);
+
+        /*
+         * ========================================
+         * AUTO CLOSE AFTER 10 SECONDS
+         * ========================================
+         */
+
+        let autoCloseTimer = null;
+        let dismissed = false;
+
+        function dismiss() {
+
+            if (panel.dataset.updating === '1') {
+                return;
+            }
+
+            dismissed = true;
+
+            window.clearTimeout(autoCloseTimer);
+
+            panel.remove();
+            document.removeEventListener('keydown', onKey);
+        }
+
+        function restartAutoClose() {
+
+            window.clearTimeout(autoCloseTimer);
+
+            if (dismissed) return;
+
+            autoCloseTimer = window.setTimeout(
+                dismiss,
+                15000
+            );
+        }
+
+        /*
+         * ========================================
+         * AJAX CART QUANTITY UPDATE
+         * ========================================
+         *
+         * Uses Zen Cart's normal cart update action.
+         * Gets confirmed cart data from stateUrl.
+         */
+
+        async function updateCartQuantity(
+            cartId,
+            delta,
+            removeItem = false
+        ) {
+
+            if (panel.dataset.updating === '1') {
+                return;
+            }
+
+            const item = data.items.find(function (entry) {
+                return entry.cartId === cartId;
+            });
+
+            if (!item) return;
+
+            const current = Number(item.quantity);
+
+            const next = removeItem
+                ? 0
+                : Math.max(0, current + delta);
+
+            if (next === current && !removeItem) {
+                return;
+            }
+
+            panel.dataset.updating = '1';
+
+            const buttons = panel.querySelectorAll(
+                '.rcrmc-mini-cart-quantity button, ' +
+                '.rcrmc-mini-cart-remove'
+            );
+
+            buttons.forEach(function (button) {
+                button.disabled = true;
+            });
+
+            status.textContent = removeItem
+                ? 'Removing product…'
+                : 'Updating cart…';
+
+            window.clearTimeout(autoCloseTimer);
+
+            /*
+             * BUILD ZEN CART UPDATE FORM
+             */
+
+            const fields = new URLSearchParams();
+
+            data.items.forEach(function (entry) {
+
+                fields.append(
+                    'products_id[]',
+                    entry.cartId
+                );
+
+                fields.append(
+                    'cart_quantity[]',
+                    String(
+                        entry.cartId === cartId
+                            ? next
+                            : entry.quantity
+                    )
+                );
+            });
+
+            if (data.securityToken) {
+
+                fields.append(
+                    'securityToken',
+                    data.securityToken
+                );
+            }
+
+            try {
+
+                /*
+                 * UPDATE CART THROUGH ZEN CART
+                 */
+
+                const response = await fetch(
+                    data.cartUpdate,
+                    {
+                        method: 'POST',
+                        credentials: 'same-origin',
+                        redirect: 'follow',
+                        headers: {
+                            'Content-Type':
+                                'application/x-www-form-urlencoded;charset=UTF-8'
+                        },
+                        body: fields.toString()
+                    }
+                );
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        'Cart update failed (' +
+                        response.status + ')'
+                    );
+                }
+
+                /*
+                 * RETRIEVE UPDATED CART
+                 */
+
+                const stateResponse = await fetch(
+                    data.stateUrl,
+                    {
+                        credentials: 'same-origin',
+                        cache: 'no-store',
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    }
+                );
+
+                if (!stateResponse.ok) {
+
+                    throw new Error(
+                        'Unable to retrieve cart state.'
+                    );
+                }
+
+                const state = await stateResponse.json();
+
+                if (
+                    !state ||
+                    !state.ok ||
+                    !Array.isArray(state.items)
+                ) {
+
+                    throw new Error(
+                        'Invalid cart response.'
+                    );
+                }
+
+                /*
+                 * GET CONFIRMED QUANTITY
+                 */
+
+                const updated = state.items.find(
+                    function (entry) {
+                        return entry.cartId === cartId;
+                    }
+                );
+
+                const actual = updated
+                    ? Number(updated.quantity)
+                    : 0;
+
+                /*
+                 * UPDATE MINI CART DATA
+                 */
+
+                data.items = state.items;
+                data.subtotal = state.subtotal;
+
+                /*
+                 * REBUILD PRODUCT ROWS
+                 */
+
+                contents.replaceChildren();
+
+                state.items.forEach(renderItem);
+
+                /*
+                 * UPDATE SUBTOTAL
+                 */
+
+                subtotal.textContent =
+                    'Cart subtotal: ' + state.subtotal;
+
+                /*
+                 * NOTIFY OTHER CART COMPONENTS
+                 */
+
+                document.dispatchEvent(
+                    new CustomEvent(
+                        'rcrmc:cart-updated',
+                        {
+                            detail: {
+                                count: state.count,
+                                subtotal: state.subtotal
+                            }
+                        }
+                    )
+                );
+
+                /*
+                 * STATUS MESSAGE
+                 */
+
+                if (!state.items.length) {
+
+                    status.textContent =
+                        'Your cart is empty.';
+
+                } else if (actual !== next) {
+
+                    status.textContent =
+                        'Zen Cart adjusted the quantity. ' +
+                        'Please check stock and quantity limits.';
+
+                } else {
+
+                    status.textContent = '';
+                }
+
+            } catch (error) {
+
+                console.error(
+                    'RCR Mini Cart AJAX error:',
+                    error
+                );
+
+                status.textContent =
+                    'Unable to update cart. ' +
+                    'Please use the shopping cart page.';
+
+            } finally {
+
+                panel.dataset.updating = '0';
+
+                panel.querySelectorAll(
+                    '.rcrmc-mini-cart-quantity button, ' +
+                    '.rcrmc-mini-cart-remove'
+                ).forEach(function (button) {
+                    button.disabled = false;
+                });
+
+                restartAutoClose();
+            }
+        }
+
+        /*
+         * ========================================
+         * RENDER CART PRODUCT
+         * ========================================
+         */
+
+        function renderItem(item) {
 
             const row = document.createElement('div');
             row.className = 'rcrmc-mini-cart-item';
@@ -651,6 +1063,7 @@ title.appendChild(document.createTextNode(' Added to your cart'));
                 function () {
 
                     if (!img.dataset.rcrmcFallback) {
+
                         img.dataset.rcrmcFallback = '1';
                         img.src = data.defaultImage;
                     }
@@ -664,6 +1077,7 @@ title.appendChild(document.createTextNode(' Added to your cart'));
             const imageLink = document.createElement('a');
 
             imageLink.href = item.url;
+
             imageLink.setAttribute(
                 'aria-label',
                 'View product: ' + item.name
@@ -677,16 +1091,17 @@ title.appendChild(document.createTextNode(' Added to your cart'));
              */
 
             const info = document.createElement('div');
+            info.className = 'rcrmc-mini-cart-info';
 
             const name = document.createElement('a');
+
             name.href = item.url;
             name.textContent = item.name;
 
             info.appendChild(name);
 
             /*
-             * SELECTED PRODUCT ATTRIBUTES
-             * UL / LI FORMAT
+             * SELECTED ATTRIBUTES
              */
 
             if (
@@ -718,76 +1133,193 @@ title.appendChild(document.createTextNode(' Added to your cart'));
             }
 
             /*
-             * PRODUCT QUANTITY AND PRICE
+             * PRODUCT PRICE
              */
 
             const detail = document.createElement('small');
 
-            detail.textContent =
-                'Qty: ' +
-                item.quantity +
-                ' · ' +
-                item.price;
+            detail.textContent = item.price;
 
             info.appendChild(detail);
+
+            /*
+             * ========================================
+             * QUANTITY CONTROLS
+             * ========================================
+             */
+
+            const quantity = document.createElement('div');
+
+            quantity.className =
+                'rcrmc-mini-cart-quantity';
+
+            /*
+             * MINUS BUTTON
+             */
+
+            const minus = document.createElement('button');
+
+            minus.type = 'button';
+            minus.textContent = '−';
+
+            minus.setAttribute(
+                'aria-label',
+                'Decrease quantity of ' + item.name
+            );
+
+            /*
+             * QUANTITY DISPLAY
+             */
+
+            const count = document.createElement('span');
+
+            count.textContent = String(item.quantity);
+
+            count.setAttribute(
+                'aria-label',
+                'Quantity: ' + item.quantity
+            );
+
+            /*
+             * PLUS BUTTON
+             */
+
+            const plus = document.createElement('button');
+
+            plus.type = 'button';
+            plus.textContent = '+';
+
+            plus.setAttribute(
+                'aria-label',
+                'Increase quantity of ' + item.name
+            );
+
+            /*
+             * QUANTITY BUTTON EVENTS
+             */
+
+            minus.addEventListener(
+                'click',
+                function () {
+
+                    updateCartQuantity(
+                        item.cartId,
+                        -1
+                    );
+                }
+            );
+
+            plus.addEventListener(
+                'click',
+                function () {
+
+                    updateCartQuantity(
+                        item.cartId,
+                        1
+                    );
+                }
+            );
+
+            quantity.append(
+                minus,
+                count,
+                plus
+            );
+
+            info.appendChild(quantity);
+
+            /*
+             * ========================================
+             * TRASH CAN BUTTON
+             * ========================================
+             */
+
+            const remove = document.createElement('button');
+
+            remove.type = 'button';
+
+            remove.className =
+                'rcrmc-mini-cart-remove';
+
+            remove.setAttribute(
+                'aria-label',
+                'Remove ' + item.name + ' from cart'
+            );
+
+            remove.setAttribute(
+                'title',
+                'Remove from cart'
+            );
+
+            /*
+             * TRASH CAN SVG
+             */
+
+            remove.innerHTML = `
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                >
+                    <path d="M3 6h18"/>
+                    <path d="M8 6V4h8v2"/>
+                    <path d="M19 6l-1 14H6L5 6"/>
+                    <path d="M10 10v7"/>
+                    <path d="M14 10v7"/>
+                </svg>
+            `;
+
+            /*
+             * REMOVE SELECTED PRODUCT
+             */
+
+            remove.addEventListener(
+                'click',
+                function () {
+
+                    updateCartQuantity(
+                        item.cartId,
+                        0,
+                        true
+                    );
+                }
+            );
+
+            /*
+             * BUILD PRODUCT ROW
+             */
+
             row.appendChild(info);
+            row.appendChild(remove);
 
             contents.appendChild(row);
-        });
+        }
 
         /*
-         * SUBTOTAL
+         * INITIAL PRODUCT DISPLAY
          */
 
-        const subtotal = document.createElement('div');
-
-        subtotal.className = 'rcrmc-mini-cart-subtotal';
-
-        subtotal.textContent =
-            'Cart subtotal: ' + data.subtotal;
+        data.items.forEach(renderItem);
 
         /*
-         * ACTION BUTTONS
+         * CLOSE BUTTON
          */
 
-        const actions = document.createElement('div');
-        actions.className = 'rcrmc-mini-cart-actions';
-
-        const continueButton =
-            document.createElement('button');
-
-        continueButton.type = 'button';
-        continueButton.textContent = 'Continue Shopping';
-
-        const checkout = document.createElement('a');
-
-        checkout.href = data.checkout;
-        checkout.textContent = 'Checkout';
-
-        actions.append(continueButton, checkout);
-
-        /*
-         * BUILD POPUP
-         */
-
-        panel.append(
-            header,
-            contents,
-            subtotal,
-            actions
+        close.addEventListener(
+            'click',
+            dismiss
         );
 
-        document.body.appendChild(panel);
-
         /*
-         * CLOSE POPUP
+         * CONTINUE SHOPPING
          */
-
-        const dismiss = function () {
-            panel.remove();
-        };
-
-        close.addEventListener('click', dismiss);
 
         continueButton.addEventListener(
             'click',
@@ -798,20 +1330,16 @@ title.appendChild(document.createTextNode(' Added to your cart'));
          * ESCAPE KEY
          */
 
+        function onKey(event) {
+
+            if (event.key === 'Escape') {
+                dismiss();
+            }
+        }
+
         document.addEventListener(
             'keydown',
-            function onKey(event) {
-
-                if (event.key === 'Escape') {
-
-                    dismiss();
-
-                    document.removeEventListener(
-                        'keydown',
-                        onKey
-                    );
-                }
-            }
+            onKey
         );
 
         /*
@@ -825,7 +1353,6 @@ title.appendChild(document.createTextNode(' Added to your cart'));
             function (event) {
 
                 startX = event.touches[0].clientX;
-
             },
             { passive: true }
         );
@@ -845,22 +1372,38 @@ title.appendChild(document.createTextNode(' Added to your cart'));
                 }
 
                 startX = null;
-
             },
             { passive: true }
         );
+
+        /*
+         * START 10-SECOND TIMER
+         */
+
+        restartAutoClose();
+
+        /*
+         * FOCUS CLOSE BUTTON
+         */
 
         close.focus({
             preventScroll: true
         });
     }
 
+    /*
+     * INITIALIZE
+     */
+
     if (document.readyState === 'loading') {
+
         document.addEventListener(
             'DOMContentLoaded',
             init
         );
+
     } else {
+
         init();
     }
 

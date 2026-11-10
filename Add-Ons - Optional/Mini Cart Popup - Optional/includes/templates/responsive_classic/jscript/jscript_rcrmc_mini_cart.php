@@ -240,6 +240,9 @@ $rcrmcPayload = [
         'action=update_product',
         'SSL'
     ),
+    'quantityUrl' =>
+        rtrim(DIR_WS_CATALOG, '/') .
+        '/rcrmc_cart_quantity.php',
     'stateUrl' =>
         rtrim(DIR_WS_CATALOG, '/') .
         '/rcrmc_cart_state.php',
@@ -312,52 +315,68 @@ $rcrmcPayload = [
 
     function validateCartAttributes() {
 
-        const attributes =
-            document.getElementById('productAttributes');
+        const container = document.getElementById('productAttributes');
+        const form = document.getElementById('addToCartForm');
 
-        if (!attributes) return true;
+        if (!container || !form) return true;
 
         clearAttributeErrors();
 
-        const blocks = attributes.querySelectorAll(
-            '.wrapperAttribsOptions'
-        );
+        /*
+         * Group radio buttons by their actual Zen Cart field name.
+         * This also handles radio inputs outside wrapperAttribsOptions.
+         */
+        const radioGroups = new Map();
 
-        for (const block of blocks) {
-
-            const radios = Array.from(
-                block.querySelectorAll(
-                    'input[type="radio"]:not(:disabled)'
-                )
-            );
-
-            if (
-                radios.length > 0 &&
-                !radios.some(radio => radio.checked)
-            ) {
-                showAttributeError(block);
-                return false;
+        container.querySelectorAll(
+            'input[type="radio"][name^="id["]:not(:disabled)'
+        ).forEach(function (radio) {
+            if (!form.contains(radio)) return;
+            if (!radioGroups.has(radio.name)) {
+                radioGroups.set(radio.name, []);
             }
+            radioGroups.get(radio.name).push(radio);
+        });
 
-            const selects = block.querySelectorAll(
-                'select:not(:disabled)'
-            );
-
-            for (const select of selects) {
-
-                const selected = select.selectedOptions[0];
-
-                if (
-                    !select.value ||
-                    select.value === '0' ||
-                    (selected && selected.disabled)
-                ) {
-                    showAttributeError(block);
-                    return false;
-                }
+        for (const radios of radioGroups.values()) {
+            if (!radios.some(function (radio) { return radio.checked; })) {
+                showAttributeError(
+                    radios[0].closest('.wrapperAttribsOptions') || container
+                );
+                return false;
             }
         }
 
+        /*
+         * A dropdown with no value, value 0, or a disabled
+         * placeholder is not a valid attribute selection.
+         */
+        const selects = container.querySelectorAll(
+            'select[name^="id["]:not(:disabled)'
+        );
+
+        for (const select of selects) {
+            if (!form.contains(select)) continue;
+
+            const option = select.selectedOptions[0];
+            if (
+                !select.value ||
+                select.value === '0' ||
+                !option ||
+                option.disabled
+            ) {
+                showAttributeError(
+                    select.closest('.wrapperAttribsOptions') || container
+                );
+                return false;
+            }
+        }
+
+        /*
+         * Do not require checkboxes by default: Zen Cart checkbox
+         * attributes can be optional. Native server-side required
+         * attribute rules remain authoritative.
+         */
         return true;
     }
 
@@ -846,35 +865,13 @@ $rcrmcPayload = [
             window.clearTimeout(autoCloseTimer);
 
             /*
-             * BUILD ZEN CART UPDATE FORM
+             * Update ONLY this existing cart line.
+             * The server retrieves its original selected attributes.
              */
-
             const fields = new URLSearchParams();
-
-            data.items.forEach(function (entry) {
-
-                fields.append(
-                    'products_id[]',
-                    entry.cartId
-                );
-
-                fields.append(
-                    'cart_quantity[]',
-                    String(
-                        entry.cartId === cartId
-                            ? next
-                            : entry.quantity
-                    )
-                );
-            });
-
-            if (data.securityToken) {
-
-                fields.append(
-                    'securityToken',
-                    data.securityToken
-                );
-            }
+            fields.append('cartId', cartId);
+            fields.append('quantity', String(next));
+            fields.append('securityToken', data.securityToken);
 
             try {
 
@@ -883,7 +880,7 @@ $rcrmcPayload = [
                  */
 
                 const response = await fetch(
-                    data.cartUpdate,
+                    data.quantityUrl,
                     {
                         method: 'POST',
                         credentials: 'same-origin',
@@ -902,6 +899,11 @@ $rcrmcPayload = [
                         'Cart update failed (' +
                         response.status + ')'
                     );
+                }
+
+                const updateResult = await response.json();
+                if (!updateResult.ok) {
+                    throw new Error(updateResult.error || 'Cart update rejected.');
                 }
 
                 /*

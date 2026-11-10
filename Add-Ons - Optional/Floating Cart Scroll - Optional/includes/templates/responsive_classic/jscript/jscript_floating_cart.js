@@ -1,4 +1,3 @@
-
 /**
  * Floating Add to Cart
  *
@@ -11,6 +10,8 @@
  *
  * - Appears after scrolling past original Add to Cart
  * - Disappears when scrolling back
+ * - Hides when .footer enters the viewport
+ * - Reappears when scrolling above the footer
  * - Uses original Zen Cart Add to Cart button
  * - Keeps selected quantity and product attributes
  * - Updates price when product price changes
@@ -35,22 +36,22 @@
             'productmusicinfoBody'
         ];
 
-      const page = new URLSearchParams(
-    window.location.search
-).get('main_page');
+        const page = new URLSearchParams(
+            window.location.search
+        ).get('main_page');
 
-const supportedProductPages = [
-    'product_info',
-    'document_product_info',
-    'product_music_info'
-];
+        const supportedProductPages = [
+            'product_info',
+            'document_product_info',
+            'product_music_info'
+        ];
 
-if (
-    !supportedPages.includes(document.body.id) &&
-    !supportedProductPages.includes(page)
-) {
-    return;
-}
+        if (
+            !supportedPages.includes(document.body.id) &&
+            !supportedProductPages.includes(page)
+        ) {
+            return;
+        }
 
         // Prevent duplicate initialization.
         if (document.getElementById('floatingCartBar')) {
@@ -76,6 +77,11 @@ if (
         const originalImage =
             document.getElementById('mainImage');
 
+        // Your footer uses class="footer".
+        const footer = document.querySelector(
+            '.footer, #footerWrapper, #footer, footer'
+        );
+
         // Do not display on products without
         // the normal Add to Cart form.
         if (!form || !originalButton || !originalPrice) {
@@ -90,6 +96,7 @@ if (
         // =====================================
 
         const bar = document.createElement('div');
+
         bar.id = 'floatingCartBar';
         bar.setAttribute('role', 'region');
         bar.setAttribute('aria-label', 'Product purchase bar');
@@ -224,6 +231,25 @@ if (
         });
 
         // =====================================
+        // FOOTER VISIBILITY
+        // =====================================
+
+        function isFooterVisible() {
+
+            if (!footer) {
+                return false;
+            }
+
+            const footerRect =
+                footer.getBoundingClientRect();
+
+            return (
+                footerRect.top < window.innerHeight &&
+                footerRect.bottom > 0
+            );
+        }
+
+        // =====================================
         // SHOW / HIDE FLOATING BAR
         // =====================================
 
@@ -243,18 +269,22 @@ if (
             const rect =
                 originalButton.getBoundingClientRect();
 
-            // Show only when original button
-            // has completely scrolled above viewport.
-   const passedButton =
-    document.body.id === 'productmusicinfoBody'
-        ? window.scrollY > 100 &&
-          rect.bottom <= window.innerHeight * 0.5
-        : window.scrollY > 100 &&
-          rect.bottom <= 0;
+            // Preserve original music product behavior.
+            const passedButton =
+                document.body.id === 'productmusicinfoBody'
+                    ? window.scrollY > 100 &&
+                      rect.bottom <= window.innerHeight * 0.5
+                    : window.scrollY > 100 &&
+                      rect.bottom <= 0;
+
+            // Hide the floating bar when
+            // the footer becomes visible.
+            const footerVisible = isFooterVisible();
 
             const show =
                 passedButton &&
-                !originalButton.disabled;
+                !originalButton.disabled &&
+                !footerVisible;
 
             bar.classList.toggle('is-visible', show);
 
@@ -301,7 +331,8 @@ if (
                 page: document.body.id,
                 image: !!imageBox.getAttribute('src'),
                 name: nameBox.textContent,
-                price: priceBox.textContent.trim()
+                price: priceBox.textContent.trim(),
+                footerDetected: !!footer
             }
         );
     }

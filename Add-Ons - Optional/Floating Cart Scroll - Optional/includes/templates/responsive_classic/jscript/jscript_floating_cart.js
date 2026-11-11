@@ -1,4 +1,4 @@
-/**
+ /**
  * Floating Add to Cart
  *
  * Product image + name + price + Add to Cart
@@ -277,8 +277,8 @@
 // =====================================
 
 // Scroll distance for each device
-const mobileScroll = 500;
-const tabletScroll = 600;
+const mobileScroll = 1200;
+const tabletScroll = 400;
 const desktopScroll = 700;
 
 // Detect screen width

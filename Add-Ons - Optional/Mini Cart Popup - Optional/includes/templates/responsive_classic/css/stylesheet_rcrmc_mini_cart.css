@@ -34,3 +34,4 @@ body#productinfoBody #customCopyrightFooter {padding-bottom: 100px;box-sizing: b
 #rcrmc-mini-cart .rcrmc-mini-cart-status.rcrmc-quantity-warning {position:static;transform:none;width:auto;max-width:none;margin:8px 15px;padding:9px 12px;background:#fff4f2;color:#b42318;border:1px solid #f2b8b5;border-left:3px solid #d93025;border-radius:6px;margin-bottom:1rem;text-align:left;font-size:12px;font-weight:600;box-shadow:none;pointer-events:auto;}
 #rcrmc-mini-cart .rcrmc-mini-cart-status:empty {display:none;}
 #rcrmc-mini-cart .productSpecialPrice {font-size:inherit;}
+.rcrmc-mini-cart-info br {display:none;}

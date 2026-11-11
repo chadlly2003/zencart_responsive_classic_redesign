@@ -1527,13 +1527,29 @@ close.addEventListener('click', function (event) {
 
 
         /*
-         * CONTINUE SHOPPING
-         */
+ * ========================================
+ * CONTINUE SHOPPING - FORCE MANUAL CLOSE
+ * ========================================
+ */
 
-        continueButton.addEventListener(
-            'click',
-            dismiss
-        );
+continueButton.addEventListener('click', function (event) {
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    // Stop the automatic close timer.
+    window.clearTimeout(autoCloseTimer);
+
+    // Mark the mini cart as dismissed.
+    dismissed = true;
+
+    // Close the mini cart immediately.
+    panel.remove();
+
+    // Remove the Escape key listener.
+    document.removeEventListener('keydown', onKey);
+
+});
 
         /*
          * ESCAPE KEY

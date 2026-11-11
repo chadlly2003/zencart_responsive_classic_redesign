@@ -270,12 +270,39 @@
                 originalButton.getBoundingClientRect();
 
             // Preserve original music product behavior.
-            const passedButton =
-                document.body.id === 'productmusicinfoBody'
-                    ? window.scrollY > 100 &&
-                      rect.bottom <= window.innerHeight * 0.5
-                    : window.scrollY > 100 &&
-                      rect.bottom <= 0;
+          // Show floating cart after scrolling 300 pixels.
+        // =====================================
+// FLOATING CART SCROLL SETTINGS
+// MOBILE / TABLET / DESKTOP
+// =====================================
+
+// Scroll distance for each device
+const mobileScroll = 600;
+const tabletScroll = 600;
+const desktopScroll = 600;
+
+// Detect screen width
+const screenWidth = window.innerWidth;
+
+// Select scroll distance
+let scrollDistance;
+
+if (screenWidth <= 575) {
+    // Mobile
+    scrollDistance = mobileScroll;
+
+} else if (screenWidth <= 991) {
+    // Tablet
+    scrollDistance = tabletScroll;
+
+} else {
+    // Desktop
+    scrollDistance = desktopScroll;
+}
+
+// Show floating cart after scrolling
+const passedButton = window.scrollY > scrollDistance;
+
 
             // Hide the floating bar when
             // the footer becomes visible.

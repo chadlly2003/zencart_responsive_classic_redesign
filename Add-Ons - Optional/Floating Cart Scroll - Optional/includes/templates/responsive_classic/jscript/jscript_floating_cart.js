@@ -277,9 +277,9 @@
 // =====================================
 
 // Scroll distance for each device
-const mobileScroll = 600;
-const tabletScroll = 600;
-const desktopScroll = 600;
+const mobileScroll = 1200;
+const tabletScroll = 900;
+const desktopScroll = 900;
 
 // Detect screen width
 const screenWidth = window.innerWidth;
